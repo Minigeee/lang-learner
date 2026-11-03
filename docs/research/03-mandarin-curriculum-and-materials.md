@@ -146,6 +146,8 @@ Mandarin Bean, Chinese Reading Practice and Du Chinese are **link-only**, so the
 
 **Time check (after the 2026-11-02 stage reviews):** 64 units (S0 14 · S1 18 · S2 32), about 200 lessons × ~6 min ≈ 20 h of lesson cores. The rest of the core budget is the units' full CI videos and read-alongs, watched and re-watched. That keeps the curriculum input-heavy, as doc 06 asks. S2 alone fills the ~30 min/day core slot with no slack, so S2 may run 2–4 weeks past month 6. Testing out of most of S0 gives back about 2–3 weeks.
 
+**Lesson-level plans (2026-11-03).** The [lesson plans](../design/lesson-plans/README.md) refine these tables: they merge, split, reword or add some lessons, each with a recorded reason. The plans own the lesson-level split; these tables keep the units, their order and prereqs.
+
 Grammar names are Chinese Grammar Wiki A1/A2 titles [28] (verified list). Picking specific videos, timestamps and CV clips is a build task (§4.1). §2.6 lists which sources cut up best.
 
 **Stage S0: Sounds (weeks 1–3, 14 units ≈ 34 lessons; Refold Phase 1 / old Stage 1).** S0 trains *perception* only: hearing tones, sounds and tone changes, and matching them to the pinyin shown under clips. Production accuracy waits for Phase 4.

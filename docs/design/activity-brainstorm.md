@@ -315,7 +315,7 @@ The matrix is computed from compiled lessons, never authored [TDD `content:matri
 - A format's first appearance on the path shows its introduction.
 - Each unit climbs at least two rungs and has at least 4 voices per contrast.
 - The skill card's pool supports at least ~20 unseen reviews.
-- No lesson's estimate runs past 8 minutes.
+- No lesson's estimate runs past 8 minutes, not counting a `main` video, which may run as long as it needs (README Video row).
 
 **Sketch (not final), four lessons from §1.8.** The letters a/b mark a lesson's position inside its unit.
 
