@@ -1,0 +1,568 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Architecture</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600&family=Noto+Sans+SC:wght@400;500&family=Noto+Serif+SC:wght@600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --page:#F5F3EE;--surface-2:#FFFFFF;--surface-1:#F3F0EA;--surface-3:#E9E5DC;
+  --border:rgba(29,27,24,.09);--border-strong:rgba(29,27,24,.16);--border-stronger:rgba(29,27,24,.34);
+  --text-primary:#1D1B18;--text-secondary:#625D55;--text-muted:#9C968C;
+  --act:#C2412D;--act-soft:#FBEAE5;--act-text:#A8361F;
+  --jade:#157F62;--jade-soft:#E2F3EC;--jade-text:#0F6A51;
+  --ink:#3D6FD1;--ink-soft:#E7EEFB;--ink-text:#2C57B0;
+  --slate:#64748B;--slate-soft:#E5E9F0;--slate-text:#475569;
+  --code:#F3F0EA;color-scheme:light;
+}
+:root[data-theme="dark"]{
+  --page:#121110;--surface-2:#1B1A18;--surface-1:#25231F;--surface-3:#302D28;
+  --border:rgba(255,248,236,.08);--border-strong:rgba(255,248,236,.15);--border-stronger:rgba(255,248,236,.34);
+  --text-primary:#F0ECE4;--text-secondary:#B3ADA2;--text-muted:#7A746B;
+  --act:#E2583F;--act-soft:#3A1B14;--act-text:#F59C86;
+  --jade:#3FB68E;--jade-soft:#12302A;--jade-text:#72D4B1;
+  --ink:#6F98F0;--ink-soft:#172540;--ink-text:#9DBAF5;
+  --slate:#8B9AB0;--slate-soft:#222A36;--slate-text:#AEBBCD;
+  --code:#1F1D1A;color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:20px}
+body{margin:0;background:var(--page);color:var(--text-primary);font:400 15px/1.65 Lexend,"Noto Sans SC",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{display:grid;grid-template-columns:240px minmax(0,1fr);gap:40px;max-width:1240px;margin:0 auto;padding:32px 24px 96px}
+nav.toc{position:sticky;top:24px;align-self:start;font-size:13px;max-height:calc(100vh - 48px);overflow:auto}
+nav.toc a{display:block;color:var(--text-secondary);text-decoration:none;padding:4px 10px;border-radius:8px}
+nav.toc a:hover{background:var(--surface-1);color:var(--text-primary)}
+nav.toc .sub{padding-left:22px;font-size:12px}
+.brand{display:flex;align-items:center;gap:10px;margin-bottom:16px}
+.seal{width:28px;height:28px;border-radius:8px;background:var(--act);color:#fff;display:grid;place-items:center;font-family:"Noto Serif SC",serif;font-weight:600}
+.theme{margin-top:16px;background:transparent;color:var(--text-primary);border:1px solid var(--border-strong);border-radius:9px;padding:6px 12px;font:inherit;font-size:13px;cursor:pointer}
+main{min-width:0}
+main a{color:var(--act-text);text-decoration-color:var(--border-stronger);text-underline-offset:3px}
+h1{font-size:34px;font-weight:600;letter-spacing:-.02em;margin:0 0 6px}
+h2{font-size:24px;font-weight:600;letter-spacing:-.01em;margin:56px 0 10px;padding-top:8px;border-top:1px solid var(--border)}
+h3{font-size:17px;font-weight:500;margin:30px 0 8px}
+p{margin:8px 0 12px;max-width:820px}
+ul,ol{max-width:820px;padding-left:22px}
+li{margin:4px 0}
+.lede{font-size:17px;color:var(--text-secondary);max-width:820px}
+.meta{font-size:13px;color:var(--text-secondary)}
+.pill{display:inline-block;font-size:12px;padding:2px 9px;border-radius:999px;background:var(--surface-1);color:var(--text-secondary);margin-right:6px}
+.pill.act{background:var(--act-soft);color:var(--act-text)}
+code,pre{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:12.5px}
+code{background:var(--code);padding:1px 5px;border-radius:5px}
+pre{background:var(--code);border:1px solid var(--border);border-radius:12px;padding:14px 16px;overflow:auto;line-height:1.55;max-width:100%}
+pre code{background:none;padding:0}
+.cm{color:var(--text-muted)}
+table{border-collapse:collapse;width:100%;font-size:13.5px;margin:10px 0 16px}
+th,td{text-align:left;vertical-align:top;padding:8px 10px;border-bottom:1px solid var(--border)}
+th{font-weight:500;color:var(--text-secondary);font-size:12.5px}
+.fig{background:var(--surface-2);border:1px solid var(--border);border-radius:18px;padding:14px;margin:14px 0 6px;overflow-x:auto}
+.fig svg{display:block;min-width:760px;width:100%;height:auto}
+.figcap{font-size:12.5px;color:var(--text-secondary);margin:0 0 18px}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:12px;color:var(--text-secondary);margin:4px 2px 0}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend i{width:14px;height:10px;border-radius:3px;display:inline-block;border:1px solid}
+.callout{border:1px solid var(--border-strong);border-radius:14px;padding:12px 16px;background:var(--surface-1);max-width:820px;margin:12px 0}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.card{background:var(--surface-2);border:1px solid var(--border);border-radius:14px;padding:14px 16px}
+.card h4{margin:0 0 6px;font-size:15px;font-weight:500}
+svg .bx{stroke-width:1}
+svg .person{fill:var(--surface-3);stroke:var(--border-stronger)}
+svg .sys{fill:var(--act-soft);stroke:var(--act)}
+svg .cont{fill:var(--surface-1);stroke:var(--border-stronger)}
+svg .store{fill:var(--ink-soft);stroke:var(--ink)}
+svg .ext{fill:var(--surface-2);stroke:var(--border-stronger)}
+svg .pack{fill:var(--jade-soft);stroke:var(--jade)}
+svg .band{fill:var(--surface-1);stroke:var(--border)}
+svg .bd{fill:none;stroke:var(--border-stronger);stroke-dasharray:6 5}
+svg .tt{font:500 14px Lexend,sans-serif;fill:var(--text-primary)}
+svg .ty{font:400 11px Lexend,sans-serif;fill:var(--text-muted)}
+svg .td{font:400 12px Lexend,sans-serif;fill:var(--text-secondary)}
+svg .bl{font:500 13px Lexend,sans-serif;fill:var(--text-secondary)}
+svg .ln{fill:none;stroke:var(--text-muted);stroke-width:1.3}
+svg .ln.dash{stroke-dasharray:5 4}
+svg .lp rect{fill:var(--surface-2);stroke:var(--border-strong)}
+svg .lp text{font:400 11.5px Lexend,sans-serif;fill:var(--text-secondary)}
+svg .life{stroke:var(--border-stronger);stroke-dasharray:4 4}
+@media (max-width:1180px){.wrap{grid-template-columns:1fr;gap:8px}nav.toc{position:static;max-height:none;display:flex;flex-wrap:wrap;gap:2px 6px;align-items:center}nav.toc .brand{width:100%;margin-bottom:4px}nav.toc .sub{display:none}nav.toc .theme{margin-top:0}}
+@media (max-width:760px){.grid2{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav class="toc" aria-label="Contents">
+<div class="brand"><span class="seal">学</span><b style="font-weight:500">Architecture</b></div>
+<a href="#drivers">1. Drivers</a>
+<a href="#context">2. System context</a>
+<a href="#containers">3. Containers</a>
+<a href="#components">4. Components</a>
+<a class="sub" href="#c-web">Web app</a>
+<a class="sub" href="#c-tool">Content toolchain</a>
+<a class="sub" href="#c-supa">Supabase setup</a>
+<a href="#data">5. Event log and sync</a>
+<a href="#code">6. Key contracts</a>
+<a href="#extend">7. Adding curriculum and languages</a>
+<a href="#flows">8. Runtime flows</a>
+<a href="#deploy">9. Deployment and cost</a>
+<a href="#cross">10. Cross-cutting concerns</a>
+<a href="#repo">11. Repository layout</a>
+<a href="#decisions">12. Decisions</a>
+<a href="#tdd">13. Departures from the TDD</a>
+<a href="#risks">14. Risks and open questions</a>
+<a href="#phases">15. Build phases</a>
+<button class="theme" id="theme">Light theme</button>
+</nav>
+<main>
+<h1>Architecture</h1>
+<p class="lede">A C4 walk through the language-learning app, from its place in the world down to the contracts that keep it extensible. Adding a unit is a content change only. Adding a language is a language pack, content and one registration line, with no change to the core.</p>
+<p class="meta"><span class="pill act">Proposal, revision 2.1</span><span class="pill">2026-11-02</span> Revision 2 applies the <a href="architecture-review.md">adversarial review</a> (dispositions at its end) and the owner's answers: a private repo, a phone and a laptop used daily, simplified Mandarin only, no second language soon, at most about $10 a month, as few services as possible, and content pipelines run on the owner's laptop (RTX 2070). Revision 2.1 keeps the content bundle private in Supabase Storage. It builds on the <a href="../research/README.md">research synthesis</a>, the <a href="app-ui-flow.md">UI flow</a> and the unreviewed <a href="tdd-curriculum-data-model.md">data-model TDD</a>, which this doc overrides where they differ (§13).</p>
+
+<h2 id="drivers">1. Drivers</h2>
+<table>
+<tr><th>Driver</th><th>What it forces</th></tr>
+<tr><td>One owner, private, on a public URL</td><td>Login is required. Everything beyond the app shell is private behind Supabase: user events (RLS), the content bundle and media (private Storage). Only the app code is public, as it is on any static host.</td></tr>
+<tr><td>Few services, $0 with a $10 ceiling</td><td>Two vendors. Supabase provides auth, the database, and private storage for content and media. Cloudflare Pages is a plain static host for the app shell. GitHub Actions runs CI. There's no server of our own and no Worker.</td></tr>
+<tr><td>Phone and laptop, both every day</td><td>A sync design that two devices can't corrupt: an append-only event log, deterministic ids, and card state rebuilt from review events.</td></tr>
+<tr><td>Internet assumed, but cache and sync anyway</td><td>Local-first reads: the session is built from local state, and events sync in the background when online. YouTube lessons need the network; reviews and hosted audio don't.</td></tr>
+<tr><td>Past streaks and XP never change</td><td>Each finished day is frozen into a <code>day_closed</code> event. Rule and content changes apply from the next day on.</td></tr>
+<tr><td>Fast curriculum authoring by one person plus Claude</td><td>Plain files in git, a strict check script, and one deploy for app and content.</td></tr>
+<tr><td>Core stays language-agnostic, with no second language soon</td><td>A <code>LanguagePack</code> interface and a test-only toy language. No language switcher or per-language settings UI until a second language exists.</td></tr>
+<tr><td>Progress survives lesson rewrites</td><td>Knowledge items are the spine, and lessons point at them (doc 08). Permanent redirects keep old ids resolvable.</td></tr>
+<tr><td>Native audio, no manual curation</td><td>An offline media ingester on the laptop: openly licensed sources only, local Whisper alignment, automated validation, quarantine instead of hand fixes.</td></tr>
+</table>
+
+<h2 id="context">2. Level 1: System context</h2>
+<div class="fig"><svg id="d-context" viewBox="0 0 960 490" role="img" aria-label="System context diagram"></svg></div>
+<div class="legend"><span><i style="background:var(--surface-3);border-color:var(--border-stronger)"></i>Person</span><span><i style="background:var(--act-soft);border-color:var(--act)"></i>This system</span><span><i style="background:var(--surface-2);border-color:var(--border-stronger)"></i>External system</span></div>
+<p class="figcap">Netflix is dashed because it isn't integrated: the learner watches there and logs minutes in the app.</p>
+
+<h2 id="containers">3. Level 2: Containers</h2>
+<p>The web app is the only runtime code we own. Supabase holds the stores: events, and one private bucket for content bundles and media. The toolchain and the media ingester run at build time, on the laptop and in CI.</p>
+<div class="fig"><svg id="d-containers" viewBox="0 0 960 600" role="img" aria-label="Container diagram"></svg></div>
+<div class="legend"><span><i style="background:var(--surface-1);border-color:var(--border-stronger)"></i>Container (code)</span><span><i style="background:var(--ink-soft);border-color:var(--ink)"></i>Data store</span><span><i style="background:var(--surface-2);border-color:var(--border-stronger)"></i>External</span></div>
+<table>
+<tr><th>Container</th><th>Technology</th><th>Owns</th><th>Never does</th></tr>
+<tr><td>Web app</td><td>Vue 3, TypeScript, Vite, PWA. Static on Cloudflare Pages; each build pins one content manifest</td><td>Screens, the session builder, the lesson player, reviews, derive, the local event store and sync</td><td>Write anything but events; hold secrets</td></tr>
+<tr><td>Events DB</td><td>Supabase Postgres, one table, RLS, insert-only</td><td>Every user fact, in arrival order (<code>seq</code>)</td><td>Store derived values (except frozen <code>day_closed</code> snapshots); hold content</td></tr>
+<tr><td>Private bucket</td><td>Supabase Storage, private</td><td><code>content/builds/&lt;build&gt;.json</code> manifests, <code>content/files/&lt;hash&gt;.json</code> bundle files, <code>media/</code> short native clips (60 s or less)</td><td>Serve anything without a signed-in owner; hold anything long enough to need seeking</td></tr>
+<tr><td>Content toolchain</td><td>Node CLI (pnpm), on the laptop and in CI</td><td>Import, check, compile; upload hash-named files and the build manifest to the private bucket</td><td>Run in production</td></tr>
+<tr><td>Media ingester</td><td>Python, on the laptop GPU (faster-whisper)</td><td>Fetching openly licensed audio, transcripts, alignment, validation, upload</td><td>Touch YouTube media; accept a clip without an automatic transcript</td></tr>
+<tr><td>Content source</td><td>The private git repo</td><td><code>content/&lt;lang&gt;/</code> and <code>languages/&lt;lang&gt;/</code></td><td>Hold user data</td></tr>
+</table>
+
+<h2 id="components">4. Level 3: Components</h2>
+<h3 id="c-web">Web app</h3>
+<p>Four layers with downward-only dependencies, plus the language pack on the side. The pack has two halves: <b style="font-weight:500">logic</b>, which is plain TypeScript implementing core interfaces, and <b style="font-weight:500">views</b>, which are Vue components for the pack's own item kinds and widgets. The app wires both in through one registration file. Core code calls the pack only through the interface, and never imports it.</p>
+<div class="fig"><svg id="d-web" viewBox="0 0 960 460" role="img" aria-label="Web app component layers"></svg></div>
+<div class="legend"><span><i style="background:var(--act-soft);border-color:var(--act)"></i>Vue (apps/web)</span><span><i style="background:var(--surface-2);border-color:var(--border-stronger)"></i>No Vue (packages/core, app adapters)</span><span><i style="background:var(--jade-soft);border-color:var(--jade)"></i>Language pack</span></div>
+<p class="figcap">The rules are enforced by package dependencies plus one dependency-cruiser config:
+<ul>
+<li><code>packages/core</code> imports nothing from the app or the languages, and never Vue.</li>
+<li><code>languages/*/logic</code> imports only <code>packages/core</code>.</li>
+<li><code>languages/*/views</code> may import Vue and <code>packages/core</code>.</li>
+<li>Only <code>apps/web/src/languages.ts</code> imports packs.</li>
+</ul></p>
+<table>
+<tr><th>Component</th><th>Responsibility</th><th>Hides</th></tr>
+<tr><td>Session builder</td><td>Turns "15 min" into blocks (a capped review batch, lessons, re-watches), from local state only</td><td>Phase splits, time estimates (<code>estimateSec</code>)</td></tr>
+<tr><td>Trial runner</td><td>Runs activity items, scores them, applies the feedback policy, requeues a miss in a new voice, emits events</td><td>Feedback timing, retries, card-on-second-miss</td></tr>
+<tr><td>Widget registry</td><td>Name → definition (in core) and name → view (in the app or the pack's views)</td><td>Widget implementations</td></tr>
+<tr><td>SRS</td><td>Rebuilds card state by replaying review events through pinned <code>ts-fsrs</code>; the queue policy from doc 02</td><td>FSRS version, parameters, fuzz seeding</td></tr>
+<tr><td>Derive</td><td>Pure, versioned rules: category, XP, mastery, lesson status, consistency; closes finished days</td><td>Every mapping we've said we'll tune</td></tr>
+<tr><td>Event store</td><td>IndexedDB log, outbox, push and pull by <code>seq</code>, flush triggers</td><td>Supabase, offline handling</td></tr>
+<tr><td>Content loader</td><td>Downloads this build's manifest and any missing hash-named files from the private bucket with the session token, caches them, applies redirects, lazy-loads dictionary shards</td><td>Bundle format, storage paths</td></tr>
+<tr><td>Media</td><td>YouTube IFrame adapter; downloads clips from Storage with the session token, then caches the blobs; exposure events; clip fallback</td><td>Providers, the "unseen" rules</td></tr>
+</table>
+
+<h3 id="c-tool">Content toolchain and media ingester</h3>
+<div class="fig"><svg id="d-tool" viewBox="0 0 960 440" role="img" aria-label="Content toolchain components"></svg></div>
+<p class="figcap">Bundle files are named by their content hash and uploaded once. Each build adds one manifest listing its files. The app build only embeds its build id, so a deployed app always asks for exactly the content it was built against. The ingester runs on the laptop GPU and uploads only clips that pass automated validation. Failures go to a quarantine report, never to hand fixes.</p>
+<table>
+<tr><th>Check rule family</th><th>Examples</th><th>Owner</th></tr>
+<tr><td>Identity</td><td>Ids well-formed and NFC-normalized; nothing removed without a redirect; redirects permanent and chain-free</td><td>core</td></tr>
+<tr><td>Structure</td><td>Lesson order respects item prerequisites; every unit has a check; skeleton slots filled; templates resolve (language overrides shared by name)</td><td>core</td></tr>
+<tr><td>Media</td><td>Every example is marked up and has a lesson-eligible clip; license present; voice variety per contrast</td><td>core</td></tr>
+<tr><td>Pedagogy</td><td>Output level allowed by the stage's template (not by the learner's phase)</td><td>core</td></tr>
+<tr><td>Copy</td><td>Word budget; no internal terms in user-facing text</td><td>core</td></tr>
+<tr><td>Language</td><td>Optional extra lint. For zh: no unmarked hanzi outside examples; readings are valid pinyin</td><td>pack (optional)</td></tr>
+</table>
+
+<h3 id="c-supa">Supabase setup</h3>
+<table>
+<tr><th>Piece</th><th>Configuration</th></tr>
+<tr><td>Auth</td><td>Email one-time code (works inside an installed iOS PWA). Signups disabled once the owner account exists. Long refresh sessions, so sign-in is rare.</td></tr>
+<tr><td>Events table</td><td>One table (§5). RLS: <code>user_id = auth.uid()</code>. Policies for <code>select</code> and <code>insert</code> only; no update or delete.</td></tr>
+<tr><td>Private bucket</td><td>Read policy: the owner only. Writes:<ul><li>CI uploads content with a Storage-scoped S3 access key kept in GitHub secrets.</li><li>The laptop uploads media with the same kind of key.</li></ul>Neither key ever ships to the browser. Retention: keep the manifests of the last 10 builds, and delete files that no kept manifest references.</td></tr>
+<tr><td>Keep-alive and backups</td><td>A weekly GitHub Action (a few minutes of compute) pings the database and runs <code>pg_dump</code> through the session pooler, since runners can't reach the direct connection. The dump is stored as an encrypted workflow artifact.</td></tr>
+</table>
+
+<h2 id="data">5. Event log and sync</h2>
+<p>The whole user state is one append-only table. Everything else, including card schedules, is folded from it on the device. This replaces the earlier mix of facts plus mutable card rows, which two devices could corrupt (review B2).</p>
+<pre><code><span class="cm">-- supabase/migrations/0001_events.sql</span>
+create table events (
+  id          uuid primary key,                 <span class="cm">-- client-generated uuid v7 (or deterministic, see below)</span>
+  seq         bigint generated always as identity unique,   <span class="cm">-- arrival order; the pull cursor</span>
+  user_id     uuid not null default auth.uid(),
+  kind        text not null,                    <span class="cm">-- see the Event union in §6</span>
+  v           smallint not null,                <span class="cm">-- payload schema version for this kind</span>
+  lang        text,                             <span class="cm">-- language of the item involved; null for global events</span>
+  occurred_at timestamptz not null,             <span class="cm">-- device clock; ordering for derive</span>
+  device_id   text not null,
+  build       text not null,                    <span class="cm">-- app+content build id that wrote it</span>
+  payload     jsonb not null
+);
+alter table events enable row level security;   <span class="cm">-- select + insert policies only</span></code></pre>
+<div class="grid2">
+<div class="card"><h4>Write and push</h4><ul><li>Events go to IndexedDB first, then to the outbox.</li><li>Push is <code>insert … on conflict (id) do nothing</code>, so retries are harmless.</li><li>The outbox flushes on launch, on <code>visibilitychange</code> and on <code>online</code>, since iOS has no Background Sync.</li><li>A permanently rejected event (a schema error) is moved to a dead-letter list shown in Settings, so it can never wedge the queue.</li></ul></div>
+<div class="card"><h4>Pull</h4><ul><li><code>select … where seq &gt; :cursor order by seq</code>. <code>seq</code> is assigned on arrival, so events that sync late from an offline device are still pulled.</li><li>Derive orders by <code>occurred_at</code> (tie-break by <code>id</code>), never by <code>seq</code>.</li></ul></div>
+<div class="card"><h4>Cards</h4><ul><li>A card's id is deterministic: <code>hash(itemId, cardTemplate)</code>, so two devices adding the same card produce one card.</li><li>Its schedule is rebuilt by replaying its <code>review</code> events in time order through FSRS. Fuzz is seeded from <code>(cardId, reviewedAt)</code>, so replay is deterministic.</li><li>Concurrent offline reviews on two devices both count, in time order. Nothing is overwritten.</li></ul></div>
+<div class="card"><h4>Frozen history</h4><ul><li>When a day ends, the first device to open the app afterwards appends <code>day_closed</code> with that day's XP, consistency credit and rule versions. The id is <code>hash(userId, date)</code>, so the second device's copy is a no-op.</li><li>Streaks and XP for closed days are read from these events, never recomputed. Rule or content changes apply from today on.</li><li>Mistakes are corrected with <code>void</code> events, never by deletion.</li></ul></div>
+</div>
+<p>At this scale (a year is roughly 150k events), derive simply recomputes from the local log when the log or the build changes, and caches the result. There's no incremental machinery and no server-side fallback until a measurement says otherwise (review m1).</p>
+
+<h2 id="code">6. Level 4: Key contracts</h2>
+<h3>Ids</h3>
+<pre><code><span class="cm">// packages/core/ids.ts: one grammar, enforced at every boundary. Keys are NFC-normalized before use.</span>
+type Lang = string                               <span class="cm">// a language, not a script: 'zh'. Script and region are display settings of a pack</span>
+type ItemId   = `${Lang}:${string}:${string}`    <span class="cm">// lang : kind : key. zh:w:行:hang2 · zh:g:le-completion · zh:c:好</span>
+type LessonId = `${Lang}:les:${string}`          <span class="cm">// also unit and stage</span>
+type CardId   = `card:${string}`                 <span class="cm">// hash(itemId, template): deterministic across devices</span>
+type MediaId  = `media:${string}`                <span class="cm">// media, clips, speakers, licenses are global and tagged with a language</span>
+<span class="cm">// Core kinds: 'w' lexical item, 'g' grammar point, 'sc' sound contrast, 'sr' sound rule.</span>
+<span class="cm">// A pack registers more: zh adds 'c' character and 'cmp' component.</span></code></pre>
+<h3>The language pack</h3>
+<pre><code><span class="cm">// packages/core/language.ts</span>
+interface LanguagePack {                          <span class="cm">// languages/&lt;lang&gt;/logic: no Vue, shipped to the browser, lazy-loaded</span>
+  code: Lang; name: string
+  normalize(s: string): string                    <span class="cm">// after NFC: zh none; ja width folding; es none</span>
+  analyze(sentence: string, lex: Lexicon): Analysis   <span class="cm">// tokens with surface, lemma, in-context reading, ruby segments, features</span>
+  itemKey(entry: LexEntry): string                <span class="cm">// a stable natural key per dictionary entry: zh 行:hang2, ja 食べる:たべる, es comer:v</span>
+  itemKinds: ItemKindDef[]                        <span class="cm">// extra kinds, with zod schemas used at build time only</span>
+  soundAxes: string[]                             <span class="cm">// zh ['tone','initial','final']; es ['vowel','r-rr']; ja ['mora','pitch']</span>
+  cardTemplates: CardTemplate[]                   <span class="cm">// which card faces each kind gets (zh: hanzi→meaning, audio→meaning)</span>
+}
+interface LanguagePackBuild extends LanguagePack { <span class="cm">// languages/&lt;lang&gt;/build: Node only</span>
+  lexicon: LexiconBuild                           <span class="cm">// imports dictionary datasets into sharded, license-tagged files</span>
+  syllabi: SyllabusDef[]                          <span class="cm">// hsk2025 levels: tags, never structure</span>
+  seedEdges?(items: KnowledgeItem[]): Edge[]
+  checkRules?: CheckRule[]                        <span class="cm">// optional extra lint</span>
+  mediaSources: MediaSourceAdapter[]              <span class="cm">// used by the ingester</span>
+}
+interface LanguagePackViews {                     <span class="cm">// languages/&lt;lang&gt;/views: Vue</span>
+  itemDetail: Record&lt;string, Component&gt;           <span class="cm">// per pack-specific kind</span>
+  widgets?: Record&lt;string, Component&gt;
+  Ruby: Component                                 <span class="cm">// renders an analyzed sentence with readings</span>
+}</code></pre>
+<p class="meta">Target-language text is never detected by heuristics. Lessons mark it explicitly (<code>:ex[…]</code> for examples, <code>:w[…]</code> for words), so the core checks work for Spanish as well as Chinese (review M2).</p>
+<h3>Widgets</h3>
+<pre><code><span class="cm">// packages/core/widgets.ts: a discriminated union, so a figure can't declare scoring (review M4). Full detail is in TDD §7.</span>
+type WidgetDefinition&lt;C&gt; = ActivityDefinition&lt;C&gt; | FigureDefinition&lt;C&gt;
+interface ActivityDefinition&lt;C&gt; {
+  role: 'activity'; widget: string; version: number; config: ZodType&lt;C&gt;   <span class="cm">// zod is build-time only</span>
+  slots: readonly SlotName[]
+  activityType(c: C): ActivityType               <span class="cm">// derive needs it for category and strand</span>
+  outputLevel: 0 | 1
+  scoring: 'items' | 'stream'
+  expand?(c: C, cat: Catalog): ItemSpec[]          <span class="cm">// 'items' only: lets the check count items, voices and clips</span>
+  evidenceTargets(c: C): ItemId[]
+  refs(c: C): ContentRefs                          <span class="cm">// every id it mentions, so the check needs no widget knowledge</span>
+  estimateSec(c: C): number                        <span class="cm">// the session builder needs it</span>
+}
+interface FigureDefinition&lt;C&gt; { role: 'figure'; widget: string; version: number; config: ZodType&lt;C&gt;; refs(c: C): ContentRefs }</code></pre>
+<h3>Events and derive</h3>
+<pre><code><span class="cm">// packages/core/events.ts: the only write path. One writer, one union.</span>
+type Event =
+  | { kind: 'review'; v: 1; cardId: CardId; rating: 1|2|3|4; durationMs: number }
+  | { kind: 'trial'; v: 1; itemId: ItemId; lessonHash: string; widget: `${string}@${number}`; correct: boolean; recycled: boolean }
+  | { kind: 'span' | 'exposure' | 'claim' | 'watch' | 'card_added' | 'lesson_cursor' | 'setting' | 'flag'; v: 1; /* … */ }
+  | { kind: 'void'; v: 1; target: string; reason: string }
+  | { kind: 'day_closed'; v: 1; date: string; xp: number; credit: 'none'|'floor'|'standard'|'stretch'; rules: Record&lt;string, string&gt; }
+record(e: Event): void          <span class="cm">// stamps id, occurred_at, device_id, build; writes locally; queues the push</span>
+
+<span class="cm">// packages/core/derive: pure functions of (events, bundle, rule versions).</span>
+export const RULES = { category: { v1 }, xp: { v1 }, mastery: { v1 }, lessonStatus: { v1 }, consistency: { v1 } } as const</code></pre>
+
+<h2 id="extend">7. Adding curriculum and languages</h2>
+<div class="fig"><svg id="d-ext" viewBox="0 0 960 300" role="img" aria-label="Core and language packs"></svg></div>
+<p class="figcap">The toy pack exists from phase 0 and runs the core's test suite, so a Chinese assumption can't creep into the core unnoticed. A lint rule also rejects CJK literals in <code>packages/core</code>.</p>
+<div class="grid2">
+<div class="card"><h4>Add a unit or lesson (content only)</h4>
+<ol>
+<li><code>pnpm content:new zh unit telling-time</code> scaffolds the curriculum entry and lesson files.</li>
+<li>Claude drafts. <code>content:suggest</code> proposes ingested, lesson-eligible clips for each example.</li>
+<li><code>pnpm content:check</code> must pass.</li>
+<li>Push. CI checks, builds the app with the new content, and deploys both together.</li>
+</ol>
+<p class="meta">No code change, no migration. Progress carries over because evidence lives on items. A rewritten lesson gets a new <code>lessonHash</code>, and old trial events keep theirs.</p></div>
+<div class="card"><h4>Add a language</h4>
+<ol>
+<li><code>languages/ja/{logic,build,views}</code> implementing the three interfaces (analyzer, lexicon, kinds, card templates, sound axes, syllabi, media sources, item views).</li>
+<li>Run its importers and the ingester for its media sources.</li>
+<li>Write <code>content/ja/</code> with the same skeleton, templates and core widgets.</li>
+<li>Add one line to <code>apps/web/src/languages.ts</code>. A language switcher appears once there are two.</li>
+</ol>
+<p class="meta">No change to <code>packages/core</code> or other app code, and no migration: events already carry <code>lang</code>. A core change is needed only for a new activity type, such as pitch-accent drills.</p></div>
+</div>
+<table>
+<tr><th>Change</th><th>Content</th><th>Pack</th><th>Core</th><th>App</th><th>Migration</th></tr>
+<tr><td>New lesson, unit or stage</td><td>yes</td><td>no</td><td>no</td><td>no</td><td>no</td></tr>
+<tr><td>Rewrite, split or reorder lessons</td><td>yes</td><td>no</td><td>no</td><td>no</td><td>no (permanent redirects)</td></tr>
+<tr><td>New clips</td><td>yes (ingest)</td><td>no</td><td>no</td><td>no</td><td>no</td></tr>
+<tr><td>New core widget</td><td>uses it</td><td>no</td><td>its definition</td><td>its view</td><td>no</td></tr>
+<tr><td>Tune XP, mastery or categories</td><td>no</td><td>no</td><td>a new rule version</td><td>no</td><td>no (closed days stay frozen)</td></tr>
+<tr><td>New language</td><td>yes</td><td>a new pack</td><td>no</td><td>one line</td><td>no</td></tr>
+</table>
+
+<h2 id="flows">8. Runtime flows</h2>
+<h3>A bedtime session (local first)</h3>
+<div class="fig"><svg id="d-seq" viewBox="0 0 960 540" role="img" aria-label="Sequence diagram of a bedtime session"></svg></div>
+<p class="figcap">The session is planned from local state before any network call (review m8), so a slow connection never blocks bedtime. Sync runs in the background.</p>
+<h3>Publishing content</h3>
+<ol>
+<li>A push to <code>main</code> triggers CI: <code>content:check</code>, then <code>content:build</code>.</li>
+<li>CI uploads new hash-named files and the build's manifest to the private bucket <b style="font-weight:500">first</b>.</li>
+<li>CI runs <code>vite build</code> with that build id embedded, and deploys to Cloudflare Pages. A live app can never point at content that isn't there yet, and an older cached app keeps finding its own manifest (review B1).</li>
+<li>The service worker sees a new build on next open and switches over at the next session boundary, never mid-lesson.</li>
+</ol>
+
+<h2 id="deploy">9. Deployment and cost</h2>
+<div class="fig"><svg id="d-deploy" viewBox="0 0 960 440" role="img" aria-label="Deployment diagram"></svg></div>
+<table>
+<tr><th>Service</th><th>Used for</th><th>Free tier and fit</th><th>If outgrown</th></tr>
+<tr><td>Cloudflare Pages</td><td>Static app shell</td><td>Free; works with a private repo through direct upload from Actions</td><td>n/a</td></tr>
+<tr><td>Supabase</td><td>Auth, events DB, private bucket</td><td>500 MB DB (years of events), 1 GB storage (about 70 h of Opus speech at 32 kbps, plus a few MB of content), 5 GB egress (content and clips are cached on the device, and unchanged files are never re-downloaded). Pauses after a week idle, which daily use plus the weekly ping covers</td><td>Pro is $25 a month, over budget. Instead, move media to Cloudflare R2 (card on file, about $0.015 per GB-month) behind signed URLs</td></tr>
+<tr><td>GitHub</td><td>Private repo, CI, weekly backup</td><td>2,000 Linux minutes a month for private repos. CI plus weekly jobs use a small fraction. Speech-to-text runs on the laptop, not in Actions (review M7)</td><td>n/a</td></tr>
+<tr><td>Laptop</td><td>Toolchain and media ingest</td><td>RTX 2070 (8 GB) runs faster-whisper for alignment</td><td>n/a</td></tr>
+</table>
+
+<h2 id="cross">10. Cross-cutting concerns</h2>
+<div class="grid2">
+<div class="card"><h4>Security and privacy</h4><ul><li>Email-code sign-in, signups off, long refresh sessions.</li><li>RLS on the events table and on the bucket.</li><li>Storage write keys live in GitHub secrets and on the laptop, never in the app.</li><li>The content bundle is private, like the media. Only the app code on Pages is public.</li></ul></div>
+<div class="card"><h4>Offline and caching</h4><ul><li>The service worker caches the shell and the CJK fonts (self-hosted subsets, review n4).</li><li>The content loader caches bundle files and dictionary shards, keyed by hash.</li><li>Clips are fetched with the session token and cached as blobs, so reviews work offline.</li><li><code>navigator.storage.persist()</code> is requested once. YouTube lessons need the network.</li></ul></div>
+<div class="card"><h4>Versioning</h4><ul><li>One build id names the app plus content pair, and every event records it.</li><li>Trials and spans also record <code>lessonHash</code> and <code>widget@version</code>.</li><li>Event payloads carry a <code>v</code> per kind. Derive rules are versioned, and FSRS is pinned.</li></ul></div>
+<div class="card"><h4>Licensing</h4><ul><li>A license record on every dataset and clip; the build fails without one.</li><li>A credits page is generated from those records.</li><li>Share-alike data (CC-CEDICT) stays in a separate overlay.</li></ul></div>
+<div class="card"><h4>Testing</h4><ul><li>Golden fixtures for derive and for SRS replay, including two-device interleavings.</li><li>A failing fixture for each check rule.</li><li>Core tests run against the toy pack.</li><li>A phone-sized end-to-end smoke test of one lesson.</li></ul></div>
+<div class="card"><h4>Performance budget</h4><ul><li>Shell under 200 KB gzip, with zod stripped from runtime and Cytoscape lazy-loaded (review n3).</li><li>A lesson is playable within 1.5 s on a warm cache.</li><li>A full derive over a year of events is measured in phase 2.</li></ul></div>
+</div>
+
+<h2 id="repo">11. Repository layout</h2>
+<pre><code>apps/web/               <span class="cm">Vue 3 PWA: screens, flows, widget views, adapters (event store, media, content loader, auth)</span>
+  src/languages.ts      <span class="cm">the one place packs are registered</span>
+packages/core/          <span class="cm">no Vue: ids, types, language interfaces, widgets, session, srs, derive, events</span>
+packages/content-tools/ <span class="cm">CLI: parse, resolve, check, compile, scaffold, suggest</span>
+languages/zh/           <span class="cm">logic/ · build/ · views/</span>
+languages/_toy/         <span class="cm">test-only pack</span>
+content/zh/             <span class="cm">curriculum.ts · lessons/ · items/ · media/ · templates/ · redirects.yaml · generated/</span>
+content/shared/         <span class="cm">licenses, speakers, base templates (a language's template overrides a shared one by name)</span>
+tools/media-ingest/     <span class="cm">Python: source adapters, faster-whisper alignment, validation, quarantine report, upload</span>
+supabase/migrations/    <span class="cm">events table, RLS, bucket policies</span>
+docs/  sandbox/</code></pre>
+<p class="meta">Two packages and one app, down from eight packages and two apps (review M5). The internal folders of <code>packages/core</code> are kept apart by the same dependency-cruiser config.</p>
+
+<h2 id="decisions">12. Decisions</h2>
+<table>
+<tr><th>#</th><th>Decision</th><th>Why</th></tr>
+<tr><td>1</td><td>Two vendors: Supabase (auth, events DB, private storage for content and media) and Cloudflare Pages (static host for the app shell)</td><td>The owner's ask: few services, $0, a $10 ceiling. No Worker, no R2 for now</td></tr>
+<tr><td>2</td><td>Each app build pins one content manifest in the private bucket; content is uploaded before the app is deployed; hash-named files are shared across builds</td><td>No version skew, and the content stays private with no extra service (review B1)</td></tr>
+<tr><td>3</td><td>One append-only events table; cards rebuilt from reviews; deterministic ids for cards and day closes</td><td>Two devices can't corrupt state (review B2)</td></tr>
+<tr><td>4</td><td>Frozen <code>day_closed</code> events for XP and streaks</td><td>Past history never changes when rules or content change</td></tr>
+<tr><td>5</td><td>Short clips downloaded whole with the session token</td><td>Works with private storage, no Range dependency, offline caching (review M1)</td></tr>
+<tr><td>6</td><td>A language pack with logic, build and views halves; explicit markup for target text; context-aware analysis</td><td>Survives Japanese and Spanish stress tests (review M2, M3)</td></tr>
+<tr><td>7</td><td>Media ingest on the laptop GPU</td><td>Free, fast, keeps Actions minutes for CI (review M7)</td></tr>
+<tr><td>8</td><td>Permanent redirects; no rewriting of old ids in the database</td><td>An append-only log can't be rewritten (review m3)</td></tr>
+<tr><td>9</td><td>Simplified Mandarin only, with <code>zh</code> as a language code (not a script)</td><td>Owner's choice; a Traditional display later doesn't change ids (review n1)</td></tr>
+<tr><td>10</td><td>Defer: language switcher, a per-language settings table, widget config migrations, incremental derive</td><td>Not needed for one language and one author</td></tr>
+</table>
+
+<h2 id="tdd">13. Departures from the TDD</h2>
+<table>
+<tr><th>TDD says</th><th>Architecture says</th></tr>
+<tr><td>Separate fact tables with mutable <code>cards</code>, plus resume cursors</td><td>One <code>events</code> table; cards, cursors and settings are folded from events</td></tr>
+<tr><td>Bundle behind a Worker gate</td><td>Bundle in the private Supabase bucket, pinned per build, read with the session token. No Worker</td></tr>
+<tr><td>Ids like <code>w:行:hang2</code>; <code>hanzi</code>/<code>pinyin</code> fields; <code>CharId</code> in core</td><td>Language-prefixed and NFC ids; core uses lemma, reading and analysis from the pack; characters are a zh kind</td></tr>
+<tr><td>Hanzi detection as a core check</td><td>Explicit markup in the core; hanzi detection is an optional zh lint</td></tr>
+<tr><td>A cleanup that rewrites old ids in user tables</td><td>Permanent redirects; history is never rewritten</td></tr>
+<tr><td>Widget <code>migrate</code> steps</td><td>Deferred; versions only</td></tr>
+<tr><td>Derive on client, incremental, with a Worker fallback</td><td>Full recompute with a cache; measure first</td></tr>
+<tr><td>Output level keyed on phase</td><td>Keyed on stage or template (review m2)</td></tr>
+</table>
+
+<h2 id="risks">14. Risks and open questions</h2>
+<table>
+<tr><th>Risk</th><th>Mitigation</th></tr>
+<tr><td>Too few lesson-eligible clips</td><td>An ingester spike in phase 0 on one source, end to end. Lean on Common Voice transcript search, audio-cmn and Global Storybooks</td></tr>
+<tr><td>Supabase free project pauses (travel, illness)</td><td>The weekly Action ping; a paused project can be restored from the dashboard. Weekly dumps guard against loss</td></tr>
+<tr><td>1 GB storage limit (media plus content)</td><td>Opus at 32 kbps; short clips only. If it's outgrown, move media to R2 with signed URLs (pennies, inside the $10 ceiling)</td></tr>
+<tr><td>Chinese assumptions leak into the core</td><td>The toy pack from phase 0, and a lint rule against CJK literals in core</td></tr>
+<tr><td>Device clock skew misorders events</td><td>Derive tolerates small skew. Reviews use the later of <code>occurred_at</code> and the previous review time for the same card</td></tr>
+<tr><td>YouTube embeds disappear or fail (error 153 with a stripped Referer)</td><td>Ranked clip fallbacks; a <code>strict-origin-when-cross-origin</code> referrer policy; an availability check in CI that opens flags</td></tr>
+</table>
+<p><b style="font-weight:500">Open questions</b></p>
+<ol>
+<li>Are picture assets for meaning grids in v1, and from which openly licensed set?</li>
+<li>Desktop: a centered phone layout for v1, or a wider layout?</li>
+</ol>
+
+<h2 id="phases">15. Build phases</h2>
+<table>
+<tr><th>Phase</th><th>Delivers</th><th>Done when</th></tr>
+<tr><td>0. Skeleton and spikes</td><td>Monorepo; <code>packages/core</code> ids and events; the zh logic pack and the toy pack; content-tools parse, check and build into the app; Supabase auth, events table, bucket; Pages deploy. <b style="font-weight:500">Spike:</b> ingest one source end to end on the laptop</td><td>A signed-in phone loads a build, writes an event that the laptop pulls, and plays one ingested clip</td></tr>
+<tr><td>1. Lesson player</td><td>Widget registry plus 3 widgets, media adapter, trial runner, event store with outbox, derive v1; 3 reference lessons</td><td>A lesson plays on the phone, resumes after the app is killed, and its events sync to the laptop</td></tr>
+<tr><td>2. Daily loop</td><td>SRS replay, queue policy, session builder, day close, Today, review, summary; derive timing measured</td><td>The 15-minute bedtime flow works, and a two-device interleaving test passes</td></tr>
+<tr><td>3. Progress surfaces</td><td>The Path graph, Progress, Watch and log, item detail, test-out</td><td>All mockup screens work with real data</td></tr>
+<tr><td>4. Content throughput</td><td>The full ingester, <code>content:new</code> and <code>content:suggest</code>, the Claude drafting loop; author S0 and S1</td><td>A new unit goes from idea to deployed in one sitting</td></tr>
+<tr><td>5. Hardening</td><td>Restore drill from a dump, availability checks, superseded rule versions removed, TDD revised to match</td><td>The cleanup checklist is empty</td></tr>
+</table>
+</main>
+</div>
+
+<script>
+const NS='http://www.w3.org/2000/svg';
+function el(tag,attrs,parent,text){const e=document.createElementNS(NS,tag);for(const k in attrs)e.setAttribute(k,attrs[k]);if(text!=null)e.textContent=text;if(parent)parent.appendChild(e);return e}
+function wrap(t,max){const w=t.split(' ');const out=[];let cur='';for(const x of w){if((cur+' '+x).trim().length>max){out.push(cur.trim());cur=x}else cur+=' '+x}if(cur.trim())out.push(cur.trim());return out}
+function draw(id,spec){
+  const svg=document.getElementById(id);
+  const defs=el('defs',{},svg);const m=el('marker',{id:id+'-ah',viewBox:'0 0 10 10',refX:'8',refY:'5',markerWidth:'7',markerHeight:'7',orient:'auto-start-reverse'},defs);
+  el('path',{d:'M2 1L8 5L2 9',fill:'none',stroke:'var(--text-muted)','stroke-width':'1.6','stroke-linecap':'round','stroke-linejoin':'round'},m);
+  for(const b of spec.bounds||[]){el('rect',{x:b.x,y:b.y,width:b.w,height:b.h,rx:18,class:'bd'},svg);el('text',{x:b.lx??b.x+16,y:b.ly??b.y+24,class:'bl'},svg,b.l)}
+  for(const n of spec.nodes||[]){
+    const g=el('g',{},svg);
+    el('rect',{x:n.x,y:n.y,width:n.w,height:n.h,rx:n.k==='band'?16:12,class:'bx '+n.k,...(n.dash?{'stroke-dasharray':'5 4'}:{})},g);
+    if(n.k==='band'){el('text',{x:n.x+16,y:n.y+26,class:'tt'},g,n.t);if(n.ty)wrap(n.ty,18).forEach((l,i)=>el('text',{x:n.x+16,y:n.y+44+i*14,class:'ty'},g,l));continue}
+    const cx=n.x+n.w/2;let y=n.y+(n.d||n.ty?22:n.h/2+5);
+    el('text',{x:cx,y,'text-anchor':'middle',class:'tt'},g,n.t);
+    if(n.ty){y+=16;el('text',{x:cx,y,'text-anchor':'middle',class:'ty'},g,n.ty)}
+    if(n.d){const lines=wrap(n.d,Math.floor((n.w-20)/6.4));y+=4;lines.forEach((l,i)=>el('text',{x:cx,y:y+14+i*15,'text-anchor':'middle',class:'td'},g,l))}
+  }
+  for(const e of spec.edges||[]){
+    const d=e.p.map((pt,i)=>(i?'L':'M')+pt[0]+' '+pt[1]).join(' ');
+    el('path',{d,class:'ln'+(e.dash?' dash':''),'marker-end':`url(#${id}-ah)`},svg);
+    if(e.l){const w=e.l.length*6.3+16;const g=el('g',{class:'lp'},svg);el('rect',{x:e.lx-w/2,y:e.ly-11,width:w,height:21,rx:10},g);el('text',{x:e.lx,y:e.ly+4,'text-anchor':'middle'},g,e.l)}
+  }
+  for(const t of spec.texts||[])el('text',{x:t.x,y:t.y,class:t.c||'td','text-anchor':t.a||'start'},svg,t.t);
+}
+draw('d-context',{nodes:[
+ {k:'person',x:30,y:24,w:220,h:90,t:'Author',ty:'[Person]',d:'You, with Claude Code, on the laptop'},
+ {k:'person',x:370,y:24,w:220,h:90,t:'Learner',ty:'[Person]',d:'You, on phone and laptop, daily'},
+ {k:'ext',x:710,y:24,w:220,h:90,t:'Netflix and others',ty:'[External, not integrated]',d:'Watched outside; minutes logged by hand',dash:true},
+ {k:'sys',x:310,y:190,w:340,h:110,t:'Lang-learner',ty:'[Software system]',d:'Private web app: lessons, reviews, skill graph, watch log. New units are content; new languages are a pack plus content.'},
+ {k:'ext',x:20,y:384,w:170,h:90,t:'Supabase',ty:'[External]',d:'Auth, events, private content and media'},
+ {k:'ext',x:210,y:384,w:170,h:90,t:'Cloudflare Pages',ty:'[External]',d:'Static host for the app shell'},
+ {k:'ext',x:400,y:384,w:170,h:90,t:'YouTube',ty:'[External]',d:'Embedded video, foreground only'},
+ {k:'ext',x:590,y:384,w:170,h:90,t:'Open data, CC media',ty:'[External]',d:'CC-CEDICT, hsk30, Common Voice, …'},
+ {k:'ext',x:780,y:384,w:170,h:90,t:'GitHub',ty:'[External]',d:'Private repo, Actions CI'}],
+ edges:[
+ {p:[[480,114],[480,186]],l:'Uses daily (PWA)',lx:480,ly:152},
+ {p:[[220,114],[330,186]],l:'Edits content (git)',lx:262,ly:152},
+ {p:[[590,69],[706,69]],l:'Watches',lx:648,ly:56,dash:true},
+ {p:[[480,300],[105,380]],l:'Auth, data, media',lx:220,ly:356},
+ {p:[[480,300],[295,380]],l:'Hosted on',lx:352,ly:356},
+ {p:[[480,300],[485,380]],l:'Embeds',lx:483,ly:356},
+ {p:[[480,300],[675,380]],l:'Imports',lx:617,ly:356},
+ {p:[[480,300],[865,380]],l:'CI/CD',lx:749,ly:356}]});
+draw('d-containers',{bounds:[{x:20,y:110,w:700,h:470,l:'Lang-learner  [system boundary]',lx:36,ly:568}],
+ nodes:[
+ {k:'person',x:40,y:18,w:200,h:72,t:'Learner',ty:'[Person]',d:'Phone and laptop'},
+ {k:'person',x:490,y:18,w:210,h:72,t:'Author',ty:'[Person]',d:'You and Claude Code'},
+ {k:'cont',x:40,y:150,w:200,h:100,t:'Web app',ty:'[Vue 3 PWA, static]',d:'Screens, player, SRS, derive, event store'},
+ {k:'cont',x:275,y:150,w:190,h:100,t:'Media ingester',ty:'[Python, laptop GPU]',d:'CC audio, Whisper alignment, validation'},
+ {k:'cont',x:500,y:150,w:200,h:100,t:'Content toolchain',ty:'[Node CLI, laptop + CI]',d:'Check, compile, build into app'},
+ {k:'store',x:40,y:420,w:200,h:100,t:'Events DB',ty:'[Supabase Postgres]',d:'One append-only table, RLS'},
+ {k:'store',x:275,y:420,w:190,h:100,t:'Private bucket',ty:'[Supabase Storage]',d:'Content manifests and files, media clips'},
+ {k:'store',x:500,y:420,w:200,h:100,t:'Content source',ty:'[Private git repo]',d:'content/<lang>/, languages/<lang>/'},
+ {k:'ext',x:750,y:140,w:200,h:72,t:'Supabase Auth',ty:'[External]',d:'Email code sign-in'},
+ {k:'ext',x:750,y:228,w:200,h:72,t:'Cloudflare Pages',ty:'[External]',d:'Hosts the app shell'},
+ {k:'ext',x:750,y:316,w:200,h:72,t:'YouTube',ty:'[External]',d:'IFrame embeds'},
+ {k:'ext',x:750,y:404,w:200,h:72,t:'Open data, CC media',ty:'[External]',d:'Datasets and audio'},
+ {k:'ext',x:750,y:492,w:200,h:72,t:'GitHub Actions',ty:'[External]',d:'CI, weekly ping + dump'}],
+ edges:[
+ {p:[[140,90],[140,146]],l:'Uses',lx:140,ly:104},
+ {p:[[600,90],[600,146]],l:'Runs',lx:600,ly:104},
+ {p:[[520,90],[520,116],[370,116],[370,146]]},
+ {p:[[90,150],[90,126],[724,126],[724,176],[746,176]]},
+ {p:[[180,150],[180,134],[738,134],[738,352],[746,352]]},
+ {p:[[700,200],[730,200],[730,264],[746,264]]},
+ {p:[[140,250],[140,416]],l:'Events (push, pull)',lx:140,ly:330},
+ {p:[[210,250],[210,380],[320,380],[320,416]],l:'Content, clips (token)',lx:262,ly:380},
+ {p:[[400,250],[400,416]],l:'Uploads audio',lx:400,ly:350},
+ {p:[[440,250],[440,316],[590,316],[590,416]],l:'Media yaml',lx:520,ly:316},
+ {p:[[660,250],[660,416]],l:'Reads',lx:660,ly:360},
+ {p:[[610,250],[610,396],[452,396],[452,416]],l:'Uploads content (CI)',lx:530,ly:396},
+ {p:[[455,250],[455,282],[744,282],[744,440],[746,440]]},
+ {p:[[700,500],[740,500],[740,528],[746,528]]}]});
+(function(){const bands=[
+ ['Screens','Vue',[['Today','Time picker, up next'],['Path','Unit graph'],['Progress','Four answers'],['Watch','Log, suggestions']],'sys'],
+ ['Flows','Vue',[['Session runner','Queue of blocks'],['Lesson player','Skeleton slots'],['Review','Capped batch'],['Watch log','Sheet → events']],'sys'],
+ ['Domain','packages/core, no Vue',[['Session builder','Minutes → blocks'],['Trial runner','Feedback, retries'],['SRS','Replay, queue policy'],['Derive','Rules, day close']],'ext'],
+ ['Adapters','apps/web, no Vue',[['Event store','IndexedDB, sync'],['Content loader','Private bundle, cache'],['Media','YouTube, clip cache'],['Auth','Email code']],'ext']];
+ const nodes=[],edges=[];bands.forEach((b,i)=>{const y=14+i*108;nodes.push({k:'band',x:12,y,w:780,h:94,t:b[0],ty:b[1]});b[2].forEach((c,j)=>nodes.push({k:b[3],x:170+j*154,y:y+16,w:142,h:62,t:c[0],d:c[1]}));if(i<bands.length-1)edges.push({p:[[90,y+70],[90,y+120]]})});
+ nodes.push({k:'pack',x:812,y:14,w:136,h:202,t:'Pack views',ty:'[languages/zh/views]',d:'Item-kind views, Ruby, zh widgets (Vue)'});
+ nodes.push({k:'pack',x:812,y:230,w:136,h:202,t:'Pack logic',ty:'[languages/zh/logic]',d:'Analyzer, item keys, kinds, card templates'});
+ edges.push({p:[[792,115],[808,115]],dash:true},{p:[[792,331],[808,331]],dash:true});
+ draw('d-web',{nodes,edges,texts:[{x:800,y:448,t:'registered once in apps/web/src/languages.ts',c:'ty',a:'end'}]})})();
+draw('d-tool',{nodes:[
+ {k:'ext',x:195,y:16,w:300,h:88,t:'Dataset importers',ty:'[Pack build side]',d:'hsk30, CC-CEDICT, Make Me a Hanzi → generated/, license-tagged'},
+ {k:'ext',x:515,y:16,w:300,h:88,t:'Scaffold and suggest',ty:'[CLI]',d:'content:new, content:suggest, Claude drafting loop'},
+ {k:'store',x:20,y:150,w:150,h:88,t:'content/<lang>/',ty:'[Files in git]',d:'md, yaml, ts'},
+ {k:'cont',x:195,y:150,w:130,h:88,t:'Parser',ty:'[Component]',d:'Directives, frontmatter'},
+ {k:'cont',x:345,y:150,w:130,h:88,t:'Resolver',ty:'[Component]',d:'Ids, redirects, refs'},
+ {k:'cont',x:495,y:150,w:140,h:88,t:'Validator',ty:'[Component]',d:'Core rules + pack lint'},
+ {k:'cont',x:655,y:150,w:140,h:88,t:'Compiler',ty:'[Component]',d:'Hashes, ids.lock, shards'},
+ {k:'store',x:815,y:150,w:135,h:88,t:'Private bucket',ty:'[content/]',d:'Hash-named files, build manifest'},
+ {k:'cont',x:195,y:300,w:300,h:88,t:'Media ingester',ty:'[Python, laptop GPU]',d:'Fetch CC source → transcript → Whisper alignment → validate'},
+ {k:'pack',x:515,y:300,w:280,h:88,t:'Language pack (build)',ty:'[languages/zh/build]',d:'Lexicon, kinds, item keys, lint, media sources'},
+ {k:'store',x:815,y:300,w:135,h:88,t:'Private bucket',ty:'[media/]',d:'Validated clips'}],
+ edges:[
+ {p:[[250,104],[250,128],[95,128],[95,146]]},
+ {p:[[560,104],[560,120],[130,120],[130,146]]},
+ {p:[[170,194],[191,194]]},{p:[[325,194],[341,194]]},{p:[[475,194],[491,194]]},{p:[[635,194],[651,194]]},{p:[[795,194],[811,194]]},
+ {p:[[250,300],[250,272],[95,272],[95,242]],l:'media yaml',lx:172,ly:272},
+ {p:[[565,300],[565,242]],l:'rules',lx:565,ly:272},
+ {p:[[345,388],[345,414],[882,414],[882,392]],l:'upload clips',lx:620,ly:414}]});
+draw('d-ext',{nodes:[
+ {k:'ext',x:340,y:30,w:280,h:240,t:'packages/core',ty:'[Language-agnostic]',d:'Ids, items, lessons, skeleton, widgets, session, SRS, derive, events, LanguagePack interfaces'},
+ {k:'pack',x:40,y:30,w:220,h:70,t:'languages/zh',ty:'[Pack: built]',d:'logic · build · views'},
+ {k:'pack',x:40,y:115,w:220,h:70,t:'languages/ja',ty:'[Pack: future]',d:'Same three halves',dash:true},
+ {k:'pack',x:40,y:200,w:220,h:70,t:'languages/_toy',ty:'[Pack: tests only]',d:'Keeps the core honest'},
+ {k:'store',x:700,y:30,w:220,h:70,t:'content/zh',ty:'[Content]',d:'Curriculum, lessons, media'},
+ {k:'store',x:700,y:115,w:220,h:70,t:'content/ja',ty:'[Content]',d:'Same skeleton and widgets',dash:true},
+ {k:'ext',x:700,y:200,w:220,h:70,t:'Events',ty:'[Supabase]',d:'Every event carries lang'}],
+ edges:[
+ {p:[[260,65],[336,100]],l:'implements',lx:298,ly:72},{p:[[260,150],[336,150]],dash:true},{p:[[260,235],[336,200]]},
+ {p:[[620,100],[696,65]],l:'compiles',lx:658,ly:72},{p:[[620,150],[696,150]],dash:true},{p:[[620,200],[696,235]]}]});
+(function(){const L=[['Learner',90],['Web app',270],['Local store',450],['Supabase Auth',630],['Events DB',820]];const nodes=L.map(([t,x])=>({k:t==='Learner'?'person':t==='Web app'?'cont':t==='Events DB'?'store':'ext',x:x-75,y:14,w:150,h:44,t}));
+ const E=[],T=[];const msgs=[[0,1,'1. Opens the app'],[1,2,'2. Shell, cached bundle files, events'],[1,1,'3. Close yesterday, derive, plan 15 min'],[0,1,'4. Reviews, then a lesson'],[1,2,'5. Events into the log and outbox'],[1,3,'6. Refresh token (background)'],[1,4,'7. Push outbox (ignore dupes)'],[1,4,'8. Pull events where seq > cursor'],[4,1,'9. New events from the laptop',1],[1,1,'10. Re-derive if anything changed']];
+ msgs.forEach((m,i)=>{const y=100+i*42;const x1=L[m[0]][1],x2=L[m[1]][1];if(x1===x2){E.push({p:[[x1,y-8],[x1+46,y-8],[x1+46,y+8],[x1+4,y+8]]});T.push({x:x1+56,y:y+4,t:m[2]})}else{const dir=x2>x1?1:-1;E.push({p:[[x1+dir*2,y],[x2-dir*4,y]],dash:m[3]});T.push({x:(x1+x2)/2,y:y-7,t:m[2],a:'middle'})}});
+ const svg=document.getElementById('d-seq');L.forEach(([,x])=>el('line',{x1:x,y1:58,x2:x,y2:530,class:'life'},svg));
+ draw('d-seq',{nodes,edges:E,texts:T})})();
+draw('d-deploy',{bounds:[{x:20,y:20,w:230,h:200,l:'Phone or laptop browser'},{x:280,y:20,w:240,h:200,l:'Cloudflare Pages'},{x:550,y:20,w:220,h:330,l:'Supabase (free)'},{x:800,y:20,w:150,h:330,l:'GitHub'},{x:20,y:250,w:500,h:150,l:'Laptop (RTX 2070)'}],
+ nodes:[
+ {k:'cont',x:40,y:50,w:190,h:64,t:'Web app (PWA)',d:'Installed to home screen'},
+ {k:'store',x:40,y:124,w:190,h:80,t:'Local storage',d:'IndexedDB events, cached clips, bundle'},
+ {k:'cont',x:300,y:50,w:200,h:150,t:'Static build',ty:'[app shell]',d:'App code and fonts, with its content build id embedded'},
+ {k:'cont',x:570,y:50,w:180,h:64,t:'Auth',d:'Email code'},
+ {k:'store',x:570,y:124,w:180,h:90,t:'Postgres',d:'events table, RLS, insert-only'},
+ {k:'store',x:570,y:224,w:180,h:110,t:'Storage',d:'Private: content builds and files, media'},
+ {k:'store',x:815,y:50,w:120,h:64,t:'Repo',d:'Code + content'},
+ {k:'cont',x:815,y:124,w:120,h:100,t:'CI',d:'check → upload content → deploy'},
+ {k:'cont',x:815,y:234,w:120,h:100,t:'Weekly',d:'Ping + pg_dump (pooler)'},
+ {k:'cont',x:40,y:280,w:200,h:100,t:'Toolchain CLI',d:'content:new, check, build'},
+ {k:'cont',x:280,y:280,w:220,h:100,t:'Media ingester',d:'faster-whisper on GPU, validate, upload'}],
+ edges:[
+ {p:[[230,82],[296,92]],l:'HTTPS',lx:263,ly:74},
+ {p:[[135,50],[135,10],[660,10],[660,46]],l:'Auth, events, content, clips',lx:400,ly:12},
+ {p:[[935,174],[945,174],[945,362],[510,362],[510,204]],l:'Deploy',lx:720,ly:362},
+ {p:[[500,330],[566,300]],l:'Upload clips',lx:533,ly:356},
+ {p:[[240,380],[240,424],[875,424],[875,354]],l:'git push',lx:560,ly:424},
+ {p:[[815,284],[754,184]],l:'Ping, dump',lx:790,ly:250},
+ {p:[[815,210],[788,210],[788,300],[754,300]],l:'Content',lx:788,ly:320}]});
+const tb=document.getElementById('theme');
+function setTheme(t){document.documentElement.dataset.theme=t;tb.textContent=t==='dark'?'Light theme':'Dark theme';try{localStorage.setItem('arch-theme',t)}catch(e){}}
+let st=null;try{st=localStorage.getItem('arch-theme')}catch(e){}
+setTheme(st==='light'?'light':'dark');tb.onclick=()=>setTheme(document.documentElement.dataset.theme==='dark'?'light':'dark');
+</script>
+</body>
+</html>

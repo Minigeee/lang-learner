@@ -20,7 +20,9 @@ Design docs (`docs/design/`), built on the research:
 | Doc | What it is |
 |-----|------------|
 | [Activity brainstorm](../design/activity-brainstorm.md) | 24 interactables (X1–X24), per-shape I do / we do routines, 9 quiz/check archetypes with feedback rules, a draft variety-matrix sketch, a cut list. Not final. |
-| [TDD: curriculum data model](../design/tdd-curriculum-data-model.md) | Entity model, authoring format, interactable registry, check/compile pipeline, derive functions, phases. Proposed. |
+| [TDD: curriculum data model](../design/tdd-curriculum-data-model.md) | Entity model, authoring format, interactable registry, check/compile pipeline, derive functions, phases. Unreviewed first pass; the architecture doc overrides it where they differ (its §12). |
+| [App UI and flow](../design/app-ui-flow.md) | Navigation, screens, flows, visual style and UI copy rules; mockups board in `sandbox/ui-mockups/`. |
+| [Architecture](../design/architecture.html) | C4 architecture (context, containers, components, key contracts), language packs for adding languages, deployment, decisions, departures from the TDD, build phases. Open in a browser. Proposed. |
 
 Synthesis: see [Cross-topic synthesis](#cross-topic-synthesis) below (written after 01–06).
 
@@ -92,7 +94,7 @@ Every activity logs minutes under Refold's categories. Progress appears as three
 | SRS | FSRS-7 via `ts-fsrs` 6.0.0, with the version pinned (npm release confirmed 2026-10-28) and FSRS-6 as a config fallback. Append-only review logs. | 02 |
 | Backlog | Daily cap, retrievability-descending order with a 15% lowest-R tail, siblings buried, and the carried-over count hidden. New cards are zero while behind. No vacation mode. | 02 |
 | Lessons | One idea per lesson with a 5–7 min core. Native clip first, ≤300-word explanation, I do / we do / you do, and each lesson emits flashcards. Input before output: Phases 0–2 use output levels 0–1 only. | 06, 07, 03 §1.8 |
-| Content & authoring (proposed, TDD) | Content lives in the repo and compiles to a static, content-addressed JSON bundle served **behind the auth Worker**. No content in Postgres; Postgres holds only append-only facts. Lessons are markdown with `:::slot` containers, ```` ```@widget ```` YAML blocks and `:ex[…]{clip=…}` examples. One TS module owns order and `teaches`/`assumes`. Vue 3 + TS + Vite SPA, with only the views depending on Vue. Prerequisites live on knowledge items, so 03 §1.8's unit `Prereqs` column becomes a planning view. | TDD |
+| Content & authoring (proposed, TDD) | Content lives in the repo and compiles to hash-named files plus a per-build manifest in a private Supabase Storage bucket; each app build pins its manifest. No content in Postgres; Postgres holds only append-only facts. Lessons are markdown with `:::slot` containers, ```` ```@widget ```` YAML blocks and `:ex[…]{clip=…}` examples. One TS module owns order and `teaches`/`assumes`. Vue 3 + TS + Vite SPA, with only the views depending on Vue. Prerequisites live on knowledge items, so 03 §1.8's unit `Prereqs` column becomes a planning view. | TDD |
 | Data model principles | Knowledge items are the spine, and lessons, cards and mining point at them. Store facts and derive categories, XP and mastery. Use stable ids, with order, HSK level and Grammar Wiki as attributes. Media, clips and speakers are entities, with exposure tracking and fallback clips. One evidence → mastery model. Seed the graph from data, not from lessons. | 08 |
 | Activity types | **Proposed, not final** (doc 07): 18 candidate activities (T1–T18) on 7 dimensions; the activity follows the target skill (transfer-appropriate processing); four lesson shapes chosen by idea type (Sound, Pattern, Clip, Checkpoint); variety comes from content (voices, speakers, clips), interleaved confusables and support faded across a unit, not from rotating formats (no evidence that helps learning); at most 1 optional "wildcard" activity per unit; Nation strand balance checked weekly. Build to spec, Upgrade and Fix it are parked until Phase 4–5. | 07 |
 | Curriculum | S0 Sounds (14 units, perception only, mostly tested out) → S1 (18 units, ~300 words, all 40 Grammar Wiki A1 points, ~90% of HSK 2025 L1 grammar) → S2 (32 units, ~1,000 words, ~75 of 99 A2 points and nearly all HSK 2025 L2–3 structural grammar, including 把/被/complements); ~200 lessons. Each unit has a `Prereqs` column; the graph was machine-checked on 2026-11-02 (acyclic, no forward references). HSK **2025** syllabus as the word scaffold. Characters learned in context, with components shown on demand. | 03 |
@@ -101,8 +103,8 @@ Every activity logs minutes under Refold's categories. Progress appears as three
 | Progress meters | XP = focused minutes (in-app 1/min; logged immersion 0.5/min, capped at 20/day). Input hours and graph mastery are kept as separate meters. | 04 |
 | Knowledge graph | Sound / Script / Grammar layers plus lesson nodes, with mastery derived from FSRS stability and soft gates. On the phone: a frontier list plus rings. Cytoscape.js for the zoomable map. | 04 |
 | Leave out | Leagues, negative XP, hearts or gems, random rewards, guilt notifications, hard locks. | 04 |
-| Stack | Cloudflare Workers/Pages (frontend), Supabase Free (Postgres + email-OTP auth, signups off, RLS), private R2 behind an auth Worker (media), daily keep-alive ping, weekly `pg_dump`. | 05 |
-| Video | YouTube IFrame embeds only, `playsinline=1`. Our subtitles render below the player, synced by polling `getCurrentTime()`. Card audio replays a `start`/`end` span of the embed. No downloads or caption scraping. | 05, 03 |
+| Stack | **Revised 2026-11-02 (architecture rev 2):** two vendors, $0 with a ~$10 ceiling. Cloudflare Pages hosts the static app shell. Supabase Free provides email-code auth (signups off), one append-only `events` table (RLS, insert-only), and a private Storage bucket for the content bundle (pinned per build) and short native clips. A weekly GitHub Action pings Supabase and runs `pg_dump` through the pooler. No Worker, no R2 unless media outgrows 1 GB. | 05, architecture |
+| Video | YouTube IFrame embeds only, `playsinline=1`, foreground, online only. Our subtitles render below the player, synced by polling `getCurrentTime()`. Card audio comes from hosted, openly licensed clips (lesson-eligible media), not YouTube spans. No downloads or caption scraping. | 05, 03, architecture |
 | Native audio | `hugolpz/audio-cmn` (CC BY-SA), Wikimedia Commons, Common Voice, Global Storybooks (CC BY). **Most Tatoeba Mandarin audio is unlicensed**, so it is excluded by default. | 03, 05 |
 | Licensing | Store a license record per item and file, and show a credit line plus a Credits page. Ship the CC-CEDICT, LGPL and Arphic license texts. Staying non-commercial keeps Grammar Wiki (NC) excerpts usable. | 03, 05 |
 
@@ -127,16 +129,16 @@ Every activity logs minutes under Refold's categories. Progress appears as three
 
 ### Open decisions for the user
 
-1. Simplified only (recommended), or a Traditional toggle too? Mainland or Taiwan accent?
+1. ~~Simplified or Traditional?~~ **Decided 2026-11-02: simplified only.** `zh` is a language code; script is a display setting.
 2. Bring back "we do" guided practice, unlike vue-crash-course? (Recommended: yes. Doc 07's evidence supports it.)
 3. Adopt doc 07's framework (four lesson shapes, stable routines, content variety, a wildcard cap), or keep exploring?
 4. Shadowing: none until Phase 3D, optional and perception-gated from 1B (recommended), or in every "we do"?
 5. Accept Refold's near-zero meaningful output for ~1,500 h, given that a meta-analysis found production practice wins on delayed productive tests?
 6. How should English-subtitle Netflix count (resolution 3)?
 7. Should flashcards use 2-button (Again/Good, recommended for the phone) or 4-button grading?
-8. Is it OK to put a card on file with Cloudflare for R2? (No-card fallback: Backblaze B2.)
+8. ~~Card on file for R2?~~ **Decided: OK, with a ceiling of about $10/month.** R2 is not used unless media outgrows Supabase Storage.
 9. Should XP be visible at all, or only rings, hours and mastery?
-10. Lesson authoring: the TDD proposes repo-only markdown compiled to a private bundle, with no lesson editing from the phone. Accept?
+10. ~~Lesson authoring?~~ **Proposed in the architecture:** repo-only markdown, compiled into a private bundle in Supabase Storage that each app build pins.
 11. Who curates the clips and timestamps for the ~200 lessons, and when?
 12. Is the app non-commercial forever? That keeps the CC BY-NC sources usable.
-13. Frontend framework: the TDD proposes Vue 3 + TS + Vite. Accept?
+13. ~~Frontend framework?~~ **Proposed in the architecture:** Vue 3 + TS + Vite PWA.
