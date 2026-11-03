@@ -1,0 +1,26 @@
+{
+ "file": "pinyin_weng_2.mp3",
+ "text": "weng2",
+ "syllables": [
+  {
+   "char": "weng2",
+   "pinyin": "weng2",
+   "letters": "weng",
+   "tone": 2,
+   "accept": [
+    2
+   ],
+   "start": 0.265,
+   "end": 0.92,
+   "classifier": 1,
+   "classifier_p": 0.971,
+   "contour": 2,
+   "pass": false
+  }
+ ],
+ "tone_accuracy": 0.0,
+ "contour_accuracy": 1.0,
+ "scored": 1,
+ "group": "yoyo-sample",
+ "source": "yoyo native"
+}

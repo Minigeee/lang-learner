@@ -1,0 +1,35 @@
+{
+  "_about": "What each line of a-sentences.txt tests, and the reading a correct voice uses. Listen for these; Whisper can't hear tones.",
+  "a": [
+    {"line": 1, "trap": "3rd-tone sandhi", "listen": "你好 = ní hǎo"},
+    {"line": 2, "trap": "three 3rd tones in a row", "listen": "我也很好 = wó yě hén hǎo (or wǒ yé hén hǎo); never four full dips"},
+    {"line": 3, "trap": "sandhi plus question rise", "listen": "可以 = ké yǐ; 吗 neutral"},
+    {"line": 4, "trap": "一 sandhi", "listen": "一起 = yì qǐ, 一个 = yí gè"},
+    {"line": 5, "trap": "不 sandhi", "listen": "不是 = bú shì, 不对 = bú duì, 不要 = bú yào"},
+    {"line": 6, "trap": "不/没 and 不 sandhi", "listen": "没去 = méi qù, 不去 = bú qù"},
+    {"line": 7, "trap": "还 as hái", "listen": "还没 = hái méi"},
+    {"line": 8, "trap": "行 polyphone", "listen": "银行 = yínháng, 不行 = bù xíng"},
+    {"line": 9, "trap": "长 polyphone", "listen": "长大 = zhǎngdà, 很长 = hěn cháng"},
+    {"line": 10, "trap": "得 polyphone", "listen": "跑得 = pǎo de (neutral), 我得 = wǒ děi"},
+    {"line": 11, "trap": "了 polyphone", "listen": "好了 = hǎo le, 了解 = liǎojiě"},
+    {"line": 12, "trap": "还 polyphone", "listen": "还是 = háishì, 还书 = huán shū"},
+    {"line": 13, "trap": "都 polyphone", "listen": "都去过 = dōu, 首都 = shǒudū"},
+    {"line": 14, "trap": "东西 neutral vs full tone", "listen": "买东西 = dōngxi (neutral), 东西南北 = dōng xī"},
+    {"line": 15, "trap": "neutral tone and erhua", "listen": "妈妈 = māma, 哪儿 = nǎr, 一点儿 = yìdiǎnr"},
+    {"line": 16, "trap": "便宜 polyphone and erhua", "listen": "便宜 = piányi (not biàn)"},
+    {"line": 17, "trap": "choice question", "listen": "还是 = háishi; natural intonation"},
+    {"line": 18, "trap": "HSK 2 sentence, natural rhythm", "listen": "常常 = chángcháng, 一起 = yìqǐ"},
+    {"line": 19, "trap": "numbers and time", "listen": "八点 = bā diǎn"},
+    {"line": 20, "trap": "the pilot's cat story", "listen": "桌子 = zhuōzi (neutral), 一本 = yì běn, 哪儿 = nǎr"}
+  ],
+  "b": [
+    {"line": 1, "listen": "妈 mā, high and flat"},
+    {"line": 2, "listen": "麻 má, rising"},
+    {"line": 3, "listen": "马 mǎ, low dip"},
+    {"line": 4, "listen": "骂 mà, falling"},
+    {"line": 5, "listen": "汤 tāng, high and flat"},
+    {"line": 6, "listen": "糖 táng, rising"},
+    {"line": 7, "listen": "躺 tǎng, low dip"},
+    {"line": 8, "listen": "烫 tàng, falling"}
+  ]
+}

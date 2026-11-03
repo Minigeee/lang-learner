@@ -1,0 +1,26 @@
+{
+ "file": "pinyin_shen_3.mp3",
+ "text": "shen3",
+ "syllables": [
+  {
+   "char": "shen3",
+   "pinyin": "shen3",
+   "letters": "shen",
+   "tone": 3,
+   "accept": [
+    3
+   ],
+   "start": 0.184,
+   "end": 0.54,
+   "classifier": 3,
+   "classifier_p": 0.511,
+   "contour": null,
+   "pass": true
+  }
+ ],
+ "tone_accuracy": 1.0,
+ "contour_accuracy": 0.0,
+ "scored": 1,
+ "group": "yoyo-sample",
+ "source": "yoyo native"
+}

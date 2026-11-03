@@ -1,0 +1,26 @@
+{
+ "file": "pinyin_chuo_3.mp3",
+ "text": "chuo3",
+ "syllables": [
+  {
+   "char": "chuo3",
+   "pinyin": "chuo3",
+   "letters": "chuo",
+   "tone": 3,
+   "accept": [
+    3
+   ],
+   "start": 0.143,
+   "end": 0.65,
+   "classifier": 4,
+   "classifier_p": 0.442,
+   "contour": 4,
+   "pass": false
+  }
+ ],
+ "tone_accuracy": 0.0,
+ "contour_accuracy": 0.0,
+ "scored": 1,
+ "group": "yoyo-sample",
+ "source": "yoyo native"
+}

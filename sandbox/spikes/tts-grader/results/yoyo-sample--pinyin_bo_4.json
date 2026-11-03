@@ -1,0 +1,26 @@
+{
+ "file": "pinyin_bo_4.mp3",
+ "text": "bo4",
+ "syllables": [
+  {
+   "char": "bo4",
+   "pinyin": "bo4",
+   "letters": "bo",
+   "tone": 4,
+   "accept": [
+    4
+   ],
+   "start": 0.083,
+   "end": 0.25,
+   "classifier": 1,
+   "classifier_p": 0.966,
+   "contour": 1,
+   "pass": false
+  }
+ ],
+ "tone_accuracy": 0.0,
+ "contour_accuracy": 0.0,
+ "scored": 1,
+ "group": "yoyo-sample",
+ "source": "yoyo native"
+}

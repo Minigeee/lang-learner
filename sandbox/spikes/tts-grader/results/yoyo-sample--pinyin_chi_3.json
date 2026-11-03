@@ -1,0 +1,26 @@
+{
+ "file": "pinyin_chi_3.mp3",
+ "text": "chi3",
+ "syllables": [
+  {
+   "char": "chi3",
+   "pinyin": "chi3",
+   "letters": "chi",
+   "tone": 3,
+   "accept": [
+    3
+   ],
+   "start": 0.042,
+   "end": 0.29,
+   "classifier": 2,
+   "classifier_p": 0.648,
+   "contour": null,
+   "pass": false
+  }
+ ],
+ "tone_accuracy": 0.0,
+ "contour_accuracy": 0.0,
+ "scored": 1,
+ "group": "yoyo-sample",
+ "source": "yoyo native"
+}

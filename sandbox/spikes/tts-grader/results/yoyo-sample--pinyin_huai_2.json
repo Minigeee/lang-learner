@@ -1,0 +1,26 @@
+{
+ "file": "pinyin_huai_2.mp3",
+ "text": "huai2",
+ "syllables": [
+  {
+   "char": "huai2",
+   "pinyin": "huai2",
+   "letters": "huai",
+   "tone": 2,
+   "accept": [
+    2
+   ],
+   "start": 0.141,
+   "end": 0.77,
+   "classifier": 2,
+   "classifier_p": 0.963,
+   "contour": 2,
+   "pass": true
+  }
+ ],
+ "tone_accuracy": 1.0,
+ "contour_accuracy": 1.0,
+ "scored": 1,
+ "group": "yoyo-sample",
+ "source": "yoyo native"
+}

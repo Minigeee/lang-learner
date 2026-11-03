@@ -1,0 +1,74 @@
+[
+ {
+  "group": "s1",
+  "source": "native1 (gender ?, +7/-0)",
+  "path": "clips-norm/s1-s1-native1.wav",
+  "text": "它们可以是独居或成对生活。"
+ },
+ {
+  "group": "s1",
+  "source": "native2 (gender ?, +3/-0)",
+  "path": "clips-norm/s1-s1-native2.wav",
+  "text": "它们可以是独居或成对生活。"
+ },
+ {
+  "group": "s1",
+  "source": "native3 (gender ?, +3/-0)",
+  "path": "clips-norm/s1-s1-native3.wav",
+  "text": "它们可以是独居或成对生活。"
+ },
+ {
+  "group": "s1",
+  "source": "11labs v4 ByhETI",
+  "path": "clips-norm/s1-s1-v4-ByhETI.wav",
+  "text": "它们可以是独居或成对生活。"
+ },
+ {
+  "group": "s1",
+  "source": "11labs v4 DowyQ6",
+  "path": "clips-norm/s1-s1-v4-DowyQ6.wav",
+  "text": "它们可以是独居或成对生活。"
+ },
+ {
+  "group": "s2",
+  "source": "native1 (gender ?, +9/-2)",
+  "path": "clips-norm/s2-s2-native1.wav",
+  "text": "这里的天气真好"
+ },
+ {
+  "group": "s2",
+  "source": "native2 (male_masculine, +2/-1)",
+  "path": "clips-norm/s2-s2-native2.wav",
+  "text": "这里的天气真好"
+ },
+ {
+  "group": "s2",
+  "source": "native3 (gender ?, +6/-0)",
+  "path": "clips-norm/s2-s2-native3.wav",
+  "text": "这里的天气真好"
+ },
+ {
+  "group": "s2",
+  "source": "11labs v4 ByhETI",
+  "path": "clips-norm/s2-s2-v4-ByhETI.wav",
+  "text": "这里的天气真好"
+ },
+ {
+  "group": "s2",
+  "source": "11labs v4 DowyQ6",
+  "path": "clips-norm/s2-s2-v4-DowyQ6.wav",
+  "text": "这里的天气真好"
+ },
+ {
+  "group": "syllables",
+  "source": "11labs v4 ByhETI",
+  "path": "clips-norm/syllables-b-eleven_v4-ByhETIclHirOlWnWKhHc.wav",
+  "text": "妈麻马骂汤糖躺烫"
+ },
+ {
+  "group": "syllables",
+  "source": "11labs v4 DowyQ6",
+  "path": "clips-norm/syllables-b-eleven_v4-DowyQ68vDpgFYdWVGjc3.wav",
+  "text": "妈麻马骂汤糖躺烫"
+ }
+]

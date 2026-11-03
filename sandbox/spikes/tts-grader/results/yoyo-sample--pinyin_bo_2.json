@@ -1,0 +1,26 @@
+{
+ "file": "pinyin_bo_2.mp3",
+ "text": "bo2",
+ "syllables": [
+  {
+   "char": "bo2",
+   "pinyin": "bo2",
+   "letters": "bo",
+   "tone": 2,
+   "accept": [
+    2
+   ],
+   "start": 0.021,
+   "end": 0.61,
+   "classifier": 2,
+   "classifier_p": 0.955,
+   "contour": 2,
+   "pass": true
+  }
+ ],
+ "tone_accuracy": 1.0,
+ "contour_accuracy": 1.0,
+ "scored": 1,
+ "group": "yoyo-sample",
+ "source": "yoyo native"
+}

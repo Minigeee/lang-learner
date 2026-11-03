@@ -1,0 +1,26 @@
+{
+ "file": "pinyin_di_3.mp3",
+ "text": "di3",
+ "syllables": [
+  {
+   "char": "di3",
+   "pinyin": "di3",
+   "letters": "di",
+   "tone": 3,
+   "accept": [
+    3
+   ],
+   "start": 0.001,
+   "end": 0.49,
+   "classifier": 4,
+   "classifier_p": 0.947,
+   "contour": 4,
+   "pass": false
+  }
+ ],
+ "tone_accuracy": 0.0,
+ "contour_accuracy": 0.0,
+ "scored": 1,
+ "group": "yoyo-sample",
+ "source": "yoyo native"
+}

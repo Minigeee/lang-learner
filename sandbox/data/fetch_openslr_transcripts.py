@@ -16,7 +16,8 @@ from pathlib import Path
 
 OUT = Path(__file__).resolve().parent / "openslr"
 USER_AGENT = "lang-learner-fetch/1.0"
-MIRROR = "https://www.openslr.org/resources"
+# The ELDA mirror measured ~4x faster than www.openslr.org from here (2026-11-03).
+MIRROR = "https://openslr.elda.org/resources"
 
 
 def aishell1(name, f):

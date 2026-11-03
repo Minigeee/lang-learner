@@ -20,3 +20,15 @@ cv-full,sentences with only unvalidated clips,6640
 cv-full,learner-fit with a validated clip (S2 rule),3784
 cv-full,learner-fit with a validated clip (S1 rule),1474
 cv-full,distinct voices (validated),5828
+openslr-aishell1,unique sentences,133871
+openslr-aishell1,speakers,400
+openslr-aishell1,learner-fit (S1 rule),3329
+openslr-aishell1,learner-fit (S2 rule),12976
+openslr-aishell3,unique sentences,84991
+openslr-aishell3,speakers,218
+openslr-aishell3,learner-fit (S1 rule),12787
+openslr-aishell3,learner-fit (S2 rule),22767
+openslr-thchs30,unique sentences,1000
+openslr-thchs30,speakers,60
+openslr-thchs30,learner-fit (S1 rule),0
+openslr-thchs30,learner-fit (S2 rule),0

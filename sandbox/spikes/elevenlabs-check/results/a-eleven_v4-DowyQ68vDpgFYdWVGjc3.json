@@ -1,0 +1,150 @@
+{
+  "file": "a-eleven_v4-DowyQ68vDpgFYdWVGjc3.mp3",
+  "script": "a-sentences.txt",
+  "duration_s": 55.1,
+  "heard": "你好,很高兴认识你。我也很好,谢谢。可以吗?我们一起去吧,一个人去不好玩。不是这个,不对,我不要。他昨天没去,今天也不去。我还没吃饭,我去银行取钱,这样不行。孩子长大了,头发也很长,他跑得很快,我得走了。好了,我了解了,你还是去图书馆还书吧。我们都去过北京北京是中国的首都我去商店买东西东西南北你分得清吗妈妈在哪儿请说慢一点这件衣服太贵了便宜一点吧你喝咖啡还是喝茶周末我常常和朋友一起去公园散步我们明天早上八点见猫在哪儿猫不在椅子上猫在桌子上桌子上有一本书猫在书上",
+  "cer": 0.009,
+  "pinyin_error_rate": 0.009,
+  "lines": [
+    {
+      "line": 1,
+      "text": "你好，很高兴认识你。",
+      "heard": "你好很高兴认识你",
+      "char_errors": 0,
+      "pinyin_errors": 0
+    },
+    {
+      "line": 2,
+      "text": "我也很好，谢谢。",
+      "heard": "我也很好谢谢",
+      "char_errors": 0,
+      "pinyin_errors": 0
+    },
+    {
+      "line": 3,
+      "text": "可以吗？",
+      "heard": "可以吗",
+      "char_errors": 0,
+      "pinyin_errors": 0
+    },
+    {
+      "line": 4,
+      "text": "我们一起去吧，一个人去不好玩。",
+      "heard": "我们一起去吧一个人去不好玩",
+      "char_errors": 0,
+      "pinyin_errors": 0
+    },
+    {
+      "line": 5,
+      "text": "不是这个，不对，我不要。",
+      "heard": "不是这个不对我不要",
+      "char_errors": 0,
+      "pinyin_errors": 0
+    },
+    {
+      "line": 6,
+      "text": "他昨天没去，今天也不去。",
+      "heard": "他昨天没去今天也不去",
+      "char_errors": 0,
+      "pinyin_errors": 0
+    },
+    {
+      "line": 7,
+      "text": "我还没吃饭。",
+      "heard": "我还没吃饭",
+      "char_errors": 0,
+      "pinyin_errors": 0
+    },
+    {
+      "line": 8,
+      "text": "我去银行取钱，这样不行。",
+      "heard": "我去银行取钱这样不行",
+      "char_errors": 0,
+      "pinyin_errors": 0
+    },
+    {
+      "line": 9,
+      "text": "孩子长大了，头发也很长。",
+      "heard": "孩子长大了头发也很长",
+      "char_errors": 0,
+      "pinyin_errors": 0
+    },
+    {
+      "line": 10,
+      "text": "他跑得很快，我得走了。",
+      "heard": "他跑得很快我得走了",
+      "char_errors": 0,
+      "pinyin_errors": 0
+    },
+    {
+      "line": 11,
+      "text": "好了，我了解了。",
+      "heard": "好了我了解了",
+      "char_errors": 0,
+      "pinyin_errors": 0
+    },
+    {
+      "line": 12,
+      "text": "你还是去图书馆还书吧。",
+      "heard": "你还是去图书馆还书吧",
+      "char_errors": 0,
+      "pinyin_errors": 0
+    },
+    {
+      "line": 13,
+      "text": "我们都去过北京，北京是中国的首都。",
+      "heard": "我们都去过北京北京是中国的首都",
+      "char_errors": 0,
+      "pinyin_errors": 0
+    },
+    {
+      "line": 14,
+      "text": "我去商店买东西。东西南北你分得清吗？",
+      "heard": "我去商店买东西东西南北你分得清吗",
+      "char_errors": 0,
+      "pinyin_errors": 0
+    },
+    {
+      "line": 15,
+      "text": "妈妈在哪儿？请说慢一点儿。",
+      "heard": "妈妈在哪儿请说慢一点",
+      "char_errors": 1,
+      "pinyin_errors": 1
+    },
+    {
+      "line": 16,
+      "text": "这件衣服太贵了，便宜一点儿吧。",
+      "heard": "这件衣服太贵了便宜一点吧",
+      "char_errors": 1,
+      "pinyin_errors": 1
+    },
+    {
+      "line": 17,
+      "text": "你喝咖啡还是喝茶？",
+      "heard": "你喝咖啡还是喝茶",
+      "char_errors": 0,
+      "pinyin_errors": 0
+    },
+    {
+      "line": 18,
+      "text": "周末我常常和朋友一起去公园散步。",
+      "heard": "周末我常常和朋友一起去公园散步",
+      "char_errors": 0,
+      "pinyin_errors": 0
+    },
+    {
+      "line": 19,
+      "text": "我们明天早上八点见。",
+      "heard": "我们明天早上八点见",
+      "char_errors": 0,
+      "pinyin_errors": 0
+    },
+    {
+      "line": 20,
+      "text": "猫在哪儿？猫不在椅子上。猫在桌子上。桌子上有一本书。猫在书上！",
+      "heard": "猫在哪儿猫不在椅子上猫在桌子上桌子上有一本书猫在书上",
+      "char_errors": 0,
+      "pinyin_errors": 0
+    }
+  ]
+}

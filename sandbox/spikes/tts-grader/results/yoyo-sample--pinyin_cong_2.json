@@ -1,0 +1,26 @@
+{
+ "file": "pinyin_cong_2.mp3",
+ "text": "cong2",
+ "syllables": [
+  {
+   "char": "cong2",
+   "pinyin": "cong2",
+   "letters": "cong",
+   "tone": 2,
+   "accept": [
+    2
+   ],
+   "start": 0.062,
+   "end": 0.67,
+   "classifier": 1,
+   "classifier_p": 0.675,
+   "contour": 2,
+   "pass": false
+  }
+ ],
+ "tone_accuracy": 0.0,
+ "contour_accuracy": 1.0,
+ "scored": 1,
+ "group": "yoyo-sample",
+ "source": "yoyo native"
+}

@@ -1,0 +1,116 @@
+{
+ "file": "s2-native1.mp3",
+ "text": "这里的天气真好",
+ "syllables": [
+  {
+   "char": "这",
+   "pinyin": "zhe4",
+   "letters": "zhe",
+   "tone": 4,
+   "accept": [
+    4
+   ],
+   "start": 0.602,
+   "end": 0.803,
+   "classifier": 1,
+   "classifier_p": 0.76,
+   "contour": 1,
+   "pass": false
+  },
+  {
+   "char": "里",
+   "pinyin": "li3",
+   "letters": "li",
+   "tone": 3,
+   "accept": [
+    3
+   ],
+   "start": 0.783,
+   "end": 0.963,
+   "classifier": 3,
+   "classifier_p": 0.547,
+   "contour": 4,
+   "pass": true
+  },
+  {
+   "char": "的",
+   "pinyin": "de5",
+   "letters": "de",
+   "tone": 5,
+   "accept": [
+    5
+   ],
+   "start": 0.943,
+   "end": 1.1,
+   "classifier": 4,
+   "classifier_p": 0.455,
+   "contour": 4,
+   "pass": null
+  },
+  {
+   "char": "天",
+   "pinyin": "tian1",
+   "letters": "tian",
+   "tone": 1,
+   "accept": [
+    1
+   ],
+   "start": 1.084,
+   "end": 1.305,
+   "classifier": 1,
+   "classifier_p": 0.946,
+   "contour": 1,
+   "pass": true
+  },
+  {
+   "char": "气",
+   "pinyin": "qi4",
+   "letters": "qi",
+   "tone": 4,
+   "accept": [
+    4
+   ],
+   "start": 1.285,
+   "end": 1.465,
+   "classifier": 1,
+   "classifier_p": 0.962,
+   "contour": 4,
+   "pass": false
+  },
+  {
+   "char": "真",
+   "pinyin": "zhen1",
+   "letters": "zhen",
+   "tone": 1,
+   "accept": [
+    1
+   ],
+   "start": 1.445,
+   "end": 1.666,
+   "classifier": 1,
+   "classifier_p": 0.974,
+   "contour": 2,
+   "pass": true
+  },
+  {
+   "char": "好",
+   "pinyin": "hao3",
+   "letters": "hao",
+   "tone": 3,
+   "accept": [
+    3
+   ],
+   "start": 1.646,
+   "end": 1.85,
+   "classifier": 4,
+   "classifier_p": 0.565,
+   "contour": 4,
+   "pass": false
+  }
+ ],
+ "tone_accuracy": 0.5,
+ "contour_accuracy": 0.333,
+ "scored": 6,
+ "group": "s2",
+ "source": "native1 (gender ?, +9/-2)"
+}

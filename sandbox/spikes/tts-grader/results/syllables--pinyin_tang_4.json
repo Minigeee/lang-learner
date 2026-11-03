@@ -1,0 +1,26 @@
+{
+ "file": "pinyin_tang_4.mp3",
+ "text": "tang4",
+ "syllables": [
+  {
+   "char": "tang4",
+   "pinyin": "tang4",
+   "letters": "tang",
+   "tone": 4,
+   "accept": [
+    4
+   ],
+   "start": 0.001,
+   "end": 0.4,
+   "classifier": 4,
+   "classifier_p": 0.979,
+   "contour": null,
+   "pass": true
+  }
+ ],
+ "tone_accuracy": 1.0,
+ "contour_accuracy": 0.0,
+ "scored": 1,
+ "group": "syllables",
+ "source": "yoyo native"
+}

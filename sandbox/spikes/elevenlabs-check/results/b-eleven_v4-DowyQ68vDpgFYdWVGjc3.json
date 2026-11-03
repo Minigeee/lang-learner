@@ -1,0 +1,82 @@
+{
+  "file": "b-eleven_v4-DowyQ68vDpgFYdWVGjc3.mp3",
+  "script": "b-syllables.txt",
+  "duration_s": 7.4,
+  "heard": "妈 马 马 马汤 汤 汤 汤",
+  "cer": 0.625,
+  "pinyin_error_rate": 0.0,
+  "lines": [
+    {
+      "line": 1,
+      "text": "妈。",
+      "heard": "妈",
+      "char_errors": 0,
+      "pinyin_errors": 0,
+      "heard_pinyin": "ma1",
+      "expected_pinyin": "ma1"
+    },
+    {
+      "line": 2,
+      "text": "麻。",
+      "heard": "马",
+      "char_errors": 1,
+      "pinyin_errors": 0,
+      "heard_pinyin": "ma3",
+      "expected_pinyin": "ma2"
+    },
+    {
+      "line": 3,
+      "text": "马。",
+      "heard": "马",
+      "char_errors": 0,
+      "pinyin_errors": 0,
+      "heard_pinyin": "ma3",
+      "expected_pinyin": "ma3"
+    },
+    {
+      "line": 4,
+      "text": "骂。",
+      "heard": "马",
+      "char_errors": 1,
+      "pinyin_errors": 0,
+      "heard_pinyin": "ma3",
+      "expected_pinyin": "ma4"
+    },
+    {
+      "line": 5,
+      "text": "汤。",
+      "heard": "汤",
+      "char_errors": 0,
+      "pinyin_errors": 0,
+      "heard_pinyin": "tang1",
+      "expected_pinyin": "tang1"
+    },
+    {
+      "line": 6,
+      "text": "糖。",
+      "heard": "汤",
+      "char_errors": 1,
+      "pinyin_errors": 0,
+      "heard_pinyin": "tang1",
+      "expected_pinyin": "tang2"
+    },
+    {
+      "line": 7,
+      "text": "躺。",
+      "heard": "汤",
+      "char_errors": 1,
+      "pinyin_errors": 0,
+      "heard_pinyin": "tang1",
+      "expected_pinyin": "tang3"
+    },
+    {
+      "line": 8,
+      "text": "烫。",
+      "heard": "汤",
+      "char_errors": 1,
+      "pinyin_errors": 0,
+      "heard_pinyin": "tang1",
+      "expected_pinyin": "tang4"
+    }
+  ]
+}

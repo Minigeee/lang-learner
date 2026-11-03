@@ -1,0 +1,98 @@
+[
+ {
+  "group": "s1",
+  "source": "native1 (gender ?, +7/-0)",
+  "file": "s1-s1-native1.wav",
+  "tone_accuracy": 0.818,
+  "contour_accuracy": 0.455,
+  "scored": 11
+ },
+ {
+  "group": "s1",
+  "source": "native2 (gender ?, +3/-0)",
+  "file": "s1-s1-native2.wav",
+  "tone_accuracy": 0.909,
+  "contour_accuracy": 0.727,
+  "scored": 11
+ },
+ {
+  "group": "s1",
+  "source": "native3 (gender ?, +3/-0)",
+  "file": "s1-s1-native3.wav",
+  "tone_accuracy": 0.636,
+  "contour_accuracy": 0.2,
+  "scored": 11
+ },
+ {
+  "group": "s1",
+  "source": "11labs v4 ByhETI",
+  "file": "s1-s1-v4-ByhETI.wav",
+  "tone_accuracy": 0.727,
+  "contour_accuracy": 0.455,
+  "scored": 11
+ },
+ {
+  "group": "s1",
+  "source": "11labs v4 DowyQ6",
+  "file": "s1-s1-v4-DowyQ6.wav",
+  "tone_accuracy": 0.545,
+  "contour_accuracy": 0.6,
+  "scored": 11
+ },
+ {
+  "group": "s2",
+  "source": "native1 (gender ?, +9/-2)",
+  "file": "s2-s2-native1.wav",
+  "tone_accuracy": 0.5,
+  "contour_accuracy": 0.333,
+  "scored": 6
+ },
+ {
+  "group": "s2",
+  "source": "native2 (male_masculine, +2/-1)",
+  "file": "s2-s2-native2.wav",
+  "tone_accuracy": 0.667,
+  "contour_accuracy": 0.4,
+  "scored": 6
+ },
+ {
+  "group": "s2",
+  "source": "native3 (gender ?, +6/-0)",
+  "file": "s2-s2-native3.wav",
+  "tone_accuracy": 0.667,
+  "contour_accuracy": 0.4,
+  "scored": 6
+ },
+ {
+  "group": "s2",
+  "source": "11labs v4 ByhETI",
+  "file": "s2-s2-v4-ByhETI.wav",
+  "tone_accuracy": 0.667,
+  "contour_accuracy": 0.4,
+  "scored": 6
+ },
+ {
+  "group": "s2",
+  "source": "11labs v4 DowyQ6",
+  "file": "s2-s2-v4-DowyQ6.wav",
+  "tone_accuracy": 0.5,
+  "contour_accuracy": 0.4,
+  "scored": 6
+ },
+ {
+  "group": "syllables",
+  "source": "11labs v4 ByhETI",
+  "file": "syllables-b-eleven_v4-ByhETIclHirOlWnWKhHc.wav",
+  "tone_accuracy": 0.75,
+  "contour_accuracy": 0.5,
+  "scored": 8
+ },
+ {
+  "group": "syllables",
+  "source": "11labs v4 DowyQ6",
+  "file": "syllables-b-eleven_v4-DowyQ68vDpgFYdWVGjc3.wav",
+  "tone_accuracy": 0.875,
+  "contour_accuracy": 0.857,
+  "scored": 8
+ }
+]

@@ -1,0 +1,26 @@
+{
+ "file": "pinyin_sa_1.mp3",
+ "text": "sa1",
+ "syllables": [
+  {
+   "char": "sa1",
+   "pinyin": "sa1",
+   "letters": "sa",
+   "tone": 1,
+   "accept": [
+    1
+   ],
+   "start": 0.187,
+   "end": 0.68,
+   "classifier": 1,
+   "classifier_p": 0.974,
+   "contour": 1,
+   "pass": true
+  }
+ ],
+ "tone_accuracy": 1.0,
+ "contour_accuracy": 1.0,
+ "scored": 1,
+ "group": "yoyo-sample",
+ "source": "yoyo native"
+}

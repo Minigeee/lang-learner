@@ -12,3 +12,5 @@ Temporary and experimental work: mockups, spikes, throwaway prototypes. Nothing 
 | `spikes/sync-replay/` | Spike D: two-device event-log sync and FSRS replay correctness and performance. See its FINDINGS.md. |
 | `spikes/authoring-format/` | Spike E: lesson authoring format, mini toolchain, zh analyzer accuracy. See its FINDINGS.md. |
 | `spikes/figure-drawing/` | Spike F: making LLM-authored lesson figures look better without image models. Compares raw SVG, a render-and-critique loop, a scene spec plus parts library, and emoji. Run `node src/build.mjs`, then open `index.html`. See its FINDINGS.md. |
+| `spikes/elevenlabs-check/` | ElevenLabs v4 test: a trap-heavy test text, `gen.py` to synthesize (key from `.env.development.local`), and `check.py` for a Whisper round trip. Audio is gitignored. |
+| `spikes/tts-grader/` | Deterministic tone grader (forced alignment plus a tone classifier) run on native Common Voice speakers and ElevenLabs v4. See its README. |

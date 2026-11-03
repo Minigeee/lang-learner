@@ -1,0 +1,26 @@
+{
+ "file": "pinyin_cha_1.mp3",
+ "text": "cha1",
+ "syllables": [
+  {
+   "char": "cha1",
+   "pinyin": "cha1",
+   "letters": "cha",
+   "tone": 1,
+   "accept": [
+    1
+   ],
+   "start": 0.081,
+   "end": 0.66,
+   "classifier": 1,
+   "classifier_p": 0.973,
+   "contour": 1,
+   "pass": true
+  }
+ ],
+ "tone_accuracy": 1.0,
+ "contour_accuracy": 1.0,
+ "scored": 1,
+ "group": "yoyo-sample",
+ "source": "yoyo native"
+}

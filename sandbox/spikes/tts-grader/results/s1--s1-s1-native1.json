@@ -1,0 +1,191 @@
+{
+ "file": "s1-s1-native1.wav",
+ "text": "它们可以是独居或成对生活。",
+ "syllables": [
+  {
+   "char": "它",
+   "pinyin": "ta1",
+   "letters": "ta",
+   "tone": 1,
+   "accept": [
+    1
+   ],
+   "start": 0.541,
+   "end": 0.702,
+   "classifier": 1,
+   "classifier_p": 0.945,
+   "contour": 1,
+   "pass": true
+  },
+  {
+   "char": "们",
+   "pinyin": "men5",
+   "letters": "men",
+   "tone": 5,
+   "accept": [
+    5
+   ],
+   "start": 0.682,
+   "end": 0.842,
+   "classifier": 4,
+   "classifier_p": 0.588,
+   "contour": 4,
+   "pass": null
+  },
+  {
+   "char": "可",
+   "pinyin": "ke2",
+   "letters": "ke",
+   "tone": 2,
+   "accept": [
+    2
+   ],
+   "start": 0.822,
+   "end": 1.062,
+   "classifier": 2,
+   "classifier_p": 0.953,
+   "contour": 1,
+   "pass": true
+  },
+  {
+   "char": "以",
+   "pinyin": "yi3",
+   "letters": "yi",
+   "tone": 3,
+   "accept": [
+    3
+   ],
+   "start": 1.042,
+   "end": 1.163,
+   "classifier": 2,
+   "classifier_p": 0.609,
+   "contour": 4,
+   "pass": false
+  },
+  {
+   "char": "是",
+   "pinyin": "shi4",
+   "letters": "shi",
+   "tone": 4,
+   "accept": [
+    4
+   ],
+   "start": 1.143,
+   "end": 1.263,
+   "classifier": 2,
+   "classifier_p": 0.357,
+   "contour": 3,
+   "pass": false
+  },
+  {
+   "char": "独",
+   "pinyin": "du2",
+   "letters": "du",
+   "tone": 2,
+   "accept": [
+    2
+   ],
+   "start": 1.243,
+   "end": 1.443,
+   "classifier": 2,
+   "classifier_p": 0.968,
+   "contour": 2,
+   "pass": true
+  },
+  {
+   "char": "居",
+   "pinyin": "ju1",
+   "letters": "ju",
+   "tone": 1,
+   "accept": [
+    1
+   ],
+   "start": 1.423,
+   "end": 1.73,
+   "classifier": 1,
+   "classifier_p": 0.896,
+   "contour": 2,
+   "pass": true
+  },
+  {
+   "char": "或",
+   "pinyin": "huo4",
+   "letters": "huo",
+   "tone": 4,
+   "accept": [
+    4
+   ],
+   "start": 1.744,
+   "end": 1.96,
+   "classifier": 4,
+   "classifier_p": 0.926,
+   "contour": 4,
+   "pass": true
+  },
+  {
+   "char": "成",
+   "pinyin": "cheng2",
+   "letters": "cheng",
+   "tone": 2,
+   "accept": [
+    2
+   ],
+   "start": 2.085,
+   "end": 2.365,
+   "classifier": 2,
+   "classifier_p": 0.969,
+   "contour": 2,
+   "pass": true
+  },
+  {
+   "char": "对",
+   "pinyin": "dui4",
+   "letters": "dui",
+   "tone": 4,
+   "accept": [
+    4
+   ],
+   "start": 2.345,
+   "end": 2.53,
+   "classifier": 4,
+   "classifier_p": 0.955,
+   "contour": 4,
+   "pass": true
+  },
+  {
+   "char": "生",
+   "pinyin": "sheng1",
+   "letters": "sheng",
+   "tone": 1,
+   "accept": [
+    1
+   ],
+   "start": 2.546,
+   "end": 2.786,
+   "classifier": 1,
+   "classifier_p": 0.936,
+   "contour": 4,
+   "pass": true
+  },
+  {
+   "char": "活",
+   "pinyin": "huo2",
+   "letters": "huo",
+   "tone": 2,
+   "accept": [
+    2
+   ],
+   "start": 2.766,
+   "end": 2.95,
+   "classifier": 2,
+   "classifier_p": 0.966,
+   "contour": 4,
+   "pass": true
+  }
+ ],
+ "tone_accuracy": 0.818,
+ "contour_accuracy": 0.455,
+ "scored": 11,
+ "group": "s1",
+ "source": "native1 (gender ?, +7/-0)"
+}

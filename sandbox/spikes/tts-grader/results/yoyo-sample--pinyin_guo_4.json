@@ -1,0 +1,26 @@
+{
+ "file": "pinyin_guo_4.mp3",
+ "text": "guo4",
+ "syllables": [
+  {
+   "char": "guo4",
+   "pinyin": "guo4",
+   "letters": "guo",
+   "tone": 4,
+   "accept": [
+    4
+   ],
+   "start": 0.082,
+   "end": 0.39,
+   "classifier": 4,
+   "classifier_p": 0.932,
+   "contour": 4,
+   "pass": true
+  }
+ ],
+ "tone_accuracy": 1.0,
+ "contour_accuracy": 1.0,
+ "scored": 1,
+ "group": "yoyo-sample",
+ "source": "yoyo native"
+}

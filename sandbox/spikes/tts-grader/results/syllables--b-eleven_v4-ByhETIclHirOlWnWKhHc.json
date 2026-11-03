@@ -1,0 +1,131 @@
+{
+ "file": "b-eleven_v4-ByhETIclHirOlWnWKhHc.mp3",
+ "text": "妈麻马骂汤糖躺烫",
+ "syllables": [
+  {
+   "char": "妈",
+   "pinyin": "ma1",
+   "letters": "ma",
+   "tone": 1,
+   "accept": [
+    1
+   ],
+   "start": 0.08,
+   "end": 0.64,
+   "classifier": 1,
+   "classifier_p": 0.974,
+   "contour": 1,
+   "pass": true
+  },
+  {
+   "char": "麻",
+   "pinyin": "ma2",
+   "letters": "ma",
+   "tone": 2,
+   "accept": [
+    2
+   ],
+   "start": 1.063,
+   "end": 1.66,
+   "classifier": 1,
+   "classifier_p": 0.974,
+   "contour": 2,
+   "pass": false
+  },
+  {
+   "char": "马",
+   "pinyin": "ma3",
+   "letters": "ma",
+   "tone": 3,
+   "accept": [
+    3
+   ],
+   "start": 2.106,
+   "end": 2.29,
+   "classifier": 3,
+   "classifier_p": 0.426,
+   "contour": 3,
+   "pass": true
+  },
+  {
+   "char": "骂",
+   "pinyin": "ma4",
+   "letters": "ma",
+   "tone": 4,
+   "accept": [
+    4
+   ],
+   "start": 3.168,
+   "end": 3.35,
+   "classifier": 4,
+   "classifier_p": 0.575,
+   "contour": 1,
+   "pass": true
+  },
+  {
+   "char": "汤",
+   "pinyin": "tang1",
+   "letters": "tang",
+   "tone": 1,
+   "accept": [
+    1
+   ],
+   "start": 4.091,
+   "end": 4.74,
+   "classifier": 1,
+   "classifier_p": 0.975,
+   "contour": 1,
+   "pass": true
+  },
+  {
+   "char": "糖",
+   "pinyin": "tang2",
+   "letters": "tang",
+   "tone": 2,
+   "accept": [
+    2
+   ],
+   "start": 5.033,
+   "end": 5.69,
+   "classifier": 2,
+   "classifier_p": 0.968,
+   "contour": 3,
+   "pass": true
+  },
+  {
+   "char": "躺",
+   "pinyin": "tang3",
+   "letters": "tang",
+   "tone": 3,
+   "accept": [
+    3
+   ],
+   "start": 6.016,
+   "end": 6.55,
+   "classifier": 2,
+   "classifier_p": 0.486,
+   "contour": 3,
+   "pass": false
+  },
+  {
+   "char": "烫",
+   "pinyin": "tang4",
+   "letters": "tang",
+   "tone": 4,
+   "accept": [
+    4
+   ],
+   "start": 6.958,
+   "end": 7.57,
+   "classifier": 4,
+   "classifier_p": 0.978,
+   "contour": 3,
+   "pass": true
+  }
+ ],
+ "tone_accuracy": 0.75,
+ "contour_accuracy": 0.625,
+ "scored": 8,
+ "group": "syllables",
+ "source": "11labs v4 ByhETI"
+}

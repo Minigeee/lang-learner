@@ -1,0 +1,26 @@
+{
+ "file": "pinyin_man_2.mp3",
+ "text": "man2",
+ "syllables": [
+  {
+   "char": "man2",
+   "pinyin": "man2",
+   "letters": "man",
+   "tone": 2,
+   "accept": [
+    2
+   ],
+   "start": 0.083,
+   "end": 0.61,
+   "classifier": 2,
+   "classifier_p": 0.963,
+   "contour": 2,
+   "pass": true
+  }
+ ],
+ "tone_accuracy": 1.0,
+ "contour_accuracy": 1.0,
+ "scored": 1,
+ "group": "yoyo-sample",
+ "source": "yoyo native"
+}

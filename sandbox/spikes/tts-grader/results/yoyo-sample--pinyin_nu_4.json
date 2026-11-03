@@ -1,0 +1,26 @@
+{
+ "file": "pinyin_nu_4.mp3",
+ "text": "nu4",
+ "syllables": [
+  {
+   "char": "nu4",
+   "pinyin": "nu4",
+   "letters": "nu",
+   "tone": 4,
+   "accept": [
+    4
+   ],
+   "start": 0.143,
+   "end": 0.38,
+   "classifier": 4,
+   "classifier_p": 0.856,
+   "contour": 4,
+   "pass": true
+  }
+ ],
+ "tone_accuracy": 1.0,
+ "contour_accuracy": 1.0,
+ "scored": 1,
+ "group": "yoyo-sample",
+ "source": "yoyo native"
+}

@@ -1,0 +1,26 @@
+{
+ "file": "pinyin_sha_4.mp3",
+ "text": "sha4",
+ "syllables": [
+  {
+   "char": "sha4",
+   "pinyin": "sha4",
+   "letters": "sha",
+   "tone": 4,
+   "accept": [
+    4
+   ],
+   "start": 0.248,
+   "end": 0.46,
+   "classifier": 4,
+   "classifier_p": 0.977,
+   "contour": null,
+   "pass": true
+  }
+ ],
+ "tone_accuracy": 1.0,
+ "contour_accuracy": 0.0,
+ "scored": 1,
+ "group": "yoyo-sample",
+ "source": "yoyo native"
+}

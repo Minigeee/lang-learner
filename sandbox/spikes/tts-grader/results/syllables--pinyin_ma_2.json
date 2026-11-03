@@ -1,0 +1,26 @@
+{
+ "file": "pinyin_ma_2.mp3",
+ "text": "ma2",
+ "syllables": [
+  {
+   "char": "ma2",
+   "pinyin": "ma2",
+   "letters": "ma",
+   "tone": 2,
+   "accept": [
+    2
+   ],
+   "start": 0.081,
+   "end": 0.39,
+   "classifier": 1,
+   "classifier_p": 0.684,
+   "contour": 1,
+   "pass": false
+  }
+ ],
+ "tone_accuracy": 0.0,
+ "contour_accuracy": 0.0,
+ "scored": 1,
+ "group": "syllables",
+ "source": "yoyo native"
+}

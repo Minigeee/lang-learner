@@ -1,0 +1,26 @@
+{
+ "file": "pinyin_shui_3.mp3",
+ "text": "shui3",
+ "syllables": [
+  {
+   "char": "shui3",
+   "pinyin": "shui3",
+   "letters": "shui",
+   "tone": 3,
+   "accept": [
+    3
+   ],
+   "start": 0.304,
+   "end": 0.73,
+   "classifier": 4,
+   "classifier_p": 0.764,
+   "contour": null,
+   "pass": false
+  }
+ ],
+ "tone_accuracy": 0.0,
+ "contour_accuracy": 0.0,
+ "scored": 1,
+ "group": "yoyo-sample",
+ "source": "yoyo native"
+}

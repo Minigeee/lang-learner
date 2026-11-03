@@ -12,6 +12,28 @@ The subagent wrote this report. The orchestrator saved it, because subagents can
 > - **Voices are not the bottleneck.** The median idea has 32 distinct validated voices. The limit is learner-level sentences: only 3,784 validated-clip sentences pass the S2 learner-fit rule, and 1,474 pass S1.
 > - The dataset has 51,172 sentences with a validated clip, from 5,828 distinct validated voices.
 > - The ~70% match precision caveat below still applies, so the true green count is lower. The recommendations in §1 for the red ideas are unchanged.
+>
+> **Plus Apache-2.0 OpenSLR corpora (2026-11-03, `status_plus`):** transcripts fetched by `sandbox/data/fetch_openslr_transcripts.py` (audio streamed past, not kept).
+> - **152 of 158 ideas are green: S1 52/53, S2 100/105.** 38 ideas flipped, including every 得, 把, comparison and conditional idea that was red except those listed below.
+> - **AISHELL-3** (88k utterances, 218 speakers, Apache 2.0) did most of it: 22,767 sentences pass the S2 learner-fit rule (CV has 3,784), and 12,787 pass S1. Its prompts are short (median 11 characters) and often everyday speech.
+> - **AISHELL-1** (134k sentences, 400 speakers) adds 12,976 S2-fit sentences, mostly news style. Its page says Apache 2.0 and also "free for academic use"; check that before relying on it.
+> - **THCHS-30** adds nothing: its 1,000 sentences are long news text and none pass either rule.
+> - **Still red (6):** 1.11-c, 2.13-c, 2.22-b, 2.24-d, 2.26-a, 2.26-d.
+> - Example: 2.22-a (verb + 得 + adjective) went from 1 CV sentence to 1 + 16 (AISHELL-1) + 28 (AISHELL-3).
+> - Same caveats: ~70% pattern precision, and these are read prompts by recording-studio speakers, not natural speech.
+>
+> **Which sources matter (`combos.py`, `out/combos.csv`):** every combination, same target (≥ 5 sentences, ≥ 4 voices).
+>
+> | Sources | Green of 158 |
+> |---|---|
+> | AISHELL-3 alone | 143 (S1 50, S2 93) |
+> | AISHELL-1 alone | 137 |
+> | Common Voice alone | 100 |
+> | AISHELL-1 + AISHELL-3 | 148 |
+> | CV + AISHELL-1 + AISHELL-3 | 149 |
+> | **+ Global Storybooks** | **152 (S1 52, S2 100), the maximum** |
+>
+> Licensed Tatoeba audio and THCHS-30 add nothing on top. The minimal set for the maximum is Global Storybooks + CV + AISHELL-1 + AISHELL-3.
 
 ## TL;DR
 

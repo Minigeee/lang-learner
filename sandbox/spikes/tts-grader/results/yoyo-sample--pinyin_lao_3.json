@@ -1,0 +1,26 @@
+{
+ "file": "pinyin_lao_3.mp3",
+ "text": "lao3",
+ "syllables": [
+  {
+   "char": "lao3",
+   "pinyin": "lao3",
+   "letters": "lao",
+   "tone": 3,
+   "accept": [
+    3
+   ],
+   "start": 0.105,
+   "end": 0.56,
+   "classifier": 4,
+   "classifier_p": 0.591,
+   "contour": 1,
+   "pass": false
+  }
+ ],
+ "tone_accuracy": 0.0,
+ "contour_accuracy": 0.0,
+ "scored": 1,
+ "group": "yoyo-sample",
+ "source": "yoyo native"
+}

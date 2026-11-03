@@ -1,0 +1,650 @@
+[
+ {
+  "group": "syllables",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_ma_1.mp3",
+  "text": "ma1"
+ },
+ {
+  "group": "syllables",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_ma_2.mp3",
+  "text": "ma2"
+ },
+ {
+  "group": "syllables",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_ma_3.mp3",
+  "text": "ma3"
+ },
+ {
+  "group": "syllables",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_ma_4.mp3",
+  "text": "ma4"
+ },
+ {
+  "group": "syllables",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_tang_1.mp3",
+  "text": "tang1"
+ },
+ {
+  "group": "syllables",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_tang_2.mp3",
+  "text": "tang2"
+ },
+ {
+  "group": "syllables",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_tang_3.mp3",
+  "text": "tang3"
+ },
+ {
+  "group": "syllables",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_tang_4.mp3",
+  "text": "tang4"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_lao_1.mp3",
+  "text": "lao1"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_lao_2.mp3",
+  "text": "lao2"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_lao_3.mp3",
+  "text": "lao3"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_lao_4.mp3",
+  "text": "lao4"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_e_1.mp3",
+  "text": "e1"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_e_2.mp3",
+  "text": "e2"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_e_3.mp3",
+  "text": "e3"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_e_4.mp3",
+  "text": "e4"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_mou_1.mp3",
+  "text": "mou1"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_mou_2.mp3",
+  "text": "mou2"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_mou_3.mp3",
+  "text": "mou3"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_mou_4.mp3",
+  "text": "mou4"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_weng_1.mp3",
+  "text": "weng1"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_weng_2.mp3",
+  "text": "weng2"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_weng_3.mp3",
+  "text": "weng3"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_weng_4.mp3",
+  "text": "weng4"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_cang_1.mp3",
+  "text": "cang1"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_cang_2.mp3",
+  "text": "cang2"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_cang_3.mp3",
+  "text": "cang3"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_cang_4.mp3",
+  "text": "cang4"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_chi_1.mp3",
+  "text": "chi1"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_chi_2.mp3",
+  "text": "chi2"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_chi_3.mp3",
+  "text": "chi3"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_chi_4.mp3",
+  "text": "chi4"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_sa_1.mp3",
+  "text": "sa1"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_sa_2.mp3",
+  "text": "sa2"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_sa_3.mp3",
+  "text": "sa3"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_sa_4.mp3",
+  "text": "sa4"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_cong_1.mp3",
+  "text": "cong1"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_cong_2.mp3",
+  "text": "cong2"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_cong_3.mp3",
+  "text": "cong3"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_cong_4.mp3",
+  "text": "cong4"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_man_1.mp3",
+  "text": "man1"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_man_2.mp3",
+  "text": "man2"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_man_3.mp3",
+  "text": "man3"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_man_4.mp3",
+  "text": "man4"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_shui_1.mp3",
+  "text": "shui1"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_shui_2.mp3",
+  "text": "shui2"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_shui_3.mp3",
+  "text": "shui3"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_shui_4.mp3",
+  "text": "shui4"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_cha_1.mp3",
+  "text": "cha1"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_cha_2.mp3",
+  "text": "cha2"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_cha_3.mp3",
+  "text": "cha3"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_cha_4.mp3",
+  "text": "cha4"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_qun_1.mp3",
+  "text": "qun1"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_qun_2.mp3",
+  "text": "qun2"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_qun_3.mp3",
+  "text": "qun3"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_qun_4.mp3",
+  "text": "qun4"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_guo_1.mp3",
+  "text": "guo1"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_guo_2.mp3",
+  "text": "guo2"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_guo_3.mp3",
+  "text": "guo3"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_guo_4.mp3",
+  "text": "guo4"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_bo_1.mp3",
+  "text": "bo1"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_bo_2.mp3",
+  "text": "bo2"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_bo_3.mp3",
+  "text": "bo3"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_bo_4.mp3",
+  "text": "bo4"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_chui_1.mp3",
+  "text": "chui1"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_chui_2.mp3",
+  "text": "chui2"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_chui_3.mp3",
+  "text": "chui3"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_chui_4.mp3",
+  "text": "chui4"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_nu_1.mp3",
+  "text": "nu1"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_nu_2.mp3",
+  "text": "nu2"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_nu_3.mp3",
+  "text": "nu3"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_nu_4.mp3",
+  "text": "nu4"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_nian_1.mp3",
+  "text": "nian1"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_nian_2.mp3",
+  "text": "nian2"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_nian_3.mp3",
+  "text": "nian3"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_nian_4.mp3",
+  "text": "nian4"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_chen_1.mp3",
+  "text": "chen1"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_chen_2.mp3",
+  "text": "chen2"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_chen_3.mp3",
+  "text": "chen3"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_chen_4.mp3",
+  "text": "chen4"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_huai_1.mp3",
+  "text": "huai1"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_huai_2.mp3",
+  "text": "huai2"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_huai_3.mp3",
+  "text": "huai3"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_huai_4.mp3",
+  "text": "huai4"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_chuo_1.mp3",
+  "text": "chuo1"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_chuo_2.mp3",
+  "text": "chuo2"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_chuo_3.mp3",
+  "text": "chuo3"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_chuo_4.mp3",
+  "text": "chuo4"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_sha_1.mp3",
+  "text": "sha1"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_sha_2.mp3",
+  "text": "sha2"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_sha_3.mp3",
+  "text": "sha3"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_sha_4.mp3",
+  "text": "sha4"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_nie_1.mp3",
+  "text": "nie1"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_nie_2.mp3",
+  "text": "nie2"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_nie_3.mp3",
+  "text": "nie3"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_nie_4.mp3",
+  "text": "nie4"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_chai_1.mp3",
+  "text": "chai1"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_chai_2.mp3",
+  "text": "chai2"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_chai_3.mp3",
+  "text": "chai3"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_chai_4.mp3",
+  "text": "chai4"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_shen_1.mp3",
+  "text": "shen1"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_shen_2.mp3",
+  "text": "shen2"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_shen_3.mp3",
+  "text": "shen3"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_shen_4.mp3",
+  "text": "shen4"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_di_1.mp3",
+  "text": "di1"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_di_2.mp3",
+  "text": "di2"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_di_3.mp3",
+  "text": "di3"
+ },
+ {
+  "group": "yoyo-sample",
+  "source": "yoyo native",
+  "path": "C:\\Users\\tritn\\Documents\\projects\\anki\\pinyin_chart\\.cache\\media\\audio\\pinyin_di_4.mp3",
+  "text": "di4"
+ }
+]

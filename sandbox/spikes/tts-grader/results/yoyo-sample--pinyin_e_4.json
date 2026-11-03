@@ -1,0 +1,26 @@
+{
+ "file": "pinyin_e_4.mp3",
+ "text": "e4",
+ "syllables": [
+  {
+   "char": "e4",
+   "pinyin": "e4",
+   "letters": "e",
+   "tone": 4,
+   "accept": [
+    4
+   ],
+   "start": 0.082,
+   "end": 0.17,
+   "classifier": 1,
+   "classifier_p": 0.729,
+   "contour": 1,
+   "pass": false
+  }
+ ],
+ "tone_accuracy": 0.0,
+ "contour_accuracy": 0.0,
+ "scored": 1,
+ "group": "yoyo-sample",
+ "source": "yoyo native"
+}

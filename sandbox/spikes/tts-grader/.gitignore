@@ -1,0 +1,5 @@
+.venv/
+models/
+clips/
+__pycache__/
+clips-norm/

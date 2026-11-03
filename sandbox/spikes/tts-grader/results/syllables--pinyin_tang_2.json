@@ -1,0 +1,26 @@
+{
+ "file": "pinyin_tang_2.mp3",
+ "text": "tang2",
+ "syllables": [
+  {
+   "char": "tang2",
+   "pinyin": "tang2",
+   "letters": "tang",
+   "tone": 2,
+   "accept": [
+    2
+   ],
+   "start": 0.0,
+   "end": 0.62,
+   "classifier": 2,
+   "classifier_p": 0.951,
+   "contour": 2,
+   "pass": true
+  }
+ ],
+ "tone_accuracy": 1.0,
+ "contour_accuracy": 1.0,
+ "scored": 1,
+ "group": "syllables",
+ "source": "yoyo native"
+}

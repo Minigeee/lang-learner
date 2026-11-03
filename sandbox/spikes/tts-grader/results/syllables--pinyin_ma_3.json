@@ -1,0 +1,26 @@
+{
+ "file": "pinyin_ma_3.mp3",
+ "text": "ma3",
+ "syllables": [
+  {
+   "char": "ma3",
+   "pinyin": "ma3",
+   "letters": "ma",
+   "tone": 3,
+   "accept": [
+    3
+   ],
+   "start": 0.104,
+   "end": 0.29,
+   "classifier": 3,
+   "classifier_p": 0.796,
+   "contour": 4,
+   "pass": true
+  }
+ ],
+ "tone_accuracy": 1.0,
+ "contour_accuracy": 0.0,
+ "scored": 1,
+ "group": "syllables",
+ "source": "yoyo native"
+}

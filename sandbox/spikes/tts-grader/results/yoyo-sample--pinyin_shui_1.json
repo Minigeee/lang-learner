@@ -1,0 +1,26 @@
+{
+ "file": "pinyin_shui_1.mp3",
+ "text": "shui1",
+ "syllables": [
+  {
+   "char": "shui1",
+   "pinyin": "shui1",
+   "letters": "shui",
+   "tone": 1,
+   "accept": [
+    1
+   ],
+   "start": 0.322,
+   "end": 0.86,
+   "classifier": 1,
+   "classifier_p": 0.973,
+   "contour": 2,
+   "pass": true
+  }
+ ],
+ "tone_accuracy": 1.0,
+ "contour_accuracy": 0.0,
+ "scored": 1,
+ "group": "yoyo-sample",
+ "source": "yoyo native"
+}

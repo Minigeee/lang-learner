@@ -1,0 +1,26 @@
+{
+ "file": "pinyin_shui_4.mp3",
+ "text": "shui4",
+ "syllables": [
+  {
+   "char": "shui4",
+   "pinyin": "shui4",
+   "letters": "shui",
+   "tone": 4,
+   "accept": [
+    4
+   ],
+   "start": 0.284,
+   "end": 0.74,
+   "classifier": 4,
+   "classifier_p": 0.978,
+   "contour": 3,
+   "pass": true
+  }
+ ],
+ "tone_accuracy": 1.0,
+ "contour_accuracy": 0.0,
+ "scored": 1,
+ "group": "yoyo-sample",
+ "source": "yoyo native"
+}

@@ -1,0 +1,26 @@
+{
+ "file": "pinyin_chui_3.mp3",
+ "text": "chui3",
+ "syllables": [
+  {
+   "char": "chui3",
+   "pinyin": "chui3",
+   "letters": "chui",
+   "tone": 3,
+   "accept": [
+    3
+   ],
+   "start": 0.142,
+   "end": 0.67,
+   "classifier": 3,
+   "classifier_p": 0.526,
+   "contour": null,
+   "pass": true
+  }
+ ],
+ "tone_accuracy": 1.0,
+ "contour_accuracy": 0.0,
+ "scored": 1,
+ "group": "yoyo-sample",
+ "source": "yoyo native"
+}

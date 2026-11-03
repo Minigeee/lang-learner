@@ -1,0 +1,26 @@
+{
+ "file": "pinyin_chen_4.mp3",
+ "text": "chen4",
+ "syllables": [
+  {
+   "char": "chen4",
+   "pinyin": "chen4",
+   "letters": "chen",
+   "tone": 4,
+   "accept": [
+    4
+   ],
+   "start": 0.043,
+   "end": 0.42,
+   "classifier": 4,
+   "classifier_p": 0.977,
+   "contour": 1,
+   "pass": true
+  }
+ ],
+ "tone_accuracy": 1.0,
+ "contour_accuracy": 0.0,
+ "scored": 1,
+ "group": "yoyo-sample",
+ "source": "yoyo native"
+}
