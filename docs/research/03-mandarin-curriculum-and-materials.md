@@ -60,6 +60,7 @@ There are now two "HSK 3.0" documents (verified via [3], cross-checked with [4][
 
 - The 2025 syllabus took effect on 18 Nov 2025, and trial exams ran on 31 Jan and 20 Sep 2026. The first regular HSK 3.0 L1–6 sitting is reported for **13 Dec 2026** [3][5] (reported; not checked with CTI).
 - `drkameleon/complete-hsk-vocabulary` (MIT) labels the **2021** levels as "new-1…new-7" [6] (verified). `hsk30` v0.2.1 (6 Sep 2026) includes the 2021 standard, **the 2025 syllabus (its default)** and HSK 2.0. Its lists were extracted from the official 406-page PDF and are MIT-licensed [4] (verified).
+- HSK 2025 **grammar** lists per level are not in `hsk30`. The S1/S2 coverage checks used a community transcription [64], which still needs checking against the official PDF.
 - HSK is the **coverage scaffold** and the skill-tree vocabulary. Within a level, order words by frequency (SUBTLEX-CH, §3) and by what the lesson's video actually uses.
 
 #### 1.4 Characters: components, Heisig, or in context
@@ -143,72 +144,107 @@ Mandarin Bean, Chinese Reading Practice and Du Chinese are **link-only**, so the
 | **30 min** | One unit (2–4 lessons), or 2 review batches + 2 lessons |
 | **60 min** | A unit + 3 review batches + the unit's **full CI video** (re-watched), or a Netflix episode logged as immersion |
 
-**Time check:** about 140 lessons × ~6 min ≈ 15 h of lesson cores. The rest of the ~70–80 h core budget is the units' full CI videos and read-alongs, watched and re-watched. That keeps the curriculum input-heavy, as doc 06 asks.
+**Time check (after the 2026-11-02 stage reviews):** 64 units (S0 14 · S1 18 · S2 32), about 200 lessons × ~6 min ≈ 20 h of lesson cores. The rest of the core budget is the units' full CI videos and read-alongs, watched and re-watched. That keeps the curriculum input-heavy, as doc 06 asks. S2 alone fills the ~30 min/day core slot with no slack, so S2 may run 2–4 weeks past month 6. Testing out of most of S0 gives back about 2–3 weeks.
 
 Grammar names are Chinese Grammar Wiki A1/A2 titles [28] (verified list). Picking specific videos, timestamps and CV clips is a build task (§4.1). §2.6 lists which sources cut up best.
 
-**Stage S0: Sounds (weeks 1–3, 12 units ≈ 28 lessons; Refold Phase 1 / old Stage 1).** Alongside S0, 10–15 min/day of picture-supported CI (Mandarin Click, Lazy Chinese Complete Beginner, Slow & Clear) counts as immersion, even without understanding everything.
+**Stage S0: Sounds (weeks 1–3, 14 units ≈ 34 lessons; Refold Phase 1 / old Stage 1).** S0 trains *perception* only: hearing tones, sounds and tone changes, and matching them to the pinyin shown under clips. Production accuracy waits for Phase 4.
+- **Test-out first.** This user already knows the tones and pinyin. The expected path is to take the three 0.12 checkpoint lessons first, then study only the units they flag. Each checkpoint item is tagged with one unit (note below the table).
+- **Input balance.** S0 units are nearly all language-focused study (doc 07). So every S0 day also gets two things: (a) a scheduled 10–15 min Clip lesson of picture-supported CI (Mandarin Click, Lazy Chinese Complete Beginner, Slow & Clear), which counts as immersion even without full understanding; (b) the tone trainer as a 5–10 min HVPT drill outside lessons. Sound units never replace that day's CI.
+- **Two tracks.** The **tone** track (0.1 → 0.7 → 0.8 → 0.9, 0.9a, 0.10) and the **segment** track (0.2 → 0.3 → 0.4 → 0.5 → 0.6) don't depend on each other. They meet at 0.10 (erhua) and 0.10a. Table order is the default path; Prereqs lists unit ids.
 
-| Unit | Lesson ideas (one per lesson) | Native example audio |
-|---|---|---|
-| 0.1 Tones on one syllable | Four tones + neutral on *ma*, read off the tone chart; 1st vs 4th, 2nd vs 3rd; 2nd vs 3rd ("the dip") | AC syllables; WM "Zh-pinyin tones with ma.ogg"; CV for more voices; TP if permitted |
-| 0.2 Simple finals | a o e i u ü on the pinyin chart; u vs ü | AC; WM Lingua Libre cmn |
-| 0.3 Initials and aspiration | Aspiration is a puff of air (b/p, d/t, g/k); b/p d/t g/k rounds | AC; WM |
-| 0.4 Three "sh" families | zh/j/z vs ch/q/c vs sh/x/s; rounds across all nine; "why isn't *xi* 'shee'?" | AC; CV (more voices) |
-| 0.5 Compound and nasal finals | -n vs -ng; an/ang, en/eng, in/ing | AC |
-| 0.6 Spelling rules | ü loses its dots after j/q/x/y; "-i" after z/c/s/zh/ch/sh/r; "去 is spelled *qu* but sounds *qü*" | AC |
-| 0.7 Tone pairs I (1+x, 2+x) | 8 pairs; hearing the pairs in a story | AC 2-syllable HSK words (Yue Tan); YT:Mandarin Click |
-| 0.8 Tone pairs II (3+x, 4+x) | The half-third tone before 1/2/4; 8 pairs | AC; CV |
-| 0.9 Sandhi | 你好 sounds like *ní hǎo*; the 不 and 一 rules | AC (你好 很好 可以 不是 一个); YT:Lazy Chinese greeting clip |
-| 0.10 Neutral tone and erhua | Full vs neutral tone (爸爸, 你们, 东西); erhua heard in a clip | AC; YT:Lazy Chinese / Mandarin Click |
-| 0.11 First words | Numbers 1–10, 你好, 谢谢 in context; number tones (四 vs 十!) | YT:Mandarin Click / Lazy Chinese Complete Beginner; AC |
-| 0.12 Checkpoint | ≥85% identification, unscaffolded, **new voices** | CV (unseen speakers); TP if permitted |
+| Unit | Lesson ideas (one per lesson) | Prereqs | Native example audio |
+|---|---|---|---|
+| 0.1 Tones on one syllable | The four tone contours on one syllable, across several voices; 1st vs 4th (high level vs high falling); 2nd vs 3rd (a rise vs a low, often creaky 3rd, not a big dip) | — | AC syllables; WM "Zh-pinyin tones with ma.ogg"; CV for more voices; TP if permitted |
+| 0.2 Simple and compound finals | a o e i u against their English look-alikes (*e* is not "eh"); ü vs u vs i; compound finals: glides and diphthongs (ai ei ao ou; ia ie ua uo üe …) | — | AC; WM Lingua Libre cmn |
+| 0.3 Initials and aspiration | Hear the puff: b d g are unaspirated, not voiced (English ears hear *b* as *p*); b/p d/t g/k rounds, plus h (rougher than English *h*) | 0.2 | AC; WM |
+| 0.4 Three "sh" families (+ r) | zh ch sh r vs z c s (curled vs flat; some accents merge them); j q x vs zh ch sh before *i*: "why isn't *xi* 'shee'?"; interleaved rounds across all nine | 0.2, 0.3 | AC; CV (more voices) |
+| 0.5 Nasal finals | -n vs -ng: an/ang, en/eng, in/ing (some accents merge in/ing); with glides: ian ("yen") vs iang, uan vs üan, un vs ong | 0.2 | AC |
+| 0.6 Pinyin spelling rules | Spellings that hide a vowel: ü written *u* after j q x y (去 is spelled *qu* but sounds *qü*), iu = iou, ui = uei, un = uen; the buzzing "-i" after z c s / zh ch sh r is not the *i* of *ji*; the apostrophe marks a syllable break you can hear (西安 *Xī'ān*, two tones, vs 先 *xiān*) | 0.2, 0.4, 0.5 | AC; WM |
+| 0.7 Tone pairs I (1+x, 2+x) | 1st + each full tone (4 pairs); 2nd + each full tone (4 pairs) | 0.1 | AC 2-syllable HSK words (Yue Tan) |
+| 0.8 Tone pairs II (3+1/2/4, 4+x) | The half-third: a 3rd before 1/2/4 stays low and doesn't rise (3 pairs); 4th + each full tone (4 pairs). 3+3 is in 0.9 | 0.7 | AC; CV |
+| 0.9 Third-tone sandhi | Two 3rds in a row: the first rises (你好 sounds like *ní hǎo*); chains of three or more 3rds group by word (我也很好) | 0.8 | AC (你好 很好 可以); CV (sentences with 3rd-tone chains); YT:Lazy Chinese greeting clip |
+| 0.9a 一 and 不 | 不 becomes *bú* before a 4th (不是, 不对); 一 becomes *yí* before a 4th and *yì* before 1/2/3, but stays *yī* in counting and ordinals (一个, 一起, 第一) | 0.8 | AC (不是 一个) |
+| 0.10 Neutral tone and erhua | A neutral syllable takes its pitch from the tone before it (the 4 "tone + neutral" pairs: 爸爸, 你们, 吗); some words differ only by a neutral tone (东西 *dōngxī* "east-west" vs *dōngxi* "thing"); erhua: the -r merges into the syllable and can swallow -n (哪儿, 一点儿), and is heavier in Beijing speech | 0.5, 0.8 | AC; YT:Lazy Chinese / Mandarin Click |
+| 0.10a Tones in running speech | At natural speed tones get shorter, flatter and blend with neighbours: the same words in citation form vs in a story; intonation rides on top of tones: a 吗 question doesn't need a rising end, and a final 4th still falls | 0.9, 0.9a, 0.10 | YT:Mandarin Click (story; moved from 0.7); CV (statement vs 吗 question) |
+| 0.11 Sounds in first words | Hearing S0's contrasts inside real words (the words themselves are taught in S1 1.1/1.4); near-homophones told apart by tone and initial (四 *sì* vs 十 *shí* vs 是 *shì*) | 0.4, 0.10a | YT:Mandarin Click / Lazy Chinese Complete Beginner; AC |
+| 0.12 Checkpoint | Three checkpoints, each takeable alone: **segments** (finals, initials, spelling); **tones** (single syllables + the 15 plain pairs); **tone changes and words** (sandhi, 一/不, neutral, erhua, running speech, near-homophones). Each ≥85% identification, unscaffolded, **new voices** | 0.1–0.11 (all; not gated) | CV (unseen speakers); TP if permitted |
 
-**Stage S1: Survival core (weeks 3–10, 15 units ≈ 50 lessons; → ~300 words = HSK 2025 L1, ~250 chars, first ~100 components; Phase 1 / old Stage 1).**
+**Test-out map (0.12 → units).** Each checkpoint item is tagged with exactly one unit: segments → 0.2–0.6; tones → 0.1 (single syllables), 0.7 or 0.8 (pairs, by first tone); tone changes and words → 0.9, 0.9a, 0.10, 0.10a, 0.11. A unit scoring below 85% is recommended, and passed units get `checkpoint` evidence on their knowledge items (doc 08 F1). The 20 tone pairs are each covered once: 8 in 0.7, 7 in 0.8, 3+3 in 0.9, and the 4 "tone + neutral" pairs in 0.10.
 
-| Unit | Lesson ideas (Grammar Wiki A1) | Native example audio |
-|---|---|---|
-| 1.1 Greetings and names | Connecting nouns with 是; names with 叫, from self-introductions | YT:Lazy Chinese Complete Beginner, Slow & Clear; AC words |
-| 1.2 Asking back | 吗 turns a statement into a yes/no question; "你呢?" asks the question back | YT:Mandarin Click dialogues; CV (sentences ending in 吗) |
-| 1.3 Describing | Noun + 很 + adj, where 很 doesn't mean "very" (❌我是高 → ✅我很高); negation with 不 | YT:BlaBla super-beginner; CV |
-| 1.4 Numbers and age | Structure of numbers (十一 … 九十九); 二 vs 两; measure word 个; age with 岁 | YT:Mandarin Click; GS L1 counting story; AC number words |
-| 1.5 Family | Possession with 的; 我妈妈 vs 我的妈妈 (close possession); 有 / 没有 in a family-photo talk | YT:Lazy Chinese family stories, Diane Neubauer; GS |
-| 1.6 Question words | Question word goes where the answer goes; 哪 vs 哪儿 | YT:Slow & Clear; CV (什么/谁 questions are plentiful) |
-| 1.7 Where things are | 在 vs 有 for existence; "where's the cat?" picture story | YT:Mandarin Click; GS L1 |
-| 1.8 Dates and times | Calendar words (月, 号, 星期); time order, big to small; 四 vs 十 vs 是 | YT:BlaBla; AC; CV |
-| 1.9 Daily verbs, word order | Time words come before the verb (heard in 我明天去北京); daily-life story | YT:Lazy Chinese daily-life stories |
-| 1.10 Wants and abilities | 会 vs 能 vs 可以; wanting with 要 | YT:Annie A1 picture talks; CV |
-| 1.11 Food and shopping | 太…了; A 还是 B?; ordering or market scene | YT:Mandarin Click food stories; YT:Peppa Pig (official channel, if confirmed) |
-| 1.12 Also, all, and | 也 vs 都, and where they go; 和 joins nouns, not clauses | YT:Slow & Clear; CV |
-| 1.13 Didn't, don't, let's | 不 vs 没 (first pass); 吧 softens suggestions and commands | YT:Lazy Chinese; YT:Peppa |
-| 1.14 Asking whether and how | A-not-A (是不是, 好不好); 怎么 + verb | YT:Mandarin Click |
-| 1.15 Checkpoint | 3 unseen Mandarin Click stories with gist questions; new-voice tone and word rounds; GS L1–2 read-along | YT:Mandarin Click; CV; GS |
+**Stage S1: Survival core (weeks 3–10, 18 units ≈ 56 lessons; → ~300 words = HSK 2025 L1, ~250 chars, first ~100 components; Phase 1 / old Stage 1).** S1 owns the *words* (greetings, numbers); 0.11 keeps only their sound contrasts. Table order is the default path; Prereqs lists direct prerequisite unit ids (transitive ones implied).
 
-**Stage S2: Base vocabulary (months 3–6, 15 units ≈ 60 lessons; → ~1,000 words = HSK 2025 L3, ~650 chars; early Phase 2, "read alongside audio" / old early 2A).**
+| Unit | Lesson ideas (Grammar Wiki A1 + HSK 2025 L1) | Prereqs | Native example audio |
+|---|---|---|---|
+| 1.1 Greetings and names | 是 links two nouns (我是学生), heard in self-introductions; names with 叫 (我叫…) | 0.9, 0.11 | YT:Lazy Chinese Complete Beginner, Slow & Clear; AC words |
+| 1.2 Asking questions | 吗 turns a statement into a yes/no question; "你呢?" asks the same question back; the question word sits where the answer goes (你叫什么? 他是谁?) | 1.1, 0.10a | YT:Mandarin Click dialogues; CV (sentences ending in 吗; 什么/谁 questions are plentiful) |
+| 1.3 Describing | Noun + 很 + adj, where 很 doesn't mean "very" (❌我是高 → ✅我很高); 不 before a verb or adjective negates it (不是, 不高); 非常 / 真 / 有点儿 set how strong the adjective is | 1.1, 0.9a | YT:BlaBla super-beginner; CV |
+| 1.4 Numbers and age | Structure of numbers (十一 … 九十九); measure word 个 between number and noun (几个?); 两, not 二, before a measure word; age with 岁 (几岁? 多大?) | 1.2, 0.9a, 0.11 | YT:Mandarin Click; GS L1 counting story; AC number words |
+| 1.4a This, that, which | 这 / 那 / 哪 + measure word + noun (这个, 那本书, 哪个?); 这些 / 那些 take no measure word; everyday measure words heard with their nouns (本 书, 杯 茶, 口 人, 件 衣服, 只 猫) | 1.4 | YT:Mandarin Click; GS L1; CV (这个/那个 sentences) |
+| 1.5 Family | Possession with 的; 我妈妈 vs 我的妈妈 (close possession drops 的); 有 for "have", negated only as 没有 (❌不有), heard in a family-photo talk | 1.1, 1.3 | YT:Lazy Chinese family stories, Diane Neubauer; GS |
+| 1.6 Asking how | 怎么 + verb asks how to do it (怎么说? 怎么去?); 怎么样 asks how something is, or "how about…?" | 1.2, 1.3 | YT:Slow & Clear; YT:Mandarin Click; CV |
+| 1.7 Where things are | Thing + 在 + place says where it is, asked with 在哪儿? (哪儿 is "where", while 哪 needs a measure word; 这儿 / 那儿); place words after a noun (桌子上, 房间里, 前边, 后边, 外边); place + 有 + thing vs thing + 在 + place, heard in a "where's the cat?" picture story | 1.4a, 1.5 | YT:Mandarin Click; GS L1 |
+| 1.8 Dates and times | Dates big to small (年 → 月 → 号; 四/十/是 stay review items from 0.11, interleaved here); days of the week (星期一 … 星期天); clock time (点, 分, 半; 现在几点?) | 1.4 | YT:BlaBla; AC; CV |
+| 1.9 Daily verbs, word order | Basic order subject + verb + object, heard in a daily-life story; 去 + place (no "to"), and 去 + place + verb for a purpose (去商店买东西); time words come before the verb (我明天去北京); 在 + place comes before the verb too (我在家吃饭) | 1.7, 1.8 | YT:Lazy Chinese daily-life stories |
+| 1.10 Wanting | 想 + verb: "would like to"; 要 + noun or verb: "want", and also "going to" | 1.9 | YT:Annie A1 picture talks; CV |
+| 1.10a Can | 会: a learned skill (会说中文); 能: able, or possible; 可以: allowed, answered with 行 / 不行; 会 vs 能 vs 可以, once all three are met | 1.10 | YT:Annie A1 picture talks; CV (会/能/可以 sentences) |
+| 1.11 Food and shopping | Prices: 多少钱? and amounts (三块五; 多少 for any amount vs 几 for a small count); 太…了 (太贵了!); A 还是 B? offers a choice and takes no 吗; an ordering scene at a market, heard as a clip | 1.3, 1.4a, 1.10 | YT:Mandarin Click food stories; YT:Peppa Pig (official channel, if confirmed) |
+| 1.12 Also, all, and | 也 goes before the verb, never at the end; 都 sums up a plural subject (and 也都, not 都也); 还 adds one more thing ("…，还…"); 和 joins nouns, not clauses | 1.9 | YT:Slow & Clear; CV |
+| 1.13 Didn't, don't, let's | 没(有) + verb: it didn't happen; 不 vs 没 (first pass, both now met); 吧 softens a suggestion (我们走吧); 不要 + verb: "don't!" | 1.3, 1.5, 1.10 | YT:Lazy Chinese; YT:Peppa; CV (不要 commands) |
+| 1.14 Asking whether | A-not-A questions (是不是, 有没有, 好不好), with the neutral 不 in the middle; tag questions that check or propose (…好吗? …对不对? 你是老师吧?) | 1.13, 0.9a, 0.10 | YT:Mandarin Click |
+| 1.14a Now and changed (first pass) | Sentence-final 了: something is new (下雨了, 我饿了); verb + 了: it's done, noticed in stories; 在 / 正在 + verb (…呢): it's happening now | 1.9, 1.13 | YT:Lazy Chinese daily-life stories; YT:Annie; CV (了 and 在…呢 sentences) |
+| 1.15 Checkpoint | 3 unseen Mandarin Click stories with gist questions; new-voice tone and word rounds; GS L1–2 read-along | 1.1–1.14a (all; not gated) | YT:Mandarin Click; CV; GS |
 
-| Unit | Lesson ideas (Grammar Wiki A2) | Native example audio |
-|---|---|---|
-| 2.1 What happened | "Two 了s"; completion 了; completion vs change-of-state 了 | YT:Lazy Chinese beginner, Annie; CV (了 sentences are plentiful) |
-| 2.2 Experiences | 了 vs 过; a travel story | YT:Xiaogua travel |
-| 2.3 In progress | Actions in progress with 在; 一边…一边 | YT:Mandarin Click |
-| 2.4 Comparing | A 比 B + adj; 比 vs 没有; 更 / 最 | YT:BlaBla intermediate; CV (比 sentences) |
-| 2.5 Where and which way | 上/下/里/前/后 in a picture scene; 在 + place before the verb; 来 vs 去 depends on the speaker | GS L2–3; YT:Mandarin Click |
-| 2.6 Time order | Clauses with 的时候; 以前 vs 以后; 已经 / 刚 / 就 | YT:Lazy Chinese stories; CV |
-| 2.7 Should, want, will | 要 vs 想; 应该 and 会 ("will") | YT:Annie |
-| 2.8 Results | Verb + result (完, 到, 见); 听不懂 (why 不 goes in the middle); result complements in a story | YT:Mandarin Click; CV |
-| 2.9 Counting things | Common measure words (个 本 张 杯 只); 这/那 + MW + noun; 一些 vs 有的 | YT:Peppa; GS. Mandarin Bean is reading only (link), so it can't supply card audio |
-| 2.10 Reasons and "but" | 因为…所以; 但是 vs 可是 | YT:Xiaogua; **CV** (CRP texts have no usable audio) |
-| 2.11 Polite requests | How 请, 一下 and verb reduplication (看看) soften requests; requests in a scene | YT:Mandarin Click |
-| 2.12 How long, almost, stop | Duration with 了; 快…了 isn't "fast" | YT:Lazy Chinese |
-| 2.13 Describing with 的 | Phrase + 的 + noun; spotting long 的 descriptions in narration | GS L3; CV |
-| 2.14 Together, in a row, big numbers | Counting in 万; first real-speed interview clip | YT:Mandarin Corner beginner (one question = one clip) |
-| 2.15 Checkpoint | Peppa episode with zh subs only and gist questions; GS L3 without pinyin; unseen Mandarin Corner clip | YT:Peppa, YT:Mandarin Corner; GS |
+**S1 coverage note.** S1 covers all 40 Grammar Wiki A1 points (行 sits in the 可以 lesson; 要 "going to" in 1.10) and most HSK 2025 L1 grammar. Left to mined sentences or S2: 再 "again", preposition 对, ordinal 第, double objects (给你一本书), verb + 一次 / 一下. Confusable pairs (二/两, 在/有, 不/没, 哪/哪儿, 几/多少, 怎么/怎么样, 会/能/可以) are contrasted only after both members are met. They are interleaved later per doc 07, with second passes in S2.
 
-That covers 41 of the 42 A1 points and about 55 of the 99 A2 points. The rest are taught from mined sentences ("this card uses 一直") with a Grammar Wiki deep link [28].
+**Stage S2: Base vocabulary (months 3–6, 32 units ≈ 111 lessons; → ~1,000 words = HSK 2025 L3, ~650 chars; early Phase 2, "read alongside audio" / old early 2A).** S2 finishes v1's HSK 1–3 grammar. The first half, up to the 2.30 midpoint checkpoint, covers aspect, time and description. The second half covers comparison, complements, and 把/被. Table order is the default path. Prereqs lists direct prerequisite unit ids (transitive ones are implied), and every S2 unit also assumes S1. Ids are stable labels, not positions (doc 08 F3): new units are numbered 2.16–2.32 and placed where the dependency graph puts them.
+
+| Unit | Lesson ideas (Grammar Wiki A2 + HSK 2025 L2–L3) | Prereqs | Native example audio |
+|---|---|---|---|
+| 2.1 What happened (了 second pass) | Verb + 了: a finished action, often with an amount (买了三本书); 没 + verb with 了 dropped, and 了吗? answered 没有 | 1.14a, 1.13 | YT:Lazy Chinese beginner, Annie; CV (了 sentences are plentiful) |
+| 2.16 Things changed | Sentence-final 了, second pass: "now it's…" (我二十岁了, 天黑了); 不…了: not any more; 快/要/就要…了: about to happen (快…了 isn't "fast", moved from 2.12); verb-了 vs sentence-了, told apart in one story | 2.1 | YT:Lazy Chinese stories; CV (sentence-final 了, 快…了) |
+| 2.2 Experiences | Verb + 过: have ever done it; 没 + verb + 过: have never done it; 了 vs 过; a travel story told with 过 | 2.1 | YT:Xiaogua travel; CV (过 sentences) |
+| 2.3 At once and ongoing | 一边…一边: two actions at once; verb + 着: a state that holds (穿着, 开着, 坐着); verb + 着 + verb: doing one while doing another (笑着说, 走着去); 着 (state) vs 在 (action in progress, from 1.14a) | 1.14a | YT:Mandarin Click; CV (着 sentences) |
+| 2.8 Results | Verb + 完: finished; verb + 到 / 见: reached or perceived (找到, 看见, 听到); 没 + verb + result: it didn't come off (没听懂, 没找到); result complements in a story | 2.1 | YT:Mandarin Click; CV |
+| 2.7 Should, must, want, will | 要 vs 想 (both met in 1.10); 应该: should; 得 *děi*: have to; 会 "will" (a prediction) vs 会 "can" (1.10a) | 1.10a | YT:Annie; CV (得 *děi* sentences) |
+| 2.11 Asking and telling | Verb + 一下 and doubled verbs (看看) make an action brief and soft; 请 + verb: polite asking; 别 + verb: don't (like 不要), and 别…了: stop it; 请 / 叫 / 让 + person + verb: ask, tell or let someone do it | 1.13, 2.16 | YT:Mandarin Click; YT:Peppa (别 commands); CV (让我… sentences) |
+| 2.27 To, for, with someone | 跟 + person (+ 一起) + verb: with someone ("together", from 2.14); 给 + person + thing: two objects (送他一本书); 给 + person + verb: for or to someone (给我打电话); 对 + person: towards (他对我很好) | 1.12 | YT:Mandarin Click; CV (给/跟/对 sentences) |
+| 2.9 Counting things | Measure words beyond S1's, grouped by shape (张 flat, 条 long, 双 pairs, 位 polite); 一些 vs 有的 / 有些: some; 每 + MW + 都: every | 1.4a | YT:Peppa; GS. Mandarin Bean is reading only (link), so it can't supply card audio |
+| 2.13 Describing with 的 | Adjective + 的 + noun (好朋友 vs 很好的朋友); phrase + 的 + noun (我昨天买的书); 的 with the noun dropped (红的, 我买的, 卖菜的); spotting long 的 descriptions in narration | 1.5 | GS L3; CV |
+| 2.6 Time order | Event + 以前 / 以后: before and after; clause + 的时候: when (its 的 is already met in 2.13); 已经…了: already; 刚 + verb: it only just happened | 2.13, 2.16 | YT:Lazy Chinese stories; CV |
+| 2.19 Early, late | 一…就: as soon as; 才: later or harder than expected; 就 vs 才 | 2.6 | YT:Lazy Chinese stories; CV (一…就, 才 sentences) |
+| 2.5 Where and which way | Place + verb + 着 + thing: what's there (墙上挂着一张画); 来 vs 去 depends on the speaker; 在 after a verb (住在, 放在, 坐在); place + 来了 / 走了 + someone: who arrived or left (家里来了一个客人) | 1.7, 2.1, 2.3 | GS L2–3; YT:Mandarin Click |
+| 2.17 Getting around | 从 A 到 B: from…to; A 离 B + 远/近: distance; 坐/骑/开 + vehicle + verb: how you go ("in a row", from 2.14, purpose order is in 1.9) | 2.5 | YT:Mandarin Click; GS L2–3; CV |
+| 2.30 Midpoint checkpoint | Unseen clips with gist questions (new voices); interleaved confusables: 了/过, 着/在, 就/才, 要/想, 会 "will"/"can" | all units above (not gated) | YT:Mandarin Click, Lazy Chinese (unseen); CV (unseen speakers) |
+| 2.4 Comparing | A 比 B + adj, with 更 or 还 but never 很; A 没有 B (那么) + adj: the usual negative, not 不比; 比 + by how much (一点儿, 多了, 大三岁); A 跟 B 一样 (+ adj) | 1.3, 1.5 | YT:BlaBla intermediate; CV (比 sentences) |
+| 2.18 More and more, a bit too | 有点儿 + adj (a bit too, from 1.3) vs adj + 一点儿 (a bit more, from 2.4); 又…又: both; 越来越: more and more; 越…越: the more…, the more… | 2.4, 2.16 | CV (越来越 is easy to search); YT:Annie |
+| 2.14 Big and rough numbers | Counting in 万 (four-digit groups); roughly: 几 "several", 十多 / 十几, 两三, 左右; 半 before vs after the measure word (半个小时 vs 一个半小时) | 1.4, 1.8 | YT:Mandarin Click; AC number words; CV (万 sentences) |
+| 2.10 Linking clauses | 因为…所以; 虽然…但是/可是 (但是 and 可是 both mean "but"); 不但…而且: not only…but also; 或者 for "or" in statements, where 还是 asks (1.11) | 1.11 | YT:Xiaogua; **CV** (CRP texts have no usable audio) |
+| 2.12 How long | Duration after the verb (学了两年), asked with 多久 / 多长时间; double 了: it's still going (学了两年了); split verbs: 了, 过 and durations go inside (见过面, 睡了八个小时的觉) | 2.2, 2.16 | YT:Lazy Chinese; CV |
+| 2.31 How often, again | Verb + 次 / 遍: how many times (去过三次); 再 + verb: again, still to come (再说一遍); 又: again, already happened (他又迟到了); 又 vs 再 | 2.2, 2.16 | YT:Lazy Chinese; CV (再/又 sentences) |
+| 2.21 Direction after the verb | Verb + 来/去: toward or away from the speaker (拿来, 回去); verb + 上/下/进/出/回/过/起 (走进, 拿出, 坐下); compounds (进来, 出去, 回来, 站起来); non-spatial uses: 看起来 "seems", 想起来 "recall", 说下去 "keep going" | 2.5, 2.8 | YT:Peppa; YT:Mandarin Click; CV (起来/下去 sentences) |
+| 2.22 How well: 得 | Verb + 得 + adj: how an action goes (跑得很快); with an object, the verb repeats or the object comes first (他说中文说得很好 / 他中文说得很好); comparing how well (他跑得比我快) | 2.4 | YT:BlaBla; CV (得 sentences) |
+| 2.32 How: 地 and doubled adjectives | Doubled adjectives (高高的, 干干净净); adjective + 地 before a verb (慢慢地走); 的 vs 地 vs 得: one sound, told apart by position | 2.13, 2.22 | GS L3; CV |
+| 2.20 Can or can't | Verb + 不 + result or direction: can't (听不懂, 看不见, 进不去, with 听不懂 moved from 2.8); verb + 得 + result: can (听得懂吗?), unlike 2.22's "how well" 得 | 2.8, 2.21, 2.22 | YT:Mandarin Click; CV (听不懂/看不见 sentences) |
+| 2.23 When, where, how it happened | 是…的 picks out when, where or how a past event happened (你是怎么来的?); 是…的 vs 了 | 2.1, 2.6, 2.17 | YT:Lazy Chinese; CV (是…的 sentences) |
+| 2.28 If and only if | 如果…就 and …的话: if; 只要…就: as long as; 只有…才: only if; 只要 vs 只有 | 2.10, 2.19 | YT:Xiaogua; CV (如果, 只要 sentences) |
+| 2.29 Everything and nothing | 什么 / 谁 / 哪儿 + 都/也 (+ 不): everything, nothing, nobody (我什么都不知道); 一 + MW + 也/都 + 不/没, and 一点儿也不: not a single one; question words meaning "some-" (想吃点儿什么); 除了…以外: 还/也 "besides" vs 都 "except" | 1.2, 1.4a, 1.12 | YT:Lazy Chinese; CV (什么都, 除了 sentences) |
+| 2.24 Doing it to something: 把 | 把 + thing + verb + 在/到 + place (把书放在桌上); 把 + thing + verb + result or direction (把门关上, 把饭吃完); 把 in instructions, heard in a cooking or tidying scene; the thing first without 把 (作业写完了) | 2.5, 2.8, 2.21 | YT:Peppa; YT:Mandarin Click; CV (把 sentences) |
+| 2.25 Happening to you: 被 | 被 (+ doer) + verb + result, often bad news (钱包被偷了); 把 vs 被: who acts on whom | 2.24 | CV (被 sentences); YT:Lazy Chinese stories |
+| 2.26 Real-speed speech | Fillers (那个, 就是, 然后) heard in natural speech; sentence-final 啊 / 呢 / 吧 and the tone they add; 不是…吗?: a question that's really a reminder; first real-speed interview clip (moved from 2.14) | 1.2, 1.13 | YT:Mandarin Corner beginner (one question = one clip) |
+| 2.15 Checkpoint | Peppa episode with zh subs only and gist questions; GS L3 without pinyin; unseen Mandarin Corner clip; interleaved confusables: 的/地/得, the two 得s (how well vs can), 得 *de*/*děi*, 把/被, 是…的/了, 还是/或者, 有点儿/一点儿, 只要/只有 | all S2 units (not gated) | YT:Peppa, YT:Mandarin Corner; GS; CV |
+
+**S2 coverage note.** Together with S1, the lessons cover about 75 of the 99 Grammar Wiki A2 points and nearly all HSK 2025 L2–L3 sentence patterns, complements and two-part frames. The grammar lists used are the 2025 syllabus's L1–L4 grammar outlines as transcribed in `krmanik/HSK-3.0` ("New HSK (2025)/HSK Grammar"; checked 2026-11-02, not yet against the official PDF).
+
+- **Inclusion rule.** A point gets a lesson if it is in the L1–L3 grammar list and either (a) changes how a sentence parses (word order, a particle, a complement, a two-part frame) or (b) forms a confusable pair.
+- **Mined points.** Points whose meaning a gloss carries are taught from mined sentences ("this card uses 一直") with a Grammar Wiki deep link [28]. These include single adverbs, conjunctions and prepositions (一直, 总是, 只, 最, 差不多, 往, 为了, 刚才, 第), plus small frames (先…再/然后, 该…了, 都…了, 还是…吧, 一会儿…一会儿, adj + 得很 / 极了, 不比, X什么 "why on earth X").
+- **Removed as beyond L3.** The 2025 syllabus puts these at L4, so they were removed from lessons and are now mined only: 要是, verb + 不了 / 得了, 从来, 死了, 不如, and 让/叫 as passive markers.
+
+**S2 size note.** S2 grew from 15 units ≈ 60 lessons to 32 units ≈ 111, so that v1 actually completes HSK 1–3. 2.14 was retitled, and 2.16–2.32 are new. Over ~13 weeks this works out to ~1.2 lessons a day (~11 h of lesson cores) plus each unit's full CI video (~30 h). That is ~28 min a day, which fills the 30 min core slot from §1.7 with no slack. If it overruns, S2 runs 2–4 weeks past month 6; time freed by testing out of S0 offsets part of that. The bigger cost is clip curation for 17 more units.
 
 Every lesson emits cards (doc 06): its target words with AC audio, its 1–3 example sentences with their YT/CV/GS clip as the audio, and tone pairs for tone-perception lessons.
 
-**Content-production risk:** grammar points that rarely come up in beginner CI videos (二 vs 两 contrasts, 但是 vs 可是) will lean on **CV transcript search** for native examples. Budget curation time for finding and validating those clips.
+**Content-production risk:** grammar points that rarely come up in beginner CI videos (二 vs 两 contrasts, 把/被, 是…的, appearance sentences) will lean on **CV transcript search** for native examples. Budget curation time for finding and validating those clips.
 
 The curriculum ends here (≈ early Phase 2). After S2, the app's role shifts to SRS, mining and immersion logging, plus optional "bridge" units.
 
@@ -536,3 +572,4 @@ Switch per show, starting with the easiest. Expect it around months 3–5 for th
 61. Montero Perez, Van Den Noortgate & Desmet (2013), "Captioned video for L2 listening and vocabulary learning: a meta-analysis", System 41(3) – https://doi.org/10.1016/j.system.2013.07.013 (abstract via https://core.ac.uk/download/84321351.pdf) – large caption effects on listening and vocabulary.
 62. Pujadas & Muñoz (2020), "Examining adolescent EFL learners' TV viewing comprehension through captions and subtitles", SSLA – https://www.cambridge.org/core/journals/studies-in-second-language-acquisition/article/examining-adolescent-efl-learners-tv-viewing-comprehension-through-captions-and-subtitles/66353C0F8CC7F65B0DFE7570C48678A2 ; Pujadas & Muñoz (2019), Language Learning Journal 47(4) – https://diposit.ub.edu/items/148ce458-937c-4473-9385-8294f6d3e4fd/full – L1 subtitles better for beginner comprehension; vocabulary predicts caption benefit.
 63. r/Refold, "Complete beginner help" thread – https://reddit.birdcat.cafe/r/Refold/comments/1jqzugm/complete_beginner_help – community advice on native-language subtitles as a starting point (reported); Refold guidance to prefer matching subtitles for beginners (reported via search summary).
+64. krmanik/HSK-3.0, "New HSK (2025)/HSK Grammar/HSK 1–3.txt" – https://github.com/krmanik/HSK-3.0 – community transcription of the 2025 syllabus grammar lists, used for the S1/S2 coverage checks (reported; not checked against the official PDF)

@@ -13,6 +13,14 @@ Background research for the language-learning app. Each topic gets one numbered 
 | 05 | [Infra & licensing](05-infra-and-licensing.md) | Free-tier hosting, auth, DB, media storage; what content we can legally store/serve behind a login. |
 | 06 | [Lesson design](06-lesson-design.md) | Which lesson patterns from the user's vue-crash-course transfer to Mandarin (atomic lessons, skeleton, writing style)? |
 | 07 | [Activity types](07-activity-types.md) | What lesson and activity types does SLA pedagogy support for an input-first beginner, and how should variety be generated, rather than chosen ad hoc? |
+| 08 | [Curriculum structure review](08-curriculum-structure-review.md) | Which structural choices (lessons vs knowledge, ids, derived values, media) would box us in as lessons and history pile up? |
+
+Design docs (`docs/design/`), built on the research:
+
+| Doc | What it is |
+|-----|------------|
+| [Activity brainstorm](../design/activity-brainstorm.md) | 24 interactables (X1–X24), per-shape I do / we do routines, 9 quiz/check archetypes with feedback rules, a draft variety-matrix sketch, a cut list. Not final. |
+| [TDD: curriculum data model](../design/tdd-curriculum-data-model.md) | Entity model, authoring format, interactable registry, check/compile pipeline, derive functions, phases. Proposed. |
 
 Synthesis: see [Cross-topic synthesis](#cross-topic-synthesis) below (written after 01–06).
 
@@ -52,6 +60,7 @@ Synthesis: see [Cross-topic synthesis](#cross-topic-synthesis) below (written af
 
 - **Normal day: ~2 h total, fragmented** into chunks of anything from 5 min to 30 min to 1 h. Sessions must be resumable, and units should come in a few lengths (≈5 / 15–30 / 60 min).
 - **Lazy day: 15–20 min in bed**, phone screen on.
+- **v1 scope: HSK 2025 levels 1–3** (~1,000 words, S0–S2), decided 2026-11-02. Use the months at this level to refine the lesson format before adding S3+.
 - **Already knows the four tones and all pinyin initials and finals** (stated 2026-11-02). S0 lessons still get built, but the user must be able to mark them complete or test out.
 - **Immersion subtitles:** English subtitles "for the first long while" to get used to the sounds, switching to Mandarin subtitles at some comfort level. The app should track subtitle mode per log and help decide when to switch.
 - Pacing implied (per doc 01 §8): at ~2 h/day, ~6 months reaches end of Phase 1 / early 2A; Phases 1–2 complete in ~12–14 months.
@@ -61,7 +70,7 @@ Synthesis: see [Cross-topic synthesis](#cross-topic-synthesis) below (written af
 ### The app in one paragraph
 
 A phone-first web app with one owner. It runs three buckets of study:
-- **Curriculum:** 42 themed units (~140 atomic lessons of 5–7 min) over roughly 6 months. Each lesson starts with a native clip, then follows I do / we do / you do.
+- **Curriculum:** 64 themed units (~200 atomic lessons of 5–7 min) over roughly 6 months. Each lesson starts with a native clip, then follows I do / we do / you do.
 - **Flashcards:** FSRS with a capped, backlog-proof queue, fed by lessons and sentence mining.
 - **Immersion:** mostly outside the app (Netflix). It is logged by hand and supported by a suggestions list.
 
@@ -72,14 +81,16 @@ Every activity logs minutes under Refold's categories. Progress appears as three
 | Area | Decision | Docs |
 |---|---|---|
 | Time split | Phase-adaptive split, not a fixed 25/25/50. The split starts at 25/25/50 (1A–1B), shifts to ~10/20–25/65–70 (1C–1D), then ~0–5/20/75–80 (Phase 2). Flashcards are capped by **minutes** (~15–25/day), not by percentage. | 01 §8, 04 |
-| Pacing | At ~2 h/day the curriculum covers Phase 1 to early 2A (~1,000 words) in ~6 months, and Phases 1–2 take ~12–14 months. The app shows a time-to-goal projection from the trailing 14-day average. | 01 §8, 03 §1.7 |
+| Pacing | At ~2 h/day the curriculum covers Phase 1 to early 2A (~1,000 words) in ~6 months, and Phases 1–2 take ~12–14 months. After the stage reviews, S2 fills the ~30 min/day core slot with no slack and may run 2–4 weeks past month 6; testing out of S0 gives back about 2–3 weeks. The app shows a time-to-goal projection from the trailing 14-day average. | 01 §8, 03 §1.7 |
 | SRS | FSRS-7 via `ts-fsrs` 6.0.0, with the version pinned (npm release confirmed 2026-10-28) and FSRS-6 as a config fallback. Append-only review logs. | 02 |
 | Backlog | Daily cap, retrievability-descending order with a 15% lowest-R tail, siblings buried, and the carried-over count hidden. New cards are zero while behind. No vacation mode. | 02 |
 | Lessons | One idea per lesson with a 5–7 min core. Native clip first, ≤300-word explanation, I do / we do / you do, and each lesson emits flashcards. Input before output: Phases 0–2 use output levels 0–1 only. | 06, 07, 03 §1.8 |
+| Content & authoring (proposed, TDD) | Content lives in the repo and compiles to a static, content-addressed JSON bundle served **behind the auth Worker**. No content in Postgres; Postgres holds only append-only facts. Lessons are markdown with `:::slot` containers, ```` ```@widget ```` YAML blocks and `:ex[…]{clip=…}` examples. One TS module owns order and `teaches`/`assumes`. Vue 3 + TS + Vite SPA, with only the views depending on Vue. Prerequisites live on knowledge items, so 03 §1.8's unit `Prereqs` column becomes a planning view. | TDD |
+| Data model principles | Knowledge items are the spine, and lessons, cards and mining point at them. Store facts and derive categories, XP and mastery. Use stable ids, with order, HSK level and Grammar Wiki as attributes. Media, clips and speakers are entities, with exposure tracking and fallback clips. One evidence → mastery model. Seed the graph from data, not from lessons. | 08 |
 | Activity types | **Proposed, not final** (doc 07): 18 candidate activities (T1–T18) on 7 dimensions; the activity follows the target skill (transfer-appropriate processing); four lesson shapes chosen by idea type (Sound, Pattern, Clip, Checkpoint); variety comes from content (voices, speakers, clips), interleaved confusables and support faded across a unit, not from rotating formats (no evidence that helps learning); at most 1 optional "wildcard" activity per unit; Nation strand balance checked weekly. Build to spec, Upgrade and Fix it are parked until Phase 4–5. | 07 |
-| Curriculum | S0 Sounds (12 units) → S1 (15 units, ~300 words, Grammar Wiki A1) → S2 (15 units, ~1,000 words, A2 core); ~140 lessons total. HSK **2025** syllabus as the word scaffold. Characters learned in context, with components shown on demand. | 03 |
+| Curriculum | S0 Sounds (14 units, perception only, mostly tested out) → S1 (18 units, ~300 words, all 40 Grammar Wiki A1 points, ~90% of HSK 2025 L1 grammar) → S2 (32 units, ~1,000 words, ~75 of 99 A2 points and nearly all HSK 2025 L2–3 structural grammar, including 把/被/complements); ~200 lessons. Each unit has a `Prereqs` column; the graph was machine-checked on 2026-11-02 (acyclic, no forward references). HSK **2025** syllabus as the word scaffold. Characters learned in context, with components shown on demand. | 03 |
 | Tones | High-variability tone trainer (≥4 native voices), which also acts as the S0 gate. The user already knows tones and pinyin, so it serves as the S0 test-out and an optional daily drill rather than week-1 teaching. | 03, 01 |
-| Completion & test-out | **Lesson status:** not started → in progress → complete, with one-tap "mark complete" on any lesson (as in vue-crash-course §4). Nothing is gated. **Test-out:** "I already know this" on a lesson, unit or whole stage offers an optional Checkpoint (unseen voices; ≥80% passes) or plain self-report. Status records its source: `completed` / `tested_out` / `self_reported`. These count as met prerequisites in the knowledge graph, so the frontier moves on to S1. No XP for marking complete (04: no backfill credit). A weak checkpoint area (e.g. 3rd-tone sandhi, zh/j) recommends just those lessons. | 04, 06, here |
+| Completion & test-out | **Lesson status is computed from knowledge-item evidence (doc 08 F1):** not started → in progress → complete, with one-tap "mark complete" on any lesson (as in vue-crash-course §4). Nothing is gated. **Test-out:** "I already know this" on a lesson, unit or whole stage offers an optional Checkpoint (unseen voices; ≥80% passes, ≥85% for the S0 sound checkpoints) or plain self-report. Each one writes evidence onto the lesson's knowledge items, with source `checkpoint` or `self_report` (self-report is capped at Familiar). These count as met prerequisites in the knowledge graph, so the frontier moves on to S1. No XP for marking complete (04: no backfill credit). A weak checkpoint area (e.g. 3rd-tone sandhi, zh/j) recommends just those lessons. | 04, 06, here |
 | Progress meters | XP = focused minutes (in-app 1/min; logged immersion 0.5/min, capped at 20/day). Input hours and graph mastery are kept as separate meters. | 04 |
 | Knowledge graph | Sound / Script / Grammar layers plus lesson nodes, with mastery derived from FSRS stability and soft gates. On the phone: a frontier list plus rings. Cytoscape.js for the zoomable map. | 04 |
 | Leave out | Leagues, negative XP, hearts or gems, random rewards, guilt notifications, hard locks. | 04 |
@@ -101,7 +112,7 @@ Every activity logs minutes under Refold's categories. Progress appears as three
 
 ### Biggest risks
 
-- **Content curation is the real cost.** About 140 lessons across 42 units need hand-picked native clips with timestamps (Common Voice transcript search is the fallback for grammar examples), plus hand-made line timings and transcripts, because YouTube captions can't be fetched for other people's videos. Plan it as its own workstream.
+- **Content curation is the real cost.** About 200 lessons across 64 units need hand-picked native clips with timestamps (Common Voice transcript search is the fallback for grammar examples), plus hand-made line timings and transcripts, because YouTube captions can't be fetched for other people's videos. Plan it as its own workstream.
 - **Card audio from YouTube spans.** Mounting one iframe per flashcard is heavy on a phone. Prototype it early, using a single reused player and pre-roll. Fall back to rehostable native audio for word cards.
 - **FSRS-7 is days old.** Pin the version, keep full logs, and replay the history into FSRS-6 if it misbehaves.
 - **Supabase Free pauses after ~7 idle days and has no backups.** The cron ping and weekly dump are MUST-haves, not extras.
@@ -118,7 +129,7 @@ Every activity logs minutes under Refold's categories. Progress appears as three
 7. Should flashcards use 2-button (Again/Good, recommended for the phone) or 4-button grading?
 8. Is it OK to put a card on file with Cloudflare for R2? (No-card fallback: Backblaze B2.)
 9. Should XP be visible at all, or only rings, hours and mastery?
-10. Lesson authoring: markdown in the repo with a `check` script (like vue-crash-course), or rows in Supabase?
-11. Who curates the clips and timestamps for the ~140 lessons, and when?
+10. Lesson authoring: the TDD proposes repo-only markdown compiled to a private bundle, with no lesson editing from the phone. Accept?
+11. Who curates the clips and timestamps for the ~200 lessons, and when?
 12. Is the app non-commercial forever? That keeps the CC BY-NC sources usable.
-13. Frontend framework: Vue 3 (the user's recent stack) or something else?
+13. Frontend framework: the TDD proposes Vue 3 + TS + Vite. Accept?

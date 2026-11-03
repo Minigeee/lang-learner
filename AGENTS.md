@@ -1,8 +1,7 @@
 # AGENTS.md
 
-See `CURRICULUM.md` for the course plan: structure, lesson list, and platform decisions.
-All learner-facing text (lessons, quick start, site copy) follows the lesson format (§2) and writing style rules (§3) in `CURRICULUM.md`. Check new prose against them before finishing.
-Code, demos and the code blocks in lessons use Prettier's default style. Run `npm run format` before finishing; the deploy fails on `npm run format:check`. Inline code in lesson prose quotes strings the way the formatted code does.
+See `docs/research/README.md` for the research index, the cross-topic synthesis, and the open decisions. Read it before proposing design or build steps.
+Research docs follow the section conventions in that README. Record decisions in its synthesis section, not in the topic docs.
 
 ## Code health
 
