@@ -4,4 +4,4 @@ Temporary and experimental work: mockups, spikes, throwaway prototypes. Nothing 
 
 | Path | What it is |
 |---|---|
-| `ui-mockups/index.html` | Static phone mockups of every main screen, for nailing the UI/UX before building. Open it in a browser. The proposal behind it is [docs/design/app-ui-flow.md](../docs/design/app-ui-flow.md). |
+| `ui-mockups/index.html` | A Figma-style board of static phone mockups, grouped into flows with arrows and sticky notes, for nailing the UI/UX before building. Open it in a browser: drag to pan, scroll or pinch to zoom, F to fit, and a light/dark toggle (dark by default). The proposal behind it is [docs/design/app-ui-flow.md](../docs/design/app-ui-flow.md). |

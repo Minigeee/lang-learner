@@ -2,7 +2,7 @@
 
 A phone-first layout for the v1 app, built on the research decisions in [docs/research/README.md](../research/README.md) and the lesson design in [activity-brainstorm.md](activity-brainstorm.md). Proposal only: nothing here is decided until the user agrees.
 
-**Mockups:** [sandbox/ui-mockups/index.html](../../sandbox/ui-mockups/index.html) (open in a browser) has 14 static phone screens: Today, Path (unit graph), Progress, Watch, the log sheet, four lesson-player steps including a Clip pass, review, the session summary, item detail and the test-out result.
+**Mockups:** [sandbox/ui-mockups/index.html](../../sandbox/ui-mockups/index.html) (open in a browser) is a pan-and-zoom board, with a light/dark toggle, that lays out 14 static phone screens as flows: Today, Path (unit graph), Progress, Watch, the log sheet, four lesson-player steps including a Clip pass, review, the session summary, item detail and the test-out result.
 
 ## Design goals
 
