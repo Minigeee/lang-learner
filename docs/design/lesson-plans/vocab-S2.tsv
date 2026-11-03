@@ -7,6 +7,7 @@ word	level	tier	place	needed_by	rank	note
 肉	2	lesson	2.1a	2.1		
 斤	3	lesson	2.1a	2.1		
 碗	3	lesson	2.1a	2.1		
+常常	3	lesson	2.1a	2.1 2.22		2.1a habit marker (常常买三本)
 告诉	2	lesson	2.1b	2.1		
 药	2	lesson	2.1b	2.1		
 票	2	lesson	2.1b	2.1		
@@ -16,6 +17,7 @@ word	level	tier	place	needed_by	rank	note
 开学	2	unit	2.2	2.2		
 季节	3	unit	2.2	2.2		
 初中	3	unit	2.2	2.2		
+放假	3	unit	2.2	2.2		
 冬天	3	lesson	2.2a	2.2		
 夏天	3	lesson	2.2a	2.2		
 春天	3	lesson	2.2a	2.2		
@@ -28,7 +30,6 @@ word	level	tier	place	needed_by	rank	note
 快	2	lesson	2.2c	2.2 2.16		
 快要	2	lesson	2.2c	2.2		
 结束	3	lesson	2.2c	2.2		
-放假	3	unit	2.2	2.2		
 疼	2	lesson	2.2d	2.2		
 舒服	2	lesson	2.2d	2.2		
 感冒	3	lesson	2.2d	2.2		
@@ -50,10 +51,14 @@ word	level	tier	place	needed_by	rank	note
 机票	2	lesson	2.3c	2.3		
 行李	3	lesson	2.3c	2.3		
 护照	3	lesson	2.3c	2.3		
-拿	2	unit	2.5	2.5		
 黑色	2	lesson	2.4a	2.4 2.5		
 红色	2	lesson	2.4a	2.4 2.5 2.11		
 白色	2	lesson	2.4a	2.4 2.5		
+颜色	2	lesson	2.4a	2.4 2.11		
+绿色	2	lesson	2.4b	2.4 2.11		
+蓝	3	lesson	2.4b	2.4 2.11		
+黄色	3	lesson	2.4b	2.4 2.11		
+拿	2	unit	2.5	2.5		
 着	2	lesson	2.5a	2.5 2.14 2.16		
 站	3	lesson	2.5a	2.5		verb 'stand' (站着)
 关	3	lesson	2.5a	2.5		
@@ -72,15 +77,15 @@ word	level	tier	place	needed_by	rank	note
 忘	2	unit	2.6	2.6		
 发现	3	unit	2.6	2.6		
 忘记	3	unit	2.6	2.6		
-完	2	lesson	2.6a	2.6 2.16 2.31		
-题	2	lesson	2.6a	2.6		
-完成	3	lesson	2.6a	2.6		
-作业	3	lesson	2.6a	2.6		
 错	2	unit	2.6	2.6		
 声音	3	unit	2.6	2.6		
 遇到	3	unit	2.6	2.6		
 收到	3	unit	2.6	2.6		
 遇见	3	unit	2.6	2.6		
+完	2	lesson	2.6a	2.6 2.16 2.31		
+题	2	lesson	2.6a	2.6		
+完成	3	lesson	2.6a	2.6		
+作业	3	lesson	2.6a	2.6		
 懂	2	lesson	2.6c	2.6 2.26		
 清楚	3	lesson	2.6c	2.6		
 明白	3	lesson	2.6c	2.6		
@@ -117,6 +122,7 @@ word	level	tier	place	needed_by	rank	note
 一会儿	2	lesson	2.8a	2.8		等一会儿
 试	3	lesson	2.8a	2.8		
 尝	3	lesson	2.8a	2.8		
+一下	1	lesson	2.8a	2.8		L1 word; moved from the S1 queue because 2.8a teaches verb + 一下
 别	2	lesson	2.8b	2.8 2.16		
 哭	3	lesson	2.8b	2.8		
 生气	3	lesson	2.8b	2.8		
@@ -126,10 +132,12 @@ word	level	tier	place	needed_by	rank	note
 办公室	3	lesson	2.8c	2.8		
 经理	3	lesson	2.8c	2.8		
 同事	3	lesson	2.8c	2.8		
+请	1	lesson	2.8c	2.8		L1 word; moved from the S1 queue because 2.8c teaches 请 + person + verb
 介绍	2	unit	2.9	2.9		
 快乐	2	unit	2.9	2.9		maybe-S1 (S1 video title)
 妻子	2	unit	2.9	2.9		
 蛋糕	3	unit	2.9	2.9		
+热情	3	unit	2.9	2.9		
 给	2	lesson	2.9a	2.9 2.16		sense: preposition 给 + person
 送	2	lesson	2.9a	2.9		
 发	3	lesson	2.9a	2.9		
@@ -141,9 +149,9 @@ word	level	tier	place	needed_by	rank	note
 一块儿	3	lesson	2.9b	2.9		
 关心	3	lesson	2.9c	2.9		
 满意	3	lesson	2.9c	2.9		
-热情	3	unit	2.9	2.9		
 兴趣	3	lesson	2.9c	2.9		
 感兴趣	3	lesson	2.9c	2.9		
+对	1	lesson	2.9c	2.9 2.16		sense: preposition 对 + person, toward
 家	3	unit	2.10	2.10		sense: measure word for shops (一家饭馆)
 种	3	unit	2.10	2.10		
 辆	3	unit	2.10	2.10		
@@ -157,21 +165,19 @@ word	level	tier	place	needed_by	rank	note
 其他	3	lesson	2.10b	2.10		
 有些	3	lesson	2.10b	2.10		sense: 'somewhat; some'
 别人	3	lesson	2.10b	2.10		
+有的	1	lesson	2.10b	2.10 2.16		L1 word; moved from the S1 queue because 2.10b teaches 有的 vs 一些
+一些	1	lesson	2.10b	2.10 2.16		L1 word; moved from the S1 queue because 2.10b teaches 有的 vs 一些
 周	2	lesson	2.10c	2.10		
 每	2	lesson	2.10c	2.10 2.16		
 平时	3	lesson	2.10c	2.10		
 周末	3	lesson	2.10c	2.10		
-绿色	2	lesson	2.4b	2.4 2.11		
 小孩儿	2	unit	2.11	2.11		
 老	3	unit	2.11	2.11		
-蓝	3	lesson	2.4b	2.4 2.11		
-黄色	3	lesson	2.4b	2.4 2.11		
 长	2	lesson	2.11a	2.11		cháng 'long' (长头发)
 眼睛	2	lesson	2.11a	2.11		
 个子	2	lesson	2.11a	2.11		
 年轻	3	lesson	2.11a	2.11		
 头发	3	lesson	2.11a	2.11		
-颜色	2	lesson	2.4a	2.4 2.11		
 旧	3	lesson	2.11b	2.11		
 大小	3	lesson	2.11b	2.11		
 合适	3	lesson	2.11b	2.11		
@@ -186,18 +192,19 @@ word	level	tier	place	needed_by	rank	note
 后天	3	unit	2.12	2.12		
 前年	3	unit	2.12	2.12		
 后年	3	unit	2.12	2.12		
+从小	2	unit	2.12	2.12		
+过去	3	unit	2.12	2.12		noun 'the past'
+后来	3	unit	2.12	2.12		
+起飞	3	unit	2.12	2.12		
 先	3	lesson	2.12a	2.12		
 然后	3	lesson	2.12a	2.12 2.32		also the 2.32a filler
 以后	3	lesson	2.12a	2.12 2.16		
 以前	3	lesson	2.12a	2.12 2.16		2.3b's 以前 time point should use 去年 (L1)
 时	2	lesson	2.12b	2.12		= 时候; with 的时候
 小时候	2	lesson	2.12b	2.12		
-从小	2	unit	2.12	2.12		
-过去	3	unit	2.12	2.12		noun 'the past'
-后来	3	unit	2.12	2.12		
+时候	1	lesson	2.12b	2.12		L1 word; moved from the S1 queue because 2.12b teaches clause + 的时候
 已经	2	lesson	2.12c	2.12 2.16		
 出发	3	lesson	2.12c	2.12		
-起飞	3	unit	2.12	2.12		
 晚点	3	lesson	2.12c	2.12		
 高铁	3	lesson	2.12c	2.12		
 刚	3	lesson	2.12d	2.12 2.16		
@@ -233,6 +240,10 @@ word	level	tier	place	needed_by	rank	note
 往	2	unit	2.15	2.15		
 左	2	unit	2.15	2.15		
 右	2	unit	2.15	2.15		
+飞机	1	unit	2.15	2.15		L1 word; moved from the S1 queue to join 2.15c's vehicle set
+火车	1	unit	2.15	2.15		L1 word; moved from the S1 queue to join 2.15c's vehicle set
+出租车	1	unit	2.15	2.15		L1 word; moved from the S1 queue to join 2.15c's vehicle set
+照顾	3	prep	prep:2.15	2.16		2.16a Babysitting title 照顾宝宝; 2.16 is ungated, so gist questions mustn't hinge on it
 从	2	lesson	2.15a	2.15 2.16		
 车站	2	lesson	2.15a	2.15		
 银行	3	lesson	2.15a	2.15		
@@ -247,7 +258,6 @@ word	level	tier	place	needed_by	rank	note
 公交车	2	lesson	2.15c	2.15		
 骑	3	lesson	2.15c	2.15		
 自行车	3	lesson	2.15c	2.15		
-照顾	3	prep	prep:2.15	2.16		2.16a Babysitting title 照顾宝宝; 2.16 is ungated, so gist questions mustn't hinge on it
 最	2	unit	2.17	2.17		
 比较	3	unit	2.17	2.17		
 比	2	lesson	2.17a	2.17 2.24 2.33		
@@ -260,6 +270,7 @@ word	level	tier	place	needed_by	rank	note
 凉快	3	lesson	2.17b	2.17		
 公斤	3	lesson	2.17c	2.17		
 身高	3	lesson	2.17c	2.17		
+一点儿	1	lesson	2.17c	2.17 2.18 2.29 2.33		moved from 1.14d, which never used it (S2b move)
 像	3	lesson	2.17d	2.17		
 不同	3	lesson	2.17d	2.17		
 一样	3	lesson	2.17d	2.17 2.33		
@@ -269,6 +280,7 @@ word	level	tier	place	needed_by	rank	note
 极	3	unit	2.18	2.18		
 挺	3	unit	2.18	2.18		
 饱	3	unit	2.18	2.18		
+发展	3	unit	2.18	2.18		moved to the unit so 2.18c can carry its target 越来越
 慢	2	lesson	2.18a	2.18		
 短	3	lesson	2.18a	2.18		
 甜	3	lesson	2.18a	2.18		
@@ -278,7 +290,6 @@ word	level	tier	place	needed_by	rank	note
 聪明	3	lesson	2.18b	2.18		
 干净	3	lesson	2.18b	2.18		
 安静	3	lesson	2.18b	2.18		
-发展	3	unit	2.18	2.18		moved to the unit so 2.18c can carry its target 越来越
 长	3	lesson	2.18c	2.18		sense: zhǎng 'grow' (越长越高)
 越	3	lesson	2.18c	2.18		
 变化	3	lesson	2.18c	2.18		
@@ -288,17 +299,18 @@ word	level	tier	place	needed_by	rank	note
 城市	3	unit	2.19	2.19		
 以上	3	unit	2.19	2.19		
 以下	3	unit	2.19	2.19		
-万	2	lesson	2.19a	2.19		maybe-S1 (1.5c note: 两万); taught in 2.19a
 分	3	unit	2.19	2.19		sense: fen as money and points; money word set with 毛 and 角, whose head 块 is at 1.14a (S2b #14)
 毛	3	unit	2.19	2.19		money word set with 分 and 角 (S2b #14)
 角	3	unit	2.19	2.19		money word set with 分 and 毛 (S2b #14)
+万	2	lesson	2.19a	2.19		maybe-S1 (1.5c note: 两万); taught in 2.19a
+千	1	lesson	2.19a	2.19		L1 word; moved from the S1 queue because 2.19a teaches 百/千/万 (S1 stops at 99)
+百	1	lesson	2.19a	2.19		moved from 1.14a, which never used it; 2.19a teaches 百/千/万 (S2b move)
 多	2	lesson	2.19b	2.19		sense: 'more than' after a number (十多)
 好多	3	lesson	2.19b	2.19		
 大概	3	lesson	2.19b	2.19		
 一共	3	lesson	2.19b	2.19		
 差	3	lesson	2.19c	2.19		
 刻	3	lesson	2.19c	2.19		
-运动	2	unit	2.24	2.24		2.24 sports context; 2.20b's exercise video is viewing only (S2b #15)
 为了	3	unit	2.20	2.20		
 其实	3	unit	2.20	2.20 2.32		also a 2.32a filler (Grace video)
 当然	3	unit	2.20	2.20		
@@ -336,7 +348,6 @@ word	level	tier	place	needed_by	rank	note
 有时	2	unit	2.22	2.22		
 有时候	2	unit	2.22	2.22		
 常	3	unit	2.22	2.22		
-常常	3	lesson	2.1a	2.1 2.22		2.1a habit marker (常常买三本)
 次	2	lesson	2.22a	2.22 2.33		
 回	3	lesson	2.22a	2.22		sense: measure word 'times'
 遍	3	lesson	2.22a	2.22 2.33		
@@ -345,8 +356,10 @@ word	level	tier	place	needed_by	rank	note
 练	3	lesson	2.22b	2.22		
 练习	3	lesson	2.22b	2.22		
 菜单	3	lesson	2.22b	2.22		
+再	1	lesson	2.22b	2.22 2.33		2.22b's target, 再 + verb (S2b #12d); helps 再见 (1.1c)
 总是	3	lesson	2.22c	2.22		
 伞	3	lesson	2.22c	2.22		
+又	3	lesson	2.22c	2.22 2.33		sense: 'again' (S2b #2); the 又…又 'both' row stays at 2.18b
 过去	2	unit	2.23	2.23		verb 'go over'
 过来	2	unit	2.23	2.23		
 门口	2	unit	2.23	2.23		
@@ -368,6 +381,7 @@ word	level	tier	place	needed_by	rank	note
 起来	2	lesson	2.23d	2.23		
 下去	2	lesson	2.23d	2.23		
 看来	3	lesson	2.23d	2.23		
+运动	2	unit	2.24	2.24		2.24 sports context; 2.20b's exercise video is viewing only (S2b #15)
 球	2	unit	2.24	2.24		
 水平	3	unit	2.24	2.24		
 体育	3	unit	2.24	2.24		
@@ -379,6 +393,7 @@ word	level	tier	place	needed_by	rank	note
 篮球	2	lesson	2.24a	2.24		
 比赛	3	lesson	2.24b	2.24		
 运动员	3	lesson	2.24b	2.24		
+快	2	lesson	2.24b	2.24		sense: 'fast' (跑得很快) (S2b #6); 2.24a is full; the 快…了 row stays at 2.2c
 突然	3	unit	2.25	2.25		
 奇怪	3	unit	2.25	2.25		
 难过	3	unit	2.25	2.25		
@@ -452,6 +467,10 @@ word	level	tier	place	needed_by	rank	note
 影响	3	unit	2.31	2.31		
 受	3	unit	2.31	2.31		
 受到	3	unit	2.31	2.31		
+最后	3	prep	prep:2.31	2.33		2.33b unseen L3 story; fed before the checkpoint (S2b #15)
+决定	3	prep	prep:2.31	2.33		2.33b unseen L3 story; no new words in checkpoints (S2b #15)
+离开	3	prep	prep:2.31	2.33		2.33b unseen L3 story; fed before the checkpoint (S2b #15)
+故事	3	prep	prep:2.31	2.33		maybe-S1 (S1 video title); 2.33b story; fed before the checkpoint (S2b #15)
 被	3	lesson	2.31a	2.31 2.33		
 选	3	lesson	2.31a	2.31		
 事情	2	lesson	2.31b	2.31		
@@ -461,9 +480,6 @@ word	level	tier	place	needed_by	rank	note
 汽车	3	lesson	2.31c	2.31 2.33		also 2.33a The New Car
 换	3	lesson	2.31c	2.31		
 借	3	lesson	2.31c	2.31 2.33		also 2.33a The New Car
-游戏	3	lesson	2.32d	2.32		guess at 2.32d corpus topic (leisure chat); re-pick when the corpus topic is chosen (S2b #15)
-节目	3	lesson	2.32d	2.32		guess at 2.32d corpus topic; re-pick when the corpus topic is chosen (S2b #15)
-聊	3	lesson	2.32d	2.32		2.32 phone-chat corpus; re-pick when the corpus topic is chosen (S2b #15)
 讲	3	unit	2.32	2.32		
 回答	3	unit	2.32	2.32		
 对话	3	unit	2.32	2.32		
@@ -472,12 +488,11 @@ word	level	tier	place	needed_by	rank	note
 啊	2	lesson	2.32b	2.32		
 认为	3	lesson	2.32c	2.32		
 以为	3	lesson	2.32c	2.32		
+游戏	3	lesson	2.32d	2.32		guess at 2.32d corpus topic (leisure chat); re-pick when the corpus topic is chosen (S2b #15)
+节目	3	lesson	2.32d	2.32		guess at 2.32d corpus topic; re-pick when the corpus topic is chosen (S2b #15)
+聊	3	lesson	2.32d	2.32		2.32 phone-chat corpus; re-pick when the corpus topic is chosen (S2b #15)
 生活	3	lesson	2.32d	2.32		maybe-S1 (S1 video titles)
 习惯	3	lesson	2.32d	2.32		
-最后	3	prep	prep:2.31	2.33		2.33b unseen L3 story; fed before the checkpoint (S2b #15)
-决定	3	prep	prep:2.31	2.33		2.33b unseen L3 story; no new words in checkpoints (S2b #15)
-离开	3	prep	prep:2.31	2.33		2.33b unseen L3 story; fed before the checkpoint (S2b #15)
-故事	3	prep	prep:2.31	2.33		maybe-S1 (S1 video title); 2.33b story; fed before the checkpoint (S2b #15)
 里面	2	queue	queue:S2		1	maybe-S1 (1.9b video: 里面)
 上面	2	queue	queue:S2		2	maybe-S1 (1.9b video)
 下面	2	queue	queue:S2		3	maybe-S1 (1.9b video)
@@ -692,18 +707,3 @@ word	level	tier	place	needed_by	rank	note
 检票	3	queue	queue:S2		212	
 开机	3	queue	queue:S2		213	
 面前	3	queue	queue:S2		214	
-千	1	lesson	2.19a	2.19		L1 word; moved from the S1 queue because 2.19a teaches 百/千/万 (S1 stops at 99)
-百	1	lesson	2.19a	2.19		moved from 1.14a, which never used it; 2.19a teaches 百/千/万 (S2b move)
-一点儿	1	lesson	2.17c	2.17 2.18 2.29 2.33		moved from 1.14d, which never used it (S2b move)
-一下	1	lesson	2.8a	2.8		L1 word; moved from the S1 queue because 2.8a teaches verb + 一下
-请	1	lesson	2.8c	2.8		L1 word; moved from the S1 queue because 2.8c teaches 请 + person + verb
-有的	1	lesson	2.10b	2.10 2.16		L1 word; moved from the S1 queue because 2.10b teaches 有的 vs 一些
-一些	1	lesson	2.10b	2.10 2.16		L1 word; moved from the S1 queue because 2.10b teaches 有的 vs 一些
-时候	1	lesson	2.12b	2.12		L1 word; moved from the S1 queue because 2.12b teaches clause + 的时候
-对	1	lesson	2.9c	2.9 2.16		sense: preposition 对 + person, toward
-飞机	1	unit	2.15	2.15		L1 word; moved from the S1 queue to join 2.15c's vehicle set
-火车	1	unit	2.15	2.15		L1 word; moved from the S1 queue to join 2.15c's vehicle set
-出租车	1	unit	2.15	2.15		L1 word; moved from the S1 queue to join 2.15c's vehicle set
-又	3	lesson	2.22c	2.22 2.33		sense: 'again' (S2b #2); the 又…又 'both' row stays at 2.18b
-快	2	lesson	2.24b	2.24		sense: 'fast' (跑得很快) (S2b #6); 2.24a is full; the 快…了 row stays at 2.2c
-再	1	lesson	2.22b	2.22 2.33		2.22b's target, 再 + verb (S2b #12d); helps 再见 (1.1c)
