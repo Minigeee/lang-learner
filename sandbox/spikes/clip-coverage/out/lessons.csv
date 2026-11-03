@@ -11,149 +11,149 @@ S1,1.4,Numbers and age,1.4-a,number structure 十一…九十九,pattern,0,0,11,
 S1,1.4,Numbers and age,1.4-b,个 between number and noun; 几个,pattern,0,0,50,1029,3503,2,66,61,36,1,24,6338,2,1,63,1079,0,0,yellow,yellow,52,3,not_green,55,165,11,green,green,271,306,0,595,green
 S1,1.4,Numbers and age,1.4-c,两 not 二 before a measure word,pattern,0,0,15,253,637,3,11,17,11,0,6,353,3,1,20,268,0,0,yellow,yellow,18,3,not_green,16,60,5,green,green,64,62,0,138,green
 S1,1.4,Numbers and age,1.4-d,age with 岁 / 多大,pattern,0,0,16,196,424,1,8,24,6,0,18,107,1,1,25,212,0,0,yellow,yellow,17,3,not_green,24,78,0,green,green,58,47,0,119,green
-S1,1.4a,"This, that, which",1.4a-a,这/那/哪 + MW + noun,pattern,2,1,95,1552,5258,6,40,24,19,1,4,689,8,2,32,1647,0,0,yellow,yellow,103,4,green,22,73,5,green,green,69,194,0,281,green
-S1,1.4a,"This, that, which",1.4a-b,这些 / 那些,pattern,0,0,20,194,716,0,14,4,2,0,2,350,0,0,4,214,0,0,red,red,20,2,not_green,4,9,0,red,red,38,75,0,114,green
-S1,1.4a,"This, that, which",1.4a-c,everyday MWs with their nouns,pattern,2,1,61,796,1905,4,29,14,11,0,3,112,6,2,20,857,10,10,yellow,yellow,67,4,green,10,38,5,green,green,19,72,0,104,green
-S1,1.5,Family,1.5-a,possession with 的,pattern,5,2,142,1985,7467,11,97,33,22,4,7,622,16,3,49,2127,0,0,yellow,yellow,158,5,green,30,111,5,green,green,47,343,0,431,green
-S1,1.5,Family,1.5-b,我妈妈 vs 我的妈妈,pattern,0,0,32,726,1400,6,42,3,2,0,1,47,6,1,9,758,11,10,yellow,red,38,3,not_green,3,11,0,green,green_checked,14,99,0,118,green
-S1,1.5,Family,1.5-c,有 / 没有 (never 不有),clip,2,2,167,2480,8346,5,104,149,88,1,60,3817,7,3,156,2647,0,0,yellow,yellow,174,5,green,128,334,16,green,green,260,1079,0,1443,green
-S1,1.6,Asking how,1.6-a,怎么 + verb,pattern,1,1,28,336,775,1,8,19,17,0,2,32,2,2,21,364,0,0,yellow,yellow,30,4,green,17,61,3,green,green,18,82,0,118,green
-S1,1.6,Asking how,1.6-b,怎么样,pattern,2,1,9,120,217,0,0,3,3,0,0,5,2,1,5,129,0,0,yellow,yellow,11,3,not_green,2,10,1,green_checked,green_checked,0,22,0,26,green
-S1,1.7,Where things are,1.7-a,thing + 在 + place; 在哪儿?,pattern,1,1,78,910,1855,7,33,6,6,0,0,102,8,2,14,988,0,0,yellow,yellow,86,4,green,6,43,1,green,green,6,65,0,84,green
-S1,1.7,Where things are,1.7-b,place words after a noun,pattern,1,1,73,991,2767,6,106,31,25,0,6,441,7,2,38,1064,0,0,yellow,yellow,80,4,green,24,95,6,green,green,22,87,0,138,green
-S1,1.7,Where things are,1.7-c,place + 有 + thing vs thing + 在 + place,clip,0,0,20,210,607,0,5,9,7,0,2,84,0,0,9,230,0,0,yellow,yellow,20,2,not_green,5,27,1,green,red,6,38,0,47,green
-S1,1.8,Dates and times,1.8-a,dates 年 → 月 → 号,pattern,0,0,11,121,492,0,1,16,4,0,12,207,0,0,16,132,0,0,yellow,red,11,2,not_green,14,64,2,green,red,773,255,0,938,green
-S1,1.8,Dates and times,1.8-b,days of the week,pattern,0,0,36,259,635,0,0,5,3,1,1,49,0,0,5,295,8,1,yellow,red,36,2,not_green,3,3,1,red,red,18,27,0,48,green
-S1,1.8,Dates and times,1.8-c,clock time 点/分/半,pattern,0,0,45,544,994,0,3,31,26,2,3,139,0,0,31,589,0,0,yellow,yellow,45,2,not_green,26,75,4,green,green,237,1872,0,2111,green
-S1,1.9,"Daily verbs, word order",1.9-a,S + V + O in daily life,clip,3,2,67,922,1787,2,10,12,10,1,1,22,5,3,17,989,0,0,yellow,yellow,72,5,green,10,21,3,green,green,29,113,0,156,green
-S1,1.9,"Daily verbs, word order",1.9-b,去 + place (+ verb for purpose),pattern,0,0,16,212,379,1,3,4,3,0,1,11,1,1,5,228,0,0,yellow,red,17,3,not_green,4,25,0,green,red,3,46,0,54,green
-S1,1.9,"Daily verbs, word order",1.9-c,time words before the verb,pattern,1,1,74,904,1524,3,8,10,9,1,0,23,4,2,14,978,0,0,yellow,yellow,78,4,green,8,8,3,green,green,23,52,0,86,green
-S1,1.9,"Daily verbs, word order",1.9-d,在 + place before the verb,pattern,0,0,18,233,401,2,8,3,3,0,0,10,2,1,5,251,0,0,yellow,yellow,20,3,not_green,3,19,0,green,green,8,8,0,20,green
-S1,1.10,Wanting,1.10-a,想 + verb,pattern,2,1,72,707,1391,1,6,8,8,0,0,31,3,2,11,779,0,0,yellow,yellow,75,4,green,5,14,3,green,green,10,195,0,212,green
-S1,1.10,Wanting,1.10-b,要 + noun/verb (want; going to),pattern,1,1,64,1040,2982,1,35,54,45,5,4,390,2,2,56,1104,0,0,yellow,yellow,66,4,green,43,132,9,green,green,89,298,0,422,green
-S1,1.10a,Can,1.10a-a,会: learned skill,pattern,0,0,16,309,628,3,8,2,0,0,2,20,3,1,5,325,0,0,red,red,19,3,not_green,2,2,0,green_checked,red,10,14,0,28,green
-S1,1.10a,Can,1.10a-b,能: able / possible,pattern,0,0,75,850,2704,11,34,28,18,1,9,536,11,1,39,925,0,0,yellow,yellow,86,3,not_green,25,122,3,green,green,72,216,0,314,green
-S1,1.10a,Can,1.10a-c,可以; 行 / 不行,pattern,0,0,34,498,1672,5,25,29,23,0,6,781,5,1,34,532,0,0,yellow,yellow,39,3,not_green,26,85,5,green,green,54,108,0,186,green
-S1,1.10a,Can,1.10a-d,会 vs 能 vs 可以,contrast,0,0,124,1652,4950,19,65,59,41,1,17,1327,19,1,78,1776,0,0,yellow,yellow,143,3,not_green,53,191,8,green,green,134,337,0,525,green
-S1,1.11,Food and shopping,1.11-a,"prices 多少钱, 块; 多少 vs 几",pattern,1,1,15,201,492,0,3,5,5,0,0,43,1,1,6,216,0,0,yellow,yellow,16,3,not_green,5,18,0,green,green,12,30,0,46,green
-S1,1.11,Food and shopping,1.11-b,太…了,pattern,0,0,16,224,578,9,28,3,3,0,0,8,9,1,12,240,0,0,yellow,yellow,25,3,not_green,3,3,0,green,green,9,25,0,44,green
-S1,1.11,Food and shopping,1.11-c,A 还是 B? (no 吗),pattern,0,0,3,70,198,0,0,1,0,0,1,6,0,0,1,73,0,0,red,red,3,2,not_green,1,1,0,red,red,0,0,0,1,red
-S1,1.11,Food and shopping,1.11-d,ordering scene at a market,clip,1,1,15,155,396,1,2,2,1,0,1,42,2,2,4,170,14,12,red,red,17,4,green,2,12,0,red,red,5,100,0,108,green
-S1,1.12,"Also, all, and",1.12-a,也 before the verb,pattern,0,0,44,481,1697,6,42,56,34,2,20,1871,6,1,62,525,0,0,yellow,yellow,50,3,not_green,52,197,3,green,green,174,207,0,422,green
-S1,1.12,"Also, all, and",1.12-b,都 sums up; 也都,pattern,2,1,76,898,3256,5,47,60,44,0,16,1300,7,2,67,974,0,0,yellow,yellow,83,4,green,52,159,2,green,green,167,280,0,489,green
-S1,1.12,"Also, all, and",1.12-c,还 adds one more thing,pattern,0,0,11,129,461,0,16,23,19,1,3,177,0,0,23,140,0,0,yellow,yellow,11,2,not_green,21,82,2,green,green,31,62,0,112,green
-S1,1.12,"Also, all, and",1.12-d,和 joins nouns,pattern,0,0,49,630,2717,4,61,23,6,1,16,3691,4,1,27,679,0,0,yellow,yellow,53,3,not_green,19,41,5,green,green,79,129,0,224,green
-S1,1.13,"Didn't, don't, let's",1.13-a,没(有) + verb,pattern,0,0,53,465,887,1,14,11,10,1,0,22,1,1,12,518,0,0,yellow,yellow,54,3,not_green,12,40,0,green,green,32,82,0,123,green
-S1,1.13,"Didn't, don't, let's",1.13-b,不 vs 没 (first pass),contrast,3,1,233,3105,7449,8,56,102,85,5,12,488,11,2,113,3338,0,0,yellow,yellow,244,4,green,88,256,17,green,green,190,650,0,910,green
-S1,1.13,"Didn't, don't, let's",1.13-c,吧 softens a suggestion,pattern,0,0,45,429,854,0,10,15,13,0,2,32,0,0,15,474,0,0,yellow,yellow,45,2,not_green,10,16,3,green,green,6,158,0,173,green
-S1,1.13,"Didn't, don't, let's",1.13-d,不要 + verb: don't!,pattern,0,0,19,282,887,0,0,10,8,1,1,34,0,0,10,301,0,0,yellow,yellow,19,2,not_green,7,31,4,green,green,7,48,0,61,green
-S1,1.14,Asking whether,1.14-a,A-not-A questions,pattern,0,0,14,259,602,3,11,10,7,2,1,32,3,1,13,273,0,0,yellow,yellow,17,3,not_green,6,30,6,green,green,10,86,0,103,green
-S1,1.14,Asking whether,1.14-b,tag questions,pattern,0,0,31,253,488,0,0,2,1,1,0,8,0,0,2,284,0,0,red,red,31,2,not_green,1,1,1,red,red,2,22,0,25,green
-S1,1.14a,Now and changed (first pass),1.14a-a,sentence-final 了: new situation,pattern,6,2,229,2908,7858,22,109,99,88,4,7,313,28,3,127,3137,0,0,yellow,yellow,257,5,green,69,195,21,green,green,156,520,0,758,green
-S1,1.14a,Now and changed (first pass),1.14a-b,verb + 了: done,clip,0,0,82,845,2385,7,77,27,24,1,2,210,7,1,34,927,0,0,yellow,yellow,89,3,not_green,23,63,6,green,green,67,97,0,185,green
-S1,1.14a,Now and changed (first pass),1.14a-c,在 / 正在 + verb (…呢),pattern,1,1,58,671,1345,5,18,10,7,1,2,87,6,2,16,729,0,0,yellow,yellow,64,4,green,5,14,3,green,green,18,64,0,92,green
+S1,1.5,"This, that, which",1.5-a,这/那/哪 + MW + noun,pattern,2,1,95,1552,5258,6,40,24,19,1,4,689,8,2,32,1647,0,0,yellow,yellow,103,4,green,22,73,5,green,green,69,194,0,281,green
+S1,1.5,"This, that, which",1.5-b,这些 / 那些,pattern,0,0,20,194,716,0,14,4,2,0,2,350,0,0,4,214,0,0,red,red,20,2,not_green,4,9,0,red,red,38,75,0,114,green
+S1,1.5,"This, that, which",1.5-c,everyday MWs with their nouns,pattern,2,1,61,796,1905,4,29,14,11,0,3,112,6,2,20,857,10,10,yellow,yellow,67,4,green,10,38,5,green,green,19,72,0,104,green
+S1,1.6,Family,1.6-a,possession with 的,pattern,5,2,142,1985,7467,11,97,33,22,4,7,622,16,3,49,2127,0,0,yellow,yellow,158,5,green,30,111,5,green,green,47,343,0,431,green
+S1,1.6,Family,1.6-b,我妈妈 vs 我的妈妈,pattern,0,0,32,726,1400,6,42,3,2,0,1,47,6,1,9,758,11,10,yellow,red,38,3,not_green,3,11,0,green,green_checked,14,99,0,118,green
+S1,1.6,Family,1.6-c,有 / 没有 (never 不有),clip,2,2,167,2480,8346,5,104,149,88,1,60,3817,7,3,156,2647,0,0,yellow,yellow,174,5,green,128,334,16,green,green,260,1079,0,1443,green
+S1,1.7,Asking how,1.7-a,怎么 + verb,pattern,1,1,28,336,775,1,8,19,17,0,2,32,2,2,21,364,0,0,yellow,yellow,30,4,green,17,61,3,green,green,18,82,0,118,green
+S1,1.7,Asking how,1.7-b,怎么样,pattern,2,1,9,120,217,0,0,3,3,0,0,5,2,1,5,129,0,0,yellow,yellow,11,3,not_green,2,10,1,green_checked,green_checked,0,22,0,26,green
+S1,1.8,Where things are,1.8-a,thing + 在 + place; 在哪儿?,pattern,1,1,78,910,1855,7,33,6,6,0,0,102,8,2,14,988,0,0,yellow,yellow,86,4,green,6,43,1,green,green,6,65,0,84,green
+S1,1.8,Where things are,1.8-b,place words after a noun,pattern,1,1,73,991,2767,6,106,31,25,0,6,441,7,2,38,1064,0,0,yellow,yellow,80,4,green,24,95,6,green,green,22,87,0,138,green
+S1,1.8,Where things are,1.8-c,place + 有 + thing vs thing + 在 + place,clip,0,0,20,210,607,0,5,9,7,0,2,84,0,0,9,230,0,0,yellow,yellow,20,2,not_green,5,27,1,green,red,6,38,0,47,green
+S1,1.9,Dates and times,1.9-a,dates 年 → 月 → 号,pattern,0,0,11,121,492,0,1,16,4,0,12,207,0,0,16,132,0,0,yellow,red,11,2,not_green,14,64,2,green,red,773,255,0,938,green
+S1,1.9,Dates and times,1.9-b,days of the week,pattern,0,0,36,259,635,0,0,5,3,1,1,49,0,0,5,295,8,1,yellow,red,36,2,not_green,3,3,1,red,red,18,27,0,48,green
+S1,1.9,Dates and times,1.9-c,clock time 点/分/半,pattern,0,0,45,544,994,0,3,31,26,2,3,139,0,0,31,589,0,0,yellow,yellow,45,2,not_green,26,75,4,green,green,237,1872,0,2111,green
+S1,1.10,"Daily verbs, word order",1.10-a,S + V + O in daily life,clip,3,2,67,922,1787,2,10,12,10,1,1,22,5,3,17,989,0,0,yellow,yellow,72,5,green,10,21,3,green,green,29,113,0,156,green
+S1,1.10,"Daily verbs, word order",1.10-b,去 + place (+ verb for purpose),pattern,0,0,16,212,379,1,3,4,3,0,1,11,1,1,5,228,0,0,yellow,red,17,3,not_green,4,25,0,green,red,3,46,0,54,green
+S1,1.10,"Daily verbs, word order",1.10-c,time words before the verb,pattern,1,1,74,904,1524,3,8,10,9,1,0,23,4,2,14,978,0,0,yellow,yellow,78,4,green,8,8,3,green,green,23,52,0,86,green
+S1,1.10,"Daily verbs, word order",1.10-d,在 + place before the verb,pattern,0,0,18,233,401,2,8,3,3,0,0,10,2,1,5,251,0,0,yellow,yellow,20,3,not_green,3,19,0,green,green,8,8,0,20,green
+S1,1.11,Wanting,1.11-a,想 + verb,pattern,2,1,72,707,1391,1,6,8,8,0,0,31,3,2,11,779,0,0,yellow,yellow,75,4,green,5,14,3,green,green,10,195,0,212,green
+S1,1.11,Wanting,1.11-b,要 + noun/verb (want; going to),pattern,1,1,64,1040,2982,1,35,54,45,5,4,390,2,2,56,1104,0,0,yellow,yellow,66,4,green,43,132,9,green,green,89,298,0,422,green
+S1,1.12,Can,1.12-a,会: learned skill,pattern,0,0,16,309,628,3,8,2,0,0,2,20,3,1,5,325,0,0,red,red,19,3,not_green,2,2,0,green_checked,red,10,14,0,28,green
+S1,1.12,Can,1.12-b,能: able / possible,pattern,0,0,75,850,2704,11,34,28,18,1,9,536,11,1,39,925,0,0,yellow,yellow,86,3,not_green,25,122,3,green,green,72,216,0,314,green
+S1,1.12,Can,1.12-c,可以; 行 / 不行,pattern,0,0,34,498,1672,5,25,29,23,0,6,781,5,1,34,532,0,0,yellow,yellow,39,3,not_green,26,85,5,green,green,54,108,0,186,green
+S1,1.12,Can,1.12-d,会 vs 能 vs 可以,contrast,0,0,124,1652,4950,19,65,59,41,1,17,1327,19,1,78,1776,0,0,yellow,yellow,143,3,not_green,53,191,8,green,green,134,337,0,525,green
+S1,1.13,Food and shopping,1.13-a,"prices 多少钱, 块; 多少 vs 几",pattern,1,1,15,201,492,0,3,5,5,0,0,43,1,1,6,216,0,0,yellow,yellow,16,3,not_green,5,18,0,green,green,12,30,0,46,green
+S1,1.13,Food and shopping,1.13-b,太…了,pattern,0,0,16,224,578,9,28,3,3,0,0,8,9,1,12,240,0,0,yellow,yellow,25,3,not_green,3,3,0,green,green,9,25,0,44,green
+S1,1.13,Food and shopping,1.13-c,A 还是 B? (no 吗),pattern,0,0,3,70,198,0,0,1,0,0,1,6,0,0,1,73,0,0,red,red,3,2,not_green,1,1,0,red,red,0,0,0,1,red
+S1,1.13,Food and shopping,1.13-d,ordering scene at a market,clip,1,1,15,155,396,1,2,2,1,0,1,42,2,2,4,170,14,12,red,red,17,4,green,2,12,0,red,red,5,100,0,108,green
+S1,1.14,"Also, all, and",1.14-a,也 before the verb,pattern,0,0,44,481,1697,6,42,56,34,2,20,1871,6,1,62,525,0,0,yellow,yellow,50,3,not_green,52,197,3,green,green,174,207,0,422,green
+S1,1.14,"Also, all, and",1.14-b,都 sums up; 也都,pattern,2,1,76,898,3256,5,47,60,44,0,16,1300,7,2,67,974,0,0,yellow,yellow,83,4,green,52,159,2,green,green,167,280,0,489,green
+S1,1.14,"Also, all, and",1.14-c,还 adds one more thing,pattern,0,0,11,129,461,0,16,23,19,1,3,177,0,0,23,140,0,0,yellow,yellow,11,2,not_green,21,82,2,green,green,31,62,0,112,green
+S1,1.14,"Also, all, and",1.14-d,和 joins nouns,pattern,0,0,49,630,2717,4,61,23,6,1,16,3691,4,1,27,679,0,0,yellow,yellow,53,3,not_green,19,41,5,green,green,79,129,0,224,green
+S1,1.15,"Didn't, don't, let's",1.15-a,没(有) + verb,pattern,0,0,53,465,887,1,14,11,10,1,0,22,1,1,12,518,0,0,yellow,yellow,54,3,not_green,12,40,0,green,green,32,82,0,123,green
+S1,1.15,"Didn't, don't, let's",1.15-b,不 vs 没 (first pass),contrast,3,1,233,3105,7449,8,56,102,85,5,12,488,11,2,113,3338,0,0,yellow,yellow,244,4,green,88,256,17,green,green,190,650,0,910,green
+S1,1.15,"Didn't, don't, let's",1.15-c,吧 softens a suggestion,pattern,0,0,45,429,854,0,10,15,13,0,2,32,0,0,15,474,0,0,yellow,yellow,45,2,not_green,10,16,3,green,green,6,158,0,173,green
+S1,1.15,"Didn't, don't, let's",1.15-d,不要 + verb: don't!,pattern,0,0,19,282,887,0,0,10,8,1,1,34,0,0,10,301,0,0,yellow,yellow,19,2,not_green,7,31,4,green,green,7,48,0,61,green
+S1,1.16,Asking whether,1.16-a,A-not-A questions,pattern,0,0,14,259,602,3,11,10,7,2,1,32,3,1,13,273,0,0,yellow,yellow,17,3,not_green,6,30,6,green,green,10,86,0,103,green
+S1,1.16,Asking whether,1.16-b,tag questions,pattern,0,0,31,253,488,0,0,2,1,1,0,8,0,0,2,284,0,0,red,red,31,2,not_green,1,1,1,red,red,2,22,0,25,green
+S1,1.17,Now and changed (first pass),1.17-a,sentence-final 了: new situation,pattern,6,2,229,2908,7858,22,109,99,88,4,7,313,28,3,127,3137,0,0,yellow,yellow,257,5,green,69,195,21,green,green,156,520,0,758,green
+S1,1.17,Now and changed (first pass),1.17-b,verb + 了: done,clip,0,0,82,845,2385,7,77,27,24,1,2,210,7,1,34,927,0,0,yellow,yellow,89,3,not_green,23,63,6,green,green,67,97,0,185,green
+S1,1.17,Now and changed (first pass),1.17-c,在 / 正在 + verb (…呢),pattern,1,1,58,671,1345,5,18,10,7,1,2,87,6,2,16,729,0,0,yellow,yellow,64,4,green,5,14,3,green,green,18,64,0,92,green
 S2,2.1,What happened (了 second pass),2.1-a,verb + 了 + amount,pattern,0,0,63,846,1903,12,66,40,32,0,8,296,12,1,52,909,0,0,yellow,yellow,75,3,not_green,34,109,5,green,green,288,136,0,448,green
 S2,2.1,What happened (了 second pass),2.1-b,没 + verb (了 dropped); 了吗? → 没有,pattern,4,1,124,1034,1516,4,18,16,13,3,0,24,8,2,24,1158,0,0,yellow,yellow,132,4,green,17,62,2,green,green,75,116,0,207,green
-S2,2.16,Things changed,2.16-a,sentence-final 了: now it's…,pattern,1,1,25,288,358,3,5,3,3,0,0,3,4,2,7,313,0,0,yellow,yellow,29,4,green,3,3,2,green,green,11,16,0,33,green
-S2,2.16,Things changed,2.16-b,不…了: not any more,pattern,0,0,19,300,420,2,8,22,22,0,0,24,2,1,24,319,0,0,yellow,yellow,21,3,not_green,14,32,4,green,green,48,76,0,136,green
-S2,2.16,Things changed,2.16-c,快/要/就要…了: about to,pattern,0,0,13,187,295,1,4,10,8,2,0,16,1,1,11,200,0,0,yellow,yellow,14,3,not_green,7,35,3,green,green,17,24,0,46,green
-S2,2.16,Things changed,2.16-d,verb-了 vs sentence-了,clip,6,2,307,3724,10160,29,179,126,112,5,9,522,35,3,161,4031,0,0,yellow,yellow,342,5,green,92,242,27,green,green,223,613,0,939,green
-S2,2.2,Experiences,2.2-a,verb + 过,pattern,0,0,31,526,827,0,5,17,9,1,7,65,0,0,17,557,0,0,yellow,yellow,31,2,not_green,17,50,2,green,green,37,124,0,175,green
-S2,2.2,Experiences,2.2-b,没 + verb + 过,pattern,0,0,11,199,328,0,2,7,4,2,1,18,0,0,7,210,0,0,yellow,yellow,11,2,not_green,5,5,2,green,green_checked,37,58,0,92,green
-S2,2.2,Experiences,2.2-c,了 vs 过,contrast,0,0,94,1371,2727,12,71,57,41,1,15,361,12,1,69,1465,0,0,yellow,yellow,106,3,not_green,51,153,7,green,green,325,259,0,622,green
-S2,2.2,Experiences,2.2-d,travel story with 过,clip,0,0,17,213,410,0,0,10,1,0,9,87,0,0,10,230,0,0,yellow,red,17,2,not_green,11,36,0,green,red,31,44,0,82,green
-S2,2.3,At once and ongoing,2.3-a,一边…一边,pattern,0,0,0,33,61,0,4,2,2,0,0,11,0,0,2,33,0,0,red,red,0,0,not_green,0,0,2,red,red,12,5,0,16,green
-S2,2.3,At once and ongoing,2.3-b,verb + 着: holding state,pattern,2,1,9,155,248,3,21,4,1,1,2,52,5,2,9,164,0,0,yellow,yellow,14,3,not_green,3,3,1,green,green_checked,56,58,0,116,green
-S2,2.3,At once and ongoing,2.3-c,verb + 着 + verb,pattern,0,0,3,8,14,1,2,0,0,0,0,0,1,1,1,11,0,0,red,red,4,3,not_green,0,0,0,red,red,6,3,0,10,green
-S2,2.3,At once and ongoing,2.3-d,着 vs 在,contrast,3,2,67,823,1585,8,38,14,8,2,4,139,11,3,25,890,0,0,yellow,yellow,78,5,green,8,16,4,green,green,73,121,0,206,green
-S2,2.8,Results,2.8-a,verb + 完,pattern,0,0,8,204,267,3,6,6,5,0,1,14,3,1,9,212,0,0,yellow,yellow,11,3,not_green,4,22,1,green,green,15,14,0,36,green
-S2,2.8,Results,2.8-b,verb + 到 / 见,pattern,0,0,79,1151,2119,8,59,57,37,6,14,366,8,1,65,1230,0,0,yellow,yellow,87,3,not_green,52,180,3,green,green,336,361,0,716,green
-S2,2.8,Results,2.8-c,没 + verb + result,pattern,0,0,11,125,184,2,8,4,3,1,0,7,2,1,6,136,0,0,yellow,yellow,13,3,not_green,4,29,0,green,green,38,37,0,76,green
-S2,2.8,Results,2.8-d,result complements in a story,clip,0,0,68,978,1649,10,50,52,38,4,10,204,10,1,62,1046,0,0,yellow,yellow,78,3,not_green,45,150,3,green,green,244,274,0,544,green
-S2,2.7,"Should, must, want, will",2.7-a,要 vs 想,contrast,3,1,136,1738,4341,2,41,62,53,5,4,421,5,2,67,1874,0,0,yellow,yellow,141,4,green,48,143,12,green,green,99,493,0,634,green
-S2,2.7,"Should, must, want, will",2.7-b,应该,pattern,0,0,40,492,879,1,4,16,11,2,3,52,1,1,17,532,0,0,yellow,yellow,41,3,not_green,15,54,2,green,green,58,87,0,158,green
-S2,2.7,"Should, must, want, will",2.7-c,得 děi: have to,pattern,0,0,1,35,45,0,0,0,0,0,0,0,0,0,0,36,0,0,red,red,1,1,not_green,0,0,0,red,red,2,12,0,14,green
-S2,2.7,"Should, must, want, will",2.7-d,会 will vs 会 can,pattern,0,0,49,498,870,2,7,33,23,3,7,222,2,1,35,547,0,0,yellow,yellow,51,3,not_green,31,117,3,green,green,85,120,0,231,green
-S2,2.11,Asking and telling,2.11-a,verb + 一下 / doubled verbs,pattern,1,1,45,589,982,6,13,27,21,4,2,54,7,2,34,634,0,0,yellow,yellow,52,4,green,17,43,7,green,green,63,356,0,440,green
-S2,2.11,Asking and telling,2.11-b,请 + verb,pattern,6,2,51,933,1560,2,6,17,12,1,4,137,8,3,25,984,0,0,yellow,yellow,59,5,green,16,60,3,green,green,26,95,0,140,green
-S2,2.11,Asking and telling,2.11-c,别 + verb; 别…了,pattern,1,1,49,477,902,1,8,28,8,3,17,319,2,2,30,526,0,0,yellow,yellow,51,4,green,26,99,3,green,green,126,147,0,288,green
-S2,2.11,Asking and telling,2.11-d,请/叫/让 + person + verb,pattern,3,1,50,734,1274,11,17,26,23,0,3,62,14,2,40,784,0,0,yellow,yellow,64,4,green,25,115,1,green,green,73,267,0,372,green
-S2,2.27,"To, for, with someone",2.27-a,跟 + person (+ 一起) + verb,pattern,0,0,17,429,616,4,9,14,14,0,0,16,4,1,18,446,0,0,yellow,yellow,21,3,not_green,13,40,2,green,green,25,120,0,160,green
-S2,2.27,"To, for, with someone",2.27-b,给 + person + thing (two objects),pattern,0,0,11,182,262,0,4,3,1,2,0,4,0,0,3,193,0,0,red,red,11,2,not_green,3,18,0,red,red,5,41,0,49,green
-S2,2.27,"To, for, with someone",2.27-c,给 + person + verb,pattern,1,1,18,200,286,1,2,0,0,0,0,3,2,2,2,218,0,0,red,red,20,4,green,0,0,0,red,red,8,31,0,41,green
-S2,2.27,"To, for, with someone",2.27-d,对 + person: towards,pattern,0,0,11,146,252,1,3,4,4,0,0,6,1,1,5,157,0,0,yellow,yellow,12,3,not_green,4,14,0,green,green,16,31,0,48,green
+S2,2.2,Things changed,2.2-a,sentence-final 了: now it's…,pattern,1,1,25,288,358,3,5,3,3,0,0,3,4,2,7,313,0,0,yellow,yellow,29,4,green,3,3,2,green,green,11,16,0,33,green
+S2,2.2,Things changed,2.2-b,不…了: not any more,pattern,0,0,19,300,420,2,8,22,22,0,0,24,2,1,24,319,0,0,yellow,yellow,21,3,not_green,14,32,4,green,green,48,76,0,136,green
+S2,2.2,Things changed,2.2-c,快/要/就要…了: about to,pattern,0,0,13,187,295,1,4,10,8,2,0,16,1,1,11,200,0,0,yellow,yellow,14,3,not_green,7,35,3,green,green,17,24,0,46,green
+S2,2.2,Things changed,2.2-d,verb-了 vs sentence-了,clip,6,2,307,3724,10160,29,179,126,112,5,9,522,35,3,161,4031,0,0,yellow,yellow,342,5,green,92,242,27,green,green,223,613,0,939,green
+S2,2.3,Experiences,2.3-a,verb + 过,pattern,0,0,31,526,827,0,5,17,9,1,7,65,0,0,17,557,0,0,yellow,yellow,31,2,not_green,17,50,2,green,green,37,124,0,175,green
+S2,2.3,Experiences,2.3-b,没 + verb + 过,pattern,0,0,11,199,328,0,2,7,4,2,1,18,0,0,7,210,0,0,yellow,yellow,11,2,not_green,5,5,2,green,green_checked,37,58,0,92,green
+S2,2.3,Experiences,2.3-c,了 vs 过,contrast,0,0,94,1371,2727,12,71,57,41,1,15,361,12,1,69,1465,0,0,yellow,yellow,106,3,not_green,51,153,7,green,green,325,259,0,622,green
+S2,2.3,Experiences,2.3-d,travel story with 过,clip,0,0,17,213,410,0,0,10,1,0,9,87,0,0,10,230,0,0,yellow,red,17,2,not_green,11,36,0,green,red,31,44,0,82,green
+S2,2.4,At once and ongoing,2.4-a,一边…一边,pattern,0,0,0,33,61,0,4,2,2,0,0,11,0,0,2,33,0,0,red,red,0,0,not_green,0,0,2,red,red,12,5,0,16,green
+S2,2.4,At once and ongoing,2.4-b,verb + 着: holding state,pattern,2,1,9,155,248,3,21,4,1,1,2,52,5,2,9,164,0,0,yellow,yellow,14,3,not_green,3,3,1,green,green_checked,56,58,0,116,green
+S2,2.4,At once and ongoing,2.4-c,verb + 着 + verb,pattern,0,0,3,8,14,1,2,0,0,0,0,0,1,1,1,11,0,0,red,red,4,3,not_green,0,0,0,red,red,6,3,0,10,green
+S2,2.4,At once and ongoing,2.4-d,着 vs 在,contrast,3,2,67,823,1585,8,38,14,8,2,4,139,11,3,25,890,0,0,yellow,yellow,78,5,green,8,16,4,green,green,73,121,0,206,green
+S2,2.5,Results,2.5-a,verb + 完,pattern,0,0,8,204,267,3,6,6,5,0,1,14,3,1,9,212,0,0,yellow,yellow,11,3,not_green,4,22,1,green,green,15,14,0,36,green
+S2,2.5,Results,2.5-b,verb + 到 / 见,pattern,0,0,79,1151,2119,8,59,57,37,6,14,366,8,1,65,1230,0,0,yellow,yellow,87,3,not_green,52,180,3,green,green,336,361,0,716,green
+S2,2.5,Results,2.5-c,没 + verb + result,pattern,0,0,11,125,184,2,8,4,3,1,0,7,2,1,6,136,0,0,yellow,yellow,13,3,not_green,4,29,0,green,green,38,37,0,76,green
+S2,2.5,Results,2.5-d,result complements in a story,clip,0,0,68,978,1649,10,50,52,38,4,10,204,10,1,62,1046,0,0,yellow,yellow,78,3,not_green,45,150,3,green,green,244,274,0,544,green
+S2,2.6,"Should, must, want, will",2.6-a,要 vs 想,contrast,3,1,136,1738,4341,2,41,62,53,5,4,421,5,2,67,1874,0,0,yellow,yellow,141,4,green,48,143,12,green,green,99,493,0,634,green
+S2,2.6,"Should, must, want, will",2.6-b,应该,pattern,0,0,40,492,879,1,4,16,11,2,3,52,1,1,17,532,0,0,yellow,yellow,41,3,not_green,15,54,2,green,green,58,87,0,158,green
+S2,2.6,"Should, must, want, will",2.6-c,得 děi: have to,pattern,0,0,1,35,45,0,0,0,0,0,0,0,0,0,0,36,0,0,red,red,1,1,not_green,0,0,0,red,red,2,12,0,14,green
+S2,2.6,"Should, must, want, will",2.6-d,会 will vs 会 can,pattern,0,0,49,498,870,2,7,33,23,3,7,222,2,1,35,547,0,0,yellow,yellow,51,3,not_green,31,117,3,green,green,85,120,0,231,green
+S2,2.7,Asking and telling,2.7-a,verb + 一下 / doubled verbs,pattern,1,1,45,589,982,6,13,27,21,4,2,54,7,2,34,634,0,0,yellow,yellow,52,4,green,17,43,7,green,green,63,356,0,440,green
+S2,2.7,Asking and telling,2.7-b,请 + verb,pattern,6,2,51,933,1560,2,6,17,12,1,4,137,8,3,25,984,0,0,yellow,yellow,59,5,green,16,60,3,green,green,26,95,0,140,green
+S2,2.7,Asking and telling,2.7-c,别 + verb; 别…了,pattern,1,1,49,477,902,1,8,28,8,3,17,319,2,2,30,526,0,0,yellow,yellow,51,4,green,26,99,3,green,green,126,147,0,288,green
+S2,2.7,Asking and telling,2.7-d,请/叫/让 + person + verb,pattern,3,1,50,734,1274,11,17,26,23,0,3,62,14,2,40,784,0,0,yellow,yellow,64,4,green,25,115,1,green,green,73,267,0,372,green
+S2,2.8,"To, for, with someone",2.8-a,跟 + person (+ 一起) + verb,pattern,0,0,17,429,616,4,9,14,14,0,0,16,4,1,18,446,0,0,yellow,yellow,21,3,not_green,13,40,2,green,green,25,120,0,160,green
+S2,2.8,"To, for, with someone",2.8-b,给 + person + thing (two objects),pattern,0,0,11,182,262,0,4,3,1,2,0,4,0,0,3,193,0,0,red,red,11,2,not_green,3,18,0,red,red,5,41,0,49,green
+S2,2.8,"To, for, with someone",2.8-c,给 + person + verb,pattern,1,1,18,200,286,1,2,0,0,0,0,3,2,2,2,218,0,0,red,red,20,4,green,0,0,0,red,red,8,31,0,41,green
+S2,2.8,"To, for, with someone",2.8-d,对 + person: towards,pattern,0,0,11,146,252,1,3,4,4,0,0,6,1,1,5,157,0,0,yellow,yellow,12,3,not_green,4,14,0,green,green,16,31,0,48,green
 S2,2.9,Counting things,2.9-a,MWs by shape 张 条 双 位,pattern,1,1,29,561,1152,5,15,36,10,1,25,527,6,2,42,590,9,9,yellow,yellow,35,4,green,35,145,3,green,green,204,109,0,339,green
 S2,2.9,Counting things,2.9-b,一些 vs 有的 / 有些,pattern,0,0,28,386,867,2,19,33,14,1,18,431,2,1,35,414,0,0,yellow,yellow,30,3,not_green,30,87,2,green,green,204,114,0,327,green
 S2,2.9,Counting things,2.9-c,每 + MW + 都,pattern,0,0,14,240,432,0,9,8,6,0,2,42,0,0,8,254,0,0,yellow,yellow,14,2,not_green,7,16,0,green,green,35,33,0,75,green
-S2,2.13,Describing with 的,2.13-a,adj + 的 + noun,pattern,0,0,21,299,678,2,12,27,16,1,10,277,2,1,29,320,0,0,yellow,yellow,23,3,not_green,22,83,2,green,green,130,104,0,237,green
-S2,2.13,Describing with 的,2.13-b,phrase + 的 + noun (我买的书),pattern,0,0,5,160,221,1,2,2,2,0,0,3,1,1,3,165,0,0,red,red,6,3,not_green,2,8,0,red,red,5,19,0,27,green
-S2,2.13,Describing with 的,2.13-c,的 with the noun dropped,pattern,0,0,6,103,145,1,1,1,0,0,1,7,1,1,2,109,0,0,red,red,7,3,not_green,2,2,0,red,red,0,0,0,3,red
-S2,2.13,Describing with 的,2.13-d,long 的 descriptions in narration,clip,0,0,19,335,1020,2,16,30,9,0,21,1320,2,1,32,354,0,0,yellow,yellow,21,3,not_green,28,85,3,green,green,109,107,0,229,green
-S2,2.6,Time order,2.6-a,以前 / 以后,pattern,1,1,30,298,726,4,14,26,19,0,7,353,5,2,31,328,0,0,yellow,yellow,35,4,green,26,90,1,green,green,100,111,0,236,green
-S2,2.6,Time order,2.6-b,clause + 的时候,pattern,0,0,31,378,792,8,34,10,7,1,2,44,8,1,18,409,0,0,yellow,yellow,39,3,not_green,10,48,0,green,green,107,79,0,194,green
-S2,2.6,Time order,2.6-c,已经…了,pattern,0,0,36,531,884,3,9,12,6,2,4,55,3,1,15,567,0,0,yellow,yellow,39,3,not_green,9,32,3,green,green,102,83,0,193,green
-S2,2.6,Time order,2.6-d,刚 + verb,pattern,0,0,17,137,246,1,2,6,3,1,2,68,1,1,7,154,0,0,yellow,yellow,18,3,not_green,4,10,2,green,green_checked,59,83,0,136,green
-S2,2.19,"Early, late",2.19-a,一…就,pattern,0,0,8,100,235,1,5,14,11,0,3,47,1,1,15,108,0,0,yellow,yellow,9,3,not_green,10,33,4,green,green,65,44,0,114,green
-S2,2.19,"Early, late",2.19-b,才: later/harder than expected,pattern,0,0,23,226,491,1,7,38,28,4,6,146,1,1,39,249,0,0,yellow,yellow,24,3,not_green,28,103,8,green,green,117,124,0,261,green
-S2,2.19,"Early, late",2.19-c,就 vs 才,pattern,0,0,8,87,148,0,0,7,4,1,2,31,0,0,7,95,0,0,yellow,yellow,8,2,not_green,7,26,2,green,green,60,21,0,85,green
-S2,2.5,Where and which way,2.5-a,place + verb + 着 + thing,pattern,0,0,0,13,26,0,0,0,0,0,0,1,0,0,0,13,0,0,red,red,0,0,not_green,0,0,0,red,red,8,2,0,10,green
-S2,2.5,Where and which way,2.5-b,来 vs 去 by speaker,pattern,0,0,24,299,386,0,2,3,3,0,0,11,0,0,3,323,0,0,red,red,24,2,not_green,3,3,0,red,red,13,28,0,43,green
-S2,2.5,Where and which way,2.5-c,"在 after a verb (住在, 放在)",pattern,0,0,33,585,1120,7,36,34,20,2,12,256,7,1,41,618,0,0,yellow,yellow,40,3,not_green,34,95,3,green,green,83,86,0,204,green
-S2,2.5,Where and which way,2.5-d,place + 来了/走了 + someone,pattern,0,0,1,20,63,0,4,1,1,0,0,12,0,0,1,21,0,0,red,red,1,1,not_green,0,0,0,red,red,19,8,0,27,green
-S2,2.17,Getting around,2.17-a,从 A 到 B,pattern,0,0,2,102,190,0,2,2,0,0,2,50,0,0,2,104,0,0,red,red,2,2,not_green,1,1,1,red,red,67,34,0,90,green
-S2,2.17,Getting around,2.17-b,A 离 B + 远/近,pattern,0,0,4,68,99,1,3,0,0,0,0,14,1,1,1,72,0,0,red,red,5,3,not_green,0,0,0,red,red,4,7,0,12,green
-S2,2.17,Getting around,2.17-c,坐/骑/开 + vehicle,pattern,0,0,23,198,291,2,3,7,4,1,2,11,2,1,9,221,11,9,yellow,yellow,25,3,not_green,6,24,1,green,green,22,21,0,51,green
-S2,2.4,Comparing,2.4-a,"A 比 B + adj (更/还, never 很)",pattern,0,0,31,500,1055,0,2,20,6,1,13,531,0,0,20,531,0,0,yellow,yellow,31,2,not_green,19,56,3,green,green,238,101,0,326,green
-S2,2.4,Comparing,2.4-b,A 没有 B (那么) + adj,pattern,0,0,0,35,50,0,0,1,1,0,0,2,0,0,1,35,0,0,red,red,0,0,not_green,1,13,0,red,red,6,2,0,9,green
-S2,2.4,Comparing,2.4-c,比 + by how much,pattern,0,0,4,70,119,0,0,2,0,0,2,39,0,0,2,74,0,0,red,red,4,2,not_green,2,2,0,red,red,59,24,0,76,green
-S2,2.4,Comparing,2.4-d,A 跟 B 一样,pattern,0,0,21,158,323,1,3,7,6,0,1,23,1,1,8,179,0,0,yellow,yellow,22,3,not_green,6,14,1,green,green,30,45,0,79,green
-S2,2.18,"More and more, a bit too",2.18-a,有点儿 + adj vs adj + 一点儿,pattern,0,0,30,387,603,1,7,19,15,2,2,37,1,1,20,417,0,0,yellow,yellow,31,3,not_green,16,82,4,green,green,47,87,0,147,green
-S2,2.18,"More and more, a bit too",2.18-b,又…又,pattern,0,0,4,14,53,1,7,1,1,0,0,7,1,1,2,18,0,0,red,red,5,3,not_green,1,1,0,red,red,1,2,0,5,green
-S2,2.18,"More and more, a bit too",2.18-c,越来越,pattern,0,0,1,34,76,1,2,3,3,0,0,18,1,1,4,35,0,0,red,red,2,2,not_green,2,2,1,red,red,60,12,0,72,green
-S2,2.18,"More and more, a bit too",2.18-d,越…越,pattern,0,0,0,12,21,0,3,2,2,0,0,5,0,0,2,12,0,0,red,red,0,0,not_green,1,13,1,red,red,10,9,0,18,green
-S2,2.14,Big and rough numbers,2.14-a,counting in 万,pattern,0,0,2,37,154,0,1,10,7,0,3,65,0,0,10,39,0,0,yellow,yellow,2,1,not_green,10,46,1,green,green,247,1888,0,2115,green
-S2,2.14,Big and rough numbers,2.14-b,"roughly: 几, 十多, 两三, 左右",pattern,0,0,4,68,136,0,1,16,9,1,6,64,0,0,16,72,0,0,yellow,yellow,4,2,not_green,14,60,1,green,green,229,81,0,300,green
-S2,2.14,Big and rough numbers,2.14-c,半 before vs after the MW,pattern,0,0,11,69,102,0,1,7,6,0,1,11,0,0,7,80,0,0,yellow,yellow,11,2,not_green,5,5,2,green,green,85,49,0,129,green
-S2,2.10,Linking clauses,2.10-a,因为…所以,pattern,0,0,17,324,949,4,27,26,18,0,8,208,4,1,30,341,0,0,yellow,yellow,21,3,not_green,28,100,2,green,green,229,274,0,508,green
-S2,2.10,Linking clauses,2.10-b,虽然…但是/可是,pattern,0,0,9,224,631,12,45,32,25,1,6,139,12,1,44,233,0,0,yellow,yellow,21,3,not_green,25,72,6,green,green,226,161,0,402,green
-S2,2.10,Linking clauses,2.10-c,不但…而且,pattern,0,0,4,28,147,0,2,5,4,0,1,38,0,0,5,32,0,0,yellow,red,4,2,not_green,4,26,0,red,red,63,54,0,119,green
-S2,2.10,Linking clauses,2.10-d,或者 vs 还是,pattern,0,0,0,15,64,0,1,1,0,0,1,58,0,0,1,15,0,0,red,red,0,0,not_green,1,1,0,red,red,23,36,0,56,green
-S2,2.12,How long,2.12-a,duration after the verb; 多久,pattern,0,0,19,254,381,0,1,12,12,0,0,30,0,0,12,273,0,0,yellow,yellow,19,2,not_green,11,49,1,green,green,38,43,0,88,green
-S2,2.12,How long,2.12-b,double 了: still going,pattern,0,0,1,26,34,0,0,0,0,0,0,1,0,0,0,27,0,0,red,red,1,1,not_green,0,0,0,red,red,3,4,0,7,green
-S2,2.12,How long,2.12-c,"split verbs (见过面, 睡了…觉)",pattern,0,0,7,37,61,2,2,1,1,0,0,1,2,1,3,44,0,0,red,red,9,3,not_green,1,11,0,red,red,1,5,0,9,green
-S2,2.31,"How often, again",2.31-a,verb + 次 / 遍,pattern,0,0,20,301,560,3,5,34,14,1,19,339,3,1,37,321,0,0,yellow,yellow,23,3,not_green,29,112,2,green,green,140,111,0,267,green
-S2,2.31,"How often, again",2.31-b,再 + verb: again (future),pattern,0,0,44,584,957,8,18,46,36,3,7,231,8,1,54,628,0,0,yellow,yellow,52,3,not_green,36,103,5,green,green,151,215,0,388,green
-S2,2.31,"How often, again",2.31-c,又: again (past),pattern,1,1,12,141,461,8,27,30,13,1,16,293,9,2,39,153,0,0,yellow,yellow,21,4,green,26,95,4,green,green,106,109,0,239,green
-S2,2.31,"How often, again",2.31-d,又 vs 再,contrast,1,1,56,722,1410,16,45,76,49,4,23,517,17,2,93,778,0,0,yellow,yellow,73,4,green,62,185,9,green,green,256,323,0,625,green
-S2,2.21,Direction after the verb,2.21-a,verb + 来/去,pattern,1,1,91,1085,2013,11,60,98,82,6,10,370,12,2,110,1176,0,0,yellow,yellow,103,4,green,81,239,17,green,green,355,445,0,843,green
-S2,2.21,Direction after the verb,2.21-b,verb + 上/下/进/出/回/过/起,pattern,0,0,34,348,685,7,38,25,20,0,5,105,7,1,32,382,0,0,yellow,yellow,41,3,not_green,23,85,2,green,green,170,134,0,317,green
-S2,2.21,Direction after the verb,2.21-c,"compounds 进来, 出去, 站起来",pattern,1,1,121,1367,2504,15,78,99,85,4,10,328,16,2,115,1488,0,0,yellow,yellow,137,4,green,88,235,14,green,green,346,450,0,858,green
-S2,2.21,Direction after the verb,2.21-d,"non-spatial 看起来, 想起来, 说下去",pattern,0,0,15,221,396,1,5,12,12,0,0,19,1,1,13,236,0,0,yellow,yellow,16,3,not_green,11,20,1,green,green,23,31,0,65,green
-S2,2.22,How well with 得,2.22-a,verb + 得 + adj,pattern,0,0,19,246,366,1,1,1,1,0,0,3,1,1,2,265,0,0,red,red,20,3,not_green,1,1,0,red,red,16,28,0,42,green
-S2,2.22,How well with 得,2.22-b,verb repeats / object first,pattern,0,0,8,46,86,0,0,0,0,0,0,0,0,0,0,54,0,0,red,red,8,2,not_green,0,0,0,red,red,0,1,0,1,red
-S2,2.22,How well with 得,2.22-c,comparing how well,pattern,0,0,1,31,59,0,0,3,3,0,0,7,0,0,3,32,0,0,red,red,1,1,not_green,3,4,0,red,red,7,5,0,15,green
-S2,2.32,地 and doubled adjectives,2.32-a,doubled adjectives,pattern,0,0,4,83,440,2,37,11,9,1,1,60,2,1,13,87,0,0,yellow,yellow,6,2,not_green,9,38,0,green,green,55,125,0,182,green
-S2,2.32,地 and doubled adjectives,2.32-b,adj + 地 + verb,pattern,0,0,3,84,250,1,21,3,1,1,1,12,1,1,4,87,0,0,red,red,4,2,not_green,4,22,0,green,red,21,20,0,43,green
-S2,2.32,地 and doubled adjectives,2.32-c,的 vs 地 vs 得,contrast,0,0,43,628,1290,3,32,31,18,2,11,292,3,1,34,671,0,0,yellow,yellow,46,3,not_green,27,101,2,green,green,167,152,0,321,green
-S2,2.20,Can or can't,2.20-a,verb + 不 + result/direction,pattern,0,0,22,297,460,1,11,17,14,1,2,24,1,1,18,319,0,0,yellow,yellow,23,3,not_green,13,40,2,green,green,49,69,0,128,green
-S2,2.20,Can or can't,2.20-b,verb + 得 + result: can,pattern,0,0,8,61,99,0,1,0,0,0,0,6,0,0,0,69,0,0,red,red,8,2,not_green,1,1,0,red,red,8,11,0,20,green
-S2,2.23,"When, where, how it happened",2.23-a,是…的 (when/where/how),pattern,0,0,30,321,600,4,8,12,3,0,9,166,4,1,16,351,0,0,yellow,yellow,34,3,not_green,11,57,3,green,green,58,75,0,144,green
-S2,2.23,"When, where, how it happened",2.23-b,是…的 vs 了,contrast,0,0,93,1166,2498,16,74,52,35,0,17,462,16,1,68,1259,0,0,yellow,yellow,109,3,not_green,45,153,8,green,green,346,211,0,592,green
-S2,2.28,If and only if,2.28-a,如果…就; …的话,pattern,0,0,39,579,1229,4,8,11,8,2,1,40,4,1,15,618,0,0,yellow,yellow,43,3,not_green,8,17,3,green,green,158,237,0,394,green
-S2,2.28,If and only if,2.28-b,只要…就,pattern,0,0,2,46,94,0,0,3,3,0,0,14,0,0,3,48,0,0,red,red,2,1,not_green,3,21,0,red,red,32,33,0,64,green
-S2,2.28,If and only if,2.28-c,只有…才,pattern,0,0,2,15,41,0,0,0,0,0,0,12,0,0,0,17,0,0,red,red,2,2,not_green,0,0,0,red,red,4,3,0,7,green
-S2,2.28,If and only if,2.28-d,只要 vs 只有,contrast,0,0,4,61,135,0,0,3,3,0,0,26,0,0,3,65,0,0,red,red,4,2,not_green,3,21,0,red,red,36,36,0,71,green
-S2,2.29,Everything and nothing,2.29-a,QW + 都/也 (+ 不),pattern,1,1,14,227,330,2,3,4,4,0,0,6,3,2,7,241,0,0,yellow,yellow,17,4,green,6,6,0,green,green,15,45,0,66,green
-S2,2.29,Everything and nothing,2.29-b,一 + MW + 也/都 + 不/没,pattern,1,1,9,108,172,2,4,2,2,0,0,4,3,2,5,117,0,0,yellow,yellow,12,4,green,2,11,0,green,green,8,22,0,35,green
-S2,2.29,Everything and nothing,2.29-c,question words meaning some-,pattern,0,0,55,510,822,3,10,2,0,0,2,15,3,1,5,565,0,0,red,red,58,3,not_green,4,23,2,green,green_checked,0,0,0,7,green
-S2,2.29,Everything and nothing,2.29-d,除了…以外,pattern,1,1,5,65,134,0,0,1,1,0,0,28,1,1,2,70,0,0,red,red,6,2,not_green,1,11,0,red,red,33,9,0,43,green
-S2,2.24,Doing it to something with 把,2.24-a,把 + thing + verb + 在/到 + place,pattern,0,0,13,115,231,1,7,2,0,1,1,13,1,1,3,128,0,0,red,red,14,3,not_green,2,12,0,red,red,11,15,0,28,green
-S2,2.24,Doing it to something with 把,2.24-b,把 + thing + verb + result/direction,pattern,0,0,10,109,199,1,5,1,1,0,0,7,1,1,2,119,0,0,red,red,11,3,not_green,1,5,0,red,red,7,18,0,27,green
-S2,2.24,Doing it to something with 把,2.24-c,把 in instructions (cooking/tidying),clip,0,0,27,302,573,0,1,6,6,0,0,24,0,0,6,329,0,0,yellow,yellow,27,2,not_green,6,39,0,green,green,30,66,0,102,green
-S2,2.24,Doing it to something with 把,2.24-d,thing first without 把,pattern,0,0,0,16,19,0,0,0,0,0,0,0,0,0,0,16,0,0,red,red,0,0,not_green,0,0,0,red,red,0,0,0,0,red
-S2,2.25,Happening to you with 被,2.25-a,被 (+ doer) + verb + result,pattern,3,1,13,337,1368,2,11,49,14,1,34,1514,5,2,54,350,0,0,yellow,yellow,18,4,green,47,175,6,green,green,218,156,0,397,green
-S2,2.25,Happening to you with 被,2.25-b,把 vs 被,pattern,3,1,100,1401,3851,17,83,69,28,2,39,1702,20,2,89,1501,0,0,yellow,yellow,120,4,green,66,247,9,green,green,337,393,0,779,green
-S2,2.26,Real-speed speech,2.26-a,"fillers 那个, 就是, 然后",no_text,0,0,4,22,40,0,0,1,0,0,1,3,0,0,1,26,0,0,red,red,4,2,red,1,9,3,red,red,3,5,0,7,red
-S2,2.26,Real-speed speech,2.26-b,final 啊 / 呢 / 吧 tone,pattern,1,1,204,1381,2225,8,20,63,49,1,13,103,9,2,72,1585,0,0,yellow,yellow,213,4,green,48,140,9,green,green,96,434,0,576,green
-S2,2.26,Real-speed speech,2.26-c,不是…吗? reminder question,pattern,0,0,2,34,52,0,1,0,0,0,0,0,0,0,0,36,0,0,red,red,2,2,not_green,0,0,1,red,red,0,13,0,13,green
-S2,2.26,Real-speed speech,2.26-d,first real-speed interview clip,no_text,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,red,red,0,0,red,0,0,0,red,red,0,0,0,0,red
+S2,2.10,Describing with 的,2.10-a,adj + 的 + noun,pattern,0,0,21,299,678,2,12,27,16,1,10,277,2,1,29,320,0,0,yellow,yellow,23,3,not_green,22,83,2,green,green,130,104,0,237,green
+S2,2.10,Describing with 的,2.10-b,phrase + 的 + noun (我买的书),pattern,0,0,5,160,221,1,2,2,2,0,0,3,1,1,3,165,0,0,red,red,6,3,not_green,2,8,0,red,red,5,19,0,27,green
+S2,2.10,Describing with 的,2.10-c,的 with the noun dropped,pattern,0,0,6,103,145,1,1,1,0,0,1,7,1,1,2,109,0,0,red,red,7,3,not_green,2,2,0,red,red,0,0,0,3,red
+S2,2.10,Describing with 的,2.10-d,long 的 descriptions in narration,clip,0,0,19,335,1020,2,16,30,9,0,21,1320,2,1,32,354,0,0,yellow,yellow,21,3,not_green,28,85,3,green,green,109,107,0,229,green
+S2,2.11,Time order,2.11-a,以前 / 以后,pattern,1,1,30,298,726,4,14,26,19,0,7,353,5,2,31,328,0,0,yellow,yellow,35,4,green,26,90,1,green,green,100,111,0,236,green
+S2,2.11,Time order,2.11-b,clause + 的时候,pattern,0,0,31,378,792,8,34,10,7,1,2,44,8,1,18,409,0,0,yellow,yellow,39,3,not_green,10,48,0,green,green,107,79,0,194,green
+S2,2.11,Time order,2.11-c,已经…了,pattern,0,0,36,531,884,3,9,12,6,2,4,55,3,1,15,567,0,0,yellow,yellow,39,3,not_green,9,32,3,green,green,102,83,0,193,green
+S2,2.11,Time order,2.11-d,刚 + verb,pattern,0,0,17,137,246,1,2,6,3,1,2,68,1,1,7,154,0,0,yellow,yellow,18,3,not_green,4,10,2,green,green_checked,59,83,0,136,green
+S2,2.12,"Early, late",2.12-a,一…就,pattern,0,0,8,100,235,1,5,14,11,0,3,47,1,1,15,108,0,0,yellow,yellow,9,3,not_green,10,33,4,green,green,65,44,0,114,green
+S2,2.12,"Early, late",2.12-b,才: later/harder than expected,pattern,0,0,23,226,491,1,7,38,28,4,6,146,1,1,39,249,0,0,yellow,yellow,24,3,not_green,28,103,8,green,green,117,124,0,261,green
+S2,2.12,"Early, late",2.12-c,就 vs 才,pattern,0,0,8,87,148,0,0,7,4,1,2,31,0,0,7,95,0,0,yellow,yellow,8,2,not_green,7,26,2,green,green,60,21,0,85,green
+S2,2.13,Where and which way,2.13-a,place + verb + 着 + thing,pattern,0,0,0,13,26,0,0,0,0,0,0,1,0,0,0,13,0,0,red,red,0,0,not_green,0,0,0,red,red,8,2,0,10,green
+S2,2.13,Where and which way,2.13-b,来 vs 去 by speaker,pattern,0,0,24,299,386,0,2,3,3,0,0,11,0,0,3,323,0,0,red,red,24,2,not_green,3,3,0,red,red,13,28,0,43,green
+S2,2.13,Where and which way,2.13-c,"在 after a verb (住在, 放在)",pattern,0,0,33,585,1120,7,36,34,20,2,12,256,7,1,41,618,0,0,yellow,yellow,40,3,not_green,34,95,3,green,green,83,86,0,204,green
+S2,2.13,Where and which way,2.13-d,place + 来了/走了 + someone,pattern,0,0,1,20,63,0,4,1,1,0,0,12,0,0,1,21,0,0,red,red,1,1,not_green,0,0,0,red,red,19,8,0,27,green
+S2,2.14,Getting around,2.14-a,从 A 到 B,pattern,0,0,2,102,190,0,2,2,0,0,2,50,0,0,2,104,0,0,red,red,2,2,not_green,1,1,1,red,red,67,34,0,90,green
+S2,2.14,Getting around,2.14-b,A 离 B + 远/近,pattern,0,0,4,68,99,1,3,0,0,0,0,14,1,1,1,72,0,0,red,red,5,3,not_green,0,0,0,red,red,4,7,0,12,green
+S2,2.14,Getting around,2.14-c,坐/骑/开 + vehicle,pattern,0,0,23,198,291,2,3,7,4,1,2,11,2,1,9,221,11,9,yellow,yellow,25,3,not_green,6,24,1,green,green,22,21,0,51,green
+S2,2.16,Comparing,2.16-a,"A 比 B + adj (更/还, never 很)",pattern,0,0,31,500,1055,0,2,20,6,1,13,531,0,0,20,531,0,0,yellow,yellow,31,2,not_green,19,56,3,green,green,238,101,0,326,green
+S2,2.16,Comparing,2.16-b,A 没有 B (那么) + adj,pattern,0,0,0,35,50,0,0,1,1,0,0,2,0,0,1,35,0,0,red,red,0,0,not_green,1,13,0,red,red,6,2,0,9,green
+S2,2.16,Comparing,2.16-c,比 + by how much,pattern,0,0,4,70,119,0,0,2,0,0,2,39,0,0,2,74,0,0,red,red,4,2,not_green,2,2,0,red,red,59,24,0,76,green
+S2,2.16,Comparing,2.16-d,A 跟 B 一样,pattern,0,0,21,158,323,1,3,7,6,0,1,23,1,1,8,179,0,0,yellow,yellow,22,3,not_green,6,14,1,green,green,30,45,0,79,green
+S2,2.17,"More and more, a bit too",2.17-a,有点儿 + adj vs adj + 一点儿,pattern,0,0,30,387,603,1,7,19,15,2,2,37,1,1,20,417,0,0,yellow,yellow,31,3,not_green,16,82,4,green,green,47,87,0,147,green
+S2,2.17,"More and more, a bit too",2.17-b,又…又,pattern,0,0,4,14,53,1,7,1,1,0,0,7,1,1,2,18,0,0,red,red,5,3,not_green,1,1,0,red,red,1,2,0,5,green
+S2,2.17,"More and more, a bit too",2.17-c,越来越,pattern,0,0,1,34,76,1,2,3,3,0,0,18,1,1,4,35,0,0,red,red,2,2,not_green,2,2,1,red,red,60,12,0,72,green
+S2,2.17,"More and more, a bit too",2.17-d,越…越,pattern,0,0,0,12,21,0,3,2,2,0,0,5,0,0,2,12,0,0,red,red,0,0,not_green,1,13,1,red,red,10,9,0,18,green
+S2,2.18,Big and rough numbers,2.18-a,counting in 万,pattern,0,0,2,37,154,0,1,10,7,0,3,65,0,0,10,39,0,0,yellow,yellow,2,1,not_green,10,46,1,green,green,247,1888,0,2115,green
+S2,2.18,Big and rough numbers,2.18-b,"roughly: 几, 十多, 两三, 左右",pattern,0,0,4,68,136,0,1,16,9,1,6,64,0,0,16,72,0,0,yellow,yellow,4,2,not_green,14,60,1,green,green,229,81,0,300,green
+S2,2.18,Big and rough numbers,2.18-c,半 before vs after the MW,pattern,0,0,11,69,102,0,1,7,6,0,1,11,0,0,7,80,0,0,yellow,yellow,11,2,not_green,5,5,2,green,green,85,49,0,129,green
+S2,2.19,Linking clauses,2.19-a,因为…所以,pattern,0,0,17,324,949,4,27,26,18,0,8,208,4,1,30,341,0,0,yellow,yellow,21,3,not_green,28,100,2,green,green,229,274,0,508,green
+S2,2.19,Linking clauses,2.19-b,虽然…但是/可是,pattern,0,0,9,224,631,12,45,32,25,1,6,139,12,1,44,233,0,0,yellow,yellow,21,3,not_green,25,72,6,green,green,226,161,0,402,green
+S2,2.19,Linking clauses,2.19-c,不但…而且,pattern,0,0,4,28,147,0,2,5,4,0,1,38,0,0,5,32,0,0,yellow,red,4,2,not_green,4,26,0,red,red,63,54,0,119,green
+S2,2.19,Linking clauses,2.19-d,或者 vs 还是,pattern,0,0,0,15,64,0,1,1,0,0,1,58,0,0,1,15,0,0,red,red,0,0,not_green,1,1,0,red,red,23,36,0,56,green
+S2,2.20,How long,2.20-a,duration after the verb; 多久,pattern,0,0,19,254,381,0,1,12,12,0,0,30,0,0,12,273,0,0,yellow,yellow,19,2,not_green,11,49,1,green,green,38,43,0,88,green
+S2,2.20,How long,2.20-b,double 了: still going,pattern,0,0,1,26,34,0,0,0,0,0,0,1,0,0,0,27,0,0,red,red,1,1,not_green,0,0,0,red,red,3,4,0,7,green
+S2,2.20,How long,2.20-c,"split verbs (见过面, 睡了…觉)",pattern,0,0,7,37,61,2,2,1,1,0,0,1,2,1,3,44,0,0,red,red,9,3,not_green,1,11,0,red,red,1,5,0,9,green
+S2,2.21,"How often, again",2.21-a,verb + 次 / 遍,pattern,0,0,20,301,560,3,5,34,14,1,19,339,3,1,37,321,0,0,yellow,yellow,23,3,not_green,29,112,2,green,green,140,111,0,267,green
+S2,2.21,"How often, again",2.21-b,再 + verb: again (future),pattern,0,0,44,584,957,8,18,46,36,3,7,231,8,1,54,628,0,0,yellow,yellow,52,3,not_green,36,103,5,green,green,151,215,0,388,green
+S2,2.21,"How often, again",2.21-c,又: again (past),pattern,1,1,12,141,461,8,27,30,13,1,16,293,9,2,39,153,0,0,yellow,yellow,21,4,green,26,95,4,green,green,106,109,0,239,green
+S2,2.21,"How often, again",2.21-d,又 vs 再,contrast,1,1,56,722,1410,16,45,76,49,4,23,517,17,2,93,778,0,0,yellow,yellow,73,4,green,62,185,9,green,green,256,323,0,625,green
+S2,2.22,Direction after the verb,2.22-a,verb + 来/去,pattern,1,1,91,1085,2013,11,60,98,82,6,10,370,12,2,110,1176,0,0,yellow,yellow,103,4,green,81,239,17,green,green,355,445,0,843,green
+S2,2.22,Direction after the verb,2.22-b,verb + 上/下/进/出/回/过/起,pattern,0,0,34,348,685,7,38,25,20,0,5,105,7,1,32,382,0,0,yellow,yellow,41,3,not_green,23,85,2,green,green,170,134,0,317,green
+S2,2.22,Direction after the verb,2.22-c,"compounds 进来, 出去, 站起来",pattern,1,1,121,1367,2504,15,78,99,85,4,10,328,16,2,115,1488,0,0,yellow,yellow,137,4,green,88,235,14,green,green,346,450,0,858,green
+S2,2.22,Direction after the verb,2.22-d,"non-spatial 看起来, 想起来, 说下去",pattern,0,0,15,221,396,1,5,12,12,0,0,19,1,1,13,236,0,0,yellow,yellow,16,3,not_green,11,20,1,green,green,23,31,0,65,green
+S2,2.23,How well with 得,2.23-a,verb + 得 + adj,pattern,0,0,19,246,366,1,1,1,1,0,0,3,1,1,2,265,0,0,red,red,20,3,not_green,1,1,0,red,red,16,28,0,42,green
+S2,2.23,How well with 得,2.23-b,verb repeats / object first,pattern,0,0,8,46,86,0,0,0,0,0,0,0,0,0,0,54,0,0,red,red,8,2,not_green,0,0,0,red,red,0,1,0,1,red
+S2,2.23,How well with 得,2.23-c,comparing how well,pattern,0,0,1,31,59,0,0,3,3,0,0,7,0,0,3,32,0,0,red,red,1,1,not_green,3,4,0,red,red,7,5,0,15,green
+S2,2.24,地 and doubled adjectives,2.24-a,doubled adjectives,pattern,0,0,4,83,440,2,37,11,9,1,1,60,2,1,13,87,0,0,yellow,yellow,6,2,not_green,9,38,0,green,green,55,125,0,182,green
+S2,2.24,地 and doubled adjectives,2.24-b,adj + 地 + verb,pattern,0,0,3,84,250,1,21,3,1,1,1,12,1,1,4,87,0,0,red,red,4,2,not_green,4,22,0,green,red,21,20,0,43,green
+S2,2.24,地 and doubled adjectives,2.24-c,的 vs 地 vs 得,contrast,0,0,43,628,1290,3,32,31,18,2,11,292,3,1,34,671,0,0,yellow,yellow,46,3,not_green,27,101,2,green,green,167,152,0,321,green
+S2,2.25,Can or can't,2.25-a,verb + 不 + result/direction,pattern,0,0,22,297,460,1,11,17,14,1,2,24,1,1,18,319,0,0,yellow,yellow,23,3,not_green,13,40,2,green,green,49,69,0,128,green
+S2,2.25,Can or can't,2.25-b,verb + 得 + result: can,pattern,0,0,8,61,99,0,1,0,0,0,0,6,0,0,0,69,0,0,red,red,8,2,not_green,1,1,0,red,red,8,11,0,20,green
+S2,2.26,"When, where, how it happened",2.26-a,是…的 (when/where/how),pattern,0,0,30,321,600,4,8,12,3,0,9,166,4,1,16,351,0,0,yellow,yellow,34,3,not_green,11,57,3,green,green,58,75,0,144,green
+S2,2.26,"When, where, how it happened",2.26-b,是…的 vs 了,contrast,0,0,93,1166,2498,16,74,52,35,0,17,462,16,1,68,1259,0,0,yellow,yellow,109,3,not_green,45,153,8,green,green,346,211,0,592,green
+S2,2.27,If and only if,2.27-a,如果…就; …的话,pattern,0,0,39,579,1229,4,8,11,8,2,1,40,4,1,15,618,0,0,yellow,yellow,43,3,not_green,8,17,3,green,green,158,237,0,394,green
+S2,2.27,If and only if,2.27-b,只要…就,pattern,0,0,2,46,94,0,0,3,3,0,0,14,0,0,3,48,0,0,red,red,2,1,not_green,3,21,0,red,red,32,33,0,64,green
+S2,2.27,If and only if,2.27-c,只有…才,pattern,0,0,2,15,41,0,0,0,0,0,0,12,0,0,0,17,0,0,red,red,2,2,not_green,0,0,0,red,red,4,3,0,7,green
+S2,2.27,If and only if,2.27-d,只要 vs 只有,contrast,0,0,4,61,135,0,0,3,3,0,0,26,0,0,3,65,0,0,red,red,4,2,not_green,3,21,0,red,red,36,36,0,71,green
+S2,2.28,Everything and nothing,2.28-a,QW + 都/也 (+ 不),pattern,1,1,14,227,330,2,3,4,4,0,0,6,3,2,7,241,0,0,yellow,yellow,17,4,green,6,6,0,green,green,15,45,0,66,green
+S2,2.28,Everything and nothing,2.28-b,一 + MW + 也/都 + 不/没,pattern,1,1,9,108,172,2,4,2,2,0,0,4,3,2,5,117,0,0,yellow,yellow,12,4,green,2,11,0,green,green,8,22,0,35,green
+S2,2.28,Everything and nothing,2.28-c,question words meaning some-,pattern,0,0,55,510,822,3,10,2,0,0,2,15,3,1,5,565,0,0,red,red,58,3,not_green,4,23,2,green,green_checked,0,0,0,7,green
+S2,2.28,Everything and nothing,2.28-d,除了…以外,pattern,1,1,5,65,134,0,0,1,1,0,0,28,1,1,2,70,0,0,red,red,6,2,not_green,1,11,0,red,red,33,9,0,43,green
+S2,2.29,Doing it to something with 把,2.29-a,把 + thing + verb + 在/到 + place,pattern,0,0,13,115,231,1,7,2,0,1,1,13,1,1,3,128,0,0,red,red,14,3,not_green,2,12,0,red,red,11,15,0,28,green
+S2,2.29,Doing it to something with 把,2.29-b,把 + thing + verb + result/direction,pattern,0,0,10,109,199,1,5,1,1,0,0,7,1,1,2,119,0,0,red,red,11,3,not_green,1,5,0,red,red,7,18,0,27,green
+S2,2.29,Doing it to something with 把,2.29-c,把 in instructions (cooking/tidying),clip,0,0,27,302,573,0,1,6,6,0,0,24,0,0,6,329,0,0,yellow,yellow,27,2,not_green,6,39,0,green,green,30,66,0,102,green
+S2,2.29,Doing it to something with 把,2.29-d,thing first without 把,pattern,0,0,0,16,19,0,0,0,0,0,0,0,0,0,0,16,0,0,red,red,0,0,not_green,0,0,0,red,red,0,0,0,0,red
+S2,2.30,Happening to you with 被,2.30-a,被 (+ doer) + verb + result,pattern,3,1,13,337,1368,2,11,49,14,1,34,1514,5,2,54,350,0,0,yellow,yellow,18,4,green,47,175,6,green,green,218,156,0,397,green
+S2,2.30,Happening to you with 被,2.30-b,把 vs 被,pattern,3,1,100,1401,3851,17,83,69,28,2,39,1702,20,2,89,1501,0,0,yellow,yellow,120,4,green,66,247,9,green,green,337,393,0,779,green
+S2,2.31,Real-speed speech,2.31-a,"fillers 那个, 就是, 然后",no_text,0,0,4,22,40,0,0,1,0,0,1,3,0,0,1,26,0,0,red,red,4,2,red,1,9,3,red,red,3,5,0,7,red
+S2,2.31,Real-speed speech,2.31-b,final 啊 / 呢 / 吧 tone,pattern,1,1,204,1381,2225,8,20,63,49,1,13,103,9,2,72,1585,0,0,yellow,yellow,213,4,green,48,140,9,green,green,96,434,0,576,green
+S2,2.31,Real-speed speech,2.31-c,不是…吗? reminder question,pattern,0,0,2,34,52,0,1,0,0,0,0,0,0,0,0,36,0,0,red,red,2,2,not_green,0,0,1,red,red,0,13,0,13,green
+S2,2.31,Real-speed speech,2.31-d,first real-speed interview clip,no_text,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,red,red,0,0,red,0,0,0,red,red,0,0,0,0,red

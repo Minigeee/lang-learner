@@ -26,8 +26,8 @@ npm run typecheck
 | Path | What |
 |---|---|
 | `content/zh/curriculum.ts` | A slice of S0 and S1 (14 lesson plans; 2 with files). Helper constructors record call sites, so curriculum errors are reported as `file:line`. |
-| `content/zh/lessons/bu-vs-mei.md` | S1 1.13 "不 or 没?", Pattern template |
-| `content/zh/lessons/where-is-the-cat.md` | S1 1.7 "Where is the cat?", Clip template |
+| `content/zh/lessons/bu-vs-mei.md` | S1 1.15 "不 or 没?", Pattern template |
+| `content/zh/lessons/where-is-the-cat.md` | S1 1.8 "Where is the cat?", Clip template |
 | `content/media/*.yaml` | A hand-made placeholder catalog: 26 media, 27 clips, 60 lines. One media item has `transcript: none` and is free-watch only. |
 | `content/zh/{items,redirects}.yaml`, `templates/` | Authored items with prereq edges, two redirects, three templates |
 | `src/` | ids, parser, catalog and resolver, widget registry, rules, build, CLI |
@@ -41,8 +41,8 @@ Times are agent wall-clock, taken from `date` stamps in `data/timing.log`. They 
 
 | Lesson | Catalog prep | Draft | Check → fix runs to pass | Errors on run 1 | Wall-clock total |
 |---|---|---|---|---|---|
-| 1.13 不 or 没? (Pattern, 96 lines) | 0:42 (4 media files, 15 lines) | 0:17 | **2** | 19 (see below) | ≈ 1:40 |
-| 1.7 Where is the cat? (Clip, 69 lines) | ≈ 0:20 (1 file, 6 media) | 0:35 | **1** | 0 | ≈ 0:50 |
+| 1.15 不 or 没? (Pattern, 96 lines) | 0:42 (4 media files, 15 lines) | 0:17 | **2** | 19 (see below) | ≈ 1:40 |
+| 1.8 Where is the cat? (Clip, 69 lines) | ≈ 0:20 (1 file, 6 media) | 0:35 | **1** | 0 | ≈ 0:50 |
 
 Lesson 1's 19 errors broke down like this:
 - 15 × ZH001: unmarked 不/没/是 mentions in prose;

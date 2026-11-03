@@ -5,8 +5,8 @@ A local-only Vue app for iterating on how lessons **feel** before content produc
 | Lesson | Shape | Opener | We do | Practice format |
 |---|---|---|---|---|
 | Four tones on one syllable (0.1) | Sound practice | Puzzle (mystery) | Examples: two syllables in four tones | Pick one (`choice-pad`, ladder: one syllable → new syllables) |
-| 不 vs 没 (1.13) | Lesson | Compare (showdown) | Examples: pairs in several voices, 不/没 lit | Catch the mismatch (`mismatch`) |
-| Where's the cat? (1.7) | Video lesson | Listen (story) | Read along (`clip-study` stepper) | New clip (`clip-study` listen-check) |
+| 不 vs 没 (1.15) | Lesson | Compare (showdown) | Examples: pairs in several voices, 不/没 lit | Catch the mismatch (`mismatch`) |
+| Where's the cat? (1.8) | Video lesson | Listen (story) | Read along (`clip-study` stepper) | New clip (`clip-study` listen-check) |
 
 - **Start** shows the steps, marks a practice format you haven't met as New, and offers *I already know this*, which jumps to Practice. 80% right on the first try marks the lesson done.
 - **A new practice format gets a one-line introduction** the first time it appears. "Reset format intros" on the home screen shows them again.

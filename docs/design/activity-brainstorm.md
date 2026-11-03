@@ -322,9 +322,9 @@ The matrix is computed from compiled lessons, never authored [TDD `content:matri
 | Lesson | Shape | Skill | Opener | Practice format | Rungs | Voices (new) | Interleaved | Support |
 |---|---|---|---|---|---|---|---|---|
 | 0.9a 你好 → *ní hǎo* | Sound | 3rd-tone sandhi | Mystery | C2 Odd one out (new) | word → phrase | 5 (2) | 2nd vs 3rd (0.1) | pinyin on |
-| 1.11c Ordering at a stall | Clip | stall phrases | Story | C7 What comes next? (new) | sentence → clip | 1 clip + 3 | — | pinyin on peek |
-| 1.13a 不 vs 没 | Pattern | 没 vs 不 | Showdown | C3 Catch the mismatch | sentence → clip line | 6 (2) | 不 (1.3), 没有 (1.5) | pinyin peek |
-| 1.13b 吧 softens | Pattern | 吧 | Discover | C0 Pick (meaning faces) | sentence | 4 (3) | 吗 vs 吧 (1.2) | pinyin peek |
+| 1.13c Ordering at a stall | Clip | stall phrases | Story | C7 What comes next? (new) | sentence → clip | 1 clip + 3 | — | pinyin on peek |
+| 1.15a 不 vs 没 | Pattern | 没 vs 不 | Showdown | C3 Catch the mismatch | sentence → clip line | 6 (2) | 不 (1.3), 没有 (1.6) | pinyin peek |
+| 1.15b 吧 softens | Pattern | 吧 | Discover | C0 Pick (meaning faces) | sentence | 4 (3) | 吗 vs 吧 (1.2) | pinyin peek |
 
 ---
 
@@ -339,23 +339,23 @@ The matrix is computed from compiled lessons, never authored [TDD `content:matri
 5. **You do (1.5 min).** X15 ×8 with two voices not heard so far. Feedback is deferred, ≥80% passes, and misses appear on the review screen.
 6. **Cards.** 你好, 很好 and 可以 with AC audio, plus one CV sentence. The user knows tones, so this lesson is also a likely test-out.
 
-### 5.2 Pattern: 1.13 "不 vs 没 (first pass)", ~7 min
+### 5.2 Pattern: 1.15 "不 vs 没 (first pass)", ~7 min
 
 1. **Idea line.** 没 says it didn't happen; 不 says you don't, won't, or generally aren't.
 2. **I do, gist (1 min).** X1 with a Peppa or Lazy Chinese scene that contains both forms, played once with no layers. One gist question, which is not scored.
-3. **Explanation (≤200 words).** The X12 timeline is the figure: ✖ before-now for 没, ⟳ habit and ▶ later for 不. PI asks for the misleading strategy to be named, which here is "both mean *not*", so English gives no help [07 §1]. 没 + 有 is a reminder from 1.5.
+3. **Explanation (≤200 words).** The X12 timeline is the figure: ✖ before-now for 没, ⟳ habit and ▶ later for 不. PI asks for the misleading strategy to be named, which here is "both mean *not*", so English gives no help [07 §1]. 没 + 有 is a reminder from 1.6.
 4. **I do, second pass (1 min).** X11 form flood on the same scene: 不 and 没 tinted the same color (tinting them differently would hand over the answer). The learner hears the lines with the forms visible.
 5. **We do (3 min).**
    - X12 picker, 8 sentences: hear it, tap ✖ (didn't) or ⟳ (doesn't).
    - Blocked first, 没 only, then mixed. Pan et al. found blocking does fine within the first session [07, ref 26], and 不 is already known from 1.3.
-   - Then X20 sorter ×10, with ~30% of items reused from 1.3 and 1.5.
+   - Then X20 sorter ×10, with ~30% of items reused from 1.3 and 1.6.
    - A miss loops the span with the deciding word lit: "他没去 → he didn't go (it's over)".
 6. **You do (1 min).** X12 ×5 on new sentences from two new speakers, with feedback deferred.
 7. **Cards.** Two minimal-pair sentence cards (他不去 / 他没去) as clip audio, plus a 不/没 entry added to the interleaved pool, so later lessons and the SRS mix them in.
 
-The second lesson of the unit (吧) would then appear as the 1.13b row in §4.
+The second lesson of the unit (吧) would then appear as the 1.15b row in §4.
 
-### 5.3 Clip: 1.11 "Ordering at a stall" (unit theme food and shopping), ~7 min
+### 5.3 Clip: 1.13 "Ordering at a stall" (unit theme food and shopping), ~7 min
 
 1. **Idea line.** At a stall: what you want, how much, and 太…了 when it's too much.
 2. **I do (1.5 min).** X6 predict: a still and three options (asking the way / buying fruit / talking about weather). Pass 1 of a ~60 s Mandarin Click food story, no layers. Then X22 rating.

@@ -7,7 +7,7 @@ The subagent wrote this report. The orchestrator saved it, because subagents can
 > **Update (2026-11-02): the full Common Voice zh-CN 27.0 dataset is now available locally.** The user created the Mozilla Data Collective account. `python sandbox/data/fetch_common_voice.py` downloads it into `sandbox/data/common-voice-zh-CN/` and deletes the archive afterward. The "yellow" figures below are projections from the GitHub sentence text.
 >
 > **Measured rerun (2026-11-03, `status_measured` in `out/lessons.csv`):** distinct voices are now counted as distinct `client_id`s on validated clips of the matched sentences.
-> - **The projection held.** 114 of 158 ideas are green on validated clips: S1 44/53, S2 70/105. Two more (S1) are green only if unvalidated clips are admitted after an automatic check. **42 are red**, nearly the same set as before, clustered in S2: 2.5, 2.18, 2.22, 2.24, 2.26 and 2.28 (3 each).
+> - **The projection held.** 114 of 158 ideas are green on validated clips: S1 44/53, S2 70/105. Two more (S1) are green only if unvalidated clips are admitted after an automatic check. **42 are red**, nearly the same set as before, clustered in S2: 2.13, 2.17, 2.23, 2.29, 2.31 and 2.27 (3 each).
 > - **Without Wikipedia-origin sentences:** 104 green plus 6 green-after-check.
 > - **Voices are not the bottleneck.** The median idea has 32 distinct validated voices. The limit is learner-level sentences: only 3,784 validated-clip sentences pass the S2 learner-fit rule, and 1,474 pass S1.
 > - The dataset has 51,172 sentences with a validated clip, from 5,828 distinct validated voices.
@@ -18,8 +18,8 @@ The subagent wrote this report. The orchestrator saved it, because subagents can
 > - **AISHELL-3** (88k utterances, 218 speakers, Apache 2.0) did most of it: 22,767 sentences pass the S2 learner-fit rule (CV has 3,784), and 12,787 pass S1. Its prompts are short (median 11 characters) and often everyday speech.
 > - **AISHELL-1** (134k sentences, 400 speakers) adds 12,976 S2-fit sentences, mostly news style. Its page says Apache 2.0 and also "free for academic use"; check that before relying on it.
 > - **THCHS-30** adds nothing: its 1,000 sentences are long news text and none pass either rule.
-> - **Still red (6):** 1.11-c, 2.13-c, 2.22-b, 2.24-d, 2.26-a, 2.26-d.
-> - Example: 2.22-a (verb + 得 + adjective) went from 1 CV sentence to 1 + 16 (AISHELL-1) + 28 (AISHELL-3).
+> - **Still red (6):** 1.13-c, 2.10-c, 2.23-b, 2.29-d, 2.31-a, 2.31-d.
+> - Example: 2.23-a (verb + 得 + adjective) went from 1 CV sentence to 1 + 16 (AISHELL-1) + 28 (AISHELL-3).
 > - Same caveats: ~70% pattern precision, and these are read prompts by recording-studio speakers, not natural speech.
 >
 > **Which sources matter (`combos.py`, `out/combos.csv`):** every combination, same target (≥ 5 sentences, ≥ 4 voices).
@@ -52,14 +52,14 @@ The subagent wrote this report. The orchestrator saved it, because subagents can
   - CV zh-CN 27.0 has 59,170 validated sentences and 852,410 clips (190,406 validated) from 7,601 speakers. That is **about 14 recordings and about 3.2 validated recordings per sentence** on average, so each sentence comes in several voices.
   - The sentence pool is small and **93% Wikipedia text**. Only about 3,700 sentences are conversational.
 - **43 ideas are red (27%): 7 in S1, 36 in S2.** They cluster in the second half of S2:
-  - 得 complements (2.22, all three red; 2.20-b)
-  - 把 (2.24)
-  - comparison (2.4-b/c, 2.18-b/c/d)
-  - conditionals (2.28)
-  - existential and appearance sentences (2.5)
-  - 从/离 (2.17)
-  - durations and split verbs (2.12)
-  - real-speed speech (2.26), which no text corpus can supply
+  - 得 complements (2.23, all three red; 2.25-b)
+  - 把 (2.29)
+  - comparison (2.16-b/c, 2.17-b/c/d)
+  - conditionals (2.27)
+  - existential and appearance sentences (2.13)
+  - 从/离 (2.14)
+  - durations and split verbs (2.20)
+  - real-speed speech (2.31), which no text corpus can supply
 - **Merging thin ideas fixes most reds.**
   - 18 of 23 proposed merges come out yellow, though several land exactly at the threshold.
   - Five clusters stay red: 一边/着 + verb, existential and appearance sentences, 从/离, 只要/只有, and 或者/还是.
@@ -86,7 +86,7 @@ The subagent wrote this report. The orchestrator saved it, because subagents can
 The Tatoeba `links` export wasn't needed. It only maps translations.
 
 **Matching.**
-- Each S1 and S2 lesson idea has a reviewable regex in `patterns.yaml`: 158 ideas in all. The checkpoint units 1.15, 2.30 and 2.15 are excluded.
+- Each S1 and S2 lesson idea has a reviewable regex in `patterns.yaml`: 158 ideas in all. The checkpoint units 1.18, 2.15 and 2.32 are excluded.
 - Sentences are converted to simplified characters (OpenCC t2s) before matching.
 - A contrast lesson (e.g. 不 vs 没) matches a sentence containing either member.
 - Eleven "heard in a story or scene" ideas are tagged `clip`. For those, matching sentences are only a proxy, because the lesson really needs a continuous clip.
@@ -203,49 +203,49 @@ From `out/sources.csv`.
 | 1.2 Asking questions | 3 | 0 / 2 / 1 | **red** | 0–12, 3 | 0–22 | 20 | 1.2-b 你呢? asks back (0 CV) |
 | 1.3 Describing | 3 | 0 / 3 / 0 | **yellow** | 2–10, 3 | 2–92 | 534 | — |
 | 1.4 Numbers and age | 4 | 0 / 4 / 0 | **yellow** | 0–3, 1 | 17–103 | 212 | — |
-| 1.4a This, that, which | 3 | 0 / 2 / 1 | **red** | 0–8, 2 | 4–24 | 214 | 1.4a-b 这些 / 那些 (4 CV) |
-| 1.5 Family | 3 | 0 / 3 / 0 | **yellow** | 6–16, 3 | 3–149 | 758 | — |
-| 1.6 Asking how | 2 | 0 / 2 / 0 | **yellow** | 2–2, 2 | 3–19 | 129 | — |
-| 1.7 Where things are | 3 | 0 / 3 / 0 | **yellow** | 0–8, 2 | 6–31 | 230 | — |
-| 1.8 Dates and times | 3 | 0 / 3 / 0 | **yellow** | 0–0, 0 | 5–31 | 132 | — |
-| 1.9 Daily verbs, word order | 4 | 0 / 4 / 0 | **yellow** | 1–5, 3 | 3–12 | 228 | — |
-| 1.10 Wanting | 2 | 0 / 2 / 0 | **yellow** | 2–3, 2 | 8–54 | 779 | — |
-| 1.10a Can | 4 | 0 / 3 / 1 | **red** | 3–19, 1 | 2–59 | 325 | 1.10a-a 会: learned skill (2 CV) |
-| 1.11 Food and shopping | 4 | 0 / 2 / 2 | **red** | 0–9, 2 | 1–5 | 73 | 1.11-c A 还是 B? (no 吗) (1 CV); 1.11-d ordering scene at a market (2 CV) |
-| 1.12 Also, all, and | 4 | 0 / 4 / 0 | **yellow** | 0–7, 2 | 23–60 | 140 | — |
-| 1.13 Didn't, don't, let's | 4 | 0 / 4 / 0 | **yellow** | 0–11, 2 | 10–102 | 301 | — |
-| 1.14 Asking whether | 2 | 0 / 1 / 1 | **red** | 0–3, 1 | 2–10 | 273 | 1.14-b tag questions (2 CV) |
-| 1.14a Now and changed (first pass) | 3 | 0 / 3 / 0 | **yellow** | 6–28, 3 | 10–99 | 729 | — |
+| 1.5 This, that, which | 3 | 0 / 2 / 1 | **red** | 0–8, 2 | 4–24 | 214 | 1.5-b 这些 / 那些 (4 CV) |
+| 1.6 Family | 3 | 0 / 3 / 0 | **yellow** | 6–16, 3 | 3–149 | 758 | — |
+| 1.7 Asking how | 2 | 0 / 2 / 0 | **yellow** | 2–2, 2 | 3–19 | 129 | — |
+| 1.8 Where things are | 3 | 0 / 3 / 0 | **yellow** | 0–8, 2 | 6–31 | 230 | — |
+| 1.9 Dates and times | 3 | 0 / 3 / 0 | **yellow** | 0–0, 0 | 5–31 | 132 | — |
+| 1.10 Daily verbs, word order | 4 | 0 / 4 / 0 | **yellow** | 1–5, 3 | 3–12 | 228 | — |
+| 1.11 Wanting | 2 | 0 / 2 / 0 | **yellow** | 2–3, 2 | 8–54 | 779 | — |
+| 1.12 Can | 4 | 0 / 3 / 1 | **red** | 3–19, 1 | 2–59 | 325 | 1.12-a 会: learned skill (2 CV) |
+| 1.13 Food and shopping | 4 | 0 / 2 / 2 | **red** | 0–9, 2 | 1–5 | 73 | 1.13-c A 还是 B? (no 吗) (1 CV); 1.13-d ordering scene at a market (2 CV) |
+| 1.14 Also, all, and | 4 | 0 / 4 / 0 | **yellow** | 0–7, 2 | 23–60 | 140 | — |
+| 1.15 Didn't, don't, let's | 4 | 0 / 4 / 0 | **yellow** | 0–11, 2 | 10–102 | 301 | — |
+| 1.16 Asking whether | 2 | 0 / 1 / 1 | **red** | 0–3, 1 | 2–10 | 273 | 1.16-b tag questions (2 CV) |
+| 1.17 Now and changed (first pass) | 3 | 0 / 3 / 0 | **yellow** | 6–28, 3 | 10–99 | 729 | — |
 | 2.1 What happened (了 second pass) | 2 | 0 / 2 / 0 | **yellow** | 8–12, 2 | 16–40 | 909 | — |
-| 2.16 Things changed | 4 | 0 / 4 / 0 | **yellow** | 1–35, 3 | 3–126 | 200 | — |
-| 2.2 Experiences | 4 | 0 / 4 / 0 | **yellow** | 0–12, 1 | 7–57 | 210 | — |
-| 2.3 At once and ongoing | 4 | 0 / 2 / 2 | **red** | 0–11, 3 | 0–14 | 11 | 2.3-a 一边…一边 (2 CV); 2.3-c verb + 着 + verb (0 CV) |
-| 2.8 Results | 4 | 0 / 4 / 0 | **yellow** | 2–10, 1 | 4–57 | 136 | — |
-| 2.7 Should, must, want, will | 4 | 0 / 3 / 1 | **red** | 0–5, 2 | 0–62 | 36 | 2.7-c 得 děi: have to (0 CV) |
-| 2.11 Asking and telling | 4 | 0 / 4 / 0 | **yellow** | 2–14, 3 | 17–28 | 526 | — |
-| 2.27 To, for, with someone | 4 | 0 / 2 / 2 | **red** | 0–4, 2 | 0–14 | 157 | 2.27-b 给 + person + thing (two objects) (3 CV); 2.27-c 给 + person + verb (0 CV) |
+| 2.2 Things changed | 4 | 0 / 4 / 0 | **yellow** | 1–35, 3 | 3–126 | 200 | — |
+| 2.3 Experiences | 4 | 0 / 4 / 0 | **yellow** | 0–12, 1 | 7–57 | 210 | — |
+| 2.4 At once and ongoing | 4 | 0 / 2 / 2 | **red** | 0–11, 3 | 0–14 | 11 | 2.4-a 一边…一边 (2 CV); 2.4-c verb + 着 + verb (0 CV) |
+| 2.5 Results | 4 | 0 / 4 / 0 | **yellow** | 2–10, 1 | 4–57 | 136 | — |
+| 2.6 Should, must, want, will | 4 | 0 / 3 / 1 | **red** | 0–5, 2 | 0–62 | 36 | 2.6-c 得 děi: have to (0 CV) |
+| 2.7 Asking and telling | 4 | 0 / 4 / 0 | **yellow** | 2–14, 3 | 17–28 | 526 | — |
+| 2.8 To, for, with someone | 4 | 0 / 2 / 2 | **red** | 0–4, 2 | 0–14 | 157 | 2.8-b 给 + person + thing (two objects) (3 CV); 2.8-c 给 + person + verb (0 CV) |
 | 2.9 Counting things | 3 | 0 / 3 / 0 | **yellow** | 0–6, 2 | 8–36 | 254 | — |
-| 2.13 Describing with 的 | 4 | 0 / 2 / 2 | **red** | 1–2, 1 | 1–30 | 109 | 2.13-b phrase + 的 + noun (我买的书) (2 CV); 2.13-c 的 with the noun dropped (1 CV) |
-| 2.6 Time order | 4 | 0 / 4 / 0 | **yellow** | 1–8, 2 | 6–26 | 154 | — |
-| 2.19 Early, late | 3 | 0 / 3 / 0 | **yellow** | 0–1, 1 | 7–38 | 95 | — |
-| 2.5 Where and which way | 4 | 0 / 1 / 3 | **red** | 0–7, 1 | 0–34 | 13 | 2.5-a place + verb + 着 + thing (0 CV); 2.5-b 来 vs 去 by speaker (3 CV); 2.5-d place + 来了/走了 + someone (1 CV) |
-| 2.17 Getting around | 3 | 0 / 1 / 2 | **red** | 0–2, 1 | 0–7 | 72 | 2.17-a 从 A 到 B (2 CV); 2.17-b A 离 B + 远/近 (0 CV) |
-| 2.4 Comparing | 4 | 0 / 2 / 2 | **red** | 0–1, 1 | 1–20 | 35 | 2.4-b A 没有 B (那么) + adj (1 CV); 2.4-c 比 + by how much (2 CV) |
-| 2.18 More and more, a bit too | 4 | 0 / 1 / 3 | **red** | 0–1, 1 | 1–19 | 12 | 2.18-b 又…又 (1 CV); 2.18-c 越来越 (3 CV); 2.18-d 越…越 (2 CV) |
-| 2.14 Big and rough numbers | 3 | 0 / 3 / 0 | **yellow** | 0–0, 0 | 7–16 | 39 | — |
-| 2.10 Linking clauses | 4 | 0 / 3 / 1 | **red** | 0–12, 1 | 1–32 | 15 | 2.10-d 或者 vs 还是 (1 CV) |
-| 2.12 How long | 3 | 0 / 1 / 2 | **red** | 0–2, 1 | 0–12 | 27 | 2.12-b double 了: still going (0 CV); 2.12-c split verbs (见过面, 睡了…觉) (1 CV) |
-| 2.31 How often, again | 4 | 0 / 4 / 0 | **yellow** | 3–17, 2 | 30–76 | 153 | — |
-| 2.21 Direction after the verb | 4 | 0 / 4 / 0 | **yellow** | 1–16, 2 | 12–99 | 236 | — |
-| 2.22 How well with 得 | 3 | 0 / 0 / 3 | **red** | 0–1, 1 | 0–3 | 32 | 2.22-a verb + 得 + adj (1 CV); 2.22-b verb repeats / object first (0 CV); 2.22-c comparing how well (3 CV) |
-| 2.32 地 and doubled adjectives | 3 | 0 / 2 / 1 | **red** | 1–3, 1 | 3–31 | 87 | 2.32-b adj + 地 + verb (3 CV) |
-| 2.20 Can or can't | 2 | 0 / 1 / 1 | **red** | 0–1, 1 | 0–17 | 69 | 2.20-b verb + 得 + result: can (0 CV) |
-| 2.23 When, where, how it happened | 2 | 0 / 2 / 0 | **yellow** | 4–16, 1 | 12–52 | 351 | — |
-| 2.28 If and only if | 4 | 0 / 1 / 3 | **red** | 0–4, 1 | 0–11 | 17 | 2.28-b 只要…就 (3 CV); 2.28-c 只有…才 (0 CV); 2.28-d 只要 vs 只有 (3 CV) |
-| 2.29 Everything and nothing | 4 | 0 / 2 / 2 | **red** | 1–3, 2 | 1–4 | 70 | 2.29-c question words meaning some- (2 CV); 2.29-d 除了…以外 (1 CV) |
-| 2.24 Doing it to something with 把 | 4 | 0 / 1 / 3 | **red** | 0–1, 1 | 0–6 | 16 | 2.24-a 把 + thing + verb + 在/到 + place (2 CV); 2.24-b 把 + thing + verb + result/direction (1 CV); 2.24-d thing first without 把 (0 CV) |
-| 2.25 Happening to you with 被 | 2 | 0 / 2 / 0 | **yellow** | 5–20, 2 | 49–69 | 350 | — |
-| 2.26 Real-speed speech | 4 | 0 / 1 / 3 | **red** | 0–9, 2 | 0–63 | 0 | 2.26-a fillers 那个, 就是, 然后 (1 CV); 2.26-c 不是…吗? reminder question (0 CV); 2.26-d first real-speed interview clip (0 CV) |
+| 2.10 Describing with 的 | 4 | 0 / 2 / 2 | **red** | 1–2, 1 | 1–30 | 109 | 2.10-b phrase + 的 + noun (我买的书) (2 CV); 2.10-c 的 with the noun dropped (1 CV) |
+| 2.11 Time order | 4 | 0 / 4 / 0 | **yellow** | 1–8, 2 | 6–26 | 154 | — |
+| 2.12 Early, late | 3 | 0 / 3 / 0 | **yellow** | 0–1, 1 | 7–38 | 95 | — |
+| 2.13 Where and which way | 4 | 0 / 1 / 3 | **red** | 0–7, 1 | 0–34 | 13 | 2.13-a place + verb + 着 + thing (0 CV); 2.13-b 来 vs 去 by speaker (3 CV); 2.13-d place + 来了/走了 + someone (1 CV) |
+| 2.14 Getting around | 3 | 0 / 1 / 2 | **red** | 0–2, 1 | 0–7 | 72 | 2.14-a 从 A 到 B (2 CV); 2.14-b A 离 B + 远/近 (0 CV) |
+| 2.16 Comparing | 4 | 0 / 2 / 2 | **red** | 0–1, 1 | 1–20 | 35 | 2.16-b A 没有 B (那么) + adj (1 CV); 2.16-c 比 + by how much (2 CV) |
+| 2.17 More and more, a bit too | 4 | 0 / 1 / 3 | **red** | 0–1, 1 | 1–19 | 12 | 2.17-b 又…又 (1 CV); 2.17-c 越来越 (3 CV); 2.17-d 越…越 (2 CV) |
+| 2.18 Big and rough numbers | 3 | 0 / 3 / 0 | **yellow** | 0–0, 0 | 7–16 | 39 | — |
+| 2.19 Linking clauses | 4 | 0 / 3 / 1 | **red** | 0–12, 1 | 1–32 | 15 | 2.19-d 或者 vs 还是 (1 CV) |
+| 2.20 How long | 3 | 0 / 1 / 2 | **red** | 0–2, 1 | 0–12 | 27 | 2.20-b double 了: still going (0 CV); 2.20-c split verbs (见过面, 睡了…觉) (1 CV) |
+| 2.21 How often, again | 4 | 0 / 4 / 0 | **yellow** | 3–17, 2 | 30–76 | 153 | — |
+| 2.22 Direction after the verb | 4 | 0 / 4 / 0 | **yellow** | 1–16, 2 | 12–99 | 236 | — |
+| 2.23 How well with 得 | 3 | 0 / 0 / 3 | **red** | 0–1, 1 | 0–3 | 32 | 2.23-a verb + 得 + adj (1 CV); 2.23-b verb repeats / object first (0 CV); 2.23-c comparing how well (3 CV) |
+| 2.24 地 and doubled adjectives | 3 | 0 / 2 / 1 | **red** | 1–3, 1 | 3–31 | 87 | 2.24-b adj + 地 + verb (3 CV) |
+| 2.25 Can or can't | 2 | 0 / 1 / 1 | **red** | 0–1, 1 | 0–17 | 69 | 2.25-b verb + 得 + result: can (0 CV) |
+| 2.26 When, where, how it happened | 2 | 0 / 2 / 0 | **yellow** | 4–16, 1 | 12–52 | 351 | — |
+| 2.27 If and only if | 4 | 0 / 1 / 3 | **red** | 0–4, 1 | 0–11 | 17 | 2.27-b 只要…就 (3 CV); 2.27-c 只有…才 (0 CV); 2.27-d 只要 vs 只有 (3 CV) |
+| 2.28 Everything and nothing | 4 | 0 / 2 / 2 | **red** | 1–3, 2 | 1–4 | 70 | 2.28-c question words meaning some- (2 CV); 2.28-d 除了…以外 (1 CV) |
+| 2.29 Doing it to something with 把 | 4 | 0 / 1 / 3 | **red** | 0–1, 1 | 0–6 | 16 | 2.29-a 把 + thing + verb + 在/到 + place (2 CV); 2.29-b 把 + thing + verb + result/direction (1 CV); 2.29-d thing first without 把 (0 CV) |
+| 2.30 Happening to you with 被 | 2 | 0 / 2 / 0 | **yellow** | 5–20, 2 | 49–69 | 350 | — |
+| 2.31 Real-speed speech | 4 | 0 / 1 / 3 | **red** | 0–9, 2 | 0–63 | 0 | 2.31-a fillers 那个, 就是, 然后 (1 CV); 2.31-c 不是…吗? reminder question (0 CV); 2.31-d first real-speed interview clip (0 CV) |
 
 **Overall** (158 lesson ideas)
 
@@ -271,24 +271,24 @@ From `out/sources.csv`.
 
    | Area | Ideas | CV candidates |
    |---|---|---|
-   | 得 "how well" | 2.22-a/b/c | 1 / 0 / 3 |
-   | 得 "can" (verb 得 result) | 2.20-b | 0 |
-   | 把 | 2.24-a/b/d | 2 / 1 / 0 |
-   | A 没有 B 那么 | 2.4-b | 1 |
-   | 比 + amount | 2.4-c | 2 |
-   | 又…又 / 越来越 / 越…越 | 2.18-b/c/d | 1 / 3 / 2 |
-   | 只要 / 只有…才 | 2.28-b/c | 3 / 0 |
+   | 得 "how well" | 2.23-a/b/c | 1 / 0 / 3 |
+   | 得 "can" (verb 得 result) | 2.25-b | 0 |
+   | 把 | 2.29-a/b/d | 2 / 1 / 0 |
+   | A 没有 B 那么 | 2.16-b | 1 |
+   | 比 + amount | 2.16-c | 2 |
+   | 又…又 / 越来越 / 越…越 | 2.17-b/c/d | 1 / 3 / 2 |
+   | 只要 / 只有…才 | 2.27-b/c | 3 / 0 |
 
    - These are exactly the forms doc 03 planned to source from "CV transcript search". **The CV sentence pool is too small and too encyclopedic to carry them.**
    - Tatoeba has 12–250 text-only sentences for each of them, but no usable audio.
 3. **Spatial and existential sentences.**
-   - 2.5-a (墙上挂着一张画): 0 CV candidates. 2.5-d (家里来了一个客人): 1.
-   - 2.17-a/b (从…到, 离…远): 2 and 0.
-   - 2.3-a/c (一边…一边, 笑着说): 2 and 0.
+   - 2.13-a (墙上挂着一张画): 0 CV candidates. 2.13-d (家里来了一个客人): 1.
+   - 2.14-a/b (从…到, 离…远): 2 and 0.
+   - 2.4-a/c (一边…一边, 笑着说): 2 and 0.
    - Even Tatoeba text is thin for these (11–35 sentences).
 4. **Forms that only conversation has.**
    - The S1 reds are textbook-dialogue forms that Wikipedia and film subtitles rarely contain: 叫 names, 你呢, 这些/那些, 会 for a skill, A 还是 B?, tag questions, and the ordering scene.
-   - 2.26 (fillers, 不是…吗?, the real-speed interview clip) needs spontaneous speech. No text corpus supplies that; only a permitted YouTube creator does.
+   - 2.31 (fillers, 不是…吗?, the real-speed interview clip) needs spontaneous speech. No text corpus supplies that; only a permitted YouTube creator does.
 5. **Clip-shaped ideas.**
    - Eleven ideas are "heard in a story or scene": the family-photo talk, "where's the cat", market ordering, a travel story with 过, 把 in a cooking scene, and so on.
    - The only legitimate continuous narration today is GS: 40 stories, one narrator, mostly levels 1–2.
@@ -350,27 +350,27 @@ This is web research only, as of 2026-11-02. **No one was contacted.**
 |---|---|---|---|
 | 1.1-a + b (是 / 叫 self-intro) | 3, 3 | 42 | yellow |
 | 1.2-a + b (吗 and 你呢) | 4, 3 | 22 | yellow |
-| 1.4a-a + b (这个 / 这些) | 8, 2 | 28 | yellow |
-| 1.10a-a + b (会 / 能) | 14, 1 | 30 | yellow |
-| 1.11-a + c + d (shopping: prices, 还是, ordering) | 2, 2 | 7 | yellow |
-| 1.14-a + b (A-not-A and tags) | 3, 1 | 12 | yellow |
-| 2.4-a + b + c (one 比 lesson) | 0, 0 | 21 | yellow |
-| 2.5-b + 2.21-a (来/去) | 12, 2 | 101 | yellow |
-| 2.12-a + b + c (how long) | 2, 1 | 13 | yellow |
-| 2.18-b + c + d (又…又, 越来越, 越…越) | 2, 1 | 6 | yellow (thin) |
-| 2.20-a + b (potential complements) | 1, 1 | 17 | yellow |
-| 2.7-b + c (应该 / 得 děi) | 1, 1 | 16 | yellow |
-| 2.26-b + c (particles, 不是…吗) | 9, 2 | 63 | yellow |
-| 2.22-a + b + c (得 how well) | 1, 1 | 4 | **at threshold** |
-| 2.24-a + b + d (把) | 2, 1 | 3 | **at threshold** |
-| 2.13-b + c (的 clauses) | 2, 1 | 3 | **at threshold** |
-| 2.27-b + c (给) | 2, 2 | 3 | **at threshold** |
-| 2.29-c + d | 4, 2 | 3 | yellow (thin) |
-| 2.3-a + c (一边 / 着 + verb) | 1, 1 | 2 | red |
-| 2.5-a + d (existential / appearance) | 0, 0 | 1 | red |
-| 2.17-a + b (从…到 / 离) | 1, 1 | 2 | red |
-| 2.28-b + c (只要 / 只有) | 0, 0 | 3 | red |
-| 2.10-d + 1.11-c (或者 / 还是) | 0, 0 | 2 | red |
+| 1.5-a + b (这个 / 这些) | 8, 2 | 28 | yellow |
+| 1.12-a + b (会 / 能) | 14, 1 | 30 | yellow |
+| 1.13-a + c + d (shopping: prices, 还是, ordering) | 2, 2 | 7 | yellow |
+| 1.16-a + b (A-not-A and tags) | 3, 1 | 12 | yellow |
+| 2.16-a + b + c (one 比 lesson) | 0, 0 | 21 | yellow |
+| 2.13-b + 2.22-a (来/去) | 12, 2 | 101 | yellow |
+| 2.20-a + b + c (how long) | 2, 1 | 13 | yellow |
+| 2.17-b + c + d (又…又, 越来越, 越…越) | 2, 1 | 6 | yellow (thin) |
+| 2.25-a + b (potential complements) | 1, 1 | 17 | yellow |
+| 2.6-b + c (应该 / 得 děi) | 1, 1 | 16 | yellow |
+| 2.31-b + c (particles, 不是…吗) | 9, 2 | 63 | yellow |
+| 2.23-a + b + c (得 how well) | 1, 1 | 4 | **at threshold** |
+| 2.29-a + b + d (把) | 2, 1 | 3 | **at threshold** |
+| 2.10-b + c (的 clauses) | 2, 1 | 3 | **at threshold** |
+| 2.8-b + c (给) | 2, 2 | 3 | **at threshold** |
+| 2.28-c + d | 4, 2 | 3 | yellow (thin) |
+| 2.4-a + c (一边 / 着 + verb) | 1, 1 | 2 | red |
+| 2.13-a + d (existential / appearance) | 0, 0 | 1 | red |
+| 2.14-a + b (从…到 / 离) | 1, 1 | 2 | red |
+| 2.27-b + c (只要 / 只有) | 0, 0 | 3 | red |
+| 2.19-d + 1.13-c (或者 / 还是) | 0, 0 | 2 | red |
 
 **Then:**
 - **Move the remaining reds to "mined"**, unless a permitted YouTube clip or a GS story can carry them. Doc 03 §1.8 already has this mechanism, with a Grammar Wiki deep link. The candidates:
@@ -380,11 +380,11 @@ This is web research only, as of 2026-11-02. **No one was contacted.**
   - 只有…才
   - 或者 vs 还是
 
-  2.5-a's "墙上挂着" is the kind of sentence a picture story supplies, so re-run the search once more Storybooks sources are added.
+  2.13-a's "墙上挂着" is the kind of sentence a picture story supplies, so re-run the search once more Storybooks sources are added.
 - **Count voices per unit, not per idea**, as activity-brainstorm §4 already does ("≥4 per contrast across a unit").
   - The "Pattern you do" still needs a new speaker for each item.
   - With CV's ~3 validated voices per sentence, a unit can rotate voices even where one idea has few sentences.
-- **2.26 Real-speed speech:**
+- **2.31 Real-speed speech:**
   - Make it conditional on a creator's permission (the Lazy Chinese podcast).
   - Otherwise, make it a watch-only Clip unit whose steps don't depend on the video's content, or move it to S3.
 - **Clip-shaped ideas** (family photo, "where's the cat", market, travel story, cooking scene):

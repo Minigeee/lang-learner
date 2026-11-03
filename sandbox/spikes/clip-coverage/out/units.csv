@@ -3,46 +3,46 @@ S1,1.1,Greetings and names,2,0,1,1,3,0
 S1,1.2,Asking questions,3,0,2,1,0,0
 S1,1.3,Describing,3,0,3,0,2,2
 S1,1.4,Numbers and age,4,0,4,0,17,0
-S1,1.4a,"This, that, which",3,0,2,1,4,0
-S1,1.5,Family,3,0,3,0,3,6
-S1,1.6,Asking how,2,0,2,0,3,2
-S1,1.7,Where things are,3,0,3,0,6,0
-S1,1.8,Dates and times,3,0,3,0,5,0
-S1,1.9,"Daily verbs, word order",4,0,4,0,3,1
-S1,1.10,Wanting,2,0,2,0,8,2
-S1,1.10a,Can,4,0,3,1,2,3
-S1,1.11,Food and shopping,4,0,2,2,1,0
-S1,1.12,"Also, all, and",4,0,4,0,23,0
-S1,1.13,"Didn't, don't, let's",4,0,4,0,10,0
-S1,1.14,Asking whether,2,0,1,1,2,0
-S1,1.14a,Now and changed (first pass),3,0,3,0,10,6
+S1,1.5,"This, that, which",3,0,2,1,4,0
+S1,1.6,Family,3,0,3,0,3,6
+S1,1.7,Asking how,2,0,2,0,3,2
+S1,1.8,Where things are,3,0,3,0,6,0
+S1,1.9,Dates and times,3,0,3,0,5,0
+S1,1.10,"Daily verbs, word order",4,0,4,0,3,1
+S1,1.11,Wanting,2,0,2,0,8,2
+S1,1.12,Can,4,0,3,1,2,3
+S1,1.13,Food and shopping,4,0,2,2,1,0
+S1,1.14,"Also, all, and",4,0,4,0,23,0
+S1,1.15,"Didn't, don't, let's",4,0,4,0,10,0
+S1,1.16,Asking whether,2,0,1,1,2,0
+S1,1.17,Now and changed (first pass),3,0,3,0,10,6
 S2,2.1,What happened (了 second pass),2,0,2,0,16,8
-S2,2.16,Things changed,4,0,4,0,3,1
-S2,2.2,Experiences,4,0,4,0,7,0
-S2,2.3,At once and ongoing,4,0,2,2,0,0
-S2,2.8,Results,4,0,4,0,4,2
-S2,2.7,"Should, must, want, will",4,0,3,1,0,0
-S2,2.11,Asking and telling,4,0,4,0,17,2
-S2,2.27,"To, for, with someone",4,0,2,2,0,0
+S2,2.2,Things changed,4,0,4,0,3,1
+S2,2.3,Experiences,4,0,4,0,7,0
+S2,2.4,At once and ongoing,4,0,2,2,0,0
+S2,2.5,Results,4,0,4,0,4,2
+S2,2.6,"Should, must, want, will",4,0,3,1,0,0
+S2,2.7,Asking and telling,4,0,4,0,17,2
+S2,2.8,"To, for, with someone",4,0,2,2,0,0
 S2,2.9,Counting things,3,0,3,0,8,0
-S2,2.13,Describing with 的,4,0,2,2,1,1
-S2,2.6,Time order,4,0,4,0,6,1
-S2,2.19,"Early, late",3,0,3,0,7,0
-S2,2.5,Where and which way,4,0,1,3,0,0
-S2,2.17,Getting around,3,0,1,2,0,0
-S2,2.4,Comparing,4,0,2,2,1,0
-S2,2.18,"More and more, a bit too",4,0,1,3,1,0
-S2,2.14,Big and rough numbers,3,0,3,0,7,0
-S2,2.10,Linking clauses,4,0,3,1,1,0
-S2,2.12,How long,3,0,1,2,0,0
-S2,2.31,"How often, again",4,0,4,0,30,3
-S2,2.21,Direction after the verb,4,0,4,0,12,1
-S2,2.22,How well with 得,3,0,0,3,0,0
-S2,2.32,地 and doubled adjectives,3,0,2,1,3,1
-S2,2.20,Can or can't,2,0,1,1,0,0
-S2,2.23,"When, where, how it happened",2,0,2,0,12,4
-S2,2.28,If and only if,4,0,1,3,0,0
-S2,2.29,Everything and nothing,4,0,2,2,1,1
-S2,2.24,Doing it to something with 把,4,0,1,3,0,0
-S2,2.25,Happening to you with 被,2,0,2,0,49,5
-S2,2.26,Real-speed speech,4,0,1,3,0,0
+S2,2.10,Describing with 的,4,0,2,2,1,1
+S2,2.11,Time order,4,0,4,0,6,1
+S2,2.12,"Early, late",3,0,3,0,7,0
+S2,2.13,Where and which way,4,0,1,3,0,0
+S2,2.14,Getting around,3,0,1,2,0,0
+S2,2.16,Comparing,4,0,2,2,1,0
+S2,2.17,"More and more, a bit too",4,0,1,3,1,0
+S2,2.18,Big and rough numbers,3,0,3,0,7,0
+S2,2.19,Linking clauses,4,0,3,1,1,0
+S2,2.20,How long,3,0,1,2,0,0
+S2,2.21,"How often, again",4,0,4,0,30,3
+S2,2.22,Direction after the verb,4,0,4,0,12,1
+S2,2.23,How well with 得,3,0,0,3,0,0
+S2,2.24,地 and doubled adjectives,3,0,2,1,3,1
+S2,2.25,Can or can't,2,0,1,1,0,0
+S2,2.26,"When, where, how it happened",2,0,2,0,12,4
+S2,2.27,If and only if,4,0,1,3,0,0
+S2,2.28,Everything and nothing,4,0,2,2,1,1
+S2,2.29,Doing it to something with 把,4,0,1,3,0,0
+S2,2.30,Happening to you with 被,2,0,2,0,49,5
+S2,2.31,Real-speed speech,4,0,1,3,0,0

@@ -763,7 +763,7 @@ The XP, category and subtitle-mode weightings stay unsettled (README resolution 
 1. **Content model and compiler, with no UI.** Purpose: prove the format.
    - Ids, types, schemas, compiler, check rules, `ids.lock`, redirects.
    - Importers for hsk30, Make Me a Hanzi and CC-CEDICT, with license records and the credits output.
-   - Three reference lessons (Sound 0.9 sandhi, Pattern `les:le-completion`, Clip 1.11) plus their media files.
+   - Three reference lessons (Sound 0.9 sandhi, Pattern `les:le-completion`, Clip 1.13) plus their media files.
    - *Done when* `content:build` emits a bundle, and each check rule has one failing fixture.
 2. **User state and derive v1.** Purpose: facts and their meaning.
    - The SQL migration with RLS and append-only policies; `src/facts` (outbox, writers, queries).
@@ -778,7 +778,7 @@ The XP, category and subtitle-mode weightings stay unsettled (README resolution 
    - *Done when* completing a lesson twice creates no duplicate notes or cards.
 5. **Authoring throughput.** Purpose: make R1 real.
    - `content:new`, `content:suggest`, `content:docs`, `content:matrix`, `content:flags`; a Claude drafting loop (draft, check, fix).
-   - Author S0 (as test-out material) and S1 units 1.1–1.5.
+   - Author S0 (as test-out material) and S1 units 1.1–1.6.
    - Measure minutes per lesson.
 6. **Cleanup.** Purpose: remove what the earlier phases left behind.
    - Run `content:migrate --write`, then delete every widget `migrate` step (keeping the version numbers).

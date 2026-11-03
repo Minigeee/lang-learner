@@ -91,7 +91,7 @@ const quBu = pairClips.qu.bu[0]
 const quMei = pairClips.qu.mei[0]
 
 const patternLesson: Lesson = {
-  id: 'zh:les:bu-vs-mei', unit: '1.13', skill: 'zh:g:mei-vs-bu', title: '不 vs 没', kindLabel: 'Lesson',
+  id: 'zh:les:bu-vs-mei', unit: '1.15', skill: 'zh:g:mei-vs-bu', title: '不 vs 没', kindLabel: 'Lesson',
   idea: "没 says it didn't happen. 不 says you don't, or won't.", minutes: 0,
   steps: [
     { kind: 'opener', opener: { type: 'showdown', a: quBu, b: quMei, hook: {
@@ -146,7 +146,7 @@ const GLOSSARY = {
 }
 
 const clipLesson: Lesson = {
-  id: 'zh:les:where-is-the-cat', unit: '1.7', skill: 'zh:g:zai-location', title: "Where's the cat?", kindLabel: 'Video lesson',
+  id: 'zh:les:where-is-the-cat', unit: '1.8', skill: 'zh:g:zai-location', title: "Where's the cat?", kindLabel: 'Video lesson',
   idea: 'Thing + 在 + place + 上 says where something is.', minutes: 0,
   steps: [
     { kind: 'opener', opener: { type: 'story', scene: 'cat-table', clips: lineClips.map((v) => v[0]), hook: {
