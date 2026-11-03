@@ -30,7 +30,7 @@ The user's earlier education project, `C:\Users\tritn\Documents\m42\vue-crash-co
 | Refactor | a better structure for working code |
 | Tour | orientation through an artifact |
 
-It also has six challenge formats: Build to spec, Fix it, Extend, Refactor, Predict, Review. The rules are checked mechanically: neighbours on the path never share an archetype or a format, and each module uses at least 3 of each.
+It also has six challenge formats: Build to spec, Fix it, Extend, Refactor, Predict, Review. The rules are checked mechanically: neighbors on the path never share an archetype or a format, and each module uses at least 3 of each.
 
 **Writing style (its §3).** Ease comes from structure, reasoning and language, not from cutting words. The rules that matter most here:
 - Headings make a claim ("Why Vue can't see a plain variable", not "The problem").
@@ -89,7 +89,7 @@ It also has six challenge formats: Build to spec, Fix it, Extend, Refactor, Pred
 | **Build to spec** | assembles a sentence from tiles to match a meaning | you do |
 | **Meaning check** | watches a new clip and answers a gist question | you do (comprehension) |
 
-The vue rules carry over: neighbouring lessons never share an archetype or a format, each module uses at least 3 of each, and a starter never "crashes" (every clip loads and is comprehensible at its level).
+The vue rules carry over: neighboring lessons never share an archetype or a format, each module uses at least 3 of each, and a starter never "crashes" (every clip loads and is comprehensible at its level).
 
 ### Writing rules that carry over unchanged
 

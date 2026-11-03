@@ -1,6 +1,6 @@
 # TDD: Curriculum data model and authoring format
 
-**Status:** proposed, 2026-11-02. **Scope:** how curriculum content is modelled, written, checked and shipped, and how user state refers to it. The player UI, the SRS queue (doc 02) and the knowledge-graph view (doc 04) are covered only where they touch this model.
+**Status:** proposed, 2026-11-02. **Scope:** how curriculum content is modeled, written, checked and shipped, and how user state refers to it. The player UI, the SRS queue (doc 02) and the knowledge-graph view (doc 04) are covered only where they touch this model.
 **Binding inputs:** [08 Curriculum structure review](../research/08-curriculum-structure-review.md) (principles), [06](../research/06-lesson-design.md) (skeleton), [07](../research/07-activity-types.md) (T1–T18, D1–D7), [02 §5](../research/02-srs-algorithms.md) (cards and review logs), [04 §4](../research/04-progression-systems.md) (graph and mastery), [03 §1.8 and §3](../research/03-mandarin-curriculum-and-materials.md) (units, sources, open data), [activity-brainstorm](activity-brainstorm.md) (interactables X1–X24, feedback and "unseen" rules), and the vue-crash-course authoring system.
 
 ---
@@ -472,7 +472,7 @@ interface ClipSlot {
     context?: MediaContext[]
   }
   candidates: ClipId[]                         // ranked; checked statically against `want`
-  pool?: 'catalogue' | 'none'                  // default 'catalogue': any matching clip, after the candidates
+  pool?: 'catalog' | 'none'                  // default 'catalog': any matching clip, after the candidates
 }
 ```
 
@@ -492,7 +492,7 @@ If nothing qualifies, an `unseen` slot falls back to the least recently heard cl
 ### 6.5 Keeping it fast to write
 
 - **`content:new les:le-completion`** writes the file from the template scaffold, with the curriculum entry's `teaches`, empty slots, TODO markers and suggested clip candidates filled in.
-- **`content:suggest g:le-completion --unseen-for les:le-completion`** lists catalogued lines tagged with the item, grouped by speaker and context. It also searches Common Voice transcripts (03 §1.8) and writes stub media YAML for the hits worth adding.
+- **`content:suggest g:le-completion --unseen-for les:le-completion`** lists catalogd lines tagged with the item, grouped by speaker and context. It also searches Common Voice transcripts (03 §1.8) and writes stub media YAML for the hits worth adding.
 - **`content:docs`** generates `docs/design/widget-reference.md` from the registry: each widget's purpose, slots, config schema and an example config. Because it is generated, it can't go stale. Claude drafts with three inputs: that reference, the template and one reference lesson. The check script is the gate, exactly as in vue-crash-course.
 - **Short references.** Ids are typed once in `teaches`. Prose uses `:w[咖啡]`, and activity items use plain `line: 他买了三本书。`, resolved by transcript match. An unmatched line fails with "no native clip for …" plus suggestions.
 
@@ -526,7 +526,7 @@ interface ActivityDefinition<C> extends DefinitionBase<C> {
   serves: readonly ActivityType[]                // activityType() must return one of these
   outputLevel: 0 | 1                             // level 2 can't be declared (R7)
   scoring: 'items' | 'stream' | 'none'
-  expand?(config: C, cat: Catalogue): ItemSpec[] // 'items' only: static expansion, so the check can count items, voices and clips
+  expand?(config: C, cat: Catalog): ItemSpec[] // 'items' only: static expansion, so the check can count items, voices and clips
   evidenceTargets(config: C): KnowledgeId[]      // the only items its trials may score
   estimateSec(config: C): number
 }
@@ -561,7 +561,7 @@ type Verdict = { correct: boolean } | { deferred: true }
 ```
 
 What the contract guarantees:
-- **Widgets never write facts directly.** Spans (active time, measured while the page is visible), exposures (from `MediaHandle`, in media seconds, including glimpses) and trials (from `respond`/`recordTrial`) all come from the runtime. So a widget can't forget the "unseen" bookkeeping or log time differently from its neighbours.
+- **Widgets never write facts directly.** Spans (active time, measured while the page is visible), exposures (from `MediaHandle`, in media seconds, including glimpses) and trials (from `respond`/`recordTrial`) all come from the runtime. So a widget can't forget the "unseen" bookkeeping or log time differently from its neighbors.
 - **Facts record `widget@version` on the span,** so a later change to what "correct" means can be told apart in history.
 - **The feedback policy is one constant per slot role,** which makes the brainstorm's open question 8 a one-line change.
 

@@ -89,7 +89,7 @@
 - Strength: named, legible stages ("Burned" feels like an achievement) and a clear gate.
 - Weakness for Refold: it is a fixed, imposed order, while Refold learners mine words from their own content.
 
-**Khan Academy** uses mastery levels Not started → Attempted → Familiar → Proficient → Mastered. Levels can go *down* with later performance. Course percentage counts Proficient and Mastered skills [24] (reported, help-centre snippets). Useful pattern: a few named levels, honest decay, and a percentage that rolls up.
+**Khan Academy** uses mastery levels Not started → Attempted → Familiar → Proficient → Mastered. Levels can go *down* with later performance. Course percentage counts Proficient and Mastered skills [24] (reported, help-center snippets). Useful pattern: a few named levels, honest decay, and a percentage that rolls up.
 
 **Hack Chinese** focuses on daily micro-goals, a consistency chart and a long-term vocabulary-growth chart, with HSK-list progress percentages [29] (reported). It shows how far a Mandarin-specific app gets with almost no gamification: consistency charts plus coverage percentages.
 
@@ -101,21 +101,21 @@
 - The common thread: you can *see what's next and why*, and you choose your route.
 
 **Fitness.**
-- Strava streaks are **weekly**: one activity of 60 seconds or more between Monday and Sunday keeps the streak, and you can restore a missed upload after the fact [27] (reported, help centre).
+- Strava streaks are **weekly**: one activity of 60 seconds or more between Monday and Sunday keeps the streak, and you can restore a missed upload after the fact [27] (reported, help center).
 - Apple Activity rings (watchOS 11) let you **pause rings** for a day, a week or longer without losing award streaks, and set **goals per weekday** [28] (reported).
 - Both are mature answers to the burnout problem: a weekly unit of consistency, planned rest, and illness/travel pauses.
 
-**"Don't break the chain."** A wall calendar with an X per day: simple and visual. Its weakness is shown by Silverman & Barasch (*JCR* 2023, seven studies). Intact streaks increase future engagement and broken ones reduce it, *independent of actual past behaviour*, purely through how the log represents it. The drop is bigger when people blame themselves, and smaller when the streak can be **repaired**. In one account, people who broke a streak switched to a *different language* rather than restarting [20] (reported, abstract and press coverage). Highly relevant to us.
+**"Don't break the chain."** A wall calendar with an X per day: simple and visual. Its weakness is shown by Silverman & Barasch (*JCR* 2023, seven studies). Intact streaks increase future engagement and broken ones reduce it, *independent of actual past behavior*, purely through how the log represents it. The drop is bigger when people blame themselves, and smaller when the streak can be **repaired**. In one account, people who broke a streak switched to a *different language* rather than restarting [20] (reported, abstract and press coverage). Highly relevant to us.
 
 ### 3. Motivation science (brief)
 
 - **Self-determination theory.** Intrinsic motivation and wellbeing depend on **autonomy**, **competence** and **relatedness** [30] (reported, standard reference). Applied here: let the user choose content and routes (autonomy), show real skill growth (competence), and add some light social contact (relatedness; harder with one user).
-- **Overjustification.** A meta-analysis of 128 studies found that *expected, tangible* rewards undermine intrinsic motivation for tasks people already find interesting. Informational feedback is less harmful [32] (reported). Hanus & Fox (2015, 16 weeks) found students in a course gamified with badges and a leaderboard became *less* motivated and satisfied over time, with lower exam scores mediated by intrinsic motivation [37] (reported). Mekler et al. (2017) found points, levels and leaderboards increase *quantity* of output but do not change intrinsic motivation or competence [38] (reported). The Sailer & Homner meta-analysis found a positive overall effect of gamification on learning, but motivational and behavioural effects were less stable than cognitive ones [39] (reported).
+- **Overjustification.** A meta-analysis of 128 studies found that *expected, tangible* rewards undermine intrinsic motivation for tasks people already find interesting. Informational feedback is less harmful [32] (reported). Hanus & Fox (2015, 16 weeks) found students in a course gamified with badges and a leaderboard became *less* motivated and satisfied over time, with lower exam scores mediated by intrinsic motivation [37] (reported). Mekler et al. (2017) found points, levels and leaderboards increase *quantity* of output but do not change intrinsic motivation or competence [38] (reported). The Sailer & Homner meta-analysis found a positive overall effect of gamification on learning, but motivational and behavioral effects were less stable than cognitive ones [39] (reported).
 - **Goal gradient.** Effort speeds up as a goal gets closer. Coffee cards with 2 "free" pre-stamped boxes out of 12 were completed faster than plain 10-box cards (illusory progress) [31] (reported). Design implication: always show a near goal (next milestone, today's ring), not just the far one.
 - **Variable rewards** (Eyal's Hook model: rewards of the tribe, the hunt and the self) drive compulsive checking [36] (reported). The dark side: unpredictable rewards cut loose from real progress become slot machines, and what they train is opening the app. If we use surprise at all, it should be *informational* ("you just understood 92% of this episode"), not random loot.
 - **Habit formation.** Lally et al. (2010): median 66 days to reach about 95% of the automaticity plateau, range 18–254 days (the upper end extrapolated, n≈39 well-fitted). Missing a single day did not materially derail habit formation [33] (reported; widely cited secondhand). Implication: one missed day should not cost a lot.
 - **Implementation intentions** ("When X happens, I will do Y"): a meta-analysis of 94 tests found d = 0.65 for goal attainment [34] (reported).
-- **Habit stacking / Tiny Habits:** "After I [anchor], I will [tiny behaviour]", then celebrate [35] (reported). For our user the anchor is natural: *after I get into bed, I open the app and do my flashcards.*
+- **Habit stacking / Tiny Habits:** "After I [anchor], I will [tiny behavior]", then celebrate [35] (reported). For our user the anchor is natural: *after I get into bed, I open the app and do my flashcards.*
 - **Never-zero / minimum viable day.** This is community advice rather than formal research, but it matches Lally (one miss doesn't matter, chains of misses do), Math Academy's "a little bit … protects the habit" [4], and Duolingo's one-lesson streak threshold [14].
 - **Emergency reserves.** Goals with built-in skip days (e.g. "7 days with 2 emergency skips") *increased* persistence after a slip compared with an equivalent strict goal. In a 5-week steps study, participants took up to 20% more steps and hit their targets on up to 40% more days [21] (reported). A small cost for using a reserve stops overuse.
 - **Loss aversion** (losses weigh about twice as much as equal gains [40], reported) is what powers long streaks, and also what makes breaking one so painful [15][20].
@@ -135,10 +135,10 @@
 
 **Existing attempts.**
 - **HanziGraph** (MIT) treats characters as nodes and words as edges between them (确—确定—定), with component trees and "hanzi math" [46] (reported).
-- **Make Me a Hanzi** gives IDS decompositions and stroke data for over 9,000 characters, from Unihan/CJKlib and Arphic fonts. Licences differ per file, so check COPYING [45] (verified README; licence details pending, see 05).
+- **Make Me a Hanzi** gives IDS decompositions and stroke data for over 9,000 characters, from Unihan/CJKlib and Arphic fonts. Licenses differ per file, so check COPYING [45] (verified README; license details pending, see 05).
 - **WaniKani** is the gated-unlock model [22].
 - **Graspful** documents an independent FIRe-style scheduler with encompassing weights [55] (reported).
-- The **Chinese Grammar Wiki** levels points A1–C2. Its A1 page lists about 40 points; the books cite 95 A2 and 145 B1 points [44] (reported counts). Its content is under a non-commercial Creative Commons licence, so store IDs and links rather than copying text (see 05).
+- The **Chinese Grammar Wiki** levels points A1–C2. Its A1 page lists about 40 points; the books cite 95 A2 and 145 B1 points [44] (reported counts). Its content is under a non-commercial Creative Commons license, so store IDs and links rather than copying text (see 05).
 - **Dreaming Spanish** turns hours into a 7-level roadmap: 0/50/150/300/600/1,000/1,500 hours. It was originally calibrated on learners of *Thai* with comprehensible input [42] (verified basis; thresholds reported). For Mandarin, the FSI estimates about 88 weeks / 2,200 class hours, roughly 3× Spanish [43] (reported). Hour milestones should therefore be rescaled rather than copied.
 
 **Scope.** The user's split puts curriculum (25%) and SRS (25%) in the app, and immersion (50%) outside it, in Netflix and similar. So the graph models what the app can *observe*: curriculum lessons and SRS items. Immersion is a separate, self-logged **hours roadmap** shown next to the graph and linked to it only through sentences mined from logged episodes (§5).
@@ -204,7 +204,7 @@ Why discount logged immersion in XP but not in hours? Immersion is *not* less va
 2. **Short logging window.** Allow only today or yesterday, with no bulk backfill. (A one-off "import my history" at setup is allowed but goes into hours only, never XP or streaks.)
 3. **Two-tap context:** subtitle mode (none / Chinese / English) and a 1–5 comprehension rating. English-subtitle minutes count at 0.5 in hours, which follows Refold's preference for target-language subtitles (reported). The comprehension ratings also become useful data for suggestions.
 4. **Hard daily ceiling** of 240 logged min/day for hours. Above that needs an explicit "long day" confirmation.
-5. **A verified bridge:** sentences mined from a logged episode (entered in-app, tagged with the episode) earn normal in-app XP, and give that log entry a ✓ "mined from" badge. This is the only way immersion creates graph progress. It rewards the high-value behaviour (mining) without needing to verify watch time.
+5. **A verified bridge:** sentences mined from a logged episode (entered in-app, tagged with the episode) earn normal in-app XP, and give that log entry a ✓ "mined from" badge. This is the only way immersion creates graph progress. It rewards the high-value behavior (mining) without needing to verify watch time.
 6. **Weekly honesty mirror** in the weekly summary: logged hours vs sentences mined vs average comprehension. This isn't a penalty. With one user, inflating the log only fools the user, and the mirror makes that visible.
 
 **Three-tier day.** One goal number per day. Balance is shown, not enforced (see below).
@@ -230,7 +230,7 @@ Notes:
 - **Rest tokens** (emergency reserves [21]): earn 1 for every 7 Floor-or-better days, hold at most 2, like Duolingo's 2 equipped freezes [15]. A token is used automatically on a missed day. A token day *preserves* the streak but doesn't extend it (Brilliant's rule [25]).
 - **Repair** [20]: within 48 h of a break, do a *Standard* day (with ≥ 15 measured XP) to restore the streak. Recovery should cost a bit of effort and always be possible.
 - **Planned rest days and pauses** [28]: per-weekday goals (for example a lower Sunday target) and "pause" for illness or travel, which freezes the streak and the weekly goal.
-- **Don't lead with streak length.** The headline numbers should be **days studied in the last 30** and the **weekly goal** (Strava-style weekly streak [27]). The daily chain is shown as a calendar heatmap, so a break is one grey square, not a reset to zero.
+- **Don't lead with streak length.** The headline numbers should be **days studied in the last 30** and the **weekly goal** (Strava-style weekly streak [27]). The daily chain is shown as a calendar heatmap, so a break is one gray square, not a reset to zero.
 
 ## Implications for the app
 
@@ -326,7 +326,7 @@ Notes:
 32. Deci, Koestner & Ryan (1999), meta-analysis on rewards and intrinsic motivation. https://depts.washington.edu/techdocs/papers/deciExtrinsicRewardsAndIntrinsicMotivation99.pdf (overjustification; reported)
 33. Lally et al. (2010), *How are habits formed* (summary). https://www.thebehavioralscientist.com/articles/how-long-to-form-a-habit (66-day median, 18–254 range, single misses OK; reported)
 34. Gollwitzer & Sheeran (2006), implementation intentions meta-analysis. https://kops.uni-konstanz.de/entities/publication/2e749bfb-8533-437c-8203-7e788c910c5f (d = 0.65 across 94 tests; reported)
-35. BJ Fogg, *Tiny Habits* recipe card (Stanford). https://med.stanford.edu/content/dam/sm/ascend/documents/Introduction_%20Tiny%20Habits%20for%20Self%20Compassion,%20Getting%20Started.pdf (anchor → tiny behaviour → celebrate; reported)
+35. BJ Fogg, *Tiny Habits* recipe card (Stanford). https://med.stanford.edu/content/dam/sm/ascend/documents/Introduction_%20Tiny%20Habits%20for%20Self%20Compassion,%20Getting%20Started.pdf (anchor → tiny behavior → celebrate; reported)
 36. Nir Eyal, *Variable Rewards*. https://www.nirandfar.com/2012/03want-to-hook-your-users-drive-them-crazy.html (tribe/hunt/self rewards; reported)
 37. Hanus & Fox (2015), *Assessing the effects of gamification in the classroom*, Computers & Education 80. https://www.smhp.psych.ucla.edu/pdfdocs/gamil.pdf (gamified course reduced motivation over time; reported)
 38. Mekler et al. (2017), *Towards understanding the effects of individual gamification elements…*, CHB 71. https://glassmanlab.seas.harvard.edu/annotated_works/mekler17.pdf (points/levels/leaderboards raise quantity only; reported)
@@ -335,8 +335,8 @@ Notes:
 41. Prince et al. (2008), *A comparison of direct versus self-report measures for assessing physical activity in adults: a systematic review*, IJBNPA 5:56. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2588639/ (self-report vs measured: correlations −0.71 to 0.96, both over- and under-reporting; reported)
 42. Dreaming Spanish, *What are the 7 levels … based on?* https://dreamingspanish.freshdesk.com/support/solutions/articles/158000407386-what-are-the-7-levels-and-the-number-of-hours-for-each-one-based-on- (roadmap calibrated on Thai learners; verified). Thresholds 0–1,500 h from community pages (reported).
 43. U.S. FSI, *Foreign Language Training* (language difficulty). https://www.state.gov/foreign-language-training/ (Mandarin ~88 weeks / 2,200 h vs Spanish 24–30 weeks; reported via secondary sites)
-44. Chinese Grammar Wiki, *Grammar points by level*. https://resources.allsetlearning.com/chinese/grammar/Grammar_Points and A1 list https://resources.allsetlearning.com/chinese/grammar/A1 (levels; ~40 A1 points; NC Creative Commons licence; verified levels and licence footer, counts reported)
-45. Make Me a Hanzi. https://github.com/skishore/makemeahanzi (IDS decompositions for 9,000+ characters; split licences; verified README)
+44. Chinese Grammar Wiki, *Grammar points by level*. https://resources.allsetlearning.com/chinese/grammar/Grammar_Points and A1 list https://resources.allsetlearning.com/chinese/grammar/A1 (levels; ~40 A1 points; NC Creative Commons license; verified levels and license footer, counts reported)
+45. Make Me a Hanzi. https://github.com/skishore/makemeahanzi (IDS decompositions for 9,000+ characters; split licenses; verified README)
 46. HanziGraph. https://github.com/mreichhoff/hanzigraph (characters as nodes, words as edges; reported)
 47. Anki forums, *Interval determination of siblings*. https://forums.ankiweb.net/t/interval-determination-of-siblings/49267 (FSRS/SM-2 can't see other cards' history; reported)
 48. Franz et al. (2016), *Cytoscape.js: a graph theory library for visualisation and analysis*. https://pmc.ncbi.nlm.nih.gov/articles/PMC4708103 (touch gestures out of the box, thousands of elements; reported)

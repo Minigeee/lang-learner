@@ -16,8 +16,52 @@ A phone-first layout for the v1 app, built on the research decisions in [docs/re
 
 1. **One primary action per screen.** Only that action gets a filled button, and everything else is outlined or a plain row.
 2. **Three text levels only:** screen title (20 px, medium), body (14 px), metadata (12 px, muted).
-3. **Colour encodes state only:** green = done, blue = current or action, dashed outline = ready, grey = later. Watching, lessons and cards keep fixed bucket colours wherever minutes appear.
+3. **Color encodes state only:** green = done, blue = current or action, dashed outline = ready, gray = later. Watching, lessons and cards keep fixed bucket colors wherever minutes appear.
 4. **Cards only for tappable things.** Everything else sits under plain section labels.
+
+## Visual style (revision 3, 2026-11-02)
+
+The mockups board has a Style frame showing all of this.
+
+- **Type.**
+  - Lexend for all UI text.
+  - Noto Sans SC for Chinese at body size, and Noto Serif SC for display hanzi (review cards, item titles, answer buttons). The serif is the one touch of flair.
+  - Scale: display 32/500, title 20/600, headline 16/500, body 14/400, meta 12/400.
+  - Numbers are tabular.
+- **Color (revision 6).** Three hues, a cool neutral, and warm neutrals. There is **no "wrong" color**:
+  - **Cinnabar:** brand, anything you can tap, and where you are now: the single primary button, selected chips, the current node and line, the active tab, flow arrows. The dark-mode fill is #C9452E, which passes 4.8:1 with white text.
+  - **Jade:** correct, done, known. The right answer after a miss is marked in jade.
+  - **Ink blue:** watching outside the app. It's used for the Netflix log, show posters, subtitle badges, the watching share of the time split, and listening hours.
+  - **Slate (cool neutral):** "take another look". It's used for misses, weak test-out units, items sent back to review, and the ✗ example in an explanation. It's calm and clearly not a warning, and its cool hue separates it from the warm decorative neutrals. Text on slate passes 6.2:1 (light) and 7.4:1 (dark).
+  - **Warm neutrals:** surfaces, decoration and anything with no meaning attached (tips, figures, "cards added").
+  - **Rule: accent only on neutral surfaces.** A tinted card never contains accent-colored controls, because two saturated hues stacked together clash. Feedback lives on neutral cards with a slate marker.
+
+  Time-split bars use cinnabar for lessons, jade for cards and ink for watching.
+  - *Tried and dropped:*
+    - Revision 4: a separate indigo, violet or cobalt interaction hue. It clashed on the amber miss card just as cinnabar did.
+    - Revision 5: slate for watching. It was too close to the warm neutrals.
+- **Icons.** Tabler outline icons: 18 px inside tinted 34 px rounded chips in lists, 22 px in the tab bar. A chip is tinted only when it carries a meaning above (tappable, correct or done, watching, another look), and is warm-neutral otherwise.
+- **Brand mark.** A cinnabar rounded-square seal with 学 in serif.
+- **Detail-heavy screens are trimmed:**
+  - Item detail uses three stat tiles and drops the long evidence line.
+  - Watch drops the subtitle-mix breakdown in favor of a badge on each recent show.
+  - The log sheet uses three segmented controls, with "how much did you follow" as A little / Some / Most instead of 1–5.
+  - Review drops the per-word gloss line (words are tappable instead).
+  - The "we do" miss feedback is one line plus the two replay chips.
+
+## UI copy: no internal terminology
+
+Pedagogy and design terms stay in docs and board annotations, never in user-facing text. The mapping:
+
+| Internal term (docs) | User-facing copy |
+|---|---|
+| Lesson steps: Hear it / Explain / We do / You do | Listen / How it works / Practice / Check |
+| Floor (minimum day) | "Tonight counts" |
+| Lesson shapes: Clip / Pattern / Sound / Checkpoint | Video lesson / Lesson / Sound practice / Check |
+| Multi-pass listening ("pass 2") | "Watch 2 of 3", "Watch again · no subtitles" |
+| Stage codes S0, S1, S2 | Stage names (Sounds, Stage 1) |
+| Tested out, prerequisites | "Marked as known" |
+| Strands, Refold categories, output levels, encompassing | Never shown |
 
 ## Navigation
 

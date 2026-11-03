@@ -80,7 +80,7 @@ Notes:
 #### 2.4 Caps, fuzz, load balancing, easy days
 
 - **Daily caps.** Anki has per-deck review and new limits. "New cards ignore review limit" is a toggle [13] (verified).
-  - HanziHero's cap is a soft target. The Reviews button greys out at the limit but you can start another capped session [21] (verified).
+  - HanziHero's cap is a soft target. The Reviews button grays out at the limit but you can start another capped session [21] (verified).
   - Skritter has a goal mode ("chip away at the due queue 100 items a day"). Its continuous mode hides the due count [23] (verified: staff post).
 - **Fuzz.** Anki fuzzes intervals from 2.5 days up: ±15% for 2.5–7 days, ±10% for 7–20 days, and ±5% above 20 days [15] (verified). `ts-fsrs` has optional fuzz middleware, seeded by `cardId + reps` [3] (verified).
 - **Load balancer** (Anki 24.11). "Within your fuzz range, Anki will now try to pick days that have fewer reviews waiting" [14]. The code is concrete [16] (verified):

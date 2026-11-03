@@ -1,7 +1,7 @@
 # 07 · Activity types (grounded in SLA and learning science)
 
-**Question:** What lesson and activity types does second-language-acquisition (SLA) research support for an adult Mandarin beginner who follows Refold (input before output)? And how should variety be generated, if not by doc 06's "neighbours never share an archetype" rule?
-**Researched:** 2026-11-02. **Status:** a framework and candidate catalogue. **No matrix is final.** The choices are left to the user (see Open questions).
+**Question:** What lesson and activity types does second-language-acquisition (SLA) research support for an adult Mandarin beginner who follows Refold (input before output)? And how should variety be generated, if not by doc 06's "neighbors never share an archetype" rule?
+**Researched:** 2026-11-02. **Status:** a framework and candidate catalog. **No matrix is final.** The choices are left to the user (see Open questions).
 
 ---
 
@@ -16,7 +16,7 @@
   5. modality;
   6. output level (0 none / 1 light-scaffolded / 2 production);
   7. material novelty (seen vs unseen).
-- **18 candidate activity types**, all at output level 0 or 1 (catalogue in §3). The strongest-evidenced for Phases 0–1:
+- **18 candidate activity types**, all at output level 0 or 1 (catalog in §3). The strongest-evidenced for Phases 0–1:
   - **high-variability tone identification** [17][18][19][20];
   - **structured-input (referential) activities** from Processing Instruction [3][4];
   - **multi-pass listening** with a read-along pass [11][13][16];
@@ -100,7 +100,7 @@ Repetition is a positive factor across [8][11][16], but no source supports a spe
 
 **Gradual release of responsibility.** Pearson & Gallagher's model, operationalized by Fisher & Frey as "I do / we do / you do together / you do alone" [21]. (reported) A solo app drops "together", leaving doc 06's three steps.
 
-**Worked examples, fading, expertise reversal.** Novices learn more from worked examples than from solving problems unaided. The advantage reverses as expertise grows, and *fading* (removing steps gradually) beats both fixed approaches [22]. (reported) The language version of a worked example is a modelled, annotated native clip. Fading means fewer replays, fewer hints, less pinyin. **Fade across a unit, not only within a lesson.**
+**Worked examples, fading, expertise reversal.** Novices learn more from worked examples than from solving problems unaided. The advantage reverses as expertise grows, and *fading* (removing steps gradually) beats both fixed approaches [22]. (reported) The language version of a worked example is a modeled, annotated native clip. Fading means fewer replays, fewer hints, less pinyin. **Fade across a unit, not only within a lesson.**
 
 **Retrieval practice.** In Karpicke & Roediger's study, repeated retrieval of Swahili-English pairs produced large gains on a delayed test. Repeated restudy produced none, and students couldn't tell the difference [23]. (verified) Every "you do" and every SRS card is retrieval.
 
@@ -116,7 +116,7 @@ Repetition is a positive factor across [8][11][16], but no source supports a spe
 
 **Dual coding / multimedia.** Verbal plus pictorial information is remembered better than either alone [28][37]. (reported) Picture-supported video is dual coding. Same-language text plus audio is *not* dual coding: both are verbal. It is the redundancy case above, and it helps listening only when the text is easy enough [11][12].
 
-**Novelty vs predictability.** In a 14-week study, gamification's effect fell after about 4 weeks (novelty), then partly recovered (familiarization) [30]. (reported) Habit formation favours a stable routine (doc 04). Novelty is a weak, short-lived lever; predictability suits bedtime phone sessions.
+**Novelty vs predictability.** In a 14-week study, gamification's effect fell after about 4 weeks (novelty), then partly recovered (familiarization) [30]. (reported) Habit formation favors a stable routine (doc 04). Novelty is a weak, short-lived lever; predictability suits bedtime phone sessions.
 
 ### 3. Output timing
 
@@ -146,7 +146,7 @@ Repetition is a positive factor across [8][11][16], but no source supports a spe
 | LingQ | Reading with audio; tap words to track status | 0 | MFI + incidental LFL |
 | Language Reactor | Dual subtitles, line-by-line playback, auto-pause, word lookup on Netflix/YouTube | 0 | Interactive immersion tooling [36] |
 | Migaku | Pop-up dictionary on subtitles; one-click sentence mining to SRS | 0 | Mining pipeline [36] |
-| Lingopie | TV with dual subtitles + flashcards | 0 | Like Language Reactor, but with its own catalogue |
+| Lingopie | TV with dual subtitles + flashcards | 0 | Like Language Reactor, but with its own catalog |
 | Duolingo | Translate, tile-build, tap-pairs, speak, listen-and-type | 1–2 | Production-heavy, little connected input |
 | Pimsleur | Audio "anticipation" (produce, then hear the answer) + graduated-interval recall | 1–2 | Retrieval + cued output [36] |
 | Glossika | Listen → repeat sentences, spaced | 1 | Mass sentence shadowing |
@@ -166,7 +166,7 @@ Repetition is a positive factor across [8][11][16], but no source supports a spe
 | D1 | **Target subskill** | tone/segment perception · word recognition in speech · script recognition · form-meaning mapping (grammar) · gist comprehension · detail comprehension · fluency (speed on known material) · retention | Field [15]; PI [3]; Nation [1] |
 | D2 | **Processing direction** | bottom-up decoding · top-down meaning-building · both | Field [15] |
 | D3 | **Strand** | MFI · LFL · FD · (MFO) | Nation [1] |
-| D4 | **Support** | modelled (I do) · guided + feedback (we do) · independent (you do) | GRR [21]; fading [22] |
+| D4 | **Support** | modeled (I do) · guided + feedback (we do) · independent (you do) | GRR [21]; fading [22] |
 | D5 | **Modality** | audio · video · text · audio+text (RWL) · video+subs. Script sub-axis: pinyin+hanzi / hanzi / none | [11][12][13] |
 | D6 | **Output level** | 0 · 1 · 2 | §3 |
 | D7 | **Material novelty** | same material (repeat/narrow) · unseen (transfer) | HVPT generalization [17][20]; retrieval [23] |
@@ -177,7 +177,7 @@ The Refold logging category (priming / interactive / freeflow / output) is **der
 - FD or unpaused MFI on studied material → freeflow;
 - output level ≥1 spoken → output.
 
-### (b) Candidate catalogue
+### (b) Candidate catalog
 
 Phases: 0 · 1A–1D · 2A–2C. Skeleton slot: **I** = Hear it / I do, **W** = we do, **Y** = you do, **C** = cards. Log: P = priming, I = interactive, F = freeflow, O = output.
 
@@ -228,15 +228,15 @@ Phases: 0 · 1A–1D · 2A–2C. Skeleton slot: **I** = Hear it / I do, **W** = 
 
 ### (c) A principled way to generate variety
 
-**Candid answer first.** For *learning*, the evidence favours:
+**Candid answer first.** For *learning*, the evidence favors:
 - variability of **content**: talkers [17][20], contexts, clips;
 - **interleaving confusable items** across sessions [24][26];
 - spacing and retrieval [23][27];
 - matching format to target skill [29].
 
-It does **not** favour rotating activity formats. Unfamiliar formats add cognitive load for novices [22][28], and the gain from novelty fades within weeks [30]. Format variety is a *motivation* lever, worth something for a solo learner, but small and short-lived. Every input-first product we looked at runs one or two formats and varies only content (§4).
+It does **not** favor rotating activity formats. Unfamiliar formats add cognitive load for novices [22][28], and the gain from novelty fades within weeks [30]. Format variety is a *motivation* lever, worth something for a solo learner, but small and short-lived. Every input-first product we looked at runs one or two formats and varies only content (§4).
 
-**Proposed rules** (replacing "neighbours never share an archetype"):
+**Proposed rules** (replacing "neighbors never share an archetype"):
 
 1. **Format follows target subskill.** The lesson's idea type picks the shape, and the shape fixes the default activities. Mapping:
 
@@ -287,7 +287,7 @@ Doc 06's Mystery, Showdown and Walkthrough can survive as **ways of writing the 
 
   One refinement: in Pattern lessons, PI puts explicit information *before* the structured input [3]. The first clip is for gist only; it is not a test.
 - **MUST** restrict Phases 0–2 to output levels 0–1 and park doc 06's Build to spec, Upgrade and Fix it.
-- **MUST** make "rotate speakers and contexts" (doc 06's change #4) the main variety rule, and delete "neighbours never share an archetype or format".
+- **MUST** make "rotate speakers and contexts" (doc 06's change #4) the main variety rule, and delete "neighbors never share an archetype or format".
 - **SHOULD** treat shadowing (doc 06's "we do", doc 03's allowed output) as **optional and perception-gated**. Offer it only for sounds where T1 accuracy is already high. Log it as Refold `output`. This conflicts with Refold's 3D timing; the user decides (Open question 1).
 - **SHOULD** run tone HVPT (T1) as a **daily 5–10 min drill outside lessons** as well as inside them. Wang et al.'s gains came from eight sessions over two weeks [17], more than lesson-embedded rounds alone provide. Doc 03 already plans a standalone tone trainer.
 - **SHOULD** compute weekly strand minutes. Warn when S0 weeks run nearly all LFL. Doc 03's S0 is 12 units of sound study, almost 100% LFL, against Nation's guideline [1] and Refold's "short and bounded" sound study [34]. The parallel 10–15 min/day of CI in doc 03 is the fix; make it a scheduled T10/T11 Clip lesson each S0 day, not a suggestion.

@@ -17,12 +17,12 @@
 
 ---
 
-## 1. Interactables catalogue
+## 1. Interactables catalog
 
 ### 1.0 Layout rules that apply to every widget
 
 - **Player top, thumb bottom.** The YouTube embed or the audio card sits in the top third. The line or transcript area sits in the middle. Response buttons fill the bottom ~40%, where a thumb reaches when the phone is held one-handed in bed.
-- **One replay button, in one place.** ↺ again is always bottom-centre. Long-press it to loop (X2).
+- **One replay button, in one place.** ↺ again is always bottom-center. Long-press it to loop (X2).
 - **Nothing on the video.** YouTube can't be overlaid or modified, so every gloss, highlight and tap target sits below the player [03 §4.1].
 - **No precision gestures.** Targets are big. There are no drag handles and no scrubbing (YouTube scrubbing is coarse on phones anyway). Swipes are allowed only as a second route to a button that is already on screen.
 - **Audio follows taps.** Tapping Next advances and plays in one tap, so a session never needs two taps per item.
@@ -83,7 +83,7 @@ Slot: I = I do, W = we do, Y = you do, C = cards. Output: 0 none, 1 light. Gimmi
 
 **Why:** this is Vandergrift's metacognitive cycle, which helped less-skilled listeners most [07 §1, ref 16]. The tracker turns the cycle into a stable routine, so it is never re-explained. **Risk:** low. It mostly removes taps.
 
-**X7 Speaker switch.** A row of voice chips for one word or sentence (V1–V5, each labelled with a few words such as "woman, Beijing, fast"), plus **play all**, which plays every voice in sequence. **Why:** talker variability is the core of HVPT, and it generalises to new voices [07 §1, refs 17, 20]. It is the cheapest way to show "the same word, many mouths". **Phone:** horizontal chips, with play-all as a big button. **Risk:** low. Rotating voices is the main content-variety lever, and this widget is that lever.
+**X7 Speaker switch.** A row of voice chips for one word or sentence (V1–V5, each labeled with a few words such as "woman, Beijing, fast"), plus **play all**, which plays every voice in sequence. **Why:** talker variability is the core of HVPT, and it generalises to new voices [07 §1, refs 17, 20]. It is the cheapest way to show "the same word, many mouths". **Phone:** horizontal chips, with play-all as a big button. **Risk:** low. Rotating voices is the main content-variety lever, and this widget is that lever.
 
 **X8 Minimal-pair A/B player.** Two big buttons, **A mǎi 买** and **B mài 卖**, from the same voice, with a voice switch underneath. A third button, **?**, plays one of the two at random and reveals which it was after you guess. This is a self-test with no scoring. **Why:** it shows the contrast in isolation before the drill. The ? button bridges the I do and the we do without making the I do a test. **Risk:** low.
 
@@ -100,7 +100,7 @@ Slot: I = I do, W = we do, Y = you do, C = cards. Output: 0 none, 1 light. Gimmi
 - **Form flood:** every 了 (or 没, 比…) in the transcript is tinted.
 - **Slot bands:** for word-order ideas, faint labels sit under a native line: *when · who · where · does · what* (我 | 明天 | 去 | 北京).
 
-The labels describe a native line; the learner never assembles one. **Why:** noticing [07 §1, ref 6], but enhancement costs comprehension on a first viewing [ref 7], hence second pass only. **Risk:** medium. Colour soup and grammar-terminology creep. One form per lesson, one tint.
+The labels describe a native line; the learner never assembles one. **Why:** noticing [07 §1, ref 6], but enhancement costs comprehension on a first viewing [ref 7], hence second pass only. **Risk:** medium. Color soup and grammar-terminology creep. One form per lesson, one tint.
 
 **X12 Timeline figure / picker.** A horizontal line marked *before · now · later*, with three or four glyphs:
 - ✔ happened (了)
@@ -122,7 +122,7 @@ In the I do it is the figure that carries the explanation. In the we do it becom
 - *mǎi / mài*;
 - **same / different** in AX mode, for initials such as zh/j and for sandhi neutralisation.
 
-**Why:** T1, the best-evidenced activity in the catalogue: many voices, many contexts, feedback on every trial [07, refs 17–20]. **Phone:** the ideal one-handed widget, with no reading needed. **Risk:** low. Monotony is the real risk, and voices, not format changes, are the answer to it.
+**Why:** T1, the best-evidenced activity in the catalog: many voices, many contexts, feedback on every trial [07, refs 17–20]. **Phone:** the ideal one-handed widget, with no reading needed. **Risk:** low. Monotony is the real risk, and voices, not format changes, are the answer to it.
 
 **X16 Meaning grid.** Hear a sentence, then tap one of 2–4 tiles. A tile is either a simple picture or a short English gloss ("Is she a teacher?" vs "She's a teacher."). **Why:** T5 referential structured input, and T9 listen-and-do. Only the target form separates the tiles [07, refs 3–5]. **Phone:** a 2×2 grid of big tiles. **Risk:** medium. Pictures cost asset work, and pretty but ambiguous pictures become guessing games. **Proposal:** English-gloss tiles by default, and pictures only where the scene is the meaning (where things are, comparisons).
 
@@ -224,7 +224,7 @@ Novelty is about **speaker, sentence and clip**, not about the word. Hearing 没
 
 ## 4. Tie-in to the variety matrix
 
-vue-crash-course's matrix recorded an archetype per lesson and enforced difference between neighbours. Given doc 07, the matrix should record **where the variety actually comes from**, and make any deviation from the shape's routine visible rather than required.
+vue-crash-course's matrix recorded an archetype per lesson and enforced difference between neighbors. Given doc 07, the matrix should record **where the variety actually comes from**, and make any deviation from the shape's routine visible rather than required.
 
 **What the matrix could record per lesson:**
 - **Shape**, which follows from the idea.
@@ -270,7 +270,7 @@ A useful mechanical check is the inverse of the vue rule: a unit with no new voi
 1. **Idea line.** 没 says it didn't happen; 不 says you don't, won't, or generally aren't.
 2. **I do, gist (1 min).** X1 with a Peppa or Lazy Chinese scene that contains both forms, played once with no layers. One gist question, which is not scored.
 3. **Explanation (≤200 words).** The X12 timeline is the figure: ✖ before-now for 没, ⟳ habit and ▶ later for 不. PI asks for the misleading strategy to be named, which here is "both mean *not*", so English gives no help [07 §1]. 没 + 有 is a reminder from 1.5.
-4. **I do, second pass (1 min).** X11 form flood on the same scene: 不 and 没 tinted the same colour (tinting them differently would hand over the answer). The learner hears the lines with the forms visible.
+4. **I do, second pass (1 min).** X11 form flood on the same scene: 不 and 没 tinted the same color (tinting them differently would hand over the answer). The learner hears the lines with the forms visible.
 5. **We do (3 min).**
    - X12 picker, 8 sentences: hear it, tap ✖ (didn't) or ⟳ (doesn't).
    - Blocked first, 没 only, then mixed. Pan et al. found blocking does fine within the first session [07, ref 26], and 不 is already known from 1.3.

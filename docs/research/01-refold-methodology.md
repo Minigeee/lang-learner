@@ -208,7 +208,7 @@ Refold's Mandarin guidance is spread across generic articles. A dedicated "How t
 
 ### SRS (feeds doc 02)
 - **MUST** default to **5–10 new cards/day** (7 for a beginner), with a visible warning above 15 [24].
-- **MUST** keep reviews clearable. Refold's burnout advice implies a pile-up after missed days is the main failure mode; doc 02 should design the graceful-recovery behaviour.
+- **MUST** keep reviews clearable. Refold's burnout advice implies a pile-up after missed days is the main failure mode; doc 02 should design the graceful-recovery behavior.
 - **MUST** support card types: word (character/pinyin/audio/image/example sentence) and mined sentence (sentence + clip audio + screenshot), plus delete/suspend/"already known".
 - **SHOULD** apply the staged pinyin removal automatically by known-word count (about 200 → 500 → 2,000) [26].
 - **SHOULD** budget about 20 min/day for SRS early, shrinking to about 10 min in Phase 3, and warn when reviews eat the immersion budget [12][15].

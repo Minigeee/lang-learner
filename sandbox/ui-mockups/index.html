@@ -4,100 +4,157 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>UI mockups board</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600&family=Noto+Sans+SC:wght@400;500&family=Noto+Serif+SC:wght@500;600&display=swap">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/dist/tabler-icons.min.css">
 <style>
 :root{
-  --page:#F4F3EE;--surface-1:#EFEDE6;--surface-2:#FFFFFF;
-  --border:rgba(0,0,0,.10);--border-strong:rgba(0,0,0,.18);--border-stronger:rgba(0,0,0,.38);
-  --text-primary:#1F1E1C;--text-secondary:#5F5E5A;--text-muted:#9A988F;
-  --fill-accent:#185FA5;--on-accent:#FFFFFF;--bg-accent:#E6F1FB;--text-accent:#185FA5;--border-accent:#378ADD;
-  --bg-success:#E1F5EE;--text-success:#0F6E56;--border-success:#5DCAA5;
-  --bg-warning:#FAEEDA;--text-warning:#854F0B;--bg-danger:#FCEBEB;--text-danger:#A32D2D;
-  --b-lessons:#7F77DD;--b-cards:#1D9E75;--b-watch:#D85A30;
-  --backdrop:rgba(0,0,0,.42);
-  --dot:rgba(0,0,0,.10);--section:rgba(0,0,0,.02);--sticky:#FCE8B2;--sticky-text:#412402;
+  --page:#F5F3EE;--surface-2:#FFFFFF;--surface-1:#F3F0EA;--surface-3:#E9E5DC;
+  --border:rgba(29,27,24,.09);--border-strong:rgba(29,27,24,.16);--border-stronger:rgba(29,27,24,.34);
+  --text-primary:#1D1B18;--text-secondary:#625D55;--text-muted:#9C968C;
+  --brand:#C2412D;--on-brand:#FFFFFF;--brand-soft:#FBEAE5;--brand-text:#A8361F;--brand-border:#E8A595;
+  --jade:#157F62;--jade-soft:#E2F3EC;--jade-text:#0F6A51;--jade-border:#8ED0B6;
+  --ink:#3D6FD1;--ink-soft:#E7EEFB;--ink-text:#2C57B0;
+  --slate:#64748B;--slate-soft:#E5E9F0;--slate-text:#475569;
+  --player:#1D1B18;--backdrop:rgba(20,18,15,.45);
+  --dot:rgba(29,27,24,.10);--section:rgba(29,27,24,.018);--sticky:#F7E7B0;--sticky-text:#3D2C05;
+  --shadow:0 1px 2px rgba(29,27,24,.06),0 6px 24px rgba(29,27,24,.07);
 }
 :root[data-theme="dark"]{
-  --page:#141413;--surface-1:#262624;--surface-2:#1E1E1C;
-  --border:rgba(255,255,255,.10);--border-strong:rgba(255,255,255,.18);--border-stronger:rgba(255,255,255,.40);
-  --text-primary:#EDEBE4;--text-secondary:#B4B2A9;--text-muted:#7C7A73;
-  --fill-accent:#378ADD;--bg-accent:#0C2A4A;--text-accent:#85B7EB;--border-accent:#378ADD;
-  --bg-success:#0B3328;--text-success:#5DCAA5;--border-success:#1D9E75;
-  --bg-warning:#3A2606;--text-warning:#EF9F27;--bg-danger:#3D1414;--text-danger:#F09595;
-  --backdrop:rgba(0,0,0,.6);
-  --dot:rgba(255,255,255,.07);--section:rgba(255,255,255,.025);--sticky:#4A3410;--sticky-text:#FAEEDA;
+  --page:#121110;--surface-2:#1B1A18;--surface-1:#25231F;--surface-3:#302D28;
+  --border:rgba(255,248,236,.08);--border-strong:rgba(255,248,236,.15);--border-stronger:rgba(255,248,236,.34);
+  --text-primary:#F0ECE4;--text-secondary:#B3ADA2;--text-muted:#7A746B;
+  --brand:#E2583F;--on-brand:#FFFFFF;--brand-soft:#3A1B14;--brand-text:#F59C86;--brand-border:#8E3B2B;
+  --jade:#3FB68E;--jade-soft:#12302A;--jade-text:#72D4B1;--jade-border:#1F6E57;
+  --ink:#6F98F0;--ink-soft:#172540;--ink-text:#9DBAF5;
+  --slate:#8B9AB0;--slate-soft:#222A36;--slate-text:#AEBBCD;
+  --player:#0B0A09;--backdrop:rgba(0,0,0,.6);
+  --dot:rgba(255,248,236,.07);--section:rgba(255,248,236,.02);--sticky:#3A3016;--sticky-text:#F6E7BD;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 28px rgba(0,0,0,.35);
 }
-*{box-sizing:border-box}
-body{margin:0;background:var(--page);color:var(--text-primary);font:14px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
-h1{font-size:22px;font-weight:500;margin:0 0 4px}
-h2{font-size:18px;font-weight:500;margin:40px 0 4px}
-.intro{color:var(--text-secondary);margin:0 0 8px;max-width:760px}
-.rules{color:var(--text-secondary);font-size:13px;margin:0;padding-left:18px;max-width:760px}
-.row{display:flex;flex-wrap:wrap;gap:20px;margin-top:12px}
-.shot{position:absolute;width:340px}
-.cap{font-size:14px;color:var(--text-secondary);margin:0 0 8px;white-space:nowrap}
-.ph{position:relative;background:var(--surface-2);border:.5px solid var(--border-strong);border-radius:20px;padding:16px 14px 10px;display:flex;flex-direction:column;gap:10px;height:740px;overflow:hidden}
-.h1{font-size:20px;font-weight:500}
-.lab{font-size:12px;color:var(--text-secondary);margin-top:6px}
-.mut{font-size:12px;color:var(--text-secondary)}
-.dim{color:var(--text-muted)}
-.cd{background:var(--surface-1);border-radius:10px;padding:10px 12px}
-.sel{border:1.5px solid var(--border-accent)}
-.pri{background:var(--fill-accent);color:var(--on-accent);border-radius:10px;padding:13px 0;text-align:center;font-weight:500}
-.sec{border:.5px solid var(--border-strong);border-radius:10px;padding:9px 0;text-align:center;font-size:13px}
-.ans{border:.5px solid var(--border-strong);border-radius:12px;padding:20px 0;text-align:center}
-.ans b{display:block;font-size:24px;font-weight:500}
-.chip{display:inline-flex;align-items:center;gap:4px;border:.5px solid var(--border-strong);border-radius:999px;padding:4px 10px;font-size:12px}
-.chip.on{background:var(--bg-accent);border-color:var(--border-accent);color:var(--text-accent)}
-.li{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:9px 2px;border-bottom:.5px solid var(--border)}
-.li:last-child{border-bottom:none}
-.bar{height:8px;border-radius:4px;background:var(--border);overflow:hidden;display:flex}
-.tabs{margin-top:auto;display:flex;justify-content:space-around;border-top:.5px solid var(--border);padding-top:8px;font-size:11px;color:var(--text-secondary)}
-.tabs div{display:flex;flex-direction:column;align-items:center;gap:2px}
-.tabs i{font-size:19px}
-.tabs .on{color:var(--text-accent)}
-.top{display:flex;justify-content:space-between;align-items:center}
-.seg{display:flex;background:var(--surface-1);border-radius:8px;padding:2px;font-size:12px}
-.seg span{padding:4px 10px;border-radius:6px}
-.seg .on{background:var(--surface-2);box-shadow:0 0 0 .5px var(--border-strong)}
-.steps{display:flex;gap:4px}
-.steps div{flex:1;height:4px;border-radius:2px;background:var(--border)}
-.steps .d{background:var(--b-cards)}.steps .c{background:var(--fill-accent)}
-.player{aspect-ratio:16/9;background:#1F1E1C;border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;color:#B4B2A9;font-size:12px}
-.player i{font-size:30px;color:#EDEBE4}
-.ctrls{display:flex;gap:8px;justify-content:center}
-.zh{font-size:17px}
-.py{font-size:12px;color:var(--text-secondary)}
-.ok{color:var(--text-success)}.bad{color:var(--text-danger)}.warn{color:var(--text-warning)}
-.banner{border-radius:10px;padding:10px 12px;font-size:13px}
-.sheet{position:absolute;left:0;right:0;bottom:0;background:var(--surface-2);border-radius:18px 18px 0 0;padding:10px 14px 16px;display:flex;flex-direction:column;gap:10px;border-top:.5px solid var(--border-strong)}
-.grab{width:40px;height:4px;border-radius:2px;background:var(--border-strong);margin:0 auto 4px}
-.backdrop{position:absolute;inset:0;background:var(--backdrop)}
-.field{border:.5px solid var(--border-strong);border-radius:10px;padding:8px 10px;display:flex;justify-content:space-between;align-items:center}
 
-html,body{height:100%;overflow:hidden}
-#viewport{position:fixed;inset:0;overflow:hidden;cursor:grab;touch-action:none;background-color:var(--page);background-image:radial-gradient(var(--dot) 1.2px,transparent 1.2px)}
+:root{--act:#C2412D;--on-act:#FFFFFF;--act-soft:#FBEAE5;--act-text:#A8361F;--act-border:#E8A595}
+:root[data-theme="dark"]{--act:#C9452E;--on-act:#FFFFFF;--act-soft:#3A1B14;--act-text:#F59C86;--act-border:#8E3B2B}
+*{box-sizing:border-box}
+html,body{height:100%;overflow:hidden;margin:0}
+body{background:var(--page);color:var(--text-primary);font:400 14px/1.5 Lexend,"Noto Sans SC",system-ui,sans-serif;font-variant-numeric:tabular-nums;-webkit-font-smoothing:antialiased}
+.zh{font-family:"Noto Sans SC",Lexend,sans-serif}
+.hz{font-family:"Noto Serif SC",serif;font-weight:500}
+i.ti{line-height:1}
+
+/* board */
+#viewport{position:fixed;inset:0;overflow:hidden;cursor:grab;touch-action:none;background-image:radial-gradient(var(--dot) 1.2px,transparent 1.2px)}
 #viewport.drag{cursor:grabbing}
 #canvas{position:absolute;left:0;top:0;transform-origin:0 0}
-.section{position:absolute;border:1px dashed var(--border-stronger);border-radius:28px;background:var(--section)}
-.stitle{position:absolute;left:24px;top:22px;font-size:26px;font-weight:500}
-.ssub{position:absolute;left:24px;top:60px;font-size:15px;color:var(--text-secondary)}
-.sticky{position:absolute;width:260px;padding:16px 18px;background:var(--sticky);color:var(--sticky-text);border-radius:4px;font-size:15px;line-height:1.45;transform:rotate(-1.2deg);box-shadow:0 2px 6px rgba(0,0,0,.15)}
+.section{position:absolute;border:1px dashed var(--border-stronger);border-radius:32px;background:var(--section)}
+.stitle{position:absolute;left:28px;top:24px;font-size:28px;font-weight:600;letter-spacing:-.01em}
+.ssub{position:absolute;left:28px;top:66px;font-size:16px;color:var(--text-secondary)}
+.sticky{position:absolute;width:280px;padding:18px 20px;background:var(--sticky);color:var(--sticky-text);border-radius:6px;font-size:15px;line-height:1.5;transform:rotate(-1deg);box-shadow:var(--shadow)}
 .sticky b{display:block;font-weight:600;margin-bottom:4px}
 .sticky ul{margin:0;padding-left:18px}
 #arrows{position:absolute;left:0;top:0;overflow:visible;pointer-events:none}
-.alabel{position:absolute;transform:translate(-50%,-50%);background:var(--surface-2);border:1px solid var(--border-accent);color:var(--text-accent);border-radius:999px;padding:4px 12px;font-size:14px;white-space:nowrap}
-.toolbar{position:fixed;top:12px;left:12px;z-index:5;display:flex;align-items:center;gap:6px;background:var(--surface-2);border:.5px solid var(--border-strong);border-radius:12px;padding:6px 8px;box-shadow:0 2px 10px rgba(0,0,0,.18)}
-.toolbar .title{font-weight:500;padding:0 8px 0 4px}
-.toolbar button{background:transparent;color:var(--text-primary);border:.5px solid var(--border-strong);border-radius:8px;height:32px;min-width:32px;padding:0 8px;font:inherit;cursor:pointer;display:inline-flex;align-items:center;gap:4px}
+.alabel{position:absolute;transform:translate(-50%,-50%);background:var(--surface-2);border:1px solid var(--act-border);color:var(--act-text);border-radius:999px;padding:5px 14px;font-size:14px;white-space:nowrap}
+.toolbar{position:fixed;top:12px;left:12px;z-index:5;display:flex;align-items:center;gap:6px;background:var(--surface-2);border:1px solid var(--border);border-radius:14px;padding:6px 8px;box-shadow:var(--shadow)}
+.toolbar .title{font-weight:500;padding:0 8px 0 2px}
+.toolbar button{background:transparent;color:var(--text-primary);border:1px solid var(--border-strong);border-radius:9px;height:32px;min-width:32px;padding:0 9px;font:inherit;font-size:13px;cursor:pointer;display:inline-flex;align-items:center;gap:5px}
 .toolbar button:hover{background:var(--surface-1)}
 .toolbar .pct{min-width:48px;text-align:center;font-size:13px;color:var(--text-secondary)}
-.hint{position:fixed;left:12px;bottom:12px;z-index:5;font-size:12px;color:var(--text-secondary);background:var(--surface-2);border:.5px solid var(--border);border-radius:8px;padding:4px 8px}
+.hint{position:fixed;left:12px;bottom:12px;z-index:5;font-size:12px;color:var(--text-secondary);background:var(--surface-2);border:1px solid var(--border);border-radius:9px;padding:5px 10px}
+
+/* phone frame */
+.shot{position:absolute;width:340px}
+.cap{font-size:14px;color:var(--text-secondary);margin:0 0 10px;white-space:nowrap}
+.ph{position:relative;background:var(--surface-2);border:1px solid var(--border);border-radius:28px;padding:18px 16px 10px;display:flex;flex-direction:column;gap:12px;height:740px;overflow:hidden;box-shadow:var(--shadow)}
+
+/* type scale */
+.t-display{font-size:32px;font-weight:500;letter-spacing:-.02em;line-height:1.15}
+.t-title{font-size:20px;font-weight:600;letter-spacing:-.01em;line-height:1.25}
+.t-head{font-size:16px;font-weight:500;line-height:1.35}
+.t-meta{font-size:12px;color:var(--text-secondary)}
+.t-label{font-size:12px;color:var(--text-secondary);letter-spacing:.02em}
+.muted{color:var(--text-muted)}
+
+/* components */
+.seal{width:28px;height:28px;border-radius:8px;background:var(--act);color:var(--on-act);display:grid;place-items:center;font-family:"Noto Serif SC",serif;font-weight:600;font-size:16px;flex:none}
+.top{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.hstack{display:flex;align-items:center;gap:10px}
+.card{background:var(--surface-1);border-radius:16px;padding:14px}
+.card.hero{padding:16px}
+.card.sel{background:var(--surface-2);border:1.5px solid var(--act-border)}
+.btn{border-radius:14px;padding:14px 0;text-align:center;font-weight:500;font-size:15px}
+.btn.pri{background:var(--act);color:var(--on-act)}
+.btn.sec{border:1px solid var(--border-strong);font-weight:400;font-size:14px;padding:11px 0}
+.chip{display:inline-flex;align-items:center;gap:5px;border:1px solid var(--border-strong);border-radius:999px;padding:5px 11px;font-size:12px;white-space:nowrap}
+.chip i{font-size:15px}
+.chip.ok{border-color:var(--jade-border);color:var(--jade-text)}
+.chip.on{background:var(--act-soft);border-color:var(--act-border);color:var(--act-text)}
+.badge{display:inline-flex;align-items:center;gap:4px;border-radius:6px;padding:2px 7px;font-size:11px;font-weight:500;white-space:nowrap}
+.badge.jade{background:var(--jade-soft);color:var(--jade-text)}
+.badge.slate{background:var(--slate-soft);color:var(--slate-text)}
+.badge.ink{background:var(--ink-soft);color:var(--ink-text)}
+.badge.plain{background:var(--surface-3);color:var(--text-secondary)}
+.ic{width:34px;height:34px;border-radius:11px;display:grid;place-items:center;flex:none;background:var(--surface-3);color:var(--text-secondary)}
+.ic i{font-size:18px}
+.ic.act{background:var(--act-soft);color:var(--act-text)}
+.ic.jade{background:var(--jade-soft);color:var(--jade-text)}
+.ic.slate{background:var(--slate-soft);color:var(--slate-text)}
+.ic.ink{background:var(--ink-soft);color:var(--ink-text)}
+.list{display:flex;flex-direction:column}
+.row{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid var(--border)}
+.row:last-child{border-bottom:none}
+.row .grow{flex:1;min-width:0}
+.row .chev{color:var(--text-muted);font-size:18px}
+.seg{display:flex;background:var(--surface-1);border-radius:11px;padding:3px;font-size:13px}
+.seg span{flex:1;text-align:center;padding:6px 10px;border-radius:8px;color:var(--text-secondary);white-space:nowrap}
+.seg .on{background:var(--surface-2);color:var(--text-primary);box-shadow:0 0 0 1px var(--border-strong)}
+.bar{height:8px;border-radius:4px;background:var(--surface-3);overflow:hidden;display:flex}
+.steps{display:flex;gap:5px}
+.steps div{flex:1;height:4px;border-radius:2px;background:var(--surface-3)}
+.steps .d{background:var(--jade)}.steps .c{background:var(--act)}
+.lhead{display:grid;grid-template-columns:28px 1fr 28px;align-items:center;text-align:center}
+.lhead i{font-size:20px;color:var(--text-secondary)}
+.player{aspect-ratio:16/9;background:var(--player);border-radius:16px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:#A39D93;font-size:12px}
+.play{width:52px;height:52px;border-radius:50%;background:rgba(255,255,255,.12);display:grid;place-items:center;color:#F0ECE4}
+.play i{font-size:24px}
+.ctrls{display:flex;gap:8px;justify-content:center}
+.ans{border:1px solid var(--border-strong);border-radius:16px;padding:16px 0 12px;text-align:center}
+.ans .hz{display:block;font-size:30px;line-height:1.2}
+.ans.ok{border:1.5px solid var(--jade);background:var(--jade-soft)}
+.ans.off{opacity:.45}
+.stat{background:var(--surface-1);border-radius:14px;padding:10px 12px}
+.stat b{display:block;font-size:18px;font-weight:500}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.tabs{margin-top:auto;display:flex;justify-content:space-around;border-top:1px solid var(--border);padding-top:9px;font-size:11px;color:var(--text-muted)}
+.tabs div{display:flex;flex-direction:column;align-items:center;gap:3px}
+.tabs i{font-size:22px}
+.tabs .on{color:var(--act-text)}
+.sheet{position:absolute;left:0;right:0;bottom:0;background:var(--surface-2);border-radius:24px 24px 0 0;padding:10px 16px 18px;display:flex;flex-direction:column;gap:14px;box-shadow:0 -8px 30px rgba(0,0,0,.2)}
+.grab{width:40px;height:4px;border-radius:2px;background:var(--border-strong);margin:0 auto}
+.backdrop{position:absolute;inset:0;background:var(--backdrop)}
+.poster{width:40px;height:52px;border-radius:8px;display:grid;place-items:center;font-size:12px;font-weight:600;flex:none}
+.legend{display:flex;gap:12px;font-size:12px;color:var(--text-secondary)}
+.legend span{display:inline-flex;align-items:center;gap:5px}
+.legend i{width:10px;height:10px;border-radius:3px;display:inline-block}
+.line{border-radius:12px;padding:8px 10px}
+.line.cur{background:var(--act-soft)}
+.line.dim{opacity:.45}
+.py{font-size:12px;color:var(--text-secondary)}
+
+/* style guide */
+.sg{position:absolute;display:flex;flex-direction:column;gap:22px}
+.sg h3{margin:0 0 10px;font-size:16px;font-weight:500;color:var(--text-secondary)}
+.sw{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.sw.n{grid-template-columns:repeat(3,1fr);margin-top:10px}
+.sw div{border-radius:14px;padding:46px 12px 10px;font-size:12px;border:1px solid var(--border)}
+.sw b{display:block;font-weight:500;font-size:13px}
+.ts-row{display:flex;align-items:baseline;gap:16px;padding:6px 0;border-bottom:1px solid var(--border)}
+.ts-row .k{width:150px;flex:none;font-size:12px;color:var(--text-secondary)}
 </style>
 </head>
 <body>
 <div class="toolbar">
-<span class="title">UI board</span>
+<span class="seal">学</span><span class="title">UI board</span>
 <button id="zout" aria-label="Zoom out"><i class="ti ti-minus"></i></button>
 <span class="pct" id="pct">100%</span>
 <button id="zin" aria-label="Zoom in"><i class="ti ti-plus"></i></button>
@@ -108,339 +165,313 @@ html,body{height:100%;overflow:hidden}
 <div id="viewport"><div id="canvas">
 <svg id="arrows"></svg>
 <div id="labels"></div>
-<div class="shot" id="f-today"><p class="cap">Today: one big action, the rest quiet</p><div class="ph">
-<div class="top"><span class="h1">Tonight</span><span class="mut">14 of 30 min · floor met</span></div>
-<div class="cd" style="padding:14px 12px">
-<div class="mut">Up next</div>
-<div style="font-size:17px;font-weight:500;margin:2px 0">1.7 Where things are</div>
-<div class="mut" style="margin-bottom:12px">Reviews ~6 min, then lesson 2 · 15 min total</div>
-<div class="pri">Start 15 min</div>
-<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:8px"><div class="sec">5 min</div><div class="sec">30 min</div><div class="sec">60 min</div></div></div>
-<div class="lab">Also today</div>
-<div><div class="li"><span>Reviews</span><span class="mut">~6 min, included above</span></div>
-<div class="li"><span>Re-watch the 1.7 story</span><span class="mut">8 min</span></div>
-<div class="li"><span>Watched something?</span><span style="color:var(--text-accent)">Log it</span></div></div>
+
+<!-- Style guide -->
+<div class="sg" id="styleguide" style="left:3480px;top:150px;width:780px">
+<div><h3>Type: Lexend for UI, Noto Serif SC for display hanzi</h3>
+<div class="ts-row"><span class="k">Display 32 / 500</span><span class="t-display">6 h 40 m</span></div>
+<div class="ts-row"><span class="k">Title 20 / 600</span><span class="t-title">Where things are</span></div>
+<div class="ts-row"><span class="k">Headline 16 / 500</span><span class="t-head">Up next in this unit</span></div>
+<div class="ts-row"><span class="k">Body 14 / 400</span><span>Both translate as "not". The question is when.</span></div>
+<div class="ts-row"><span class="k">Meta 12 / 400</span><span class="t-meta">1 of 3 lessons · about 20 min</span></div>
+<div class="ts-row"><span class="k">Hanzi display, serif</span><span class="hz" style="font-size:30px">他昨天没去。</span></div>
+<div class="ts-row"><span class="k">Hanzi body, sans</span><span class="zh" style="font-size:17px">猫在桌子上。</span><span class="py">māo zài zhuōzi shang</span></div></div>
+<div><h3>Color: three hues, a cool neutral for "another look", warm neutrals</h3>
+<div class="sw">
+<div style="background:var(--act);color:var(--on-act)"><b>Cinnabar</b>Brand, tap, current</div>
+<div style="background:var(--jade);color:#fff"><b>Jade</b>Correct, done, known</div>
+<div style="background:var(--ink);color:#fff"><b>Ink</b>Watching (outside the app)</div>
+<div style="background:var(--slate);color:#fff"><b>Slate</b>Cool neutral: take another look</div></div><div class="sw n"><div style="background:var(--surface-2)"><b>Surface</b>Screens and sheets</div>
+<div style="background:var(--surface-1)"><b>Surface 1</b>Cards, inputs</div>
+<div style="background:var(--surface-3)"><b>Surface 3</b>Tracks, quiet chips</div></div></div>
+<div><h3>Icons: Tabler outline, 18 px in tinted 34 px chips, 22 px in tabs</h3>
+<div class="hstack" style="gap:12px"><span class="ic act"><i class="ti ti-player-play"></i></span><span class="ic jade"><i class="ti ti-check"></i></span><span class="ic slate"><i class="ti ti-arrow-back-up"></i></span><span class="ic ink"><i class="ti ti-device-tv"></i></span><span class="ic"><i class="ti ti-repeat"></i></span><span class="ic"><i class="ti ti-cards"></i></span><span class="ic"><i class="ti ti-volume"></i></span>
+<span class="badge jade">Familiar</span><span class="badge slate">Review</span><span class="badge ink">EN subs</span><span class="badge plain">HSK 1</span></div></div>
+</div>
+
+<!-- Today -->
+<div class="shot" id="f-today"><p class="cap">Today</p><div class="ph">
+<div class="top"><div class="hstack"><span class="seal">学</span><span class="t-title">Tonight</span></div>
+<div class="hstack" style="gap:8px"><svg width="30" height="30" viewBox="0 0 30 30"><circle cx="15" cy="15" r="12" fill="none" stroke="var(--surface-3)" stroke-width="4"/><circle cx="15" cy="15" r="12" fill="none" stroke="var(--jade)" stroke-width="4" stroke-dasharray="75.4" stroke-dashoffset="40" transform="rotate(-90 15 15)" stroke-linecap="round"/></svg><span class="t-meta">14 of 30 min</span></div></div>
+<div class="card hero">
+<div class="t-label">Up next · unit 1.7</div>
+<div class="t-title" style="margin:2px 0 10px">Where things are</div>
+<div class="hstack t-meta" style="gap:14px;margin-bottom:14px"><span><i class="ti ti-cards"></i> 6 min reviews</span><span><i class="ti ti-player-play"></i> Lesson 2 of 3</span></div>
+<div class="btn pri">Start 15 min</div>
+<div class="seg" style="margin-top:10px"><span>5 min</span><span>30 min</span><span>60 min</span></div></div>
+<div class="t-label" style="margin-top:4px">Also today</div>
+<div class="list">
+<div class="row"><span class="ic"><i class="ti ti-repeat"></i></span><div class="grow">Re-watch the 1.7 story<div class="t-meta">8 min · no subtitles</div></div><i class="ti ti-chevron-right chev"></i></div>
+<div class="row"><span class="ic ink"><i class="ti ti-device-tv"></i></span><div class="grow">Log something you watched</div><i class="ti ti-chevron-right chev"></i></div>
+<div class="row"><span class="ic jade"><i class="ti ti-calendar-check"></i></span><div class="grow">Tonight counts<div class="t-meta">24 of the last 30 days</div></div></div></div>
 <div class="tabs"><div class="on"><i class="ti ti-sun"></i>Today</div><div><i class="ti ti-route"></i>Path</div><div><i class="ti ti-chart-bar"></i>Progress</div><div><i class="ti ti-device-tv"></i>Watch</div></div>
 </div></div>
-<div class="shot" id="f-path"><p class="cap">Path: the curriculum as a flow of units</p><div class="ph">
-<div class="top"><span class="h1">Path</span><div class="seg"><span class="on">Units</span><span>Items</span></div></div>
-<div class="mut" style="display:flex;gap:10px;flex-wrap:wrap"><span class="ok">■ done</span><span style="color:var(--text-accent)">■ current</span><span>□ ready</span><span class="dim">■ later</span></div>
-<div style="display:flex;justify-content:center"><svg id="graph" width="276" height="452" viewBox="0 0 276 452" aria-label="Unit graph"></svg></div>
-<div class="cd sel">
-<div class="top"><span style="font-weight:500">1.7 Where things are</span><span class="mut">1 of 3 · ~20 min</span></div>
-<div class="mut" style="margin:4px 0 10px">Builds on 1.4a, 1.5 · unlocks 1.9</div>
-<div class="pri">Resume lesson 2</div></div>
-<div class="tabs"><div><i class="ti ti-sun"></i>Today</div><div class="on"><i class="ti ti-route"></i>Path</div><div><i class="ti ti-chart-bar"></i>Progress</div><div><i class="ti ti-device-tv"></i>Watch</div></div>
+
+<!-- Review -->
+<div class="shot" id="f-review"><p class="cap">Review · audio first, capped batch</p><div class="ph">
+<div class="lhead"><i class="ti ti-x"></i><div><div class="t-head" style="font-size:14px">Reviews</div><div class="t-meta">12 of 40 · 6 min left</div></div><span></span></div>
+<div class="bar" style="height:4px"><div style="width:30%;background:var(--jade)"></div></div>
+<div style="display:grid;place-items:center;padding:34px 0 10px"><span class="ic act" style="width:68px;height:68px;border-radius:50%"><i class="ti ti-volume" style="font-size:30px"></i></span><div class="t-meta" style="margin-top:10px">Tap to replay</div></div>
+<div style="text-align:center"><div class="hz" style="font-size:30px">他昨天没去。</div><div class="py" style="margin-top:2px">tā zuótiān méi qù</div><div style="margin-top:12px">He didn't go yesterday.</div></div>
+<div style="margin-top:auto;display:grid;grid-template-columns:1fr 1fr;gap:10px">
+<div class="ans" style="padding:14px 0"><div class="t-head">Again</div><div class="t-meta">10 min</div></div>
+<div class="ans" style="padding:14px 0;border:1.5px solid var(--jade)"><div class="t-head" style="color:var(--jade-text)">Good</div><div class="t-meta">6 days</div></div></div>
 </div></div>
-<div class="shot" id="f-progress"><p class="cap">Progress: four answers, top to bottom</p><div class="ph">
-<span class="h1">Progress</span>
-<div class="lab">This week</div>
-<div style="display:flex;align-items:baseline;gap:8px"><span style="font-size:30px;font-weight:500">6 h 40 m</span><span class="mut">of 10 h goal</span></div>
-<div class="bar"><div style="width:15%;background:var(--b-lessons)"></div><div style="width:16%;background:var(--b-cards)"></div><div style="width:36%;background:var(--b-watch)"></div></div>
-<div class="mut" style="display:flex;justify-content:space-between"><span>Lessons 1 h 30</span><span>Cards 1 h 40</span><span>Watching 3 h 30</span></div>
-<div class="lab">Consistency</div>
-<div style="display:flex;align-items:baseline;gap:8px"><span style="font-size:20px;font-weight:500">24</span><span class="mut">of the last 30 days</span></div>
-<div id="heat" style="display:grid;grid-template-columns:repeat(15,1fr);gap:3px"></div>
-<div class="lab">What you know <span class="dim">(Familiar or better)</span></div>
-<div style="display:grid;grid-template-columns:auto 1fr auto;gap:8px 10px;align-items:center;font-size:13px">
-<span>Words</span><div class="bar"><div style="width:71%;background:var(--b-cards)"></div></div><span class="mut">212 / 300</span>
-<span>Grammar</span><div class="bar"><div style="width:45%;background:var(--b-cards)"></div></div><span class="mut">18 / 40 A1</span>
-<span>Characters</span><div class="bar"><div style="width:65%;background:var(--b-cards)"></div></div><span class="mut">160 / 246</span>
-<span>Sounds</span><div class="bar"><div style="width:94%;background:var(--b-cards)"></div></div><span class="mut">94%</span></div>
-<div class="lab">Listening hours</div>
-<div style="display:flex;align-items:baseline;gap:8px"><span style="font-size:20px;font-weight:500">42 h</span><span class="mut">next milestone 50 h · about 9 days</span></div>
-<div class="bar"><div style="width:84%;background:var(--b-watch)"></div></div>
-<div class="sec" style="margin-top:4px">Weekly review</div>
-<div class="tabs"><div><i class="ti ti-sun"></i>Today</div><div><i class="ti ti-route"></i>Path</div><div class="on"><i class="ti ti-chart-bar"></i>Progress</div><div><i class="ti ti-device-tv"></i>Watch</div></div>
+
+<!-- Hear it -->
+<div class="shot" id="f-hear"><p class="cap">Lesson · step 2 Hear it (gist only)</p><div class="ph">
+<div class="lhead"><i class="ti ti-x"></i><div><div class="t-head zh" style="font-size:14px">不 vs 没</div><div class="t-meta">1.13 · Listen</div></div><span></span></div>
+<div class="steps"><div class="d"></div><div class="c"></div><div></div><div></div><div></div><div></div></div>
+<div class="hstack card" style="padding:12px;align-items:flex-start"><span class="ic"><i class="ti ti-bulb"></i></span><div style="font-size:13px"><span class="zh">没</span> says it didn't happen. <span class="zh">不</span> says you don't, or won't.</div></div>
+<div class="player"><span class="play"><i class="ti ti-player-play"></i></span>Native clip · 23 s</div>
+<div class="ctrls"><span class="chip"><i class="ti ti-refresh"></i>Replay</span><span class="chip">0.75×</span><span class="chip"><i class="ti ti-subtitles-off"></i>Off</span></div>
+<div class="t-head" style="margin-top:6px">Just listen. Who didn't do something?</div>
+<div class="list"><div class="row"><span class="grow">George</span></div><div class="row"><span class="grow">Peppa</span></div><div class="row"><span class="grow muted">Not sure yet</span></div></div>
+<div class="btn pri" style="margin-top:auto">Continue</div>
 </div></div>
-<div class="shot" id="f-watch"><p class="cap">Watch tab: log fast, pick what's next</p><div class="ph">
-<div class="top"><span class="h1">Watch</span><span class="mut">This week 3 h 30 m</span></div>
-<div class="bar" style="height:6px"><div style="width:70%;background:var(--b-watch)"></div><div style="width:20%;background:#F0997B"></div><div style="width:10%;background:#F5C4B3"></div></div>
-<div class="mut" style="display:flex;justify-content:space-between"><span>English subs 70%</span><span>Chinese 20%</span><span>None 10%</span></div>
-<div class="pri">Log watching</div>
-<div class="lab">Recent</div>
-<div><div class="li"><div><div>Word Party · S1 E4</div><div class="mut">12 min · English subs · yesterday</div></div><span class="chip"><i class="ti ti-plus"></i>Next episode</span></div>
-<div class="li"><div><div>Flavorful Origins · E2</div><div class="mut">11 min · Chinese subs · Sat</div></div><span class="chip"><i class="ti ti-plus"></i>Next episode</span></div></div>
-<div class="cd"><div style="font-weight:500">Try Chinese subtitles?</div><div class="mut" style="margin:2px 0 8px">S1 is past halfway. Re-watch Word Party E4 with Chinese subtitles and see how much you follow.</div><div class="sec">Set up a re-watch</div></div>
-<div class="top"><span class="lab" style="margin:0">Suggestions</span><div class="seg"><span class="on">Now</span><span>Soon</span><span>Later</span></div></div>
-<div><div class="li"><div><div>Word Party</div><div class="mut">Kids' animation · 12 min episodes</div></div><i class="ti ti-chevron-right dim"></i></div>
-<div class="li"><div><div>The Monkey King (2023)</div><div class="mut">Animated film · simple dialogue</div></div><i class="ti ti-chevron-right dim"></i></div></div>
+
+<!-- Explain -->
+<div class="shot" id="f-explain"><p class="cap">Lesson · step 3 Explain (one figure, few words)</p><div class="ph">
+<div class="lhead"><i class="ti ti-x"></i><div><div class="t-head zh" style="font-size:14px">不 vs 没</div><div class="t-meta">1.13 · How it works</div></div><span></span></div>
+<div class="steps"><div class="d"></div><div class="d"></div><div class="c"></div><div></div><div></div><div></div></div>
+<div class="t-title" style="font-size:19px"><span class="zh">没</span> looks back. <span class="zh">不</span> looks at habits and ahead.</div>
+<svg viewBox="0 0 308 92" width="100%" aria-label="Timeline">
+<line x1="14" y1="48" x2="294" y2="48" stroke="var(--border-stronger)" stroke-width="1.5" stroke-linecap="round"/>
+<circle cx="154" cy="48" r="4" fill="var(--text-secondary)"/>
+<text x="154" y="80" text-anchor="middle" font-size="12" fill="var(--text-secondary)" font-family="Lexend">now</text>
+<rect x="30" y="8" width="96" height="28" rx="8" fill="var(--surface-3)"/><text x="78" y="27" text-anchor="middle" font-size="16" fill="var(--text-primary)" font-family="Noto Serif SC">没 · past</text>
+<rect x="182" y="8" width="110" height="28" rx="8" fill="var(--surface-3)"/><text x="237" y="27" text-anchor="middle" font-size="16" fill="var(--text-primary)" font-family="Noto Serif SC">不 · habit, future</text>
+</svg>
+<div>Both mean "not". What decides it is <b style="font-weight:500">when</b>: a past action uses <span class="zh">没</span>, a habit or plan uses <span class="zh">不</span>.</div>
+<div class="list">
+<div class="row"><span class="ic slate"><i class="ti ti-x"></i></span><div class="grow zh muted" style="text-decoration:line-through">我昨天不去。</div></div>
+<div class="row"><span class="ic jade"><i class="ti ti-check"></i></span><div class="grow"><span class="zh">我昨天没去。</span><div class="t-meta">I didn't go yesterday.</div></div><i class="ti ti-volume chev"></i></div></div>
+<div class="row t-meta" style="border:none"><i class="ti ti-chevron-down"></i>Go deeper: why <span class="zh">没有</span>, never <span class="zh">不有</span>?</div>
+<div class="btn pri" style="margin-top:auto">Continue</div>
+</div></div>
+
+<!-- We do -->
+<div class="shot" id="f-wedo"><p class="cap">Lesson · step 4 We do, after a miss</p><div class="ph">
+<div class="lhead"><i class="ti ti-x"></i><div><div class="t-head zh" style="font-size:14px">不 vs 没</div><div class="t-meta">1.13 · Practice · 4 of 8</div></div><span></span></div>
+<div class="steps"><div class="d"></div><div class="d"></div><div class="d"></div><div class="c"></div><div></div><div></div></div>
+<div class="card" style="display:grid;place-items:center;padding:22px 0"><span class="ic act" style="width:56px;height:56px;border-radius:50%"><i class="ti ti-volume" style="font-size:26px"></i></span><div class="t-meta" style="margin-top:8px">Speaker 3 of 4</div></div>
+<div class="t-head" style="text-align:center">Did it happen?</div>
+<div class="card">
+<div class="hstack" style="gap:10px"><span class="ic slate"><i class="ti ti-arrow-back-up"></i></span><div class="t-head" style="font-size:15px">Not quite. That was <span class="zh">没</span>.</div></div>
+<div class="hstack" style="gap:8px;margin-top:10px"><span class="chip"><i class="ti ti-volume"></i><span class="zh">他不去</span><span class="muted">yours</span></span><span class="chip ok"><i class="ti ti-volume"></i><span class="zh">他没去</span></span></div>
+<div class="t-meta" style="margin-top:8px">Comes back later in a new voice</div></div>
+<div style="margin-top:auto;display:grid;grid-template-columns:1fr 1fr;gap:10px">
+<div class="ans ok"><span class="hz" style="color:var(--jade-text)">没</span><span class="t-meta">didn't</span></div>
+<div class="ans off"><span class="hz">不</span><span class="t-meta">doesn't, won't</span></div></div>
+<div class="btn pri">Next</div>
+</div></div>
+
+<!-- Lesson end -->
+<div class="shot" id="f-end"><p class="cap">Lesson · end (you do + cards)</p><div class="ph">
+<div class="lhead"><i class="ti ti-x"></i><div><div class="t-head zh" style="font-size:14px">不 vs 没</div><div class="t-meta">1.13 · Done</div></div><span></span></div>
+<div class="steps"><div class="d"></div><div class="d"></div><div class="d"></div><div class="d"></div><div class="d"></div><div class="d"></div></div>
+<div style="text-align:center;padding:14px 0 4px"><div class="t-display">4 / 5</div><div class="t-meta">New sentences from two new speakers</div></div>
+<div class="list">
+<div class="row"><span class="ic jade"><i class="ti ti-check"></i></span><span class="grow zh">我今天不喝咖啡。</span></div>
+<div class="row"><span class="ic jade"><i class="ti ti-check"></i></span><span class="grow zh">她昨天没来。</span></div>
+<div class="row"><span class="ic slate"><i class="ti ti-arrow-back-up"></i></span><div class="grow"><span class="zh">他还没吃饭。</span><div class="t-meta">You picked <span class="zh">不</span> · added to review</div></div><i class="ti ti-volume chev"></i></div>
+<div class="row"><span class="ic jade"><i class="ti ti-check"></i></span><span class="grow zh">我不会说。</span></div>
+<div class="row"><span class="ic jade"><i class="ti ti-check"></i></span><span class="grow zh">你没看吗？</span></div></div>
+<div class="row" style="border:none"><span class="ic"><i class="ti ti-cards"></i></span><div class="grow">2 new cards<div class="t-meta">Native audio · the <span class="zh">不/没</span> pair mixes into reviews</div></div></div>
+<div class="btn pri" style="margin-top:auto">Finish lesson</div>
+</div></div>
+
+<!-- Summary -->
+<div class="shot" id="f-summary"><p class="cap">Session summary</p><div class="ph">
+<div style="display:grid;place-items:center;padding:36px 0 6px;text-align:center"><span class="ic jade" style="width:72px;height:72px;border-radius:50%"><i class="ti ti-check" style="font-size:34px"></i></span><div class="t-title" style="margin-top:14px">Tonight counts</div><div class="t-meta">16 minutes tonight</div></div>
+<div class="stats"><div class="stat"><b>40</b><span class="t-meta">cards</span></div><div class="stat"><b>1</b><span class="t-meta">lesson</span></div><div class="stat"><b>25</b><span class="t-meta">of 30 days</span></div></div>
+<div class="t-label" style="margin-top:6px">Up next in this unit</div>
+<div class="row" style="border:none"><span class="ic act"><i class="ti ti-player-play"></i></span><div class="grow"><span class="zh">吧</span> softens a suggestion<div class="t-meta">Video lesson · 6 min</div></div><i class="ti ti-chevron-right chev"></i></div>
+<div style="margin-top:auto;display:flex;flex-direction:column;gap:8px"><div class="btn pri">Done for tonight</div><div class="btn sec">Keep going · 15 min</div></div>
+</div></div>
+
+<!-- Path -->
+<div class="shot" id="f-path"><p class="cap">Path · units as a flow</p><div class="ph">
+<div class="top"><span class="t-title">Path</span><div class="seg" style="width:150px"><span class="on">Units</span><span>Items</span></div></div>
+<div class="legend"><span><i style="background:var(--jade)"></i>Done</span><span><i style="background:var(--act)"></i>Current</span><span><i style="border:1.5px dashed var(--border-stronger)"></i>Ready</span><span><i style="background:var(--surface-3)"></i>Later</span></div>
+<div style="display:flex;justify-content:center"><svg id="graph" width="300" height="420" viewBox="0 0 300 420" style="overflow:visible" aria-label="Unit graph"></svg></div>
+<div class="card sel" style="margin-top:auto">
+<div class="top"><div><div class="t-head">Where things are</div><div class="t-meta">1.7 · lesson 2 of 3 · 20 min</div></div><span class="badge plain">Stage 1</span></div>
+<div class="btn pri" style="margin-top:12px">Resume lesson 2</div></div>
+<div class="tabs" style="margin-top:0"><div><i class="ti ti-sun"></i>Today</div><div class="on"><i class="ti ti-route"></i>Path</div><div><i class="ti ti-chart-bar"></i>Progress</div><div><i class="ti ti-device-tv"></i>Watch</div></div>
+</div></div>
+
+<!-- Clip -->
+<div class="shot" id="f-clip"><p class="cap">Clip lesson · pass 2, tap a word</p><div class="ph">
+<div class="lhead"><i class="ti ti-x"></i><div><div class="t-head" style="font-size:14px">Where's the cat?</div><div class="t-meta">1.7 · watch 2 of 3</div></div><span></span></div>
+<div class="steps"><div class="d"></div><div class="d"></div><div class="d"></div><div class="c"></div><div></div><div></div></div>
+<div class="player"><span class="play"><i class="ti ti-player-pause"></i></span>Mandarin Click story</div>
+<div>
+<div class="line dim"><div class="zh" style="font-size:17px">猫在哪儿？</div></div>
+<div class="line cur"><div class="zh" style="font-size:18px">猫在<span style="border-bottom:2px solid var(--act)">桌子</span>上。</div><div class="py">māo zài zhuōzi shang</div></div>
+<div class="line dim"><div class="zh" style="font-size:17px">桌子上有一本书。</div></div></div>
+<div class="card" style="background:var(--surface-2);border:1px solid var(--border-strong)">
+<div class="top"><div class="hstack" style="gap:8px;align-items:baseline"><span class="hz" style="font-size:24px">桌子</span><span class="py">zhuōzi</span></div><span class="badge jade">In your cards</span></div>
+<div style="margin-top:2px">table, desk</div></div>
+<div class="ctrls" style="margin-top:auto"><span class="chip"><i class="ti ti-player-skip-back"></i></span><span class="chip"><i class="ti ti-repeat"></i>Loop line</span><span class="chip"><i class="ti ti-player-skip-forward"></i></span></div>
+<div class="btn pri">Watch again · no subtitles</div>
+</div></div>
+
+<!-- Item detail -->
+<div class="shot" id="f-item"><p class="cap">Item detail · any word, node or card</p><div class="ph">
+<div class="lhead"><i class="ti ti-arrow-left"></i><div class="t-meta">Grammar point</div><span></span></div>
+<div><div class="hstack" style="gap:8px;align-items:baseline"><span class="hz" style="font-size:34px">没</span><span class="t-title">+ verb</span></div><div class="t-meta">méi · it didn't happen · A1</div></div>
+<div class="hstack"><span class="badge jade">Familiar</span><span class="t-meta">Next check in 4 days</span></div>
+<div class="stats"><div class="stat"><b>14/16</b><span class="t-meta">in lessons</span></div><div class="stat"><b>6</b><span class="t-meta">reviews</span></div><div class="stat"><b>3 d</b><span class="t-meta">since a miss</span></div></div>
+<div class="t-label">Heard in</div>
+<div class="list">
+<div class="row"><span class="ic"><i class="ti ti-volume"></i></span><div class="grow"><span class="zh">他还没吃饭。</span><div class="t-meta">Lazy Chinese</div></div></div>
+<div class="row"><span class="ic"><i class="ti ti-volume"></i></span><div class="grow"><span class="zh">我昨天没去。</span><div class="t-meta">Common Voice</div></div></div>
+<div class="row"><span class="ic act"><i class="ti ti-book-2"></i></span><div class="grow">Taught in 1.13<div class="t-meta">2 lessons</div></div><i class="ti ti-chevron-right chev"></i></div></div>
+<div class="btn pri" style="margin-top:auto">Practice 5 min</div>
+</div></div>
+
+<!-- Test-out -->
+<div class="shot" id="f-testout"><p class="cap">Test-out result · S0 checkpoint</p><div class="ph">
+<div class="lhead"><i class="ti ti-x"></i><div class="t-meta">Sounds check · part 3 of 3</div><span></span></div>
+<div style="text-align:center;padding:12px 0 4px"><div class="t-display">88%</div><div class="t-meta">Tone changes and words · pass mark 85%</div></div>
+<div class="list">
+<div class="row"><span class="ic jade"><i class="ti ti-check"></i></span><span class="grow"><span class="zh">一</span> and <span class="zh">不</span> tone changes</span><span class="t-meta">10/10</span></div>
+<div class="row"><span class="ic jade"><i class="ti ti-check"></i></span><span class="grow">Neutral tone and erhua</span><span class="t-meta">9/10</span></div>
+<div class="row"><span class="ic jade"><i class="ti ti-check"></i></span><span class="grow">Tones in running speech</span><span class="t-meta">9/10</span></div>
+<div class="row"><span class="ic slate"><i class="ti ti-arrow-back-up"></i></span><span class="grow">Third-tone sandhi</span><span class="badge slate">6/10</span></div>
+<div class="row"><span class="ic slate"><i class="ti ti-arrow-back-up"></i></span><span class="grow">Sounds in first words</span><span class="badge slate">7/10</span></div></div>
+<div class="t-meta">12 units marked as known. Your reviews will confirm them over the next few weeks.</div>
+<div style="margin-top:auto;display:flex;flex-direction:column;gap:8px"><div class="btn pri">Review 2 weak units · 12 min</div><div class="btn sec">Later</div></div>
+</div></div>
+
+<!-- Watch -->
+<div class="shot" id="f-watch"><p class="cap">Watch tab</p><div class="ph">
+<div class="top"><span class="t-title">Watch</span><span class="t-meta">3 h 30 m this week</span></div>
+<div class="btn pri"><i class="ti ti-plus"></i> Log watching</div>
+<div class="t-label">Recent</div>
+<div class="list">
+<div class="row"><span class="poster" style="background:var(--ink-soft);color:var(--ink-text)">WP</span><div class="grow">Word Party<div class="t-meta">S1 E4 · yesterday · 12 min</div></div><span class="badge ink">EN</span></div>
+<div class="row"><span class="poster" style="background:var(--surface-3);color:var(--text-secondary)">FO</span><div class="grow">Flavorful Origins<div class="t-meta">E2 · Saturday · 11 min</div></div><span class="badge jade">中文</span></div></div>
+<div class="card hstack" style="align-items:flex-start"><span class="ic act"><i class="ti ti-subtitles"></i></span><div><div class="t-head" style="font-size:15px">Try Chinese subtitles?</div><div class="t-meta" style="margin-top:2px">Re-watch an episode you know, with <span class="zh">中文</span> subtitles.</div></div></div>
+<div class="top" style="margin-top:2px"><span class="t-label">Suggestions</span><div class="seg" style="width:170px;font-size:12px"><span class="on">Now</span><span>Soon</span><span>Later</span></div></div>
+<div class="list">
+<div class="row"><span class="poster" style="background:var(--ink-soft);color:var(--ink-text)">WP</span><div class="grow">Word Party<div class="t-meta">Kids' animation · 12 min</div></div><i class="ti ti-chevron-right chev"></i></div>
+<div class="row"><span class="poster" style="background:var(--jade-soft);color:var(--jade-text)">MK</span><div class="grow">The Monkey King<div class="t-meta">Animated film · simple dialogue</div></div><i class="ti ti-chevron-right chev"></i></div></div>
 <div class="tabs"><div><i class="ti ti-sun"></i>Today</div><div><i class="ti ti-route"></i>Path</div><div><i class="ti ti-chart-bar"></i>Progress</div><div class="on"><i class="ti ti-device-tv"></i>Watch</div></div>
 </div></div>
-<div class="shot" id="f-log"><p class="cap">Log sheet: three taps for a repeat show</p><div class="ph">
-<div class="top"><span class="h1">Watch</span><span class="mut">This week 3 h 30 m</span></div>
+
+<!-- Log sheet -->
+<div class="shot" id="f-log"><p class="cap">Log sheet</p><div class="ph">
+<div class="top"><span class="t-title">Watch</span><span class="t-meta">3 h 30 m this week</span></div>
 <div class="backdrop"></div>
 <div class="sheet"><div class="grab"></div>
-<div class="top"><span style="font-size:17px;font-weight:500">Log watching</span><i class="ti ti-x dim"></i></div>
-<div class="field"><div><div class="mut">Show</div><div>Word Party</div></div><span class="mut">S1 E5</span></div>
-<div class="field"><div><div class="mut">Minutes</div><div>12 <span class="dim">(episode length)</span></div></div><span class="ctrls"><span class="chip">−</span><span class="chip">+</span></span></div>
-<div><div class="mut" style="margin-bottom:4px">Subtitles</div><div style="display:flex;gap:6px;flex-wrap:wrap"><span class="chip">None</span><span class="chip">Chinese</span><span class="chip">Dual</span><span class="chip on">English</span></div></div>
-<div><div class="mut" style="margin-bottom:4px">How did you watch?</div><div style="display:flex;gap:6px;flex-wrap:wrap"><span class="chip on">Straight through</span><span class="chip">Paused to look up</span><span class="chip">Half attention</span></div></div>
-<div><div class="mut" style="margin-bottom:4px">How much did you follow?</div><div style="display:flex;gap:6px"><span class="chip">1</span><span class="chip">2</span><span class="chip on">3</span><span class="chip">4</span><span class="chip">5</span></div></div>
-<div class="pri">Save</div>
-<div class="mut" style="text-align:center">Today or yesterday only</div>
+<div class="top"><span class="t-title" style="font-size:18px">Log watching</span><i class="ti ti-x muted" style="font-size:20px"></i></div>
+<div class="row" style="border:none;padding:0"><span class="poster" style="background:var(--ink-soft);color:var(--ink-text)">WP</span><div class="grow">Word Party<div class="t-meta">S1 E5 · next episode</div></div><span class="chip">Change</span></div>
+<div class="top"><span>Minutes</span><div class="hstack" style="gap:8px"><span class="chip"><i class="ti ti-minus"></i></span><span class="t-head" style="min-width:28px;text-align:center">12</span><span class="chip"><i class="ti ti-plus"></i></span></div></div>
+<div><div class="t-label" style="margin-bottom:6px">Subtitles</div><div class="seg"><span>None</span><span class="zh">中文</span><span>Dual</span><span class="on">English</span></div></div>
+<div><div class="t-label" style="margin-bottom:6px">How did you watch?</div><div class="seg"><span class="on">Straight</span><span>Pausing</span><span>Half</span></div></div>
+<div><div class="t-label" style="margin-bottom:6px">How much did you follow?</div><div class="seg"><span>A little</span><span class="on">Some</span><span>Most</span></div></div>
+<div class="btn pri">Save</div>
+<div class="t-meta" style="text-align:center">Today or yesterday only</div>
 </div></div></div>
-<div class="shot" id="f-hear"><p class="cap">Lesson step 2 · Hear it (I do), gist only</p><div class="ph">
-<div class="top"><i class="ti ti-x dim"></i><span class="mut">1.13 · 不 vs 没 · Hear it</span><span></span></div>
-<div class="steps"><div class="d"></div><div class="c"></div><div></div><div></div><div></div><div></div></div>
-<div class="cd mut">没 says it didn't happen. 不 says you don't, won't, or generally aren't.</div>
-<div class="player"><i class="ti ti-player-play"></i>Native clip · 0:42–1:05</div>
-<div class="ctrls"><span class="chip"><i class="ti ti-refresh"></i>Replay</span><span class="chip">0.75×</span><span class="chip">Subtitles off</span></div>
-<div class="lab">Just listen. Who didn't do something?</div>
-<div style="display:grid;gap:8px"><div class="sec">George</div><div class="sec">Peppa</div><div class="sec">Not sure yet</div></div>
-<div class="mut" style="text-align:center">Not scored</div>
-<div style="margin-top:auto" class="pri">Continue</div>
+
+<!-- Progress -->
+<div class="shot" id="f-progress"><p class="cap">Progress · four answers</p><div class="ph">
+<span class="t-title">Progress</span>
+<div><div class="t-label">This week</div>
+<div class="hstack" style="align-items:baseline;gap:8px"><span class="t-display">6 h 40 m</span><span class="t-meta">of 10 h</span></div>
+<div class="bar" style="margin-top:8px"><div style="width:15%;background:var(--act)"></div><div style="width:16%;background:var(--jade)"></div><div style="width:36%;background:var(--ink)"></div></div>
+<div class="legend" style="margin-top:8px;justify-content:space-between"><span><i style="background:var(--act)"></i>Lessons 1:30</span><span><i style="background:var(--jade)"></i>Cards 1:40</span><span><i style="background:var(--ink)"></i>Watch 3:30</span></div></div>
+<div><div class="top"><span class="t-label">Consistency</span><span class="t-meta">24 of 30 days</span></div>
+<div id="heat" style="display:grid;grid-template-columns:repeat(15,1fr);gap:4px;margin-top:8px"></div></div>
+<div><div class="t-label" style="margin-bottom:6px">What you know</div>
+<div style="display:grid;grid-template-columns:78px 1fr 64px;gap:10px;align-items:center;font-size:13px">
+<span>Words</span><div class="bar"><div style="width:71%;background:var(--jade)"></div></div><span class="t-meta" style="text-align:right">212/300</span>
+<span>Grammar</span><div class="bar"><div style="width:45%;background:var(--jade)"></div></div><span class="t-meta" style="text-align:right">18/40</span>
+<span>Characters</span><div class="bar"><div style="width:65%;background:var(--jade)"></div></div><span class="t-meta" style="text-align:right">160/246</span></div></div>
+<div><div class="top"><span class="t-label">Listening</span><span class="t-meta">8 h to the 50 h mark</span></div>
+<div class="t-title">42 h</div>
+<div class="bar" style="margin-top:6px"><div style="width:84%;background:var(--ink)"></div></div></div>
+<div class="tabs"><div><i class="ti ti-sun"></i>Today</div><div><i class="ti ti-route"></i>Path</div><div class="on"><i class="ti ti-chart-bar"></i>Progress</div><div><i class="ti ti-device-tv"></i>Watch</div></div>
 </div></div>
-<div class="shot" id="f-explain"><p class="cap">Lesson step 3 · Explain (≤200 words, one figure)</p><div class="ph">
-<div class="top"><i class="ti ti-x dim"></i><span class="mut">1.13 · 不 vs 没 · Explain</span><span></span></div>
-<div class="steps"><div class="d"></div><div class="d"></div><div class="c"></div><div></div><div></div><div></div></div>
-<div style="font-size:17px;font-weight:500">没 looks back. 不 covers habits and what's ahead.</div>
-<svg viewBox="0 0 312 86" width="100%" aria-label="Timeline">
-<line x1="12" y1="44" x2="300" y2="44" stroke="var(--border-stronger)" stroke-width="1"/>
-<line x1="156" y1="30" x2="156" y2="58" stroke="var(--text-secondary)" stroke-width="1"/>
-<text x="156" y="76" text-anchor="middle" font-size="11" fill="var(--text-secondary)">now</text>
-<text x="70" y="22" text-anchor="middle" font-size="18" fill="var(--text-accent)">没</text>
-<text x="70" y="64" text-anchor="middle" font-size="11" fill="var(--text-secondary)">didn't happen</text>
-<text x="240" y="22" text-anchor="middle" font-size="18" fill="var(--b-watch)">不</text>
-<text x="240" y="64" text-anchor="middle" font-size="11" fill="var(--text-secondary)">doesn't, won't</text>
-</svg>
-<div>Both translate as "not", which is the trap: English gives no clue. The question is <b style="font-weight:500">when</b>. If the action would have been in the past, Chinese uses 没. For habits, plans and refusals it uses 不.</div>
-<div class="cd"><div class="bad">✗ 我昨天不去。</div><div class="ok">✓ 我昨天没去。 <span class="mut">I didn't go yesterday.</span></div></div>
-<div><div class="li"><span><span class="zh">他没去。</span> <span class="py">tā méi qù</span></span><i class="ti ti-volume"></i></div>
-<div class="li"><span><span class="zh">他不去。</span> <span class="py">tā bú qù</span></span><i class="ti ti-volume"></i></div></div>
-<div class="li mut" style="border:none">Go deeper: why is it 没有, never 不有? <i class="ti ti-chevron-right"></i></div>
-<div style="margin-top:auto" class="pri">Continue</div>
-</div></div>
-<div class="shot" id="f-wedo"><p class="cap">Lesson step 4 · We do, after a miss</p><div class="ph">
-<div class="top"><i class="ti ti-x dim"></i><span class="mut">1.13 · 不 vs 没 · We do 4 of 8</span><span></span></div>
-<div class="steps"><div class="d"></div><div class="d"></div><div class="d"></div><div class="c"></div><div></div><div></div></div>
-<div class="player" style="aspect-ratio:auto;height:120px"><i class="ti ti-volume"></i>Speaker 3 of 4</div>
-<div class="ctrls"><span class="chip"><i class="ti ti-refresh"></i>Replay</span><span class="chip">Show text</span></div>
-<div style="text-align:center;font-size:16px">Did it happen?</div>
-<div class="banner" style="background:var(--bg-danger)"><div class="bad" style="font-weight:500">That was 没: it didn't happen</div><div class="mut" style="margin:4px 0 8px">Hear your pick, then the answer, in the same voice.</div><div style="display:flex;gap:6px"><span class="chip"><i class="ti ti-volume"></i>他不去</span><span class="chip on"><i class="ti ti-volume"></i>他没去</span></div><div class="mut" style="margin-top:6px">This one comes back in a few items, in a new voice.</div></div>
-<div style="margin-top:auto;display:grid;grid-template-columns:1fr 1fr;gap:8px">
-<div class="ans" style="border:1.5px solid var(--border-success)"><b>没</b><span class="mut">didn't</span></div>
-<div class="ans" style="opacity:.55"><b>不</b><span class="mut">doesn't, won't</span></div></div>
-<div class="pri">Next</div>
-</div></div>
-<div class="shot" id="f-clip"><p class="cap">Clip lesson · pass 2 with line stepper and tap-to-gloss</p><div class="ph">
-<div class="top"><i class="ti ti-x dim"></i><span class="mut">1.7 · Where's the cat? · We do</span><span></span></div>
-<div class="steps"><div class="d"></div><div class="d"></div><div class="d"></div><div class="c"></div><div></div><div></div></div>
-<div class="player"><i class="ti ti-player-play"></i>Mandarin Click story · pass 2 of 3</div>
-<div class="mut">Pass 2: Chinese subtitles and pinyin. Tap a word.</div>
-<div>
-<div class="li" style="opacity:.5"><div><div class="zh">猫在哪儿？</div><div class="py">māo zài nǎr</div></div></div>
-<div class="li" style="background:var(--bg-accent);border-radius:8px;padding:9px 8px"><div><div class="zh">猫在<u style="text-decoration-color:var(--border-accent)">桌子</u>上。</div><div class="py">māo zài zhuōzi shang</div></div><i class="ti ti-volume" style="color:var(--text-accent)"></i></div>
-<div class="li" style="opacity:.5"><div><div class="zh">桌子上有一本书。</div><div class="py">zhuōzi shang yǒu yì běn shū</div></div></div></div>
-<div class="cd"><div class="top"><span><span class="zh">桌子</span> <span class="py">zhuōzi</span></span><span class="mut">HSK 1</span></div><div>table, desk</div><div class="mut" style="margin-top:4px">桌 + 子 (noun suffix) · already in your cards</div></div>
-<div style="margin-top:auto" class="ctrls"><span class="chip"><i class="ti ti-player-skip-back"></i>Line</span><span class="chip"><i class="ti ti-repeat"></i>Loop line</span><span class="chip"><i class="ti ti-player-skip-forward"></i>Line</span></div>
-<div class="pri">Pass 3: no subtitles</div>
-</div></div>
-<div class="shot" id="f-end"><p class="cap">Lesson end · You do result and cards</p><div class="ph">
-<div class="top"><i class="ti ti-x dim"></i><span class="mut">1.13 · 不 vs 没 · Done</span><span></span></div>
-<div class="steps"><div class="d"></div><div class="d"></div><div class="d"></div><div class="d"></div><div class="d"></div><div class="d"></div></div>
-<div style="text-align:center;padding:8px 0"><div style="font-size:30px;font-weight:500">4 of 5</div><div class="mut">New sentences, two speakers you hadn't heard</div></div>
-<div><div class="li"><span><span class="ok">✓</span> 我今天不喝咖啡。</span><i class="ti ti-volume dim"></i></div>
-<div class="li"><span><span class="ok">✓</span> 她昨天没来。</span><i class="ti ti-volume dim"></i></div>
-<div class="li"><span><span class="bad">✗</span> 他还没吃饭。 <span class="mut">picked 不</span></span><i class="ti ti-volume dim"></i></div>
-<div class="li"><span><span class="ok">✓</span> 我不会说。</span><i class="ti ti-volume dim"></i></div>
-<div class="li"><span><span class="ok">✓</span> 你没看吗？</span><i class="ti ti-volume dim"></i></div></div>
-<div class="lab">Added to your cards</div>
-<div class="cd"><div>2 sentence cards with native audio</div><div class="mut">他不去 / 他没去 · the 不/没 pair now mixes into later reviews</div></div>
-<div style="margin-top:auto" class="pri">Finish lesson</div>
-<div class="sec">Back to unit 1.13</div>
-</div></div>
-<div class="shot" id="f-review"><p class="cap">Review · audio first, capped batch</p><div class="ph">
-<div class="top"><i class="ti ti-x dim"></i><span class="mut">Reviews · 12 of 40 · ~6 min left</span><span></span></div>
-<div class="bar" style="height:4px"><div style="width:30%;background:var(--b-cards)"></div></div>
-<div class="cd" style="text-align:center;padding:30px 10px"><i class="ti ti-volume" style="font-size:28px"></i><div class="mut" style="margin-top:6px">Tap to replay</div></div>
-<div style="text-align:center;padding-top:6px"><div style="font-size:24px">他昨天没去。</div><div class="py">tā zuótiān méi qù</div><div style="margin-top:6px">He didn't go yesterday.</div></div>
-<div class="mut" style="text-align:center">昨天 yesterday · 没 didn't · 去 go</div>
-<div style="margin-top:auto;display:grid;grid-template-columns:1fr 1fr;gap:8px">
-<div class="ans"><b style="font-size:17px" class="bad">Again</b><span class="mut">10 min</span></div>
-<div class="ans" style="border:1.5px solid var(--border-accent)"><b style="font-size:17px;color:var(--text-accent)">Good</b><span class="mut">6 days</span></div></div>
-</div></div>
-<div class="shot" id="f-summary"><p class="cap">Session summary · end of a 15-minute session</p><div class="ph">
-<div style="text-align:center;padding:24px 0 8px"><div class="ok" style="font-size:36px"><i class="ti ti-circle-check"></i></div><div style="font-size:20px;font-weight:500">Floor met</div><div class="mut">16 min tonight · 25 of the last 30 days</div></div>
-<div><div class="li"><span>Reviews</span><span class="mut">40 cards · 7 min</span></div>
-<div class="li"><span>1.13 lesson 2 · 不 vs 没</span><span class="mut">4 of 5 · 9 min</span></div>
-<div class="li"><span>Tomorrow</span><span class="mut">~5 min of reviews</span></div></div>
-<div class="lab">Up next in this unit</div>
-<div class="cd"><div>吧 softens a suggestion</div><div class="mut">Clip lesson · 6 min</div></div>
-<div style="margin-top:auto" class="pri">Done for tonight</div>
-<div class="sec">Keep going · 15 min</div>
-</div></div>
-<div class="shot" id="f-item"><p class="cap">Item detail · tapping any word or node</p><div class="ph">
-<div class="top"><i class="ti ti-arrow-left dim"></i><span class="mut">Grammar point</span><span></span></div>
-<div><div style="font-size:30px">没(有) + verb</div><div class="mut">méi(yǒu) · it didn't happen · A1</div></div>
-<div class="banner" style="background:var(--bg-success)"><span class="ok" style="font-weight:500">Familiar</span> <span class="mut">· next check in 4 days</span></div>
-<div class="lab">Heard in</div>
-<div><div class="li"><span><span class="zh">他还没吃饭。</span> <span class="mut">Lazy Chinese</span></span><i class="ti ti-volume dim"></i></div>
-<div class="li"><span><span class="zh">我昨天没去。</span> <span class="mut">Common Voice</span></span><i class="ti ti-volume dim"></i></div></div>
-<div class="lab">Taught in</div>
-<div><div class="li"><span>1.13 lesson 1 · 没 + verb</span><span class="ok">done</span></div>
-<div class="li"><span>1.13 lesson 2 · 不 vs 没</span><span style="color:var(--text-accent)">in progress</span></div></div>
-<div class="lab">Evidence</div>
-<div class="mut">Lesson items 14 of 16 · 6 reviews · last miss 3 days ago</div>
-<div class="lab">Builds on · leads to</div>
-<div style="display:flex;gap:6px;flex-wrap:wrap"><span class="chip">有 · have</span><span class="chip">不 · not</span><span class="chip">了 vs 过 (S2)</span></div>
-<div style="margin-top:auto" class="pri">Practice 5 min</div>
-</div></div>
-<div class="shot" id="f-testout"><p class="cap">Test-out result · S0 checkpoint part 3</p><div class="ph">
-<div class="top"><i class="ti ti-x dim"></i><span class="mut">S0 checkpoint · part 3 of 3</span><span></span></div>
-<div style="text-align:center;padding:10px 0"><div style="font-size:32px;font-weight:500">88%</div><div class="mut">Tone changes and words · new voices · pass is 85%</div></div>
-<div><div class="li"><span><span class="ok">✓</span> 0.9a 一 and 不 tone changes</span><span class="mut">10/10</span></div>
-<div class="li"><span><span class="ok">✓</span> 0.10 Neutral tone, erhua</span><span class="mut">9/10</span></div>
-<div class="li"><span><span class="ok">✓</span> 0.10a Tones in running speech</span><span class="mut">9/10</span></div>
-<div class="li"><span><span class="warn">!</span> 0.9 Third-tone sandhi</span><span class="mut">6/10</span></div>
-<div class="li"><span><span class="warn">!</span> 0.11 Sounds in first words</span><span class="mut">7/10</span></div></div>
-<div class="mut">12 units are now marked tested out. They count as known for prerequisites, and their mastery stays at Familiar until it shows up in your reviews.</div>
-<div style="margin-top:auto" class="pri">Start 2 lessons · ~12 min</div>
-<div class="sec">Later</div>
-</div></div>
+
 </div></div>
 <script>
-const N={s0:['S0 Sounds · tested out',138,20,'done',150],'1.1':['1.1 Greetings',138,72,'done'],'1.2':['1.2 Questions',46,124,'done'],'1.3':['1.3 Describing',230,124,'done'],'1.4':['1.4 Numbers',46,176,'done'],'1.6':['1.6 Asking how',138,176,'ready'],'1.5':['1.5 Family',230,176,'done'],'1.4a':['1.4a This, that',46,228,'done'],'1.8':['1.8 Dates',138,228,'done'],'1.7':['1.7 Where',230,280,'cur'],'1.9':['1.9 Word order',138,332,'later'],'1.10':['1.10 Wanting',46,384,'later'],'1.12':['1.12 Also, all',230,384,'later'],'1.10a':['1.10a Can',46,436,'later'],'1.11':['1.11 Shopping',138,436,'later'],'1.13':["1.13 Didn't",230,436,'later']};
-const E=[['s0','1.1'],['1.1','1.2'],['1.1','1.3'],['1.2','1.4'],['1.2','1.6'],['1.3','1.6'],['1.3','1.5'],['1.4','1.4a'],['1.4','1.8'],['1.4a','1.7',1],['1.5','1.7',1],['1.7','1.9'],['1.8','1.9'],['1.9','1.10'],['1.9','1.12'],['1.10','1.10a'],['1.10','1.11'],['1.10','1.13']];
-const S={done:['var(--bg-success)','var(--border-success)','var(--text-success)',''],cur:['var(--bg-accent)','var(--border-accent)','var(--text-accent)',''],ready:['var(--surface-2)','var(--border-stronger)','var(--text-primary)','4 3'],later:['var(--surface-1)','var(--border)','var(--text-muted)','']};
-const H=16;let h='';for(const k in N)N[k][2]=Math.round(20+(N[k][2]-20)*0.96);
-for(const [a,b,hi] of E){const A=N[a],B=N[b],y1=A[2]+H,y2=B[2]-H,m=(y1+y2)/2;h+=`<path d="M${A[1]} ${y1} C${A[1]} ${m},${B[1]} ${m},${B[1]} ${y2}" fill="none" stroke="${hi?'var(--text-accent)':'var(--border-strong)'}" stroke-width="${hi?1.5:1}"/>`}
-for(const k in N){const [t,x,y,s,w=84]=N[k],c=S[s];h+=`<rect x="${x-w/2}" y="${y-H}" width="${w}" height="${2*H}" rx="8" fill="${c[0]}" stroke="${c[1]}" stroke-width="${s==='cur'?1.5:.5}" ${c[3]?`stroke-dasharray="${c[3]}"`:''}/><text x="${x}" y="${y}" text-anchor="middle" dominant-baseline="central" font-size="11" fill="${c[2]}" ${s==='cur'?'font-weight="500"':''}>${t}</text>`}
-document.getElementById('graph').innerHTML=h;
+{
+const N={s0:['Sounds · already known',150,18,'done',170],'1.1':['Greetings',150,70,'done'],'1.2':['Questions',52,122,'done'],'1.3':['Describing',248,122,'done'],'1.4':['Numbers',52,174,'done'],'1.6':['Asking how',150,174,'ready'],'1.5':['Family',248,174,'done'],'1.4a':['This, that',52,226,'done'],'1.8':['Dates',150,226,'done'],'1.7':['Where things are',238,292,'cur'],'1.9':['Word order',150,344,'later'],'1.10':['Wanting',52,396,'later'],'1.12':['Also, all',248,396,'later'],'1.11':['Shopping',150,396,'later']};
+const E=[['s0','1.1'],['1.1','1.2'],['1.1','1.3'],['1.2','1.4'],['1.2','1.6'],['1.3','1.6'],['1.3','1.5'],['1.4','1.4a'],['1.4','1.8'],['1.4a','1.7',1],['1.5','1.7',1],['1.7','1.9'],['1.8','1.9'],['1.9','1.10'],['1.9','1.12'],['1.9','1.11']];
+const S={done:['var(--jade-soft)','var(--jade-border)','var(--jade-text)',''],cur:['var(--act)','var(--act)','var(--on-act)',''],ready:['var(--surface-2)','var(--border-stronger)','var(--text-primary)','4 3'],later:['var(--surface-1)','var(--border)','var(--text-muted)','']};
+const h=17;let out='';
+for(const [a,b,hi] of E){const A=N[a],B=N[b],y1=A[2]+h,y2=B[2]-h,m=(y1+y2)/2;out+=`<path d="M${A[1]} ${y1} C${A[1]} ${m},${B[1]} ${m},${B[1]} ${y2}" fill="none" stroke="${hi?'var(--act)':'var(--border-strong)'}" stroke-width="${hi?2:1.2}"/>`}
+for(const k in N){const [t,x,y,s,w=92]=N[k],c=S[s],ww=s==='cur'?116:w,one=k==='s0';
+  out+=`<rect x="${x-ww/2}" y="${y-h}" width="${ww}" height="${2*h}" rx="10" fill="${c[0]}" stroke="${c[1]}" stroke-width="1" ${c[3]?`stroke-dasharray="${c[3]}"`:''}/>`;
+  if(one)out+=`<text x="${x}" y="${y}" text-anchor="middle" dominant-baseline="central" font-family="Lexend" font-size="11" fill="${c[2]}">${t}</text>`;
+  else out+=`<text x="${x}" y="${y-6}" text-anchor="middle" dominant-baseline="central" font-family="Lexend" font-size="9" fill="${c[2]}" opacity=".7">${k}</text><text x="${x}" y="${y+6}" text-anchor="middle" dominant-baseline="central" font-family="Lexend" font-size="11" font-weight="${s==='cur'?500:400}" fill="${c[2]}">${t}</text>`}
+document.getElementById('graph').innerHTML=out;
 const heat=document.getElementById('heat'),miss=[3,9,10,17,22,26];
-for(let i=0;i<30;i++){const d=document.createElement('div');d.style.cssText=`aspect-ratio:1;border-radius:3px;background:${miss.includes(i)?'var(--border)':'var(--b-cards)'}`;heat.appendChild(d)}
+for(let i=0;i<30;i++){const d=document.createElement('div');d.style.cssText=`aspect-ratio:1;border-radius:4px;background:${miss.includes(i)?'var(--surface-3)':'var(--jade)'}`;heat.appendChild(d)}
+}
 </script>
-<script>{
-const PH_W = 340, CAP = 30, PH_H = 740;
-const L = {
-  today: [60, 140], review: [540, 140], hear: [1020, 140], explain: [1500, 140], wedo: [1980, 140], end: [2460, 140], summary: [2940, 140],
-  path: [60, 1300], clip: [540, 1300], item: [1020, 1300], testout: [60, 2260],
-  watch: [1660, 1300], log: [2140, 1300], progress: [2760, 1300],
-};
-const SECTIONS = [
-  { x: 0, y: 0, w: 3340, h: 980, t: 'Bedtime session', s: 'Today → capped reviews → one lesson (six steps) → summary' },
-  { x: 0, y: 1160, w: 1420, h: 1960, t: 'Curriculum', s: 'Path graph, clip lesson, item detail, test-out' },
-  { x: 1600, y: 1160, w: 1560, h: 980, t: 'Watch and progress', s: 'Immersion log and the four progress answers' },
+<script>
+{
+const PH_W=340,CAP=31,PH_H=740;
+const L={today:[60,150],review:[540,150],hear:[1020,150],explain:[1500,150],wedo:[1980,150],end:[2460,150],summary:[2940,150],
+  path:[60,1320],clip:[540,1320],item:[1020,1320],testout:[60,2280],watch:[1660,1320],log:[2140,1320],progress:[2760,1320]};
+const SECTIONS=[
+  {x:0,y:0,w:3340,h:1000,t:'Bedtime session',s:'Today → capped reviews → one lesson in six steps → summary'},
+  {x:0,y:1170,w:1420,h:1980,t:'Curriculum',s:'Path graph, clip lesson, item detail, test-out'},
+  {x:1600,y:1170,w:1560,h:1000,t:'Watch and progress',s:'Immersion log and the four progress answers'},
+  {x:3420,y:0,w:900,h:1000,t:'Style',s:'Type, color and icons used on every screen'},
 ];
-const STICKIES = [
-  [3420, 120, '<b>Visual hierarchy rules</b><ul><li>One filled button per screen</li><li>Three text levels: title, body, muted meta</li><li>Colour = state: green done, blue current, dashed ready, grey later</li><li>Cards only for tappable things</li></ul>'],
-  [3420, 460, '<b>Bedtime path</b>Two taps to start. Reviews show as minutes, never a due count. Stop anytime; the Continue card resumes mid-step.'],
-  [3420, 720, '<b>Input first</b>Every lesson opens on a native clip. Explanations ≤200 words with one figure. Output stays at level 0–1 in Phases 0–2.'],
-  [480, 2300, '<b>Test-out</b>Tested-out units count as met prerequisites. Mastery is capped at Familiar until reviews confirm it.'],
-  [1060, 2180, '<b>Item detail</b>Reached by tapping any word, node or card. Lessons point at items; progress lives on items (doc 08).'],
-  [1660, 2200, '<b>Watch log</b>Today or yesterday only. Minutes pre-filled from episode length. Subtitle mode is stored so the app can suggest when to switch to Chinese subs.'],
+const STICKIES=[
+  [3420,1170,'<b>Visual hierarchy</b><ul><li>One filled cinnabar button per screen</li><li>Title, body, meta: three text levels</li><li>Color means state: cinnabar = tap or current, jade = correct or done, ink = watching, slate = take another look</li><li>Accent only on neutral surfaces, never on a tinted card</li><li>Cards only for tappable things</li></ul>'],
+  [3740,1170,'<b>Bedtime path</b>Two taps to start. Reviews show as minutes, never a due count. Stop anytime; the next session resumes mid-step.'],
+  [3420,1500,'<b>Input first</b>Every lesson opens on a native clip. Explanations use one figure and a few lines. Output stays at level 0–1 through Phase 2.'],
+  [3740,1500,'<b>No wrong color</b>A miss is a normal step, so its feedback is a neutral card that replays your pick and the answer. Misses get the cool slate neutral, never a warning color, so cinnabar can only mean tap or current.'],
+  [480,2320,'<b>Test-out</b>Tested-out units count as met prerequisites. Mastery is capped at Familiar until reviews confirm it.'],
+  [1060,2200,'<b>Item detail</b>Reached from any word, node or card. Progress lives on items, so lessons can change freely (doc 08).'],
+  [1660,2240,'<b>Watch log</b>Today or yesterday only. Minutes come from the episode length. Subtitle mode drives the nudge to switch to Chinese subtitles.'],
 ];
-const ARROWS = [
-  ['today', 'review', 'Start 15 min'], ['review', 'hear', 'Reviews done'], ['hear', 'explain', 'Continue'], ['explain', 'wedo', 'Continue'],
-  ['wedo', 'end', 'After 8 items'], ['end', 'summary', 'Finish lesson'],
-  ['path', 'clip', 'Resume lesson 2'], ['clip', 'item', 'Open a word'], ['path', 'testout', 'I know this', 'down'],
-  ['watch', 'log', 'Log watching'],
-];
-const W = 3740, H = 3200;
-
-const canvas = document.getElementById('canvas');
-canvas.style.width = W + 'px'; canvas.style.height = H + 'px';
-const frag = document.createDocumentFragment();
-for (const s of SECTIONS) {
-  const d = document.createElement('div');
-  d.className = 'section';
-  Object.assign(d.style, { left: s.x + 'px', top: s.y + 'px', width: s.w + 'px', height: s.h + 'px' });
-  d.innerHTML = `<div class="stitle">${s.t}</div><div class="ssub">${s.s}</div>`;
-  frag.appendChild(d);
-}
-canvas.insertBefore(frag, canvas.firstChild);
-for (const [k, [x, y]] of Object.entries(L)) {
-  const el = document.getElementById('f-' + k);
-  el.style.left = x + 'px'; el.style.top = y + 'px';
-}
-for (const [x, y, html] of STICKIES) {
-  const d = document.createElement('div');
-  d.className = 'sticky';
-  Object.assign(d.style, { left: x + 'px', top: y + 'px' });
-  d.innerHTML = html;
-  canvas.appendChild(d);
-}
-
-const svg = document.getElementById('arrows');
-svg.setAttribute('width', W); svg.setAttribute('height', H);
-let paths = `<defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="var(--border-accent)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>`;
-const labels = document.getElementById('labels');
-for (const [a, b, text, dir] of ARROWS) {
-  const [ax, ay] = L[a], [bx, by] = L[b];
-  let x1, y1, x2, y2, d;
-  if (dir === 'down') {
-    x1 = ax + PH_W / 2; y1 = ay + CAP + PH_H + 8; x2 = bx + PH_W / 2; y2 = by - 6;
-    d = `M${x1} ${y1} L${x2} ${y2}`;
-  } else {
-    x1 = ax + PH_W + 8; y1 = ay + CAP + PH_H / 2; x2 = bx - 8; y2 = by + CAP + PH_H / 2;
-    const c = (x2 - x1) / 2;
-    d = `M${x1} ${y1} C${x1 + c} ${y1},${x2 - c} ${y2},${x2} ${y2}`;
-  }
-  paths += `<path d="${d}" fill="none" stroke="var(--border-accent)" stroke-width="2" marker-end="url(#ah)"/>`;
-  const l = document.createElement('div');
-  l.className = 'alabel';
-  l.style.left = (x1 + x2) / 2 + 'px'; l.style.top = (y1 + y2) / 2 - (dir === 'down' ? 0 : 22) + 'px';
-  l.textContent = text;
-  labels.appendChild(l);
-}
-svg.innerHTML = paths;
-
-const vp = document.getElementById('viewport');
-let s = 1, tx = 0, ty = 0;
-function apply() {
-  canvas.style.transform = `translate(${tx}px,${ty}px) scale(${s})`;
-  vp.style.backgroundSize = `${24 * s}px ${24 * s}px`;
-  vp.style.backgroundPosition = `${tx}px ${ty}px`;
-  document.getElementById('pct').textContent = Math.round(s * 100) + '%';
-}
-function zoomAt(f, cx, cy) {
-  const ns = Math.min(2, Math.max(0.08, s * f));
-  tx = cx - (cx - tx) * (ns / s); ty = cy - (cy - ty) * (ns / s); s = ns; apply();
-}
-function fit() {
-  const m = 40, top = 64;
-  s = Math.min((innerWidth - 2 * m) / W, (innerHeight - top - m) / H);
-  tx = (innerWidth - W * s) / 2; ty = top + (innerHeight - top - m - H * s) / 2; apply();
-}
-vp.addEventListener('wheel', e => {
-  e.preventDefault();
-  if (e.ctrlKey || e.metaKey || Math.abs(e.deltaY) > 50 && !e.deltaX) zoomAt(Math.exp(-e.deltaY * (e.ctrlKey ? 0.01 : 0.0015)), e.clientX, e.clientY);
-  else { tx -= e.deltaX; ty -= e.deltaY; apply(); }
-}, { passive: false });
-const pts = new Map(); let pinch = null;
-vp.addEventListener('pointerdown', e => { vp.setPointerCapture(e.pointerId); pts.set(e.pointerId, [e.clientX, e.clientY]); vp.classList.add('drag'); });
-vp.addEventListener('pointermove', e => {
-  if (!pts.has(e.pointerId)) return;
-  const prev = pts.get(e.pointerId); pts.set(e.pointerId, [e.clientX, e.clientY]);
-  if (pts.size === 2) {
-    const [p1, p2] = [...pts.values()], dist = Math.hypot(p1[0] - p2[0], p1[1] - p2[1]);
-    if (pinch) zoomAt(dist / pinch, (p1[0] + p2[0]) / 2, (p1[1] + p2[1]) / 2);
-    pinch = dist;
-  } else { tx += e.clientX - prev[0]; ty += e.clientY - prev[1]; apply(); }
-});
-const up = e => { pts.delete(e.pointerId); pinch = null; if (!pts.size) vp.classList.remove('drag'); };
-vp.addEventListener('pointerup', up); vp.addEventListener('pointercancel', up);
-document.getElementById('zin').onclick = () => zoomAt(1.25, innerWidth / 2, innerHeight / 2);
-document.getElementById('zout').onclick = () => zoomAt(0.8, innerWidth / 2, innerHeight / 2);
-document.getElementById('fit').onclick = fit;
-addEventListener('keydown', e => {
-  if (e.key === 'f' || e.key === 'F' || e.key === '0') fit();
-  if (e.key === '+' || e.key === '=') zoomAt(1.25, innerWidth / 2, innerHeight / 2);
-  if (e.key === '-') zoomAt(0.8, innerWidth / 2, innerHeight / 2);
-});
-
-function setTheme(t) {
-  document.documentElement.dataset.theme = t;
-  document.getElementById('themeicon').className = 'ti ' + (t === 'dark' ? 'ti-sun' : 'ti-moon');
-  document.getElementById('themelabel').textContent = t === 'dark' ? 'Light' : 'Dark';
-  try { localStorage.setItem('ui-board-theme', t); } catch (e) {}
-}
-let saved = null;
-try { saved = localStorage.getItem('ui-board-theme'); } catch (e) {}
-setTheme(saved === 'light' ? 'light' : 'dark');
-document.getElementById('theme').onclick = () => setTheme(document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark');
-fit();
-addEventListener('resize', fit);
+const ARROWS=[['today','review','Start 15 min'],['review','hear','Reviews done'],['hear','explain','Continue'],['explain','wedo','Continue'],['wedo','end','After 8 items'],['end','summary','Finish lesson'],['path','clip','Resume lesson 2'],['clip','item','Open a word'],['path','testout','I know this','down'],['watch','log','Log watching']];
+const W=4400,H=3240;
+const canvas=document.getElementById('canvas');
+canvas.style.width=W+'px';canvas.style.height=H+'px';
+const frag=document.createDocumentFragment();
+for(const s of SECTIONS){const d=document.createElement('div');d.className='section';Object.assign(d.style,{left:s.x+'px',top:s.y+'px',width:s.w+'px',height:s.h+'px'});d.innerHTML=`<div class="stitle">${s.t}</div><div class="ssub">${s.s}</div>`;frag.appendChild(d)}
+canvas.insertBefore(frag,canvas.firstChild);
+for(const [k,[x,y]] of Object.entries(L)){const el=document.getElementById('f-'+k);el.style.left=x+'px';el.style.top=y+'px'}
+for(const [x,y,html] of STICKIES){const d=document.createElement('div');d.className='sticky';Object.assign(d.style,{left:x+'px',top:y+'px'});d.innerHTML=html;canvas.appendChild(d)}
+const svg=document.getElementById('arrows');svg.setAttribute('width',W);svg.setAttribute('height',H);
+let paths='<defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="var(--act)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>';
+const labels=document.getElementById('labels');
+for(const [a,b,text,dir] of ARROWS){const [ax,ay]=L[a],[bx,by]=L[b];let x1,y1,x2,y2,d;
+  if(dir==='down'){x1=ax+PH_W/2;y1=ay+CAP+PH_H+8;x2=bx+PH_W/2;y2=by-6;d=`M${x1} ${y1} L${x2} ${y2}`}
+  else{x1=ax+PH_W+8;y1=ay+CAP+PH_H/2;x2=bx-8;y2=by+CAP+PH_H/2;const c=(x2-x1)/2;d=`M${x1} ${y1} C${x1+c} ${y1},${x2-c} ${y2},${x2} ${y2}`}
+  paths+=`<path d="${d}" fill="none" stroke="var(--act)" stroke-width="2" stroke-opacity=".7" marker-end="url(#ah)"/>`;
+  const l=document.createElement('div');l.className='alabel';l.style.left=(x1+x2)/2+'px';l.style.top=(y1+y2)/2-(dir==='down'?0:24)+'px';l.textContent=text;labels.appendChild(l)}
+svg.innerHTML=paths;
+const vp=document.getElementById('viewport');let s=1,tx=0,ty=0;
+function apply(){canvas.style.transform=`translate(${tx}px,${ty}px) scale(${s})`;vp.style.backgroundSize=`${24*s}px ${24*s}px`;vp.style.backgroundPosition=`${tx}px ${ty}px`;document.getElementById('pct').textContent=Math.round(s*100)+'%'}
+function zoomAt(f,cx,cy){const ns=Math.min(2,Math.max(0.08,s*f));tx=cx-(cx-tx)*(ns/s);ty=cy-(cy-ty)*(ns/s);s=ns;apply()}
+function fit(){const m=40,top=64;s=Math.min((innerWidth-2*m)/W,(innerHeight-top-m)/H);tx=(innerWidth-W*s)/2;ty=top+(innerHeight-top-m-H*s)/2;apply()}
+vp.addEventListener('wheel',e=>{e.preventDefault();if(e.ctrlKey||e.metaKey||Math.abs(e.deltaY)>50&&!e.deltaX)zoomAt(Math.exp(-e.deltaY*(e.ctrlKey?0.01:0.0015)),e.clientX,e.clientY);else{tx-=e.deltaX;ty-=e.deltaY;apply()}},{passive:false});
+const pts=new Map();let pinch=null;
+vp.addEventListener('pointerdown',e=>{vp.setPointerCapture(e.pointerId);pts.set(e.pointerId,[e.clientX,e.clientY]);vp.classList.add('drag')});
+vp.addEventListener('pointermove',e=>{if(!pts.has(e.pointerId))return;const prev=pts.get(e.pointerId);pts.set(e.pointerId,[e.clientX,e.clientY]);
+  if(pts.size===2){const [p1,p2]=[...pts.values()],dist=Math.hypot(p1[0]-p2[0],p1[1]-p2[1]);if(pinch)zoomAt(dist/pinch,(p1[0]+p2[0])/2,(p1[1]+p2[1])/2);pinch=dist}
+  else{tx+=e.clientX-prev[0];ty+=e.clientY-prev[1];apply()}});
+const up=e=>{pts.delete(e.pointerId);pinch=null;if(!pts.size)vp.classList.remove('drag')};
+vp.addEventListener('pointerup',up);vp.addEventListener('pointercancel',up);
+document.getElementById('zin').onclick=()=>zoomAt(1.25,innerWidth/2,innerHeight/2);
+document.getElementById('zout').onclick=()=>zoomAt(0.8,innerWidth/2,innerHeight/2);
+document.getElementById('fit').onclick=fit;
+addEventListener('keydown',e=>{if(e.key==='f'||e.key==='F'||e.key==='0')fit();if(e.key==='+'||e.key==='=')zoomAt(1.25,innerWidth/2,innerHeight/2);if(e.key==='-')zoomAt(0.8,innerWidth/2,innerHeight/2)});
+function setTheme(t){document.documentElement.dataset.theme=t;document.getElementById('themeicon').className='ti '+(t==='dark'?'ti-sun':'ti-moon');document.getElementById('themelabel').textContent=t==='dark'?'Light':'Dark';try{localStorage.setItem('ui-board-theme',t)}catch(e){}}
+let saved=null;try{saved=localStorage.getItem('ui-board-theme')}catch(e){}
+setTheme(saved==='light'?'light':'dark');
+document.getElementById('theme').onclick=()=>setTheme(document.documentElement.dataset.theme==='dark'?'light':'dark');
+fit();addEventListener('resize',fit);
 }
 </script>
 </body>

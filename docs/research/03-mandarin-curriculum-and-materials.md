@@ -26,7 +26,7 @@ _Researched 2026-11-02. Question: what order should a Refold-style beginner lear
 - **The only rehostable graded reader with human narration found is Global Storybooks Mandarin** (40 levelled stories, CC BY) [22][23]. Everything else is link-only.
 - **Licensing red flag: Tatoeba's Mandarin sentence text can be reused, but most of its Mandarin audio can't.** The text is CC BY, but the largest Mandarin recorders chose no license [25][26]. Also gone or paywalled: slow-chinese.com (parked domain), Shtooka.net (redirects elsewhere), Forvo's CC license (dropped in 2019), Mandarin Corner and Melnyks transcripts, and Refold's own Mandarin 1K deck [16][17][19][31][54].
 - **App data is all free:** CC-CEDICT (CC BY-SA 4.0, 125k entries), Hanzi Writer (MIT, with Arphic data), Make Me a Hanzi (LGPL / Arphic), `pinyin-pro` (MIT), and `Intl.Segmenter` for segmentation in the browser [34][37][38][41][43].
-- **Netflix immersion (outside the app):** start with animation and documentaries (*Word Party*, *The Monkey King*, *Flavorful Origins*), then youth romances (*Take My Brother Away*, *A Love So Beautiful*, *Go Go Squid!*), then *Nothing But Thirty*, *Day and Night*, *The Untamed*. Catalogues vary by region [55][56][57][58].
+- **Netflix immersion (outside the app):** start with animation and documentaries (*Word Party*, *The Monkey King*, *Flavorful Origins*), then youth romances (*Take My Brother Away*, *A Love So Beautiful*, *Go Go Squid!*), then *Nothing But Thirty*, *Day and Night*, *The Untamed*. Catalogs vary by region [55][56][57][58].
 - **Mandarin audio with English subtitles helps beginners follow the story, but it does little for hearing the sounds.** Research finds that native-language subtitles boost content comprehension at low levels. Target-language subtitles beat them for learning words and adapting to the speech, and in one study native subtitles actually *hurt* perceptual learning [60][61][62]. Keep English-subtitle Netflix as enjoyable "time in the language". Bridge with dual subtitles (Language Reactor, desktop Chrome only), Chinese-only subtitles on kids' shows, and re-watches. Switch a show to Chinese subtitles once a re-watch with them reaches about 60–80% comprehension (§2.7).
 
 ## Findings
@@ -166,7 +166,7 @@ Grammar names are Chinese Grammar Wiki A1/A2 titles [28] (verified list). Pickin
 | 0.9 Third-tone sandhi | Two 3rds in a row: the first rises (你好 sounds like *ní hǎo*); chains of three or more 3rds group by word (我也很好) | 0.8 | AC (你好 很好 可以); CV (sentences with 3rd-tone chains); YT:Lazy Chinese greeting clip |
 | 0.9a 一 and 不 | 不 becomes *bú* before a 4th (不是, 不对); 一 becomes *yí* before a 4th and *yì* before 1/2/3, but stays *yī* in counting and ordinals (一个, 一起, 第一) | 0.8 | AC (不是 一个) |
 | 0.10 Neutral tone and erhua | A neutral syllable takes its pitch from the tone before it (the 4 "tone + neutral" pairs: 爸爸, 你们, 吗); some words differ only by a neutral tone (东西 *dōngxī* "east-west" vs *dōngxi* "thing"); erhua: the -r merges into the syllable and can swallow -n (哪儿, 一点儿), and is heavier in Beijing speech | 0.5, 0.8 | AC; YT:Lazy Chinese / Mandarin Click |
-| 0.10a Tones in running speech | At natural speed tones get shorter, flatter and blend with neighbours: the same words in citation form vs in a story; intonation rides on top of tones: a 吗 question doesn't need a rising end, and a final 4th still falls | 0.9, 0.9a, 0.10 | YT:Mandarin Click (story; moved from 0.7); CV (statement vs 吗 question) |
+| 0.10a Tones in running speech | At natural speed tones get shorter, flatter and blend with neighbors: the same words in citation form vs in a story; intonation rides on top of tones: a 吗 question doesn't need a rising end, and a final 4th still falls | 0.9, 0.9a, 0.10 | YT:Mandarin Click (story; moved from 0.7); CV (statement vs 吗 question) |
 | 0.11 Sounds in first words | Hearing S0's contrasts inside real words (the words themselves are taught in S1 1.1/1.4); near-homophones told apart by tone and initial (四 *sì* vs 十 *shí* vs 是 *shì*) | 0.4, 0.10a | YT:Mandarin Click / Lazy Chinese Complete Beginner; AC |
 | 0.12 Checkpoint | Three checkpoints, each takeable alone: **segments** (finals, initials, spelling); **tones** (single syllables + the 15 plain pairs); **tone changes and words** (sandhi, 一/不, neutral, erhua, running speech, near-homophones). Each ≥85% identification, unscaffolded, **new voices** | 0.1–0.11 (all; not gated) | CV (unseen speakers); TP if permitted |
 
@@ -344,7 +344,7 @@ Clip mechanics: IFrame `start`/`end` play a span. `playsinline=1` keeps iOS from
 
 #### 2.7 Immersion outside the app (Netflix and similar): suggestions list, ordered by difficulty
 
-The app **only logs time** for these (title, minutes, subtitle mode) and doesn't embed them. Netflix catalogues **vary by region and change often**, so treat every title below as "check availability" [57][56]. Many Netflix Chinese titles are Taiwanese, with a Taiwanese accent and traditional subtitles [59] (reported).
+The app **only logs time** for these (title, minutes, subtitle mode) and doesn't embed them. Netflix catalogs **vary by region and change often**, so treat every title below as "check availability" [57][56]. Many Netflix Chinese titles are Taiwanese, with a Taiwanese accent and traditional subtitles [59] (reported).
 
 | Order | Title | Service (reported) | Why / level | Episode length |
 |---|---|---|---|---|
@@ -369,7 +369,7 @@ The user's plan is a long period of Mandarin audio with English subtitles, then 
 
 - **Benefit: comprehension and engagement.** With beginners, native-language (L1) subtitles gave significantly better *content comprehension* than target-language captions. Prior vocabulary knowledge strongly predicted how much learners got from captions [62] (verified abstract, Pujadas & Muñoz). English subtitles keep a beginner watching real shows for an hour, which matters for habit and for absorbing prosody, rhythm and high-frequency chunks like 什么, 没事, 走吧.
 - **Limit 1: weak for ear training.** Mitterer & McQueen (2009) had Dutch listeners watch unfamiliar English accents. *Target-language subtitles helped* them adapt to the accent. *Native-language subtitles harmed* it, compared with no subtitles. The authors' explanation is that L1 subtitles draw attention away from the speech and compete with it lexically, while L2 subtitles show which words are being said [60] (verified). For a Mandarin beginner, English subtitles mostly train reading English.
-- **Limit 2: less word learning.** Montero Perez et al.'s meta-analysis found **large** effects of *captions* (same-language subtitles) on both listening comprehension and vocabulary, with no moderation by proficiency [61] (verified abstract). Comparisons with L1 subtitles generally favour captions for learning forms (reported).
+- **Limit 2: less word learning.** Montero Perez et al.'s meta-analysis found **large** effects of *captions* (same-language subtitles) on both listening comprehension and vocabulary, with no moderation by proficiency [61] (verified abstract). Comparisons with L1 subtitles generally favor captions for learning forms (reported).
 - **Mandarin-specific caveat.** Hanzi captions only help once the viewer can read fast enough. Before ~300–500 known words, Chinese subtitles on adult dramas are mostly unreadable noise. Kids' shows and CI videos are where Chinese subtitles pay off first (inference).
 - **CI community view.** Refold-style advice treats English-subtitle watching as low-value but harmless "free-flow" time: fine for motivation, not a substitute for comprehensible input. Its guidance for beginners is to prefer subtitles that *match* the audio [63] (reported). The in-app curriculum (Chinese subtitles on CI) covers what English-subtitle Netflix doesn't.
 
@@ -414,7 +414,7 @@ Switch per show, starting with the easiest. Expect it around months 3–5 for th
 
 - **Embed:** IFrame player with `cc_load_policy=1&cc_lang_pref=zh` shows YouTube's own Chinese track. `start`/`end` cut clip lessons and card audio. `playsinline=1` keeps iOS playback inline [47] (verified).
 - **Policy limits:** don't download, cache, separate audio, run background or hidden players, or modify or obscure the player [45][46] (verified). Render the app's subtitles and word pop-ups **below** the player.
-- **Durations and metadata:** `videos.list` costs **1 quota unit** [49] (verified). The duration field (`contentDetails.duration`) is reported, not checked. Use it to tag each catalogue video and filter to 5–10 min.
+- **Durations and metadata:** `videos.list` costs **1 quota unit** [49] (verified). The duration field (`contentDetails.duration`) is reported, not checked. Use it to tag each catalog video and filter to 5–10 min.
 - **Captions:** `captions.download` and `captions.list` need OAuth **and edit rights on the video** [48] (verified). Scraping timed text breaks the ToS [45]. Transcript options:
   1. creator permission (ask the CI channels; Mandarin Corner sells transcripts [16]);
   2. user-pasted SRT, kept per user;
@@ -456,7 +456,7 @@ Switch per show, starting with the easiest. Expect it around months 3–5 for th
 
 - SHOULD include an **HVPT tone trainer** (identification → tone pairs → minimal pairs, ≥4 voices, accuracy per tone pair) as a daily 5 min drill and the S0 gate [7].
 - SHOULD support **clip lessons and clip-audio sentence cards** via `start`/`end`, with `playsinline=1` on iOS [47].
-- SHOULD store each catalogue video's **duration** (from `videos.list`) and offer a "5–10 min" filter for bedtime sessions [49].
+- SHOULD store each catalog video's **duration** (from `videos.list`) and offer a "5–10 min" filter for bedtime sessions [49].
 - SHOULD show components and phonetic/semantic hints on every word card, introducing each component on its first appearance [9][37].
 - SHOULD rehost Global Storybooks Mandarin as the first read-along reader, with sentence highlighting [22].
 - SHOULD include an **immersion log** for outside watching: title (from the §2.7 list or free text), minutes, and **subtitle mode (en / dual / zh / none)**, plus an optional "3 words I heard" field. It counts toward the 50% immersion share and the skill-tree hours, and lets the app show the en → zh subtitle shift over time.
@@ -479,9 +479,9 @@ Switch per show, starting with the easiest. Expect it around months 3–5 for th
 
 1. **Commercial use, ever?** If yes, drop the non-commercial sources: Grammar Wiki excerpts, any CC BY-NC stories or audio, and SUBTLEX-CH's "research purposes" data. *User decision.*
 2. **Pace check.** §1.7 assumes about 2 h on normal days and about 1 lazy day in 4. If lazy days dominate, the 1,000-word target for month 6 should drop to about 500 (HSK 2025 L2). This is worth re-checking after month 2. *User input.*
-3. **Simplified only, or traditional too?** This depends on whether the user is aiming at the mainland or Taiwan, and the Netflix catalogue skews Taiwanese. *User decision.*
+3. **Simplified only, or traditional too?** This depends on whether the user is aiming at the mainland or Taiwan, and the Netflix catalog skews Taiwanese. *User decision.*
 4. **Who picks the specific videos and clip timestamps for each lesson?** It's a one-off curation task of about 42 videos and ~150 clips. Do it during the build or as a separate session?
-5. **Netflix titles by region.** None of the listed titles were checked against the user's country catalogue.
+5. **Netflix titles by region.** None of the listed titles were checked against the user's country catalog.
 6. **Official Peppa Pig / Bluey / 巧虎 Mandarin YouTube channels.** These need checking in a browser.
 7. **Tone Perfect permission**, and the **exact HSK 3.0 exam date** (reported as 13 Dec 2026).
 8. **How many Tatoeba cmn recordings are actually CC BY?** That needs the `sentences_with_audio` export to be downloaded and filtered, which wasn't done.
