@@ -2,6 +2,7 @@
 
 See `docs/research/README.md` for the research index, the cross-topic synthesis, and the open decisions. Read it before proposing design or build steps.
 Research docs follow the section conventions in that README. Record decisions in its synthesis section, not in the topic docs.
+Temporary or experimental work (mockups, spikes, prototypes) goes in `sandbox/`, which keeps the main directories clean. Nothing outside `sandbox/` may depend on it.
 
 ## Code health
 

@@ -60,6 +60,13 @@ Synthesis: see [Cross-topic synthesis](#cross-topic-synthesis) below (written af
 
 - **Normal day: ~2 h total, fragmented** into chunks of anything from 5 min to 30 min to 1 h. Sessions must be resumable, and units should come in a few lengths (≈5 / 15–30 / 60 min).
 - **Lazy day: 15–20 min in bed**, phone screen on.
+- **Hard constraint: no manual curation by the user** (stated 2026-11-02). Any audio or video used *inside a lesson* (the clip, examples, "you do" items, cards) must come with a transcript that can be obtained automatically and legitimately. In practice:
+  - **Lesson-eligible:**
+    - CC sources that ship text (Common Voice, Global Storybooks, audio-cmn, Wikimedia), and we may also run local speech-to-text on these to get timings;
+    - YouTube videos whose creator publishes a transcript we may fetch, or has given permission.
+  - **Watch-only:** every other YouTube video. These can be embedded as a unit's free-watch video (they need only a duration), but no lesson step may depend on their content.
+  - **Never:** downloading YouTube audio or scraping captions (YouTube terms; doc 05).
+  - Checking transcripts must also be automated (cross-source agreement, dictionary and segmentation sanity checks), not done by hand.
 - **v1 scope: HSK 2025 levels 1–3** (~1,000 words, S0–S2), decided 2026-11-02. Use the months at this level to refine the lesson format before adding S3+.
 - **Already knows the four tones and all pinyin initials and finals** (stated 2026-11-02). S0 lessons still get built, but the user must be able to mark them complete or test out.
 - **Immersion subtitles:** English subtitles "for the first long while" to get used to the sounds, switching to Mandarin subtitles at some comfort level. The app should track subtitle mode per log and help decide when to switch.

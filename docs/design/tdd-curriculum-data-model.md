@@ -194,6 +194,8 @@ scaffold: scaffolds/pattern.md     # the text `content:new` writes, with TODO ma
 
 ### 5.5 Media, clips, speakers, transcript lines, licenses
 
+> **Constraint (2026-11-02):** a clip used by any lesson slot must have a transcript obtained automatically from a permitted source (README "User's study parameters"). Media without one can only be a unit's free-watch item, and the check script rejects a lesson slot that references such media.
+
 ```ts
 // Rights are tied to the provider at the type level: a YouTube item can't claim rehost rights or carry a storage key.
 type Media =
