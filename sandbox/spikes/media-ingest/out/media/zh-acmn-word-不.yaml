@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-不
+  title: 不
+  context: word-audio
+  durationSec: 0.85
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-不.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-不.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-不
+  span:
+  - 0.18
+  - 0.73
+  file:
+    key: media/c81d6bf094f3c144.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2349
+    sha256: c81d6bf094f3c144e9e23f4e68f0f8b9aac4571d57d47d7c4ee11a195c39de2b
+    durationSec: 0.55
+    gainDb: -5.7
+  lines:
+  - t:
+    - 0.0
+    - 0.55
+    zh: 不
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -14.3
+    peak_db: -1.41
+    speech_ratio: 0.537
+    edge_start_db: -41.49
+    edge_end_db: -42.11
+    forced_logp: -0.78

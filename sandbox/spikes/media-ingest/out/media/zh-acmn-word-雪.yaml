@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-雪
+  title: 雪
+  context: word-audio
+  durationSec: 1.15
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-雪.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-雪.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-雪
+  span:
+  - 0.12
+  - 1.01
+  file:
+    key: media/b5a21d060dcdf446.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3818
+    sha256: b5a21d060dcdf4461a93311749cfa2d656dccf5c7d7f9f0068296ed0fe390045
+    durationSec: 0.89
+    gainDb: -5.39
+  lines:
+  - t:
+    - 0.0
+    - 0.89
+    zh: 雪
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -14.61
+    peak_db: -2.27
+    speech_ratio: 0.761
+    edge_start_db: -39.23
+    edge_end_db: -38.92
+    forced_logp: -0.27

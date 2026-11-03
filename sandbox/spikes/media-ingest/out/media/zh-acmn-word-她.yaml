@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-她
+  title: 她
+  context: word-audio
+  durationSec: 0.85
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-她.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-她.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-她
+  span:
+  - 0.11
+  - 0.69
+  file:
+    key: media/6210f58584c38797.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2493
+    sha256: 6210f58584c38797493a8dc7d170ac789c02843452dbf047e1bc09d74e9c40d5
+    durationSec: 0.58
+    gainDb: -6.86
+  lines:
+  - t:
+    - 0.0
+    - 0.58
+    zh: 她
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 1.0
+    per: 0.0
+    lufs: -13.14
+    peak_db: -1.64
+    speech_ratio: 0.632
+    edge_start_db: -39.19
+    edge_end_db: -38.95
+    forced_logp: -2.22

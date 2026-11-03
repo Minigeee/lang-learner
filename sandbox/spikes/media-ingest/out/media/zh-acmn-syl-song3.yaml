@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-song3
+  title: song3
+  context: word-audio
+  durationSec: 1.344
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-song3.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-song3.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-song3
+  span:
+  - 0.18
+  - 1.16
+  file:
+    key: media/cc6e94ca432f4e84.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 4109
+    sha256: cc6e94ca432f4e84c6034ad9cdcd1ef10b3b27a778503708a07e0cf5af1c5f8e
+    durationSec: 0.98
+    gainDb: -0.71
+  lines:
+  - t:
+    - 0.0
+    - 0.98
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: song3
+  validation:
+    lufs: -19.29
+    peak_db: -1.54
+    speech_ratio: 0.784
+    edge_start_db: -44.3
+    edge_end_db: -41.46
+    forced_logp: -10.1

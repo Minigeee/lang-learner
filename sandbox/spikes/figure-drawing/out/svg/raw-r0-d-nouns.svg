@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 230" role="img" aria-label="Six objects: an apple, a cup, a book, a cat, a dog, a car.">
+  <g font-family="Microsoft YaHei" text-anchor="middle" font-size="16" fill="var(--text-primary)">
+    <text x="60" y="100">苹果</text><text x="180" y="100">杯子</text><text x="300" y="100">书</text>
+    <text x="60" y="215">猫</text><text x="180" y="215">狗</text><text x="300" y="215">车</text>
+  </g>
+  <g stroke="var(--fig-line)" stroke-width="2">
+    <!-- apple -->
+    <circle cx="60" cy="50" r="26" fill="var(--fig-accent)"/>
+    <path d="M60 24 L62 14" fill="none"/><ellipse cx="70" cy="18" rx="8" ry="4" fill="var(--jade)"/>
+    <!-- cup -->
+    <rect x="162" y="28" width="32" height="44" rx="4" fill="var(--fig-fill)"/>
+    <path d="M194 38 Q210 50 194 62" fill="none" stroke-width="4"/>
+    <!-- book -->
+    <rect x="275" y="25" width="50" height="50" rx="3" fill="var(--ink)"/>
+    <line x1="283" y1="25" x2="283" y2="75"/>
+    <!-- cat -->
+    <ellipse cx="60" cy="170" rx="24" ry="16" fill="var(--fig-fur)"/>
+    <circle cx="82" cy="150" r="12" fill="var(--fig-fur)"/>
+    <path d="M75 142 L77 130 L83 140 Z M85 140 L91 130 L93 144 Z" fill="var(--fig-fur)"/>
+    <!-- dog -->
+    <ellipse cx="180" cy="170" rx="26" ry="15" fill="var(--fig-wood)"/>
+    <circle cx="206" cy="152" r="13" fill="var(--fig-wood)"/>
+    <ellipse cx="200" cy="146" rx="5" ry="10" fill="var(--fig-wood-dark)"/>
+    <line x1="165" y1="182" x2="165" y2="194" stroke-width="5"/><line x1="195" y1="182" x2="195" y2="194" stroke-width="5"/>
+    <!-- car -->
+    <rect x="265" y="160" width="70" height="22" rx="6" fill="var(--ink)"/>
+    <path d="M280 160 L290 142 L318 142 L326 160 Z" fill="var(--ink)"/>
+    <circle cx="282" cy="184" r="8" fill="var(--fig-line)"/><circle cx="318" cy="184" r="8" fill="var(--fig-line)"/>
+  </g>
+</svg>

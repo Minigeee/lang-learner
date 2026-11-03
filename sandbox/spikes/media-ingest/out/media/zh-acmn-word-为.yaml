@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-为
+  title: 为
+  context: word-audio
+  durationSec: 0.85
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-为.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-为.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-为
+  span:
+  - 0.1
+  - 0.73
+  file:
+    key: media/e3f75e24920726dc.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2718
+    sha256: e3f75e24920726dca5449deb88a1a421c39a097a659ccd16b6d3e96846878fa8
+    durationSec: 0.63
+    gainDb: -4.64
+  lines:
+  - t:
+    - 0.0
+    - 0.63
+    zh: 为
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 1.0
+    per: 0.0
+    lufs: -15.36
+    peak_db: -1.44
+    speech_ratio: 0.661
+    edge_start_db: -44.8
+    edge_end_db: -44.79
+    forced_logp: -7.85

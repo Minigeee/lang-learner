@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-die1
+  title: die1
+  context: word-audio
+  durationSec: 1.08
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-die1.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-die1.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-die1
+  span:
+  - 0.21
+  - 0.83
+  file:
+    key: media/9d730ff98b771715.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2615
+    sha256: 9d730ff98b771715feab93185f3deacf6ef83aef1b5ffb3b2e24c7e69749ef37
+    durationSec: 0.62
+    gainDb: -8.45
+  lines:
+  - t:
+    - 0.0
+    - 0.62
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: die1
+  validation:
+    lufs: -11.55
+    peak_db: -1.4
+    speech_ratio: 0.656
+    edge_start_db: -44.72
+    edge_end_db: -41.14
+    forced_logp: -2.68

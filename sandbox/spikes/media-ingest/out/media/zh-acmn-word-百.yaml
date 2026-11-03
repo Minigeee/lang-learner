@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-百
+  title: 百
+  context: word-audio
+  durationSec: 1.1
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-百.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-百.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-百
+  span:
+  - 0.19
+  - 0.96
+  file:
+    key: media/7a5fbb2326e1fe21.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3446
+    sha256: 7a5fbb2326e1fe211a4fbc8e0c8d6c2961d613700bb491ed1c2df224542e5f95
+    durationSec: 0.77
+    gainDb: -1.38
+  lines:
+  - t:
+    - 0.0
+    - 0.77
+    zh: 百
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 1.0
+    per: 0.0
+    lufs: -18.62
+    peak_db: -1.88
+    speech_ratio: 0.711
+    edge_start_db: -40.01
+    edge_end_db: -40.53
+    forced_logp: -6.93

@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-儿子
+  title: 儿子
+  context: word-audio
+  durationSec: 1.15
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-儿子.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-儿子.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-儿子
+  span:
+  - 0.17
+  - 0.99
+  file:
+    key: media/e68839e3edc74d4c.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3485
+    sha256: e68839e3edc74d4c9d03062e73a18457ec2267d030e6d0864e6763709ccbcf85
+    durationSec: 0.82
+    gainDb: -3.82
+  lines:
+  - t:
+    - 0.0
+    - 0.82
+    zh: 儿子
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -16.18
+    peak_db: -1.52
+    speech_ratio: 0.741
+    edge_start_db: -41.4
+    edge_end_db: -41.98
+    forced_logp: -0.03

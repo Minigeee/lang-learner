@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-guo3
+  title: guo3
+  context: word-audio
+  durationSec: 1.344
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-guo3.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-guo3.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-guo3
+  span:
+  - 0.23
+  - 1.12
+  file:
+    key: media/279c5b5e4fd626c4.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3700
+    sha256: 279c5b5e4fd626c4e73f9a43896becf753339b503882de1155ae83bbb8825c0d
+    durationSec: 0.89
+    gainDb: -3.88
+  lines:
+  - t:
+    - 0.0
+    - 0.89
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: guo3
+  validation:
+    lufs: -16.12
+    peak_db: -1.32
+    speech_ratio: 0.761
+    edge_start_db: -45.92
+    edge_end_db: -44.52
+    forced_logp: -3.21

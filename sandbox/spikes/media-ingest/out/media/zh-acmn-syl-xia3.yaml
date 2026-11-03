@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-xia3
+  title: xia3
+  context: word-audio
+  durationSec: 1.392
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-xia3.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-xia3.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-xia3
+  span:
+  - 0.16
+  - 1.19
+  file:
+    key: media/e137061fca7a3688.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 4366
+    sha256: e137061fca7a36882e2251c39d2053f5b3e1bef1a4292079dba4c95e29d2cfeb
+    durationSec: 1.03
+    gainDb: -2.94
+  lines:
+  - t:
+    - 0.0
+    - 1.03
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: xia3
+  validation:
+    lufs: -17.06
+    peak_db: -1.92
+    speech_ratio: 0.784
+    edge_start_db: -45.16
+    edge_end_db: -44.12
+    forced_logp: -8.31

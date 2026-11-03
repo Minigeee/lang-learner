@@ -1,0 +1,248 @@
+media:
+  id: media:zh-gs-0087
+  title: 我喜欢看书
+  context: storybook
+  durationSec: 41.186
+  speakers:
+  - speaker:zh-gs-zhuo-sun
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://globalstorybooks.net/media/audio/zh/0087/
+  rights:
+    kind: open
+    license: cc-by-3.0
+    author: 'Written by: Letta Machoga; Illustrated by: Wiehan de Jager; Translated by: dohliam; Read by: Zhuo Sun'
+    sourceUrl: https://global-asp.github.io/storybooks-minnesota/stories/zh/0087/
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+  level: 1
+clips:
+- id: clip:zh-gs-0087-p02s0
+  span:
+  - 0.0
+  - 2.34
+  file:
+    key: media/1e9a4c74fab18e40.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 8997
+    sha256: 1e9a4c74fab18e40ba3b88e7129e97b9380f95f34f93d6aea926518790d35fa4
+    durationSec: 2.34
+    gainDb: -0.48
+  lines:
+  - t:
+    - 0.0
+    - 2.34
+    zh: 我喜欢看书。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -19.52
+    peak_db: -4.51
+    speech_ratio: 0.794
+    edge_start_db: -49.86
+    edge_end_db: -105.77
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 2
+- id: clip:zh-gs-0087-p04s0
+  span:
+  - 10.95
+  - 14.4
+  file:
+    key: media/300df7350905d0a1.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 12914
+    sha256: 300df7350905d0a15384cec21deb0fb807bbd878431ea71b1e3bb6a4ad0e8bfc
+    durationSec: 3.45
+    gainDb: -3.53
+  lines:
+  - t:
+    - 0.0
+    - 3.45
+    zh: 小妹妹正在熟睡。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -16.47
+    peak_db: 0.18
+    speech_ratio: 0.674
+    edge_start_db: -108.31
+    edge_end_db: -108.31
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 4
+- id: clip:zh-gs-0087-p05s0
+  span:
+  - 15.48
+  - 18.66
+  file:
+    key: media/ef82a608c8284447.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 11358
+    sha256: ef82a608c8284447fabfc5b9c3a4a503d70cd6f00bdb45ef9ab84fd9cabc5cab
+    durationSec: 3.18
+    gainDb: -4.16
+  lines:
+  - t:
+    - 0.0
+    - 3.18
+    zh: 我可以念给谁听呢？
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -15.84
+    peak_db: 0.21
+    speech_ratio: 0.688
+    edge_start_db: -108.83
+    edge_end_db: -108.83
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 5
+- id: clip:zh-gs-0087-p06s0
+  span:
+  - 19.28
+  - 23.12
+  file:
+    key: media/eb0f84a91553791b.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 16233
+    sha256: eb0f84a91553791b6477a631935aa9d26877e51a9e9f2abfaa07e7032895d852
+    durationSec: 3.84
+    gainDb: -2.62
+  lines:
+  - t:
+    - 0.0
+    - 3.84
+    zh: 妈妈和奶奶正在忙。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -17.38
+    peak_db: 0.43
+    speech_ratio: 0.671
+    edge_start_db: -108.55
+    edge_end_db: -108.55
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 6
+- id: clip:zh-gs-0087-p07s0
+  span:
+  - 24.56
+  - 27.75
+  file:
+    key: media/7bde8d8cf35bdb0b.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 12446
+    sha256: 7bde8d8cf35bdb0bc230494b2567f824a54abe19001c15ed7953cd7b7429d482
+    durationSec: 3.19
+    gainDb: -3.95
+  lines:
+  - t:
+    - 0.0
+    - 3.19
+    zh: 我可以念给谁听呢？
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -16.05
+    peak_db: 0.41
+    speech_ratio: 0.723
+    edge_start_db: -108.94
+    edge_end_db: -108.94
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 7
+- id: clip:zh-gs-0087-p08s0
+  span:
+  - 29.09
+  - 33.04
+  file:
+    key: media/0ff5080735f660dd.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 16783
+    sha256: 0ff5080735f660dd5d29ea4a199642586f8f23bae7419d1d0acd01e949930dbc
+    durationSec: 3.95
+    gainDb: -2.57
+  lines:
+  - t:
+    - 0.0
+    - 3.95
+    zh: 爸爸和爷爷正在忙。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -17.43
+    peak_db: -0.58
+    speech_ratio: 0.721
+    edge_start_db: -108.6
+    edge_end_db: -108.6
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 8
+- id: clip:zh-gs-0087-p09s0
+  span:
+  - 34.35
+  - 37.38
+  file:
+    key: media/da9f432c5c62560c.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 12501
+    sha256: da9f432c5c62560c35c1215bb4e91f8d9d2c05cf64c214211523ef63b8b9a4eb
+    durationSec: 3.03
+    gainDb: -3.97
+  lines:
+  - t:
+    - 0.0
+    - 3.03
+    zh: 我可以念给谁听呢？
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -16.03
+    peak_db: 0.11
+    speech_ratio: 0.748
+    edge_start_db: -109.39
+    edge_end_db: -109.39
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 9
+- id: clip:zh-gs-0087-p09s1
+  span:
+  - 37.78
+  - 41.186
+  file:
+    key: media/9b3e99035bef0422.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 13659
+    sha256: 9b3e99035bef04224448ca5713e8333f993892f116d26e8e382ce37ac6ed4e05
+    durationSec: 3.406
+    gainDb: -0.48
+  lines:
+  - t:
+    - 0.0
+    - 3.406
+    zh: 我可以念给自己听！
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -19.52
+    peak_db: -3.08
+    speech_ratio: 0.791
+    edge_start_db: -106.77
+    edge_end_db: -33.92
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 9

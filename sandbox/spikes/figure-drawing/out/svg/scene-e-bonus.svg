@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 176" role="img" aria-label="Two pictures of a table with a cup and a book on it: a dog under the table, then a cat under the table."><g transform="translate(14.0 118.0) scale(1.000) translate(0 0)"><line x1="-10" y1="0" x2="174" y2="0" stroke="var(--fig-ground)" stroke-width="2" stroke-linecap="round"/><g transform="translate(0.0 -70.0)"><g transform="translate(-128 -110)">
+    <g fill="var(--fig-wood)" stroke="var(--fig-line)" stroke-width="2" stroke-linejoin="round">
+      <rect x="128" y="110" width="164" height="12" rx="3"/>
+      <path d="M142 122 L152 122 L150 180 L144 180 Z" fill="var(--fig-wood-dark)"/>
+      <path d="M268 122 L278 122 L276 180 L270 180 Z" fill="var(--fig-wood-dark)"/></g></g></g><g transform="translate(48.6 -52.0) scale(0.743)"><g transform="translate(-138 -129)"><g stroke="var(--fig-line)" stroke-width="2" stroke-linejoin="round">
+    <path d="M152 164 Q150 152 162 152 L196 152 Q206 152 204 164 L204 176 L152 176 Z" fill="var(--fig-wood)"/>
+    <path d="M156 176 L156 196 M168 176 L168 196 M190 176 L190 196 M200 176 L200 196" stroke="var(--fig-wood-dark)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M152 158 Q140 150 142 138" fill="none" stroke="var(--fig-wood-dark)" stroke-width="5" stroke-linecap="round"/>
+    <path d="M196 156 Q194 132 210 132 Q224 132 224 146 L222 152 Q214 156 204 156 Z" fill="var(--fig-wood)"/>
+    <path d="M200 136 Q194 140 196 156 Q204 154 204 140 Z" fill="var(--fig-wood-dark)"/>
+    <circle cx="214" cy="142" r="2" fill="var(--fig-line)"/><circle cx="224" cy="147" r="2.5" fill="var(--fig-line)"/></g></g></g><g transform="translate(29.8 -104.0)"><g transform="translate(0 18)"><path d="M1 1 L17 1 L15 13 Q9 16 3 13 Z" fill="var(--fig-fill)" stroke="var(--fig-line)" stroke-width="2" stroke-linejoin="round"/><path d="M6 -4 q4 -6 0 -12 M12 -2 q4 -6 0 -12" fill="none" stroke="var(--text-muted)" stroke-width="1.5" stroke-linecap="round"/></g></g><g transform="translate(75.8 -88.0)"><g transform="translate(-175 -93)">
+    <g stroke="var(--fig-line)" stroke-width="2" stroke-linejoin="round"><rect x="176" y="94" width="68" height="16" rx="2" fill="var(--fig-accent)"/>
+      <rect x="182" y="98" width="62" height="8" fill="var(--fig-fill)"/>
+      <line x1="186" y1="102" x2="240" y2="102" stroke="var(--fig-shade)" stroke-width="1"/></g></g></g></g><text x="96" y="144" text-anchor="middle" font-size="18" font-family="Noto Serif SC, Microsoft YaHei, serif" fill="var(--text-primary)">狗在桌子下面</text><text x="96" y="160" text-anchor="middle" font-size="11" font-family="Lexend, Segoe UI, sans-serif" fill="var(--text-secondary)">the dog is under the table</text><g transform="translate(206.0 118.0) scale(1.000) translate(0 0)"><line x1="-10" y1="0" x2="174" y2="0" stroke="var(--fig-ground)" stroke-width="2" stroke-linecap="round"/><g transform="translate(0.0 -70.0)"><g transform="translate(-128 -110)">
+    <g fill="var(--fig-wood)" stroke="var(--fig-line)" stroke-width="2" stroke-linejoin="round">
+      <rect x="128" y="110" width="164" height="12" rx="3"/>
+      <path d="M142 122 L152 122 L150 180 L144 180 Z" fill="var(--fig-wood-dark)"/>
+      <path d="M268 122 L278 122 L276 180 L270 180 Z" fill="var(--fig-wood-dark)"/></g></g></g><g transform="translate(47.0 -52.0) scale(0.897)"><g transform="translate(-167 -36)">
+    <g fill="var(--fig-fur)" stroke="var(--fig-line)" stroke-width="2" stroke-linejoin="round">
+      <path d="M188 94 Q182 66 210 64 Q236 64 236 94 Z"/>
+      <path d="M190 92 Q170 92 172 76 Q174 70 180 72" fill="none" stroke-width="7" stroke-linecap="round"/>
+      <path d="M190 92 Q170 92 172 76 Q174 70 180 72" fill="none" stroke="var(--fig-fur)" stroke-width="3.5" stroke-linecap="round"/>
+      <path d="M217 56 L219 38 L229 48 L237 38 L240 56 Q244 72 228 74 Q212 72 217 56 Z"/></g>
+    <g fill="var(--fig-line)"><circle cx="223" cy="58" r="2"/><circle cx="234" cy="58" r="2"/><path d="M227 63 L230 63 L228.5 65 Z"/></g>
+    <path d="M200 76 L206 80 M200 84 L206 86" stroke="var(--fig-fur-dark)" stroke-width="2" stroke-linecap="round"/></g></g><g transform="translate(29.8 -104.0)"><g transform="translate(0 18)"><path d="M1 1 L17 1 L15 13 Q9 16 3 13 Z" fill="var(--fig-fill)" stroke="var(--fig-line)" stroke-width="2" stroke-linejoin="round"/><path d="M6 -4 q4 -6 0 -12 M12 -2 q4 -6 0 -12" fill="none" stroke="var(--text-muted)" stroke-width="1.5" stroke-linecap="round"/></g></g><g transform="translate(75.8 -88.0)"><g transform="translate(-175 -93)">
+    <g stroke="var(--fig-line)" stroke-width="2" stroke-linejoin="round"><rect x="176" y="94" width="68" height="16" rx="2" fill="var(--fig-accent)"/>
+      <rect x="182" y="98" width="62" height="8" fill="var(--fig-fill)"/>
+      <line x1="186" y1="102" x2="240" y2="102" stroke="var(--fig-shade)" stroke-width="1"/></g></g></g></g><text x="288" y="144" text-anchor="middle" font-size="18" font-family="Noto Serif SC, Microsoft YaHei, serif" fill="var(--text-primary)">猫在桌子下面</text><text x="288" y="160" text-anchor="middle" font-size="11" font-family="Lexend, Segoe UI, sans-serif" fill="var(--text-secondary)">the cat is under the table</text></svg>

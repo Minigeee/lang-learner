@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-叫
+  title: 叫
+  context: word-audio
+  durationSec: 0.9
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-叫.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-叫.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-叫
+  span:
+  - 0.18
+  - 0.76
+  file:
+    key: media/3672905e020a4766.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2548
+    sha256: 3672905e020a476685f027541dacd249b4b72a27e2e09352dc403fd4b23926c9
+    durationSec: 0.58
+    gainDb: -5.19
+  lines:
+  - t:
+    - 0.0
+    - 0.58
+    zh: 叫
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -14.81
+    peak_db: -1.37
+    speech_ratio: 0.632
+    edge_start_db: -38.91
+    edge_end_db: -41.67
+    forced_logp: -0.31

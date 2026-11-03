@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-前面
+  title: 前面
+  context: word-audio
+  durationSec: 1.15
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-前面.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-前面.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-前面
+  span:
+  - 0.18
+  - 0.98
+  file:
+    key: media/44e58dee2ab58fbc.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3472
+    sha256: 44e58dee2ab58fbcc6dc6a469525abe8a4b3ea901b7ab3c4f53fcff6124f8f78
+    durationSec: 0.8
+    gainDb: -6.97
+  lines:
+  - t:
+    - 0.0
+    - 0.8
+    zh: 前面
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -13.03
+    peak_db: -1.6
+    speech_ratio: 0.722
+    edge_start_db: -40.91
+    edge_end_db: -39.69
+    forced_logp: -0.07

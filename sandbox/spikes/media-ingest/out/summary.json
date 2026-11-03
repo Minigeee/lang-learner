@@ -1,0 +1,60 @@
+{
+ "per_source": {
+  "audio-cmn-syl": {
+   "candidates": 300,
+   "passed": 203,
+   "reasons": {
+    "asr syllable mismatch": 97
+   }
+  },
+  "audio-cmn-word": {
+   "candidates": 300,
+   "passed": 269,
+   "reasons": {
+    "asr word mismatch": 31
+   }
+  },
+  "storybooks": {
+   "candidates": 118,
+   "passed": 116,
+   "reasons": {
+    "unaligned": 1,
+    "round-trip mismatch": 1
+   }
+  }
+ },
+ "encode_wall_s": 28.4,
+ "opus_bytes": 5030499,
+ "opus_seconds": 1288.7,
+ "mb_per_audio_hour": 14.1,
+ "gates": {
+  "sentence_cer_max": 0.2,
+  "sentence_per_max": 0.1,
+  "sentence_dur": [
+   0.6,
+   60.0
+  ],
+  "sec_per_char": [
+   0.1,
+   1.0
+  ],
+  "word_forced_min": -2.5,
+  "syl_forced_min": -3.0,
+  "word_dur": [
+   0.2,
+   3.5
+  ],
+  "syl_dur": [
+   0.15,
+   2.0
+  ],
+  "speech_ratio_min": 0.3,
+  "max_internal_gap": 2.0,
+  "clip_frac_max": 0.001,
+  "lufs": [
+   -40.0,
+   -6.0
+  ],
+  "edge_db_max": -25.0
+ }
+}

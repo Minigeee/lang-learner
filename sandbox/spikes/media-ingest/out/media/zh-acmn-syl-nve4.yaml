@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-nve4
+  title: nve4
+  context: word-audio
+  durationSec: 0.936
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-nve4.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-nve4.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-nve4
+  span:
+  - 0.17
+  - 0.69
+  file:
+    key: media/3525382a9355b26f.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2177
+    sha256: 3525382a9355b26ff464291826c65ebf93e0ce4a679cf2ccb30448dbf5e9cf24
+    durationSec: 0.52
+    gainDb: -8.92
+  lines:
+  - t:
+    - 0.0
+    - 0.52
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: nve4
+  validation:
+    lufs: -11.08
+    peak_db: -1.08
+    speech_ratio: 0.588
+    edge_start_db: -57.48
+    edge_end_db: -55.29
+    forced_logp: -5.67

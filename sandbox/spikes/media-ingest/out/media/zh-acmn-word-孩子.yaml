@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-孩子
+  title: 孩子
+  context: word-audio
+  durationSec: 1.1
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-孩子.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-孩子.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-孩子
+  span:
+  - 0.07
+  - 0.93
+  file:
+    key: media/0736d3389d7399e4.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3623
+    sha256: 0736d3389d7399e448137514c4b2eca4fa6e4db3b885452c25ca82018024b18a
+    durationSec: 0.86
+    gainDb: -3.9
+  lines:
+  - t:
+    - 0.0
+    - 0.86
+    zh: 孩子
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -16.1
+    peak_db: -1.48
+    speech_ratio: 0.753
+    edge_start_db: -40.02
+    edge_end_db: -36.52
+    forced_logp: -0.39

@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-帮助
+  title: 帮助
+  context: word-audio
+  durationSec: 1.2
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-帮助.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-帮助.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-帮助
+  span:
+  - 0.16
+  - 1.06
+  file:
+    key: media/90f0dffa014e6ac2.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3802
+    sha256: 90f0dffa014e6ac2d8fd2fd6f3e51e373701814479a93287847ae049a2c80f97
+    durationSec: 0.9
+    gainDb: -6.75
+  lines:
+  - t:
+    - 0.0
+    - 0.9
+    zh: 帮助
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -13.25
+    peak_db: -2.41
+    speech_ratio: 0.753
+    edge_start_db: -37.02
+    edge_end_db: -39.16
+    forced_logp: -0.85

@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-guan4
+  title: guan4
+  context: word-audio
+  durationSec: 0.888
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-guan4.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-guan4.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-guan4
+  span:
+  - 0.12
+  - 0.66
+  file:
+    key: media/0de5aa5122a6f5f5.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2322
+    sha256: 0de5aa5122a6f5f57589fdc7b0999c1573e4082a3dc16a4d0c983de0d7422b80
+    durationSec: 0.54
+    gainDb: -5.24
+  lines:
+  - t:
+    - 0.0
+    - 0.54
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: guan4
+  validation:
+    lufs: -14.76
+    peak_db: -1.42
+    speech_ratio: 0.585
+    edge_start_db: -49.46
+    edge_end_db: -49.72
+    forced_logp: -8.44

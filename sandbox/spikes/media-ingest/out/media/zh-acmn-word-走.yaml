@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-走
+  title: 走
+  context: word-audio
+  durationSec: 1.15
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-走.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-走.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-走
+  span:
+  - 0.19
+  - 0.99
+  file:
+    key: media/cf68e1b56dfc46ef.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3451
+    sha256: cf68e1b56dfc46ef068354634d4dfd21658c94d77c6ab58bb06aa4b319eac0dd
+    durationSec: 0.8
+    gainDb: -2.2
+  lines:
+  - t:
+    - 0.0
+    - 0.8
+    zh: 走
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 1.0
+    per: 1.0
+    lufs: -17.8
+    peak_db: -2.04
+    speech_ratio: 0.734
+    edge_start_db: -39.6
+    edge_end_db: -38.9
+    forced_logp: -0.92

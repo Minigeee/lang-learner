@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-chi2
+  title: chi2
+  context: word-audio
+  durationSec: 1.08
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-chi2.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-chi2.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-chi2
+  span:
+  - 0.03
+  - 0.86
+  file:
+    key: media/4014d00a70901777.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3425
+    sha256: 4014d00a709017775bb0ef1a8a00662114710e3eece4c7c2c1f97ab1d75bc4d3
+    durationSec: 0.83
+    gainDb: -6.89
+  lines:
+  - t:
+    - 0.0
+    - 0.83
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: chi2
+  validation:
+    lufs: -13.11
+    peak_db: -1.62
+    speech_ratio: 0.61
+    edge_start_db: -40.91
+    edge_end_db: -41.43
+    forced_logp: -7.52

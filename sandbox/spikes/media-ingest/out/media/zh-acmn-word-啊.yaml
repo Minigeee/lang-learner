@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-啊
+  title: 啊
+  context: word-audio
+  durationSec: 1.0
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-啊.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-啊.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-啊
+  span:
+  - 0.1
+  - 0.82
+  file:
+    key: media/0b92b2ea3aa5c0c9.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3257
+    sha256: 0b92b2ea3aa5c0c9f744682c80fc7590de2c23bdb7917913f4d9c042c97090cf
+    durationSec: 0.72
+    gainDb: -0.38
+  lines:
+  - t:
+    - 0.0
+    - 0.72
+    zh: 啊
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -19.62
+    peak_db: -1.33
+    speech_ratio: 0.62
+    edge_start_db: -41.71
+    edge_end_db: -38.78
+    forced_logp: -0.21

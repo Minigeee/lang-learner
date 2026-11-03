@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-上午
+  title: 上午
+  context: word-audio
+  durationSec: 1.45
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-上午.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-上午.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-上午
+  span:
+  - 0.16
+  - 1.28
+  file:
+    key: media/ec60ba857de7d9dd.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 4795
+    sha256: ec60ba857de7d9dd0e2257355e9151d6d679653aa14bbb3e760c9e16d5690cc4
+    durationSec: 1.12
+    gainDb: -4.58
+  lines:
+  - t:
+    - 0.0
+    - 1.12
+    zh: 上午
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -15.42
+    peak_db: -2.71
+    speech_ratio: 0.811
+    edge_start_db: -41.17
+    edge_end_db: -42.46
+    forced_logp: -0.06

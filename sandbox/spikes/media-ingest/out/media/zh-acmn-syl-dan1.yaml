@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-dan1
+  title: dan1
+  context: word-audio
+  durationSec: 1.032
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-dan1.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-dan1.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-dan1
+  span:
+  - 0.2
+  - 0.8
+  file:
+    key: media/14bef423a8d1b1e4.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2527
+    sha256: 14bef423a8d1b1e4234bc7ffdb4ed44965337c8bf418490c0bd1cdef83bfcd20
+    durationSec: 0.6
+    gainDb: -6.32
+  lines:
+  - t:
+    - 0.0
+    - 0.6
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: dan1
+  validation:
+    lufs: -13.68
+    peak_db: -1.49
+    speech_ratio: 0.644
+    edge_start_db: -39.98
+    edge_end_db: -39.72
+    forced_logp: -1.35

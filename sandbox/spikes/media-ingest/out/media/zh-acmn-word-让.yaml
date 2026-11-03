@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-让
+  title: 让
+  context: word-audio
+  durationSec: 0.95
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-让.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-让.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-让
+  span:
+  - 0.14
+  - 0.81
+  file:
+    key: media/daae655545cd7d7e.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2844
+    sha256: daae655545cd7d7ea0eed0f842fabb6308197d7e59208e4d7ff84278ac93dbd6
+    durationSec: 0.67
+    gainDb: -4.18
+  lines:
+  - t:
+    - 0.0
+    - 0.67
+    zh: 让
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -15.82
+    peak_db: -1.62
+    speech_ratio: 0.682
+    edge_start_db: -49.61
+    edge_end_db: -50.31
+    forced_logp: -2.17

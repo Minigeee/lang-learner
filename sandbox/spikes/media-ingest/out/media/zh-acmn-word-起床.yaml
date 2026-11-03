@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-起床
+  title: 起床
+  context: word-audio
+  durationSec: 1.4
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-起床.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-起床.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-起床
+  span:
+  - 0.16
+  - 1.25
+  file:
+    key: media/7cebd3f6b8484b49.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 4640
+    sha256: 7cebd3f6b8484b4942181b093fa2162111d37e2f7ff181b7b2c522f77b99c6d1
+    durationSec: 1.09
+    gainDb: -3.56
+  lines:
+  - t:
+    - 0.0
+    - 1.09
+    zh: 起床
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -16.44
+    peak_db: -3.62
+    speech_ratio: 0.806
+    edge_start_db: -38.13
+    edge_end_db: -38.72
+    forced_logp: -0.01

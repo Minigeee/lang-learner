@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-右边
+  title: 右边
+  context: word-audio
+  durationSec: 1.1
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-右边.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-右边.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-右边
+  span:
+  - 0.18
+  - 0.95
+  file:
+    key: media/b85ed6e7f1d91288.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3311
+    sha256: b85ed6e7f1d9128818829a43aa32b82550f9c118c4832926d55ede228c11b4d9
+    durationSec: 0.77
+    gainDb: -4.67
+  lines:
+  - t:
+    - 0.0
+    - 0.77
+    zh: 右边
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -15.33
+    peak_db: -1.71
+    speech_ratio: 0.671
+    edge_start_db: -47.07
+    edge_end_db: -46.19
+    forced_logp: -0.21

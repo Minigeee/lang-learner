@@ -621,7 +621,7 @@ Each rule is a small module in `src/content-model/check/rules/` with an id and a
 | MED005 | error | Every `requiresMedia: hosted` widget points at R2 media. |
 | MED006 | warn | Voice variety: a Sound you-do pool has at least 4 speakers per contrast; speakers in `speaker.notIn` slots don't overlap. |
 | MED007 | warn (`--online`) | YouTube embeds exist and are embeddable (`videos.list`, 1 quota unit each). |
-| STR001 | error | Template rules: required slots, allowed widgets, word budgets. A non-default widget needs a `reason`. At most one wildcard per unit (brainstorm §4). |
+| STR001 | error | Template rules: required slots, allowed widgets, word budgets. A non-default widget needs a `reason`. Opener and practice-format rotation, a format's introduction on its first appearance, and skill-card pool depth (brainstorm §4.3–4.5; superseded the one-wildcard-per-unit cap on 2026-11-03). |
 | STR002 | error | Each widget config validates after migration. Widget `slots` include the slot it sits in. |
 | STR003 | error | `evidenceTargets` ⊆ `teaches ∪ assumes`. The you-do produces evidence for **every** item in `teaches`, so completion is computable. |
 | STR004 | error | No widget with output level ≥ 1 in S0 unless it is `optional` (R7). |

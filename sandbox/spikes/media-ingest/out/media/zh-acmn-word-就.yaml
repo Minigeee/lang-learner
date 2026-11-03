@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-就
+  title: 就
+  context: word-audio
+  durationSec: 0.95
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-就.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-就.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-就
+  span:
+  - 0.19
+  - 0.81
+  file:
+    key: media/a8382a74cfe8902c.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2697
+    sha256: a8382a74cfe8902cbf9961216958e1dc38c3b8f3c1f64baf4d7695868959a32d
+    durationSec: 0.62
+    gainDb: -5.73
+  lines:
+  - t:
+    - 0.0
+    - 0.62
+    zh: 就
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 1.0
+    per: 0.0
+    lufs: -14.27
+    peak_db: -1.6
+    speech_ratio: 0.656
+    edge_start_db: -42.96
+    edge_end_db: -41.05
+    forced_logp: -1.6

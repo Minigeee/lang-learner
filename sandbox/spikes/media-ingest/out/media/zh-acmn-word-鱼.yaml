@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-鱼
+  title: 鱼
+  context: word-audio
+  durationSec: 0.95
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-鱼.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-鱼.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-鱼
+  span:
+  - 0.15
+  - 0.84
+  file:
+    key: media/c92ac47b7c0cb789.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2877
+    sha256: c92ac47b7c0cb7890f1de01898333bf07e5f44aa5a79fb6896a5245f4bba8427
+    durationSec: 0.69
+    gainDb: -9.62
+  lines:
+  - t:
+    - 0.0
+    - 0.69
+    zh: 鱼
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 1.0
+    per: 1.0
+    lufs: -10.38
+    peak_db: -1.62
+    speech_ratio: 0.691
+    edge_start_db: -39.78
+    edge_end_db: -38.29
+    forced_logp: -1.83

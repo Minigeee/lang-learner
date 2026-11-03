@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-sao3
+  title: sao3
+  context: word-audio
+  durationSec: 1.032
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-sao3.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-sao3.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-sao3
+  span:
+  - 0.12
+  - 0.87
+  file:
+    key: media/08c765d376e5938e.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3106
+    sha256: 08c765d376e5938ea9206186dcf7825a4fd85644346b69391ed2584401167b21
+    durationSec: 0.75
+    gainDb: -2.79
+  lines:
+  - t:
+    - 0.0
+    - 0.75
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: sao3
+  validation:
+    lufs: -17.21
+    peak_db: -1.27
+    speech_ratio: 0.703
+    edge_start_db: -38.77
+    edge_end_db: -43.52
+    forced_logp: -1.67

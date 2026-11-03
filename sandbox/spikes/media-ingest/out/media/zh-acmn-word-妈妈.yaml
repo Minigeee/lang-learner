@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-妈妈
+  title: 妈妈
+  context: word-audio
+  durationSec: 1.0
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-妈妈.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-妈妈.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-妈妈
+  span:
+  - 0.13
+  - 0.86
+  file:
+    key: media/79dcf82eacaff8c8.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3094
+    sha256: 79dcf82eacaff8c85a183cbedf11e3aeacbc26b93d17781232d02531af313690
+    durationSec: 0.73
+    gainDb: -6.62
+  lines:
+  - t:
+    - 0.0
+    - 0.73
+    zh: 妈妈
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -13.38
+    peak_db: -1.86
+    speech_ratio: 0.708
+    edge_start_db: -43.69
+    edge_end_db: -42.41
+    forced_logp: -0.47

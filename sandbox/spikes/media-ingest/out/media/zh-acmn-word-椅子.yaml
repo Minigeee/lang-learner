@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-椅子
+  title: 椅子
+  context: word-audio
+  durationSec: 1.1
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-椅子.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-椅子.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-椅子
+  span:
+  - 0.18
+  - 1.0
+  file:
+    key: media/a72a435aaac10eb3.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3527
+    sha256: a72a435aaac10eb38652d603f8de1235662b17c44dcb92f4b59821134930e83c
+    durationSec: 0.82
+    gainDb: 0.08
+  lines:
+  - t:
+    - 0.0
+    - 0.82
+    zh: 椅子
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -20.08
+    peak_db: -8.59
+    speech_ratio: 0.741
+    edge_start_db: -35.29
+    edge_end_db: -37.83
+    forced_logp: -0.09

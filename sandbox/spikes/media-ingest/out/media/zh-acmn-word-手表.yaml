@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-手表
+  title: 手表
+  context: word-audio
+  durationSec: 1.35
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-手表.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-手表.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-手表
+  span:
+  - 0.14
+  - 1.2
+  file:
+    key: media/30b4da5f00c60a16.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 4638
+    sha256: 30b4da5f00c60a1643755ade16befcf11cd87c50f917ff120d003b62dc0f85fd
+    durationSec: 1.06
+    gainDb: -5.14
+  lines:
+  - t:
+    - 0.0
+    - 1.06
+    zh: 手表
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -14.86
+    peak_db: -1.91
+    speech_ratio: 0.8
+    edge_start_db: -37.56
+    edge_end_db: -37.75
+    forced_logp: -0.05

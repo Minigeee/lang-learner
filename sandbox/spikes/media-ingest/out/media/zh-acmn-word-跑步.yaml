@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-跑步
+  title: 跑步
+  context: word-audio
+  durationSec: 1.25
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-跑步.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-跑步.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-跑步
+  span:
+  - 0.11
+  - 1.07
+  file:
+    key: media/b0996372619d6603.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 4023
+    sha256: b0996372619d66035a05fe2c1918a079c029369237481040b600475a3e89ecca
+    durationSec: 0.96
+    gainDb: -5.88
+  lines:
+  - t:
+    - 0.0
+    - 0.96
+    zh: 跑步
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -14.12
+    peak_db: -1.55
+    speech_ratio: 0.716
+    edge_start_db: -39.74
+    edge_end_db: -43.81
+    forced_logp: -0.02

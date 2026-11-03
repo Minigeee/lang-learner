@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-fu3
+  title: fu3
+  context: word-audio
+  durationSec: 1.344
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-fu3.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-fu3.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-fu3
+  span:
+  - 0.16
+  - 1.15
+  file:
+    key: media/26e051c293e7cc3d.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 4145
+    sha256: 26e051c293e7cc3d2400be3cc1854bfc77b41a9e8083639d74a6d046bc588501
+    durationSec: 0.99
+    gainDb: -4.29
+  lines:
+  - t:
+    - 0.0
+    - 0.99
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: fu3
+  validation:
+    lufs: -15.71
+    peak_db: -1.47
+    speech_ratio: 0.786
+    edge_start_db: -40.91
+    edge_end_db: -39.28
+    forced_logp: -8.72

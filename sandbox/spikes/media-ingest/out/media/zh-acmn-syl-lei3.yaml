@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-lei3
+  title: lei3
+  context: word-audio
+  durationSec: 1.392
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-lei3.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-lei3.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-lei3
+  span:
+  - 0.23
+  - 1.15
+  file:
+    key: media/8b434a5c1bf9c5fb.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3907
+    sha256: 8b434a5c1bf9c5fb3d9d83c2cd1f366a84c804303fcb7fcd9c7d8c0387a45bd7
+    durationSec: 0.92
+    gainDb: -1.37
+  lines:
+  - t:
+    - 0.0
+    - 0.92
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: lei3
+  validation:
+    lufs: -18.63
+    peak_db: -0.59
+    speech_ratio: 0.769
+    edge_start_db: -48.1
+    edge_end_db: -44.76
+    forced_logp: -9.02

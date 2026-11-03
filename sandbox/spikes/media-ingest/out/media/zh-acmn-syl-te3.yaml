@@ -1,0 +1,47 @@
+media:
+  id: media:zh-acmn-syl-te3
+  title: te3
+  context: word-audio
+  durationSec: 1.392
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-te3.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-te3.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-te3
+  span:
+  - 0.2
+  - 1.15
+  file:
+    key: media/27327e27c9f749c8.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3963
+    sha256: 27327e27c9f749c8af711a8c0eb3428ad6ca97a0c72bf475c77f2a6445c13a65
+    durationSec: 0.95
+    gainDb: -2.82
+  lines:
+  - t:
+    - 0.0
+    - 0.95
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: te3
+  validation:
+    lufs: -17.18
+    peak_db: -1.65
+    speech_ratio: 0.777
+    edge_start_db: -44.79
+    edge_end_db: -43.03

@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-牛奶
+  title: 牛奶
+  context: word-audio
+  durationSec: 1.35
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-牛奶.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-牛奶.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-牛奶
+  span:
+  - 0.17
+  - 1.21
+  file:
+    key: media/aec44d8757ea515d.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 4435
+    sha256: aec44d8757ea515d934fb4cfe03e0a08bad6ed6dec83d02af7591e7dc645f1d4
+    durationSec: 1.04
+    gainDb: -4.16
+  lines:
+  - t:
+    - 0.0
+    - 1.04
+    zh: 牛奶
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -15.84
+    peak_db: -1.5
+    speech_ratio: 0.796
+    edge_start_db: -40.58
+    edge_end_db: -42.39
+    forced_logp: -0.04

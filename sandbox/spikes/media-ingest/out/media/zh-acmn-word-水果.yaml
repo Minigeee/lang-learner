@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-水果
+  title: 水果
+  context: word-audio
+  durationSec: 1.35
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-水果.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-水果.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-水果
+  span:
+  - 0.18
+  - 1.26
+  file:
+    key: media/e3a28d8f49d37eef.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 4644
+    sha256: e3a28d8f49d37eef4ff30ea95801d4a0ff621e70487ec9966d6abda2736f4568
+    durationSec: 1.08
+    gainDb: -3.29
+  lines:
+  - t:
+    - 0.0
+    - 1.08
+    zh: 水果
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -16.71
+    peak_db: -3.53
+    speech_ratio: 0.785
+    edge_start_db: -39.42
+    edge_end_db: -39.15
+    forced_logp: -0.03

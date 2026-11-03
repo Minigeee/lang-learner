@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-旅游
+  title: 旅游
+  context: word-audio
+  durationSec: 1.25
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-旅游.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-旅游.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-旅游
+  span:
+  - 0.17
+  - 1.07
+  file:
+    key: media/b4bbec16ae5fa309.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3844
+    sha256: b4bbec16ae5fa3090548b2fdfc69421cc72df7ca744d1336d400806a5594d0bb
+    durationSec: 0.9
+    gainDb: -8.42
+  lines:
+  - t:
+    - 0.0
+    - 0.9
+    zh: 旅游
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -11.58
+    peak_db: -1.39
+    speech_ratio: 0.764
+    edge_start_db: -43.98
+    edge_end_db: -45.65
+    forced_logp: -0.02

@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-应该
+  title: 应该
+  context: word-audio
+  durationSec: 1.15
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-应该.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-应该.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-应该
+  span:
+  - 0.15
+  - 1.0
+  file:
+    key: media/d1385f236b8f96d3.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3731
+    sha256: d1385f236b8f96d35136015f2f53739e886a7c51ef77832814c9c5a92c49692d
+    durationSec: 0.85
+    gainDb: -8.41
+  lines:
+  - t:
+    - 0.0
+    - 0.85
+    zh: 应该
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -11.59
+    peak_db: -1.51
+    speech_ratio: 0.75
+    edge_start_db: -44.75
+    edge_end_db: -35.12
+    forced_logp: -0.27

@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-yao2
+  title: yao2
+  context: word-audio
+  durationSec: 1.08
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-yao2.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-yao2.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-yao2
+  span:
+  - 0.19
+  - 0.81
+  file:
+    key: media/c157e00662072276.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2660
+    sha256: c157e0066207227611d646b5be491422eff4955347df0129a66e5937ca07cbd3
+    durationSec: 0.62
+    gainDb: -5.42
+  lines:
+  - t:
+    - 0.0
+    - 0.62
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: yao2
+  validation:
+    lufs: -14.58
+    peak_db: -1.24
+    speech_ratio: 0.656
+    edge_start_db: -41.26
+    edge_end_db: -39.74
+    forced_logp: -9.49

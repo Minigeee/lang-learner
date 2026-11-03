@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-小姐
+  title: 小姐
+  context: word-audio
+  durationSec: 1.2
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-小姐.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-小姐.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-小姐
+  span:
+  - 0.14
+  - 1.1
+  file:
+    key: media/ba8c8171964cac6c.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 4140
+    sha256: ba8c8171964cac6c4a8f16212ce77fc3a988a79e88e3d7c17c472e022d603d9e
+    durationSec: 0.96
+    gainDb: -4.88
+  lines:
+  - t:
+    - 0.0
+    - 0.96
+    zh: 小姐
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -15.12
+    peak_db: -1.9
+    speech_ratio: 0.779
+    edge_start_db: -38.42
+    edge_end_db: -38.98
+    forced_logp: -0.06

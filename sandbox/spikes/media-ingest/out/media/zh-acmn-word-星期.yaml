@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-星期
+  title: 星期
+  context: word-audio
+  durationSec: 1.3
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-星期.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-星期.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-星期
+  span:
+  - 0.17
+  - 1.14
+  file:
+    key: media/89db36479d577de9.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 4119
+    sha256: 89db36479d577de91020111c0f1e15689dc9fca71848f386e916d953961b1441
+    durationSec: 0.97
+    gainDb: -5.13
+  lines:
+  - t:
+    - 0.0
+    - 0.97
+    zh: 星期
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 1.0
+    per: 1.0
+    lufs: -14.87
+    peak_db: -3.89
+    speech_ratio: 0.781
+    edge_start_db: -44.68
+    edge_end_db: -46.5
+    forced_logp: -1.43

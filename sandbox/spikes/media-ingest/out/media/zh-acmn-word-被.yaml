@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-被
+  title: 被
+  context: word-audio
+  durationSec: 0.9
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-被.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-被.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-被
+  span:
+  - 0.16
+  - 0.77
+  file:
+    key: media/810c06a2feb19ea9.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2667
+    sha256: 810c06a2feb19ea964ab5c928dafa97a8ec36736390b741a457d2a770b6c9a6f
+    durationSec: 0.61
+    gainDb: -5.08
+  lines:
+  - t:
+    - 0.0
+    - 0.61
+    zh: 被
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 1.0
+    per: 0.0
+    lufs: -14.92
+    peak_db: -2.04
+    speech_ratio: 0.65
+    edge_start_db: -40.34
+    edge_end_db: -38.67
+    forced_logp: -3.25

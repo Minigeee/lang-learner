@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-mang3
+  title: mang3
+  context: word-audio
+  durationSec: 1.488
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-mang3.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-mang3.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-mang3
+  span:
+  - 0.17
+  - 1.26
+  file:
+    key: media/c47c91b10932a6c9.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 4589
+    sha256: c47c91b10932a6c93f2b9e011cbc1bf89617d45fb1e887b1244023026ef92591
+    durationSec: 1.09
+    gainDb: -4.12
+  lines:
+  - t:
+    - 0.0
+    - 1.09
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: mang3
+  validation:
+    lufs: -15.88
+    peak_db: -1.48
+    speech_ratio: 0.787
+    edge_start_db: -47.64
+    edge_end_db: -43.8
+    forced_logp: -11.58

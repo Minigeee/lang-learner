@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 210" role="img" aria-label="Two pictures: a man drinking tea, and the same man not drinking, his cup on the table.">
+  <defs>
+    <!-- seated man in profile facing right; origin at seat front -->
+    <g id="body">
+      <path d="M-38 -2 L4 -2 L4 10 L-38 10 Z" fill="var(--fig-wood)" stroke="var(--fig-line)" stroke-width="2"/>
+      <path d="M-36 10 L-36 50 M0 10 L0 50" stroke="var(--fig-wood-dark)" stroke-width="5" stroke-linecap="round"/>
+      <path d="M-40 -2 L-40 -70" stroke="var(--fig-wood-dark)" stroke-width="5" stroke-linecap="round"/>
+      <path d="M-24 -10 L8 -10 L12 46 L2 46 L0 4 L-24 4 Z" fill="var(--slate)" stroke="var(--fig-line)" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M0 46 L18 46 Q20 52 14 52 L0 52 Z" fill="var(--fig-hair)" stroke="var(--fig-line)" stroke-width="2"/>
+      <path d="M-34 -6 Q-36 -56 -18 -60 Q-2 -60 -2 -40 L-4 -6 Z" fill="var(--fig-cloth)" stroke="var(--fig-line)" stroke-width="2" stroke-linejoin="round"/>
+      <circle cx="-14" cy="-78" r="15" fill="var(--fig-skin)" stroke="var(--fig-line)" stroke-width="2"/>
+      <path d="M-29 -80 Q-28 -96 -12 -94 Q0 -93 0 -84 Q-12 -86 -20 -80 Z" fill="var(--fig-hair)" stroke="var(--fig-line)" stroke-width="2" stroke-linejoin="round"/>
+      <circle cx="-5" cy="-78" r="1.8" fill="var(--fig-line)"/>
+    </g>
+    <path id="teacup" d="M0 0 L16 0 L14 12 Q8 15 2 12 Z" fill="var(--fig-fill)" stroke="var(--fig-line)" stroke-width="2" stroke-linejoin="round"/>
+  </defs>
+  <g font-family="Microsoft YaHei" text-anchor="middle">
+    <!-- left: drinking (arm raised, cup at mouth) -->
+    <g transform="translate(90 120)">
+      <use href="#body"/>
+      <path d="M-16 -50 L-2 -28 L4 -66" fill="none" stroke="var(--fig-line)" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M-16 -50 L-2 -28 L4 -66" fill="none" stroke="var(--fig-cloth)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <use href="#teacup" transform="translate(-2 -76) rotate(-30)"/>
+      <path d="M8 -96 q4 -6 0 -12 M14 -94 q4 -6 0 -12" fill="none" stroke="var(--text-muted)" stroke-width="1.5" stroke-linecap="round"/>
+      <rect x="30" y="-14" width="56" height="8" rx="2" fill="var(--fig-wood)" stroke="var(--fig-line)" stroke-width="2"/>
+      <path d="M58 -6 L58 50" stroke="var(--fig-wood-dark)" stroke-width="5" stroke-linecap="round"/>
+    </g>
+    <text x="100" y="196" font-size="18" fill="var(--text-primary)">在喝茶</text>
+    <!-- right: not drinking (hands on lap, cup on the table) -->
+    <g transform="translate(260 120)">
+      <use href="#body"/>
+      <path d="M-16 -50 L-6 -24 L14 -18" fill="none" stroke="var(--fig-line)" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M-16 -50 L-6 -24 L14 -18" fill="none" stroke="var(--fig-cloth)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="30" y="-14" width="56" height="8" rx="2" fill="var(--fig-wood)" stroke="var(--fig-line)" stroke-width="2"/>
+      <path d="M58 -6 L58 50" stroke="var(--fig-wood-dark)" stroke-width="5" stroke-linecap="round"/>
+      <use href="#teacup" transform="translate(52 -27)"/>
+      <path d="M57 -32 q4 -6 0 -12 M63 -30 q4 -6 0 -12" fill="none" stroke="var(--text-muted)" stroke-width="1.5" stroke-linecap="round"/>
+    </g>
+    <text x="270" y="196" font-size="18" fill="var(--text-primary)">没喝茶</text>
+  </g>
+</svg>

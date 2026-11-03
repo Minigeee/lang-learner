@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-beng1
+  title: beng1
+  context: word-audio
+  durationSec: 0.984
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-beng1.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-beng1.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-beng1
+  span:
+  - 0.18
+  - 0.75
+  file:
+    key: media/82c2adb0c4f0c013.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2326
+    sha256: 82c2adb0c4f0c013bb79f57842a83dac7d1e38311e0459dc07152143d6daec97
+    durationSec: 0.57
+    gainDb: -7.06
+  lines:
+  - t:
+    - 0.0
+    - 0.57
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: beng1
+  validation:
+    lufs: -12.94
+    peak_db: -1.56
+    speech_ratio: 0.625
+    edge_start_db: -41.21
+    edge_end_db: -38.72
+    forced_logp: -11.75

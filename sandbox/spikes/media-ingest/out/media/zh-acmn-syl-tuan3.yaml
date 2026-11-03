@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-tuan3
+  title: tuan3
+  context: word-audio
+  durationSec: 1.296
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-tuan3.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-tuan3.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-tuan3
+  span:
+  - 0.21
+  - 1.08
+  file:
+    key: media/165b5d70a8581d5d.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3646
+    sha256: 165b5d70a8581d5d73f62b8f366629a7461a7ea9f44ef76fbb545c18ee62f4e1
+    durationSec: 0.87
+    gainDb: -1.75
+  lines:
+  - t:
+    - 0.0
+    - 0.87
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: tuan3
+  validation:
+    lufs: -18.25
+    peak_db: -1.46
+    speech_ratio: 0.756
+    edge_start_db: -43.24
+    edge_end_db: -41.7
+    forced_logp: -12.73

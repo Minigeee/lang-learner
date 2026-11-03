@@ -1,0 +1,3 @@
+fixtures/PARSE/lessons/fixture-parse.md:9 PARSE ":This" was read as a directive. If it is part of an id, put the id in an attribute (:k{#zh:g:…}); in prose, escape the colon as "\:"
+fixtures/PARSE/lessons/fixture-parse.md:11 PARSE a code fence inside a slot must be a widget (```@<widget>); got "yaml"
+fixtures/PARSE/lessons/fixture-parse.md:39 PARSE slot ":::hear" is out of skeleton order (hear → explain → we-do → you-do → recap → cards → deeper) or repeated

@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-需要
+  title: 需要
+  context: word-audio
+  durationSec: 1.2
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-需要.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-需要.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-需要
+  span:
+  - 0.17
+  - 1.02
+  file:
+    key: media/0123468563caa223.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3671
+    sha256: 0123468563caa223f14bbcc78f4ec865e123b3f158cb7839b7b820974d8400af
+    durationSec: 0.85
+    gainDb: -6.5
+  lines:
+  - t:
+    - 0.0
+    - 0.85
+    zh: 需要
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -13.5
+    peak_db: -1.64
+    speech_ratio: 0.75
+    edge_start_db: -45.44
+    edge_end_db: -43.5
+    forced_logp: -0.04

@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-看
+  title: 看
+  context: word-audio
+  durationSec: 1.0
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-看.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-看.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-看
+  span:
+  - 0.19
+  - 0.86
+  file:
+    key: media/9fb404802ad772cd.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2843
+    sha256: 9fb404802ad772cd8b8c35d8dae8d32b6259d88ac23fbe19a22457e50813e3ca
+    durationSec: 0.67
+    gainDb: -4.68
+  lines:
+  - t:
+    - 0.0
+    - 0.67
+    zh: 看
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -15.32
+    peak_db: -1.46
+    speech_ratio: 0.682
+    edge_start_db: -44.11
+    edge_end_db: -44.7
+    forced_logp: -0.1

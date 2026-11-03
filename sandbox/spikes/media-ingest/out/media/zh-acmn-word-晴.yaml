@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-晴
+  title: 晴
+  context: word-audio
+  durationSec: 1.15
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-晴.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-晴.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-晴
+  span:
+  - 0.18
+  - 1.15
+  file:
+    key: media/8d52ad9e11770630.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 4017
+    sha256: 8d52ad9e117706306c1200580c7299fe67fd4274198e9d9ab9e35efbc3b7552a
+    durationSec: 0.97
+    gainDb: -5.45
+  lines:
+  - t:
+    - 0.0
+    - 0.97
+    zh: 晴
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 1.0
+    per: 0.0
+    lufs: -14.55
+    peak_db: -4.47
+    speech_ratio: 0.771
+    edge_start_db: -31.81
+    edge_end_db: -29.16
+    forced_logp: -2.62

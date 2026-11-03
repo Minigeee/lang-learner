@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-tou3
+  title: tou3
+  context: word-audio
+  durationSec: 1.392
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-tou3.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-tou3.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-tou3
+  span:
+  - 0.25
+  - 1.15
+  file:
+    key: media/4ba132a27f963886.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3840
+    sha256: 4ba132a27f9638864d335435da125eb0b8f97f9ca825e6899818bb27391a2f59
+    durationSec: 0.9
+    gainDb: -1.03
+  lines:
+  - t:
+    - 0.0
+    - 0.9
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: tou3
+  validation:
+    lufs: -18.97
+    peak_db: -1.52
+    speech_ratio: 0.764
+    edge_start_db: -44.29
+    edge_end_db: -42.35
+    forced_logp: -10.62

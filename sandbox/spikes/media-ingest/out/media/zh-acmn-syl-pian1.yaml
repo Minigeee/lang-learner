@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-pian1
+  title: pian1
+  context: word-audio
+  durationSec: 1.176
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-pian1.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-pian1.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-pian1
+  span:
+  - 0.25
+  - 0.95
+  file:
+    key: media/12ea38bf82d51ed7.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2908
+    sha256: 12ea38bf82d51ed787bf82a031f3bfe948d300096766975363b555f7d0025258
+    durationSec: 0.7
+    gainDb: -7.45
+  lines:
+  - t:
+    - 0.0
+    - 0.7
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: pian1
+  validation:
+    lufs: -12.55
+    peak_db: -1.0
+    speech_ratio: 0.696
+    edge_start_db: -45.28
+    edge_end_db: -48.71
+    forced_logp: -0.39

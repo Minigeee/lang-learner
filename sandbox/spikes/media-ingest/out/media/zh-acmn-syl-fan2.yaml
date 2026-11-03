@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-fan2
+  title: fan2
+  context: word-audio
+  durationSec: 0.984
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-fan2.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-fan2.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-fan2
+  span:
+  - 0.06
+  - 0.77
+  file:
+    key: media/0c6e60a8736cc4d6.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2969
+    sha256: 0c6e60a8736cc4d6d05c4f7ce755cbd4d7bd850fdd741f60ff54f66db07da520
+    durationSec: 0.71
+    gainDb: -4.86
+  lines:
+  - t:
+    - 0.0
+    - 0.71
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: fan2
+  validation:
+    lufs: -15.14
+    peak_db: -1.73
+    speech_ratio: 0.586
+    edge_start_db: -39.4
+    edge_end_db: -42.07
+    forced_logp: -2.77

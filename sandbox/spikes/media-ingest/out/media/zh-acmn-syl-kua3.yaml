@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-kua3
+  title: kua3
+  context: word-audio
+  durationSec: 1.344
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-kua3.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-kua3.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-kua3
+  span:
+  - 0.17
+  - 1.12
+  file:
+    key: media/eeb7ec7e02884fd7.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3983
+    sha256: eeb7ec7e02884fd7188b39e0637350f2eab5fe4e15afa4b3741f6dae752b277c
+    durationSec: 0.95
+    gainDb: -1.42
+  lines:
+  - t:
+    - 0.0
+    - 0.95
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: kua3
+  validation:
+    lufs: -18.58
+    peak_db: -1.31
+    speech_ratio: 0.777
+    edge_start_db: -47.51
+    edge_end_db: -46.34
+    forced_logp: -8.23

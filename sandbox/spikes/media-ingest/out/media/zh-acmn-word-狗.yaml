@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-狗
+  title: 狗
+  context: word-audio
+  durationSec: 1.15
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-狗.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-狗.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-狗
+  span:
+  - 0.21
+  - 0.98
+  file:
+    key: media/262531ff8c83cdc6.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3378
+    sha256: 262531ff8c83cdc637d1baa49404b4404748f27e68c4c288bfee1be7ece779bb
+    durationSec: 0.77
+    gainDb: -2.21
+  lines:
+  - t:
+    - 0.0
+    - 0.77
+    zh: 狗
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -17.79
+    peak_db: -1.08
+    speech_ratio: 0.724
+    edge_start_db: -43.16
+    edge_end_db: -40.32
+    forced_logp: -0.06

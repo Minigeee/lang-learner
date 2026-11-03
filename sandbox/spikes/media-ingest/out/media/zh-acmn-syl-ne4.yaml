@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-ne4
+  title: ne4
+  context: word-audio
+  durationSec: 1.032
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-ne4.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-ne4.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-ne4
+  span:
+  - 0.19
+  - 0.82
+  file:
+    key: media/79cae337de4fd5b6.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2613
+    sha256: 79cae337de4fd5b6a3b899b8d73438aea63276fccfcf30b66cddf6df7a4e7128
+    durationSec: 0.63
+    gainDb: -8.47
+  lines:
+  - t:
+    - 0.0
+    - 0.63
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: ne4
+  validation:
+    lufs: -11.53
+    peak_db: -1.36
+    speech_ratio: 0.661
+    edge_start_db: -53.32
+    edge_end_db: -47.46
+    forced_logp: -7.29

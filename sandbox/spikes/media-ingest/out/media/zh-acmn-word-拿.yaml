@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-拿
+  title: 拿
+  context: word-audio
+  durationSec: 1.0
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-拿.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-拿.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-拿
+  span:
+  - 0.14
+  - 0.82
+  file:
+    key: media/21c72920e93684d5.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2928
+    sha256: 21c72920e93684d5caaeb4cd0cd66d2546a09c15c6ec61e4a7d99fe25e30f4b9
+    durationSec: 0.68
+    gainDb: -6.24
+  lines:
+  - t:
+    - 0.0
+    - 0.68
+    zh: 拿
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -13.76
+    peak_db: -1.23
+    speech_ratio: 0.687
+    edge_start_db: -40.71
+    edge_end_db: -40.1
+    forced_logp: -0.94

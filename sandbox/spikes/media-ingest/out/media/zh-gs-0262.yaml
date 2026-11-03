@@ -1,0 +1,1760 @@
+media:
+  id: media:zh-gs-0262
+  title: 玛格威
+  context: storybook
+  durationSec: 582.866
+  speakers:
+  - speaker:zh-gs-zhuo-sun
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://globalstorybooks.net/media/audio/zh/0262/
+  rights:
+    kind: open
+    license: cc-by-4.0
+    author: 'Written by: Lesley Koyi; Illustrated by: Wiehan de Jager; Translated by: Vicky Liu; Read by: Zhuo Sun'
+    sourceUrl: https://global-asp.github.io/storybooks-minnesota/stories/zh/0262/
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+  level: 5
+clips:
+- id: clip:zh-gs-0262-p01s0
+  span:
+  - 1.3
+  - 3.56
+  file:
+    key: media/910cf02eb669e839.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 7262
+    sha256: 910cf02eb669e839d14a6f6f1d87214218d2618fb37ca597b665340a3a307f93
+    durationSec: 2.26
+    gainDb: 0.9
+  lines:
+  - t:
+    - 0.0
+    - 2.26
+    zh: 玛格威
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.333
+    per: 0.0
+    lufs: -20.9
+    peak_db: -6.83
+    speech_ratio: 0.471
+    edge_start_db: -104.09
+    edge_end_db: -104.09
+    align_cer: 0.333
+    aligned_frac: 1.0
+  page: 1
+- id: clip:zh-gs-0262-p02s0
+  span:
+  - 4.72
+  - 23.03
+  file:
+    key: media/1071e54683f02ae9.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 67960
+    sha256: 1071e54683f02ae9024959b95d18644a2f4adeb229412cf6b12370c0eb26837c
+    durationSec: 18.31
+    gainDb: -1.56
+  lines:
+  - t:
+    - 0.0
+    - 18.31
+    zh: 在内罗毕这座繁忙的城市里，住着一群流浪的男孩，他们日复一日地活着，从来不知道什么是舒适安逸的生活。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -18.44
+    peak_db: -0.08
+    speech_ratio: 0.678
+    edge_start_db: -107.07
+    edge_end_db: -107.07
+    align_cer: 0.022
+    aligned_frac: 1.0
+  page: 2
+- id: clip:zh-gs-0262-p02s1
+  span:
+  - 23.46
+  - 36.52
+  file:
+    key: media/45b8454bbffed646.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 47581
+    sha256: 45b8454bbffed646fe592ddcd345bd35fa44a01cfa99a67ab1d85e47e93fea1c
+    durationSec: 13.06
+    gainDb: -1.16
+  lines:
+  - t:
+    - 0.0
+    - 13.06
+    zh: 一天早上，男孩们从冰冷的人行道上醒来，把他们用来睡觉的毯子叠起来。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -18.84
+    peak_db: -0.15
+    speech_ratio: 0.634
+    edge_start_db: -106.61
+    edge_end_db: -106.61
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 2
+- id: clip:zh-gs-0262-p02s2
+  span:
+  - 36.74
+  - 47.06
+  file:
+    key: media/490e8ddd08faa680.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 38821
+    sha256: 490e8ddd08faa680509f0c9a652a17e9386fd30656ed033120d5f0ff3765fb97
+    durationSec: 10.32
+    gainDb: -0.83
+  lines:
+  - t:
+    - 0.0
+    - 10.32
+    zh: 天太冷了，为了驱赶寒气，他们用拾来的垃圾燃起了一堆火。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -19.17
+    peak_db: -1.05
+    speech_ratio: 0.653
+    edge_start_db: -105.75
+    edge_end_db: -105.75
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 2
+- id: clip:zh-gs-0262-p02s3
+  span:
+  - 47.53
+  - 53.46
+  file:
+    key: media/0970218b10b1966f.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 21154
+    sha256: 0970218b10b1966f5b80f68c00d9d266f3ca6fe842439ead0c2ba131dbd59b5c
+    durationSec: 5.93
+    gainDb: -0.42
+  lines:
+  - t:
+    - 0.0
+    - 5.93
+    zh: 在这群男孩中有一个人叫玛格威。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.071
+    per: 0.0
+    lufs: -19.58
+    peak_db: -0.63
+    speech_ratio: 0.62
+    edge_start_db: -106.16
+    edge_end_db: -106.16
+    align_cer: 0.071
+    aligned_frac: 1.0
+  page: 2
+- id: clip:zh-gs-0262-p03s0
+  span:
+  - 54.96
+  - 65.82
+  file:
+    key: media/4aede212192a726d.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 39886
+    sha256: 4aede212192a726d30cf9dbccd50daa21392e621f2c8484297e47f9ac76cb591
+    durationSec: 10.86
+    gainDb: 0.39
+  lines:
+  - t:
+    - 0.0
+    - 10.86
+    zh: 玛格威的父母过世时，他只有五岁，他搬去跟叔叔一起生活。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.042
+    per: 0.0
+    lufs: -20.51
+    peak_db: -1.39
+    speech_ratio: 0.683
+    edge_start_db: -104.92
+    edge_end_db: -104.92
+    align_cer: 0.042
+    aligned_frac: 1.0
+  page: 3
+- id: clip:zh-gs-0262-p03s1
+  span:
+  - 66.28
+  - 70.33
+  file:
+    key: media/d3571f9b0741d9ba.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 14926
+    sha256: d3571f9b0741d9bad0b1b995aa81f6739ec938a3e50ef33edf08e0d47581e518
+    durationSec: 4.05
+    gainDb: -0.5
+  lines:
+  - t:
+    - 0.0
+    - 4.05
+    zh: 叔叔从来不关心玛格威。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.1
+    per: 0.0
+    lufs: -19.5
+    peak_db: -3.13
+    speech_ratio: 0.676
+    edge_start_db: -105.75
+    edge_end_db: -105.75
+    align_cer: 0.1
+    aligned_frac: 1.0
+  page: 3
+- id: clip:zh-gs-0262-p03s2
+  span:
+  - 71.29
+  - 79.56
+  file:
+    key: media/ebd113b5cf2d3532.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 32056
+    sha256: ebd113b5cf2d3532e60b6b48a623a32d81a9327d4e5f015779ae986d8943167a
+    durationSec: 8.27
+    gainDb: -0.01
+  lines:
+  - t:
+    - 0.0
+    - 8.27
+    zh: 玛格威在叔叔家挨饿受冻，还要干很多体力活。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.053
+    per: 0.0
+    lufs: -19.99
+    peak_db: -1.24
+    speech_ratio: 0.717
+    edge_start_db: -105.21
+    edge_end_db: -105.21
+    align_cer: 0.053
+    aligned_frac: 1.0
+  page: 3
+- id: clip:zh-gs-0262-p04s0
+  span:
+  - 80.5
+  - 88.22
+  file:
+    key: media/e0b5837dd8cf120d.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 29500
+    sha256: e0b5837dd8cf120d38018bd9d989c15490266cda65c908f6008e9ff72b13cfa7
+    durationSec: 7.72
+    gainDb: -1.63
+  lines:
+  - t:
+    - 0.0
+    - 7.72
+    zh: 一旦玛格威稍有抱怨，叔叔就会对他拳打脚踢。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.053
+    per: 0.0
+    lufs: -18.64
+    peak_db: 0.63
+    speech_ratio: 0.686
+    edge_start_db: -106.81
+    edge_end_db: -106.81
+    align_cer: 0.053
+    aligned_frac: 1.0
+  page: 4
+- id: clip:zh-gs-0262-p04s1
+  span:
+  - 88.64
+  - 104.83
+  file:
+    key: media/07b892df4c2033a7.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 60740
+    sha256: 07b892df4c2033a7b2e7fcbd398c3795f2bfad1352cf756361b86efff42d8d93
+    durationSec: 16.19
+    gainDb: -0.78
+  lines:
+  - t:
+    - 0.0
+    - 16.19
+    zh: 有一次，玛格威问叔叔他能不能去上学，叔叔狠狠地打了他几下，说：“你这傻瓜，用得着上学吗？”
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.027
+    per: 0.0
+    lufs: -19.22
+    peak_db: -0.76
+    speech_ratio: 0.635
+    edge_start_db: -106.22
+    edge_end_db: -106.22
+    align_cer: 0.027
+    aligned_frac: 1.0
+  page: 4
+- id: clip:zh-gs-0262-p04s2
+  span:
+  - 105.82
+  - 115.52
+  file:
+    key: media/a018119ba7f66859.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 36305
+    sha256: a018119ba7f66859adcce3a776aa13af663e6f5897bcc720f9f8ec7b1dfe4af1
+    durationSec: 9.7
+    gainDb: 0.97
+  lines:
+  - t:
+    - 0.0
+    - 9.7
+    zh: 玛格威过了三年这样的日子，终于离家出走，无家可归。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.045
+    per: 0.0
+    lufs: -20.97
+    peak_db: -2.94
+    speech_ratio: 0.684
+    edge_start_db: -104.37
+    edge_end_db: -104.37
+    align_cer: 0.045
+    aligned_frac: 1.0
+  page: 4
+- id: clip:zh-gs-0262-p05s0
+  span:
+  - 117.25
+  - 126.51
+  file:
+    key: media/5197515077d132b7.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 34480
+    sha256: 5197515077d132b793a01df1ba181c76878f144e472377b85afaa7c18ed43b9f
+    durationSec: 9.26
+    gainDb: -1.7
+  lines:
+  - t:
+    - 0.0
+    - 9.26
+    zh: 流浪生活非常艰辛，大多数男孩每天只能混个温饱。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -18.3
+    peak_db: -0.52
+    speech_ratio: 0.672
+    edge_start_db: -106.73
+    edge_end_db: -106.73
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 5
+- id: clip:zh-gs-0262-p05s1
+  span:
+  - 126.72
+  - 133.51
+  file:
+    key: media/2915fa8ed8087f37.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 24973
+    sha256: 2915fa8ed8087f37b7c36867f1249531c5adf465faeb7198d82316f709e59cd8
+    durationSec: 6.79
+    gainDb: -0.56
+  lines:
+  - t:
+    - 0.0
+    - 6.79
+    zh: 他们有时候会被抓起来，有时候会挨打。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -19.44
+    peak_db: -1.99
+    speech_ratio: 0.593
+    edge_start_db: -106.8
+    edge_end_db: -106.8
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 5
+- id: clip:zh-gs-0262-p05s2
+  span:
+  - 133.88
+  - 140.2
+  file:
+    key: media/d276eb2b3748b470.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 23701
+    sha256: d276eb2b3748b470a8ebe08a02ce25c2d92b0d13d69fc7fe47c0fc469474cb42
+    durationSec: 6.32
+    gainDb: -0.89
+  lines:
+  - t:
+    - 0.0
+    - 6.32
+    zh: 当他们生病的时候，没有人照顾他们。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -19.11
+    peak_db: -2.1
+    speech_ratio: 0.635
+    edge_start_db: -106.43
+    edge_end_db: -106.43
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 5
+- id: clip:zh-gs-0262-p05s3
+  span:
+  - 140.89
+  - 155.13
+  file:
+    key: media/c4c8c0f3086671c6.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 53931
+    sha256: c4c8c0f3086671c60bc68a590590ead386b783a4f2cb6b748bf478f40d11dfe9
+    durationSec: 14.24
+    gainDb: -0.64
+  lines:
+  - t:
+    - 0.0
+    - 14.24
+    zh: 这群男孩就靠乞讨得来的一点点钱过活，他们有时候也会卖塑料品和旧货赚点钱。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -19.36
+    peak_db: -1.91
+    speech_ratio: 0.678
+    edge_start_db: -106.17
+    edge_end_db: -106.17
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 5
+- id: clip:zh-gs-0262-p05s4
+  span:
+  - 156.28
+  - 168.16
+  file:
+    key: media/f675d330bb1240aa.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 44176
+    sha256: f675d330bb1240aa17e5b62d47eccacd3562bb2200bcbfa29f1e23d4478415bc
+    durationSec: 11.88
+    gainDb: -1.69
+  lines:
+  - t:
+    - 0.0
+    - 11.88
+    zh: 有时候别的流浪汉会来找茬，争夺领地，那时候生活就更艰难。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -18.31
+    peak_db: -0.75
+    speech_ratio: 0.604
+    edge_start_db: -107.42
+    edge_end_db: -107.42
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 5
+- id: clip:zh-gs-0262-p06s0
+  span:
+  - 169.5
+  - 180.11
+  file:
+    key: media/6c234429a788a757.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 38597
+    sha256: 6c234429a788a757493dc6945d3cbc391edd40c679f93a6f981e361aa7cfb09e
+    durationSec: 10.61
+    gainDb: 0.01
+  lines:
+  - t:
+    - 0.0
+    - 10.61
+    zh: 有一天，玛格威正在翻垃圾箱，他找到了一本破旧不堪的故事书。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.038
+    per: 0.0
+    lufs: -20.01
+    peak_db: -1.46
+    speech_ratio: 0.614
+    edge_start_db: -105.67
+    edge_end_db: -105.67
+    align_cer: 0.038
+    aligned_frac: 1.0
+  page: 6
+- id: clip:zh-gs-0262-p06s1
+  span:
+  - 180.33
+  - 186.75
+  file:
+    key: media/e24171c1a7e8b37d.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 24018
+    sha256: e24171c1a7e8b37dc0215ab49080e0ee1687edd328d6953b926c901245b41792
+    durationSec: 6.42
+    gainDb: 2.38
+  lines:
+  - t:
+    - 0.0
+    - 6.42
+    zh: 他把书上的灰尘吹走，把书放进了袋子里。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -22.38
+    peak_db: -3.52
+    speech_ratio: 0.76
+    edge_start_db: -102.5
+    edge_end_db: -102.5
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 6
+- id: clip:zh-gs-0262-p06s2
+  span:
+  - 187.3
+  - 200.67
+  file:
+    key: media/550ce8738bfbf142.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 50488
+    sha256: 550ce8738bfbf1424fd01ba24d8755ee64f620ab6475e0282d9889358576f702
+    durationSec: 13.37
+    gainDb: 1.41
+  lines:
+  - t:
+    - 0.0
+    - 13.37
+    zh: 每天完工后，他会把书拿出来，翻着上面的图画，可惜他看不懂上面的文字。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -21.41
+    peak_db: -4.18
+    speech_ratio: 0.674
+    edge_start_db: -104.82
+    edge_end_db: -104.82
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 6
+- id: clip:zh-gs-0262-p07s0
+  span:
+  - 201.99
+  - 209.29
+  file:
+    key: media/d2676d90654819df.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 28099
+    sha256: d2676d90654819dfe7642665bc0974e179bc3fbda0bc17ad3b01c2af75ed04c1
+    durationSec: 7.3
+    gainDb: -0.25
+  lines:
+  - t:
+    - 0.0
+    - 7.3
+    zh: 图画书讲的是一个男孩长大成为飞行员的故事。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -19.75
+    peak_db: -1.12
+    speech_ratio: 0.735
+    edge_start_db: -105.62
+    edge_end_db: -105.62
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 7
+- id: clip:zh-gs-0262-p07s1
+  span:
+  - 210.03
+  - 217.03
+  file:
+    key: media/8c3139e5639121ec.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 26327
+    sha256: 8c3139e5639121ecaca26ee0e24f448cc9cd6688445d13ad248cf1f466ab874d
+    durationSec: 7.0
+    gainDb: 0.09
+  lines:
+  - t:
+    - 0.0
+    - 7.0
+    zh: 玛格威有时候会梦想自己成为一个飞行员。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.056
+    per: 0.0
+    lufs: -20.35
+    peak_db: -1.09
+    speech_ratio: 0.712
+    edge_start_db: -104.93
+    edge_end_db: -104.93
+    align_cer: 0.056
+    aligned_frac: 1.0
+  page: 7
+- id: clip:zh-gs-0262-p07s2
+  span:
+  - 217.25
+  - 223.67
+  file:
+    key: media/5b94f69100fcf0cc.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 24248
+    sha256: 5b94f69100fcf0cc45988fea47fe0e243ee06e5cd9c44ba7a97b8b27470acc96
+    durationSec: 6.42
+    gainDb: 0.72
+  lines:
+  - t:
+    - 0.0
+    - 6.42
+    zh: 有时候，他想象着自己就是故事中的男孩。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -20.72
+    peak_db: -1.96
+    speech_ratio: 0.733
+    edge_start_db: -105.09
+    edge_end_db: -105.09
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 7
+- id: clip:zh-gs-0262-p08s0
+  span:
+  - 225.39
+  - 233.95
+  file:
+    key: media/7ab587eb487ea733.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 31176
+    sha256: 7ab587eb487ea733e8663d6dae1bb3b637b757e4f9bc77a8f35a630092c3492e
+    durationSec: 8.56
+    gainDb: 0.97
+  lines:
+  - t:
+    - 0.0
+    - 8.56
+    zh: 有一天，天气很冷，玛格威站在街头乞讨。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.062
+    per: 0.0
+    lufs: -20.97
+    peak_db: -2.46
+    speech_ratio: 0.688
+    edge_start_db: -104.25
+    edge_end_db: -104.25
+    align_cer: 0.062
+    aligned_frac: 1.0
+  page: 8
+- id: clip:zh-gs-0262-p08s1
+  span:
+  - 234.39
+  - 242.02
+  file:
+    key: media/361e25674c97191e.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 28436
+    sha256: 361e25674c97191ed15af3b3964821bf43505b84006a00b66a43b3224a99b7da
+    durationSec: 7.63
+    gainDb: 1.34
+  lines:
+  - t:
+    - 0.0
+    - 7.63
+    zh: 一个男人走过来，跟他打招呼：“你好，我叫托马斯。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -21.34
+    peak_db: -4.42
+    speech_ratio: 0.623
+    edge_start_db: -103.91
+    edge_end_db: -103.91
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 8
+- id: clip:zh-gs-0262-p08s2
+  span:
+  - 242.21
+  - 249.34
+  file:
+    key: media/ec98f3370dba649d.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 25905
+    sha256: ec98f3370dba649d0642b9318cef9e688e5b8f5ee4ef8ea72e9a8e58f55560c4
+    durationSec: 7.13
+    gainDb: -1.06
+  lines:
+  - t:
+    - 0.0
+    - 7.13
+    zh: 我在这儿附近工作，你可以到那儿拿点吃的。”
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -18.94
+    peak_db: -0.72
+    speech_ratio: 0.597
+    edge_start_db: -106.9
+    edge_end_db: -106.9
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 8
+- id: clip:zh-gs-0262-p08s3
+  span:
+  - 249.92
+  - 261.44
+  file:
+    key: media/93ff15d83f3a9837.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 42081
+    sha256: 93ff15d83f3a9837905c8ba2d48bdb83c7df09482561a52726123a8d14146387
+    durationSec: 11.52
+    gainDb: -0.32
+  lines:
+  - t:
+    - 0.0
+    - 11.52
+    zh: 他指着一座蓝顶黄墙的房子，“我希望你别客气，到那儿去拿点吃的吧！”
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -19.68
+    peak_db: -1.9
+    speech_ratio: 0.614
+    edge_start_db: -105.98
+    edge_end_db: -105.98
+    align_cer: 0.036
+    aligned_frac: 1.0
+  page: 8
+- id: clip:zh-gs-0262-p08s4
+  span:
+  - 262.64
+  - 270.74
+  file:
+    key: media/21016f00a84af6ea.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 30800
+    sha256: 21016f00a84af6ea49ae005c50e65d78dcbd24cd43fa12049a3071b4687bc038
+    durationSec: 8.1
+    gainDb: 2.34
+  lines:
+  - t:
+    - 0.0
+    - 8.1
+    zh: 玛格威看了看男人，又看了看房子，说：“可能吧！”
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.056
+    per: 0.0
+    lufs: -22.34
+    peak_db: -4.17
+    speech_ratio: 0.721
+    edge_start_db: -103.1
+    edge_end_db: -35.61
+    align_cer: 0.056
+    aligned_frac: 1.0
+  page: 8
+- id: clip:zh-gs-0262-p08s5
+  span:
+  - 270.74
+  - 274.46
+  file:
+    key: media/a49f3e95732a3d94.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 13540
+    sha256: a49f3e95732a3d949e811ee33946c72357857ca539eea115e5e2a06097329ece
+    durationSec: 3.72
+    gainDb: 1.61
+  lines:
+  - t:
+    - 0.0
+    - 3.72
+    zh: 然后他就走开了。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -21.61
+    peak_db: -4.83
+    speech_ratio: 0.598
+    edge_start_db: -44.5
+    edge_end_db: -104.52
+    align_cer: 0.143
+    aligned_frac: 1.0
+  page: 8
+- id: clip:zh-gs-0262-p09s0
+  span:
+  - 275.54
+  - 282.83
+  file:
+    key: media/c5c722115dda3bd6.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 27626
+    sha256: c5c722115dda3bd61aa1cd9b245a76b78980428e4c7209f7cc4415c7c8dd124f
+    durationSec: 7.29
+    gainDb: -1.07
+  lines:
+  - t:
+    - 0.0
+    - 7.29
+    zh: 接下来的几个月，流浪的男孩们渐渐认识了托马斯。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -18.93
+    peak_db: -2.09
+    speech_ratio: 0.723
+    edge_start_db: -105.73
+    edge_end_db: -105.73
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 9
+- id: clip:zh-gs-0262-p09s1
+  span:
+  - 283.48
+  - 290.23
+  file:
+    key: media/677753735d444d00.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 25083
+    sha256: 677753735d444d00f3823578f11542eff36ef54aaccdf7575b0521cf84081e66
+    durationSec: 6.75
+    gainDb: 1.35
+  lines:
+  - t:
+    - 0.0
+    - 6.75
+    zh: 他喜欢跟人聊天，特别是无家可归的人。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -21.35
+    peak_db: -3.93
+    speech_ratio: 0.702
+    edge_start_db: -104.21
+    edge_end_db: -104.21
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 9
+- id: clip:zh-gs-0262-p09s2
+  span:
+  - 291.59
+  - 296.58
+  file:
+    key: media/251c24304f1a492b.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 18750
+    sha256: 251c24304f1a492b5f4e7d4e58708d56518a4abd9b93ac51c9371d239e7bb5a0
+    durationSec: 4.99
+    gainDb: -0.59
+  lines:
+  - t:
+    - 0.0
+    - 4.99
+    zh: 托马斯听别人讲他们的故事。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -19.41
+    peak_db: -3.11
+    speech_ratio: 0.629
+    edge_start_db: -106.12
+    edge_end_db: -106.12
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 9
+- id: clip:zh-gs-0262-p09s3
+  span:
+  - 296.92
+  - 305.01
+  file:
+    key: media/2deafddf49d14f7c.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 29928
+    sha256: 2deafddf49d14f7cf56022d5f3521b3a5d675021da90ed435290e37fcaef256e
+    durationSec: 8.09
+    gainDb: 1.0
+  lines:
+  - t:
+    - 0.0
+    - 8.09
+    zh: 他不苟言笑，非常耐心、有礼貌，尊重他人。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -21.0
+    peak_db: -2.81
+    speech_ratio: 0.66
+    edge_start_db: -104.85
+    edge_end_db: -104.85
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 9
+- id: clip:zh-gs-0262-p09s4
+  span:
+  - 305.9
+  - 314.15
+  file:
+    key: media/c9dd22a46ce4b795.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 33212
+    sha256: c9dd22a46ce4b795162f2c6f6786939438e6cd74e07217282878bedee0232742
+    durationSec: 8.25
+    gainDb: 1.69
+  lines:
+  - t:
+    - 0.0
+    - 8.25
+    zh: 一些男孩开始在白天去蓝顶黄墙的房子里找吃的。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -21.69
+    peak_db: -4.12
+    speech_ratio: 0.742
+    edge_start_db: -104.04
+    edge_end_db: -104.04
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 9
+- id: clip:zh-gs-0262-p10s0
+  span:
+  - 315.26
+  - 326.18
+  file:
+    key: media/da4e5eb32265c3e8.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 40561
+    sha256: da4e5eb32265c3e8fe5e69eca74a6a6ff99b54b32e927699ba1eaf6181e583f3
+    durationSec: 10.92
+    gainDb: 0.45
+  lines:
+  - t:
+    - 0.0
+    - 10.92
+    zh: 有一天，玛格威正坐在人行道上看故事书，托马斯来了坐在他旁边。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.037
+    per: 0.0
+    lufs: -20.63
+    peak_db: -1.45
+    speech_ratio: 0.679
+    edge_start_db: -105.39
+    edge_end_db: -105.39
+    align_cer: 0.037
+    aligned_frac: 1.0
+  page: 10
+- id: clip:zh-gs-0262-p10s1
+  span:
+  - 326.52
+  - 332.27
+  file:
+    key: media/26dd918947aa51df.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 20549
+    sha256: 26dd918947aa51dfc07140d94e0f7e1179f48b5460bd7b441c8c441241c2cd09
+    durationSec: 5.75
+    gainDb: 0.28
+  lines:
+  - t:
+    - 0.0
+    - 5.75
+    zh: 托马斯问：“这本书讲了什么故事？”
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -20.65
+    peak_db: -1.28
+    speech_ratio: 0.606
+    edge_start_db: -104.65
+    edge_end_db: -104.65
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 10
+- id: clip:zh-gs-0262-p10s2
+  span:
+  - 332.66
+  - 340.5
+  file:
+    key: media/046eaf3ec35e9405.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 28812
+    sha256: 046eaf3ec35e94054655f4bd3f7eae5d9e87acfce8066ad6f6d5f8bec8d5d50b
+    durationSec: 7.84
+    gainDb: -1.33
+  lines:
+  - t:
+    - 0.0
+    - 7.84
+    zh: 玛格威回答说：“这是关于一个男孩成为飞行员的故事。”
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.045
+    per: 0.0
+    lufs: -18.67
+    peak_db: -1.73
+    speech_ratio: 0.654
+    edge_start_db: -106.33
+    edge_end_db: -106.33
+    align_cer: 0.045
+    aligned_frac: 1.0
+  page: 10
+- id: clip:zh-gs-0262-p10s3
+  span:
+  - 340.58
+  - 345.3
+  file:
+    key: media/7617e063289d7fc8.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 16471
+    sha256: 7617e063289d7fc8f40026f3fe2963045a4c54baeaa9e45dc4bed008e7562b54
+    durationSec: 4.72
+    gainDb: -1.05
+  lines:
+  - t:
+    - 0.0
+    - 4.72
+    zh: 托马斯问：“男孩叫什么名字？”
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -18.95
+    peak_db: -1.83
+    speech_ratio: 0.554
+    edge_start_db: -106.22
+    edge_end_db: -106.22
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 10
+- id: clip:zh-gs-0262-p10s4
+  span:
+  - 345.62
+  - 353.33
+  file:
+    key: media/e9dd693f7cf45796.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 28338
+    sha256: e9dd693f7cf45796e0ed4efbe2a2e7ed4eb6b4f4a74e87916984c9dc77710121
+    durationSec: 7.71
+    gainDb: 2.16
+  lines:
+  - t:
+    - 0.0
+    - 7.71
+    zh: 玛格威声音低了下去：“我不知道，我不识字。”
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.059
+    per: 0.0
+    lufs: -22.26
+    peak_db: -3.16
+    speech_ratio: 0.683
+    edge_start_db: -103.21
+    edge_end_db: -103.21
+    align_cer: 0.059
+    aligned_frac: 1.0
+  page: 10
+- id: clip:zh-gs-0262-p11s0
+  span:
+  - 354.7
+  - 370.24
+  file:
+    key: media/d563c16b5c10e9fb.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 59123
+    sha256: d563c16b5c10e9fb28ea3f83b7825f08046ecee770a23592f736d67be55ccb90
+    durationSec: 15.54
+    gainDb: 0.04
+  lines:
+  - t:
+    - 0.0
+    - 15.54
+    zh: 当他们再次见面的时候，玛格威开始跟托马斯讲自己的故事，他的叔叔怎么对他，他怎么逃离了叔叔家。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.024
+    per: 0.0
+    lufs: -20.04
+    peak_db: -1.04
+    speech_ratio: 0.663
+    edge_start_db: -105.62
+    edge_end_db: -105.62
+    align_cer: 0.095
+    aligned_frac: 1.0
+  page: 11
+- id: clip:zh-gs-0262-p11s1
+  span:
+  - 370.38
+  - 381.82
+  file:
+    key: media/3c806e7c6a40461a.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 44164
+    sha256: 3c806e7c6a40461a86597b920a30cfae87ab860e6fd263f988225e33d2b759fd
+    durationSec: 11.44
+    gainDb: 0.66
+  lines:
+  - t:
+    - 0.0
+    - 11.44
+    zh: 托马斯没说什么，也没有告诉玛格威该怎么做，但是他听得很仔细。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.037
+    per: 0.0
+    lufs: -21.07
+    peak_db: -1.66
+    speech_ratio: 0.704
+    edge_start_db: -103.97
+    edge_end_db: -103.97
+    align_cer: 0.037
+    aligned_frac: 1.0
+  page: 11
+- id: clip:zh-gs-0262-p11s2
+  span:
+  - 382.07
+  - 391.28
+  file:
+    key: media/a00395297baa579b.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 36312
+    sha256: a00395297baa579b3e9c4391ada04a14f90f9b61aa6d0b08e7662a211da5a5cf
+    durationSec: 9.21
+    gainDb: 0.17
+  lines:
+  - t:
+    - 0.0
+    - 9.21
+    zh: 有时候他们会一边在蓝顶黄墙的房子里吃东西，一边聊聊天。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -20.17
+    peak_db: -1.62
+    speech_ratio: 0.75
+    edge_start_db: -105.18
+    edge_end_db: -105.18
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 11
+- id: clip:zh-gs-0262-p12s0
+  span:
+  - 393.47
+  - 409.89
+  file:
+    key: media/b3f189ec1f26fe31.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 60682
+    sha256: b3f189ec1f26fe31fb1f362129d1cc917e2fdc6ac323043dc56aaa2776600604
+    durationSec: 16.42
+    gainDb: -0.99
+  lines:
+  - t:
+    - 0.0
+    - 16.42
+    zh: 玛格威十岁生日的时候，托马斯给了他一本新的故事书，这是关于一个乡下男孩成为足球运动员的故事。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.023
+    per: 0.0
+    lufs: -19.01
+    peak_db: -0.39
+    speech_ratio: 0.677
+    edge_start_db: -106.54
+    edge_end_db: -106.54
+    align_cer: 0.023
+    aligned_frac: 1.0
+  page: 12
+- id: clip:zh-gs-0262-p12s1
+  span:
+  - 410.25
+  - 414.87
+  file:
+    key: media/c799f16be9729824.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 18358
+    sha256: c799f16be972982436281331683d14d4560f838f0c0b38234845b466e5c682b9
+    durationSec: 4.62
+    gainDb: 1.54
+  lines:
+  - t:
+    - 0.0
+    - 4.62
+    zh: 托马斯给玛格威讲过这个故事很多次。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.062
+    per: 0.0
+    lufs: -21.54
+    peak_db: -4.38
+    speech_ratio: 0.82
+    edge_start_db: -103.77
+    edge_end_db: -38.63
+    align_cer: 0.062
+    aligned_frac: 1.0
+  page: 12
+- id: clip:zh-gs-0262-p12s2
+  span:
+  - 414.87
+  - 423.7
+  file:
+    key: media/f2b083bea175cb3d.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 32195
+    sha256: f2b083bea175cb3d16ce186c34a0a4061a2b5503a56a373323ed1a25ba90a1d2
+    durationSec: 8.83
+    gainDb: -0.77
+  lines:
+  - t:
+    - 0.0
+    - 8.83
+    zh: 有一天，托马斯说：“我觉得你应该去上学，去识字。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -19.23
+    peak_db: -1.45
+    speech_ratio: 0.598
+    edge_start_db: -39.14
+    edge_end_db: -41.75
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 12
+- id: clip:zh-gs-0262-p12s3
+  span:
+  - 423.7
+  - 426.26
+  file:
+    key: media/b65633622bc84fb5.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 9503
+    sha256: b65633622bc84fb565f57eb43816377c789c8fe3358f2fde40200e39b24db6aa
+    durationSec: 2.56
+    gainDb: -0.72
+  lines:
+  - t:
+    - 0.0
+    - 2.56
+    zh: 你觉得呢？”
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -19.28
+    peak_db: -6.04
+    speech_ratio: 0.424
+    edge_start_db: -37.61
+    edge_end_db: -105.65
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 12
+- id: clip:zh-gs-0262-p12s4
+  span:
+  - 427.06
+  - 435.16
+  file:
+    key: media/19d6ee165367a963.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 30504
+    sha256: 19d6ee165367a9633d2f9a422977c2832a123464d925e500abc3a7cb1e480ccc
+    durationSec: 8.1
+    gainDb: 0.55
+  lines:
+  - t:
+    - 0.0
+    - 8.1
+    zh: 托马斯说他知道一个地方，孩子们可以住在那儿，上学。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -20.55
+    peak_db: -2.17
+    speech_ratio: 0.695
+    edge_start_db: -105.09
+    edge_end_db: -105.09
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 12
+- id: clip:zh-gs-0262-p13s0
+  span:
+  - 436.88
+  - 442.99
+  file:
+    key: media/a63c514ee90b0632.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 22937
+    sha256: a63c514ee90b063200499ce9d47e666ca77d1f2959e26c1c17a612da8569f72a
+    durationSec: 6.11
+    gainDb: -0.54
+  lines:
+  - t:
+    - 0.0
+    - 6.11
+    zh: 玛格威想了想去新地方生活，上学。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.143
+    per: 0.071
+    lufs: -19.46
+    peak_db: -1.02
+    speech_ratio: 0.711
+    edge_start_db: -107.52
+    edge_end_db: -45.85
+    align_cer: 0.143
+    aligned_frac: 1.0
+  page: 13
+- id: clip:zh-gs-0262-p13s1
+  span:
+  - 442.99
+  - 451.05
+  file:
+    key: media/eb83a327efeb4db3.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 31090
+    sha256: eb83a327efeb4db320f6d9e69387152f7533dbcc79eaff2f3252c0f10de736e6
+    durationSec: 8.06
+    gainDb: -1.26
+  lines:
+  - t:
+    - 0.0
+    - 8.06
+    zh: 但是，如果他叔叔说得对，他太笨了上不了学怎么办？
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -18.9
+    peak_db: 0.26
+    speech_ratio: 0.667
+    edge_start_db: -46.02
+    edge_end_db: -106.52
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 13
+- id: clip:zh-gs-0262-p13s2
+  span:
+  - 451.92
+  - 457.43
+  file:
+    key: media/b6eff5c8e65d69b8.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 21846
+    sha256: b6eff5c8e65d69b899213e299514a65b7c6c92a06fd9980081fa8251fe9616ed
+    durationSec: 5.51
+    gainDb: -2.18
+  lines:
+  - t:
+    - 0.0
+    - 5.51
+    zh: 如果在新的地方，他又要挨打怎么办？
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -17.82
+    peak_db: 0.27
+    speech_ratio: 0.613
+    edge_start_db: -107.95
+    edge_end_db: -107.95
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 13
+- id: clip:zh-gs-0262-p13s3
+  span:
+  - 457.63
+  - 466.58
+  file:
+    key: media/be90a8804ad10659.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 33150
+    sha256: be90a8804ad10659eaaffbbdff675ef43d7ffaf1e3200228a1f792ae1be9c785
+    durationSec: 8.95
+    gainDb: 1.9
+  lines:
+  - t:
+    - 0.0
+    - 8.95
+    zh: 他有点儿害怕，心想：“也许我注定就要睡在马路边。”
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.05
+    per: 0.05
+    lufs: -21.9
+    peak_db: -3.79
+    speech_ratio: 0.688
+    edge_start_db: -103.11
+    edge_end_db: -103.11
+    align_cer: 0.05
+    aligned_frac: 0.95
+  page: 13
+- id: clip:zh-gs-0262-p14s0
+  span:
+  - 468.3
+  - 472.89
+  file:
+    key: media/cffe0fc4d4812534.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 17351
+    sha256: cffe0fc4d4812534d310d1b123a4d09360d3dcd74071800c050656b9d3b70578
+    durationSec: 4.59
+    gainDb: -2.02
+  lines:
+  - t:
+    - 0.0
+    - 4.59
+    zh: 他把自己的想法告诉了托马斯。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -17.98
+    peak_db: 0.59
+    speech_ratio: 0.624
+    edge_start_db: -107.14
+    edge_end_db: -107.14
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 14
+- id: clip:zh-gs-0262-p14s1
+  span:
+  - 473.21
+  - 486.17
+  file:
+    key: media/9a397152816e4a07.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 48455
+    sha256: 9a397152816e4a078ff5de5784aa2357c991c34d0a0e8873f899b47b1a7c0eb7
+    durationSec: 12.96
+    gainDb: -0.86
+  lines:
+  - t:
+    - 0.0
+    - 12.96
+    zh: 托马斯对他循循善诱，终于说服了玛格威，他在新地方一定会过上更好的生活。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.125
+    per: 0.031
+    lufs: -20.21
+    peak_db: -0.14
+    speech_ratio: 0.713
+    edge_start_db: -105.43
+    edge_end_db: -105.43
+    align_cer: 0.062
+    aligned_frac: 1.0
+  page: 14
+- id: clip:zh-gs-0262-p15s0
+  span:
+  - 487.88
+  - 495.13
+  file:
+    key: media/b8bcbed6bf6d9ee6.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 26633
+    sha256: b8bcbed6bf6d9ee6e5f32195e69f7cb35a03ec34753f06380349b4441ea656b7
+    durationSec: 7.25
+    gainDb: 0.75
+  lines:
+  - t:
+    - 0.0
+    - 7.25
+    zh: 玛格威搬到了新家，新家的屋顶是绿色的。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.059
+    per: 0.0
+    lufs: -20.75
+    peak_db: -4.92
+    speech_ratio: 0.674
+    edge_start_db: -104.96
+    edge_end_db: -104.96
+    align_cer: 0.059
+    aligned_frac: 1.0
+  page: 15
+- id: clip:zh-gs-0262-p15s1
+  span:
+  - 495.35
+  - 500.04
+  file:
+    key: media/72dc47b7a2dd08f0.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 18242
+    sha256: 72dc47b7a2dd08f0a5ff1582b20a63e81577d2aaed4160b64a095b10de849056
+    durationSec: 4.69
+    gainDb: 1.08
+  lines:
+  - t:
+    - 0.0
+    - 4.69
+    zh: 他和两个男孩住一间房间。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -21.08
+    peak_db: -2.58
+    speech_ratio: 0.759
+    edge_start_db: -104.0
+    edge_end_db: -44.29
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 15
+- id: clip:zh-gs-0262-p15s2
+  span:
+  - 500.04
+  - 504.78
+  file:
+    key: media/b5e9e8e60c97cc11.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 18096
+    sha256: b5e9e8e60c97cc1141724fc1038b9f60d22dd68d775ccb0f64473a99a180a3db
+    durationSec: 4.74
+    gainDb: 4.37
+  lines:
+  - t:
+    - 0.0
+    - 4.74
+    zh: 屋子里还住着其他十个孩子。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -24.37
+    peak_db: -5.96
+    speech_ratio: 0.786
+    edge_start_db: -44.43
+    edge_end_db: -100.93
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 15
+- id: clip:zh-gs-0262-p15s3
+  span:
+  - 505.32
+  - 518.66
+  file:
+    key: media/c51134dca2b64067.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 49713
+    sha256: c51134dca2b64067f1ca70140f1e26b9d93b4a6e441ebaabf486ee2f997f77e6
+    durationSec: 13.34
+    gainDb: 0.64
+  lines:
+  - t:
+    - 0.0
+    - 13.34
+    zh: 和他们住在一起的是茜茜阿姨和她的丈夫，还有三只狗，一只猫，一头老山羊。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.065
+    per: 0.065
+    lufs: -20.64
+    peak_db: -2.2
+    speech_ratio: 0.69
+    edge_start_db: -105.38
+    edge_end_db: -105.38
+    align_cer: 0.065
+    aligned_frac: 1.0
+  page: 15
+- id: clip:zh-gs-0262-p16s0
+  span:
+  - 520.29
+  - 534.77
+  file:
+    key: media/676bd383053502f9.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 52700
+    sha256: 676bd383053502f9ad2e8e7faa1b2859791d4c6513c81fa02a05c17addc15e27
+    durationSec: 14.48
+    gainDb: -1.19
+  lines:
+  - t:
+    - 0.0
+    - 14.48
+    zh: 玛格威开始读书，他遇到了不少困难，很难赶上他的同学们，有时候他差点就要放弃了。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.029
+    per: 0.0
+    lufs: -18.81
+    peak_db: -0.25
+    speech_ratio: 0.625
+    edge_start_db: -106.62
+    edge_end_db: -106.62
+    align_cer: 0.029
+    aligned_frac: 1.0
+  page: 16
+- id: clip:zh-gs-0262-p16s1
+  span:
+  - 535.47
+  - 547.1
+  file:
+    key: media/57da7c2385b6bb51.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 44547
+    sha256: 57da7c2385b6bb513800de7043a605d70c54a62d94696168a31e6b0a6fded41b
+    durationSec: 11.63
+    gainDb: 0.02
+  lines:
+  - t:
+    - 0.0
+    - 11.63
+    zh: 但他每次想起故事书里的飞行员和足球运动员，他都坚持了下来，就像他们一样。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -20.02
+    peak_db: -3.28
+    speech_ratio: 0.697
+    edge_start_db: -105.87
+    edge_end_db: -105.87
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 16
+- id: clip:zh-gs-0262-p17s0
+  span:
+  - 548.14
+  - 563.12
+  file:
+    key: media/1c5ce64b5304dcb0.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 53810
+    sha256: 1c5ce64b5304dcb0d82be8486233934356bb49ac1b3c084fb2cbdbc2d5784689
+    durationSec: 14.98
+    gainDb: 0.63
+  lines:
+  - t:
+    - 0.0
+    - 14.98
+    zh: 有一天，玛格威正在屋子后院里看书，托马斯来了，坐在他旁边：“这本书讲了什么故事？”
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.029
+    per: 0.0
+    lufs: -20.7
+    peak_db: -1.63
+    speech_ratio: 0.619
+    edge_start_db: -104.75
+    edge_end_db: -104.75
+    align_cer: 0.029
+    aligned_frac: 1.0
+  page: 17
+- id: clip:zh-gs-0262-p17s1
+  span:
+  - 563.27
+  - 571.3
+  file:
+    key: media/f88560a5d939733e.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 29915
+    sha256: f88560a5d939733e5c587c2b3b1e1f93e6ff512b39381cf286b41c0464ea6104
+    durationSec: 8.03
+    gainDb: -1.25
+  lines:
+  - t:
+    - 0.0
+    - 8.03
+    zh: 玛格威回答说：“这是关于一个男孩变成老师的故事。”
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.048
+    per: 0.0
+    lufs: -18.75
+    peak_db: -1.68
+    speech_ratio: 0.658
+    edge_start_db: -107.02
+    edge_end_db: -107.02
+    align_cer: 0.048
+    aligned_frac: 1.0
+  page: 17
+- id: clip:zh-gs-0262-p17s2
+  span:
+  - 571.83
+  - 576.81
+  file:
+    key: media/5ee88b65ad166acd.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 19152
+    sha256: 5ee88b65ad166acd55ee11d75f69be632ffd16e571fa20964aaf6afdb940481d
+    durationSec: 4.98
+    gainDb: 0.12
+  lines:
+  - t:
+    - 0.0
+    - 4.98
+    zh: 托马斯问：“那个男孩叫什么名字？”
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -20.12
+    peak_db: -3.79
+    speech_ratio: 0.68
+    edge_start_db: -105.17
+    edge_end_db: -36.84
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 17
+- id: clip:zh-gs-0262-p17s3
+  span:
+  - 576.81
+  - 582.47
+  file:
+    key: media/3290a3d186e32b6c.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 21777
+    sha256: 3290a3d186e32b6cde0b20a9935c250004415af428dd01503489aeae88525ab3
+    durationSec: 5.66
+    gainDb: 3.3
+  lines:
+  - t:
+    - 0.0
+    - 5.66
+    zh: 玛格威咧嘴一笑：“他叫玛格威。”
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.167
+    per: 0.0
+    lufs: -23.3
+    peak_db: -4.99
+    speech_ratio: 0.678
+    edge_start_db: -39.19
+    edge_end_db: -30.05
+    align_cer: 0.167
+    aligned_frac: 1.0
+  page: 17

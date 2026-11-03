@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-下午
+  title: 下午
+  context: word-audio
+  durationSec: 1.4
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-下午.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-下午.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-下午
+  span:
+  - 0.19
+  - 1.3
+  file:
+    key: media/aabc373dc968f52c.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 4696
+    sha256: aabc373dc968f52c2861b7bd647c98b6ec93029cca72b2c6e44e4710be7acda9
+    durationSec: 1.11
+    gainDb: -2.16
+  lines:
+  - t:
+    - 0.0
+    - 1.11
+    zh: 下午
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -17.84
+    peak_db: -1.74
+    speech_ratio: 0.8
+    edge_start_db: -39.89
+    edge_end_db: -42.47
+    forced_logp: -0.03

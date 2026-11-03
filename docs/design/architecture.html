@@ -108,11 +108,12 @@ svg .life{stroke:var(--border-stronger);stroke-dasharray:4 4}
 <a href="#flows">8. Runtime flows</a>
 <a href="#deploy">9. Deployment and cost</a>
 <a href="#cross">10. Cross-cutting concerns</a>
-<a href="#repo">11. Repository layout</a>
-<a href="#decisions">12. Decisions</a>
-<a href="#tdd">13. Departures from the TDD</a>
-<a href="#risks">14. Risks and open questions</a>
-<a href="#phases">15. Build phases</a>
+<a href="#l10n">11. Localization</a>
+<a href="#repo">12. Repository layout</a>
+<a href="#decisions">13. Decisions</a>
+<a href="#tdd">14. Departures from the TDD</a>
+<a href="#risks">15. Risks and open questions</a>
+<a href="#phases">16. Build phases</a>
 <button class="theme" id="theme">Light theme</button>
 </nav>
 <main>
@@ -348,21 +349,55 @@ export const RULES = { category: { v1 }, xp: { v1 }, mastery: { v1 }, lessonStat
 <div class="card"><h4>Performance budget</h4><ul><li>Shell under 200 KB gzip, with zod stripped from runtime and Cytoscape lazy-loaded (review n3).</li><li>A lesson is playable within 1.5 s on a warm cache.</li><li>A full derive over a year of events is measured in phase 2.</li></ul></div>
 </div>
 
-<h2 id="repo">11. Repository layout</h2>
+<h2 id="l10n">11. Localization (support language)</h2>
+<p>Two language settings are independent:
+<ul>
+<li>The <b style="font-weight:500">target language</b> is what's being learned. It comes from a language pack (<code>zh</code>), and its text (examples, transcripts, items) is never translated.</li>
+<li>The <b style="font-weight:500">support language</b> is what the app and the lessons are explained in: English now, Chinese once the owner wants full immersion.</li>
+</ul>
+Switching the support language is a setting, recorded as an event. Adding one is writing a new column.</p>
+<div class="grid2">
+<div class="card"><h4>Catalogs are tables, one column per locale</h4><ul>
+<li><code>apps/web/src/i18n/ui.tsv</code>: app chrome (buttons, labels, feedback lines).</li>
+<li><code>content/&lt;lang&gt;/l10n/lessons.tsv</code>: support text from lessons (titles, idea lines, explanations, prompts, option labels). <code>content:build</code> adds a row for every new English string and leaves the other cells empty.</li>
+<li><code>content/shared/l10n/terms.tsv</code>: fixed translations for recurring terms (tone → 声调).</li>
+</ul></div>
+<div class="card"><h4>How a string resolves</h4><ul>
+<li>The key is the English text itself, plus an optional <code>context</code> column when the same English needs two translations. Authors keep writing plain English in lesson files, with no key naming.</li>
+<li>Lookup goes through the chosen locale's column, then falls back to English. A half-filled column is usable.</li>
+<li>Strings use named placeholders (<code>{n}</code>) and separate rows for singular and plural (writing style rules 17–18).</li>
+</ul></div>
+<div class="card"><h4>Check rules</h4><ul>
+<li>Coverage per locale (a warning, not an error).</li>
+<li>Stale rows whose English no longer appears anywhere.</li>
+<li>Placeholder mismatch between columns (an error).</li>
+<li>Terms-table consistency.</li>
+<li>Word budgets, applied to the English column.</li>
+</ul></div>
+<div class="card"><h4>What is not a column</h4><ul>
+<li>Target text, never.</li>
+<li><b style="font-weight:500">Bridge glosses</b> (dictionary meanings, sentence translations) are English data from CC-CEDICT or authored. In Chinese mode they stay available behind the Meaning and tap reveals.</li>
+<li>Chinese-to-Chinese definitions would need a separate, openly licensed monolingual source. That's a dataset decision for later, not a column.</li>
+</ul></div>
+</div>
+<p class="meta">Bundle format: each locale compiles to its own hash-named <code>strings.&lt;locale&gt;.json</code>. Lesson files reference strings by <code>hash(en, context)</code>, so switching locale downloads one small file, and adding a locale changes no lesson file. The activity pilot (<code>sandbox/spikes/activity-pilot</code>) runs this end to end with an English/中文 toggle.</p>
+
+<h2 id="repo">12. Repository layout</h2>
 <pre><code>apps/web/               <span class="cm">Vue 3 PWA: screens, flows, widget views, adapters (event store, media, content loader, auth)</span>
   src/languages.ts      <span class="cm">the one place packs are registered</span>
+  src/i18n/ui.tsv       <span class="cm">app chrome strings, one column per support locale</span>
 packages/core/          <span class="cm">no Vue: ids, types, language interfaces, widgets, session, srs, derive, events</span>
 packages/content-tools/ <span class="cm">CLI: parse, resolve, check, compile, scaffold, suggest</span>
 languages/zh/           <span class="cm">logic/ · build/ · views/</span>
 languages/_toy/         <span class="cm">test-only pack</span>
-content/zh/             <span class="cm">curriculum.ts · lessons/ · items/ · media/ · templates/ · redirects.yaml · generated/</span>
-content/shared/         <span class="cm">licenses, speakers, base templates (a language's template overrides a shared one by name)</span>
+content/zh/             <span class="cm">curriculum.ts · lessons/ · items/ · media/ · templates/ · l10n/lessons.tsv · redirects.yaml · generated/</span>
+content/shared/         <span class="cm">licenses, speakers, base templates (a language's template overrides a shared one by name), l10n/terms.tsv</span>
 tools/media-ingest/     <span class="cm">Python: source adapters, faster-whisper alignment, validation, quarantine report, upload</span>
 supabase/migrations/    <span class="cm">events table, RLS, bucket policies</span>
 docs/  sandbox/</code></pre>
 <p class="meta">Two packages and one app, down from eight packages and two apps (review M5). The internal folders of <code>packages/core</code> are kept apart by the same dependency-cruiser config.</p>
 
-<h2 id="decisions">12. Decisions</h2>
+<h2 id="decisions">13. Decisions</h2>
 <table>
 <tr><th>#</th><th>Decision</th><th>Why</th></tr>
 <tr><td>1</td><td>Two vendors: Supabase (auth, events DB, private storage for content and media) and Cloudflare Pages (static host for the app shell)</td><td>The owner's ask: few services, $0, a $10 ceiling. No Worker, no R2 for now</td></tr>
@@ -374,10 +409,11 @@ docs/  sandbox/</code></pre>
 <tr><td>7</td><td>Media ingest on the laptop GPU</td><td>Free, fast, keeps Actions minutes for CI (review M7)</td></tr>
 <tr><td>8</td><td>Permanent redirects; no rewriting of old ids in the database</td><td>An append-only log can't be rewritten (review m3)</td></tr>
 <tr><td>9</td><td>Simplified Mandarin only, with <code>zh</code> as a language code (not a script)</td><td>Owner's choice; a Traditional display later doesn't change ids (review n1)</td></tr>
+<tr><td>11</td><td>Support language is a setting; every support string lives in a per-locale column keyed by its English text, with English fallback</td><td>Switching to Chinese instructions later is filling in a column, with no code change</td></tr>
 <tr><td>10</td><td>Defer: language switcher, a per-language settings table, widget config migrations, incremental derive</td><td>Not needed for one language and one author</td></tr>
 </table>
 
-<h2 id="tdd">13. Departures from the TDD</h2>
+<h2 id="tdd">14. Departures from the TDD</h2>
 <table>
 <tr><th>TDD says</th><th>Architecture says</th></tr>
 <tr><td>Separate fact tables with mutable <code>cards</code>, plus resume cursors</td><td>One <code>events</code> table; cards, cursors and settings are folded from events</td></tr>
@@ -390,7 +426,7 @@ docs/  sandbox/</code></pre>
 <tr><td>Output level keyed on phase</td><td>Keyed on stage or template (review m2)</td></tr>
 </table>
 
-<h2 id="risks">14. Risks and open questions</h2>
+<h2 id="risks">15. Risks and open questions</h2>
 <table>
 <tr><th>Risk</th><th>Mitigation</th></tr>
 <tr><td>Too few lesson-eligible clips</td><td>An ingester spike in phase 0 on one source, end to end. Lean on Common Voice transcript search, audio-cmn and Global Storybooks</td></tr>
@@ -406,7 +442,7 @@ docs/  sandbox/</code></pre>
 <li>Desktop: a centered phone layout for v1, or a wider layout?</li>
 </ol>
 
-<h2 id="phases">15. Build phases</h2>
+<h2 id="phases">16. Build phases</h2>
 <table>
 <tr><th>Phase</th><th>Delivers</th><th>Done when</th></tr>
 <tr><td>0. Skeleton and spikes</td><td>Monorepo; <code>packages/core</code> ids and events; the zh logic pack and the toy pack; content-tools parse, check and build into the app; Supabase auth, events table, bucket; Pages deploy. <b style="font-weight:500">Spike:</b> ingest one source end to end on the laptop</td><td>A signed-in phone loads a build, writes an event that the laptop pulls, and plays one ingested clip</td></tr>

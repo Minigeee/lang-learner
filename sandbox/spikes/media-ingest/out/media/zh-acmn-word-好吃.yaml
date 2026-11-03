@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-好吃
+  title: 好吃
+  context: word-audio
+  durationSec: 1.25
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-好吃.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-好吃.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-好吃
+  span:
+  - 0.12
+  - 1.11
+  file:
+    key: media/e32b2961da528a22.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 4148
+    sha256: e32b2961da528a227feb4841e4ac234a689041b74cbcafed4a95b5f14b0f4031
+    durationSec: 0.99
+    gainDb: -0.67
+  lines:
+  - t:
+    - 0.0
+    - 0.99
+    zh: 好吃
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -19.33
+    peak_db: -3.83
+    speech_ratio: 0.765
+    edge_start_db: -35.14
+    edge_end_db: -39.7
+    forced_logp: -0.11

@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-ting1
+  title: ting1
+  context: word-audio
+  durationSec: 1.128
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-ting1.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-ting1.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-ting1
+  span:
+  - 0.18
+  - 0.88
+  file:
+    key: media/5e962e118f31a3cb.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2912
+    sha256: 5e962e118f31a3cb051f90a31824cd2b3862157a447c52280404fd7e1a14d2fa
+    durationSec: 0.7
+    gainDb: -9.63
+  lines:
+  - t:
+    - 0.0
+    - 0.7
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: ting1
+  validation:
+    lufs: -10.37
+    peak_db: -0.97
+    speech_ratio: 0.696
+    edge_start_db: -40.54
+    edge_end_db: -38.07
+    forced_logp: -0.04

@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-问题
+  title: 问题
+  context: word-audio
+  durationSec: 1.3
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-问题.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-问题.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-问题
+  span:
+  - 0.17
+  - 1.16
+  file:
+    key: media/e26892aa7fd5f1ce.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 4248
+    sha256: e26892aa7fd5f1cec055d25af19be55075fccf596df18651cd1901cdbb7cdd96
+    durationSec: 0.99
+    gainDb: -1.62
+  lines:
+  - t:
+    - 0.0
+    - 0.99
+    zh: 问题
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -18.38
+    peak_db: -1.34
+    speech_ratio: 0.786
+    edge_start_db: -44.82
+    edge_end_db: -44.79
+    forced_logp: -0.08

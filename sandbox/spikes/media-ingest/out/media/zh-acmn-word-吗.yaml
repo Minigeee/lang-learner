@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-吗
+  title: 吗
+  context: word-audio
+  durationSec: 0.85
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-吗.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-吗.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-吗
+  span:
+  - 0.15
+  - 0.69
+  file:
+    key: media/22ada60f1c453217.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2328
+    sha256: 22ada60f1c45321749bd3fc5da254b867e6e889187170aee6c6010187f1d31df
+    durationSec: 0.54
+    gainDb: -5.47
+  lines:
+  - t:
+    - 0.0
+    - 0.54
+    zh: 吗
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 1.0
+    per: 0.0
+    lufs: -14.53
+    peak_db: -1.24
+    speech_ratio: 0.604
+    edge_start_db: -39.78
+    edge_end_db: -42.77
+    forced_logp: -4.82

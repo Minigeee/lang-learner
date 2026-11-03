@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-本
+  title: 本
+  context: word-audio
+  durationSec: 1.1
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-本.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-本.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-本
+  span:
+  - 0.18
+  - 0.98
+  file:
+    key: media/9f8065e6851ac58b.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3444
+    sha256: 9f8065e6851ac58b637ea782cad31633606e1ea1e5ecc4bb7ad424477b0b4c7f
+    durationSec: 0.8
+    gainDb: -1.23
+  lines:
+  - t:
+    - 0.0
+    - 0.8
+    zh: 本
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -18.77
+    peak_db: -1.59
+    speech_ratio: 0.709
+    edge_start_db: -32.12
+    edge_end_db: -39.0
+    forced_logp: -0.28

@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-tan1
+  title: tan1
+  context: word-audio
+  durationSec: 1.128
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-tan1.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-tan1.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-tan1
+  span:
+  - 0.22
+  - 0.9
+  file:
+    key: media/a97d8e3e319164db.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2871
+    sha256: a97d8e3e319164dbbdaabad6847181f4c01ac97ac5f82b6e2962ad976c923faa
+    durationSec: 0.68
+    gainDb: -7.57
+  lines:
+  - t:
+    - 0.0
+    - 0.68
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: tan1
+  validation:
+    lufs: -12.43
+    peak_db: -1.09
+    speech_ratio: 0.687
+    edge_start_db: -41.6
+    edge_end_db: -37.34
+    forced_logp: -2.84

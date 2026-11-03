@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-笑
+  title: 笑
+  context: word-audio
+  durationSec: 0.95
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-笑.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-笑.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-笑
+  span:
+  - 0.14
+  - 0.8
+  file:
+    key: media/9094bbf3b7bc7b9b.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2844
+    sha256: 9094bbf3b7bc7b9bb7014374387c9e2d487e369e861aeb65cdc9e2fcc41b8beb
+    durationSec: 0.66
+    gainDb: -4.69
+  lines:
+  - t:
+    - 0.0
+    - 0.66
+    zh: 笑
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -15.31
+    peak_db: -2.72
+    speech_ratio: 0.662
+    edge_start_db: -38.38
+    edge_end_db: -41.84
+    forced_logp: -0.17

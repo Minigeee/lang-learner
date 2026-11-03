@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-千
+  title: 千
+  context: word-audio
+  durationSec: 1.05
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-千.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-千.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-千
+  span:
+  - 0.2
+  - 0.92
+  file:
+    key: media/d2a84e682ea0f897.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3103
+    sha256: d2a84e682ea0f897caeff21b106e969c65a65183e97dcb624c8ef22f144411fc
+    durationSec: 0.72
+    gainDb: -4.15
+  lines:
+  - t:
+    - 0.0
+    - 0.72
+    zh: 千
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -15.85
+    peak_db: -5.04
+    speech_ratio: 0.704
+    edge_start_db: -43.76
+    edge_end_db: -41.05
+    forced_logp: -0.55

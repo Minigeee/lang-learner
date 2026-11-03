@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-na3
+  title: na3
+  context: word-audio
+  durationSec: 1.224
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-na3.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-na3.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-na3
+  span:
+  - 0.16
+  - 1.01
+  file:
+    key: media/57a74919e1d1cb04.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3585
+    sha256: 57a74919e1d1cb045ee71dac1fc768e7c4f6016cfdf6af56ee731efff00781f7
+    durationSec: 0.85
+    gainDb: -3.03
+  lines:
+  - t:
+    - 0.0
+    - 0.85
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: na3
+  validation:
+    lufs: -16.97
+    peak_db: -1.18
+    speech_ratio: 0.75
+    edge_start_db: -48.42
+    edge_end_db: -44.62
+    forced_logp: -3.18

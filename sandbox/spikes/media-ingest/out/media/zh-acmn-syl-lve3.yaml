@@ -1,0 +1,47 @@
+media:
+  id: media:zh-acmn-syl-lve3
+  title: lve3
+  context: word-audio
+  durationSec: 1.344
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-lve3.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-lve3.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-lve3
+  span:
+  - 0.19
+  - 1.06
+  file:
+    key: media/df16925a4ee0b9b2.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3655
+    sha256: df16925a4ee0b9b2b16285eeb99f0ac876c30c0f58974281d43138a623ab2ab0
+    durationSec: 0.87
+    gainDb: -4.25
+  lines:
+  - t:
+    - 0.0
+    - 0.87
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: lve3
+  validation:
+    lufs: -15.75
+    peak_db: -1.55
+    speech_ratio: 0.756
+    edge_start_db: -47.08
+    edge_end_db: -45.57

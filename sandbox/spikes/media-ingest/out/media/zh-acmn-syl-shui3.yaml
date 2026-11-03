@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-shui3
+  title: shui3
+  context: word-audio
+  durationSec: 1.344
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-shui3.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-shui3.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-shui3
+  span:
+  - 0.14
+  - 1.16
+  file:
+    key: media/29860dfdae569b8d.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 4273
+    sha256: 29860dfdae569b8d48191a9e2ffb54313d8a1574718a6db57c4477c85391eb8c
+    durationSec: 1.02
+    gainDb: -3.47
+  lines:
+  - t:
+    - 0.0
+    - 1.02
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: shui3
+  validation:
+    lufs: -16.53
+    peak_db: -1.26
+    speech_ratio: 0.792
+    edge_start_db: -41.84
+    edge_end_db: -43.12
+    forced_logp: -1.26

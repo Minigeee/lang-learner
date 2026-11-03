@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-tang4
+  title: tang4
+  context: word-audio
+  durationSec: 0.936
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-tang4.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-tang4.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-tang4
+  span:
+  - 0.21
+  - 0.69
+  file:
+    key: media/d97c58bccea9f486.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2038
+    sha256: d97c58bccea9f48676d61a19a265abe60c663f8d93818cd6fa91173306f9f374
+    durationSec: 0.48
+    gainDb: -5.3
+  lines:
+  - t:
+    - 0.0
+    - 0.48
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: tang4
+  validation:
+    lufs: -14.7
+    peak_db: -1.55
+    speech_ratio: 0.553
+    edge_start_db: -47.66
+    edge_end_db: -47.27
+    forced_logp: -8.07

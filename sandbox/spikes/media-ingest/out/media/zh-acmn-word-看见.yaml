@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-看见
+  title: 看见
+  context: word-audio
+  durationSec: 1.2
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-看见.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-看见.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-看见
+  span:
+  - 0.16
+  - 1.08
+  file:
+    key: media/4e48ad5f6efb81dc.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3995
+    sha256: 4e48ad5f6efb81dcafc4611d9f5ced6ce4e04b3a713987d4da8bf13f8180bf3e
+    durationSec: 0.92
+    gainDb: -3.55
+  lines:
+  - t:
+    - 0.0
+    - 0.92
+    zh: 看见
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -16.45
+    peak_db: -1.24
+    speech_ratio: 0.769
+    edge_start_db: -40.91
+    edge_end_db: -40.21
+    forced_logp: -0.05

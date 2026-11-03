@@ -1,0 +1,7 @@
+fixtures/COPY001/curriculum.ts:5 COPY001 zh:les:fixture-copy001 title: internal term "Pattern lesson" in user-facing text; use Lesson / Video lesson / Sound practice
+fixtures/COPY001/curriculum.ts:5 COPY001 zh:les:fixture-copy001 idea: internal term "S1" in user-facing text; use the stage name (Sounds, Stage 1)
+fixtures/COPY001/curriculum.ts:5 COPY001 zh:les:fixture-copy001 idea: internal term "prerequisites" in user-facing text; use "builds on" or nothing
+fixtures/COPY001/lessons/fixture-copy001.md:9 COPY001 explain: internal term "we do" in user-facing text; use Listen / How it works / Practice / Check
+fixtures/COPY001/lessons/fixture-copy001.md:9 COPY001 explain: internal term "prerequisite" in user-facing text; use "builds on" or nothing
+fixtures/COPY001/lessons/fixture-copy001.md:15 COPY001 @meaning-pick: internal term "Pass 2" in user-facing text; use "Watch 2 of 3", "Watch again"
+fixtures/COPY001/lessons/fixture-copy001.md:15 COPY001 @meaning-pick: internal term "template" in user-facing text; use plain words ("step", "card", "Check")

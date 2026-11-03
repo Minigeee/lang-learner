@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-知道
+  title: 知道
+  context: word-audio
+  durationSec: 1.2
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-知道.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-知道.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-知道
+  span:
+  - 0.17
+  - 1.07
+  file:
+    key: media/aa55aab78a982a9a.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3860
+    sha256: aa55aab78a982a9a432ad64a7e26e8a38b101e302f947da32d5627f265598dd9
+    durationSec: 0.9
+    gainDb: -3.04
+  lines:
+  - t:
+    - 0.0
+    - 0.9
+    zh: 知道
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -16.96
+    peak_db: -1.07
+    speech_ratio: 0.708
+    edge_start_db: -43.55
+    edge_end_db: -46.77
+    forced_logp: -0.24

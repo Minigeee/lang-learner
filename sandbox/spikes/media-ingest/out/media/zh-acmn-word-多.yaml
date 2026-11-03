@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-多
+  title: 多
+  context: word-audio
+  durationSec: 1.05
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-多.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-多.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-多
+  span:
+  - 0.18
+  - 0.92
+  file:
+    key: media/cac37ce0f3fe34c8.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3190
+    sha256: cac37ce0f3fe34c83975df8d6545c83a59de34ab1f42e993f4cf9ac8c30e017a
+    durationSec: 0.74
+    gainDb: -7.82
+  lines:
+  - t:
+    - 0.0
+    - 0.74
+    zh: 多
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -12.18
+    peak_db: -1.04
+    speech_ratio: 0.671
+    edge_start_db: -42.46
+    edge_end_db: -41.69
+    forced_logp: -0.05

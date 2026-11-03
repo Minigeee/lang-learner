@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-说
+  title: 说
+  context: word-audio
+  durationSec: 1.0
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-说.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-说.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-说
+  span:
+  - 0.1
+  - 0.89
+  file:
+    key: media/abb3ea70c16b7f79.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3292
+    sha256: abb3ea70c16b7f7933c3d9276d6495d7bb13f0643c3f8dfff21fb3b8befb9086
+    durationSec: 0.79
+    gainDb: -4.86
+  lines:
+  - t:
+    - 0.0
+    - 0.79
+    zh: 说
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -15.14
+    peak_db: -3.84
+    speech_ratio: 0.705
+    edge_start_db: -33.36
+    edge_end_db: -31.72
+    forced_logp: -1.36

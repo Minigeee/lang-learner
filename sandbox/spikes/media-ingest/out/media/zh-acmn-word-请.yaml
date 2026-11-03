@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-请
+  title: 请
+  context: word-audio
+  durationSec: 1.2
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-请.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-请.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-请
+  span:
+  - 0.0
+  - 1.13
+  file:
+    key: media/da5f37c4b1a6d891.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 4642
+    sha256: da5f37c4b1a6d8919d6c6506f14563f50d8ab2d4397050e1196389e4044e75e5
+    durationSec: 1.13
+    gainDb: -2.67
+  lines:
+  - t:
+    - 0.0
+    - 1.13
+    zh: 请
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -17.33
+    peak_db: -5.72
+    speech_ratio: 0.875
+    edge_start_db: -25.6
+    edge_end_db: -33.93
+    forced_logp: -0.18

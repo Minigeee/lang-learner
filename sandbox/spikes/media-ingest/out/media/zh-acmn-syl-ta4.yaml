@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-ta4
+  title: ta4
+  context: word-audio
+  durationSec: 0.984
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-ta4.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-ta4.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-ta4
+  span:
+  - 0.18
+  - 0.72
+  file:
+    key: media/a664a2ccbb878775.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2306
+    sha256: a664a2ccbb878775ebdc9842a3938a6946ae71117e3a1daf7c3a0fcb03e12c01
+    durationSec: 0.54
+    gainDb: -2.97
+  lines:
+  - t:
+    - 0.0
+    - 0.54
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: ta4
+  validation:
+    lufs: -17.03
+    peak_db: -1.6
+    speech_ratio: 0.604
+    edge_start_db: -47.72
+    edge_end_db: -45.96
+    forced_logp: -9.3

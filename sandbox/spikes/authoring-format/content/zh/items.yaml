@@ -1,0 +1,41 @@
+# Authored zh items: grammar points (g), sound rules (sr), sound contrasts (sc).
+# prereqs: `id` builds on these. confusableWith: interleaving partners (07 rule 3).
+- id: zh:sr:bu-sandhi
+  name: 不 before a 4th tone
+- id: zh:g:shi-noun
+  name: 是 links two nouns
+  pattern: A 是 B
+- id: zh:g:hen-adj
+  name: 很 + adjective
+  pattern: Subj 很 Adj
+- id: zh:g:bu-negation
+  name: 不 before a verb or adjective
+  pattern: 不 + V/Adj
+  prereqs: [zh:g:hen-adj]
+- id: zh:g:demonstrative-measure
+  name: 这/那 + measure word + noun
+- id: zh:g:you-have
+  name: 有 for have and there is
+- id: zh:g:zai-location
+  name: Thing + 在 + place
+  pattern: N 在 Place
+- id: zh:g:place-words
+  name: Noun + place word
+  pattern: N 上/里/前边/后边
+- id: zh:g:place-you-thing
+  name: Place + 有 + thing
+  pattern: Place 有 N
+  prereqs: [zh:g:you-have, zh:g:place-words]
+  confusableWith: [zh:g:zai-location]
+- id: zh:g:xiang-verb
+  name: 想 + verb
+- id: zh:g:mei-past-negation
+  name: 没(有) + verb
+  pattern: 没(有) + V
+  prereqs: [zh:g:you-have]
+  confusableWith: [zh:g:bu-negation]
+- id: zh:g:bu-vs-mei
+  name: 不 vs 没
+  prereqs: [zh:g:bu-negation, zh:g:mei-past-negation]
+- id: zh:g:ba-suggestion
+  name: 吧 for suggestions

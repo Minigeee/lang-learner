@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-女儿
+  title: 女儿
+  context: word-audio
+  durationSec: 1.1
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-女儿.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-女儿.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-女儿
+  span:
+  - 0.16
+  - 0.93
+  file:
+    key: media/4e3669f49e901cc9.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3275
+    sha256: 4e3669f49e901cc944e3295f04a829607a35f91e1e9b64fe7ac46a3fffe68000
+    durationSec: 0.77
+    gainDb: -7.28
+  lines:
+  - t:
+    - 0.0
+    - 0.77
+    zh: 女儿
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -12.72
+    peak_db: -1.5
+    speech_ratio: 0.724
+    edge_start_db: -39.95
+    edge_end_db: -42.0
+    forced_logp: -0.31

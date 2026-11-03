@@ -1,0 +1,53 @@
+# Placeholder: Mandarin Click short stories (YouTube embed). Used as unseen check clips. Ids and timings are invented.
+- id: media:mc-lazy-sunday
+  title: A lazy Sunday (Mandarin Click)
+  context: ci-teacher
+  durationSec: 245
+  speakers: [spk:mc-f1]
+  source: { provider: youtube, videoId: Mc0Sunday01 }
+  rights: { kind: embed }
+  transcript: youtube-captions
+  clips:
+    - id: clip:mc-lazy-sunday-02
+      span: [60.0, 95.0]
+      lines:
+        - { t: [60.0, 64.0], zh: 星期天小明没去学校。, en: "On Sunday Xiaoming didn't go to school.", tags: [zh:g:mei-past-negation] }
+        - { t: [64.5, 68.0], zh: 他不喜欢早上起床。, en: "He doesn't like getting up in the morning.", tags: [zh:g:bu-negation] }
+        - { t: [68.5, 73.0], zh: 他没吃早饭，也没喝水。, en: "He didn't eat breakfast or drink water.", tags: [zh:g:mei-past-negation] }
+        - { t: [73.5, 78.0], zh: 妈妈说：“今天不玩手机！”, en: "Mom says: \"No phone today!\"", tags: [zh:g:bu-negation] }
+      questions:
+        - { ask: Did Xiaoming go to school on Sunday?, choices: [Yes, No], answer: 1, tests: [zh:g:bu-vs-mei], line: 0 }
+        - { ask: What did his mom say?, choices: [He didn't play on his phone, No phone today], answer: 1, tests: [zh:g:bu-vs-mei], line: 3 }
+- id: media:mc-after-school
+  title: After school (Mandarin Click)
+  context: ci-teacher
+  durationSec: 198
+  speakers: [spk:mc-m1]
+  source: { provider: youtube, videoId: Mc0AftSch01 }
+  rights: { kind: embed }
+  transcript: youtube-captions
+  clips:
+    - id: clip:mc-after-school-01
+      span: [12.0, 40.0]
+      lines:
+        - { t: [12.0, 15.5], zh: 今天老师没来。, en: "The teacher didn't come today.", tags: [zh:g:mei-past-negation] }
+        - { t: [16.0, 19.0], zh: 我们不上课。, en: "We're not having class.", tags: [zh:g:bu-negation] }
+        - { t: [19.5, 24.0], zh: 我不想回家，我想去公园。, en: "I don't want to go home; I want to go to the park.", tags: [zh:g:bu-negation] }
+      questions:
+        - { ask: Why is there no class?, choices: [The teacher didn't come, The students don't want class], answer: 0, tests: [zh:g:bu-vs-mei], line: 0 }
+- id: media:mc-market
+  title: At the market (Mandarin Click)
+  context: ci-teacher
+  durationSec: 260
+  speakers: [spk:mc-f2]
+  source: { provider: youtube, videoId: Mc0Market01 }
+  rights: { kind: embed }
+  transcript: youtube-captions
+  clips:
+    - id: clip:mc-market-03
+      span: [80.0, 110.0]
+      lines:
+        - { t: [80.0, 84.0], zh: 妈妈没买苹果。, en: "Mom didn't buy apples.", tags: [zh:g:mei-past-negation] }
+        - { t: [84.5, 88.0], zh: 苹果太贵了，她不买。, en: "Apples are too expensive; she won't buy them.", tags: [zh:g:bu-negation] }
+      questions:
+        - { ask: Why didn't Mom buy apples?, choices: [They were too expensive, She doesn't like apples], answer: 0, tests: [zh:g:bu-vs-mei], line: 1 }

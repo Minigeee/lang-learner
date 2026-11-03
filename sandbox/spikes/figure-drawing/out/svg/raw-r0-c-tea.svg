@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 200" role="img" aria-label="Two pictures: a man drinking tea, and the same man not drinking, his cup on the table.">
+  <g font-family="Microsoft YaHei" text-anchor="middle">
+  <!-- left: drinking -->
+  <g stroke="var(--fig-line)" stroke-width="2">
+    <circle cx="80" cy="50" r="18" fill="var(--fig-skin)"/>
+    <rect x="65" y="70" width="30" height="50" rx="8" fill="var(--fig-cloth)"/>
+    <line x1="72" y1="120" x2="70" y2="165" stroke-width="6" stroke-linecap="round"/>
+    <line x1="88" y1="120" x2="90" y2="165" stroke-width="6" stroke-linecap="round"/>
+    <path d="M92 78 L110 90 L100 60" fill="none" stroke-width="6" stroke-linecap="round"/>
+    <rect x="94" y="46" width="14" height="14" rx="2" fill="var(--fig-fill)"/>
+  </g>
+  <text x="85" y="185" font-size="16" fill="var(--text-primary)">在喝茶</text>
+  <!-- right: not drinking -->
+  <g stroke="var(--fig-line)" stroke-width="2">
+    <circle cx="250" cy="50" r="18" fill="var(--fig-skin)"/>
+    <rect x="235" y="70" width="30" height="50" rx="8" fill="var(--fig-cloth)"/>
+    <line x1="242" y1="120" x2="240" y2="165" stroke-width="6" stroke-linecap="round"/>
+    <line x1="258" y1="120" x2="260" y2="165" stroke-width="6" stroke-linecap="round"/>
+    <line x1="238" y1="78" x2="228" y2="115" stroke-width="6" stroke-linecap="round"/>
+    <line x1="262" y1="78" x2="272" y2="115" stroke-width="6" stroke-linecap="round"/>
+    <rect x="290" y="110" width="50" height="6" fill="var(--fig-wood)"/>
+    <line x1="315" y1="116" x2="315" y2="165"/>
+    <rect x="308" y="96" width="14" height="14" rx="2" fill="var(--fig-fill)"/>
+  </g>
+  <text x="270" y="185" font-size="16" fill="var(--text-primary)">没喝茶</text>
+  </g>
+</svg>

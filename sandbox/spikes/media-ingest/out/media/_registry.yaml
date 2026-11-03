@@ -1,0 +1,33 @@
+speakers:
+- id: speaker:zh-acmn-chen-wang
+  label: Chen Wang
+- id: speaker:zh-acmn-yue-tan
+  label: Yue Tan
+- id: speaker:zh-gs-zhuo-sun
+  label: Zhuo Sun
+licenses:
+- id: cc-by-sa
+  name: CC BY-SA (version unstated by source)
+  url: https://github.com/hugolpz/audio-cmn#license
+  requires:
+  - attribution
+  - share-alike
+  nonCommercialOnly: false
+- id: cc-by-3.0
+  name: CC BY 3.0
+  url: https://creativecommons.org/licenses/by/3.0/
+  requires:
+  - attribution
+  nonCommercialOnly: false
+- id: cc-by-4.0
+  name: CC BY 4.0
+  url: https://creativecommons.org/licenses/by/4.0/
+  requires:
+  - attribution
+  nonCommercialOnly: false
+- id: cc-by-nc-3.0
+  name: CC BY-NC 3.0
+  url: https://creativecommons.org/licenses/by-nc/3.0/
+  requires:
+  - attribution
+  nonCommercialOnly: true

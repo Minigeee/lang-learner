@@ -1,0 +1,8 @@
+template: clip
+slots:
+  hear:    { required: true,  widgets: [clip-stage] }
+  explain: { required: false }
+  we-do:   { required: true,  widgets: [tap-when-you-hear, meaning-pick, shadow] }
+  you-do:  { required: true,  widgets: [gist-question, clip-stage, meaning-pick] }
+  recap:   { required: true }
+  deeper:  { required: false }

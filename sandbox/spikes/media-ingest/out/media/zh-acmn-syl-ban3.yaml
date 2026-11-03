@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-ban3
+  title: ban3
+  context: word-audio
+  durationSec: 1.224
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-ban3.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-ban3.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-ban3
+  span:
+  - 0.23
+  - 1.04
+  file:
+    key: media/20e1810c8e9757ac.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3468
+    sha256: 20e1810c8e9757ac99a9751d7ac3c373beda68eb8d72fecf03783459d27d033b
+    durationSec: 0.81
+    gainDb: 0.44
+  lines:
+  - t:
+    - 0.0
+    - 0.81
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: ban3
+  validation:
+    lufs: -21.11
+    peak_db: -1.44
+    speech_ratio: 0.725
+    edge_start_db: -36.36
+    edge_end_db: -38.07
+    forced_logp: -3.77

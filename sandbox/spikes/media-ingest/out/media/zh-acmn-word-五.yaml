@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-五
+  title: 五
+  context: word-audio
+  durationSec: 1.1
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-五.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-五.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-五
+  span:
+  - 0.19
+  - 0.98
+  file:
+    key: media/6d0d9d8aa0a2c8d6.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3340
+    sha256: 6d0d9d8aa0a2c8d659b86eddee08130a7a4b48e1e461a4be9ae8543cb93104b2
+    durationSec: 0.79
+    gainDb: -8.49
+  lines:
+  - t:
+    - 0.0
+    - 0.79
+    zh: 五
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -11.51
+    peak_db: -1.52
+    speech_ratio: 0.731
+    edge_start_db: -37.89
+    edge_end_db: -36.35
+    forced_logp: -1.19

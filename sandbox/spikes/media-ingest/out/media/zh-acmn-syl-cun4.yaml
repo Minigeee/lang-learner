@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-cun4
+  title: cun4
+  context: word-audio
+  durationSec: 1.08
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-cun4.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-cun4.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-cun4
+  span:
+  - 0.17
+  - 0.84
+  file:
+    key: media/f2a9f78679b2b820.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2801
+    sha256: f2a9f78679b2b820c96fbce64f647c3efc72f8f386ea4975fa4ea553750816ac
+    durationSec: 0.67
+    gainDb: -5.38
+  lines:
+  - t:
+    - 0.0
+    - 0.67
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: cun4
+  validation:
+    lufs: -14.62
+    peak_db: -1.42
+    speech_ratio: 0.682
+    edge_start_db: -45.3
+    edge_end_db: -42.31
+    forced_logp: -3.48

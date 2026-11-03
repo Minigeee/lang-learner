@@ -1,0 +1,1 @@
+fixtures/ZH001/lessons/fixture-zh001.md:9 ZH001 unmarked Chinese "我昨天没去公司。" reads as an example; mark it :ex[…] (it needs a native clip) or :m[…] (a mention, no audio)

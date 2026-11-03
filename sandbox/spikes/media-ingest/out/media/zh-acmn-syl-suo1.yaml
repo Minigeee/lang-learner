@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-suo1
+  title: suo1
+  context: word-audio
+  durationSec: 1.176
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-suo1.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-suo1.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-suo1
+  span:
+  - 0.15
+  - 0.96
+  file:
+    key: media/1d70d25f7285a9aa.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3376
+    sha256: 1d70d25f7285a9aa5fc7c9ff83575bfed591e36d9210ac77877c338bc5183388
+    durationSec: 0.81
+    gainDb: -7.12
+  lines:
+  - t:
+    - 0.0
+    - 0.81
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: suo1
+  validation:
+    lufs: -12.88
+    peak_db: -1.01
+    speech_ratio: 0.738
+    edge_start_db: -38.91
+    edge_end_db: -38.17
+    forced_logp: -9.98

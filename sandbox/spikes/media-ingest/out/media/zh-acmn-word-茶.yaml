@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-茶
+  title: 茶
+  context: word-audio
+  durationSec: 1.1
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-茶.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-茶.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-茶
+  span:
+  - 0.19
+  - 0.95
+  file:
+    key: media/c1fcdbb94e5f3c05.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3242
+    sha256: c1fcdbb94e5f3c05b6bc9971f296bbf555ac362ee2c22b66d8c755460706c5c3
+    durationSec: 0.76
+    gainDb: -2.82
+  lines:
+  - t:
+    - 0.0
+    - 0.76
+    zh: 茶
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -17.18
+    peak_db: -2.5
+    speech_ratio: 0.72
+    edge_start_db: -39.03
+    edge_end_db: -38.78
+    forced_logp: -0.08

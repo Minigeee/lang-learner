@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-开始
+  title: 开始
+  context: word-audio
+  durationSec: 1.3
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-开始.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-开始.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-开始
+  span:
+  - 0.2
+  - 1.17
+  file:
+    key: media/82a32a956f00f767.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 4098
+    sha256: 82a32a956f00f7679f57baf29754998392212af1b45d0ab5b6b3f96e34560f93
+    durationSec: 0.97
+    gainDb: -4.34
+  lines:
+  - t:
+    - 0.0
+    - 0.97
+    zh: 开始
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -15.66
+    peak_db: -4.62
+    speech_ratio: 0.781
+    edge_start_db: -41.86
+    edge_end_db: -42.3
+    forced_logp: -0.01

@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-wa3
+  title: wa3
+  context: word-audio
+  durationSec: 1.392
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-wa3.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-wa3.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-wa3
+  span:
+  - 0.14
+  - 1.16
+  file:
+    key: media/9571aefbbc9d8b90.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 4325
+    sha256: 9571aefbbc9d8b9003fae0083412ff7fbc9288f03c844bd136c5befc2a91e3a8
+    durationSec: 1.02
+    gainDb: 0.84
+  lines:
+  - t:
+    - 0.0
+    - 1.02
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: wa3
+  validation:
+    lufs: -21.54
+    peak_db: -1.84
+    speech_ratio: 0.782
+    edge_start_db: -44.23
+    edge_end_db: -43.43
+    forced_logp: -5.79

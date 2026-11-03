@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-bie3
+  title: bie3
+  context: word-audio
+  durationSec: 1.224
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-bie3.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-bie3.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-bie3
+  span:
+  - 0.19
+  - 1.06
+  file:
+    key: media/48acb24bc4b54c27.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3646
+    sha256: 48acb24bc4b54c27f10c2971476c442ad8cc2ddfe971cf72458e252bd6b3e851
+    durationSec: 0.87
+    gainDb: -6.5
+  lines:
+  - t:
+    - 0.0
+    - 0.87
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: bie3
+  validation:
+    lufs: -13.5
+    peak_db: -2.18
+    speech_ratio: 0.756
+    edge_start_db: -40.85
+    edge_end_db: -39.89
+    forced_logp: -2.08

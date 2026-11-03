@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-jiao3
+  title: jiao3
+  context: word-audio
+  durationSec: 1.44
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-jiao3.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-jiao3.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-jiao3
+  span:
+  - 0.11
+  - 1.24
+  file:
+    key: media/e86da3f6a8529f37.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 4691
+    sha256: e86da3f6a8529f37c78272e4bf7227b2c714367695f8d52a7cc603e10bfd9c1b
+    durationSec: 1.13
+    gainDb: -1.5
+  lines:
+  - t:
+    - 0.0
+    - 1.13
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: jiao3
+  validation:
+    lufs: -18.5
+    peak_db: -2.24
+    speech_ratio: 0.741
+    edge_start_db: -38.91
+    edge_end_db: -39.86
+    forced_logp: -2.57

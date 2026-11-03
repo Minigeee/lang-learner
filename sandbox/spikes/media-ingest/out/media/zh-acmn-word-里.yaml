@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-里
+  title: 里
+  context: word-audio
+  durationSec: 1.1
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-里.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-里.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-里
+  span:
+  - 0.13
+  - 0.96
+  file:
+    key: media/5381c5d0d563a95a.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3551
+    sha256: 5381c5d0d563a95a9c23a7b42379235724ea3da2465406e6dca68862e6c63d5e
+    durationSec: 0.83
+    gainDb: -4.69
+  lines:
+  - t:
+    - 0.0
+    - 0.83
+    zh: 里
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 1.0
+    per: 0.0
+    lufs: -15.31
+    peak_db: -1.71
+    speech_ratio: 0.744
+    edge_start_db: -37.48
+    edge_end_db: -36.42
+    forced_logp: -2.34

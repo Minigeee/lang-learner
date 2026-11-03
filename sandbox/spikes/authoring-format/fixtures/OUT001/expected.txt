@@ -1,0 +1,3 @@
+fixtures/OUT001/lessons/fixture-out001-sounds.md:22 OUT001 @shadow asks for output level 1; "Sounds" allows 0 for required activities (mark it "optional: true")
+fixtures/OUT001/lessons/fixture-out001.md:32 OUT001 @free-write asks for output level 2; "Stage 1" allows 1 for required activities
+fixtures/OUT001/lessons/fixture-out001.md:32 STR002 template "pattern" doesn't allow @free-write in "you-do" (allowed: meaning-pick, confusable-sorter, gist-question, clip-stage)

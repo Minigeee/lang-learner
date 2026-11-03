@@ -1,6 +1,6 @@
 # Activity and interactable brainstorm
 
-**Status:** a design brainstorm, written 2026-11-02. **Nothing here is decided.** It turns doc 07's activity types (T1–T18) and lesson shapes into concrete widgets (the "interactables"). Its scope is mostly the I do and the we do. It contains no technical planning; another doc covers that.
+**Status:** a design brainstorm, written 2026-11-02. **Mostly not decided.** §4 (the lesson arc, rotating openers and practice formats, and skills in the SRS) was revised and adopted on 2026-11-03; see the README synthesis. It turns doc 07's activity types (T1–T18) and lesson shapes into concrete widgets (the "interactables"). Its scope is mostly the I do and the we do. It contains no technical planning; another doc covers that.
 
 **Inputs:** [07 Activity types](../research/07-activity-types.md) (the evidence and T-codes), [06 Lesson design](../research/06-lesson-design.md) (the skeleton), [03 §1.8](../research/03-mandarin-curriculum-and-materials.md) (the lesson ideas), and vue-crash-course `CURRICULUM.md` §2 (how the user likes demos to feel).
 
@@ -8,7 +8,7 @@
 
 ## TL;DR
 
-- **A small kit, used the same way every time.** About 24 interactables are listed below, but a normal lesson uses 4–6 of them, and the same ones recur per shape. Doc 07 found no evidence that rotating formats helps learning, and each new mechanic costs a novice working memory [07 §2]. Variety comes from voices, clips and confusables, not from widgets.
+- **A small kit, rotated deliberately (§4).** About 24 interactables are listed below, but a normal lesson uses 4–6 of them. Every lesson runs one arc: opener, lesson (the I do), examples (the we do), and practice (the you do). Openers and practice formats rotate through fixed repertoires, for motivation while the habit forms; a new format is introduced once, in one line. The practice format is also what the skill's SRS card reviews.
 - **I do widgets ask nothing of the learner.** This copies vue-crash-course's rule that playgrounds "ask nothing of the reader". The I do is for exploring: replay, switch voice, loop, reveal. All checking happens in the we do and you do.
 - **Every we do widget must make the deciding cue the thing you process.** This is transfer-appropriate processing [07 §2]. A 不/没 item is answerable only if you heard 不 or 没. A tone item is answerable only from the tone.
 - **One fixed phone layout:** the player sits at the top and the response pad in the bottom 40% of the screen. One **↺ again** button stays in the same thumb spot in every widget. No dragging, no pinching, no typing by default.
@@ -156,7 +156,7 @@ In the I do it is the figure that carries the explanation. In the we do it becom
 
 ## 2. Per lesson shape: default routine and valid alternatives
 
-The default is what a lesson of that shape does unless the idea asks otherwise. Alternatives are picked *by fit to the idea*, not to rotate. A swap that brings in a mechanic the learner hasn't used yet counts as the unit's wildcard.
+The default is what a lesson of that shape does unless the idea asks otherwise. Alternatives are picked *by fit to the idea*, not to rotate. Under §4, the opener and the practice format are chosen separately, from §4.2 and §4.3; this section's we do / you do rows describe the Pick format and its alternatives.
 
 ### Sound (5–6 min)
 
@@ -222,35 +222,109 @@ Novelty is about **speaker, sentence and clip**, not about the word. Hearing 没
 
 ---
 
-## 4. Tie-in to the variety matrix
+## 4. Variety, the lesson arc, and skills in the SRS
 
-vue-crash-course's matrix recorded an archetype per lesson and enforced difference between neighbors. Given doc 07, the matrix should record **where the variety actually comes from**, and make any deviation from the shape's routine visible rather than required.
+**Revised 2026-11-03** (twice) at the user's request. The first version kept every lesson on its shape's routine and allowed format novelty only as one wildcard per unit. That answered whether rotating formats helps *learning* (doc 07: no evidence that it does). It didn't answer the question that matters for a solo learner: **does the lesson stay fresh long enough to build the habit?** The user's experience from vue-crash-course is that identical structure feels repetitive even when the content changes, and novelty carries motivation until the habit takes over.
 
-**What the matrix could record per lesson:**
-- **Shape**, which follows from the idea.
-- **Voices:** total, and how many are new to the learner. The check is ≥4 per contrast across a unit.
-- **Contexts and clip types:** CI teacher, kids' show, vlog, street interview, read-aloud (CV), storybook (GS). The check is ≥2 per unit.
-- **Confusables mixed in:** which earlier items are interleaved, and from which lesson.
-- **Support stage:** pinyin default and replay allowance. The check is that support fades from the first to the last lesson of a unit.
-- **Interactables per slot:** default (·) or a named alternative. Alternatives need a one-line reason.
-- **Wildcard:** at most one per unit.
-- **Rough strand split and maximum output level**, so the weekly LFL/MFI/FD check has something to sum.
+The evidence allows for this once it's read precisely:
+- **The cost of a new format is paid once, when you learn how it works** [07 §2, refs 22, 28]. A fixed repertoire that rotates pays it once per format, with a one-line introduction the first time. Formats that are always new, or that don't train the target skill, are what the evidence warns against.
+- **Novelty fades in about 4 weeks** [07, ref 30]. Habit formation takes a median of about 66 days, ranging from 18 to 254 (Lally et al., 2010, *European Journal of Social Psychology*). Novelty only has to bridge the gap, so it matters most early.
 
-**Sketch (not final), four lessons from §1.8.** The letters a/b/c mark a lesson's position inside its unit and are illustrative only.
+### 4.1 The lesson arc
 
-| Lesson | Shape | Voices (new) | Contexts | Interleaved | Support | I do | We do | You do | Wildcard | Strand ≈ | Out |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| 0.9a 你好 → *ní hǎo* (3+3 sandhi) | Sound | 5 (2) | AC words, CV sentence, Lazy Chinese greeting | 2nd vs 3rd (0.1) | pinyin on, replays ∞ | · + X9 figure | X14 ×6, X15 ×12 | X15 ×8 | — | LFL 90 / MFI 10 | 0 |
-| 1.11c Ordering at a stall | Clip | 1 clip + 3 chips | Mandarin Click food story | — | unit lesson 3 of 3: pinyin on peek | · | · (X19 ×3) | · | — | MFI 70 / LFL 30 | 0 (1 if X23) |
-| 1.13a 不 vs 没 | Pattern | 6 (2) | Peppa scene, Lazy Chinese story, CV | 不 (1.3), 没有 (1.5) | pinyin peek, 3 replays | · + X12 figure | X12 ×8 → X20 ×10 | X12 ×5 | — | LFL 70 / MFI 30 | 0 |
-| 1.13b 吧 softens | Pattern | 4 (3) | Peppa, Mandarin Click, Mandarin Corner | 吗 vs 吧 (1.2) | pinyin peek | X13 narrow set | X16 ×6 (suggestion / command / question) | X16 ×4 | **X13** (first use) | LFL 50 / MFI 50 | 0 |
+Every lesson teaches **one skill** (a knowledge item such as `zh:g:mei-vs-bu`) and runs this arc. The I do is the lesson itself, the we do is the skill in use, and the you do is practice, which is also what the SRS reviews.
 
-What this sketch shows:
-- Every row runs its shape's routine, so the dots are the norm.
-- The variety lives in the voice, context and interleaving columns.
-- The wildcard column is the only place where format novelty appears.
+1. **Start.** The title, the idea line, minutes, the steps ahead, and **I already know this**, which jumps to Practice as a test-out [README, Completion & test-out].
+2. **Opener: context and hook.** A real clip comes first, framed by one of the opener types in §4.2, with one question you probably can't answer yet.
+3. **Lesson: the I do.** One idea, 60 words or fewer [lesson-writing-style.md], with a figure and a ❌/✅ pair where it helps.
+4. **Examples: the we do.** The grammar or words in action: several native clips in different voices and contexts, with the target lit and the meaning one tap away. Nothing is scored. In Clip lessons this is the line-by-line read-along with text and glosses. A lesson can skip it when the opener and lesson already show enough (some Sound lessons).
+5. **Practice: the you do.** The skill, in the lesson's practice format (§4.3), with instant feedback. The first time a format appears on the path, a one-line card says how it works; after that it needs no introduction. **This format is what the skill's SRS card reviews later (§4.4),** so the lesson's last drill and tomorrow's review look the same.
+6. **Done.** A short end card: the first-try score, what was added to reviews (the skill card plus any word cards), and the next lesson.
 
-A useful mechanical check is the inverse of the vue rule: a unit with no new voice or no new context fails, while a unit with two non-default widgets needs a reason.
+There is one practice per lesson, not a practice and a separate check. **There is no synthesis or replay step** (decided 2026-11-03): the skill and its words come back often enough in the SRS. Checkpoint lessons are a Practice of mixed skills on unseen material.
+
+### 4.2 Openers (rotate)
+
+How the idea arrives. Chosen by fit to the idea; neighbors on the path prefer a different opener.
+
+| Opener | What happens | Fits | vue-crash-course analog |
+|---|---|---|---|
+| **Story** | A real clip, gist only. The lesson unpacks it afterward. | Clip lessons, vocabulary themes | Tour |
+| **Showdown** | Two clips side by side that differ only in the target (他不去 / 他没去). *Which one already happened?* | Confusable pairs, contrasts | Showdown |
+| **Mystery** | Hear the puzzle before the answer. *Why does 你好 come out as ní hǎo?* | Rules with a surprise (sandhi, 一/不, neutral tone) | Mystery |
+| **Discover** | Five or six examples, then *what's the pattern?* with three options, before the rule is shown. This is guided induction. | Patterns with a visible regularity (word order, 了, measure words) | Walkthrough |
+
+The opener's question is unscored. It's there to make you listen for something, not to test.
+
+### 4.3 Practice formats (rotate by fit)
+
+The language version of vue-crash-course's challenge formats. Each one:
+- tests the lesson's target cue (transfer-appropriate);
+- is receptive (output level 0–1) and one-thumbed;
+- never plays wrong Chinese;
+- can be generated automatically from the content pipeline;
+- works as a short SRS review on fresh stimuli (§4.4).
+
+| C | Format | How it plays | Fits | Built on | Generated from |
+|---|---|---|---|---|---|
+| C0 | **Pick** | Hear it, tap one of 2–4 big buttons. The faces vary: tones, a timeline, meanings, a two-way sorter. | Sound, Pattern | X12, X15, X16, X20 | the lesson's items |
+| C1 | **Recall** | Hear it, think of the meaning, reveal, grade yourself | Pattern (vocabulary-like) | X24 | the lesson's items |
+| C2 | **Odd one out** | Four voices. Three say the same thing (or tone, or form), one differs. Which one? | Sound, Pattern | X15 | clips grouped by tone or form; four different speakers, so voice is never the cue |
+| C3 | **Catch the mismatch** | Three or four lines play with English under each. One English line is wrong on exactly the target (*didn't* ↔ *doesn't*). Tap it. The Chinese is always right. | Pattern, Clip | X4 | each line's gloss, with the target flipped and checked by rule |
+| C4 | **Listen and do** | Hear an instruction, tap the spot in a scene (*put the cat on the book*) | Pattern (place, measure), Clip | X17 | a scene spec (figure-drawing spike) |
+| C5 | **Put it in order** | Hear a short story, then tap three gloss or picture cards in the order things happened | Clip | X21 | the transcript lines |
+| C6 | **Fill the gap** | A spoken line with a gap, and tiles that sound alike (去/七/气) | Clip, Pattern | X19 | the analyzer plus CC-CEDICT homophones |
+| C7 | **What comes next?** | The clip pauses. Pick what comes next from three English options. | Clip | X1 + X15 | the next line, and two lines from sibling clips |
+| C8 | **New clip** | An unseen clip, gist questions, no replay before answering | Clip, Checkpoint | X21 | the clip pool, by exposure history |
+
+**Rotation rule.** Choose by fit first. Among the formats that fit, prefer one that wasn't used in the previous two lessons. In S0 and S1, a format new to the learner appears about every 3–4 lessons, each arriving with its one-line introduction, so the first weeks always have something new coming up. In S2, variety comes mostly from content.
+
+**Inside practice, content still varies:**
+- **Voices and contexts:** at least 4 voices per contrast, and at least 2 contexts per unit.
+- **The context ladder.** Items climb from a single syllable, to a word, to a sentence, to a line inside a real clip. Each item carries its rung, and a unit should climb at least two rungs.
+- **Difficulty that adapts.** The trial runner aims for **about 80–90% accuracy**: it moves up a rung after a run of hits and serves an easier item after two misses in a row. The "85% rule" (Wilson et al., 2019, *Nature Communications*) comes from a model of learning, not a classroom study, so treat the band as a tuning target.
+- **Ending on mastery or time, never on a count.** Practice ends after a run of hits on the top rung, or at about 3 minutes. Misses come back 3–5 items later in a new voice, but a lesson can grow by at most 4 retries.
+
+### 4.4 Skills in the SRS
+
+**Decided 2026-11-03:** skills are SRS cards, just like vocabulary.
+- **One skill card per lesson skill,** with template `skill` and a deterministic id from the skill's knowledge item (as for every card). The lesson adds it when practice ends, alongside its word and sentence cards. A test-out pass adds it too.
+- **A skill review is a short burst of the lesson's practice format,** usually 1–3 items, on stimuli the learner hasn't heard: a new sentence or a new voice, chosen by exposure history. The same item never reviews the same recording twice in a row.
+- **Grading is automatic.** All right on the first try is Good, and any miss is Again. Skill cards never ask you to grade yourself; C1 Recall is the exception, because recall is self-graded by design.
+- **Confusable skills interleave on their own.** 不/没 and 了/过 reviews land in the same sessions, which gives the spaced interleaving doc 07 recommends [refs 24–26].
+- **When the pool runs dry,** reuse the least recently heard stimulus and log the review as practice, not as transfer evidence (§3, "unseen").
+- **Costs to plan for:**
+  - A skill review takes about 15–30 s, against about 8 s for a word card, so the minutes-based review cap (README conflict 4) has to count it by measured time.
+  - Skill cards need deep stimulus pools. A skill whose pool is thin (spike B's red ideas) can't support honest reviews, which makes those gaps more pressing.
+
+### 4.5 What the matrix records
+
+The matrix is computed from compiled lessons, never authored [TDD `content:matrix`]. Per lesson:
+- **Shape**, from the idea, and the **skill** it teaches.
+- **Opener** (§4.2) and **practice format** (§4.3), and whether the format is new to the learner at that point on the path.
+- **Rungs** that the practice items span.
+- **Hook source:** which real clip the opener uses.
+- **Voices** (total, and new to the learner), **contexts**, and **confusables interleaved** (which earlier items, from which lesson).
+- **Support stage:** pinyin default and replay allowance, fading across the unit.
+- **Stimulus pool depth** for the skill card: unseen sentences × voices available after the lesson.
+- **Rough strand split** and **maximum output level**, for the weekly balance check.
+
+**Checks:**
+- Neighboring lessons differ in opener or practice format.
+- Each unit uses at least 3 practice formats.
+- A format's first appearance on the path shows its introduction.
+- Each unit climbs at least two rungs and has at least 4 voices per contrast.
+- The skill card's pool supports at least ~20 unseen reviews.
+- No lesson's estimate runs past 8 minutes.
+
+**Sketch (not final), four lessons from §1.8.** The letters a/b mark a lesson's position inside its unit.
+
+| Lesson | Shape | Skill | Opener | Practice format | Rungs | Voices (new) | Interleaved | Support |
+|---|---|---|---|---|---|---|---|---|
+| 0.9a 你好 → *ní hǎo* | Sound | 3rd-tone sandhi | Mystery | C2 Odd one out (new) | word → phrase | 5 (2) | 2nd vs 3rd (0.1) | pinyin on |
+| 1.11c Ordering at a stall | Clip | stall phrases | Story | C7 What comes next? (new) | sentence → clip | 1 clip + 3 | — | pinyin on peek |
+| 1.13a 不 vs 没 | Pattern | 没 vs 不 | Showdown | C3 Catch the mismatch | sentence → clip line | 6 (2) | 不 (1.3), 没有 (1.5) | pinyin peek |
+| 1.13b 吧 softens | Pattern | 吧 | Discover | C0 Pick (meaning faces) | sentence | 4 (3) | 吗 vs 吧 (1.2) | pinyin peek |
 
 ---
 
@@ -325,7 +399,7 @@ The second lesson of the unit (吧) would then appear as the 1.13b row in §4.
 4. **Typed answers.** Gapped lines as tiles only on the phone, with typed pinyin as a desktop option, or typed everywhere?
 5. **Auto-pause per line in pass 2:** on by default or off?
 6. **Self-rating (X22).** Is a one-tap "how much did you follow?" useful to you, or noise? Should it drive pinyin fading, or only feed the subtitle-switch check?
-7. **Wildcards.** Should the app pick the unit's wildcard (from X13, X17, X18, X23), or do you pick it? Is one per unit the right cap to start with?
+7. ~~**Wildcards.**~~ **Answered 2026-11-03:** replaced by rotating openers and practice formats (§4).
 8. **You-do feedback.** Deferred to an end-of-step review (as proposed), or instant everywhere?
 9. **Speaker identity.** Should voices be anonymous ("voice 3") or carry a short label (gender, region, speed)? Do you want to see which voice tripped you up?
 10. **Shadow prompt.** Is it fine with no recording in v1 (ties to README open decision 4 and doc 06 open question 3)?

@@ -1,0 +1,102 @@
+# Placeholder picture stories for unit "Where things are". Ids, keys and timings are invented.
+- id: media:mc-where-cat
+  title: Where is my cat? (Mandarin Click picture story)
+  context: ci-teacher
+  durationSec: 186
+  speakers: [spk:mc-f1]
+  source: { provider: youtube, videoId: Mc0WhereCat }
+  rights: { kind: embed }
+  transcript: youtube-captions
+  clips:
+    - id: clip:mc-where-cat-01
+      span: [8.0, 72.0]
+      lines:
+        - { t: [8.0, 11.0], zh: 这是我的猫。, en: This is my cat. }
+        - { t: [11.5, 14.5], zh: 我的猫在哪儿？, en: Where is my cat?, tags: [zh:g:zai-location, zh:w:哪儿:na3r5] }
+        - { t: [15.0, 19.0], zh: 猫在桌子上吗？不在。, en: "Is the cat on the table? No.", tags: [zh:g:zai-location, zh:g:place-words] }
+        - { t: [19.5, 24.0], zh: 桌子上有一本书。, en: There's a book on the table., tags: [zh:g:place-you-thing] }
+        - { t: [24.5, 29.0], zh: 椅子下边有什么？, en: "What's under the chair?", tags: [zh:g:place-you-thing, zh:g:place-words] }
+        - { t: [29.5, 33.0], zh: 椅子下边没有猫。, en: "There's no cat under the chair.", tags: [zh:g:place-you-thing, zh:g:mei-past-negation] }
+        - { t: [34.0, 39.0], zh: 床上有一只猫！, en: "There's a cat on the bed!", tags: [zh:g:place-you-thing] }
+        - { t: [40.0, 45.0], zh: 哦，那是我的帽子。, en: "Oh, that's my hat." }
+        - { t: [46.0, 52.0], zh: 我的猫在外边。, en: My cat is outside., tags: [zh:g:zai-location] }
+        - { t: [53.0, 60.0], zh: 它在门后边睡觉。, en: "It's sleeping behind the door.", tags: [zh:g:zai-location, zh:g:place-words] }
+- id: media:gs-cat-hides
+  title: The cat hides (Global Storybooks, Mandarin narration)
+  context: storybook
+  durationSec: 140
+  speakers: [spk:gs-narrator-3]
+  source: { provider: storage, key: gs/cmn/cat-hides.opus }
+  rights: { kind: open, license: lic:cc-by-4.0, author: Global Storybooks, sourceUrl: https://globalstorybooks.net }
+  transcript: source-text
+  clips:
+    - id: clip:gs-cat-hides-01
+      span: [0.0, 55.0]
+      lines:
+        - { t: [0.5, 4.0], zh: 小猫在哪儿？, en: Where is the kitten?, tags: [zh:g:zai-location] }
+        - { t: [4.5, 9.0], zh: 房间里有一张床。, en: There's a bed in the room., tags: [zh:g:place-you-thing] }
+        - { t: [9.5, 14.0], zh: 小猫在床下边。, en: The kitten is under the bed., tags: [zh:g:zai-location, zh:g:place-words] }
+- id: media:mc-my-room
+  title: My room (Mandarin Click)
+  context: ci-teacher
+  durationSec: 150
+  speakers: [spk:mc-m1]
+  source: { provider: youtube, videoId: Mc0MyRoom01 }
+  rights: { kind: embed }
+  transcript: youtube-captions
+  clips:
+    - id: clip:mc-my-room-02
+      span: [30.0, 70.0]
+      lines:
+        - { t: [30.0, 34.0], zh: 我的房间里有一张桌子。, en: There's a desk in my room., tags: [zh:g:place-you-thing] }
+        - { t: [34.5, 38.0], zh: 桌子上有电脑。, en: "There's a computer on the desk.", tags: [zh:g:place-you-thing] }
+        - { t: [38.5, 42.0], zh: 我的狗在床上。, en: My dog is on the bed., tags: [zh:g:zai-location] }
+      questions:
+        - { ask: What is on the desk?, choices: [A computer, A dog, A book], answer: 0, tests: [zh:g:place-you-thing], line: 1 }
+        - { ask: Where is the dog?, choices: [Under the desk, On the bed, Outside], answer: 1, tests: [zh:g:zai-location], line: 2 }
+- id: media:lc-my-home
+  title: My home (Lazy Chinese)
+  context: ci-teacher
+  durationSec: 380
+  speakers: [spk:lc-host]
+  source: { provider: youtube, videoId: Lc0MyHome03 }
+  rights: { kind: embed }
+  transcript: youtube-captions
+  clips:
+    - id: clip:lc-my-home-03
+      span: [120.0, 150.0]
+      lines:
+        - { t: [120.0, 124.0], zh: 我家外边有一个公园。, en: "There's a park outside my home.", tags: [zh:g:place-you-thing] }
+        - { t: [124.5, 128.0], zh: 公园里有很多狗。, en: There are a lot of dogs in the park., tags: [zh:g:place-you-thing] }
+      questions:
+        - { ask: What is outside the speaker's home?, choices: [A park, A school, A shop], answer: 0, tests: [zh:g:place-you-thing], line: 0 }
+- id: media:gs-dog-garden
+  title: The dog in the garden (Global Storybooks, Mandarin narration)
+  context: storybook
+  durationSec: 120
+  speakers: [spk:gs-narrator-5]
+  source: { provider: storage, key: gs/cmn/dog-garden.opus }
+  rights: { kind: open, license: lic:cc-by-4.0, author: Global Storybooks, sourceUrl: https://globalstorybooks.net }
+  transcript: source-text
+  clips:
+    - id: clip:gs-dog-garden-01
+      span: [0.0, 40.0]
+      lines:
+        - { t: [0.5, 4.0], zh: 花园里有一只狗。, en: There's a dog in the garden., tags: [zh:g:place-you-thing] }
+        - { t: [4.5, 8.0], zh: 狗在树下边。, en: The dog is under the tree., tags: [zh:g:zai-location] }
+      questions:
+        - { ask: Where is the dog?, choices: [Under the tree, In the house], answer: 0, tests: [zh:g:zai-location], line: 1 }
+# A full episode with no automatic transcript: free-watch only, never a lesson clip.
+- id: media:cartoon-ep-07
+  title: Cartoon episode 7 (burned-in subtitles)
+  context: kids-show
+  durationSec: 660
+  speakers: [spk:cartoon-cast]
+  source: { provider: youtube, videoId: Ct0Episode7 }
+  rights: { kind: embed }
+  transcript: none
+  clips:
+    - id: clip:cartoon-ep-07-01
+      span: [100.0, 130.0]
+      lines:
+        - { t: [100.0, 104.0], zh: 你的猫在哪儿？, en: Where is your cat? }

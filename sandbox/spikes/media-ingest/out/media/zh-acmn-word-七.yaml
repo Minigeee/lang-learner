@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-七
+  title: 七
+  context: word-audio
+  durationSec: 0.95
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-七.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-七.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-七
+  span:
+  - 0.15
+  - 0.84
+  file:
+    key: media/0eeb97ca6cc334ff.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2899
+    sha256: 0eeb97ca6cc334fff4298b0c03a7902d99cf0eceb834ec6259f58c6f2fc4782f
+    durationSec: 0.69
+    gainDb: -0.53
+  lines:
+  - t:
+    - 0.0
+    - 0.69
+    zh: 七
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -19.47
+    peak_db: -10.13
+    speech_ratio: 0.691
+    edge_start_db: -39.78
+    edge_end_db: -40.14
+    forced_logp: -0.47

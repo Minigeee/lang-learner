@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-qin4
+  title: qin4
+  context: word-audio
+  durationSec: 1.128
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-qin4.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-qin4.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-qin4
+  span:
+  - 0.19
+  - 0.94
+  file:
+    key: media/d32168c9214b9b72.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3085
+    sha256: d32168c9214b9b721c1e002f1b9b529d1dd75d0a6ddd94e37ff800dfa17a9955
+    durationSec: 0.75
+    gainDb: -7.22
+  lines:
+  - t:
+    - 0.0
+    - 0.75
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: qin4
+  validation:
+    lufs: -12.78
+    peak_db: -0.98
+    speech_ratio: 0.716
+    edge_start_db: -53.77
+    edge_end_db: -51.73
+    forced_logp: -11.9

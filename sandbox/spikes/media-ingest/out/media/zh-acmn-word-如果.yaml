@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-如果
+  title: 如果
+  context: word-audio
+  durationSec: 1.4
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-如果.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-如果.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-如果
+  span:
+  - 0.15
+  - 1.27
+  file:
+    key: media/71904193b0be4402.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 4816
+    sha256: 71904193b0be440229d065925f004693ead2f514e751395a1e15fed4a0bfbee1
+    durationSec: 1.12
+    gainDb: -6.57
+  lines:
+  - t:
+    - 0.0
+    - 1.12
+    zh: 如果
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -13.43
+    peak_db: -1.35
+    speech_ratio: 0.802
+    edge_start_db: -37.24
+    edge_end_db: -38.35
+    forced_logp: -0.05

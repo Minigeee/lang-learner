@@ -1,0 +1,47 @@
+media:
+  id: media:zh-acmn-syl-diu4
+  title: diu4
+  context: word-audio
+  durationSec: 0.888
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-diu4.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-diu4.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-diu4
+  span:
+  - 0.2
+  - 0.63
+  file:
+    key: media/a9783f21aaf6f285.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 1817
+    sha256: a9783f21aaf6f2858ab9d7f513110ac44ff377126f1fa0d97f61c511a64641cc
+    durationSec: 0.43
+    gainDb: -7.17
+  lines:
+  - t:
+    - 0.0
+    - 0.43
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: diu4
+  validation:
+    lufs: -12.83
+    peak_db: -1.32
+    speech_ratio: 0.5
+    edge_start_db: -50.19
+    edge_end_db: -48.1

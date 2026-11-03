@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-真
+  title: 真
+  context: word-audio
+  durationSec: 0.95
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-真.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-真.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-真
+  span:
+  - 0.16
+  - 0.81
+  file:
+    key: media/64e5fdd6aa4e4589.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2741
+    sha256: 64e5fdd6aa4e4589dda66c17fef5aa6f454daab51231d036638524966f3db797
+    durationSec: 0.65
+    gainDb: -2.17
+  lines:
+  - t:
+    - 0.0
+    - 0.65
+    zh: 真
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -17.83
+    peak_db: -5.07
+    speech_ratio: 0.609
+    edge_start_db: -40.06
+    edge_end_db: -42.13
+    forced_logp: -0.36

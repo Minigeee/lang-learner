@@ -1,0 +1,3 @@
+fixtures/ORD001/curriculum.ts:6 ORD001 zh:les:fixture-ord001 assumes zh:w:猫:mao1, first taught by zh:les:where-is-the-cat, which comes later
+fixtures/ORD001/curriculum.ts:6 ORD001 zh:les:fixture-ord001 zh:g:place-you-thing needs zh:g:you-have, first taught by zh:les:you-have, which comes later
+fixtures/ORD001/curriculum.ts:6 ORD001 zh:les:fixture-ord001 zh:g:place-you-thing needs zh:g:place-words, first taught by zh:les:place-words, which comes later

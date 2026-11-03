@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-kuai4
+  title: kuai4
+  context: word-audio
+  durationSec: 0.936
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-kuai4.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-kuai4.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-kuai4
+  span:
+  - 0.07
+  - 0.7
+  file:
+    key: media/052bf07c8736dc3f.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2658
+    sha256: 052bf07c8736dc3fdb0f2275fc2a833ef7018d16943812654adeb503a7c0f464
+    durationSec: 0.63
+    gainDb: -4.55
+  lines:
+  - t:
+    - 0.0
+    - 0.63
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: kuai4
+  validation:
+    lufs: -15.45
+    peak_db: -1.43
+    speech_ratio: 0.645
+    edge_start_db: -51.57
+    edge_end_db: -50.69
+    forced_logp: -7.76

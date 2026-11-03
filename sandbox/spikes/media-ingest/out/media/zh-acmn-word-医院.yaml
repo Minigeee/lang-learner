@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-医院
+  title: 医院
+  context: word-audio
+  durationSec: 1.15
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-医院.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-医院.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-医院
+  span:
+  - 0.16
+  - 0.99
+  file:
+    key: media/b85db669c4cc3ab0.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3823
+    sha256: b85db669c4cc3ab061a84bc15c3944d3eb12825794855ef103514d67e117767e
+    durationSec: 0.83
+    gainDb: -8.48
+  lines:
+  - t:
+    - 0.0
+    - 0.83
+    zh: 医院
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -11.52
+    peak_db: -1.55
+    speech_ratio: 0.732
+    edge_start_db: -36.52
+    edge_end_db: -36.98
+    forced_logp: -0.18

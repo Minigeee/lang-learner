@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-pao4
+  title: pao4
+  context: word-audio
+  durationSec: 1.032
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-pao4.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-pao4.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-pao4
+  span:
+  - 0.17
+  - 0.81
+  file:
+    key: media/f529ac849e6175be.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2712
+    sha256: f529ac849e6175be2876fe49dbad2e3207956fd6cf2b028c90ba823fca771f6a
+    durationSec: 0.64
+    gainDb: -7.82
+  lines:
+  - t:
+    - 0.0
+    - 0.64
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: pao4
+  validation:
+    lufs: -12.18
+    peak_db: -1.21
+    speech_ratio: 0.667
+    edge_start_db: -52.14
+    edge_end_db: -48.35
+    forced_logp: -7.56

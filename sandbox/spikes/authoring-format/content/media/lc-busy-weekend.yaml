@@ -1,0 +1,19 @@
+# Placeholder catalog entry: a Lazy Chinese daily-life story (YouTube embed). Video id and timings are invented.
+id: media:lc-busy-weekend
+title: My lazy weekend (Lazy Chinese, daily-life story)
+context: ci-teacher
+durationSec: 412
+speakers: [spk:lc-host]
+source: { provider: youtube, videoId: Lc0Wkend01x }
+rights: { kind: embed }
+transcript: youtube-captions
+clips:
+  - id: clip:lc-busy-weekend-01
+    span: [15.0, 38.5]
+    lines:
+      - { t: [15.0, 18.2], zh: 星期六我不想去公司。, en: On Saturday I don't want to go to the office., tags: [zh:g:bu-negation] }
+      - { t: [18.4, 22.0], zh: 我没去公司，我在家喝咖啡。, en: "I didn't go to the office; I drank coffee at home.", tags: [zh:g:mei-past-negation] }
+      - { t: [22.3, 25.1], zh: 我不喝茶，我只喝咖啡。, en: "I don't drink tea, I only drink coffee.", tags: [zh:g:bu-negation] }
+      - { t: [25.6, 29.0], zh: 我的朋友没来。, en: My friend didn't come., tags: [zh:g:mei-past-negation] }
+      - { t: [29.4, 33.0], zh: 他说他明天不来。, en: "He says he isn't coming tomorrow.", tags: [zh:g:bu-negation] }
+      - { t: [33.5, 38.5], zh: 我昨天没去公司。, en: "I didn't go to the office yesterday.", tags: [zh:g:mei-past-negation] }

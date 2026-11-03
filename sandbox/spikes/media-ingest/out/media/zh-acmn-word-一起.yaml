@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-一起
+  title: 一起
+  context: word-audio
+  durationSec: 1.25
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-一起.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-一起.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-一起
+  span:
+  - 0.17
+  - 1.15
+  file:
+    key: media/df804a96c57054ad.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 4167
+    sha256: df804a96c57054ad7ee493585307ed510f11fe4077f6f74d897e2c12c55de337
+    durationSec: 0.98
+    gainDb: -3.39
+  lines:
+  - t:
+    - 0.0
+    - 0.98
+    zh: 一起
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -16.61
+    peak_db: -3.87
+    speech_ratio: 0.784
+    edge_start_db: -40.7
+    edge_end_db: -38.37
+    forced_logp: -0.23

@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-所以
+  title: 所以
+  context: word-audio
+  durationSec: 1.25
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-所以.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-所以.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-所以
+  span:
+  - 0.14
+  - 1.18
+  file:
+    key: media/baf4632a06767fb9.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 4454
+    sha256: baf4632a06767fb99fdfe34b4440e04ab1dc2c650e33f1cb9fb011980cba4adb
+    durationSec: 1.04
+    gainDb: -5.66
+  lines:
+  - t:
+    - 0.0
+    - 1.04
+    zh: 所以
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -14.34
+    peak_db: -1.68
+    speech_ratio: 0.796
+    edge_start_db: -40.82
+    edge_end_db: -41.32
+    forced_logp: -0.01

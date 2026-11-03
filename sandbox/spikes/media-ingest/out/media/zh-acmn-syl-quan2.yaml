@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-quan2
+  title: quan2
+  context: word-audio
+  durationSec: 1.128
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-quan2.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-quan2.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-quan2
+  span:
+  - 0.19
+  - 0.89
+  file:
+    key: media/911f3992166f0c8f.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2950
+    sha256: 911f3992166f0c8fdcd3e51b52d904eff7a6fa98e5af94f775a96e6f370f7ba3
+    durationSec: 0.7
+    gainDb: -4.2
+  lines:
+  - t:
+    - 0.0
+    - 0.7
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: quan2
+  validation:
+    lufs: -15.8
+    peak_db: -1.21
+    speech_ratio: 0.696
+    edge_start_db: -42.79
+    edge_end_db: -34.87
+    forced_logp: -10.1

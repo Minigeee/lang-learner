@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-服务员
+  title: 服务员
+  context: word-audio
+  durationSec: 1.6
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-服务员.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-服务员.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-服务员
+  span:
+  - 0.14
+  - 1.46
+  file:
+    key: media/cad9e5ef6bb548d5.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 5548
+    sha256: cad9e5ef6bb548d598cfa1e2fae1e4bfb35bbbf5df9eeb9ae3aa3da8c0644570
+    durationSec: 1.32
+    gainDb: -5.18
+  lines:
+  - t:
+    - 0.0
+    - 1.32
+    zh: 服务员
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -14.82
+    peak_db: -1.35
+    speech_ratio: 0.824
+    edge_start_db: -40.46
+    edge_end_db: -40.3
+    forced_logp: -0.01

@@ -1,0 +1,110 @@
+# Placeholder Common Voice zh-CN sentences (CC0), one media item per recording, rehosted in Storage.
+# Ids, keys and speakers are invented; the transcript is Common Voice's own sentence text.
+- id: media:cv-neg-001
+  title: Common Voice sentence
+  context: sentence-audio
+  durationSec: 3.1
+  speakers: [spk:cv-a91f]
+  source: { provider: storage, key: cv/neg-001.opus }
+  rights: { kind: open, license: lic:cc0, author: Common Voice contributor, sourceUrl: https://commonvoice.mozilla.org }
+  transcript: common-voice
+  clips:
+    - id: clip:cv-neg-001
+      span: [0, 3.1]
+      lines: [{ t: [0.2, 3.0], zh: 我今天不喝咖啡。, en: "I'm not drinking coffee today.", tags: [zh:g:bu-negation] }]
+- id: media:cv-neg-002
+  title: Common Voice sentence
+  context: sentence-audio
+  durationSec: 2.8
+  speakers: [spk:cv-07c2]
+  source: { provider: storage, key: cv/neg-002.opus }
+  rights: { kind: open, license: lic:cc0, author: Common Voice contributor, sourceUrl: https://commonvoice.mozilla.org }
+  transcript: common-voice
+  clips:
+    - id: clip:cv-neg-002
+      span: [0, 2.8]
+      lines: [{ t: [0.1, 2.7], zh: 我昨天没喝咖啡。, en: "I didn't drink coffee yesterday.", tags: [zh:g:mei-past-negation] }]
+- id: media:cv-neg-003
+  title: Common Voice sentence
+  context: sentence-audio
+  durationSec: 2.2
+  speakers: [spk:cv-5d10]
+  source: { provider: storage, key: cv/neg-003.opus }
+  rights: { kind: open, license: lic:cc0, author: Common Voice contributor, sourceUrl: https://commonvoice.mozilla.org }
+  transcript: common-voice
+  clips:
+    - id: clip:cv-neg-003
+      span: [0, 2.2]
+      lines: [{ t: [0.1, 2.1], zh: 他不吃肉。, en: "He doesn't eat meat.", tags: [zh:g:bu-negation] }]
+- id: media:cv-neg-004
+  title: Common Voice sentence
+  context: sentence-audio
+  durationSec: 2.0
+  speakers: [spk:cv-a91f]
+  source: { provider: storage, key: cv/neg-004.opus }
+  rights: { kind: open, license: lic:cc0, author: Common Voice contributor, sourceUrl: https://commonvoice.mozilla.org }
+  transcript: common-voice
+  clips:
+    - id: clip:cv-neg-004
+      span: [0, 2.0]
+      lines: [{ t: [0.1, 1.9], zh: 他没吃饭。, en: "He didn't eat.", tags: [zh:g:mei-past-negation] }]
+- id: media:cv-neg-005
+  title: Common Voice sentence
+  context: sentence-audio
+  durationSec: 2.4
+  speakers: [spk:cv-3b77]
+  source: { provider: storage, key: cv/neg-005.opus }
+  rights: { kind: open, license: lic:cc0, author: Common Voice contributor, sourceUrl: https://commonvoice.mozilla.org }
+  transcript: common-voice
+  clips:
+    - id: clip:cv-neg-005
+      span: [0, 2.4]
+      lines: [{ t: [0.1, 2.3], zh: 她不是老师。, en: "She isn't a teacher.", tags: [zh:g:bu-negation, zh:g:shi-noun] }]
+- id: media:cv-neg-006
+  title: Common Voice sentence
+  context: sentence-audio
+  durationSec: 3.4
+  speakers: [spk:cv-07c2]
+  source: { provider: storage, key: cv/neg-006.opus }
+  rights: { kind: open, license: lic:cc0, author: Common Voice contributor, sourceUrl: https://commonvoice.mozilla.org }
+  transcript: common-voice
+  clips:
+    - id: clip:cv-neg-006
+      span: [0, 3.4]
+      lines: [{ t: [0.1, 3.3], zh: 以前我不喝咖啡。, en: "I didn't use to drink coffee.", tags: [zh:g:bu-negation] }]
+- id: media:cv-neg-007
+  title: Common Voice sentence
+  context: sentence-audio
+  durationSec: 2.1
+  speakers: [spk:cv-e410]
+  source: { provider: storage, key: cv/neg-007.opus }
+  rights: { kind: open, license: lic:cc0, author: Common Voice contributor, sourceUrl: https://commonvoice.mozilla.org }
+  transcript: common-voice
+  clips:
+    - id: clip:cv-neg-007
+      span: [0, 2.1]
+      lines: [{ t: [0.1, 2.0], zh: 我明天不去。, en: "I'm not going tomorrow.", tags: [zh:g:bu-negation] }]
+- id: media:cv-neg-008
+  title: Common Voice sentence
+  context: sentence-audio
+  durationSec: 1.9
+  speakers: [spk:cv-5d10]
+  source: { provider: storage, key: cv/neg-008.opus }
+  rights: { kind: open, license: lic:cc0, author: Common Voice contributor, sourceUrl: https://commonvoice.mozilla.org }
+  transcript: common-voice
+  clips:
+    - id: clip:cv-neg-008
+      span: [0, 1.9]
+      lines: [{ t: [0.1, 1.8], zh: 他没去。, en: "He didn't go.", tags: [zh:g:mei-past-negation] }]
+- id: media:cv-neg-009
+  title: Common Voice sentence
+  context: sentence-audio
+  durationSec: 1.8
+  speakers: [spk:cv-e410]
+  source: { provider: storage, key: cv/neg-009.opus }
+  rights: { kind: open, license: lic:cc0, author: Common Voice contributor, sourceUrl: https://commonvoice.mozilla.org }
+  transcript: common-voice
+  clips:
+    - id: clip:cv-neg-009
+      span: [0, 1.8]
+      lines: [{ t: [0.1, 1.7], zh: 我今天不忙。, en: "I'm not busy today.", tags: [zh:g:bu-negation, zh:g:hen-adj] }]

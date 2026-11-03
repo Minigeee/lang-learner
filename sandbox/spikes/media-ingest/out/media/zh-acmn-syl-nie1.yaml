@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-nie1
+  title: nie1
+  context: word-audio
+  durationSec: 0.888
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-nie1.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-nie1.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-nie1
+  span:
+  - 0.18
+  - 0.63
+  file:
+    key: media/0e8ead4f6fb7fd7c.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 1877
+    sha256: 0e8ead4f6fb7fd7cbd79e33607fbd0701f1c8e44e34ad8afa46c0d3ab9788de1
+    durationSec: 0.45
+    gainDb: -9.74
+  lines:
+  - t:
+    - 0.0
+    - 0.45
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: nie1
+  validation:
+    lufs: -10.26
+    peak_db: -1.12
+    speech_ratio: 0.523
+    edge_start_db: -51.76
+    edge_end_db: -42.47
+    forced_logp: -2.83

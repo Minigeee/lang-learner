@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-高兴
+  title: 高兴
+  context: word-audio
+  durationSec: 1.25
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-高兴.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-高兴.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-高兴
+  span:
+  - 0.19
+  - 1.15
+  file:
+    key: media/d9283384e5fafeed.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 4097
+    sha256: d9283384e5fafeed1eb0e8c987cf6d911f6fce887aceca4f30b4c3439cbeb526
+    durationSec: 0.96
+    gainDb: -4.91
+  lines:
+  - t:
+    - 0.0
+    - 0.96
+    zh: 高兴
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -15.09
+    peak_db: -1.44
+    speech_ratio: 0.779
+    edge_start_db: -44.74
+    edge_end_db: -42.07
+    forced_logp: -0.11

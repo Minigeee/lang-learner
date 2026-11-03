@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-穿
+  title: 穿
+  context: word-audio
+  durationSec: 1.05
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-穿.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-穿.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-穿
+  span:
+  - 0.15
+  - 0.87
+  file:
+    key: media/67e67a663ba013b8.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3100
+    sha256: 67e67a663ba013b8560c41a7228d04dd9045d3684206b05cd4473f1eea478bd6
+    durationSec: 0.72
+    gainDb: -5.02
+  lines:
+  - t:
+    - 0.0
+    - 0.72
+    zh: 穿
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -14.98
+    peak_db: -2.86
+    speech_ratio: 0.704
+    edge_start_db: -36.67
+    edge_end_db: -42.93
+    forced_logp: -0.5

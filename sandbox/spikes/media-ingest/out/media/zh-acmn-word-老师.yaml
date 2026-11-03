@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-老师
+  title: 老师
+  context: word-audio
+  durationSec: 1.25
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-老师.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-老师.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-老师
+  span:
+  - 0.14
+  - 1.08
+  file:
+    key: media/6cf77aa295ce5361.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3983
+    sha256: 6cf77aa295ce5361ef24d4aa59631660e100a98742ecb08775547214736b3d16
+    durationSec: 0.94
+    gainDb: -3.77
+  lines:
+  - t:
+    - 0.0
+    - 0.94
+    zh: 老师
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -16.23
+    peak_db: -2.59
+    speech_ratio: 0.774
+    edge_start_db: -34.17
+    edge_end_db: -41.21
+    forced_logp: -0.05

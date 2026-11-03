@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-衣服
+  title: 衣服
+  context: word-audio
+  durationSec: 1.05
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-衣服.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-衣服.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-衣服
+  span:
+  - 0.19
+  - 0.91
+  file:
+    key: media/d65e13f94459e9ac.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3160
+    sha256: d65e13f94459e9acc3d8ae3af4521f0314d890a0ff0e2e3267b7e192a5018df2
+    durationSec: 0.72
+    gainDb: -7.89
+  lines:
+  - t:
+    - 0.0
+    - 0.72
+    zh: 衣服
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 1.5
+    per: 1.5
+    lufs: -12.11
+    peak_db: -1.35
+    speech_ratio: 0.704
+    edge_start_db: -46.7
+    edge_end_db: -44.03
+    forced_logp: -1.54

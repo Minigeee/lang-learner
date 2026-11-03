@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-到
+  title: 到
+  context: word-audio
+  durationSec: 0.95
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-到.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-到.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-到
+  span:
+  - 0.19
+  - 0.76
+  file:
+    key: media/12ccda0457dffbc5.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2434
+    sha256: 12ccda0457dffbc533c1d42258d401eedff5b384529c25a29dc174cbdc61fd94
+    durationSec: 0.57
+    gainDb: -6.78
+  lines:
+  - t:
+    - 0.0
+    - 0.57
+    zh: 到
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -13.22
+    peak_db: -1.43
+    speech_ratio: 0.589
+    edge_start_db: -50.67
+    edge_end_db: -47.06
+    forced_logp: -0.77

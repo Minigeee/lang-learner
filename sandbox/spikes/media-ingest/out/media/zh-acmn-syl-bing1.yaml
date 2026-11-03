@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-bing1
+  title: bing1
+  context: word-audio
+  durationSec: 1.032
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-bing1.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-bing1.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-bing1
+  span:
+  - 0.18
+  - 0.79
+  file:
+    key: media/b4f12dc88376936c.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2474
+    sha256: b4f12dc88376936c0397c7037af14f541c8c5cef2e189a221566209c9d223b75
+    durationSec: 0.61
+    gainDb: -10.54
+  lines:
+  - t:
+    - 0.0
+    - 0.61
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: bing1
+  validation:
+    lufs: -9.46
+    peak_db: -1.37
+    speech_ratio: 0.65
+    edge_start_db: -44.44
+    edge_end_db: -48.79
+    forced_logp: -9.23

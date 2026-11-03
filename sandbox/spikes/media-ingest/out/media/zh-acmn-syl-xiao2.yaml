@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-xiao2
+  title: xiao2
+  context: word-audio
+  durationSec: 1.296
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-xiao2.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-xiao2.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-xiao2
+  span:
+  - 0.22
+  - 1.06
+  file:
+    key: media/3cf7380a1c3ef415.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3529
+    sha256: 3cf7380a1c3ef415a8b40c643b19a64fa3a80f4d23d7f3f266abfb96c24b5a8b
+    durationSec: 0.84
+    gainDb: -4.4
+  lines:
+  - t:
+    - 0.0
+    - 0.84
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: xiao2
+  validation:
+    lufs: -15.6
+    peak_db: -1.75
+    speech_ratio: 0.747
+    edge_start_db: -33.66
+    edge_end_db: -37.76
+    forced_logp: -9.42

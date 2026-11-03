@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-水
+  title: 水
+  context: word-audio
+  durationSec: 1.15
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-水.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-水.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-水
+  span:
+  - 0.16
+  - 1.07
+  file:
+    key: media/bb75a16a533ae792.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3928
+    sha256: bb75a16a533ae792f97f7c839efe48ab8bd88ae2967f342cebda1b9c4ce2bf0e
+    durationSec: 0.91
+    gainDb: -1.86
+  lines:
+  - t:
+    - 0.0
+    - 0.91
+    zh: 水
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -18.14
+    peak_db: -4.3
+    speech_ratio: 0.744
+    edge_start_db: -36.96
+    edge_end_db: -36.29
+    forced_logp: -0.12

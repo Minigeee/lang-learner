@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-觉得
+  title: 觉得
+  context: word-audio
+  durationSec: 1.1
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-觉得.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-觉得.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-觉得
+  span:
+  - 0.19
+  - 0.92
+  file:
+    key: media/e74d3ea6a3fa5d55.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3178
+    sha256: e74d3ea6a3fa5d55a71c12cf9456fc954e5a344b1afcb81e5d4cf86ce2f167d8
+    durationSec: 0.73
+    gainDb: -4.46
+  lines:
+  - t:
+    - 0.0
+    - 0.73
+    zh: 觉得
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 1.0
+    per: 0.5
+    lufs: -15.54
+    peak_db: -1.18
+    speech_ratio: 0.708
+    edge_start_db: -43.07
+    edge_end_db: -38.22
+    forced_logp: -2.12

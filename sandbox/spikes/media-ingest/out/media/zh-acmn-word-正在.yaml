@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-正在
+  title: 正在
+  context: word-audio
+  durationSec: 1.2
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-正在.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-正在.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-正在
+  span:
+  - 0.16
+  - 1.08
+  file:
+    key: media/dfc464b2d06f0092.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3966
+    sha256: dfc464b2d06f0092d42576d68fb2c8187c26c02a2906440e9adc0d9dfa07e3fc
+    durationSec: 0.92
+    gainDb: -3.36
+  lines:
+  - t:
+    - 0.0
+    - 0.92
+    zh: 正在
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -16.64
+    peak_db: -3.4
+    speech_ratio: 0.769
+    edge_start_db: -41.15
+    edge_end_db: -42.16
+    forced_logp: -0.02

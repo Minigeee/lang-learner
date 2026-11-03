@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-yong3
+  title: yong3
+  context: word-audio
+  durationSec: 1.224
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-yong3.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-yong3.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-yong3
+  span:
+  - 0.24
+  - 0.97
+  file:
+    key: media/c79bcd8671c435f0.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3140
+    sha256: c79bcd8671c435f00ecf347716d8b008f991298cb92b8facd5b0c6998eba4931
+    durationSec: 0.73
+    gainDb: -2.72
+  lines:
+  - t:
+    - 0.0
+    - 0.73
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: yong3
+  validation:
+    lufs: -17.28
+    peak_db: -1.56
+    speech_ratio: 0.708
+    edge_start_db: -48.43
+    edge_end_db: -42.67
+    forced_logp: -1.75

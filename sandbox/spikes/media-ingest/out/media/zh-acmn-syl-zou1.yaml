@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-zou1
+  title: zou1
+  context: word-audio
+  durationSec: 1.128
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-zou1.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-zou1.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-zou1
+  span:
+  - 0.23
+  - 0.89
+  file:
+    key: media/42081aa2bff511c5.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2730
+    sha256: 42081aa2bff511c5a79d7b89c8a2dbe1222e657f96d64d5b49f29eb487a55c46
+    durationSec: 0.66
+    gainDb: -4.23
+  lines:
+  - t:
+    - 0.0
+    - 0.66
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: zou1
+  validation:
+    lufs: -15.77
+    peak_db: -1.51
+    speech_ratio: 0.662
+    edge_start_db: -43.75
+    edge_end_db: -42.69
+    forced_logp: -10.71

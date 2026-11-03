@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-近
+  title: 近
+  context: word-audio
+  durationSec: 0.9
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-近.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-近.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-近
+  span:
+  - 0.15
+  - 0.78
+  file:
+    key: media/9da806e022e58b5a.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2746
+    sha256: 9da806e022e58b5a37ab34096688519772f1664a099c6fd0547d8e98888b5ea9
+    durationSec: 0.63
+    gainDb: -3.79
+  lines:
+  - t:
+    - 0.0
+    - 0.63
+    zh: 近
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 1.0
+    per: 0.0
+    lufs: -16.21
+    peak_db: -3.94
+    speech_ratio: 0.661
+    edge_start_db: -40.64
+    edge_end_db: -35.29
+    forced_logp: -3.48

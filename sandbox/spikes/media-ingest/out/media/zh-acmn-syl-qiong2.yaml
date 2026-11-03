@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-qiong2
+  title: qiong2
+  context: word-audio
+  durationSec: 1.176
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-qiong2.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-qiong2.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-qiong2
+  span:
+  - 0.2
+  - 0.92
+  file:
+    key: media/2b34516df26cb244.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3023
+    sha256: 2b34516df26cb2445c8cdb6be48b0cfc3e515891c1154911b669b8f5c592f92c
+    durationSec: 0.72
+    gainDb: -7.14
+  lines:
+  - t:
+    - 0.0
+    - 0.72
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: qiong2
+  validation:
+    lufs: -12.86
+    peak_db: -1.47
+    speech_ratio: 0.704
+    edge_start_db: -40.25
+    edge_end_db: -36.65
+    forced_logp: -10.05

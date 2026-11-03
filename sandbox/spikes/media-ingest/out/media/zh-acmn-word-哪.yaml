@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-哪
+  title: 哪
+  context: word-audio
+  durationSec: 0.85
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-哪.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-哪.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-哪
+  span:
+  - 0.17
+  - 0.7
+  file:
+    key: media/f25035ac1eea5073.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2285
+    sha256: f25035ac1eea5073ab96a745198fa29c1a4ef8ad82d3df1d6d07cd56dc8ecb7d
+    durationSec: 0.53
+    gainDb: -4.5
+  lines:
+  - t:
+    - 0.0
+    - 0.53
+    zh: 哪
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 1.0
+    per: 0.0
+    lufs: -15.5
+    peak_db: -1.44
+    speech_ratio: 0.577
+    edge_start_db: -40.08
+    edge_end_db: -40.96
+    forced_logp: -3.07

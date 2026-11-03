@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-鸡蛋
+  title: 鸡蛋
+  context: word-audio
+  durationSec: 1.25
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-鸡蛋.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-鸡蛋.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-鸡蛋
+  span:
+  - 0.17
+  - 1.1
+  file:
+    key: media/fa42e97467c99d64.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3936
+    sha256: fa42e97467c99d648465a5f671100789cb919682701798f80879d0b62a191639
+    durationSec: 0.93
+    gainDb: -6.29
+  lines:
+  - t:
+    - 0.0
+    - 0.93
+    zh: 鸡蛋
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -13.71
+    peak_db: -1.77
+    speech_ratio: 0.696
+    edge_start_db: -47.28
+    edge_end_db: -45.35
+    forced_logp: -0.04

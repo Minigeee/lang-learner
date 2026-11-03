@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-diao4
+  title: diao4
+  context: word-audio
+  durationSec: 0.936
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-diao4.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-diao4.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-diao4
+  span:
+  - 0.08
+  - 0.71
+  file:
+    key: media/cbc262df8301f7f3.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2637
+    sha256: cbc262df8301f7f303e9759292c59a5ba05530d6efde89be60c1d1f65c4b4f39
+    durationSec: 0.63
+    gainDb: -5.43
+  lines:
+  - t:
+    - 0.0
+    - 0.63
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: diao4
+  validation:
+    lufs: -14.57
+    peak_db: -1.39
+    speech_ratio: 0.468
+    edge_start_db: -51.71
+    edge_end_db: -48.13
+    forced_logp: -10.53

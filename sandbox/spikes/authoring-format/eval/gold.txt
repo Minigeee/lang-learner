@@ -1,0 +1,159 @@
+# Gold set for the zh analyzer: S1-level sentences, stressing polyphones.
+# Format: tokens separated by spaces; a Han token is surface/reading; punctuation is bare.
+# Readings are CITATION readings (no sandhi): 不 is always bu4, 一 always yi1, 3+3 stays 3+3.
+# Neutral tone is 5; ü is v; erhua is a separate r5 syllable (哪儿 na3r5), following CC-CEDICT.
+# A trailing "# low: …" flags my own low confidence in that sentence's gold.
+#
+# Segmentation guideline (written before running any tool):
+#  - A token is a lexicalized word: 我们, 银行, 觉得, 睡觉, 吃饭, 起床, 回家, 这个, 一点儿, 一下, 一起, 为什么.
+#  - Free combinations are split: 喝 咖啡, 买 东西, 很 好, 不 是, 没 去, 一 个, 三 本 书, 桌子 上.
+#  - Aspect and structural particles are their own tokens: 了, 着, 过, 的, 地, 得.
+#  - Lexicalized negatives are one token (没有, 不要 "don't", 不行, 不用); a negated verb is two (不 去).
+#  - A-not-A is three tokens (行 不 行, 好 不 好).
+# --- 行
+我们/wo3men5 去/qu4 银行/yin2hang2 吧/ba5 。
+明天/ming2tian1 去/qu4 ， 行/xing2 不/bu4 行/xing2 ？
+他/ta1 在/zai4 一/yi1 家/jia1 银行/yin2hang2 工作/gong1zuo4 。
+这/zhe4 行/hang2 字/zi4 我/wo3 不/bu4 认识/ren4shi5 。
+我/wo3 骑/qi2 自行车/zi4xing2che1 去/qu4 学校/xue2xiao4 。
+你/ni3 的/de5 行李/xing2li5 在/zai4 哪儿/na3r5 ？
+他/ta1 是/shi4 做/zuo4 哪/na3 一/yi1 行/hang2 的/de5 ？
+不行/bu4xing2 ， 你/ni3 不/bu4 能/neng2 去/qu4 。
+你/ni3 真/zhen1 行/xing2 ！
+我/wo3 叔叔/shu1shu5 在/zai4 银行/yin2hang2 上班/shang4ban1 。
+# --- 了
+我/wo3 吃/chi1 了/le5 三/san1 个/ge4 包子/bao1zi5 。
+下雨/xia4yu3 了/le5 。
+我/wo3 饿/e4 了/le5 。
+我/wo3 受不了/shou4bu4liao3 了/le5 ！  # low: 受不了 as one token; CC-CEDICT gives bu4 here but bu5 in 好久不见 and 听不懂
+我/wo3 不/bu4 太/tai4 了解/liao3jie3 他/ta1 。
+太/tai4 好/hao3 了/le5 ！
+他/ta1 昨天/zuo2tian1 买/mai3 了/le5 一/yi1 本/ben3 书/shu1 。
+好/hao3 了/le5 ， 我们/wo3men5 走/zou3 吧/ba5 。
+我/wo3 明白/ming2bai5 了/le5 。
+他/ta1 走/zou3 了/le5 吗/ma5 ？
+# --- 得
+他/ta1 跑/pao3 得/de5 很/hen3 快/kuai4 。
+你/ni3 说/shuo1 得/de5 对/dui4 。
+我/wo3 得/dei3 走/zou3 了/le5 。
+他/ta1 得到/de2dao4 了/le5 一/yi1 个/ge4 好/hao3 机会/ji1hui4 。
+你/ni3 觉得/jue2de5 怎么样/zen3me5yang4 ？
+她/ta1 唱/chang4 得/de5 非常/fei1chang2 好/hao3 。
+我们/wo3men5 得/dei3 早/zao3 一点儿/yi1dian3r5 去/qu4 。
+他/ta1 长/zhang3 得/de5 很/hen3 高/gao1 。
+# --- 着
+他/ta1 看/kan4 着/zhe5 我/wo3 。
+门/men2 开/kai1 着/zhe5 。
+孩子/hai2zi5 睡着/shui4zhao2 了/le5 。
+别/bie2 着急/zhao2ji2 ， 慢慢/man4man4 来/lai2 。
+我/wo3 找着/zhao3zhao2 了/le5 ！  # low: 找着 as one token (resultative)
+墙/qiang2 上/shang4 挂/gua4 着/zhe5 一/yi1 张/zhang1 画/hua4 。  # low: place-word 上 is often neutral in speech; citation shang4 kept
+他/ta1 穿/chuan1 着/zhe5 一/yi1 件/jian4 红/hong2 衣服/yi1fu5 。
+# --- 还
+你/ni3 还/hai2 好/hao3 吗/ma5 ？
+我/wo3 明天/ming2tian1 还/huan2 你/ni3 书/shu1 。
+他/ta1 还/hai2 没/mei2 来/lai2 。
+你/ni3 要/yao4 茶/cha2 还是/hai2shi5 咖啡/ka1fei1 ？
+我/wo3 去/qu4 图书馆/tu2shu1guan3 还/huan2 书/shu1 。
+还有/hai2you3 一/yi1 个/ge4 问题/wen4ti2 。
+# --- 长
+这/zhe4 条/tiao2 路/lu4 很/hen3 长/chang2 。
+你/ni3 长大/zhang3da4 了/le5 ！
+他/ta1 是/shi4 我们/wo3men5 的/de5 校长/xiao4zhang3 。
+我/wo3 去/qu4 过/guo5 长城/chang2cheng2 。
+她/ta1 的/de5 头发/tou2fa5 很/hen3 长/chang2 。
+他/ta1 长/zhang3 得/de5 像/xiang4 他/ta1 爸爸/ba4ba5 。
+# --- 好
+你/ni3 的/de5 爱好/ai4hao4 是/shi4 什么/shen2me5 ？
+这个/zhe4ge5 菜/cai4 很/hen3 好吃/hao3chi1 。
+他/ta1 好像/hao3xiang4 不/bu4 在/zai4 家/jia1 。
+我/wo3 很/hen3 好/hao3 ， 谢谢/xie4xie5 。
+她/ta1 很/hen3 好学/hao4xue2 。  # low: 好学 is ambiguous out of context (hao4xue2 "studious" vs hao3xue2 "easy to learn")
+好久不见/hao3jiu3bu5jian4 ！  # low: idiom as one token
+# --- 都
+我们/wo3men5 都/dou1 是/shi4 学生/xue2sheng5 。
+北京/bei3jing1 是/shi4 中国/zhong1guo2 的/de5 首都/shou3du1 。
+他/ta1 每天/mei3tian1 都/dou1 喝/he1 咖啡/ka1fei1 。
+成都/cheng2du1 很/hen3 漂亮/piao4liang5 。
+都/dou1 八/ba1 点/dian3 了/le5 ， 快/kuai4 起床/qi3chuang2 ！
+# --- 地
+他/ta1 慢慢/man4man4 地/de5 走/zou3 。
+地上/di4shang5 有/you3 一/yi1 本/ben3 书/shu1 。  # low: 地上 as one token; shang5 follows CC-CEDICT
+这个/zhe4ge5 地方/di4fang5 很/hen3 好/hao3 。
+她/ta1 高兴/gao1xing4 地/de5 笑/xiao4 了/le5 。
+你/ni3 有/you3 地图/di4tu2 吗/ma5 ？
+# --- 的
+这/zhe4 是/shi4 我/wo3 的/de5 书/shu1 。
+我/wo3 的/de5 目的/mu4di4 是/shi4 学/xue2 中文/zhong1wen2 。
+他/ta1 的确/di2que4 很/hen3 忙/mang2 。
+红/hong2 的/de5 是/shi4 我/wo3 的/de5 。
+你/ni3 是/shi4 怎么/zen3me5 来/lai2 的/de5 ？
+# --- 为
+你/ni3 为什么/wei4shen2me5 不/bu4 来/lai2 ？
+因为/yin1wei4 下雨/xia4yu3 ， 我/wo3 没/mei2 去/qu4 。
+我/wo3 认为/ren4wei2 他/ta1 是/shi4 对/dui4 的/de5 。
+他/ta1 成为/cheng2wei2 了/le5 老师/lao3shi1 。
+为了/wei4le5 学/xue2 中文/zhong1wen2 ， 她/ta1 去/qu4 了/le5 北京/bei3jing1 。
+# --- 觉
+我/wo3 想/xiang3 睡觉/shui4jiao4 。
+你/ni3 觉得/jue2de5 这个/zhe4ge5 好/hao3 不/bu4 好/hao3 ？
+我/wo3 睡/shui4 了/le5 一/yi1 个/ge4 午觉/wu3jiao4 。
+我/wo3 感觉/gan3jue2 不/bu4 舒服/shu1fu5 。
+# --- 重
+这个/zhe4ge5 箱子/xiang1zi5 很/hen3 重/zhong4 。
+请/qing3 你/ni3 重新/chong2xin1 说/shuo1 一下/yi1xia4 。
+学/xue2 中文/zhong1wen2 很/hen3 重要/zhong4yao4 。
+你/ni3 能/neng2 重复/chong2fu4 一/yi1 遍/bian4 吗/ma5 ？
+# --- 只
+我/wo3 家/jia1 有/you3 一/yi1 只/zhi1 猫/mao1 。
+我/wo3 只/zhi3 喝/he1 茶/cha2 。
+他/ta1 只是/zhi3shi4 一/yi1 个/ge4 孩子/hai2zi5 。
+桌子/zhuo1zi5 上/shang4 有/you3 两/liang3 只/zhi1 鸟/niao3 。
+只要/zhi3yao4 你/ni3 来/lai2 ， 我/wo3 就/jiu4 高兴/gao1xing4 。
+# --- 和
+我/wo3 和/he2 你/ni3 都/dou1 是/shi4 学生/xue2sheng5 。
+今天/jin1tian1 很/hen3 暖和/nuan3huo5 。
+他/ta1 和/he2 妈妈/ma1ma5 一起/yi1qi3 去/qu4 了/le5 商店/shang1dian4 。
+世界/shi4jie4 和平/he2ping2 很/hen3 重要/zhong4yao4 。
+# --- 便
+这/zhe4 件/jian4 衣服/yi1fu5 很/hen3 便宜/pian2yi5 。
+坐/zuo4 地铁/di4tie3 很/hen3 方便/fang1bian4 。
+你/ni3 随便/sui2bian4 坐/zuo4 。
+我/wo3 顺便/shun4bian4 买/mai3 了/le5 水果/shui3guo3 。
+你/ni3 什么/shen2me5 时候/shi2hou5 方便/fang1bian4 ？
+# --- general S1 sentences (不/一 citation tones, erhua, neutral tones, free combinations)
+我/wo3 不/bu4 想/xiang3 去/qu4 。
+我/wo3 不/bu4 是/shi4 老师/lao3shi1 。
+他/ta1 一/yi1 个/ge4 人/ren2 去/qu4 了/le5 。
+第一/di4yi1 次/ci4 来/lai2 中国/zhong1guo2 。
+我们/wo3men5 一起/yi1qi3 吃饭/chi1fan4 吧/ba5 。
+你/ni3 想/xiang3 吃/chi1 什么/shen2me5 ？
+你好/ni3hao3 ！
+我/wo3 也/ye3 很/hen3 好/hao3 。
+我/wo3 会/hui4 说/shuo1 一点儿/yi1dian3r5 中文/zhong1wen2 。
+猫/mao1 在/zai4 哪儿/na3r5 ？
+你/ni3 在/zai4 这儿/zhe4r5 等/deng3 我/wo3 。
+他/ta1 女儿/nv3er2 很/hen3 可爱/ke3ai4 。
+我/wo3 喜欢/xi3huan5 看/kan4 书/shu1 。
+你/ni3 认识/ren4shi5 他/ta1 吗/ma5 ？
+我/wo3 去/qu4 商店/shang1dian4 买/mai3 东西/dong1xi5 。
+他/ta1 朋友/peng2you5 很/hen3 多/duo1 。
+我/wo3 要/yao4 一/yi1 杯/bei1 咖啡/ka1fei1 。
+我们/wo3men5 走/zou3 吧/ba5 。
+不要/bu4yao4 说话/shuo1hua4 ！
+你/ni3 叫/jiao4 什么/shen2me5 名字/ming2zi5 ？
+我/wo3 没有/mei2you3 钱/qian2 。
+他/ta1 没/mei2 吃饭/chi1fan4 。
+现在/xian4zai4 几/ji3 点/dian3 ？
+我/wo3 在/zai4 家/jia1 吃/chi1 早饭/zao3fan4 。
+这/zhe4 是/shi4 什么/shen2me5 意思/yi4si5 ？
+你/ni3 能/neng2 帮/bang1 我/wo3 一下/yi1xia4 吗/ma5 ？
+他/ta1 看见/kan4jian4 一/yi1 只/zhi1 小/xiao3 狗/gou3 。
+我/wo3 听不懂/ting1bu5dong3 。  # low: 听不懂 as one token, and its bu5
+老师/lao3shi1 让/rang4 我们/wo3men5 回家/hui2jia1 。
+她/ta1 是/shi4 我/wo3 的/de5 好/hao3 朋友/peng2you5 。
+小明/xiao3ming2 每天/mei3tian1 都/dou1 很/hen3 忙/mang2 。  # low: a given name; not a dictionary word
+星期六/xing1qi1liu4 我/wo3 不/bu4 想/xiang3 去/qu4 公司/gong1si1 。
+我/wo3 昨天/zuo2tian1 没/mei2 喝/he1 咖啡/ka1fei1 。
+桌子/zhuo1zi5 上/shang4 有/you3 一/yi1 本/ben3 书/shu1 。
+我/wo3 的/de5 猫/mao1 在/zai4 外边/wai4bian5 。

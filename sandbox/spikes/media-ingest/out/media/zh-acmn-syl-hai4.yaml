@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-hai4
+  title: hai4
+  context: word-audio
+  durationSec: 0.888
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-hai4.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-hai4.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-hai4
+  span:
+  - 0.08
+  - 0.65
+  file:
+    key: media/c14e8209587d3ea9.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2454
+    sha256: c14e8209587d3ea958e0c7616bbd9c72285c2188bdaf430e06ba12e3ecf33137
+    durationSec: 0.57
+    gainDb: -6.21
+  lines:
+  - t:
+    - 0.0
+    - 0.57
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: hai4
+  validation:
+    lufs: -13.79
+    peak_db: -1.58
+    speech_ratio: 0.607
+    edge_start_db: -48.52
+    edge_end_db: -47.39
+    forced_logp: -2.39

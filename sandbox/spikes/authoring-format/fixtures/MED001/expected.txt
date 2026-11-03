@@ -1,0 +1,4 @@
+fixtures/MED001/lessons/fixture-med001.md:4 MED001 clip slot "free": clip:cartoon-ep-07-01 has no automatic transcript; it can only be a free-watch item
+fixtures/MED001/lessons/fixture-med001.md:15 MED001 :ex[我没喝茶。]: no native clip line contains "我没喝茶。"; nearest: 我昨天没喝咖啡。 (clip:cv-neg-002) | 我没去公司，我在家喝咖啡。 (clip:lc-busy-weekend-01)
+fixtures/MED001/lessons/fixture-med001.md:15 MED001 :ex[他没去。]: clip:cv-neg-001 has no line containing "他没去。"; nearest: 他没去。 (clip:cv-neg-008) | 他没吃饭。 (clip:cv-neg-004)
+fixtures/MED001/lessons/fixture-med001.md:26 MED001 @meaning-pick: no native clip line contains "我不去学校。"; nearest: 星期天小明没去学校。 (clip:mc-lazy-sunday-02) | 以前我不喝咖啡。 (clip:cv-neg-006)

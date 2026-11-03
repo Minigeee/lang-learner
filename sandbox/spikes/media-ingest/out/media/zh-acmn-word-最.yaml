@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-最
+  title: 最
+  context: word-audio
+  durationSec: 0.95
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-最.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-最.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-最
+  span:
+  - 0.16
+  - 0.84
+  file:
+    key: media/98769bb14e621666.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2914
+    sha256: 98769bb14e621666bbed88e20064c88827dc84d242ae33af906e92bd3cc2703c
+    durationSec: 0.68
+    gainDb: -5.23
+  lines:
+  - t:
+    - 0.0
+    - 0.68
+    zh: 最
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 1.0
+    per: 0.0
+    lufs: -14.77
+    peak_db: -1.52
+    speech_ratio: 0.687
+    edge_start_db: -38.49
+    edge_end_db: -41.26
+    forced_logp: -2.54

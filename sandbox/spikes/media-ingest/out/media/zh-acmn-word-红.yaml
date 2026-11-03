@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-红
+  title: 红
+  context: word-audio
+  durationSec: 1.05
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-红.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-红.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-红
+  span:
+  - 0.14
+  - 0.91
+  file:
+    key: media/cafa90cc9cb0858b.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3259
+    sha256: cafa90cc9cb0858b3d39f452b30d5be55e54819b339435b768eec8fc2266bd0f
+    durationSec: 0.77
+    gainDb: -7.05
+  lines:
+  - t:
+    - 0.0
+    - 0.77
+    zh: 红
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -12.95
+    peak_db: -1.39
+    speech_ratio: 0.711
+    edge_start_db: -42.95
+    edge_end_db: -42.41
+    forced_logp: -0.18

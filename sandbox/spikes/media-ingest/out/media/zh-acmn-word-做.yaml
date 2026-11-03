@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-做
+  title: 做
+  context: word-audio
+  durationSec: 0.95
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-做.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-做.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-做
+  span:
+  - 0.2
+  - 0.85
+  file:
+    key: media/e619960d2c30b9c1.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2786
+    sha256: e619960d2c30b9c1bbfb37f1dc3940792934f7a07e74d1c01fa3b70e52f33731
+    durationSec: 0.65
+    gainDb: -4.3
+  lines:
+  - t:
+    - 0.0
+    - 0.65
+    zh: 做
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -15.7
+    peak_db: -1.46
+    speech_ratio: 0.656
+    edge_start_db: -40.74
+    edge_end_db: -42.31
+    forced_logp: -0.31

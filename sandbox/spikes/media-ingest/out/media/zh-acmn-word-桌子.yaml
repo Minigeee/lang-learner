@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-桌子
+  title: 桌子
+  context: word-audio
+  durationSec: 1.15
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-桌子.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-桌子.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-桌子
+  span:
+  - 0.19
+  - 0.99
+  file:
+    key: media/e76052e29f3b39e1.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3490
+    sha256: e76052e29f3b39e1450d56b375af1c7f3f485af293bc41e9a2dad70f66e99a98
+    durationSec: 0.8
+    gainDb: -2.29
+  lines:
+  - t:
+    - 0.0
+    - 0.8
+    zh: 桌子
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -17.71
+    peak_db: -5.13
+    speech_ratio: 0.734
+    edge_start_db: -40.45
+    edge_end_db: -37.37
+    forced_logp: -0.06

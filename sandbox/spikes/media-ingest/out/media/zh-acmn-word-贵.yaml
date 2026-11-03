@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-贵
+  title: 贵
+  context: word-audio
+  durationSec: 0.9
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-贵.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-贵.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-贵
+  span:
+  - 0.15
+  - 0.77
+  file:
+    key: media/f92400bafa58a3ec.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2702
+    sha256: f92400bafa58a3ec99eb7b571703ca9a33b540940a71cd55ddc35e292fc6caaf
+    durationSec: 0.62
+    gainDb: -5.49
+  lines:
+  - t:
+    - 0.0
+    - 0.62
+    zh: 贵
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 2.0
+    per: 2.0
+    lufs: -14.51
+    peak_db: -1.65
+    speech_ratio: 0.656
+    edge_start_db: -42.39
+    edge_end_db: -41.2
+    forced_logp: -2.24

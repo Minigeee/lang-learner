@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-zai1
+  title: zai1
+  context: word-audio
+  durationSec: 1.08
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-zai1.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-zai1.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-zai1
+  span:
+  - 0.21
+  - 0.82
+  file:
+    key: media/58a0cb5be193a444.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2596
+    sha256: 58a0cb5be193a4445eaa18f5af308fe3abe70e6083848772b0b821272f24097f
+    durationSec: 0.61
+    gainDb: -6.23
+  lines:
+  - t:
+    - 0.0
+    - 0.61
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: zai1
+  validation:
+    lufs: -13.77
+    peak_db: -1.39
+    speech_ratio: 0.65
+    edge_start_db: -42.82
+    edge_end_db: -41.02
+    forced_logp: -3.38

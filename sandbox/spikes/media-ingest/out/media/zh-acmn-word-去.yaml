@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-去
+  title: 去
+  context: word-audio
+  durationSec: 0.95
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-去.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-去.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-去
+  span:
+  - 0.15
+  - 0.79
+  file:
+    key: media/03c98c6fbce98156.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2747
+    sha256: 03c98c6fbce981562090b15304f0880e2869efed91a2d74032d2ba264c7a80fb
+    durationSec: 0.64
+    gainDb: -2.86
+  lines:
+  - t:
+    - 0.0
+    - 0.64
+    zh: 去
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -17.14
+    peak_db: -7.06
+    speech_ratio: 0.667
+    edge_start_db: -41.01
+    edge_end_db: -39.86
+    forced_logp: -0.05

@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-qie3
+  title: qie3
+  context: word-audio
+  durationSec: 1.392
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-qie3.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-qie3.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-qie3
+  span:
+  - 0.15
+  - 1.18
+  file:
+    key: media/7b2c251240ba1474.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 4254
+    sha256: 7b2c251240ba1474996ce4a6ab7d7224ca8b381f0b723479db8b466f839e83be
+    durationSec: 1.03
+    gainDb: -4.75
+  lines:
+  - t:
+    - 0.0
+    - 1.03
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: qie3
+  validation:
+    lufs: -15.25
+    peak_db: -2.11
+    speech_ratio: 0.735
+    edge_start_db: -43.53
+    edge_end_db: -42.65
+    forced_logp: -0.4

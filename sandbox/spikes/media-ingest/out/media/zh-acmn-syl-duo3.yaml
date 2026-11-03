@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-duo3
+  title: duo3
+  context: word-audio
+  durationSec: 1.128
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-duo3.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-duo3.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-duo3
+  span:
+  - 0.18
+  - 0.9
+  file:
+    key: media/7e4e917767a92626.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3058
+    sha256: 7e4e917767a92626a85717df2a87482b54b2582a792eda01df8ca162304b27e8
+    durationSec: 0.72
+    gainDb: -2.91
+  lines:
+  - t:
+    - 0.0
+    - 0.72
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: duo3
+  validation:
+    lufs: -17.09
+    peak_db: -1.28
+    speech_ratio: 0.69
+    edge_start_db: -46.74
+    edge_end_db: -43.54
+    forced_logp: -10.03

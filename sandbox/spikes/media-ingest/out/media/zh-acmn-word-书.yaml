@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-书
+  title: 书
+  context: word-audio
+  durationSec: 1.0
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-书.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-书.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-书
+  span:
+  - 0.17
+  - 0.9
+  file:
+    key: media/31ee78dfacee5faa.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3070
+    sha256: 31ee78dfacee5faa134f367aec4c1a8e29264e8134a32175350b21057182d500
+    durationSec: 0.73
+    gainDb: -3.7
+  lines:
+  - t:
+    - 0.0
+    - 0.73
+    zh: 书
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -16.3
+    peak_db: -2.91
+    speech_ratio: 0.639
+    edge_start_db: -38.19
+    edge_end_db: -39.23
+    forced_logp: -1.24

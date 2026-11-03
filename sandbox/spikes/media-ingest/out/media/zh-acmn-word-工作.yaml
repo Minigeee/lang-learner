@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-工作
+  title: 工作
+  context: word-audio
+  durationSec: 1.25
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-工作.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-工作.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-工作
+  span:
+  - 0.19
+  - 1.08
+  file:
+    key: media/6374c90c39900d13.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3806
+    sha256: 6374c90c39900d13033271da1799045eb46dd66b6b175938429c11dcbf4cffa7
+    durationSec: 0.89
+    gainDb: -5.27
+  lines:
+  - t:
+    - 0.0
+    - 0.89
+    zh: 工作
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -14.73
+    peak_db: -2.16
+    speech_ratio: 0.761
+    edge_start_db: -41.0
+    edge_end_db: -43.56
+    forced_logp: -0.05

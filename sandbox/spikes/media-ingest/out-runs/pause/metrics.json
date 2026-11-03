@@ -1,0 +1,4705 @@
+{
+ "model": "large-v3",
+ "full_vad": false,
+ "compute": "float16",
+ "load_s": 12.5,
+ "items": [
+  {
+   "source": "storybooks",
+   "kind": "story",
+   "path": "C:\\Users\\tritn\\Documents\\projects\\lang-learner\\sandbox\\spikes\\media-ingest\\data\\storybooks\\0087\\full.mp3",
+   "pages_dir": "C:\\Users\\tritn\\Documents\\projects\\lang-learner\\sandbox\\spikes\\media-ingest\\data\\storybooks\\0087\\pages",
+   "media_id": "media:zh-gs-0087",
+   "title": "我喜欢看书",
+   "context": "storybook",
+   "level": 1,
+   "speaker": {
+    "id": "speaker:zh-gs-zhuo-sun",
+    "label": "Zhuo Sun"
+   },
+   "rights": {
+    "license": "cc-by-3.0",
+    "author": "Written by: Letta Machoga; Illustrated by: Wiehan de Jager; Translated by: dohliam; Read by: Zhuo Sun",
+    "sourceUrl": "https://global-asp.github.io/storybooks-minnesota/stories/zh/0087/",
+    "audioUrl": "https://globalstorybooks.net/media/audio/zh/0087/"
+   },
+   "m": {
+    "dur": 41.186,
+    "full_hyp": "我喜欢看书。我可以念给谁听呢?小妹妹正在熟睡。我可以念给谁听呢?妈妈和奶奶正在忙。我可以念给谁听呢?爸爸和爷爷正在忙。我可以念给谁听呢?我可以念给自己听。",
+    "n_words": 60,
+    "truth": {
+     "1": {
+      "start": 0.0,
+      "end": 4.026,
+      "corr": 1.0,
+      "speech": [
+       0.01,
+       2.07
+      ]
+     },
+     "2": {
+      "start": 4.026,
+      "end": 6.477,
+      "corr": 0.909,
+      "speech": [
+       4.136,
+       6.116
+      ]
+     },
+     "3": {
+      "start": 6.477,
+      "end": 10.198,
+      "corr": 0.992,
+      "speech": [
+       7.067,
+       9.847
+      ]
+     },
+     "4": {
+      "start": 10.197,
+      "end": 14.635,
+      "corr": 0.964,
+      "speech": [
+       11.137,
+       14.127
+      ]
+     },
+     "5": {
+      "start": 14.635,
+      "end": 19.046,
+      "corr": 0.839,
+      "speech": [
+       15.665,
+       18.375
+      ]
+     },
+     "6": {
+      "start": 19.047,
+      "end": 23.564,
+      "corr": 0.82,
+      "speech": [
+       19.467,
+       22.837
+      ]
+     },
+     "7": {
+      "start": 23.564,
+      "end": 28.348,
+      "corr": 0.869,
+      "speech": [
+       24.754,
+       27.474
+      ]
+     },
+     "8": {
+      "start": 28.348,
+      "end": 33.45,
+      "corr": 0.874,
+      "speech": [
+       29.288,
+       32.758
+      ]
+     },
+     "9": {
+      "start": 33.45,
+      "end": 41.186,
+      "corr": 0.924,
+      "speech": [
+       34.54,
+       41.19
+      ]
+     }
+    },
+    "regions": 12,
+    "clips": [
+     {
+      "page": 1,
+      "k": 0,
+      "zh": "我喜欢看书",
+      "en_page": "I like to read!",
+      "fail_pre": "unaligned"
+     },
+     {
+      "page": 2,
+      "k": 0,
+      "zh": "我喜欢看书。",
+      "en_page": "I like to read.",
+      "span": [
+       0.0,
+       2.34
+      ],
+      "whisper": [
+       0.0,
+       1.7
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "我喜欢看书。",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 5,
+      "dur": 2.34,
+      "speech_ratio": 0.794,
+      "lead_sil": 0.04,
+      "trail_sil": 0.31,
+      "max_gap": 0.07,
+      "clip_frac": 0.0,
+      "peak_db": -4.51,
+      "lufs": -19.52,
+      "p95_db": -14.23,
+      "edge_start_db": -49.86,
+      "edge_end_db": -105.77
+     },
+     {
+      "page": 3,
+      "k": 0,
+      "zh": "我可以念给谁听呢？",
+      "en_page": "Who can I read to?",
+      "span": [
+       3.95,
+       10.11
+      ],
+      "whisper": [
+       6.5,
+       9.4
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "我喜欢看书,我可以念给谁听呢?",
+      "cer": 0.625,
+      "per": 0.625,
+      "n_chars": 8,
+      "dur": 6.16,
+      "speech_ratio": 0.642,
+      "lead_sil": 0.3,
+      "trail_sil": 0.3,
+      "max_gap": 1.31,
+      "clip_frac": 0.00011160601049096499,
+      "peak_db": 0.15,
+      "lufs": -17.71,
+      "p95_db": -12.2,
+      "edge_start_db": -107.8,
+      "edge_end_db": -107.8
+     },
+     {
+      "page": 4,
+      "k": 0,
+      "zh": "小妹妹正在熟睡。",
+      "en_page": "My sister is asleep.",
+      "span": [
+       10.95,
+       14.4
+      ],
+      "whisper": [
+       10.6,
+       13.58
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "小妹妹正在熟睡。",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 7,
+      "dur": 3.45,
+      "speech_ratio": 0.674,
+      "lead_sil": 0.2,
+      "trail_sil": 0.32,
+      "max_gap": 0.3,
+      "clip_frac": 1.8115942028985507e-05,
+      "peak_db": 0.18,
+      "lufs": -16.47,
+      "p95_db": -11.69,
+      "edge_start_db": -108.31,
+      "edge_end_db": -108.31
+     },
+     {
+      "page": 5,
+      "k": 0,
+      "zh": "我可以念给谁听呢？",
+      "en_page": "Who can I read to?",
+      "span": [
+       15.48,
+       18.66
+      ],
+      "whisper": [
+       15.3,
+       17.9
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "我可以念给谁听呢?",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 8,
+      "dur": 3.18,
+      "speech_ratio": 0.688,
+      "lead_sil": 0.31,
+      "trail_sil": 0.42,
+      "max_gap": 0.09,
+      "clip_frac": 0.00019654088050314466,
+      "peak_db": 0.21,
+      "lufs": -15.84,
+      "p95_db": -11.17,
+      "edge_start_db": -108.83,
+      "edge_end_db": -108.83
+     },
+     {
+      "page": 6,
+      "k": 0,
+      "zh": "妈妈和奶奶正在忙。",
+      "en_page": "My mother and grandmother are busy.",
+      "span": [
+       19.28,
+       23.12
+      ],
+      "whisper": [
+       18.96,
+       22.3
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "妈妈和奶奶正在忙。",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 8,
+      "dur": 3.84,
+      "speech_ratio": 0.671,
+      "lead_sil": 0.27,
+      "trail_sil": 0.51,
+      "max_gap": 0.23,
+      "clip_frac": 0.00016276041666666666,
+      "peak_db": 0.43,
+      "lufs": -17.38,
+      "p95_db": -11.45,
+      "edge_start_db": -108.55,
+      "edge_end_db": -108.55
+     },
+     {
+      "page": 7,
+      "k": 0,
+      "zh": "我可以念给谁听呢？",
+      "en_page": "Who can I read to?",
+      "span": [
+       24.56,
+       27.75
+      ],
+      "whisper": [
+       24.26,
+       26.96
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "我可以念给谁听呢?",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 8,
+      "dur": 3.19,
+      "speech_ratio": 0.723,
+      "lead_sil": 0.24,
+      "trail_sil": 0.33,
+      "max_gap": 0.16,
+      "clip_frac": 0.00023510971786833856,
+      "peak_db": 0.41,
+      "lufs": -16.05,
+      "p95_db": -11.06,
+      "edge_start_db": -108.94,
+      "edge_end_db": -108.94
+     },
+     {
+      "page": 8,
+      "k": 0,
+      "zh": "爸爸和爷爷正在忙。",
+      "en_page": "My father and grandfather are busy.",
+      "span": [
+       29.09,
+       33.04
+      ],
+      "whisper": [
+       28.98,
+       32.28
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "爸爸和爷爷正在忙。",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 8,
+      "dur": 3.95,
+      "speech_ratio": 0.721,
+      "lead_sil": 0.22,
+      "trail_sil": 0.31,
+      "max_gap": 0.15,
+      "clip_frac": 0.0,
+      "peak_db": -0.58,
+      "lufs": -17.43,
+      "p95_db": -11.4,
+      "edge_start_db": -108.6,
+      "edge_end_db": -108.6
+     },
+     {
+      "page": 9,
+      "k": 0,
+      "zh": "我可以念给谁听呢？",
+      "en_page": "Who can I read to? I can read to myself!",
+      "span": [
+       34.35,
+       37.38
+      ],
+      "whisper": [
+       34.04,
+       36.58
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "我可以念给谁听呢?",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 8,
+      "dur": 3.03,
+      "speech_ratio": 0.748,
+      "lead_sil": 0.21,
+      "trail_sil": 0.32,
+      "max_gap": 0.06,
+      "clip_frac": 0.0002268976897689769,
+      "peak_db": 0.11,
+      "lufs": -16.03,
+      "p95_db": -10.61,
+      "edge_start_db": -109.39,
+      "edge_end_db": -109.39
+     },
+     {
+      "page": 9,
+      "k": 1,
+      "zh": "我可以念给自己听！",
+      "en_page": "Who can I read to? I can read to myself!",
+      "span": [
+       37.78,
+       41.186
+      ],
+      "whisper": [
+       37.46,
+       40.68
+      ],
+      "snapped": [
+       true,
+       false
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "我可以念给自己听。",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 8,
+      "dur": 3.406,
+      "speech_ratio": 0.791,
+      "lead_sil": 0.25,
+      "trail_sil": 0.05,
+      "max_gap": 0.09,
+      "clip_frac": 0.0,
+      "peak_db": -3.08,
+      "lufs": -19.52,
+      "p95_db": -13.23,
+      "edge_start_db": -106.77,
+      "edge_end_db": -33.92
+     }
+    ]
+   }
+  },
+  {
+   "source": "storybooks",
+   "kind": "story",
+   "path": "C:\\Users\\tritn\\Documents\\projects\\lang-learner\\sandbox\\spikes\\media-ingest\\data\\storybooks\\0110\\full.mp3",
+   "pages_dir": "C:\\Users\\tritn\\Documents\\projects\\lang-learner\\sandbox\\spikes\\media-ingest\\data\\storybooks\\0110\\pages",
+   "media_id": "media:zh-gs-0110",
+   "title": "一粒小种子：旺加里·马塔伊的故事",
+   "context": "storybook",
+   "level": 3,
+   "speaker": {
+    "id": "speaker:zh-gs-zhuo-sun",
+    "label": "Zhuo Sun"
+   },
+   "rights": {
+    "license": "cc-by-4.0",
+    "author": "Written by: Nicola Rijsdijk; Illustrated by: Maya Marshak; Translated by: Vicky Liu; Read by: Zhuo Sun",
+    "sourceUrl": "https://global-asp.github.io/storybooks-minnesota/stories/zh/0110/",
+    "audioUrl": "https://globalstorybooks.net/media/audio/zh/0110/"
+   },
+   "m": {
+    "dur": 295.141,
+    "full_hyp": "一粒小种子旺加里马塔伊的故事在东非肯尼亚山的山腰上有一座小村庄村庄里有一个小女孩和妈妈一起在田里劳作这个女孩叫旺加里旺家里很喜欢待在户外。在他家的农田里,旺家里用弯刀劈开土地,把小种子拨洒到温暖的泥土里。他一天中最喜欢的时候就是日落时分。当天黑了,看不到花花草草时,旺家里就知道他该回家了。他走在农田里的小路上,还要过几条河。旺家里是个聪明的孩子,他迫不及待地想要去上学。但是,他的父母希望他能在家帮着干农活。当旺加里七岁的时候,他的哥哥说服了父母让旺加里去上学。旺加里太喜欢学习了。旺加利读了很多书,学到很多知识,他的成绩非常好,最后收到了美国大学的录取信,邀请他去美国读书。旺加利太兴奋了,他真想去世界各地走走看看。在美国的大学里,旺加里学到了很多新鲜事物。他研究植物以及它们的生长过程。他想起他自己是怎么长大的。他和兄弟们在美丽的肯尼亚森林里玩耍。他学得越多,就越热爱肯尼亚人民。他想要帮助肯尼亚人民过上自由、快乐的生活。他学得越多,就越想念自己在非洲的家乡。当旺加里完成学业时,他回到了肯尼亚。但是,她的祖国已经今非昔比了。大地上建起了农场,妇女们找不到柴火做饭,人们过着穷苦的日子,孩子们饥肠碌碌。旺加里知道自己要做什么,他教妇女们如何用种子种出大树妇女们卖树赚钱,补贴家用妇女们都很高兴往家里使她们觉得自己变得坚强,勇敢了时光飞逝小树长成了参天大树又汇聚成了森林河水川流而过旺加里的办法传遍了非洲今天因为旺加里当初的种子已经长出了几百万棵大树旺加里努力工作引起了全世界的注意人们授予她诺贝尔和平奖她是非洲第一位获得这份殊荣的女性王嘉丽在2011年去世但是每次我们看到大树时都会想起这位杰出的女性",
+    "n_words": 596,
+    "truth": {
+     "1": {
+      "start": 0.0,
+      "end": 7.616,
+      "corr": 1.0,
+      "speech": [
+       1.41,
+       6.71
+      ]
+     },
+     "2": {
+      "start": 7.616,
+      "end": 26.753,
+      "corr": 0.833,
+      "speech": [
+       8.786,
+       25.676
+      ]
+     },
+     "3": {
+      "start": 26.753,
+      "end": 44.323,
+      "corr": 0.974,
+      "speech": [
+       27.793,
+       42.623
+      ]
+     },
+     "4": {
+      "start": 44.324,
+      "end": 69.757,
+      "corr": 0.969,
+      "speech": [
+       46.014,
+       68.413
+      ]
+     },
+     "5": {
+      "start": 69.757,
+      "end": 97.666,
+      "corr": 0.933,
+      "speech": [
+       71.497,
+       96.507
+      ]
+     },
+     "6": {
+      "start": 97.665,
+      "end": 129.588,
+      "corr": 0.883,
+      "speech": [
+       98.995,
+       128.425
+      ]
+     },
+     "7": {
+      "start": 129.588,
+      "end": 154.692,
+      "corr": 0.871,
+      "speech": [
+       130.818,
+       153.948
+      ]
+     },
+     "8": {
+      "start": 154.692,
+      "end": 176.002,
+      "corr": 0.879,
+      "speech": [
+       155.842,
+       174.952
+      ]
+     },
+     "9": {
+      "start": 176.001,
+      "end": 205.312,
+      "corr": 0.999,
+      "speech": [
+       177.492,
+       203.871
+      ]
+     },
+     "10": {
+      "start": 205.312,
+      "end": 232.561,
+      "corr": 0.946,
+      "speech": [
+       206.492,
+       231.652
+      ]
+     },
+     "11": {
+      "start": 232.561,
+      "end": 262.229,
+      "corr": 0.872,
+      "speech": [
+       233.631,
+       260.821
+      ]
+     },
+     "12": {
+      "start": 262.229,
+      "end": 281.421,
+      "corr": 0.99,
+      "speech": [
+       264.309,
+       280.539
+      ]
+     },
+     "13": {
+      "start": 281.421,
+      "end": 295.142,
+      "corr": 0.927,
+      "speech": [
+       282.361,
+       294.591
+      ]
+     }
+    },
+    "regions": 78,
+    "clips": [
+     {
+      "page": 1,
+      "k": 0,
+      "zh": "一粒小种子：旺加里·马塔伊的故事",
+      "en_page": "A Tiny Seed: The Story of Wangari Maathai",
+      "span": [
+       1.05,
+       6.99
+      ],
+      "whisper": [
+       0.94,
+       6.26
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "一粒小种子旺加里马塔伊的故事",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 14,
+      "dur": 5.94,
+      "speech_ratio": 0.676,
+      "lead_sil": 0.38,
+      "trail_sil": 0.33,
+      "max_gap": 0.24,
+      "clip_frac": 0.0,
+      "peak_db": -2.35,
+      "lufs": -17.63,
+      "p95_db": -11.88,
+      "edge_start_db": -108.12,
+      "edge_end_db": -108.12
+     },
+     {
+      "page": 2,
+      "k": 0,
+      "zh": "在东非肯尼亚山的山腰上，有一座小村庄，村庄里有一个小女孩和妈妈一起在田里劳作，这个女孩叫旺加里。",
+      "en_page": "In a village on the slopes of Mount Kenya in East Africa, a little girl worked in the fields with her mother. Her name was Wangari.",
+      "span": [
+       8.6,
+       25.95
+      ],
+      "whisper": [
+       8.32,
+       25.32
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "在东非肯尼亚山的山腰上,有一座小村庄。村庄里有一个小女孩和妈妈一起在田里劳作。这个女孩叫旺加里。",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 44,
+      "dur": 17.35,
+      "speech_ratio": 0.672,
+      "lead_sil": 0.31,
+      "trail_sil": 0.31,
+      "max_gap": 1.29,
+      "clip_frac": 7.204610951008646e-06,
+      "peak_db": 0.28,
+      "lufs": -17.38,
+      "p95_db": -11.82,
+      "edge_start_db": -108.18,
+      "edge_end_db": -108.18
+     },
+     {
+      "page": 3,
+      "k": 0,
+      "zh": "旺加里很喜欢呆在户外。",
+      "en_page": "Wangari loved being outside. In her family’s food garden she broke up the soil with her machete. She pressed tiny seeds into the warm earth.",
+      "span": [
+       27.61,
+       31.43
+      ],
+      "whisper": [
+       27.44,
+       30.7
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.2,
+      "hyp": "旺家里很喜欢待在户外。",
+      "cer": 0.2,
+      "per": 0.0,
+      "n_chars": 10,
+      "dur": 3.82,
+      "speech_ratio": 0.717,
+      "lead_sil": 0.23,
+      "trail_sil": 0.31,
+      "max_gap": 0.25,
+      "clip_frac": 9.816753926701571e-05,
+      "peak_db": 0.27,
+      "lufs": -17.26,
+      "p95_db": -11.57,
+      "edge_start_db": -108.43,
+      "edge_end_db": -108.43
+     },
+     {
+      "page": 3,
+      "k": 1,
+      "zh": "在她家的农田里，旺加里用弯刀劈开土地，把小种子播撒到温暖的泥土里。",
+      "en_page": "Wangari loved being outside. In her family’s food garden she broke up the soil with her machete. She pressed tiny seeds into the warm earth.",
+      "span": [
+       31.73,
+       42.9
+      ],
+      "whisper": [
+       31.46,
+       42.32
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.133,
+      "hyp": "在他家的农田里,旺家里用弯刀劈开土地,把小种子拨撒到温暖的泥土里。",
+      "cer": 0.1,
+      "per": 0.0,
+      "n_chars": 30,
+      "dur": 11.17,
+      "speech_ratio": 0.747,
+      "lead_sil": 0.2,
+      "trail_sil": 0.32,
+      "max_gap": 0.43,
+      "clip_frac": 0.0,
+      "peak_db": -1.36,
+      "lufs": -17.95,
+      "p95_db": -11.74,
+      "edge_start_db": -108.26,
+      "edge_end_db": -108.26
+     },
+     {
+      "page": 4,
+      "k": 0,
+      "zh": "她一天中最喜欢的时候就是日落时分。",
+      "en_page": "Her favourite time of day was just after sunset. When it got too dark to see the plants, Wangari knew it was time to go home.\n\nShe would follow the narrow paths through the fields, crossing rivers as she went.",
+      "span": [
+       45.82,
+       51.75
+      ],
+      "whisper": [
+       45.56,
+       50.98
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.062,
+      "hyp": "他一天中最喜欢的时候就是日落时分。",
+      "cer": 0.062,
+      "per": 0.0,
+      "n_chars": 16,
+      "dur": 5.93,
+      "speech_ratio": 0.736,
+      "lead_sil": 0.22,
+      "trail_sil": 0.51,
+      "max_gap": 0.22,
+      "clip_frac": 7.377662545715159e-05,
+      "peak_db": 0.2,
+      "lufs": -16.73,
+      "p95_db": -10.61,
+      "edge_start_db": -109.39,
+      "edge_end_db": -109.39
+     },
+     {
+      "page": 4,
+      "k": 1,
+      "zh": "当天黑了，看不到花花草草时，旺加里就知道她该回家了。",
+      "en_page": "Her favourite time of day was just after sunset. When it got too dark to see the plants, Wangari knew it was time to go home.\n\nShe would follow the narrow paths through the fields, crossing rivers as she went.",
+      "span": [
+       52.33,
+       62.1
+      ],
+      "whisper": [
+       52.12,
+       61.34
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.087,
+      "hyp": "当天黑了,看不到花花草草时,旺家里就知道他该回家了。",
+      "cer": 0.087,
+      "per": 0.0,
+      "n_chars": 23,
+      "dur": 9.77,
+      "speech_ratio": 0.678,
+      "lead_sil": 0.29,
+      "trail_sil": 0.33,
+      "max_gap": 0.86,
+      "clip_frac": 5.117707267144319e-05,
+      "peak_db": 0.26,
+      "lufs": -16.78,
+      "p95_db": -10.68,
+      "edge_start_db": -109.32,
+      "edge_end_db": -109.32
+     },
+     {
+      "page": 4,
+      "k": 2,
+      "zh": "她走在农田里的小路上，还要过几条河。",
+      "en_page": "Her favourite time of day was just after sunset. When it got too dark to see the plants, Wangari knew it was time to go home.\n\nShe would follow the narrow paths through the fields, crossing rivers as she went.",
+      "span": [
+       63.08,
+       68.7
+      ],
+      "whisper": [
+       62.86,
+       67.9
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.062,
+      "hyp": "他走在农田里的小路上,还要过几条河。",
+      "cer": 0.062,
+      "per": 0.0,
+      "n_chars": 16,
+      "dur": 5.62,
+      "speech_ratio": 0.758,
+      "lead_sil": 0.21,
+      "trail_sil": 0.33,
+      "max_gap": 0.18,
+      "clip_frac": 0.0,
+      "peak_db": -0.2,
+      "lufs": -17.66,
+      "p95_db": -11.79,
+      "edge_start_db": -108.21,
+      "edge_end_db": -108.21
+     },
+     {
+      "page": 5,
+      "k": 0,
+      "zh": "旺加里是个聪明的孩子，她迫不及待地想要去上学，但是她的父母希望她能在家，帮着干农活。",
+      "en_page": "Wangari was a clever child and couldn’t wait to go to school. But her mother and father wanted her to stay and help them at home.\n\nWhen she was seven years old, her big brother persuaded her parents to let her go to school.",
+      "span": [
+       71.3,
+       86.23
+      ],
+      "whisper": [
+       71.2,
+       85.4
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.105,
+      "hyp": "旺家里是个聪明的孩子,他迫不及待地想要去上学。但是,他的父母希望他能在家帮着干农活。",
+      "cer": 0.105,
+      "per": 0.0,
+      "n_chars": 38,
+      "dur": 14.93,
+      "speech_ratio": 0.671,
+      "lead_sil": 0.21,
+      "trail_sil": 0.35,
+      "max_gap": 1.19,
+      "clip_frac": 8.372404554588077e-05,
+      "peak_db": 0.38,
+      "lufs": -17.14,
+      "p95_db": -11.5,
+      "edge_start_db": -108.5,
+      "edge_end_db": -108.5
+     },
+     {
+      "page": 5,
+      "k": 1,
+      "zh": "当旺加里七岁的时候，她的哥哥说服了父母，让旺加里去上学。",
+      "en_page": "Wangari was a clever child and couldn’t wait to go to school. But her mother and father wanted her to stay and help them at home.\n\nWhen she was seven years old, her big brother persuaded her parents to let her go to school.",
+      "span": [
+       87.89,
+       96.78
+      ],
+      "whisper": [
+       87.6,
+       95.98
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.04,
+      "hyp": "当旺加里七岁的时候,他的哥哥说服了父母让旺加里去上学。",
+      "cer": 0.04,
+      "per": 0.0,
+      "n_chars": 25,
+      "dur": 8.89,
+      "speech_ratio": 0.764,
+      "lead_sil": 0.29,
+      "trail_sil": 0.36,
+      "max_gap": 0.34,
+      "clip_frac": 5.62429696287964e-05,
+      "peak_db": 0.07,
+      "lufs": -16.88,
+      "p95_db": -11.09,
+      "edge_start_db": -108.91,
+      "edge_end_db": -108.91
+     },
+     {
+      "page": 6,
+      "k": 0,
+      "zh": "旺加里太喜欢学习了。",
+      "en_page": "She liked to learn! Wangari learnt more and more with every book she read. She did so well at school that she was invited to study in the United States of America.\n\nWangari was excited! She wanted to know more about the world.",
+      "span": [
+       98.81,
+       102.44
+      ],
+      "whisper": [
+       98.58,
+       101.6
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "王嘉丽太喜欢学习了!",
+      "cer": 0.333,
+      "per": 0.0,
+      "n_chars": 9,
+      "dur": 3.63,
+      "speech_ratio": 0.699,
+      "lead_sil": 0.2,
+      "trail_sil": 0.51,
+      "max_gap": 0.11,
+      "clip_frac": 0.00029269972451790633,
+      "peak_db": 0.4,
+      "lufs": -17.46,
+      "p95_db": -11.32,
+      "edge_start_db": -108.68,
+      "edge_end_db": -108.68
+     },
+     {
+      "page": 6,
+      "k": 1,
+      "zh": "旺加里读了很多书，学到很多知识。",
+      "en_page": "She liked to learn! Wangari learnt more and more with every book she read. She did so well at school that she was invited to study in the United States of America.\n\nWangari was excited! She wanted to know more about the world.",
+      "span": [
+       102.82,
+       108.41
+      ],
+      "whisper": [
+       102.48,
+       107.74
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.071,
+      "hyp": "汪家里读了很多书,学到很多知识。",
+      "cer": 0.143,
+      "per": 0.0,
+      "n_chars": 14,
+      "dur": 5.59,
+      "speech_ratio": 0.754,
+      "lead_sil": 0.25,
+      "trail_sil": 0.29,
+      "max_gap": 0.15,
+      "clip_frac": 0.00043604651162790697,
+      "peak_db": 0.56,
+      "lufs": -16.86,
+      "p95_db": -11.5,
+      "edge_start_db": -108.5,
+      "edge_end_db": -108.5
+     },
+     {
+      "page": 6,
+      "k": 2,
+      "zh": "她的成绩非常好，最后收到了美国大学的录取信，邀请她去美国读书。",
+      "en_page": "She liked to learn! Wangari learnt more and more with every book she read. She did so well at school that she was invited to study in the United States of America.\n\nWangari was excited! She wanted to know more about the world.",
+      "span": [
+       108.45,
+       120.74
+      ],
+      "whisper": [
+       108.04,
+       120.06
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.071,
+      "hyp": "他的成绩非常好,最后收到了美国大学的录取信,邀请他去美国读书。",
+      "cer": 0.071,
+      "per": 0.0,
+      "n_chars": 28,
+      "dur": 12.29,
+      "speech_ratio": 0.64,
+      "lead_sil": 0.76,
+      "trail_sil": 0.54,
+      "max_gap": 0.99,
+      "clip_frac": 1.5256305939788446e-05,
+      "peak_db": 0.23,
+      "lufs": -17.06,
+      "p95_db": -10.91,
+      "edge_start_db": -109.09,
+      "edge_end_db": -109.09
+     },
+     {
+      "page": 6,
+      "k": 3,
+      "zh": "旺加里太兴奋了，她真想去世界各地走走看看。",
+      "en_page": "She liked to learn! Wangari learnt more and more with every book she read. She did so well at school that she was invited to study in the United States of America.\n\nWangari was excited! She wanted to know more about the world.",
+      "span": [
+       121.16,
+       128.71
+      ],
+      "whisper": [
+       121.24,
+       127.78
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.105,
+      "hyp": "旺加利太兴奋了,他真想去世界各地走走看看。",
+      "cer": 0.105,
+      "per": 0.0,
+      "n_chars": 19,
+      "dur": 7.55,
+      "speech_ratio": 0.773,
+      "lead_sil": 0.21,
+      "trail_sil": 0.31,
+      "max_gap": 0.11,
+      "clip_frac": 8.278145695364238e-06,
+      "peak_db": 0.06,
+      "lufs": -17.96,
+      "p95_db": -12.4,
+      "edge_start_db": -107.6,
+      "edge_end_db": -107.6
+     },
+     {
+      "page": 7,
+      "k": 0,
+      "zh": "在美国的大学里，旺加里学到了很多新鲜事物。",
+      "en_page": "At the American university Wangari learnt many new things. She studied plants and how they grow. And she remembered how she grew: playing games with her brothers in the shade of the trees in the beautiful Kenyan forests.",
+      "span": [
+       130.63,
+       137.61
+      ],
+      "whisper": [
+       130.32,
+       136.9
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "在美国的大学里,汪家里学到了很多新鲜事物。",
+      "cer": 0.105,
+      "per": 0.0,
+      "n_chars": 19,
+      "dur": 6.98,
+      "speech_ratio": 0.709,
+      "lead_sil": 0.2,
+      "trail_sil": 0.62,
+      "max_gap": 0.7,
+      "clip_frac": 2.686246418338109e-05,
+      "peak_db": 0.15,
+      "lufs": -16.16,
+      "p95_db": -10.48,
+      "edge_start_db": -109.52,
+      "edge_end_db": -109.52
+     },
+     {
+      "page": 7,
+      "k": 1,
+      "zh": "她研究植物，以及它们的生长过程。",
+      "en_page": "At the American university Wangari learnt many new things. She studied plants and how they grow. And she remembered how she grew: playing games with her brothers in the shade of the trees in the beautiful Kenyan forests.",
+      "span": [
+       137.87,
+       143.12
+      ],
+      "whisper": [
+       137.6,
+       142.34
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.071,
+      "hyp": "他研究植物以及它们的生长过程。",
+      "cer": 0.071,
+      "per": 0.0,
+      "n_chars": 14,
+      "dur": 5.25,
+      "speech_ratio": 0.721,
+      "lead_sil": 0.29,
+      "trail_sil": 0.37,
+      "max_gap": 0.26,
+      "clip_frac": 5.9523809523809524e-05,
+      "peak_db": 0.07,
+      "lufs": -16.05,
+      "p95_db": -10.29,
+      "edge_start_db": -109.71,
+      "edge_end_db": -109.71
+     },
+     {
+      "page": 7,
+      "k": 2,
+      "zh": "她想起她自己是怎么长大的：她和兄弟们在美丽的肯尼亚森林里玩耍。",
+      "en_page": "At the American university Wangari learnt many new things. She studied plants and how they grow. And she remembered how she grew: playing games with her brothers in the shade of the trees in the beautiful Kenyan forests.",
+      "span": [
+       144.11,
+       154.23
+      ],
+      "whisper": [
+       143.86,
+       153.46
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.103,
+      "hyp": "他想起他自己是怎么长大的。他和兄弟们在美丽的肯尼亚森林里玩耍。",
+      "cer": 0.103,
+      "per": 0.0,
+      "n_chars": 29,
+      "dur": 10.12,
+      "speech_ratio": 0.719,
+      "lead_sil": 0.23,
+      "trail_sil": 0.37,
+      "max_gap": 1.1,
+      "clip_frac": 0.0,
+      "peak_db": -0.19,
+      "lufs": -17.47,
+      "p95_db": -11.66,
+      "edge_start_db": -108.34,
+      "edge_end_db": -108.34
+     },
+     {
+      "page": 8,
+      "k": 0,
+      "zh": "她学得越多，就越热爱肯尼亚人民。",
+      "en_page": "The more she learnt, the more she realised that she loved the people of Kenya. She wanted them to be happy and free.\n\nThe more she learnt, the more she remembered her African home.",
+      "span": [
+       155.65,
+       161.02
+      ],
+      "whisper": [
+       155.3,
+       160.28
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.071,
+      "hyp": "他学得越多,就越热爱肯尼亚人民。",
+      "cer": 0.071,
+      "per": 0.0,
+      "n_chars": 14,
+      "dur": 5.37,
+      "speech_ratio": 0.701,
+      "lead_sil": 0.26,
+      "trail_sil": 0.43,
+      "max_gap": 0.23,
+      "clip_frac": 0.0,
+      "peak_db": -0.93,
+      "lufs": -16.1,
+      "p95_db": -10.93,
+      "edge_start_db": -109.07,
+      "edge_end_db": -109.07
+     },
+     {
+      "page": 8,
+      "k": 1,
+      "zh": "她想要帮助肯尼亚人民过上自由、快乐的生活。",
+      "en_page": "The more she learnt, the more she realised that she loved the people of Kenya. She wanted them to be happy and free.\n\nThe more she learnt, the more she remembered her African home.",
+      "span": [
+       161.74,
+       167.93
+      ],
+      "whisper": [
+       161.72,
+       167.06
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.053,
+      "hyp": "他想要帮助肯尼亚人民过上自由、快乐的生活。",
+      "cer": 0.053,
+      "per": 0.0,
+      "n_chars": 19,
+      "dur": 6.19,
+      "speech_ratio": 0.772,
+      "lead_sil": 0.21,
+      "trail_sil": 0.43,
+      "max_gap": 0.16,
+      "clip_frac": 0.0,
+      "peak_db": -1.26,
+      "lufs": -16.53,
+      "p95_db": -10.95,
+      "edge_start_db": -109.05,
+      "edge_end_db": -109.05
+     },
+     {
+      "page": 8,
+      "k": 2,
+      "zh": "她学得越多，就越想念自己在非洲的家乡。",
+      "en_page": "The more she learnt, the more she realised that she loved the people of Kenya. She wanted them to be happy and free.\n\nThe more she learnt, the more she remembered her African home.",
+      "span": [
+       168.9,
+       175.23
+      ],
+      "whisper": [
+       168.6,
+       174.5
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.059,
+      "hyp": "他学得越多,就越想念自己在非洲的家乡。",
+      "cer": 0.059,
+      "per": 0.0,
+      "n_chars": 17,
+      "dur": 6.33,
+      "speech_ratio": 0.835,
+      "lead_sil": 0.2,
+      "trail_sil": 0.32,
+      "max_gap": 0.07,
+      "clip_frac": 0.0,
+      "peak_db": -1.18,
+      "lufs": -19.79,
+      "p95_db": -13.83,
+      "edge_start_db": -106.17,
+      "edge_end_db": -106.17
+     },
+     {
+      "page": 9,
+      "k": 0,
+      "zh": "当旺加里完成学业时，她回到了肯尼亚，但是她的祖国已经今非昔比了。",
+      "en_page": "When she had finished her studies, she returned to Kenya. But her country had changed. Huge farms stretched across the land. Women had no wood to make cooking fires. The people were poor and the children were hungry.",
+      "span": [
+       177.3,
+       188.75
+      ],
+      "whisper": [
+       177.06,
+       188.04
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.034,
+      "hyp": "当旺加里完成学业时,他回到了肯尼亚,但是他的祖国已经今非昔比了。",
+      "cer": 0.069,
+      "per": 0.0,
+      "n_chars": 29,
+      "dur": 11.45,
+      "speech_ratio": 0.713,
+      "lead_sil": 0.27,
+      "trail_sil": 0.65,
+      "max_gap": 0.85,
+      "clip_frac": 0.0,
+      "peak_db": -0.37,
+      "lufs": -18.15,
+      "p95_db": -11.79,
+      "edge_start_db": -108.21,
+      "edge_end_db": -108.21
+     },
+     {
+      "page": 9,
+      "k": 1,
+      "zh": "大地上建起了农场，妇女们找不到柴火做饭。",
+      "en_page": "When she had finished her studies, she returned to Kenya. But her country had changed. Huge farms stretched across the land. Women had no wood to make cooking fires. The people were poor and the children were hungry.",
+      "span": [
+       189.37,
+       196.66
+      ],
+      "whisper": [
+       189.38,
+       195.92
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "大地上建起了农场,妇女们找不到柴火做饭。",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 18,
+      "dur": 7.29,
+      "speech_ratio": 0.648,
+      "lead_sil": 0.2,
+      "trail_sil": 0.31,
+      "max_gap": 0.89,
+      "clip_frac": 0.00040294924554183816,
+      "peak_db": 0.83,
+      "lufs": -16.74,
+      "p95_db": -11.18,
+      "edge_start_db": -108.82,
+      "edge_end_db": -108.82
+     },
+     {
+      "page": 9,
+      "k": 2,
+      "zh": "人们过着穷苦的日子，孩子们饥肠辘辘。",
+      "en_page": "When she had finished her studies, she returned to Kenya. But her country had changed. Huge farms stretched across the land. Women had no wood to make cooking fires. The people were poor and the children were hungry.",
+      "span": [
+       197.12,
+       204.15
+      ],
+      "whisper": [
+       197.16,
+       203.42
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.125,
+      "hyp": "人们过着穷苦的日子,孩子们饥肠碌碌。",
+      "cer": 0.125,
+      "per": 0.0,
+      "n_chars": 16,
+      "dur": 7.03,
+      "speech_ratio": 0.66,
+      "lead_sil": 0.21,
+      "trail_sil": 0.3,
+      "max_gap": 1.17,
+      "clip_frac": 0.0,
+      "peak_db": -2.41,
+      "lufs": -20.3,
+      "p95_db": -14.32,
+      "edge_start_db": -105.68,
+      "edge_end_db": -105.68
+     },
+     {
+      "page": 10,
+      "k": 0,
+      "zh": "旺加里知道自己要做什么。",
+      "en_page": "Wangari knew what to do. She taught the women how to plant trees from seeds. The women sold the trees and used the money to look after their families. The women were very happy. Wangari had helped them to feel powerful and strong.",
+      "span": [
+       206.3,
+       210.16
+      ],
+      "whisper": [
+       206.4,
+       209.36
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "旺加利知道自己要做什么。",
+      "cer": 0.091,
+      "per": 0.0,
+      "n_chars": 11,
+      "dur": 3.86,
+      "speech_ratio": 0.766,
+      "lead_sil": 0.23,
+      "trail_sil": 0.42,
+      "max_gap": 0.04,
+      "clip_frac": 0.00027525906735751293,
+      "peak_db": 0.51,
+      "lufs": -16.18,
+      "p95_db": -10.64,
+      "edge_start_db": -109.36,
+      "edge_end_db": -109.36
+     },
+     {
+      "page": 10,
+      "k": 1,
+      "zh": "她教妇女们如何用种子种出大树。",
+      "en_page": "Wangari knew what to do. She taught the women how to plant trees from seeds. The women sold the trees and used the money to look after their families. The women were very happy. Wangari had helped them to feel powerful and strong.",
+      "span": [
+       210.81,
+       216.5
+      ],
+      "whisper": [
+       210.52,
+       215.84
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.071,
+      "hyp": "他教妇女们如何用种子种出大树。",
+      "cer": 0.071,
+      "per": 0.0,
+      "n_chars": 14,
+      "dur": 5.69,
+      "speech_ratio": 0.757,
+      "lead_sil": 0.21,
+      "trail_sil": 0.33,
+      "max_gap": 0.22,
+      "clip_frac": 6.590509666080844e-05,
+      "peak_db": 0.14,
+      "lufs": -17.16,
+      "p95_db": -10.91,
+      "edge_start_db": -109.09,
+      "edge_end_db": -109.09
+     },
+     {
+      "page": 10,
+      "k": 2,
+      "zh": "妇女们卖树赚钱，补贴家用。",
+      "en_page": "Wangari knew what to do. She taught the women how to plant trees from seeds. The women sold the trees and used the money to look after their families. The women were very happy. Wangari had helped them to feel powerful and strong.",
+      "span": [
+       217.29,
+       221.98
+      ],
+      "whisper": [
+       217.0,
+       221.26
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "妇女们卖树赚钱,补贴家用。",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 11,
+      "dur": 4.69,
+      "speech_ratio": 0.733,
+      "lead_sil": 0.27,
+      "trail_sil": 0.3,
+      "max_gap": 0.17,
+      "clip_frac": 0.0,
+      "peak_db": -0.45,
+      "lufs": -17.37,
+      "p95_db": -11.26,
+      "edge_start_db": -108.74,
+      "edge_end_db": -108.74
+     },
+     {
+      "page": 10,
+      "k": 3,
+      "zh": "妇女们都很高兴。",
+      "en_page": "Wangari knew what to do. She taught the women how to plant trees from seeds. The women sold the trees and used the money to look after their families. The women were very happy. Wangari had helped them to feel powerful and strong.",
+      "span": [
+       222.7,
+       225.19
+      ],
+      "whisper": [
+       222.42,
+       224.56
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "妇女们都很高兴。",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 7,
+      "dur": 2.49,
+      "speech_ratio": 0.702,
+      "lead_sil": 0.27,
+      "trail_sil": 0.37,
+      "max_gap": 0.04,
+      "clip_frac": 2.5100401606425704e-05,
+      "peak_db": 0.09,
+      "lufs": -14.98,
+      "p95_db": -9.27,
+      "edge_start_db": -110.73,
+      "edge_end_db": -110.73
+     },
+     {
+      "page": 10,
+      "k": 4,
+      "zh": "旺加里使她们觉得自己变得坚强勇敢了。",
+      "en_page": "Wangari knew what to do. She taught the women how to plant trees from seeds. The women sold the trees and used the money to look after their families. The women were very happy. Wangari had helped them to feel powerful and strong.",
+      "span": [
+       225.66,
+       231.93
+      ],
+      "whisper": [
+       225.34,
+       231.22
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.118,
+      "hyp": "往家里使他们觉得自己变得坚强、勇敢了。",
+      "cer": 0.176,
+      "per": 0.0,
+      "n_chars": 17,
+      "dur": 6.27,
+      "speech_ratio": 0.749,
+      "lead_sil": 0.25,
+      "trail_sil": 0.45,
+      "max_gap": 0.18,
+      "clip_frac": 3.9872408293460924e-05,
+      "peak_db": 0.22,
+      "lufs": -17.05,
+      "p95_db": -11.19,
+      "edge_start_db": -108.81,
+      "edge_end_db": -108.81
+     },
+     {
+      "page": 11,
+      "k": 0,
+      "zh": "时光飞逝，小树长成了参天大树，又汇聚成了森林，河水穿流而过。",
+      "en_page": "As time passed, the new trees grew into forests, and the rivers started flowing again. Wangari’s message spread across Africa. Today, millions of trees have grown from Wangari’s seeds.",
+      "span": [
+       233.45,
+       246.28
+      ],
+      "whisper": [
+       233.18,
+       245.5
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.038,
+      "hyp": "时光飞逝,小树长成了参天大树,又汇聚成了森林,河水川流而过。",
+      "cer": 0.038,
+      "per": 0.0,
+      "n_chars": 26,
+      "dur": 12.83,
+      "speech_ratio": 0.691,
+      "lead_sil": 0.25,
+      "trail_sil": 0.42,
+      "max_gap": 1.21,
+      "clip_frac": 0.0,
+      "peak_db": -0.18,
+      "lufs": -17.74,
+      "p95_db": -12.02,
+      "edge_start_db": -107.98,
+      "edge_end_db": -107.98
+     },
+     {
+      "page": 11,
+      "k": 1,
+      "zh": "旺加里的办法传遍了非洲。",
+      "en_page": "As time passed, the new trees grew into forests, and the rivers started flowing again. Wangari’s message spread across Africa. Today, millions of trees have grown from Wangari’s seeds.",
+      "span": [
+       247.15,
+       251.33
+      ],
+      "whisper": [
+       246.88,
+       250.44
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "旺家里的办法,传遍了非洲。",
+      "cer": 0.091,
+      "per": 0.0,
+      "n_chars": 11,
+      "dur": 4.18,
+      "speech_ratio": 0.729,
+      "lead_sil": 0.2,
+      "trail_sil": 0.31,
+      "max_gap": 0.36,
+      "clip_frac": 5.980861244019139e-05,
+      "peak_db": 0.18,
+      "lufs": -16.32,
+      "p95_db": -11.41,
+      "edge_start_db": -108.59,
+      "edge_end_db": -108.59
+     },
+     {
+      "page": 11,
+      "k": 2,
+      "zh": "今天，因为旺加里当初的种子，已经长出了几百万棵大树。",
+      "en_page": "As time passed, the new trees grew into forests, and the rivers started flowing again. Wangari’s message spread across Africa. Today, millions of trees have grown from Wangari’s seeds.",
+      "span": [
+       252.0,
+       261.1
+      ],
+      "whisper": [
+       251.8,
+       260.38
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "今天,因为旺家里当初的种子已经长出了几百万棵大树。",
+      "cer": 0.043,
+      "per": 0.0,
+      "n_chars": 23,
+      "dur": 9.1,
+      "speech_ratio": 0.702,
+      "lead_sil": 0.22,
+      "trail_sil": 0.57,
+      "max_gap": 0.75,
+      "clip_frac": 5.4945054945054945e-05,
+      "peak_db": 0.21,
+      "lufs": -17.81,
+      "p95_db": -11.25,
+      "edge_start_db": -108.75,
+      "edge_end_db": -108.75
+     },
+     {
+      "page": 12,
+      "k": 0,
+      "zh": "旺加里努力工作，引起了全世界的注意，人们授予她诺贝尔和平奖，她是非洲第一位获得这份殊荣的女性。",
+      "en_page": "Wangari had worked hard. People all over the world took notice, and gave her a famous prize. It is called the Nobel Peace Prize, and she was the first African woman ever to receive it.",
+      "span": [
+       264.12,
+       280.82
+      ],
+      "whisper": [
+       263.86,
+       280.14
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "旺加里努力工作,引起了全世界的注意。人们授予她诺贝尔和平奖。她是非洲第一位获得这份殊荣的女性。",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 43,
+      "dur": 16.7,
+      "speech_ratio": 0.713,
+      "lead_sil": 0.27,
+      "trail_sil": 0.56,
+      "max_gap": 1.32,
+      "clip_frac": 0.00014221556886227546,
+      "peak_db": 0.67,
+      "lufs": -16.4,
+      "p95_db": -10.65,
+      "edge_start_db": -109.35,
+      "edge_end_db": -109.35
+     },
+     {
+      "page": 13,
+      "k": 0,
+      "zh": "旺加里在2011年去世，但是每次我们看到大树时，都会想起这位杰出的女性。",
+      "en_page": "Wangari died in 2011, but we can think of her every time we see a beautiful tree.",
+      "span": [
+       282.17,
+       294.87
+      ],
+      "whisper": [
+       281.88,
+       294.18
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.152,
+      "hyp": "王嘉丽在2011年去世,但是每次我们看到大树时,都会想起这位杰出的女性。",
+      "cer": 0.091,
+      "per": 0.0,
+      "n_chars": 33,
+      "dur": 12.7,
+      "speech_ratio": 0.746,
+      "lead_sil": 0.26,
+      "trail_sil": 0.32,
+      "max_gap": 0.82,
+      "clip_frac": 0.00012795275590551182,
+      "peak_db": 0.52,
+      "lufs": -16.61,
+      "p95_db": -10.94,
+      "edge_start_db": -109.06,
+      "edge_end_db": -109.06
+     }
+    ]
+   }
+  },
+  {
+   "source": "storybooks",
+   "kind": "story",
+   "path": "C:\\Users\\tritn\\Documents\\projects\\lang-learner\\sandbox\\spikes\\media-ingest\\data\\storybooks\\0262\\full.mp3",
+   "pages_dir": "C:\\Users\\tritn\\Documents\\projects\\lang-learner\\sandbox\\spikes\\media-ingest\\data\\storybooks\\0262\\pages",
+   "media_id": "media:zh-gs-0262",
+   "title": "玛格威",
+   "context": "storybook",
+   "level": 5,
+   "speaker": {
+    "id": "speaker:zh-gs-zhuo-sun",
+    "label": "Zhuo Sun"
+   },
+   "rights": {
+    "license": "cc-by-4.0",
+    "author": "Written by: Lesley Koyi; Illustrated by: Wiehan de Jager; Translated by: Vicky Liu; Read by: Zhuo Sun",
+    "sourceUrl": "https://global-asp.github.io/storybooks-minnesota/stories/zh/0262/",
+    "audioUrl": "https://globalstorybooks.net/media/audio/zh/0262/"
+   },
+   "m": {
+    "dur": 582.866,
+    "full_hyp": "马格威在内罗币这座繁忙的城市里,住着一群流浪的男孩。他们日复一日地活着,从来不知道什么是舒适、安逸的生活。一天早上,男孩们从冰冷的人行道上醒来,把他们用来睡觉的毯子叠起来天太冷了为了驱赶寒气他们用拾来的垃圾燃起了一堆火在这群男孩中有一个人叫马格威马格威的父母过世时他只有五岁他搬去跟叔叔一起生活叔叔从来不关心马格威马格威在叔叔家挨饿受冻还要干很多体力活一旦马格威稍有抱怨叔叔就会对他拳打脚踢有一次,马格威问叔叔他能不能去上学叔叔狠狠地打了他几下说,你这傻瓜,用得着上学吗?马格威过了三年这样的日子终于离家出走,无家可归流浪生活非常艰辛大多数男孩每天只能混个温饱他们有时候会被抓起来有时候会挨打当他们生病的时候没有人照顾他们这群男孩就靠乞讨得来的一点点钱过活。他们有时候也会卖塑料品和旧货赚点钱。有时候,别的流浪汉会来找茬,争夺领地,那时候生活就更艰难。有一天,马格威正在翻垃圾箱他找到了一本破旧不堪的故事书他把书上的灰尘吹走把书放进了袋子里每天完工后他会把书拿出来翻着上面的图画可惜,他看不懂上面的文字。图画书讲的是一个男孩长大成为飞行员的故事。马格威有时候会梦想自己成为一个飞行员。有时候,他想象着自己就是故事中的男孩。有一天,天气很冷马格威站在街头乞讨一个男人走过来,跟他打招呼你好,我叫托马斯我在这儿附近工作你可以到那儿拿点吃的她指着一座蓝顶黄墙的房子我希望你别客气到那儿去拿点吃的吧马格威看了看男人又看了看房子说可能吧然后她就走开了接下来的几个月流浪的男孩们渐渐认识了托马斯他喜欢跟人聊天特别是无家可归的人托马斯听别人讲他们的故事他不苟言笑非常耐心有礼貌尊重他人一些男孩开始在白天去蓝顶黄墙的房子里找吃的。有一天,马格威正坐在人行道上看故事书。托马斯来了,坐在他旁边。托马斯问,这本书讲了什么故事?马格威回答说这是关于一个男孩成为飞行员的故事托马斯问男孩叫什么名字马格威声音低了下去我不知道我不识字当他们再次见面的时候有时候,马格威开始跟托马斯讲自己的故事,他的叔叔怎么对他,他怎么逃离了叔叔家。托马斯没说什么,也没有告诉马格威该怎么做,但是他听得很仔细。有时候,他们会一边在蓝顶黄墙的房子里吃东西,一边聊聊天。马格威十岁生日的时候,托马斯给了他一本新的故事书。这是关于一个乡下男孩成为足球运动员的故事。托马斯给马格威讲过这个故事很多次。有一天,托马斯说,我觉得你应该去上学,去识字,你觉得呢?托马斯说他知道一个地方,孩子们可以住在那儿,上学。马格威想了想去新的地方生活,上学。但是,如果他叔叔说得对,他太笨了,上不了学怎么办?如果在新的地方他又要挨打怎么办?他有点害怕,心想,也许我注定就要睡在马路边。他把自己的想法告诉了托马斯。托马斯对他循循善诱,终于说服了马格威,他在新的地方一定会过上更好的生活。马格威搬到了新家,新家的屋顶是绿色的。他和两个男孩住一间房间,屋子里还住着其他十个孩子。和他们住在一起的是希西阿姨和她的丈夫,还有三只狗,一只猫,一头老山羊。马格威开始读书,他遇到了不少困难,很难赶上他的同学们。有时候,他差点就要放弃了。但他每次想起故事书里的飞行员和足球运动员他都坚持了下来就像他们一样有一天马格威正在屋子后院里看书托马斯来了坐在他旁边这本书讲了什么故事马格威回答说这是关于一个男孩变成老师的故事托马斯问那个男孩叫什么名字马格威咧嘴一笑他叫马格威",
+    "n_words": 1168,
+    "truth": {
+     "1": {
+      "start": 0.0,
+      "end": 3.748,
+      "corr": 1.0,
+      "speech": [
+       1.57,
+       3.28
+      ]
+     },
+     "2": {
+      "start": 3.748,
+      "end": 54.034,
+      "corr": 0.987,
+      "speech": [
+       4.918,
+       53.178
+      ]
+     },
+     "3": {
+      "start": 54.033,
+      "end": 79.769,
+      "corr": 0.84,
+      "speech": [
+       55.153,
+       79.273
+      ]
+     },
+     "4": {
+      "start": 79.769,
+      "end": 116.013,
+      "corr": 0.967,
+      "speech": [
+       80.689,
+       115.239
+      ]
+     },
+     "5": {
+      "start": 116.013,
+      "end": 168.647,
+      "corr": 0.896,
+      "speech": [
+       117.443,
+       167.873
+      ]
+     },
+     "6": {
+      "start": 168.648,
+      "end": 201.12,
+      "corr": 0.962,
+      "speech": [
+       169.688,
+       200.388
+      ]
+     },
+     "7": {
+      "start": 201.12,
+      "end": 224.484,
+      "corr": 0.924,
+      "speech": [
+       202.18,
+       223.39
+      ]
+     },
+     "8": {
+      "start": 224.484,
+      "end": 274.817,
+      "corr": 0.99,
+      "speech": [
+       225.584,
+       274.174
+      ]
+     },
+     "9": {
+      "start": 274.817,
+      "end": 314.405,
+      "corr": 0.891,
+      "speech": [
+       275.727,
+       313.867
+      ]
+     },
+     "10": {
+      "start": 314.406,
+      "end": 353.804,
+      "corr": 0.803,
+      "speech": [
+       315.446,
+       353.046
+      ]
+     },
+     "11": {
+      "start": 353.804,
+      "end": 391.993,
+      "corr": 0.806,
+      "speech": [
+       354.884,
+       391.004
+      ]
+     },
+     "12": {
+      "start": 391.993,
+      "end": 435.685,
+      "corr": 0.927,
+      "speech": [
+       393.663,
+       434.883
+      ]
+     },
+     "13": {
+      "start": 435.685,
+      "end": 467.161,
+      "corr": 0.987,
+      "speech": [
+       437.075,
+       466.305
+      ]
+     },
+     "14": {
+      "start": 467.161,
+      "end": 486.8,
+      "corr": 0.833,
+      "speech": [
+       468.49,
+       485.891
+      ]
+     },
+     "15": {
+      "start": 486.8,
+      "end": 519.225,
+      "corr": 0.922,
+      "speech": [
+       488.07,
+       518.38
+      ]
+     },
+     "16": {
+      "start": 519.226,
+      "end": 547.452,
+      "corr": 0.96,
+      "speech": [
+       520.486,
+       546.816
+      ]
+     },
+     "17": {
+      "start": 547.452,
+      "end": 582.866,
+      "corr": 0.99,
+      "speech": [
+       548.332,
+       582.872
+      ]
+     }
+    },
+    "regions": 238,
+    "clips": [
+     {
+      "page": 1,
+      "k": 0,
+      "zh": "玛格威",
+      "en_page": "Magozwe",
+      "span": [
+       1.3,
+       3.56
+      ],
+      "whisper": [
+       1.2,
+       2.4
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.333,
+      "hyp": "马格威",
+      "cer": 0.333,
+      "per": 0.0,
+      "n_chars": 3,
+      "dur": 2.26,
+      "speech_ratio": 0.471,
+      "lead_sil": 0.33,
+      "trail_sil": 0.35,
+      "max_gap": 0.19,
+      "clip_frac": 0.0,
+      "peak_db": -6.83,
+      "lufs": -20.9,
+      "p95_db": -15.91,
+      "edge_start_db": -104.09,
+      "edge_end_db": -104.09
+     },
+     {
+      "page": 2,
+      "k": 0,
+      "zh": "在内罗毕这座繁忙的城市里，住着一群流浪的男孩，他们日复一日地活着，从来不知道什么是舒适安逸的生活。",
+      "en_page": "In the busy city of Nairobi, far away from a caring life at home, lived a group of homeless boys. They welcomed each day just as it came.\n\nOn one morning, the boys were packing their mats after sleeping on cold pavements. To chase away the cold they lit a fire with rubbish.\n\nAmong the group of boys was Magozwe. He was the youngest.",
+      "span": [
+       4.72,
+       23.03
+      ],
+      "whisper": [
+       4.5,
+       21.7
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.022,
+      "hyp": "在内罗毕这座繁忙的城市里,住着一群流浪的男孩。他们日复一日地活着,从来不知道什么是舒适安逸的生活。",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 45,
+      "dur": 18.31,
+      "speech_ratio": 0.678,
+      "lead_sil": 0.38,
+      "trail_sil": 0.57,
+      "max_gap": 1.18,
+      "clip_frac": 3.413435281267067e-06,
+      "peak_db": -0.08,
+      "lufs": -18.44,
+      "p95_db": -12.93,
+      "edge_start_db": -107.07,
+      "edge_end_db": -107.07
+     },
+     {
+      "page": 2,
+      "k": 1,
+      "zh": "一天早上，男孩们从冰冷的人行道上醒来，把他们用来睡觉的毯子叠起来。",
+      "en_page": "In the busy city of Nairobi, far away from a caring life at home, lived a group of homeless boys. They welcomed each day just as it came.\n\nOn one morning, the boys were packing their mats after sleeping on cold pavements. To chase away the cold they lit a fire with rubbish.\n\nAmong the group of boys was Magozwe. He was the youngest.",
+      "span": [
+       23.46,
+       36.52
+      ],
+      "whisper": [
+       23.28,
+       35.46
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "一天早上,男孩们从冰冷的人行道上醒来,把他们用来睡觉的毯子叠起来。",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 30,
+      "dur": 13.06,
+      "speech_ratio": 0.634,
+      "lead_sil": 0.4,
+      "trail_sil": 0.34,
+      "max_gap": 0.76,
+      "clip_frac": 0.0,
+      "peak_db": -0.15,
+      "lufs": -18.84,
+      "p95_db": -13.39,
+      "edge_start_db": -106.61,
+      "edge_end_db": -106.61
+     },
+     {
+      "page": 2,
+      "k": 2,
+      "zh": "天太冷了，为了驱赶寒气，他们用拾来的垃圾燃起了一堆火。",
+      "en_page": "In the busy city of Nairobi, far away from a caring life at home, lived a group of homeless boys. They welcomed each day just as it came.\n\nOn one morning, the boys were packing their mats after sleeping on cold pavements. To chase away the cold they lit a fire with rubbish.\n\nAmong the group of boys was Magozwe. He was the youngest.",
+      "span": [
+       36.74,
+       47.06
+      ],
+      "whisper": [
+       37.12,
+       45.88
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "天太冷了,为了驱赶寒气,他们用拾来的垃圾燃起了一堆火。",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 24,
+      "dur": 10.32,
+      "speech_ratio": 0.653,
+      "lead_sil": 0.21,
+      "trail_sil": 0.41,
+      "max_gap": 0.56,
+      "clip_frac": 0.0,
+      "peak_db": -1.05,
+      "lufs": -19.17,
+      "p95_db": -14.25,
+      "edge_start_db": -105.75,
+      "edge_end_db": -105.75
+     },
+     {
+      "page": 2,
+      "k": 3,
+      "zh": "在这群男孩中有一个人叫玛格威。",
+      "en_page": "In the busy city of Nairobi, far away from a caring life at home, lived a group of homeless boys. They welcomed each day just as it came.\n\nOn one morning, the boys were packing their mats after sleeping on cold pavements. To chase away the cold they lit a fire with rubbish.\n\nAmong the group of boys was Magozwe. He was the youngest.",
+      "span": [
+       47.53,
+       53.46
+      ],
+      "whisper": [
+       47.34,
+       52.34
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.071,
+      "hyp": "在这群男孩中,有一个人叫马格威。",
+      "cer": 0.071,
+      "per": 0.0,
+      "n_chars": 14,
+      "dur": 5.93,
+      "speech_ratio": 0.62,
+      "lead_sil": 0.25,
+      "trail_sil": 0.34,
+      "max_gap": 0.27,
+      "clip_frac": 0.0,
+      "peak_db": -0.63,
+      "lufs": -19.58,
+      "p95_db": -13.84,
+      "edge_start_db": -106.16,
+      "edge_end_db": -106.16
+     },
+     {
+      "page": 3,
+      "k": 0,
+      "zh": "玛格威的父母过世时，他只有五岁，他搬去跟叔叔一起生活。",
+      "en_page": "When Magozwe’s parents died, he was only five years old. He went to live with his uncle. This man did not care about the child. He did not give Magozwe enough food. He made the boy do a lot of hard work.",
+      "span": [
+       54.96,
+       65.82
+      ],
+      "whisper": [
+       54.8,
+       64.6
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.042,
+      "hyp": "马格威的父母过世时,他只有五岁,他搬去跟叔叔一起生活。",
+      "cer": 0.042,
+      "per": 0.0,
+      "n_chars": 24,
+      "dur": 10.86,
+      "speech_ratio": 0.683,
+      "lead_sil": 0.2,
+      "trail_sil": 0.35,
+      "max_gap": 0.74,
+      "clip_frac": 0.0,
+      "peak_db": -1.39,
+      "lufs": -20.51,
+      "p95_db": -15.08,
+      "edge_start_db": -104.92,
+      "edge_end_db": -104.92
+     },
+     {
+      "page": 3,
+      "k": 1,
+      "zh": "叔叔从来不关心玛格威。",
+      "en_page": "When Magozwe’s parents died, he was only five years old. He went to live with his uncle. This man did not care about the child. He did not give Magozwe enough food. He made the boy do a lot of hard work.",
+      "span": [
+       66.28,
+       70.33
+      ],
+      "whisper": [
+       66.1,
+       69.26
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.1,
+      "hyp": "叔叔从来不关心马格威。",
+      "cer": 0.1,
+      "per": 0.0,
+      "n_chars": 10,
+      "dur": 4.05,
+      "speech_ratio": 0.676,
+      "lead_sil": 0.31,
+      "trail_sil": 0.32,
+      "max_gap": 0.32,
+      "clip_frac": 0.0,
+      "peak_db": -3.13,
+      "lufs": -19.5,
+      "p95_db": -14.25,
+      "edge_start_db": -105.75,
+      "edge_end_db": -105.75
+     },
+     {
+      "page": 3,
+      "k": 2,
+      "zh": "玛格威在叔叔家挨饿受冻，还要干很多体力活。",
+      "en_page": "When Magozwe’s parents died, he was only five years old. He went to live with his uncle. This man did not care about the child. He did not give Magozwe enough food. He made the boy do a lot of hard work.",
+      "span": [
+       71.29,
+       79.56
+      ],
+      "whisper": [
+       71.1,
+       78.44
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.053,
+      "hyp": "马格威在叔叔家挨饿受冻,还要干很多体力活。",
+      "cer": 0.053,
+      "per": 0.0,
+      "n_chars": 19,
+      "dur": 8.27,
+      "speech_ratio": 0.717,
+      "lead_sil": 0.24,
+      "trail_sil": 0.4,
+      "max_gap": 0.29,
+      "clip_frac": 0.0,
+      "peak_db": -1.24,
+      "lufs": -19.99,
+      "p95_db": -14.79,
+      "edge_start_db": -105.21,
+      "edge_end_db": -105.21
+     },
+     {
+      "page": 4,
+      "k": 0,
+      "zh": "一旦玛格威稍有抱怨，叔叔就会对他拳打脚踢。",
+      "en_page": "If Magozwe complained or questioned, his uncle beat him. When Magozwe asked if he could go to school, his uncle beat him and said, “You’re too stupid to learn anything.”\n\nAfter three years of this treatment Magozwe ran away from his uncle. He started living on the street.",
+      "span": [
+       80.5,
+       88.22
+      ],
+      "whisper": [
+       80.32,
+       87.1
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.053,
+      "hyp": "一旦马格威稍有抱怨,叔叔就会对他拳打脚踢。",
+      "cer": 0.053,
+      "per": 0.0,
+      "n_chars": 19,
+      "dur": 7.72,
+      "speech_ratio": 0.686,
+      "lead_sil": 0.36,
+      "trail_sil": 0.62,
+      "max_gap": 0.44,
+      "clip_frac": 4.0479274611398965e-05,
+      "peak_db": 0.63,
+      "lufs": -18.64,
+      "p95_db": -13.19,
+      "edge_start_db": -106.81,
+      "edge_end_db": -106.81
+     },
+     {
+      "page": 4,
+      "k": 1,
+      "zh": "有一次，玛格威问叔叔他能不能去上学，叔叔狠狠地打了他几下，说：“你这傻瓜，用得着上学吗？”",
+      "en_page": "If Magozwe complained or questioned, his uncle beat him. When Magozwe asked if he could go to school, his uncle beat him and said, “You’re too stupid to learn anything.”\n\nAfter three years of this treatment Magozwe ran away from his uncle. He started living on the street.",
+      "span": [
+       88.64,
+       104.83
+      ],
+      "whisper": [
+       88.54,
+       103.72
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.027,
+      "hyp": "有一次,马格威问叔叔他能不能去上学,叔叔狠狠地打了他几下,说,你这傻瓜,用得着上学吗?",
+      "cer": 0.027,
+      "per": 0.0,
+      "n_chars": 37,
+      "dur": 16.19,
+      "speech_ratio": 0.635,
+      "lead_sil": 0.25,
+      "trail_sil": 0.37,
+      "max_gap": 0.73,
+      "clip_frac": 0.0,
+      "peak_db": -0.76,
+      "lufs": -19.22,
+      "p95_db": -13.78,
+      "edge_start_db": -106.22,
+      "edge_end_db": -106.22
+     },
+     {
+      "page": 4,
+      "k": 2,
+      "zh": "玛格威过了三年这样的日子，终于离家出走，无家可归。",
+      "en_page": "If Magozwe complained or questioned, his uncle beat him. When Magozwe asked if he could go to school, his uncle beat him and said, “You’re too stupid to learn anything.”\n\nAfter three years of this treatment Magozwe ran away from his uncle. He started living on the street.",
+      "span": [
+       105.82,
+       115.52
+      ],
+      "whisper": [
+       105.72,
+       114.44
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.045,
+      "hyp": "马格威过了三年这样的日子,终于离家出走,无家可归。",
+      "cer": 0.045,
+      "per": 0.0,
+      "n_chars": 22,
+      "dur": 9.7,
+      "speech_ratio": 0.684,
+      "lead_sil": 0.2,
+      "trail_sil": 0.3,
+      "max_gap": 0.21,
+      "clip_frac": 0.0,
+      "peak_db": -2.94,
+      "lufs": -20.97,
+      "p95_db": -15.63,
+      "edge_start_db": -104.37,
+      "edge_end_db": -104.37
+     },
+     {
+      "page": 5,
+      "k": 0,
+      "zh": "流浪生活非常艰辛，大多数男孩每天只能混个温饱。",
+      "en_page": "Street life was difficult and most of the boys struggled daily just to get food. Sometimes they were arrested, sometimes they were beaten. When they were sick, there was no one to help.\n\nThe group depended on the little money they got from begging, and from selling plastics and other recycling.\n\nLife was even more difficult because of fights with rival groups who wanted control of parts of the city.",
+      "span": [
+       117.25,
+       126.51
+      ],
+      "whisper": [
+       117.02,
+       125.38
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "流浪生活非常艰辛,大多数男孩每天只能混个温饱。",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 21,
+      "dur": 9.26,
+      "speech_ratio": 0.672,
+      "lead_sil": 0.4,
+      "trail_sil": 0.44,
+      "max_gap": 0.81,
+      "clip_frac": 0.0,
+      "peak_db": -0.52,
+      "lufs": -18.3,
+      "p95_db": -13.27,
+      "edge_start_db": -106.73,
+      "edge_end_db": -106.73
+     },
+     {
+      "page": 5,
+      "k": 1,
+      "zh": "他们有时候会被抓起来，有时候会挨打。",
+      "en_page": "Street life was difficult and most of the boys struggled daily just to get food. Sometimes they were arrested, sometimes they were beaten. When they were sick, there was no one to help.\n\nThe group depended on the little money they got from begging, and from selling plastics and other recycling.\n\nLife was even more difficult because of fights with rival groups who wanted control of parts of the city.",
+      "span": [
+       126.72,
+       133.51
+      ],
+      "whisper": [
+       126.5,
+       132.36
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "他们有时候会被抓起来,有时候会挨打。",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 16,
+      "dur": 6.79,
+      "speech_ratio": 0.593,
+      "lead_sil": 0.36,
+      "trail_sil": 0.43,
+      "max_gap": 0.31,
+      "clip_frac": 0.0,
+      "peak_db": -1.99,
+      "lufs": -19.44,
+      "p95_db": -13.2,
+      "edge_start_db": -106.8,
+      "edge_end_db": -106.8
+     },
+     {
+      "page": 5,
+      "k": 2,
+      "zh": "当他们生病的时候，没有人照顾他们。",
+      "en_page": "Street life was difficult and most of the boys struggled daily just to get food. Sometimes they were arrested, sometimes they were beaten. When they were sick, there was no one to help.\n\nThe group depended on the little money they got from begging, and from selling plastics and other recycling.\n\nLife was even more difficult because of fights with rival groups who wanted control of parts of the city.",
+      "span": [
+       133.88,
+       140.2
+      ],
+      "whisper": [
+       133.6,
+       138.96
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "当他们生病的时候,没有人照顾他们。",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 15,
+      "dur": 6.32,
+      "speech_ratio": 0.635,
+      "lead_sil": 0.25,
+      "trail_sil": 0.7,
+      "max_gap": 0.28,
+      "clip_frac": 0.0,
+      "peak_db": -2.1,
+      "lufs": -19.11,
+      "p95_db": -13.57,
+      "edge_start_db": -106.43,
+      "edge_end_db": -106.43
+     },
+     {
+      "page": 5,
+      "k": 3,
+      "zh": "这群男孩就靠乞讨得来的一点点钱过活，他们有时候也会卖塑料品和旧货赚点钱。",
+      "en_page": "Street life was difficult and most of the boys struggled daily just to get food. Sometimes they were arrested, sometimes they were beaten. When they were sick, there was no one to help.\n\nThe group depended on the little money they got from begging, and from selling plastics and other recycling.\n\nLife was even more difficult because of fights with rival groups who wanted control of parts of the city.",
+      "span": [
+       140.89,
+       155.13
+      ],
+      "whisper": [
+       140.66,
+       153.96
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "这群男孩就靠乞讨得来的一点点钱过活。他们有时候也会卖塑料品和旧货赚点钱。",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 34,
+      "dur": 14.24,
+      "speech_ratio": 0.678,
+      "lead_sil": 0.2,
+      "trail_sil": 0.32,
+      "max_gap": 1.47,
+      "clip_frac": 0.0,
+      "peak_db": -1.91,
+      "lufs": -19.36,
+      "p95_db": -13.83,
+      "edge_start_db": -106.17,
+      "edge_end_db": -106.17
+     },
+     {
+      "page": 5,
+      "k": 4,
+      "zh": "有时候别的流浪汉会来找茬，争夺领地，那时候生活就更艰难。",
+      "en_page": "Street life was difficult and most of the boys struggled daily just to get food. Sometimes they were arrested, sometimes they were beaten. When they were sick, there was no one to help.\n\nThe group depended on the little money they got from begging, and from selling plastics and other recycling.\n\nLife was even more difficult because of fights with rival groups who wanted control of parts of the city.",
+      "span": [
+       156.28,
+       168.16
+      ],
+      "whisper": [
+       156.1,
+       167.08
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "有时候,别的流浪汉会来找茬,争夺领地,那时候生活就更艰难。",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 25,
+      "dur": 11.88,
+      "speech_ratio": 0.604,
+      "lead_sil": 0.29,
+      "trail_sil": 0.72,
+      "max_gap": 0.67,
+      "clip_frac": 0.0,
+      "peak_db": -0.75,
+      "lufs": -18.31,
+      "p95_db": -12.58,
+      "edge_start_db": -107.42,
+      "edge_end_db": -107.42
+     },
+     {
+      "page": 6,
+      "k": 0,
+      "zh": "有一天，玛格威正在翻垃圾箱，他找到了一本破旧不堪的故事书。",
+      "en_page": "One day while Magozwe was looking through the dustbins, he found an old tattered storybook. He cleaned the dirt from it and put it in his sack.\n\nEvery day after that he would take out the book and look at the pictures. He did not know how to read the words.",
+      "span": [
+       169.5,
+       180.11
+      ],
+      "whisper": [
+       169.4,
+       179.12
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.038,
+      "hyp": "有一天,马格威正在翻垃圾箱,他找到了一本破旧不堪的故事书。",
+      "cer": 0.038,
+      "per": 0.0,
+      "n_chars": 26,
+      "dur": 10.61,
+      "speech_ratio": 0.614,
+      "lead_sil": 0.35,
+      "trail_sil": 0.48,
+      "max_gap": 0.76,
+      "clip_frac": 0.0,
+      "peak_db": -1.46,
+      "lufs": -20.01,
+      "p95_db": -14.33,
+      "edge_start_db": -105.67,
+      "edge_end_db": -105.67
+     },
+     {
+      "page": 6,
+      "k": 1,
+      "zh": "他把书上的灰尘吹走，把书放进了袋子里。",
+      "en_page": "One day while Magozwe was looking through the dustbins, he found an old tattered storybook. He cleaned the dirt from it and put it in his sack.\n\nEvery day after that he would take out the book and look at the pictures. He did not know how to read the words.",
+      "span": [
+       180.33,
+       186.75
+      ],
+      "whisper": [
+       180.12,
+       185.88
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "他把书上的灰尘吹走,把书放进了袋子里。",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 17,
+      "dur": 6.42,
+      "speech_ratio": 0.76,
+      "lead_sil": 0.23,
+      "trail_sil": 0.3,
+      "max_gap": 0.15,
+      "clip_frac": 0.0,
+      "peak_db": -3.52,
+      "lufs": -22.38,
+      "p95_db": -17.5,
+      "edge_start_db": -102.5,
+      "edge_end_db": -102.5
+     },
+     {
+      "page": 6,
+      "k": 2,
+      "zh": "每天完工后，他会把书拿出来，翻着上面的图画，可惜他看不懂上面的文字。",
+      "en_page": "One day while Magozwe was looking through the dustbins, he found an old tattered storybook. He cleaned the dirt from it and put it in his sack.\n\nEvery day after that he would take out the book and look at the pictures. He did not know how to read the words.",
+      "span": [
+       187.3,
+       200.67
+      ],
+      "whisper": [
+       187.18,
+       199.6
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "每天完工后,他会把书拿出来,翻着上面的图画。可惜,他看不懂上面的文字。",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 30,
+      "dur": 13.37,
+      "speech_ratio": 0.674,
+      "lead_sil": 0.21,
+      "trail_sil": 0.36,
+      "max_gap": 0.66,
+      "clip_frac": 0.0,
+      "peak_db": -4.18,
+      "lufs": -21.41,
+      "p95_db": -15.18,
+      "edge_start_db": -104.82,
+      "edge_end_db": -104.82
+     },
+     {
+      "page": 7,
+      "k": 0,
+      "zh": "图画书讲的是一个男孩长大成为飞行员的故事。",
+      "en_page": "The pictures told the story of a boy who grew up to be a pilot.\n\nMagozwe would daydream of being a pilot. Sometimes, he imagined that he was the boy in the story.",
+      "span": [
+       201.99,
+       209.29
+      ],
+      "whisper": [
+       201.78,
+       208.24
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "图画书讲的是一个男孩长大成为飞行员的故事。",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 20,
+      "dur": 7.3,
+      "speech_ratio": 0.735,
+      "lead_sil": 0.3,
+      "trail_sil": 0.33,
+      "max_gap": 0.39,
+      "clip_frac": 0.0,
+      "peak_db": -1.12,
+      "lufs": -19.75,
+      "p95_db": -14.38,
+      "edge_start_db": -105.62,
+      "edge_end_db": -105.62
+     },
+     {
+      "page": 7,
+      "k": 1,
+      "zh": "玛格威有时候会梦想自己成为一个飞行员。",
+      "en_page": "The pictures told the story of a boy who grew up to be a pilot.\n\nMagozwe would daydream of being a pilot. Sometimes, he imagined that he was the boy in the story.",
+      "span": [
+       210.03,
+       217.03
+      ],
+      "whisper": [
+       209.84,
+       215.88
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.056,
+      "hyp": "马格威有时候会梦想自己成为一个飞行员。",
+      "cer": 0.056,
+      "per": 0.0,
+      "n_chars": 18,
+      "dur": 7.0,
+      "speech_ratio": 0.712,
+      "lead_sil": 0.22,
+      "trail_sil": 0.56,
+      "max_gap": 0.41,
+      "clip_frac": 0.0,
+      "peak_db": -1.09,
+      "lufs": -20.35,
+      "p95_db": -15.07,
+      "edge_start_db": -104.93,
+      "edge_end_db": -104.93
+     },
+     {
+      "page": 7,
+      "k": 2,
+      "zh": "有时候，他想象着自己就是故事中的男孩。",
+      "en_page": "The pictures told the story of a boy who grew up to be a pilot.\n\nMagozwe would daydream of being a pilot. Sometimes, he imagined that he was the boy in the story.",
+      "span": [
+       217.25,
+       223.67
+      ],
+      "whisper": [
+       217.0,
+       222.58
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "有时候,他想象着自己就是故事中的男孩。",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 17,
+      "dur": 6.42,
+      "speech_ratio": 0.733,
+      "lead_sil": 0.2,
+      "trail_sil": 0.3,
+      "max_gap": 0.27,
+      "clip_frac": 0.0,
+      "peak_db": -1.96,
+      "lufs": -20.72,
+      "p95_db": -14.91,
+      "edge_start_db": -105.09,
+      "edge_end_db": -105.09
+     },
+     {
+      "page": 8,
+      "k": 0,
+      "zh": "有一天，天气很冷，玛格威站在街头乞讨。",
+      "en_page": "It was cold and Magozwe was standing on the road begging. A man walked up to him. “Hello, I’m Thomas. I work near here, at a place where you can get something to eat,” said the man.\n\nHe pointed to a yellow house with a blue roof. “I hope you will go there to get some food?” he asked.\n\nMagozwe looked at the man, and then at the house. “Maybe,” he said, and walked away.",
+      "span": [
+       225.39,
+       233.95
+      ],
+      "whisper": [
+       225.22,
+       232.8
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.062,
+      "hyp": "有一天,天气很冷,马格威站在街头乞讨。",
+      "cer": 0.062,
+      "per": 0.0,
+      "n_chars": 16,
+      "dur": 8.56,
+      "speech_ratio": 0.688,
+      "lead_sil": 0.21,
+      "trail_sil": 0.31,
+      "max_gap": 0.72,
+      "clip_frac": 0.0,
+      "peak_db": -2.46,
+      "lufs": -20.97,
+      "p95_db": -15.75,
+      "edge_start_db": -104.25,
+      "edge_end_db": -104.25
+     },
+     {
+      "page": 8,
+      "k": 1,
+      "zh": "一个男人走过来，跟他打招呼：“你好，我叫托马斯。",
+      "en_page": "It was cold and Magozwe was standing on the road begging. A man walked up to him. “Hello, I’m Thomas. I work near here, at a place where you can get something to eat,” said the man.\n\nHe pointed to a yellow house with a blue roof. “I hope you will go there to get some food?” he asked.\n\nMagozwe looked at the man, and then at the house. “Maybe,” he said, and walked away.",
+      "span": [
+       234.39,
+       242.02
+      ],
+      "whisper": [
+       234.2,
+       241.22
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "一个男人走过来,跟他打招呼。你好,我叫托马斯。",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 19,
+      "dur": 7.63,
+      "speech_ratio": 0.623,
+      "lead_sil": 0.26,
+      "trail_sil": 0.53,
+      "max_gap": 0.65,
+      "clip_frac": 0.0,
+      "peak_db": -4.42,
+      "lufs": -21.34,
+      "p95_db": -16.09,
+      "edge_start_db": -103.91,
+      "edge_end_db": -103.91
+     },
+     {
+      "page": 8,
+      "k": 2,
+      "zh": "我在这儿附近工作，你可以到那儿拿点吃的。”",
+      "en_page": "It was cold and Magozwe was standing on the road begging. A man walked up to him. “Hello, I’m Thomas. I work near here, at a place where you can get something to eat,” said the man.\n\nHe pointed to a yellow house with a blue roof. “I hope you will go there to get some food?” he asked.\n\nMagozwe looked at the man, and then at the house. “Maybe,” he said, and walked away.",
+      "span": [
+       242.21,
+       249.34
+      ],
+      "whisper": [
+       242.04,
+       248.28
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "我在这儿附近工作,你可以到那儿拿点吃的。",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 18,
+      "dur": 7.13,
+      "speech_ratio": 0.597,
+      "lead_sil": 0.27,
+      "trail_sil": 0.5,
+      "max_gap": 0.62,
+      "clip_frac": 0.0,
+      "peak_db": -0.72,
+      "lufs": -18.94,
+      "p95_db": -13.1,
+      "edge_start_db": -106.9,
+      "edge_end_db": -106.9
+     },
+     {
+      "page": 8,
+      "k": 3,
+      "zh": "他指着一座蓝顶黄墙的房子，“我希望你别客气，到那儿去拿点吃的吧！”",
+      "en_page": "It was cold and Magozwe was standing on the road begging. A man walked up to him. “Hello, I’m Thomas. I work near here, at a place where you can get something to eat,” said the man.\n\nHe pointed to a yellow house with a blue roof. “I hope you will go there to get some food?” he asked.\n\nMagozwe looked at the man, and then at the house. “Maybe,” he said, and walked away.",
+      "span": [
+       249.92,
+       261.44
+      ],
+      "whisper": [
+       249.66,
+       260.36
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.036,
+      "hyp": "他指着一座蓝顶黄墙的房子。我希望你别客气,到那儿去拿点吃的吧。",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 28,
+      "dur": 11.52,
+      "speech_ratio": 0.614,
+      "lead_sil": 0.36,
+      "trail_sil": 0.3,
+      "max_gap": 1.16,
+      "clip_frac": 0.0,
+      "peak_db": -1.9,
+      "lufs": -19.68,
+      "p95_db": -14.02,
+      "edge_start_db": -105.98,
+      "edge_end_db": -105.98
+     },
+     {
+      "page": 8,
+      "k": 4,
+      "zh": "玛格威看了看男人，又看了看房子，说：“可能吧！”",
+      "en_page": "It was cold and Magozwe was standing on the road begging. A man walked up to him. “Hello, I’m Thomas. I work near here, at a place where you can get something to eat,” said the man.\n\nHe pointed to a yellow house with a blue roof. “I hope you will go there to get some food?” he asked.\n\nMagozwe looked at the man, and then at the house. “Maybe,” he said, and walked away.",
+      "span": [
+       262.64,
+       270.44
+      ],
+      "whisper": [
+       262.46,
+       270.08
+      ],
+      "snapped": [
+       true,
+       false
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.056,
+      "hyp": "马格威看了看男人,又看了看房子,说,\"可能吧!\"",
+      "cer": 0.056,
+      "per": 0.0,
+      "n_chars": 18,
+      "dur": 7.8,
+      "speech_ratio": 0.728,
+      "lead_sil": 0.23,
+      "trail_sil": 0.03,
+      "max_gap": 0.15,
+      "clip_frac": 0.0,
+      "peak_db": -4.17,
+      "lufs": -22.27,
+      "p95_db": -16.8,
+      "edge_start_db": -103.2,
+      "edge_end_db": -32.95
+     },
+     {
+      "page": 8,
+      "k": 5,
+      "zh": "然后他就走开了。",
+      "en_page": "It was cold and Magozwe was standing on the road begging. A man walked up to him. “Hello, I’m Thomas. I work near here, at a place where you can get something to eat,” said the man.\n\nHe pointed to a yellow house with a blue roof. “I hope you will go there to get some food?” he asked.\n\nMagozwe looked at the man, and then at the house. “Maybe,” he said, and walked away.",
+      "span": [
+       270.44,
+       274.46
+      ],
+      "whisper": [
+       270.8,
+       273.44
+      ],
+      "snapped": [
+       false,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.143,
+      "hyp": "然后,他就走开了。",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 7,
+      "dur": 4.02,
+      "speech_ratio": 0.599,
+      "lead_sil": 0.0,
+      "trail_sil": 0.42,
+      "max_gap": 0.13,
+      "clip_frac": 0.0,
+      "peak_db": -4.83,
+      "lufs": -21.61,
+      "p95_db": -15.75,
+      "edge_start_db": -26.7,
+      "edge_end_db": -104.25
+     },
+     {
+      "page": 9,
+      "k": 0,
+      "zh": "接下来的几个月，流浪的男孩们渐渐认识了托马斯。",
+      "en_page": "Over the months that followed, the homeless boys got used to seeing Thomas around. He liked to talk to people, especially people living on the streets.\n\nThomas listened to the stories of people’s lives. He was serious and patient, never rude or disrespectful. Some of the boys started going to the yellow and blue house to get food at midday.",
+      "span": [
+       275.54,
+       282.83
+      ],
+      "whisper": [
+       275.42,
+       281.9
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "接下来的几个月,流浪的男孩们渐渐认识了托马斯。",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 21,
+      "dur": 7.29,
+      "speech_ratio": 0.723,
+      "lead_sil": 0.36,
+      "trail_sil": 0.33,
+      "max_gap": 0.28,
+      "clip_frac": 0.0,
+      "peak_db": -2.09,
+      "lufs": -18.93,
+      "p95_db": -14.27,
+      "edge_start_db": -105.73,
+      "edge_end_db": -105.73
+     },
+     {
+      "page": 9,
+      "k": 1,
+      "zh": "他喜欢跟人聊天，特别是无家可归的人。",
+      "en_page": "Over the months that followed, the homeless boys got used to seeing Thomas around. He liked to talk to people, especially people living on the streets.\n\nThomas listened to the stories of people’s lives. He was serious and patient, never rude or disrespectful. Some of the boys started going to the yellow and blue house to get food at midday.",
+      "span": [
+       283.48,
+       290.23
+      ],
+      "whisper": [
+       283.16,
+       289.06
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "他喜欢跟人聊天,特别是无家可归的人。",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 16,
+      "dur": 6.75,
+      "speech_ratio": 0.702,
+      "lead_sil": 0.23,
+      "trail_sil": 0.31,
+      "max_gap": 0.37,
+      "clip_frac": 0.0,
+      "peak_db": -3.93,
+      "lufs": -21.35,
+      "p95_db": -15.79,
+      "edge_start_db": -104.21,
+      "edge_end_db": -104.21
+     },
+     {
+      "page": 9,
+      "k": 2,
+      "zh": "托马斯听别人讲他们的故事。",
+      "en_page": "Over the months that followed, the homeless boys got used to seeing Thomas around. He liked to talk to people, especially people living on the streets.\n\nThomas listened to the stories of people’s lives. He was serious and patient, never rude or disrespectful. Some of the boys started going to the yellow and blue house to get food at midday.",
+      "span": [
+       291.59,
+       296.58
+      ],
+      "whisper": [
+       291.38,
+       295.68
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "托马斯听别人讲他们的故事。",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 12,
+      "dur": 4.99,
+      "speech_ratio": 0.629,
+      "lead_sil": 0.22,
+      "trail_sil": 0.54,
+      "max_gap": 0.34,
+      "clip_frac": 0.0,
+      "peak_db": -3.11,
+      "lufs": -19.41,
+      "p95_db": -13.88,
+      "edge_start_db": -106.12,
+      "edge_end_db": -106.12
+     },
+     {
+      "page": 9,
+      "k": 3,
+      "zh": "他不苟言笑，非常耐心、有礼貌，尊重他人。",
+      "en_page": "Over the months that followed, the homeless boys got used to seeing Thomas around. He liked to talk to people, especially people living on the streets.\n\nThomas listened to the stories of people’s lives. He was serious and patient, never rude or disrespectful. Some of the boys started going to the yellow and blue house to get food at midday.",
+      "span": [
+       296.92,
+       305.01
+      ],
+      "whisper": [
+       296.7,
+       303.96
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "他不苟言笑,非常耐心,有礼貌,尊重他人。",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 16,
+      "dur": 8.09,
+      "speech_ratio": 0.66,
+      "lead_sil": 0.22,
+      "trail_sil": 0.54,
+      "max_gap": 0.38,
+      "clip_frac": 0.0,
+      "peak_db": -2.81,
+      "lufs": -21.0,
+      "p95_db": -15.15,
+      "edge_start_db": -104.85,
+      "edge_end_db": -104.85
+     },
+     {
+      "page": 9,
+      "k": 4,
+      "zh": "一些男孩开始在白天去蓝顶黄墙的房子里找吃的。",
+      "en_page": "Over the months that followed, the homeless boys got used to seeing Thomas around. He liked to talk to people, especially people living on the streets.\n\nThomas listened to the stories of people’s lives. He was serious and patient, never rude or disrespectful. Some of the boys started going to the yellow and blue house to get food at midday.",
+      "span": [
+       305.9,
+       314.15
+      ],
+      "whisper": [
+       305.74,
+       313.08
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "一些男孩开始在白天去蓝顶黄墙的房子里找吃的。",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 21,
+      "dur": 8.25,
+      "speech_ratio": 0.742,
+      "lead_sil": 0.27,
+      "trail_sil": 0.43,
+      "max_gap": 0.17,
+      "clip_frac": 0.0,
+      "peak_db": -4.12,
+      "lufs": -21.69,
+      "p95_db": -15.96,
+      "edge_start_db": -104.04,
+      "edge_end_db": -104.04
+     },
+     {
+      "page": 10,
+      "k": 0,
+      "zh": "有一天，玛格威正坐在人行道上看故事书，托马斯来了坐在他旁边。",
+      "en_page": "Magozwe was sitting on the pavement looking at his picture book when Thomas sat down next to him.\n\n“What is the story about?” asked Thomas.\n\n“It’s about a boy who becomes a pilot,” replied Magozwe.\n\n“What’s the boy’s name?” asked Thomas.\n\n“I don’t know, I can’t read,” said Magozwe quietly.",
+      "span": [
+       315.26,
+       326.18
+      ],
+      "whisper": [
+       315.12,
+       325.14
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.037,
+      "hyp": "有一天,马格威正坐在人行道上看故事书。托马斯来了,坐在他旁边。",
+      "cer": 0.037,
+      "per": 0.0,
+      "n_chars": 27,
+      "dur": 10.92,
+      "speech_ratio": 0.679,
+      "lead_sil": 0.36,
+      "trail_sil": 0.4,
+      "max_gap": 0.27,
+      "clip_frac": 0.0,
+      "peak_db": -1.45,
+      "lufs": -20.63,
+      "p95_db": -14.61,
+      "edge_start_db": -105.39,
+      "edge_end_db": -105.39
+     },
+     {
+      "page": 10,
+      "k": 1,
+      "zh": "托马斯问：“这本书讲了什么故事？”",
+      "en_page": "Magozwe was sitting on the pavement looking at his picture book when Thomas sat down next to him.\n\n“What is the story about?” asked Thomas.\n\n“It’s about a boy who becomes a pilot,” replied Magozwe.\n\n“What’s the boy’s name?” asked Thomas.\n\n“I don’t know, I can’t read,” said Magozwe quietly.",
+      "span": [
+       326.52,
+       332.27
+      ],
+      "whisper": [
+       326.4,
+       331.18
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "托马斯问,这本书讲了什么故事?",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 13,
+      "dur": 5.75,
+      "speech_ratio": 0.606,
+      "lead_sil": 0.26,
+      "trail_sil": 0.37,
+      "max_gap": 0.28,
+      "clip_frac": 0.0,
+      "peak_db": -1.28,
+      "lufs": -20.65,
+      "p95_db": -15.35,
+      "edge_start_db": -104.65,
+      "edge_end_db": -104.65
+     },
+     {
+      "page": 10,
+      "k": 2,
+      "zh": "玛格威回答说：“这是关于一个男孩成为飞行员的故事。”",
+      "en_page": "Magozwe was sitting on the pavement looking at his picture book when Thomas sat down next to him.\n\n“What is the story about?” asked Thomas.\n\n“It’s about a boy who becomes a pilot,” replied Magozwe.\n\n“What’s the boy’s name?” asked Thomas.\n\n“I don’t know, I can’t read,” said Magozwe quietly.",
+      "span": [
+       332.66,
+       340.5
+      ],
+      "whisper": [
+       332.44,
+       339.46
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.045,
+      "hyp": "马格威回答说,这是关于一个男孩成为飞行员的故事。",
+      "cer": 0.045,
+      "per": 0.0,
+      "n_chars": 22,
+      "dur": 7.84,
+      "speech_ratio": 0.654,
+      "lead_sil": 0.35,
+      "trail_sil": 0.33,
+      "max_gap": 0.29,
+      "clip_frac": 0.0,
+      "peak_db": -1.73,
+      "lufs": -18.67,
+      "p95_db": -13.67,
+      "edge_start_db": -106.33,
+      "edge_end_db": -106.33
+     },
+     {
+      "page": 10,
+      "k": 3,
+      "zh": "托马斯问：“男孩叫什么名字？”",
+      "en_page": "Magozwe was sitting on the pavement looking at his picture book when Thomas sat down next to him.\n\n“What is the story about?” asked Thomas.\n\n“It’s about a boy who becomes a pilot,” replied Magozwe.\n\n“What’s the boy’s name?” asked Thomas.\n\n“I don’t know, I can’t read,” said Magozwe quietly.",
+      "span": [
+       340.58,
+       345.3
+      ],
+      "whisper": [
+       340.44,
+       344.2
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "托马斯问,男孩叫什么名字?",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 11,
+      "dur": 4.72,
+      "speech_ratio": 0.554,
+      "lead_sil": 0.29,
+      "trail_sil": 0.32,
+      "max_gap": 0.35,
+      "clip_frac": 0.0,
+      "peak_db": -1.83,
+      "lufs": -18.95,
+      "p95_db": -13.78,
+      "edge_start_db": -106.22,
+      "edge_end_db": -106.22
+     },
+     {
+      "page": 10,
+      "k": 4,
+      "zh": "玛格威声音低了下去：“我不知道，我不识字。”",
+      "en_page": "Magozwe was sitting on the pavement looking at his picture book when Thomas sat down next to him.\n\n“What is the story about?” asked Thomas.\n\n“It’s about a boy who becomes a pilot,” replied Magozwe.\n\n“What’s the boy’s name?” asked Thomas.\n\n“I don’t know, I can’t read,” said Magozwe quietly.",
+      "span": [
+       345.62,
+       353.33
+      ],
+      "whisper": [
+       345.42,
+       352.24
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.059,
+      "hyp": "马格威声音低了下去。我不知道,我不识字。",
+      "cer": 0.059,
+      "per": 0.0,
+      "n_chars": 17,
+      "dur": 7.71,
+      "speech_ratio": 0.683,
+      "lead_sil": 0.21,
+      "trail_sil": 0.32,
+      "max_gap": 0.24,
+      "clip_frac": 0.0,
+      "peak_db": -3.16,
+      "lufs": -22.26,
+      "p95_db": -16.79,
+      "edge_start_db": -103.21,
+      "edge_end_db": -103.21
+     },
+     {
+      "page": 11,
+      "k": 0,
+      "zh": "当他们再次见面的时候，玛格威开始跟托马斯讲自己的故事，他的叔叔怎么对他，他怎么逃离了叔叔家。",
+      "en_page": "When they met, Magozwe began to tell his own story to Thomas. It was the story of his uncle and why he ran away.\n\nThomas didn’t talk a lot, and he didn’t tell Magozwe what to do, but he always listened carefully.\n\nSometimes they would talk while they ate at the house with the blue roof.",
+      "span": [
+       354.7,
+       370.24
+      ],
+      "whisper": [
+       354.52,
+       369.08
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.095,
+      "hyp": "当他们再次见面的时候,马格威开始跟托马斯讲自己的故事。他的叔叔怎么对他,他怎么逃离了叔叔家?",
+      "cer": 0.024,
+      "per": 0.0,
+      "n_chars": 42,
+      "dur": 15.54,
+      "speech_ratio": 0.663,
+      "lead_sil": 0.21,
+      "trail_sil": 0.38,
+      "max_gap": 0.74,
+      "clip_frac": 0.0,
+      "peak_db": -1.04,
+      "lufs": -20.04,
+      "p95_db": -14.38,
+      "edge_start_db": -105.62,
+      "edge_end_db": -105.62
+     },
+     {
+      "page": 11,
+      "k": 1,
+      "zh": "托马斯没说什么，也没有告诉玛格威该怎么做，但是他听得很仔细。",
+      "en_page": "When they met, Magozwe began to tell his own story to Thomas. It was the story of his uncle and why he ran away.\n\nThomas didn’t talk a lot, and he didn’t tell Magozwe what to do, but he always listened carefully.\n\nSometimes they would talk while they ate at the house with the blue roof.",
+      "span": [
+       370.38,
+       381.82
+      ],
+      "whisper": [
+       370.1,
+       380.86
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.037,
+      "hyp": "托马斯没说什么,也没有告诉马格威该怎么做,但是他听得很仔细。",
+      "cer": 0.037,
+      "per": 0.0,
+      "n_chars": 27,
+      "dur": 11.44,
+      "speech_ratio": 0.704,
+      "lead_sil": 0.21,
+      "trail_sil": 0.58,
+      "max_gap": 0.31,
+      "clip_frac": 0.0,
+      "peak_db": -1.66,
+      "lufs": -21.07,
+      "p95_db": -16.03,
+      "edge_start_db": -103.97,
+      "edge_end_db": -103.97
+     },
+     {
+      "page": 11,
+      "k": 2,
+      "zh": "有时候他们会一边在蓝顶黄墙的房子里吃东西，一边聊聊天。",
+      "en_page": "When they met, Magozwe began to tell his own story to Thomas. It was the story of his uncle and why he ran away.\n\nThomas didn’t talk a lot, and he didn’t tell Magozwe what to do, but he always listened carefully.\n\nSometimes they would talk while they ate at the house with the blue roof.",
+      "span": [
+       382.07,
+       391.28
+      ],
+      "whisper": [
+       381.92,
+       390.18
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "有时候,他们会一边在蓝顶黄墙的房子里吃东西,一边聊聊天。",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 25,
+      "dur": 9.21,
+      "speech_ratio": 0.75,
+      "lead_sil": 0.25,
+      "trail_sil": 0.39,
+      "max_gap": 0.2,
+      "clip_frac": 0.0,
+      "peak_db": -1.62,
+      "lufs": -20.17,
+      "p95_db": -14.82,
+      "edge_start_db": -105.18,
+      "edge_end_db": -105.18
+     },
+     {
+      "page": 12,
+      "k": 0,
+      "zh": "玛格威十岁生日的时候，托马斯给了他一本新的故事书，这是关于一个乡下男孩成为足球运动员的故事。",
+      "en_page": "Around Magozwe’s tenth birthday, Thomas gave him a new storybook. It was a story about a village boy who grew up to be a famous soccer player.\n\nThomas read that story to Magozwe many times, until one day he said, “I think it’s time you went to school and learned to read. What do you think?” Thomas explained that he knew of a place where children could stay, and go to school.",
+      "span": [
+       393.47,
+       409.89
+      ],
+      "whisper": [
+       393.34,
+       408.8
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.023,
+      "hyp": "马格威十岁生日的时候,托马斯给了他一本新的故事书。这是关于一个乡下男孩成为足球运动员的故事。",
+      "cer": 0.023,
+      "per": 0.0,
+      "n_chars": 43,
+      "dur": 16.42,
+      "speech_ratio": 0.677,
+      "lead_sil": 0.28,
+      "trail_sil": 0.32,
+      "max_gap": 1.18,
+      "clip_frac": 0.0,
+      "peak_db": -0.39,
+      "lufs": -19.01,
+      "p95_db": -13.46,
+      "edge_start_db": -106.54,
+      "edge_end_db": -106.54
+     },
+     {
+      "page": 12,
+      "k": 1,
+      "zh": "托马斯给玛格威讲过这个故事很多次。",
+      "en_page": "Around Magozwe’s tenth birthday, Thomas gave him a new storybook. It was a story about a village boy who grew up to be a famous soccer player.\n\nThomas read that story to Magozwe many times, until one day he said, “I think it’s time you went to school and learned to read. What do you think?” Thomas explained that he knew of a place where children could stay, and go to school.",
+      "span": [
+       410.25,
+       415.26
+      ],
+      "whisper": [
+       409.98,
+       414.66
+      ],
+      "snapped": [
+       true,
+       false
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.062,
+      "hyp": "托马斯给马格威讲过这个故事很多次。",
+      "cer": 0.062,
+      "per": 0.0,
+      "n_chars": 16,
+      "dur": 5.01,
+      "speech_ratio": 0.784,
+      "lead_sil": 0.24,
+      "trail_sil": 0.04,
+      "max_gap": 0.13,
+      "clip_frac": 0.0,
+      "peak_db": -4.38,
+      "lufs": -21.54,
+      "p95_db": -16.3,
+      "edge_start_db": -103.7,
+      "edge_end_db": -30.11
+     },
+     {
+      "page": 12,
+      "k": 2,
+      "zh": "有一天，托马斯说：“我觉得你应该去上学，去识字。",
+      "en_page": "Around Magozwe’s tenth birthday, Thomas gave him a new storybook. It was a story about a village boy who grew up to be a famous soccer player.\n\nThomas read that story to Magozwe many times, until one day he said, “I think it’s time you went to school and learned to read. What do you think?” Thomas explained that he knew of a place where children could stay, and go to school.",
+      "span": [
+       415.26,
+       423.77
+      ],
+      "whisper": [
+       415.86,
+       423.38
+      ],
+      "snapped": [
+       false,
+       false
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "有一天,托马斯说,我觉得你应该去上学,去识字。",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 19,
+      "dur": 8.51,
+      "speech_ratio": 0.619,
+      "lead_sil": 0.0,
+      "trail_sil": 0.12,
+      "max_gap": 0.4,
+      "clip_frac": 0.0,
+      "peak_db": -1.45,
+      "lufs": -19.2,
+      "p95_db": -13.92,
+      "edge_start_db": -26.41,
+      "edge_end_db": -39.2
+     },
+     {
+      "page": 12,
+      "k": 3,
+      "zh": "你觉得呢？”",
+      "en_page": "Around Magozwe’s tenth birthday, Thomas gave him a new storybook. It was a story about a village boy who grew up to be a famous soccer player.\n\nThomas read that story to Magozwe many times, until one day he said, “I think it’s time you went to school and learned to read. What do you think?” Thomas explained that he knew of a place where children could stay, and go to school.",
+      "span": [
+       423.77,
+       426.26
+      ],
+      "whisper": [
+       424.16,
+       425.18
+      ],
+      "snapped": [
+       false,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "你觉得呢?",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 4,
+      "dur": 2.49,
+      "speech_ratio": 0.431,
+      "lead_sil": 0.2,
+      "trail_sil": 0.36,
+      "max_gap": 0.23,
+      "clip_frac": 0.0,
+      "peak_db": -6.04,
+      "lufs": -19.28,
+      "p95_db": -14.31,
+      "edge_start_db": -40.63,
+      "edge_end_db": -105.69
+     },
+     {
+      "page": 12,
+      "k": 4,
+      "zh": "托马斯说他知道一个地方，孩子们可以住在那儿，上学。",
+      "en_page": "Around Magozwe’s tenth birthday, Thomas gave him a new storybook. It was a story about a village boy who grew up to be a famous soccer player.\n\nThomas read that story to Magozwe many times, until one day he said, “I think it’s time you went to school and learned to read. What do you think?” Thomas explained that he knew of a place where children could stay, and go to school.",
+      "span": [
+       427.06,
+       435.16
+      ],
+      "whisper": [
+       426.86,
+       434.0
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "托马斯说他知道一个地方,孩子们可以住在那儿上学。",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 22,
+      "dur": 8.1,
+      "speech_ratio": 0.695,
+      "lead_sil": 0.2,
+      "trail_sil": 0.42,
+      "max_gap": 0.3,
+      "clip_frac": 0.0,
+      "peak_db": -2.17,
+      "lufs": -20.55,
+      "p95_db": -14.91,
+      "edge_start_db": -105.09,
+      "edge_end_db": -105.09
+     },
+     {
+      "page": 13,
+      "k": 0,
+      "zh": "玛格威想了想去新地方生活，上学。",
+      "en_page": "Magozwe thought about this new place, and about going to school. What if his uncle was right and he was too stupid to learn anything?\n\nWhat if they beat him at this new place? He was afraid. “Maybe it is better to stay living on the street,” he thought.",
+      "span": [
+       436.88,
+       442.82
+      ],
+      "whisper": [
+       436.68,
+       442.04
+      ],
+      "snapped": [
+       true,
+       false
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.143,
+      "hyp": "马格威想了想去新的地方生活,上学。",
+      "cer": 0.143,
+      "per": 0.071,
+      "n_chars": 14,
+      "dur": 5.94,
+      "speech_ratio": 0.732,
+      "lead_sil": 0.32,
+      "trail_sil": 0.05,
+      "max_gap": 0.4,
+      "clip_frac": 0.0,
+      "peak_db": -1.02,
+      "lufs": -19.46,
+      "p95_db": -12.48,
+      "edge_start_db": -107.52,
+      "edge_end_db": -42.04
+     },
+     {
+      "page": 13,
+      "k": 1,
+      "zh": "但是，如果他叔叔说得对，他太笨了上不了学怎么办？",
+      "en_page": "Magozwe thought about this new place, and about going to school. What if his uncle was right and he was too stupid to learn anything?\n\nWhat if they beat him at this new place? He was afraid. “Maybe it is better to stay living on the street,” he thought.",
+      "span": [
+       442.82,
+       451.05
+      ],
+      "whisper": [
+       443.6,
+       449.96
+      ],
+      "snapped": [
+       false,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "但是,如果他叔叔说得对,他太笨了,上不了学怎么办?",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 21,
+      "dur": 8.23,
+      "speech_ratio": 0.653,
+      "lead_sil": 0.45,
+      "trail_sil": 0.6,
+      "max_gap": 0.29,
+      "clip_frac": 8.353584447144593e-05,
+      "peak_db": 0.26,
+      "lufs": -18.97,
+      "p95_db": -13.5,
+      "edge_start_db": -32.79,
+      "edge_end_db": -106.5
+     },
+     {
+      "page": 13,
+      "k": 2,
+      "zh": "如果在新的地方，他又要挨打怎么办？",
+      "en_page": "Magozwe thought about this new place, and about going to school. What if his uncle was right and he was too stupid to learn anything?\n\nWhat if they beat him at this new place? He was afraid. “Maybe it is better to stay living on the street,” he thought.",
+      "span": [
+       451.92,
+       457.43
+      ],
+      "whisper": [
+       452.1,
+       456.32
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "如果在新的地方他又要挨打怎么办?",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 15,
+      "dur": 5.51,
+      "speech_ratio": 0.613,
+      "lead_sil": 0.35,
+      "trail_sil": 0.38,
+      "max_gap": 0.53,
+      "clip_frac": 3.402903811252269e-05,
+      "peak_db": 0.27,
+      "lufs": -17.82,
+      "p95_db": -12.05,
+      "edge_start_db": -107.95,
+      "edge_end_db": -107.95
+     },
+     {
+      "page": 13,
+      "k": 3,
+      "zh": "他有点儿害怕，心想：“也许我注定就要睡在马路边。”",
+      "en_page": "Magozwe thought about this new place, and about going to school. What if his uncle was right and he was too stupid to learn anything?\n\nWhat if they beat him at this new place? He was afraid. “Maybe it is better to stay living on the street,” he thought.",
+      "span": [
+       457.63,
+       466.58
+      ],
+      "whisper": [
+       457.36,
+       465.44
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 0.95,
+      "align_cer": 0.05,
+      "hyp": "他有点害怕,心想,也许我注定就要睡在马路边。",
+      "cer": 0.05,
+      "per": 0.05,
+      "n_chars": 20,
+      "dur": 8.95,
+      "speech_ratio": 0.688,
+      "lead_sil": 0.2,
+      "trail_sil": 0.4,
+      "max_gap": 0.26,
+      "clip_frac": 0.0,
+      "peak_db": -3.79,
+      "lufs": -21.9,
+      "p95_db": -16.89,
+      "edge_start_db": -103.11,
+      "edge_end_db": -103.11
+     },
+     {
+      "page": 14,
+      "k": 0,
+      "zh": "他把自己的想法告诉了托马斯。",
+      "en_page": "He shared his fears with Thomas. Over time the man reassured the boy that life could be better at the new place.",
+      "span": [
+       468.3,
+       472.89
+      ],
+      "whisper": [
+       468.08,
+       471.64
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "他把自己的想法告诉了托马斯。",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 13,
+      "dur": 4.59,
+      "speech_ratio": 0.624,
+      "lead_sil": 0.22,
+      "trail_sil": 0.44,
+      "max_gap": 0.38,
+      "clip_frac": 0.0001633986928104575,
+      "peak_db": 0.59,
+      "lufs": -17.98,
+      "p95_db": -12.86,
+      "edge_start_db": -107.14,
+      "edge_end_db": -107.14
+     },
+     {
+      "page": 14,
+      "k": 1,
+      "zh": "托马斯对他循循善诱，终于说服了玛格威，他在新地方一定会过上更好的生活。",
+      "en_page": "He shared his fears with Thomas. Over time the man reassured the boy that life could be better at the new place.",
+      "span": [
+       473.21,
+       486.17
+      ],
+      "whisper": [
+       473.06,
+       484.94
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.062,
+      "hyp": "托马斯对她循循善诱,终于说服了马格威,她在新的地方一定会过上更好的生活。",
+      "cer": 0.125,
+      "per": 0.031,
+      "n_chars": 32,
+      "dur": 12.96,
+      "speech_ratio": 0.713,
+      "lead_sil": 0.22,
+      "trail_sil": 0.32,
+      "max_gap": 0.49,
+      "clip_frac": 0.0,
+      "peak_db": -0.14,
+      "lufs": -20.21,
+      "p95_db": -14.57,
+      "edge_start_db": -105.43,
+      "edge_end_db": -105.43
+     },
+     {
+      "page": 15,
+      "k": 0,
+      "zh": "玛格威搬到了新家，新家的屋顶是绿色的。",
+      "en_page": "And so Magozwe moved into a room in a house with a green roof. He shared the room with two other boys.\n\nAltogether there were ten children living at that house. Along with Auntie Cissy and her husband, three dogs, a cat, and an old goat.",
+      "span": [
+       487.88,
+       495.13
+      ],
+      "whisper": [
+       487.66,
+       494.1
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.059,
+      "hyp": "马格威搬到了新家,新家的屋顶是绿色的。",
+      "cer": 0.059,
+      "per": 0.0,
+      "n_chars": 17,
+      "dur": 7.25,
+      "speech_ratio": 0.674,
+      "lead_sil": 0.21,
+      "trail_sil": 0.53,
+      "max_gap": 0.34,
+      "clip_frac": 0.0,
+      "peak_db": -4.92,
+      "lufs": -20.75,
+      "p95_db": -15.04,
+      "edge_start_db": -104.96,
+      "edge_end_db": -104.96
+     },
+     {
+      "page": 15,
+      "k": 1,
+      "zh": "他和两个男孩住一间房间。",
+      "en_page": "And so Magozwe moved into a room in a house with a green roof. He shared the room with two other boys.\n\nAltogether there were ten children living at that house. Along with Auntie Cissy and her husband, three dogs, a cat, and an old goat.",
+      "span": [
+       495.35,
+       499.785
+      ],
+      "whisper": [
+       495.51,
+       499.18
+      ],
+      "snapped": [
+       true,
+       false
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "他和两个男孩住一间房间。",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 11,
+      "dur": 4.435,
+      "speech_ratio": 0.783,
+      "lead_sil": 0.29,
+      "trail_sil": 0.05,
+      "max_gap": 0.21,
+      "clip_frac": 0.0,
+      "peak_db": -2.58,
+      "lufs": -21.08,
+      "p95_db": -15.96,
+      "edge_start_db": -104.04,
+      "edge_end_db": -37.29
+     },
+     {
+      "page": 15,
+      "k": 2,
+      "zh": "屋子里还住着其他十个孩子。",
+      "en_page": "And so Magozwe moved into a room in a house with a green roof. He shared the room with two other boys.\n\nAltogether there were ten children living at that house. Along with Auntie Cissy and her husband, three dogs, a cat, and an old goat.",
+      "span": [
+       499.785,
+       504.78
+      ],
+      "whisper": [
+       500.39,
+       503.54
+      ],
+      "snapped": [
+       false,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "屋子里还住着其他十个孩子。",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 12,
+      "dur": 4.995,
+      "speech_ratio": 0.769,
+      "lead_sil": 0.01,
+      "trail_sil": 0.33,
+      "max_gap": 0.17,
+      "clip_frac": 0.0,
+      "peak_db": -5.96,
+      "lufs": -24.25,
+      "p95_db": -19.12,
+      "edge_start_db": -32.56,
+      "edge_end_db": -100.88
+     },
+     {
+      "page": 15,
+      "k": 3,
+      "zh": "和他们住在一起的是茜茜阿姨和她的丈夫，还有三只狗，一只猫，一头老山羊。",
+      "en_page": "And so Magozwe moved into a room in a house with a green roof. He shared the room with two other boys.\n\nAltogether there were ten children living at that house. Along with Auntie Cissy and her husband, three dogs, a cat, and an old goat.",
+      "span": [
+       505.32,
+       518.66
+      ],
+      "whisper": [
+       505.37,
+       517.6
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.065,
+      "hyp": "和他们住在一起的是希西阿姨和她的丈夫。还有三只狗,一只猫,一头老山羊。",
+      "cer": 0.065,
+      "per": 0.065,
+      "n_chars": 31,
+      "dur": 13.34,
+      "speech_ratio": 0.69,
+      "lead_sil": 0.2,
+      "trail_sil": 0.64,
+      "max_gap": 0.69,
+      "clip_frac": 0.0,
+      "peak_db": -2.2,
+      "lufs": -20.64,
+      "p95_db": -14.62,
+      "edge_start_db": -105.38,
+      "edge_end_db": -105.38
+     },
+     {
+      "page": 16,
+      "k": 0,
+      "zh": "玛格威开始读书，他遇到了不少困难，很难赶上他的同学们，有时候他差点就要放弃了。",
+      "en_page": "Magozwe started school and it was difficult. He had a lot to catch up. Sometimes he wanted to give up.\n\nBut he thought about the pilot and the soccer player in the storybooks. Like them, he did not give up.",
+      "span": [
+       520.29,
+       534.77
+      ],
+      "whisper": [
+       520.04,
+       533.72
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.029,
+      "hyp": "马格威开始读书,他遇到了不少困难,很难赶上他的同学们。有时候,他差点就要放弃了。",
+      "cer": 0.029,
+      "per": 0.0,
+      "n_chars": 35,
+      "dur": 14.48,
+      "speech_ratio": 0.625,
+      "lead_sil": 0.38,
+      "trail_sil": 0.74,
+      "max_gap": 1.0,
+      "clip_frac": 0.0,
+      "peak_db": -0.25,
+      "lufs": -18.81,
+      "p95_db": -13.38,
+      "edge_start_db": -106.62,
+      "edge_end_db": -106.62
+     },
+     {
+      "page": 16,
+      "k": 1,
+      "zh": "但他每次想起故事书里的飞行员和足球运动员，他都坚持了下来，就像他们一样。",
+      "en_page": "Magozwe started school and it was difficult. He had a lot to catch up. Sometimes he wanted to give up.\n\nBut he thought about the pilot and the soccer player in the storybooks. Like them, he did not give up.",
+      "span": [
+       535.47,
+       547.1
+      ],
+      "whisper": [
+       535.34,
+       546.06
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "但他每次想起故事书里的飞行员和足球运动员他都坚持了下来就像他们一样",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 33,
+      "dur": 11.63,
+      "speech_ratio": 0.697,
+      "lead_sil": 0.39,
+      "trail_sil": 0.34,
+      "max_gap": 0.39,
+      "clip_frac": 0.0,
+      "peak_db": -3.28,
+      "lufs": -20.02,
+      "p95_db": -14.13,
+      "edge_start_db": -105.87,
+      "edge_end_db": -105.87
+     },
+     {
+      "page": 17,
+      "k": 0,
+      "zh": "有一天，玛格威正在屋子后院里看书，托马斯来了，坐在他旁边：“这本书讲了什么故事？”",
+      "en_page": "Magozwe was sitting in the yard at the house with the green roof, reading a storybook from school. Thomas came up and sat next to him.\n\n“What is the story about?” asked Thomas.\n\n“It’s about a boy who becomes a teacher,” replied Magozwe.\n\n“What’s the boy’s name?” asked Thomas.\n\n“His name is Magozwe,” said Magozwe with a smile.",
+      "span": [
+       548.14,
+       563.12
+      ],
+      "whisper": [
+       548.12,
+       562.04
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.029,
+      "hyp": "有一天,马格威正在屋子后院里看书,托马斯来了,坐在他旁边。这本书讲了什么故事?",
+      "cer": 0.029,
+      "per": 0.0,
+      "n_chars": 34,
+      "dur": 14.98,
+      "speech_ratio": 0.619,
+      "lead_sil": 0.22,
+      "trail_sil": 0.94,
+      "max_gap": 1.53,
+      "clip_frac": 0.0,
+      "peak_db": -1.63,
+      "lufs": -20.7,
+      "p95_db": -15.25,
+      "edge_start_db": -104.75,
+      "edge_end_db": -104.75
+     },
+     {
+      "page": 17,
+      "k": 1,
+      "zh": "玛格威回答说：“这是关于一个男孩变成老师的故事。”",
+      "en_page": "Magozwe was sitting in the yard at the house with the green roof, reading a storybook from school. Thomas came up and sat next to him.\n\n“What is the story about?” asked Thomas.\n\n“It’s about a boy who becomes a teacher,” replied Magozwe.\n\n“What’s the boy’s name?” asked Thomas.\n\n“His name is Magozwe,” said Magozwe with a smile.",
+      "span": [
+       563.27,
+       571.3
+      ],
+      "whisper": [
+       563.18,
+       570.38
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.048,
+      "hyp": "马格威回答说,这是关于一个男孩变成老师的故事。",
+      "cer": 0.048,
+      "per": 0.0,
+      "n_chars": 21,
+      "dur": 8.03,
+      "speech_ratio": 0.658,
+      "lead_sil": 0.26,
+      "trail_sil": 0.32,
+      "max_gap": 0.47,
+      "clip_frac": 0.0,
+      "peak_db": -1.68,
+      "lufs": -18.75,
+      "p95_db": -12.98,
+      "edge_start_db": -107.02,
+      "edge_end_db": -107.02
+     },
+     {
+      "page": 17,
+      "k": 2,
+      "zh": "托马斯问：“那个男孩叫什么名字？”",
+      "en_page": "Magozwe was sitting in the yard at the house with the green roof, reading a storybook from school. Thomas came up and sat next to him.\n\n“What is the story about?” asked Thomas.\n\n“It’s about a boy who becomes a teacher,” replied Magozwe.\n\n“What’s the boy’s name?” asked Thomas.\n\n“His name is Magozwe,” said Magozwe with a smile.",
+      "span": [
+       571.83,
+       576.22
+      ],
+      "whisper": [
+       571.72,
+       575.82
+      ],
+      "snapped": [
+       true,
+       false
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "托马斯问,那个男孩叫什么名字?",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 13,
+      "dur": 4.39,
+      "speech_ratio": 0.719,
+      "lead_sil": 0.2,
+      "trail_sil": 0.03,
+      "max_gap": 0.42,
+      "clip_frac": 0.0,
+      "peak_db": -3.79,
+      "lufs": -20.12,
+      "p95_db": -14.58,
+      "edge_start_db": -105.42,
+      "edge_end_db": -41.54
+     },
+     {
+      "page": 17,
+      "k": 3,
+      "zh": "玛格威咧嘴一笑：“他叫玛格威。”",
+      "en_page": "Magozwe was sitting in the yard at the house with the green roof, reading a storybook from school. Thomas came up and sat next to him.\n\n“What is the story about?” asked Thomas.\n\n“It’s about a boy who becomes a teacher,” replied Magozwe.\n\n“What’s the boy’s name?” asked Thomas.\n\n“His name is Magozwe,” said Magozwe with a smile.",
+      "span": [
+       576.22,
+       582.866
+      ],
+      "whisper": [
+       576.62,
+       581.64
+      ],
+      "snapped": [
+       false,
+       false
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.167,
+      "hyp": "马格威咧嘴一笑。他叫马格威。",
+      "cer": 0.167,
+      "per": 0.0,
+      "n_chars": 12,
+      "dur": 6.646,
+      "speech_ratio": 0.661,
+      "lead_sil": 0.0,
+      "trail_sil": 0.02,
+      "max_gap": 0.2,
+      "clip_frac": 0.0,
+      "peak_db": -4.99,
+      "lufs": -23.3,
+      "p95_db": -17.69,
+      "edge_start_db": -28.13,
+      "edge_end_db": -40.19
+     }
+    ]
+   }
+  },
+  {
+   "source": "storybooks",
+   "kind": "story",
+   "path": "C:\\Users\\tritn\\Documents\\projects\\lang-learner\\sandbox\\spikes\\media-ingest\\data\\storybooks\\0337\\full.mp3",
+   "pages_dir": "C:\\Users\\tritn\\Documents\\projects\\lang-learner\\sandbox\\spikes\\media-ingest\\data\\storybooks\\0337\\pages",
+   "media_id": "media:zh-gs-0337",
+   "title": "蜡做的孩子",
+   "context": "storybook",
+   "level": 2,
+   "speaker": {
+    "id": "speaker:zh-gs-zhuo-sun",
+    "label": "Zhuo Sun"
+   },
+   "rights": {
+    "license": "cc-by-3.0",
+    "author": "Written by: Southern African Folktale; Illustrated by: Wiehan de Jager; Translated by: Vicky Liu; Read by: Zhuo Sun",
+    "sourceUrl": "https://global-asp.github.io/storybooks-minnesota/stories/zh/0337/",
+    "audioUrl": "https://globalstorybooks.net/media/audio/zh/0337/"
+   },
+   "m": {
+    "dur": 103.531,
+    "full_hyp": "蜡做的孩子很久很久以前,有一家人快乐地生活在一起。孩子们从来不打架,还帮助爸爸妈妈做家务,干农活。但是,他们不能靠近火焰,没办法,他们只能在晚上工作因为他们都是用蜡做的但是其中一个男孩非常想出门他想走到太阳底下看看有一天这种渴望太强烈了虽然他的兄弟们警告过他但是太晚了它在太阳底下融化了其他蜡做的孩子看到他们的兄弟融化消失了非常伤心但是他们想出了一个好主意他们把融化的蜡块捏成了一只鸟他们把变成鸟的兄弟带到了一座高山上。太阳升起来了,他迎着晨光,唱着歌,飞走了。",
+    "n_words": 183,
+    "truth": {
+     "1": {
+      "start": 0.0,
+      "end": 4.177,
+      "corr": 1.0,
+      "speech": [
+       1.64,
+       4.03
+      ]
+     },
+     "2": {
+      "start": 4.177,
+      "end": 12.131,
+      "corr": 0.82,
+      "speech": [
+       4.787,
+       11.997
+      ]
+     },
+     "3": {
+      "start": 12.131,
+      "end": 22.03,
+      "corr": 0.919,
+      "speech": [
+       12.651,
+       21.781
+      ]
+     },
+     "4": {
+      "start": 22.03,
+      "end": 27.17,
+      "corr": 0.998,
+      "speech": [
+       22.62,
+       27.18
+      ]
+     },
+     "5": {
+      "start": 27.17,
+      "end": 37.584,
+      "corr": 0.875,
+      "speech": [
+       27.17,
+       37.02
+      ]
+     },
+     "6": {
+      "start": 37.584,
+      "end": 47.961,
+      "corr": 0.989,
+      "speech": [
+       38.554,
+       47.514
+      ]
+     },
+     "7": {
+      "start": 47.961,
+      "end": 59.481,
+      "corr": 0.913,
+      "speech": [
+       49.111,
+       58.841
+      ]
+     },
+     "8": {
+      "start": 59.481,
+      "end": 67.311,
+      "corr": 0.987,
+      "speech": [
+       60.451,
+       67.001
+      ]
+     },
+     "9": {
+      "start": 67.311,
+      "end": 76.552,
+      "corr": 0.985,
+      "speech": [
+       68.031,
+       76.371
+      ]
+     },
+     "10": {
+      "start": 76.552,
+      "end": 87.662,
+      "corr": 0.824,
+      "speech": [
+       77.152,
+       87.362
+      ]
+     },
+     "11": {
+      "start": 87.662,
+      "end": 94.681,
+      "corr": 0.99,
+      "speech": [
+       88.042,
+       94.352
+      ]
+     },
+     "12": {
+      "start": 94.681,
+      "end": 103.531,
+      "corr": 0.805,
+      "speech": [
+       95.211,
+       103.531
+      ]
+     }
+    },
+    "regions": 40,
+    "clips": [
+     {
+      "page": 1,
+      "k": 0,
+      "zh": "蜡做的孩子",
+      "en_page": "Children of wax",
+      "span": [
+       1.39,
+       4.31
+      ],
+      "whisper": [
+       1.28,
+       2.96
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "蜡做的孩子",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 5,
+      "dur": 2.92,
+      "speech_ratio": 0.54,
+      "lead_sil": 0.42,
+      "trail_sil": 0.36,
+      "max_gap": 0.18,
+      "clip_frac": 0.0,
+      "peak_db": -1.4,
+      "lufs": -18.58,
+      "p95_db": -12.63,
+      "edge_start_db": -107.37,
+      "edge_end_db": -107.37
+     },
+     {
+      "page": 2,
+      "k": 0,
+      "zh": "很久很久以前，有一家人快乐地生活在一起。",
+      "en_page": "Once upon a time,\nthere lived a happy\nfamily.",
+      "span": [
+       4.59,
+       12.28
+      ],
+      "whisper": [
+       4.36,
+       11.24
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "很久很久以前,有一家人快乐地生活在一起。",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 18,
+      "dur": 7.69,
+      "speech_ratio": 0.745,
+      "lead_sil": 0.23,
+      "trail_sil": 0.33,
+      "max_gap": 0.34,
+      "clip_frac": 0.0,
+      "peak_db": -1.31,
+      "lufs": -17.84,
+      "p95_db": -12.11,
+      "edge_start_db": -107.89,
+      "edge_end_db": -107.89
+     },
+     {
+      "page": 3,
+      "k": 0,
+      "zh": "孩子们从来不打架，还帮助爸爸妈妈做家务，干农活。",
+      "en_page": "They never fought with\neach other. They helped\ntheir parents at home\nand in the fields.",
+      "span": [
+       12.46,
+       22.06
+      ],
+      "whisper": [
+       12.62,
+       20.9
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "孩子们从来不打架,还帮助爸爸妈妈做家务干农活。",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 21,
+      "dur": 9.6,
+      "speech_ratio": 0.643,
+      "lead_sil": 0.24,
+      "trail_sil": 0.49,
+      "max_gap": 0.56,
+      "clip_frac": 1.3020833333333334e-05,
+      "peak_db": 0.17,
+      "lufs": -17.21,
+      "p95_db": -11.95,
+      "edge_start_db": -108.05,
+      "edge_end_db": -108.05
+     },
+     {
+      "page": 4,
+      "k": 0,
+      "zh": "但是他们不能靠近火焰。",
+      "en_page": "But they were not\nallowed to go near a\nfire.",
+      "span": [
+       22.43,
+       26.86
+      ],
+      "whisper": [
+       22.74,
+       26.34
+      ],
+      "snapped": [
+       true,
+       false
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "但是,他们不能靠近火焰。",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 10,
+      "dur": 4.43,
+      "speech_ratio": 0.738,
+      "lead_sil": 0.26,
+      "trail_sil": 0.01,
+      "max_gap": 0.16,
+      "clip_frac": 0.0001693002257336343,
+      "peak_db": 0.62,
+      "lufs": -17.88,
+      "p95_db": -12.43,
+      "edge_start_db": -107.57,
+      "edge_end_db": -31.25
+     },
+     {
+      "page": 5,
+      "k": 0,
+      "zh": "没办法，他们只能在晚上工作，因为他们都是用蜡做的！",
+      "en_page": "They had to do all their\nwork during the night.\n\nBecause they were made of wax!",
+      "span": [
+       26.86,
+       37.3
+      ],
+      "whisper": [
+       27.38,
+       36.26
+      ],
+      "snapped": [
+       false,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "没办法,他们只能在晚上工作,因为他们都是用蜡做的。",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 22,
+      "dur": 10.44,
+      "speech_ratio": 0.649,
+      "lead_sil": 0.04,
+      "trail_sil": 0.43,
+      "max_gap": 0.53,
+      "clip_frac": 5.9865900383141764e-06,
+      "peak_db": -0.0,
+      "lufs": -18.22,
+      "p95_db": -13.59,
+      "edge_start_db": -35.95,
+      "edge_end_db": -106.41
+     },
+     {
+      "page": 6,
+      "k": 0,
+      "zh": "但是其中一个男孩非常想出门，他想走到太阳底下看看。",
+      "en_page": "But one of the boys\nlonged to go out in the\nsunlight.",
+      "span": [
+       38.37,
+       47.79
+      ],
+      "whisper": [
+       38.4,
+       46.56
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "但是,其中一个男孩非常想出门。他想走到太阳底下看看。",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 23,
+      "dur": 9.42,
+      "speech_ratio": 0.705,
+      "lead_sil": 0.31,
+      "trail_sil": 0.31,
+      "max_gap": 0.86,
+      "clip_frac": 0.0,
+      "peak_db": -1.32,
+      "lufs": -18.12,
+      "p95_db": -13.0,
+      "edge_start_db": -107.0,
+      "edge_end_db": -107.0
+     },
+     {
+      "page": 7,
+      "k": 0,
+      "zh": "有一天，这种渴望太强烈了。",
+      "en_page": "One day the longing\nwas too strong. His\nbrothers warned him…",
+      "span": [
+       48.92,
+       53.61
+      ],
+      "whisper": [
+       48.72,
+       53.16
+      ],
+      "snapped": [
+       true,
+       false
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "有一天,这种渴望太强烈了!",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 11,
+      "dur": 4.69,
+      "speech_ratio": 0.718,
+      "lead_sil": 0.23,
+      "trail_sil": 0.04,
+      "max_gap": 0.19,
+      "clip_frac": 2.6652096853719965e-05,
+      "peak_db": -0.01,
+      "lufs": -17.77,
+      "p95_db": -12.58,
+      "edge_start_db": -107.42,
+      "edge_end_db": -37.09
+     },
+     {
+      "page": 7,
+      "k": 1,
+      "zh": "虽然他的兄弟们警告过他……",
+      "en_page": "One day the longing\nwas too strong. His\nbrothers warned him…",
+      "span": [
+       53.61,
+       59.12
+      ],
+      "whisper": [
+       54.06,
+       57.98
+      ],
+      "snapped": [
+       false,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "虽然他的兄弟们警告过他。",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 11,
+      "dur": 5.51,
+      "speech_ratio": 0.598,
+      "lead_sil": 0.0,
+      "trail_sil": 0.45,
+      "max_gap": 0.25,
+      "clip_frac": 0.0,
+      "peak_db": -0.88,
+      "lufs": -17.82,
+      "p95_db": -12.15,
+      "edge_start_db": -28.43,
+      "edge_end_db": -107.85
+     },
+     {
+      "page": 8,
+      "k": 0,
+      "zh": "但是太晚了！",
+      "en_page": "But it was too late!\nHe melted in the hot\nsun.",
+      "span": [
+       60.26,
+       62.42
+      ],
+      "whisper": [
+       60.38,
+       62.42
+      ],
+      "snapped": [
+       true,
+       false
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "但是,太晚了。",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 5,
+      "dur": 2.16,
+      "speech_ratio": 0.744,
+      "lead_sil": 0.23,
+      "trail_sil": 0.0,
+      "max_gap": 0.11,
+      "clip_frac": 0.0,
+      "peak_db": -1.38,
+      "lufs": -17.2,
+      "p95_db": -11.65,
+      "edge_start_db": -108.35,
+      "edge_end_db": -1.89
+     },
+     {
+      "page": 8,
+      "k": 1,
+      "zh": "他在太阳底下融化了。",
+      "en_page": "But it was too late!\nHe melted in the hot\nsun.",
+      "span": [
+       62.42,
+       67.28
+      ],
+      "whisper": [
+       62.42,
+       66.22
+      ],
+      "snapped": [
+       false,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.111,
+      "hyp": "它在太阳底下融化了。",
+      "cer": 0.111,
+      "per": 0.0,
+      "n_chars": 9,
+      "dur": 4.86,
+      "speech_ratio": 0.604,
+      "lead_sil": 0.0,
+      "trail_sil": 0.34,
+      "max_gap": 0.33,
+      "clip_frac": 5.1440329218106995e-05,
+      "peak_db": 0.28,
+      "lufs": -17.3,
+      "p95_db": -12.5,
+      "edge_start_db": -1.03,
+      "edge_end_db": -107.5
+     },
+     {
+      "page": 9,
+      "k": 0,
+      "zh": "其他蜡做的孩子看到他们的兄弟融化消失了，非常伤心。",
+      "en_page": "The wax children were\nso sad to see their\nbrother melting away.",
+      "span": [
+       67.83,
+       76.65
+      ],
+      "whisper": [
+       67.72,
+       75.52
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "其他蜡做的孩子看到他们的兄弟荣化消失了,非常伤心。",
+      "cer": 0.043,
+      "per": 0.0,
+      "n_chars": 23,
+      "dur": 8.82,
+      "speech_ratio": 0.689,
+      "lead_sil": 0.4,
+      "trail_sil": 0.37,
+      "max_gap": 0.54,
+      "clip_frac": 0.00013463718820861677,
+      "peak_db": 0.3,
+      "lufs": -16.72,
+      "p95_db": -11.04,
+      "edge_start_db": -108.96,
+      "edge_end_db": -108.96
+     },
+     {
+      "page": 10,
+      "k": 0,
+      "zh": "但是他们想出了一个好主意：他们把熔化的蜡块捏成了一只鸟。",
+      "en_page": "But they made a plan.\nThey shaped the lump\nof melted wax into a\nbird.",
+      "span": [
+       76.96,
+       87.64
+      ],
+      "whisper": [
+       77.4,
+       86.52
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.038,
+      "hyp": "但是,他们想出了一个好主意。他们把融化的蜡块捏成了一只鸟。",
+      "cer": 0.038,
+      "per": 0.0,
+      "n_chars": 26,
+      "dur": 10.68,
+      "speech_ratio": 0.675,
+      "lead_sil": 0.26,
+      "trail_sil": 0.62,
+      "max_gap": 0.31,
+      "clip_frac": 0.0,
+      "peak_db": -1.14,
+      "lufs": -18.08,
+      "p95_db": -12.62,
+      "edge_start_db": -107.38,
+      "edge_end_db": -107.38
+     },
+     {
+      "page": 11,
+      "k": 0,
+      "zh": "他们把变成鸟的兄弟带到了一座高山上。",
+      "en_page": "They took their bird\nbrother up to a high\nmountain.",
+      "span": [
+       87.85,
+       94.63
+      ],
+      "whisper": [
+       87.8,
+       93.54
+      ],
+      "snapped": [
+       true,
+       true
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "他们把变成鸟的兄弟带到了一座高山上。",
+      "cer": 0.0,
+      "per": 0.0,
+      "n_chars": 17,
+      "dur": 6.78,
+      "speech_ratio": 0.677,
+      "lead_sil": 0.22,
+      "trail_sil": 0.37,
+      "max_gap": 0.33,
+      "clip_frac": 9.218289085545723e-06,
+      "peak_db": 0.0,
+      "lufs": -17.5,
+      "p95_db": -11.88,
+      "edge_start_db": -108.12,
+      "edge_end_db": -108.12
+     },
+     {
+      "page": 12,
+      "k": 0,
+      "zh": "太阳升起来了，他迎着晨光唱着歌，飞走了。",
+      "en_page": "And as the sun rose, he\nflew away singing into\nthe morning light.",
+      "span": [
+       95.02,
+       103.531
+      ],
+      "whisper": [
+       94.7,
+       102.26
+      ],
+      "snapped": [
+       true,
+       false
+      ],
+      "aligned_frac": 1.0,
+      "align_cer": 0.0,
+      "hyp": "太阳升起来了,它迎着晨光,唱着歌,飞走了。",
+      "cer": 0.059,
+      "per": 0.0,
+      "n_chars": 17,
+      "dur": 8.511,
+      "speech_ratio": 0.611,
+      "lead_sil": 0.26,
+      "trail_sil": 0.48,
+      "max_gap": 0.72,
+      "clip_frac": 0.00011014509780884686,
+      "peak_db": 0.24,
+      "lufs": -17.05,
+      "p95_db": -12.16,
+      "edge_start_db": -107.84,
+      "edge_end_db": -49.82
+     }
+    ]
+   }
+  }
+ ],
+ "throughput": {
+  "per_source": {
+   "storybooks": {
+    "wall_s": 168.88854359975085,
+    "audio_s": 1022.7239999999999,
+    "n": 4
+   }
+  },
+  "full_asr_s": 69.34,
+  "full_audio_s": 1022.72,
+  "rt_asr_s": 79.82,
+  "rt_audio_s": 924.38,
+  "gpu_mem_peak_mib": 5169.0,
+  "gpu_mem_idle_mib": 926.0,
+  "gpu_util_mean": 65.8
+ }
+}

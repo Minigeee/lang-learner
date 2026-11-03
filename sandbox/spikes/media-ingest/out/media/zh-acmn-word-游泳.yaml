@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-游泳
+  title: 游泳
+  context: word-audio
+  durationSec: 1.4
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-游泳.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-游泳.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-游泳
+  span:
+  - 0.21
+  - 1.26
+  file:
+    key: media/98ea00fe64e5208b.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 4393
+    sha256: 98ea00fe64e5208b09458cbe76a6515d0ea08e6693233b84e11d671c8886f961
+    durationSec: 1.05
+    gainDb: -5.19
+  lines:
+  - t:
+    - 0.0
+    - 1.05
+    zh: 游泳
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -14.81
+    peak_db: -1.33
+    speech_ratio: 0.702
+    edge_start_db: -40.41
+    edge_end_db: -44.37
+    forced_logp: -0.01

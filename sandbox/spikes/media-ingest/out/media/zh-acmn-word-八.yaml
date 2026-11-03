@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-八
+  title: 八
+  context: word-audio
+  durationSec: 1.0
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-八.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-八.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-八
+  span:
+  - 0.21
+  - 0.86
+  file:
+    key: media/8a1e1be72ba59962.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2883
+    sha256: 8a1e1be72ba59962674b4539800724dd7ee5bc1ce5597a3f5c58a4dda4d553c2
+    durationSec: 0.65
+    gainDb: -7.44
+  lines:
+  - t:
+    - 0.0
+    - 0.65
+    zh: 八
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 1.0
+    per: 0.0
+    lufs: -12.56
+    peak_db: -1.43
+    speech_ratio: 0.672
+    edge_start_db: -40.18
+    edge_end_db: -40.31
+    forced_logp: -4.71

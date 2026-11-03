@@ -1,0 +1,22 @@
+source,item,count
+tatoeba,cmn sentences (unique text),88540
+tatoeba,cmn sentences learner-fit (S2 rule),51011
+tatoeba,cmn recordings by LeviHighway license=(none),4066
+tatoeba,cmn recordings by fucongcong license=(none),1675
+tatoeba,cmn recordings by GlossaMatik license=CC BY-NC 4.0,69
+tatoeba,cmn recordings by zhoucantd license=CC BY-NC 4.0,15
+cv-repo,zh-CN sentences (unique),51365
+cv-repo,from cn,3182
+cv-repo,from sentence-collector,541
+cv-repo,from wiki,47642
+cv-repo,learner-fit (S2 rule),4151
+cv-repo,learner-fit (S1 rule),1668
+gs,stories,40
+gs,sentences,851
+gs,learner-fit (S2 rule),281
+audio-cmn,HSK word files (unique words),8573
+cv-full,sentences with a validated clip,51172
+cv-full,sentences with only unvalidated clips,6640
+cv-full,learner-fit with a validated clip (S2 rule),3784
+cv-full,learner-fit with a validated clip (S1 rule),1474
+cv-full,distinct voices (validated),5828

@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-出
+  title: 出
+  context: word-audio
+  durationSec: 1.0
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-出.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-出.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-出
+  span:
+  - 0.0
+  - 0.81
+  file:
+    key: media/6121a2aac23ae41c.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3303
+    sha256: 6121a2aac23ae41ca81d8a53426fd6bf7fd577e592514ccddf2109adbfdb345c
+    durationSec: 0.81
+    gainDb: -1.87
+  lines:
+  - t:
+    - 0.0
+    - 0.81
+    zh: 出
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -18.13
+    peak_db: -3.08
+    speech_ratio: 0.575
+    edge_start_db: -30.84
+    edge_end_db: -39.72
+    forced_logp: -0.42

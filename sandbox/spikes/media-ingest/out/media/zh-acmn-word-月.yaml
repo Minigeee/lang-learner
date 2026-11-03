@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-月
+  title: 月
+  context: word-audio
+  durationSec: 0.9
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-月.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-月.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-月
+  span:
+  - 0.13
+  - 0.74
+  file:
+    key: media/445b9c317ea0fa14.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2635
+    sha256: 445b9c317ea0fa142c660c707894d22904683ac44fd3e149b6d8bd8249102212
+    durationSec: 0.61
+    gainDb: -6.4
+  lines:
+  - t:
+    - 0.0
+    - 0.61
+    zh: 月
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -13.6
+    peak_db: -1.62
+    speech_ratio: 0.65
+    edge_start_db: -44.03
+    edge_end_db: -43.53
+    forced_logp: -0.26

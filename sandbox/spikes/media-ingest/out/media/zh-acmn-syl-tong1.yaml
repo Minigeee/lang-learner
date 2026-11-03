@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-tong1
+  title: tong1
+  context: word-audio
+  durationSec: 1.128
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-tong1.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-tong1.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-tong1
+  span:
+  - 0.2
+  - 0.91
+  file:
+    key: media/17feebbf9f05ac52.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2854
+    sha256: 17feebbf9f05ac523e7445adc6790d54dea65208fc65bdc3a2e2aff394687d13
+    durationSec: 0.71
+    gainDb: -9.16
+  lines:
+  - t:
+    - 0.0
+    - 0.71
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: tong1
+  validation:
+    lufs: -10.84
+    peak_db: -1.22
+    speech_ratio: 0.7
+    edge_start_db: -45.22
+    edge_end_db: -43.17
+    forced_logp: -10.79

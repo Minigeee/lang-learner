@@ -1,0 +1,47 @@
+media:
+  id: media:zh-acmn-syl-wo2
+  title: wo2
+  context: word-audio
+  durationSec: 1.032
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-wo2.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-wo2.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-wo2
+  span:
+  - 0.17
+  - 0.77
+  file:
+    key: media/a10679f415400497.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2596
+    sha256: a10679f41540049753f56233642bd6b25f45e47de4e4123a260b725b610ee01d
+    durationSec: 0.6
+    gainDb: -5.7
+  lines:
+  - t:
+    - 0.0
+    - 0.6
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: wo2
+  validation:
+    lufs: -14.3
+    peak_db: -1.4
+    speech_ratio: 0.644
+    edge_start_db: -43.2
+    edge_end_db: -44.01

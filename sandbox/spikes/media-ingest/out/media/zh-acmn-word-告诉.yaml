@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-告诉
+  title: 告诉
+  context: word-audio
+  durationSec: 1.15
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-告诉.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-告诉.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-告诉
+  span:
+  - 0.18
+  - 0.96
+  file:
+    key: media/7d387674239fcc21.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3388
+    sha256: 7d387674239fcc21f912a675247311e82bbf529643e194ba5768222a348dcaf4
+    durationSec: 0.78
+    gainDb: -4.77
+  lines:
+  - t:
+    - 0.0
+    - 0.78
+    zh: 告诉
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -15.23
+    peak_db: -1.55
+    speech_ratio: 0.701
+    edge_start_db: -44.16
+    edge_end_db: -46.49
+    forced_logp: -2.57

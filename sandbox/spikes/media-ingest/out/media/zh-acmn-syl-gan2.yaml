@@ -1,0 +1,47 @@
+media:
+  id: media:zh-acmn-syl-gan2
+  title: gan2
+  context: word-audio
+  durationSec: 1.128
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-gan2.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-gan2.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-gan2
+  span:
+  - 0.04
+  - 0.9
+  file:
+    key: media/d260728d5ff271eb.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3601
+    sha256: d260728d5ff271eb60e7ee8ce8a2eb49c894040d9c63122c83adff62848ba552
+    durationSec: 0.86
+    gainDb: -4.92
+  lines:
+  - t:
+    - 0.0
+    - 0.86
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: gan2
+  validation:
+    lufs: -15.08
+    peak_db: -1.73
+    speech_ratio: 0.565
+    edge_start_db: -36.6
+    edge_end_db: -36.62

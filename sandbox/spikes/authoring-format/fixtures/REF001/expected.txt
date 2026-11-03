@@ -1,0 +1,8 @@
+fixtures/REF001/curriculum.ts:5 REF001 zh:les:fixture-ref001 teaches: "zh:w:咖啡:ka1fei4" does not exist; CC-CEDICT has zh:w:咖啡:ka1fei1
+fixtures/REF001/lessons/fixture-ref001.md:3 REF001 card: "clip:cv-neg-999" does not exist; did you mean clip:cv-neg-001, clip:cv-neg-002, clip:cv-neg-003?
+fixtures/REF001/lessons/fixture-ref001.md:14 REF001 :k: "zh:g:mei-past-negaton" does not exist; did you mean zh:g:mei-past-negation?
+fixtures/REF001/lessons/fixture-ref001.md:14 REF001 :w[行] is ambiguous (zh:w:行:hang2, zh:w:行:heng2, zh:w:行:xing2); pin one with {#…}
+fixtures/REF001/lessons/fixture-ref001.md:14 REF001 :w[咖啡]: "zh:w:咖啡:ka1fei4" does not exist; CC-CEDICT has zh:w:咖啡:ka1fei1
+fixtures/REF001/lessons/fixture-ref001.md:27 REF001 unknown widget "@clip-stage-x"
+fixtures/REF001/lessons/fixture-ref001.md:32 REF001 @tap-when-you-hear: unknown clip slot "story"; declare it under "clips:" in the frontmatter
+fixtures/REF001/lessons/fixture-ref001.md:34 REF002 (warn) @tap-when-you-hear: "zh:g:bu-mei" is retired; write "zh:g:bu-vs-mei"

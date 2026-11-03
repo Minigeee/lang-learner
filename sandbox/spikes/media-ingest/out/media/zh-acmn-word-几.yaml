@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-几
+  title: 几
+  context: word-audio
+  durationSec: 1.2
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-几.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-几.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-几
+  span:
+  - 0.07
+  - 1.2
+  file:
+    key: media/c06c2c494c1f2914.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 4654
+    sha256: c06c2c494c1f29142436f5d9953ea6d30b1b570d60f7e65bfe5148cd95ddabac
+    durationSec: 1.13
+    gainDb: -1.29
+  lines:
+  - t:
+    - 0.0
+    - 1.13
+    zh: 几
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 1.0
+    per: 0.0
+    lufs: -18.71
+    peak_db: -4.93
+    speech_ratio: 0.679
+    edge_start_db: -32.01
+    edge_end_db: -32.24
+    forced_logp: -1.95

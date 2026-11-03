@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-fa3
+  title: fa3
+  context: word-audio
+  durationSec: 1.128
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-fa3.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-fa3.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-fa3
+  span:
+  - 0.23
+  - 0.87
+  file:
+    key: media/2ee85f241904cd3f.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2785
+    sha256: 2ee85f241904cd3f4b796a8c37787b610ae77f1d7d1466434323be059d11b2c1
+    durationSec: 0.64
+    gainDb: -1.28
+  lines:
+  - t:
+    - 0.0
+    - 0.64
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: fa3
+  validation:
+    lufs: -18.72
+    peak_db: -2.05
+    speech_ratio: 0.667
+    edge_start_db: -44.43
+    edge_end_db: -43.29
+    forced_logp: -11.74

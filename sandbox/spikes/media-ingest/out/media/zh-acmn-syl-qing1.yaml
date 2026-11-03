@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-qing1
+  title: qing1
+  context: word-audio
+  durationSec: 1.224
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-qing1.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-qing1.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-qing1
+  span:
+  - 0.25
+  - 0.97
+  file:
+    key: media/3d5163ac31840b86.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2973
+    sha256: 3d5163ac31840b864af8649d6615d5b29ac40e3f1a2894e6d9ae9fec066b0346
+    durationSec: 0.72
+    gainDb: -10.41
+  lines:
+  - t:
+    - 0.0
+    - 0.72
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: qing1
+  validation:
+    lufs: -9.59
+    peak_db: -0.59
+    speech_ratio: 0.704
+    edge_start_db: -41.31
+    edge_end_db: -47.12
+    forced_logp: -2.92

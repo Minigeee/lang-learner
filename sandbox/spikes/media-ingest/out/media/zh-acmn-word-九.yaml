@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-九
+  title: 九
+  context: word-audio
+  durationSec: 1.1
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-九.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-九.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-九
+  span:
+  - 0.15
+  - 0.97
+  file:
+    key: media/ac5988639b983601.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3527
+    sha256: ac5988639b983601540769cab51e30a825a5b4cd23932a9c13bd0dc7a653730b
+    durationSec: 0.82
+    gainDb: -4.45
+  lines:
+  - t:
+    - 0.0
+    - 0.82
+    zh: 九
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -15.55
+    peak_db: -3.38
+    speech_ratio: 0.741
+    edge_start_db: -38.67
+    edge_end_db: -38.5
+    forced_logp: -4.77

@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-多少
+  title: 多少
+  context: word-audio
+  durationSec: 1.1
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-多少.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-多少.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-多少
+  span:
+  - 0.17
+  - 0.93
+  file:
+    key: media/8ed69aaf419c7066.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3293
+    sha256: 8ed69aaf419c7066747fc18b88894072a255b2fd4d14971c3c946981afee51f4
+    durationSec: 0.76
+    gainDb: -3.17
+  lines:
+  - t:
+    - 0.0
+    - 0.76
+    zh: 多少
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -16.83
+    peak_db: -5.15
+    speech_ratio: 0.707
+    edge_start_db: -42.89
+    edge_end_db: -47.16
+    forced_logp: -0.03

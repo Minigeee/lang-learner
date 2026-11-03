@@ -1,0 +1,47 @@
+media:
+  id: media:zh-acmn-syl-chui4
+  title: chui4
+  context: word-audio
+  durationSec: 1.08
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-chui4.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-chui4.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-chui4
+  span:
+  - 0.22
+  - 0.81
+  file:
+    key: media/be150ad5035f9b81.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2519
+    sha256: be150ad5035f9b81ca612acfcefd1715cef8d3098a9d2d164abe3758397a29ae
+    durationSec: 0.59
+    gainDb: -7.09
+  lines:
+  - t:
+    - 0.0
+    - 0.59
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: chui4
+  validation:
+    lufs: -12.91
+    peak_db: -1.72
+    speech_ratio: 0.621
+    edge_start_db: -46.34
+    edge_end_db: -45.39

@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-dao2
+  title: dao2
+  context: word-audio
+  durationSec: 1.032
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-dao2.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-dao2.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-dao2
+  span:
+  - 0.17
+  - 0.77
+  file:
+    key: media/93b691be74bb6149.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2587
+    sha256: 93b691be74bb614996a2380f59178d7967fc0c23a1babf6454f8ba5efcee95ec
+    durationSec: 0.6
+    gainDb: -5.54
+  lines:
+  - t:
+    - 0.0
+    - 0.6
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: dao2
+  validation:
+    lufs: -14.46
+    peak_db: -1.46
+    speech_ratio: 0.644
+    edge_start_db: -40.35
+    edge_end_db: -38.82
+    forced_logp: -5.3

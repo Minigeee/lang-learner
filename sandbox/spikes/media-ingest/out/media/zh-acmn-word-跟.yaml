@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-跟
+  title: 跟
+  context: word-audio
+  durationSec: 0.95
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-跟.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-跟.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-跟
+  span:
+  - 0.18
+  - 0.77
+  file:
+    key: media/5127561ac1ed4a9b.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2442
+    sha256: 5127561ac1ed4a9b6845a2ad80c16c2c3f7801e1a330bd1d91b75783ef17fc70
+    durationSec: 0.59
+    gainDb: -6.09
+  lines:
+  - t:
+    - 0.0
+    - 0.59
+    zh: 跟
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -13.91
+    peak_db: -1.41
+    speech_ratio: 0.621
+    edge_start_db: -43.6
+    edge_end_db: -40.88
+    forced_logp: -1.74

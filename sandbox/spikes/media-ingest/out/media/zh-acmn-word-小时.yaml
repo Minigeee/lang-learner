@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-小时
+  title: 小时
+  context: word-audio
+  durationSec: 1.3
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-小时.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-小时.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-小时
+  span:
+  - 0.17
+  - 1.18
+  file:
+    key: media/f7695103d76fb0fb.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 4328
+    sha256: f7695103d76fb0fb19c590afa506678f4dfababfcc646d78eea7b2452cecb794
+    durationSec: 1.01
+    gainDb: -4.53
+  lines:
+  - t:
+    - 0.0
+    - 1.01
+    zh: 小时
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -15.47
+    peak_db: -2.61
+    speech_ratio: 0.79
+    edge_start_db: -40.26
+    edge_end_db: -41.54
+    forced_logp: -0.11

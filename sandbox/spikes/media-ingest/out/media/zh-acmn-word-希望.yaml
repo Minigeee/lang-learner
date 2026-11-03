@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-希望
+  title: 希望
+  context: word-audio
+  durationSec: 1.3
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-希望.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-希望.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-希望
+  span:
+  - 0.19
+  - 1.2
+  file:
+    key: media/671318a88fea4ce6.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 4259
+    sha256: 671318a88fea4ce6c850aaae0cd9ee71249f32a632df5c87c85459fa0ed0c324
+    durationSec: 1.01
+    gainDb: -4.86
+  lines:
+  - t:
+    - 0.0
+    - 1.01
+    zh: 希望
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -15.14
+    peak_db: -1.22
+    speech_ratio: 0.73
+    edge_start_db: -51.74
+    edge_end_db: -47.09
+    forced_logp: -0.01

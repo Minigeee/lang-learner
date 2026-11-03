@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-neng2
+  title: neng2
+  context: word-audio
+  durationSec: 0.984
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-neng2.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-neng2.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-neng2
+  span:
+  - 0.19
+  - 0.76
+  file:
+    key: media/42021bf12b54aff4.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2420
+    sha256: 42021bf12b54aff4901bfc919a94af02712a304a4febda059cdcd58c30f76b02
+    durationSec: 0.57
+    gainDb: -9.51
+  lines:
+  - t:
+    - 0.0
+    - 0.57
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: neng2
+  validation:
+    lufs: -10.49
+    peak_db: -1.39
+    speech_ratio: 0.625
+    edge_start_db: -44.49
+    edge_end_db: -45.58
+    forced_logp: -1.78

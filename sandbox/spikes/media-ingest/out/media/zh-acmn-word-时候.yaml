@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-时候
+  title: 时候
+  context: word-audio
+  durationSec: 1.2
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-时候.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-时候.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-时候
+  span:
+  - 0.18
+  - 1.03
+  file:
+    key: media/3de969ac3d947df3.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3642
+    sha256: 3de969ac3d947df393ace37c8949897f873ec002cdbad6b66f5bc7d70ebcbbd4
+    durationSec: 0.85
+    gainDb: -3.54
+  lines:
+  - t:
+    - 0.0
+    - 0.85
+    zh: 时候
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 1.0
+    per: 0.5
+    lufs: -16.46
+    peak_db: -3.0
+    speech_ratio: 0.75
+    edge_start_db: -37.73
+    edge_end_db: -40.75
+    forced_logp: -1.12

@@ -1,0 +1,8 @@
+template: pattern
+slots:
+  hear:    { required: true,  widgets: [clip-stage] }
+  explain: { required: true }
+  we-do:   { required: true,  widgets: [meaning-pick, confusable-sorter, tap-when-you-hear, shadow] }
+  you-do:  { required: true,  widgets: [meaning-pick, confusable-sorter, gist-question, clip-stage] }
+  recap:   { required: true }
+  deeper:  { required: false }

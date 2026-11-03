@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-时间
+  title: 时间
+  context: word-audio
+  durationSec: 1.35
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-时间.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-时间.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-时间
+  span:
+  - 0.17
+  - 1.18
+  file:
+    key: media/bf56a6a1c9b0b9ee.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 4284
+    sha256: bf56a6a1c9b0b9eeb2060f7d2240a4755f45fdcd8975eca5813126047e7f92f3
+    durationSec: 1.01
+    gainDb: -3.15
+  lines:
+  - t:
+    - 0.0
+    - 1.01
+    zh: 时间
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -16.85
+    peak_db: -4.11
+    speech_ratio: 0.78
+    edge_start_db: -39.56
+    edge_end_db: -41.17
+    forced_logp: -0.08

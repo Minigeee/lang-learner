@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-cheng4
+  title: cheng4
+  context: word-audio
+  durationSec: 1.128
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-cheng4.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-cheng4.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-cheng4
+  span:
+  - 0.26
+  - 0.89
+  file:
+    key: media/3bb131912f4b4151.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2652
+    sha256: 3bb131912f4b4151a188626fa621c0056cb6c352eac187ec532261f5e098ce23
+    durationSec: 0.63
+    gainDb: -7.02
+  lines:
+  - t:
+    - 0.0
+    - 0.63
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: cheng4
+  validation:
+    lufs: -12.98
+    peak_db: -1.76
+    speech_ratio: 0.645
+    edge_start_db: -51.4
+    edge_end_db: -49.85
+    forced_logp: -0.77

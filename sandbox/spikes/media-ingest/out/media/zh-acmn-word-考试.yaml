@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-考试
+  title: 考试
+  context: word-audio
+  durationSec: 1.25
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-考试.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-考试.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-考试
+  span:
+  - 0.11
+  - 1.09
+  file:
+    key: media/e2ccded58af2c49b.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 4144
+    sha256: e2ccded58af2c49ba50c7d789a50a24fe5efc16e91ea0ed8f90ff67a2a915bef
+    durationSec: 0.98
+    gainDb: -4.81
+  lines:
+  - t:
+    - 0.0
+    - 0.98
+    zh: 考试
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -15.19
+    peak_db: -2.09
+    speech_ratio: 0.784
+    edge_start_db: -42.54
+    edge_end_db: -40.46
+    forced_logp: -0.01

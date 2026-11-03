@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-很
+  title: 很
+  context: word-audio
+  durationSec: 1.15
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-很.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-很.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-很
+  span:
+  - 0.12
+  - 1.03
+  file:
+    key: media/398870976eb4c561.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3793
+    sha256: 398870976eb4c561574544d6585f8abb2d7457fa7709e750c6456d9a56a469db
+    durationSec: 0.91
+    gainDb: -3.74
+  lines:
+  - t:
+    - 0.0
+    - 0.91
+    zh: 很
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -16.26
+    peak_db: -2.04
+    speech_ratio: 0.767
+    edge_start_db: -34.02
+    edge_end_db: -35.05
+    forced_logp: -0.49

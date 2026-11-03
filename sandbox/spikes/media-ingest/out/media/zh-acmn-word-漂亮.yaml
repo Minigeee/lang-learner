@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-漂亮
+  title: 漂亮
+  context: word-audio
+  durationSec: 1.15
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-漂亮.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-漂亮.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-漂亮
+  span:
+  - 0.12
+  - 0.99
+  file:
+    key: media/bdbd307a969800cc.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3663
+    sha256: bdbd307a969800cc0ddb26b7cf2c32588c4c90ea9484911ac49d4660ac742e04
+    durationSec: 0.87
+    gainDb: -3.66
+  lines:
+  - t:
+    - 0.0
+    - 0.87
+    zh: 漂亮
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -16.34
+    peak_db: -1.09
+    speech_ratio: 0.744
+    edge_start_db: -46.18
+    edge_end_db: -48.14
+    forced_logp: -0.03

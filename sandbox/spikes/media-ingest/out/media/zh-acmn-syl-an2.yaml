@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-an2
+  title: an2
+  context: word-audio
+  durationSec: 1.032
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-an2.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-an2.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-an2
+  span:
+  - 0.19
+  - 0.81
+  file:
+    key: media/cbf67e9db7ce1aa2.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2692
+    sha256: cbf67e9db7ce1aa2d2c421675524b8673919c85c0070d032a9673280f5083dea
+    durationSec: 0.62
+    gainDb: -6.89
+  lines:
+  - t:
+    - 0.0
+    - 0.62
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: an2
+  validation:
+    lufs: -13.11
+    peak_db: -1.16
+    speech_ratio: 0.623
+    edge_start_db: -39.44
+    edge_end_db: -32.36
+    forced_logp: -11.04

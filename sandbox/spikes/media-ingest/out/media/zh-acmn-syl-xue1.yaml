@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-xue1
+  title: xue1
+  context: word-audio
+  durationSec: 1.176
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-xue1.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-xue1.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-xue1
+  span:
+  - 0.15
+  - 0.92
+  file:
+    key: media/8f07e5074de0eb42.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3220
+    sha256: 8f07e5074de0eb42346982102d662b2fd78175da87165da89387e16d79dbf00b
+    durationSec: 0.77
+    gainDb: -7.77
+  lines:
+  - t:
+    - 0.0
+    - 0.77
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: xue1
+  validation:
+    lufs: -12.23
+    peak_db: -1.3
+    speech_ratio: 0.724
+    edge_start_db: -39.03
+    edge_end_db: -40.29
+    forced_logp: -2.6

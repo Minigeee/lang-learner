@@ -1,0 +1,416 @@
+media:
+  id: media:zh-gs-0337
+  title: 蜡做的孩子
+  context: storybook
+  durationSec: 103.531
+  speakers:
+  - speaker:zh-gs-zhuo-sun
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://globalstorybooks.net/media/audio/zh/0337/
+  rights:
+    kind: open
+    license: cc-by-3.0
+    author: 'Written by: Southern African Folktale; Illustrated by: Wiehan de Jager; Translated by: Vicky Liu; Read by: Zhuo Sun'
+    sourceUrl: https://global-asp.github.io/storybooks-minnesota/stories/zh/0337/
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+  level: 2
+clips:
+- id: clip:zh-gs-0337-p01s0
+  span:
+  - 1.39
+  - 4.31
+  file:
+    key: media/a8be124718c6ff82.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 10510
+    sha256: a8be124718c6ff826da42a78f298e3f09d397db1b52723b7a52d4fd517c0c32e
+    durationSec: 2.92
+    gainDb: -1.42
+  lines:
+  - t:
+    - 0.0
+    - 2.92
+    zh: 蜡做的孩子
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -18.58
+    peak_db: -1.4
+    speech_ratio: 0.54
+    edge_start_db: -107.37
+    edge_end_db: -107.37
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 1
+- id: clip:zh-gs-0337-p02s0
+  span:
+  - 4.59
+  - 12.28
+  file:
+    key: media/be6064ce4c53e3b3.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 28664
+    sha256: be6064ce4c53e3b3805028897b9d0106d5ee755934cb95698e07a34b052ba043
+    durationSec: 7.69
+    gainDb: -2.16
+  lines:
+  - t:
+    - 0.0
+    - 7.69
+    zh: 很久很久以前，有一家人快乐地生活在一起。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -17.84
+    peak_db: -1.31
+    speech_ratio: 0.745
+    edge_start_db: -107.89
+    edge_end_db: -107.89
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 2
+- id: clip:zh-gs-0337-p03s0
+  span:
+  - 12.46
+  - 22.06
+  file:
+    key: media/1b20c361bfebd18b.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 39394
+    sha256: 1b20c361bfebd18bf03da54e6e8fce648a00f17ac9d89b6309283c0c1b4c4e86
+    durationSec: 9.6
+    gainDb: -2.79
+  lines:
+  - t:
+    - 0.0
+    - 9.6
+    zh: 孩子们从来不打架，还帮助爸爸妈妈做家务，干农活。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -17.21
+    peak_db: 0.17
+    speech_ratio: 0.643
+    edge_start_db: -108.05
+    edge_end_db: -108.05
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 3
+- id: clip:zh-gs-0337-p04s0
+  span:
+  - 22.43
+  - 26.76
+  file:
+    key: media/70bd1ff395378d1f.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 16349
+    sha256: 70bd1ff395378d1f0337b1edcac1785390f58ff250d448fda4c7e230883f3554
+    durationSec: 4.33
+    gainDb: -2.12
+  lines:
+  - t:
+    - 0.0
+    - 4.33
+    zh: 但是他们不能靠近火焰。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -17.88
+    peak_db: 0.62
+    speech_ratio: 0.75
+    edge_start_db: -107.71
+    edge_end_db: -42.37
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 4
+- id: clip:zh-gs-0337-p05s0
+  span:
+  - 26.76
+  - 37.3
+  file:
+    key: media/5b12c576f796cf6a.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 40820
+    sha256: 5b12c576f796cf6ab09b6edec50dc3a40eff48a984023f42611141665350905c
+    durationSec: 10.54
+    gainDb: -1.78
+  lines:
+  - t:
+    - 0.0
+    - 10.54
+    zh: 没办法，他们只能在晚上工作，因为他们都是用蜡做的！
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -18.22
+    peak_db: -0.0
+    speech_ratio: 0.644
+    edge_start_db: -47.23
+    edge_end_db: -106.41
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 5
+- id: clip:zh-gs-0337-p06s0
+  span:
+  - 38.37
+  - 47.79
+  file:
+    key: media/57ea3332fa8040ab.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 34922
+    sha256: 57ea3332fa8040abd5d6ad299042033ffa7f5eda540fe2e93e8faccd34d01e6e
+    durationSec: 9.42
+    gainDb: -1.88
+  lines:
+  - t:
+    - 0.0
+    - 9.42
+    zh: 但是其中一个男孩非常想出门，他想走到太阳底下看看。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -18.12
+    peak_db: -1.32
+    speech_ratio: 0.705
+    edge_start_db: -107.0
+    edge_end_db: -107.0
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 6
+- id: clip:zh-gs-0337-p07s0
+  span:
+  - 48.92
+  - 54.24
+  file:
+    key: media/93629268764b4b0a.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 19508
+    sha256: 93629268764b4b0a8191d5c20389f4c0fc3951a6c8d05438cd0db2263c723525
+    durationSec: 5.32
+    gainDb: -2.0
+  lines:
+  - t:
+    - 0.0
+    - 5.32
+    zh: 有一天，这种渴望太强烈了。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -18.0
+    peak_db: -0.01
+    speech_ratio: 0.687
+    edge_start_db: -107.1
+    edge_end_db: -41.72
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 7
+- id: clip:zh-gs-0337-p07s1
+  span:
+  - 54.24
+  - 59.12
+  file:
+    key: media/212e21c98e28e161.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 18312
+    sha256: 212e21c98e28e161672247d6e4649a6973d222a3b62252f309a367bd804910fc
+    durationSec: 4.88
+    gainDb: -2.29
+  lines:
+  - t:
+    - 0.0
+    - 4.88
+    zh: 虽然他的兄弟们警告过他……
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -17.71
+    peak_db: -0.88
+    speech_ratio: 0.626
+    edge_start_db: -44.23
+    edge_end_db: -108.19
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 7
+- id: clip:zh-gs-0337-p08s0
+  span:
+  - 60.26
+  - 62.69
+  file:
+    key: media/dda3f36751010e0c.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 9118
+    sha256: dda3f36751010e0c98e77fbca3e709b812dcd1d4effbb2ec37a525c7573e665c
+    durationSec: 2.43
+    gainDb: -2.65
+  lines:
+  - t:
+    - 0.0
+    - 2.43
+    zh: 但是太晚了！
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -17.35
+    peak_db: -1.38
+    speech_ratio: 0.744
+    edge_start_db: -107.95
+    edge_end_db: -34.55
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 8
+- id: clip:zh-gs-0337-p08s1
+  span:
+  - 62.69
+  - 67.28
+  file:
+    key: media/26e6c6db1205584e.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 17258
+    sha256: 26e6c6db1205584e79db773fdb75a11ef3f9f14cf4018e0f3bb37cab4c82eee6
+    durationSec: 4.59
+    gainDb: -2.82
+  lines:
+  - t:
+    - 0.0
+    - 4.59
+    zh: 他在太阳底下融化了。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.111
+    per: 0.0
+    lufs: -17.18
+    peak_db: 0.28
+    speech_ratio: 0.592
+    edge_start_db: -44.39
+    edge_end_db: -107.79
+    align_cer: 0.111
+    aligned_frac: 1.0
+  page: 8
+- id: clip:zh-gs-0337-p09s0
+  span:
+  - 67.83
+  - 76.65
+  file:
+    key: media/f9d5cb91b80fe0d6.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 33176
+    sha256: f9d5cb91b80fe0d61f80d1515e9105e0417243a575ae467277342f5910f559be
+    durationSec: 8.82
+    gainDb: -3.28
+  lines:
+  - t:
+    - 0.0
+    - 8.82
+    zh: 其他蜡做的孩子看到他们的兄弟融化消失了，非常伤心。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.043
+    per: 0.0
+    lufs: -16.72
+    peak_db: 0.3
+    speech_ratio: 0.689
+    edge_start_db: -108.96
+    edge_end_db: -108.96
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 9
+- id: clip:zh-gs-0337-p10s0
+  span:
+  - 76.96
+  - 87.64
+  file:
+    key: media/813fd27ced5c6137.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 39501
+    sha256: 813fd27ced5c613774e6a97dc7d4eb1903608e1dc167dd6a5b99bf9c10f16197
+    durationSec: 10.68
+    gainDb: -1.92
+  lines:
+  - t:
+    - 0.0
+    - 10.68
+    zh: 但是他们想出了一个好主意：他们把熔化的蜡块捏成了一只鸟。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.038
+    per: 0.0
+    lufs: -18.08
+    peak_db: -1.14
+    speech_ratio: 0.675
+    edge_start_db: -107.38
+    edge_end_db: -107.38
+    align_cer: 0.038
+    aligned_frac: 1.0
+  page: 10
+- id: clip:zh-gs-0337-p11s0
+  span:
+  - 87.85
+  - 94.63
+  file:
+    key: media/4edb6f8b049469f8.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 25167
+    sha256: 4edb6f8b049469f8cfcd6d8fc1a4189db5c9798640530f0bc2f683ed2fc3f36d
+    durationSec: 6.78
+    gainDb: -2.5
+  lines:
+  - t:
+    - 0.0
+    - 6.78
+    zh: 他们把变成鸟的兄弟带到了一座高山上。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -17.5
+    peak_db: 0.0
+    speech_ratio: 0.677
+    edge_start_db: -108.12
+    edge_end_db: -108.12
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 11
+- id: clip:zh-gs-0337-p12s0
+  span:
+  - 95.02
+  - 103.531
+  file:
+    key: media/806413a9e1b0c8c6.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 31048
+    sha256: 806413a9e1b0c8c630517f8c77d4ec396bb448ea0c1b0f2bf2726e7b85d5f7fd
+    durationSec: 8.511
+    gainDb: -2.95
+  lines:
+  - t:
+    - 0.0
+    - 8.511
+    zh: 太阳升起来了，他迎着晨光唱着歌，飞走了。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.059
+    per: 0.0
+    lufs: -17.05
+    peak_db: 0.24
+    speech_ratio: 0.611
+    edge_start_db: -107.84
+    edge_end_db: -49.82
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 12

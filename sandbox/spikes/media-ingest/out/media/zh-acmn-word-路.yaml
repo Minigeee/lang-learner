@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-路
+  title: 路
+  context: word-audio
+  durationSec: 0.95
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-路.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-路.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-路
+  span:
+  - 0.18
+  - 0.8
+  file:
+    key: media/55b8fa0267fd5ccf.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2686
+    sha256: 55b8fa0267fd5ccf90bc70bbe5548cec1372ea5d54c94421dc6ed55ef88a1610
+    durationSec: 0.62
+    gainDb: -4.28
+  lines:
+  - t:
+    - 0.0
+    - 0.62
+    zh: 路
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 1.0
+    per: 0.0
+    lufs: -15.72
+    peak_db: -1.37
+    speech_ratio: 0.656
+    edge_start_db: -45.17
+    edge_end_db: -47.46
+    forced_logp: -1.45

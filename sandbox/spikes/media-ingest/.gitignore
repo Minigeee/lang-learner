@@ -1,0 +1,13 @@
+data/
+out/audio/
+out-runs/*/audio/
+.venv/
+models/
+hf-cache/
+__pycache__/
+*.mp3
+*.ogg
+*.opus
+*.wav
+*.flac
+*.m4a

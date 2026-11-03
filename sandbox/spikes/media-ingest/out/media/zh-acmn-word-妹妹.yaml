@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-妹妹
+  title: 妹妹
+  context: word-audio
+  durationSec: 1.05
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-妹妹.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-妹妹.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-妹妹
+  span:
+  - 0.15
+  - 0.92
+  file:
+    key: media/5b85c1596648b852.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3357
+    sha256: 5b85c1596648b852ddbd67fffc951e2d744af2241f4a99170b0925b60f0286df
+    durationSec: 0.77
+    gainDb: -2.42
+  lines:
+  - t:
+    - 0.0
+    - 0.77
+    zh: 妹妹
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -17.58
+    peak_db: -1.46
+    speech_ratio: 0.711
+    edge_start_db: -44.21
+    edge_end_db: -42.03
+    forced_logp: -0.07

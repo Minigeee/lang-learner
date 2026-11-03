@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-后面
+  title: 后面
+  context: word-audio
+  durationSec: 1.15
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-后面.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-后面.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-后面
+  span:
+  - 0.14
+  - 0.97
+  file:
+    key: media/2be77e40080d354a.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3520
+    sha256: 2be77e40080d354a5b9a50d5b6dfc5800322e0667ff8fc09885b84c0e3b888b5
+    durationSec: 0.83
+    gainDb: -5.31
+  lines:
+  - t:
+    - 0.0
+    - 0.83
+    zh: 后面
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -14.69
+    peak_db: -1.57
+    speech_ratio: 0.732
+    edge_start_db: -46.05
+    edge_end_db: -45.18
+    forced_logp: -0.26

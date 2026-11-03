@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-运动
+  title: 运动
+  context: word-audio
+  durationSec: 1.15
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-运动.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-运动.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-运动
+  span:
+  - 0.14
+  - 1.03
+  file:
+    key: media/cdec34a81edcf1b7.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3745
+    sha256: cdec34a81edcf1b7c953ffa1c45d47beff8e754e7733232dac345e1f251670f6
+    durationSec: 0.89
+    gainDb: -6.82
+  lines:
+  - t:
+    - 0.0
+    - 0.89
+    zh: 运动
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -13.18
+    peak_db: -1.43
+    speech_ratio: 0.761
+    edge_start_db: -49.01
+    edge_end_db: -45.92
+    forced_logp: -0.02

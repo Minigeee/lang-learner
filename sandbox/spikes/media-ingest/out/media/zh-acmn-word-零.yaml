@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-零
+  title: 零
+  context: word-audio
+  durationSec: 1.05
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-零.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-零.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-零
+  span:
+  - 0.14
+  - 0.9
+  file:
+    key: media/f7812a37ce6a15a6.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3276
+    sha256: f7812a37ce6a15a6dc0ef8db1990050fb45fa6e26bd9f7d6f522d4367aa72a54
+    durationSec: 0.76
+    gainDb: -9.21
+  lines:
+  - t:
+    - 0.0
+    - 0.76
+    zh: 零
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -10.79
+    peak_db: -1.24
+    speech_ratio: 0.667
+    edge_start_db: -39.12
+    edge_end_db: -39.58
+    forced_logp: -1.46

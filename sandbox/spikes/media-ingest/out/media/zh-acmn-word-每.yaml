@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-每
+  title: 每
+  context: word-audio
+  durationSec: 1.1
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-每.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-每.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-每
+  span:
+  - 0.12
+  - 0.96
+  file:
+    key: media/92f7e3724e4184ba.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3636
+    sha256: 92f7e3724e4184ba9048f59ec0bd1dc3c9c3874f9a8c346c81cad6631064d137
+    durationSec: 0.84
+    gainDb: -3.33
+  lines:
+  - t:
+    - 0.0
+    - 0.84
+    zh: 每
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 1.0
+    per: 0.0
+    lufs: -16.67
+    peak_db: -1.56
+    speech_ratio: 0.747
+    edge_start_db: -39.05
+    edge_end_db: -38.11
+    forced_logp: -5.02

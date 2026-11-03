@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-但是
+  title: 但是
+  context: word-audio
+  durationSec: 1.25
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-但是.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-但是.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-但是
+  span:
+  - 0.19
+  - 1.09
+  file:
+    key: media/dc172250eb567b1e.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3813
+    sha256: dc172250eb567b1e3f2b65a8af14b68ea65c7cbd3d61aa4cf8a6d0d525a8fbac
+    durationSec: 0.9
+    gainDb: -5.5
+  lines:
+  - t:
+    - 0.0
+    - 0.9
+    zh: 但是
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -14.5
+    peak_db: -1.45
+    speech_ratio: 0.764
+    edge_start_db: -39.74
+    edge_end_db: -42.08
+    forced_logp: -0.02

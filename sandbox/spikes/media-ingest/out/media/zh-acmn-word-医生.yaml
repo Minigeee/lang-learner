@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-医生
+  title: 医生
+  context: word-audio
+  durationSec: 1.2
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-医生.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-医生.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-医生
+  span:
+  - 0.17
+  - 1.06
+  file:
+    key: media/f6ceadb80f8812d4.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3748
+    sha256: f6ceadb80f8812d43f410a8f35cf02e747928098efdf3b1b1ca959a5fada5703
+    durationSec: 0.89
+    gainDb: -4.56
+  lines:
+  - t:
+    - 0.0
+    - 0.89
+    zh: 医生
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -15.44
+    peak_db: -3.94
+    speech_ratio: 0.761
+    edge_start_db: -39.86
+    edge_end_db: -38.85
+    forced_logp: -0.02

@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-miao4
+  title: miao4
+  context: word-audio
+  durationSec: 1.032
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-miao4.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-miao4.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-miao4
+  span:
+  - 0.19
+  - 0.75
+  file:
+    key: media/41c53de97db4c791.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2367
+    sha256: 41c53de97db4c79162996df4003cb72db9ab3687d739efd6db63cf5ce51a9394
+    durationSec: 0.56
+    gainDb: -8.43
+  lines:
+  - t:
+    - 0.0
+    - 0.56
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: miao4
+  validation:
+    lufs: -11.57
+    peak_db: -0.95
+    speech_ratio: 0.618
+    edge_start_db: -57.34
+    edge_end_db: -52.33
+    forced_logp: -2.2

@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-机场
+  title: 机场
+  context: word-audio
+  durationSec: 1.35
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-机场.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-机场.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-机场
+  span:
+  - 0.19
+  - 1.22
+  file:
+    key: media/addb31d1878c414a.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 4408
+    sha256: addb31d1878c414a5829bf38c89f6092a5f51918472d52626eed0de3325c3a79
+    durationSec: 1.03
+    gainDb: -6.69
+  lines:
+  - t:
+    - 0.0
+    - 1.03
+    zh: 机场
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -13.31
+    peak_db: -2.47
+    speech_ratio: 0.794
+    edge_start_db: -41.7
+    edge_end_db: -45.94
+    forced_logp: -0.03

@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-中午
+  title: 中午
+  context: word-audio
+  durationSec: 1.15
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-中午.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-中午.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-中午
+  span:
+  - 0.16
+  - 1.15
+  file:
+    key: media/fb1bc7daa5e1f15d.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 4090
+    sha256: fb1bc7daa5e1f15d644d854a0a88d4f41407bd2275a8767f658c49f3f4b3b32d
+    durationSec: 0.99
+    gainDb: 1.21
+  lines:
+  - t:
+    - 0.0
+    - 0.99
+    zh: 中午
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -21.21
+    peak_db: -5.12
+    speech_ratio: 0.786
+    edge_start_db: -40.79
+    edge_end_db: -41.66
+    forced_logp: -0.05

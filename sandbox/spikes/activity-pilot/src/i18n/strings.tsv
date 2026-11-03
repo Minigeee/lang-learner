@@ -1,0 +1,154 @@
+# Support-language strings. Key = the English text. Add a locale by adding a column; empty cells fall back to English.
+en	zh-Hans
+Activity pilot	活动试点
+~{n} min	约 {n} 分钟
+Light	浅色
+Dark	深色
+Events	事件
+Instructions	说明语言
+Sound practice	发音练习
+Lesson	课
+Video lesson	视频课
+Listen	听
+How it works	讲解
+Practice	练习
+Done	完成
+Close lesson	关闭课程
+Playing {i} of {n}	正在播放 {i}/{n}
+{n} recordings	{n} 段录音
+Native clip	原声片段
+Play again	再听一遍
+Play	播放
+Just listen. This one isn't scored.	只管听，这题不计分。
+Continue	继续
+Tone {n}	第{n}声
+again, new voice	再来一次，换了声音
+Hide text	隐藏文字
+Show text	显示文字
+Placeholder audio · text shown	占位音频 · 已显示文字
+Next	下一个
+Voice {n}	声音 {n}
+Not quite. That was {answer}.	不对，应该是 {answer}。
+yours	你选的
+Comes back later in a new voice	稍后会换个声音再出现
+Replay line	重播这句
+Meaning	意思
+Hear all {n} lines	把 {n} 句都听完
+In your cards	已在卡片中
+Add to cards	加入卡片
+Line {i} of {n}	第 {i}/{n} 句
+Play the story	播放故事
+Hear it again	再听一次
+Previous line	上一句
+Next line	下一句
+Close	关闭
+You picked {x} · back for review	你选了 {x} · 稍后复习
+1 new card	1 张新卡片
+{n} new cards	{n} 张新卡片
+They'll mix into your reviews	会加入你的复习
+Finish lesson	完成课程
+Show events	显示事件
+Play {x}	播放 {x}
+Four tones on one syllable	同一个音节的四个声调
+The same syllable with a different pitch shape is a different word.	同一个音节，音高走势不同，就是不同的词。
+How many different words did you hear?	你听到了几个不同的词？
+One	一个
+Two	两个
+Four	四个
+Not sure	不确定
+Four tones, four pitch shapes	四个声调，四种音高走势
+Each tone is a shape your voice draws: flat and high, rising, a low dip, or falling.	每个声调都是声音画出的形状：高而平、上升、低降再升、下降。
+Listen for the shape, not the starting pitch. Every speaker starts at a different height.	听走势，别听起点。每个人的起始音高都不一样。
+Which tone?	第几声？
+Tone 1	第一声
+Tone 2	第二声
+Tone 3	第三声
+Tone 4	第四声
+high, flat	高平
+rising	上升
+low dip	低降升
+falling	下降
+不 vs 没	不 和 没
+没 says it didn't happen. 不 says you don't, or won't.	没 表示事情没发生。不 表示平时不做，或者将来不做。
+没 looks back. 不 looks at habits and ahead.	没 看过去。不 看习惯和将来。
+Both mean "not". What decides it is when: a past action takes 没, a habit or a plan takes 不.	两个都表示否定。关键看时间：过去的动作用 没，习惯或打算用 不。
+Why 没有, never 不有?	为什么说 没有，不说 不有？
+有 is the one verb 不 can't negate. "Don't have" is always 没有.	有 是唯一不能用 不 否定的动词。“没有”永远用 没。
+Did it happen?	发生了吗？
+didn't	没发生
+doesn't, won't	平时不做，或将来不做
+Thing + 在 + place + 上 says where something is.	东西 + 在 + 地方 + 上，表示东西在哪儿。
+What is the story about?	故事讲的是什么？
+A cat	一只猫
+A book	一本书
+Not sure yet	还不确定
+在 + a place + 上 says where something is	在 + 地方 + 上 表示位置
+上 goes after the place: 桌子上 is "on the table". The thing comes first, then 在, then the place.	上 放在地方后面：桌子上 就是桌子的上面。先说东西，再说 在，最后说地方。
+Where is the cat at the end?	最后猫在哪儿？
+On the chair	在椅子上
+On the table	在桌子上
+On the book	在书上
+Where's the cat?	猫在哪儿？
+now	现在
+past	过去
+habit, future	习惯、将来
+Timeline: 没 covers the past, 不 covers habits and the future	时间线：没 用于过去，不 用于习惯和将来
+A chair, a table with a book on it, and a cat on the book	一把椅子，一张桌子，桌子上有一本书，猫在书上
+Puzzle	谜题
+Compare	对比
+First	第一句
+Second	第二句
+Start	开始
+New	新
+I already know this	这个我会了
+Practice · {x}	练习 · {x}
+Level {i} of {n}	第 {i}/{n} 级
+That's the one.	就是它。
+That one	就选这个
+It was {x}. Tap any tile to compare.	答案是 {x}。点任意一个来比较。
+Tap to hear one again. Pick the odd one.	点一下可以再听。选出不同的那个。
+Listen to all four.	四个都听一遍。
+Line 1	第 1 行
+Line 2	第 2 行
+Line 3	第 3 行
+It was line {n}. Tap a line to hear it again.	答案是第 {n} 行。点一行可以再听。
+Tap a line to hear it again. Pick the wrong English.	点一行可以再听。选出错的英文。
+Listen to every line.	每一行都听一遍。
+Lesson marked done.	课程已完成。
+Not quite yet. The full lesson takes a few minutes.	还差一点。完整的课只需要几分钟。
+Do the full lesson	上完整的课
+Next: {x}	下一课：{x}
+Odd one out	找不同
+Four voices. Three say the same thing, one is different. Find it.	四个声音，三个说的一样，一个不同。找出来。
+Catch the mismatch	找错配
+One English line says something the Chinese doesn't. Find it.	有一行英文和中文意思不符。找出来。
+New clip	新片段
+Hear the whole story once, then answer. No replays first.	先完整听一遍，再回答。回答前不能重播。
+All four are "ma". Same word, or different words?	四个都是“ma”。是同一个词，还是不同的词？
+Same word	同一个词
+Different words	不同的词
+One syllable	单个音节
+New syllables	新的音节
+Which one has a different tone?	哪一个声调不一样？
+The first	第一句
+The second	第二句
+Short sentences	短句
+Longer sentences	长句
+Which English line is wrong?	哪一行英文是错的？
+Three lessons, one per shape. Each runs the full arc, with a different opener and practice format.	三节课，每种形式一节。每节都走完整流程，开场和练习方式各不相同。
+Reset format intros	重置练习方式介绍
+Examples	例子
+Read along	看着听
+Hear it in action	听听实际用法
+Different voices, same idea. Tap a line to hear it again and see what it means.	不同的声音，同一个用法。点一句可以再听，并看到意思。
+Play all	全部播放
+Pick one	选一个
+Hear it, then tap the answer.	听完，点出答案。
+New way to practice	新的练习方式
+Practice · {i} of {n}	练习 · {i}/{n}
+right on the first try	第一次就答对
+Added to your reviews as a skill. It comes back in this same format.	已作为技能加入复习，会以同样的形式出现。
+Skip to practice. Pass it to mark the lesson done.	直接练习。通过就算完成。
+One of these is about the past. Which?	其中一句说的是过去。是哪一句？
+Chinese text and pinyin · tap a word	中文和拼音 · 点词查看
+No text, new voice	无文字，换了声音

@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-喜欢
+  title: 喜欢
+  context: word-audio
+  durationSec: 1.35
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-喜欢.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-喜欢.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-喜欢
+  span:
+  - 0.18
+  - 1.21
+  file:
+    key: media/2a26a6014248e1b6.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 4392
+    sha256: 2a26a6014248e1b6aa61b3a9e5d29451e8914deb60ad41c0b34608c09d26908c
+    durationSec: 1.03
+    gainDb: -3.8
+  lines:
+  - t:
+    - 0.0
+    - 1.03
+    zh: 喜欢
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -16.2
+    peak_db: -1.1
+    speech_ratio: 0.775
+    edge_start_db: -39.31
+    edge_end_db: -40.34
+    forced_logp: -0.66

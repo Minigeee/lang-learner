@@ -1,0 +1,920 @@
+media:
+  id: media:zh-gs-0110
+  title: 一粒小种子：旺加里·马塔伊的故事
+  context: storybook
+  durationSec: 295.141
+  speakers:
+  - speaker:zh-gs-zhuo-sun
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://globalstorybooks.net/media/audio/zh/0110/
+  rights:
+    kind: open
+    license: cc-by-4.0
+    author: 'Written by: Nicola Rijsdijk; Illustrated by: Maya Marshak; Translated by: Vicky Liu; Read by: Zhuo Sun'
+    sourceUrl: https://global-asp.github.io/storybooks-minnesota/stories/zh/0110/
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+  level: 3
+clips:
+- id: clip:zh-gs-0110-p01s0
+  span:
+  - 1.05
+  - 6.99
+  file:
+    key: media/0d00fa1ba53a054c.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 21648
+    sha256: 0d00fa1ba53a054c573c027b4dc93a6051fbc73c208906952360153ee1fb30f5
+    durationSec: 5.94
+    gainDb: -2.37
+  lines:
+  - t:
+    - 0.0
+    - 5.94
+    zh: 一粒小种子：旺加里·马塔伊的故事
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -17.63
+    peak_db: -2.35
+    speech_ratio: 0.676
+    edge_start_db: -108.12
+    edge_end_db: -108.12
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 1
+- id: clip:zh-gs-0110-p02s0
+  span:
+  - 8.6
+  - 25.95
+  file:
+    key: media/8fb7c5fbb6f8bf09.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 66735
+    sha256: 8fb7c5fbb6f8bf0996fb7a3cf7193336d36b8be9eb0f83d1e40120719a720423
+    durationSec: 17.35
+    gainDb: -2.62
+  lines:
+  - t:
+    - 0.0
+    - 17.35
+    zh: 在东非肯尼亚山的山腰上，有一座小村庄，村庄里有一个小女孩和妈妈一起在田里劳作，这个女孩叫旺加里。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -17.38
+    peak_db: 0.28
+    speech_ratio: 0.672
+    edge_start_db: -108.18
+    edge_end_db: -108.18
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 2
+- id: clip:zh-gs-0110-p03s0
+  span:
+  - 27.61
+  - 31.43
+  file:
+    key: media/40934bd6e6bc18ec.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 15035
+    sha256: 40934bd6e6bc18ec347a644010bba191f258397ca12580e71e6b58415066e33b
+    durationSec: 3.82
+    gainDb: -2.74
+  lines:
+  - t:
+    - 0.0
+    - 3.82
+    zh: 旺加里很喜欢呆在户外。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.2
+    per: 0.0
+    lufs: -17.26
+    peak_db: 0.27
+    speech_ratio: 0.717
+    edge_start_db: -108.43
+    edge_end_db: -108.43
+    align_cer: 0.2
+    aligned_frac: 1.0
+  page: 3
+- id: clip:zh-gs-0110-p03s1
+  span:
+  - 31.73
+  - 42.9
+  file:
+    key: media/bb88ba504774d052.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 43311
+    sha256: bb88ba504774d052cca580525c516e62cd2a9f78375cd6d1e426666de99bf05a
+    durationSec: 11.17
+    gainDb: -2.05
+  lines:
+  - t:
+    - 0.0
+    - 11.17
+    zh: 在她家的农田里，旺加里用弯刀劈开土地，把小种子播撒到温暖的泥土里。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.1
+    per: 0.0
+    lufs: -17.95
+    peak_db: -1.36
+    speech_ratio: 0.747
+    edge_start_db: -108.26
+    edge_end_db: -108.26
+    align_cer: 0.133
+    aligned_frac: 1.0
+  page: 3
+- id: clip:zh-gs-0110-p04s0
+  span:
+  - 45.82
+  - 51.75
+  file:
+    key: media/f99fbe7e64f04634.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 22780
+    sha256: f99fbe7e64f04634bac5635792b59f7bd10a85de35dc5ebdbe142e95d5fb41e9
+    durationSec: 5.93
+    gainDb: -3.27
+  lines:
+  - t:
+    - 0.0
+    - 5.93
+    zh: 她一天中最喜欢的时候就是日落时分。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.062
+    per: 0.0
+    lufs: -16.73
+    peak_db: 0.2
+    speech_ratio: 0.736
+    edge_start_db: -109.39
+    edge_end_db: -109.39
+    align_cer: 0.062
+    aligned_frac: 1.0
+  page: 4
+- id: clip:zh-gs-0110-p04s1
+  span:
+  - 52.33
+  - 62.1
+  file:
+    key: media/0cc71f383bfe7268.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 38115
+    sha256: 0cc71f383bfe726842236540c9cc2cd05804f04a5874ac1f275112cd67ab3e62
+    durationSec: 9.77
+    gainDb: -3.22
+  lines:
+  - t:
+    - 0.0
+    - 9.77
+    zh: 当天黑了，看不到花花草草时，旺加里就知道她该回家了。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.087
+    per: 0.0
+    lufs: -16.78
+    peak_db: 0.26
+    speech_ratio: 0.678
+    edge_start_db: -109.32
+    edge_end_db: -109.32
+    align_cer: 0.087
+    aligned_frac: 1.0
+  page: 4
+- id: clip:zh-gs-0110-p04s2
+  span:
+  - 63.08
+  - 68.7
+  file:
+    key: media/16be68a06ce36ab6.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 21208
+    sha256: 16be68a06ce36ab6dfda18622b4a3d1b2d03632f8bc238d97940ebf7cac026af
+    durationSec: 5.62
+    gainDb: -2.34
+  lines:
+  - t:
+    - 0.0
+    - 5.62
+    zh: 她走在农田里的小路上，还要过几条河。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.062
+    per: 0.0
+    lufs: -17.66
+    peak_db: -0.2
+    speech_ratio: 0.758
+    edge_start_db: -108.21
+    edge_end_db: -108.21
+    align_cer: 0.062
+    aligned_frac: 1.0
+  page: 4
+- id: clip:zh-gs-0110-p05s0
+  span:
+  - 71.3
+  - 86.23
+  file:
+    key: media/1d2cf44df0611d17.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 54647
+    sha256: 1d2cf44df0611d1753d24c88c121f39891d0beb1515daabf340cdc1d67cac273
+    durationSec: 14.93
+    gainDb: -2.86
+  lines:
+  - t:
+    - 0.0
+    - 14.93
+    zh: 旺加里是个聪明的孩子，她迫不及待地想要去上学，但是她的父母希望她能在家，帮着干农活。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.105
+    per: 0.0
+    lufs: -17.14
+    peak_db: 0.38
+    speech_ratio: 0.671
+    edge_start_db: -108.5
+    edge_end_db: -108.5
+    align_cer: 0.105
+    aligned_frac: 1.0
+  page: 5
+- id: clip:zh-gs-0110-p05s1
+  span:
+  - 87.89
+  - 96.78
+  file:
+    key: media/c67a06d95bb2818d.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 34004
+    sha256: c67a06d95bb2818d03588e809b9d2bf5aadbf8bb57c57a1d0916e60967694284
+    durationSec: 8.89
+    gainDb: -3.12
+  lines:
+  - t:
+    - 0.0
+    - 8.89
+    zh: 当旺加里七岁的时候，她的哥哥说服了父母，让旺加里去上学。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.04
+    per: 0.0
+    lufs: -16.88
+    peak_db: 0.07
+    speech_ratio: 0.764
+    edge_start_db: -108.91
+    edge_end_db: -108.91
+    align_cer: 0.04
+    aligned_frac: 1.0
+  page: 5
+- id: clip:zh-gs-0110-p06s0
+  span:
+  - 98.81
+  - 102.44
+  file:
+    key: media/ec0653d4f0d9ec23.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 13217
+    sha256: ec0653d4f0d9ec23da8389a2f73f891ead58eb718192f27441bd7c6a63dc447d
+    durationSec: 3.63
+    gainDb: -2.54
+  lines:
+  - t:
+    - 0.0
+    - 3.63
+    zh: 旺加里太喜欢学习了。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.333
+    per: 0.0
+    lufs: -17.46
+    peak_db: 0.4
+    speech_ratio: 0.699
+    edge_start_db: -108.68
+    edge_end_db: -108.68
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 6
+- id: clip:zh-gs-0110-p06s1
+  span:
+  - 102.82
+  - 108.41
+  file:
+    key: media/88f703adb6e6cc89.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 21397
+    sha256: 88f703adb6e6cc89c3f1084b65b3719f815871a7cbff98689bceb5308f87055d
+    durationSec: 5.59
+    gainDb: -3.14
+  lines:
+  - t:
+    - 0.0
+    - 5.59
+    zh: 旺加里读了很多书，学到很多知识。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.143
+    per: 0.0
+    lufs: -16.86
+    peak_db: 0.56
+    speech_ratio: 0.754
+    edge_start_db: -108.5
+    edge_end_db: -108.5
+    align_cer: 0.071
+    aligned_frac: 1.0
+  page: 6
+- id: clip:zh-gs-0110-p06s2
+  span:
+  - 108.45
+  - 120.74
+  file:
+    key: media/4743e601e8da7a3b.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 43596
+    sha256: 4743e601e8da7a3b7e71a21058d0c5bfb9a5184e99676f67dcbf759205e6debe
+    durationSec: 12.29
+    gainDb: -2.94
+  lines:
+  - t:
+    - 0.0
+    - 12.29
+    zh: 她的成绩非常好，最后收到了美国大学的录取信，邀请她去美国读书。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.071
+    per: 0.0
+    lufs: -17.06
+    peak_db: 0.23
+    speech_ratio: 0.64
+    edge_start_db: -109.09
+    edge_end_db: -109.09
+    align_cer: 0.071
+    aligned_frac: 1.0
+  page: 6
+- id: clip:zh-gs-0110-p06s3
+  span:
+  - 121.16
+  - 128.71
+  file:
+    key: media/5fb0eeb13ff82aeb.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 31249
+    sha256: 5fb0eeb13ff82aeb7159a8641497005898149c8cf659d9ef2d700893232490df
+    durationSec: 7.55
+    gainDb: -2.04
+  lines:
+  - t:
+    - 0.0
+    - 7.55
+    zh: 旺加里太兴奋了，她真想去世界各地走走看看。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.105
+    per: 0.0
+    lufs: -17.96
+    peak_db: 0.06
+    speech_ratio: 0.773
+    edge_start_db: -107.6
+    edge_end_db: -107.6
+    align_cer: 0.105
+    aligned_frac: 1.0
+  page: 6
+- id: clip:zh-gs-0110-p07s0
+  span:
+  - 130.63
+  - 137.61
+  file:
+    key: media/e3c93c35cf9ab5b2.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 25809
+    sha256: e3c93c35cf9ab5b247eb0bd2b5294b239e811134caea68b2bbbfd78a5d4cacfe
+    durationSec: 6.98
+    gainDb: -3.84
+  lines:
+  - t:
+    - 0.0
+    - 6.98
+    zh: 在美国的大学里，旺加里学到了很多新鲜事物。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.105
+    per: 0.0
+    lufs: -16.16
+    peak_db: 0.15
+    speech_ratio: 0.709
+    edge_start_db: -109.52
+    edge_end_db: -109.52
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 7
+- id: clip:zh-gs-0110-p07s1
+  span:
+  - 137.87
+  - 143.12
+  file:
+    key: media/667101c58e7096b2.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 19795
+    sha256: 667101c58e7096b26829f1a80092d8a163269821f0be367fec98be12b373c9c8
+    durationSec: 5.25
+    gainDb: -3.95
+  lines:
+  - t:
+    - 0.0
+    - 5.25
+    zh: 她研究植物，以及它们的生长过程。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.071
+    per: 0.0
+    lufs: -16.05
+    peak_db: 0.07
+    speech_ratio: 0.721
+    edge_start_db: -109.71
+    edge_end_db: -109.71
+    align_cer: 0.071
+    aligned_frac: 1.0
+  page: 7
+- id: clip:zh-gs-0110-p07s2
+  span:
+  - 144.11
+  - 154.23
+  file:
+    key: media/5547ab54f0d8d821.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 39917
+    sha256: 5547ab54f0d8d8211fb496c9a526b4991436dd4dbec3f6fb88a6c1503c594e92
+    durationSec: 10.12
+    gainDb: -2.53
+  lines:
+  - t:
+    - 0.0
+    - 10.12
+    zh: 她想起她自己是怎么长大的：她和兄弟们在美丽的肯尼亚森林里玩耍。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.103
+    per: 0.0
+    lufs: -17.47
+    peak_db: -0.19
+    speech_ratio: 0.719
+    edge_start_db: -108.34
+    edge_end_db: -108.34
+    align_cer: 0.103
+    aligned_frac: 1.0
+  page: 7
+- id: clip:zh-gs-0110-p08s0
+  span:
+  - 155.65
+  - 161.02
+  file:
+    key: media/ed434eb5c9f9f6ad.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 19930
+    sha256: ed434eb5c9f9f6ad7f00220385423ee1a41567da2c98490e9544aae9caca436f
+    durationSec: 5.37
+    gainDb: -3.9
+  lines:
+  - t:
+    - 0.0
+    - 5.37
+    zh: 她学得越多，就越热爱肯尼亚人民。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.071
+    per: 0.0
+    lufs: -16.1
+    peak_db: -0.93
+    speech_ratio: 0.701
+    edge_start_db: -109.07
+    edge_end_db: -109.07
+    align_cer: 0.071
+    aligned_frac: 1.0
+  page: 8
+- id: clip:zh-gs-0110-p08s1
+  span:
+  - 161.74
+  - 167.93
+  file:
+    key: media/c6757555857bafb6.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 24017
+    sha256: c6757555857bafb62010311f97b635ab821d634836fbea94f1157b448e834346
+    durationSec: 6.19
+    gainDb: -3.47
+  lines:
+  - t:
+    - 0.0
+    - 6.19
+    zh: 她想要帮助肯尼亚人民过上自由、快乐的生活。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.053
+    per: 0.0
+    lufs: -16.53
+    peak_db: -1.26
+    speech_ratio: 0.772
+    edge_start_db: -109.05
+    edge_end_db: -109.05
+    align_cer: 0.053
+    aligned_frac: 1.0
+  page: 8
+- id: clip:zh-gs-0110-p08s2
+  span:
+  - 168.9
+  - 175.23
+  file:
+    key: media/ea16c093257569fb.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 24370
+    sha256: ea16c093257569fb5a5343f8f77f07a8d2304cbdb858ae6d96a0ac07b1a04c78
+    durationSec: 6.33
+    gainDb: -0.21
+  lines:
+  - t:
+    - 0.0
+    - 6.33
+    zh: 她学得越多，就越想念自己在非洲的家乡。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.059
+    per: 0.0
+    lufs: -19.79
+    peak_db: -1.18
+    speech_ratio: 0.835
+    edge_start_db: -106.17
+    edge_end_db: -106.17
+    align_cer: 0.059
+    aligned_frac: 1.0
+  page: 8
+- id: clip:zh-gs-0110-p09s0
+  span:
+  - 177.3
+  - 188.75
+  file:
+    key: media/dc9dbc77b650ba1a.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 42942
+    sha256: dc9dbc77b650ba1a49532254749f93ca3f7aa4de576c509c7598c027ebb5662b
+    durationSec: 11.45
+    gainDb: -1.85
+  lines:
+  - t:
+    - 0.0
+    - 11.45
+    zh: 当旺加里完成学业时，她回到了肯尼亚，但是她的祖国已经今非昔比了。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.069
+    per: 0.0
+    lufs: -18.15
+    peak_db: -0.37
+    speech_ratio: 0.713
+    edge_start_db: -108.21
+    edge_end_db: -108.21
+    align_cer: 0.034
+    aligned_frac: 1.0
+  page: 9
+- id: clip:zh-gs-0110-p09s1
+  span:
+  - 189.37
+  - 196.66
+  file:
+    key: media/ee27523b86d93ee9.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 26963
+    sha256: ee27523b86d93ee932289bb99a023980c66abc09b7ad0adff1d02ae0fd9cc42e
+    durationSec: 7.29
+    gainDb: -3.26
+  lines:
+  - t:
+    - 0.0
+    - 7.29
+    zh: 大地上建起了农场，妇女们找不到柴火做饭。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -16.74
+    peak_db: 0.83
+    speech_ratio: 0.648
+    edge_start_db: -108.82
+    edge_end_db: -108.82
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 9
+- id: clip:zh-gs-0110-p09s2
+  span:
+  - 197.12
+  - 204.15
+  file:
+    key: media/8bcfa8f0d764f299.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 25168
+    sha256: 8bcfa8f0d764f29942105ee8c0c15b13ea095feba6650a3d969c9880624752b4
+    durationSec: 7.03
+    gainDb: 0.3
+  lines:
+  - t:
+    - 0.0
+    - 7.03
+    zh: 人们过着穷苦的日子，孩子们饥肠辘辘。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.125
+    per: 0.0
+    lufs: -20.3
+    peak_db: -2.41
+    speech_ratio: 0.66
+    edge_start_db: -105.68
+    edge_end_db: -105.68
+    align_cer: 0.125
+    aligned_frac: 1.0
+  page: 9
+- id: clip:zh-gs-0110-p10s0
+  span:
+  - 206.3
+  - 210.16
+  file:
+    key: media/b00caec141c27038.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 14338
+    sha256: b00caec141c2703878aafc90560b30782791e1ece0306ec47c044d85aefd0918
+    durationSec: 3.86
+    gainDb: -3.82
+  lines:
+  - t:
+    - 0.0
+    - 3.86
+    zh: 旺加里知道自己要做什么。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.091
+    per: 0.0
+    lufs: -16.18
+    peak_db: 0.51
+    speech_ratio: 0.766
+    edge_start_db: -109.36
+    edge_end_db: -109.36
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 10
+- id: clip:zh-gs-0110-p10s1
+  span:
+  - 210.81
+  - 216.5
+  file:
+    key: media/1c44a4d5a5a96d12.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 21697
+    sha256: 1c44a4d5a5a96d12a01a2d75f5ca4d7455910df519f228849e6e4d9e5af96851
+    durationSec: 5.69
+    gainDb: -2.84
+  lines:
+  - t:
+    - 0.0
+    - 5.69
+    zh: 她教妇女们如何用种子种出大树。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.071
+    per: 0.0
+    lufs: -17.16
+    peak_db: 0.14
+    speech_ratio: 0.757
+    edge_start_db: -109.09
+    edge_end_db: -109.09
+    align_cer: 0.071
+    aligned_frac: 1.0
+  page: 10
+- id: clip:zh-gs-0110-p10s2
+  span:
+  - 217.29
+  - 221.98
+  file:
+    key: media/ea7716f800377e83.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 18307
+    sha256: ea7716f800377e83c2b67559153a4952340302e7380a317ea7324e5062b5983f
+    durationSec: 4.69
+    gainDb: -2.63
+  lines:
+  - t:
+    - 0.0
+    - 4.69
+    zh: 妇女们卖树赚钱，补贴家用。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -17.37
+    peak_db: -0.45
+    speech_ratio: 0.733
+    edge_start_db: -108.74
+    edge_end_db: -108.74
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 10
+- id: clip:zh-gs-0110-p10s3
+  span:
+  - 222.7
+  - 225.19
+  file:
+    key: media/ceacdb491074a255.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 10018
+    sha256: ceacdb491074a2556125d7674be95404f3c94e9f8c2da1da61cc63ce366b38f9
+    durationSec: 2.49
+    gainDb: -5.02
+  lines:
+  - t:
+    - 0.0
+    - 2.49
+    zh: 妇女们都很高兴。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -14.98
+    peak_db: 0.09
+    speech_ratio: 0.702
+    edge_start_db: -110.73
+    edge_end_db: -110.73
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 10
+- id: clip:zh-gs-0110-p10s4
+  span:
+  - 225.66
+  - 231.93
+  file:
+    key: media/bf98749f849d2986.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 25238
+    sha256: bf98749f849d2986778a03297523c4363038ad53ae778422379bbb105397fc42
+    durationSec: 6.27
+    gainDb: -2.95
+  lines:
+  - t:
+    - 0.0
+    - 6.27
+    zh: 旺加里使她们觉得自己变得坚强勇敢了。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.176
+    per: 0.0
+    lufs: -17.05
+    peak_db: 0.22
+    speech_ratio: 0.749
+    edge_start_db: -108.81
+    edge_end_db: -108.81
+    align_cer: 0.118
+    aligned_frac: 1.0
+  page: 10
+- id: clip:zh-gs-0110-p11s0
+  span:
+  - 233.45
+  - 246.28
+  file:
+    key: media/d6b77c2ad9b7ebec.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 46688
+    sha256: d6b77c2ad9b7ebec61855cd989e8b09e2ca1b8faa7db8b1b74f614758c4bce21
+    durationSec: 12.83
+    gainDb: -2.26
+  lines:
+  - t:
+    - 0.0
+    - 12.83
+    zh: 时光飞逝，小树长成了参天大树，又汇聚成了森林，河水穿流而过。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.038
+    per: 0.0
+    lufs: -17.74
+    peak_db: -0.18
+    speech_ratio: 0.691
+    edge_start_db: -107.98
+    edge_end_db: -107.98
+    align_cer: 0.038
+    aligned_frac: 1.0
+  page: 11
+- id: clip:zh-gs-0110-p11s1
+  span:
+  - 247.15
+  - 251.33
+  file:
+    key: media/3006c1a469d5d07b.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 15593
+    sha256: 3006c1a469d5d07b8452d43e9dc1eed69b10143565a4503c26a9f42ff5ca0b7b
+    durationSec: 4.18
+    gainDb: -3.68
+  lines:
+  - t:
+    - 0.0
+    - 4.18
+    zh: 旺加里的办法传遍了非洲。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.091
+    per: 0.0
+    lufs: -16.32
+    peak_db: 0.18
+    speech_ratio: 0.729
+    edge_start_db: -108.59
+    edge_end_db: -108.59
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 11
+- id: clip:zh-gs-0110-p11s2
+  span:
+  - 252.0
+  - 261.1
+  file:
+    key: media/3dcdd9d8aab9385c.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 34117
+    sha256: 3dcdd9d8aab9385ce9ef91a7adeb4a1a3a165f4cc17a4574dfd31c0879effbbd
+    durationSec: 9.1
+    gainDb: -2.19
+  lines:
+  - t:
+    - 0.0
+    - 9.1
+    zh: 今天，因为旺加里当初的种子，已经长出了几百万棵大树。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.043
+    per: 0.0
+    lufs: -17.81
+    peak_db: 0.21
+    speech_ratio: 0.702
+    edge_start_db: -108.75
+    edge_end_db: -108.75
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 11
+- id: clip:zh-gs-0110-p12s0
+  span:
+  - 264.12
+  - 280.82
+  file:
+    key: media/3c9c4c3bf70606cb.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 62859
+    sha256: 3c9c4c3bf70606cb11db7d64eaf020d679a91a132b5085547dad3c2223866d6b
+    durationSec: 16.7
+    gainDb: -3.6
+  lines:
+  - t:
+    - 0.0
+    - 16.7
+    zh: 旺加里努力工作，引起了全世界的注意，人们授予她诺贝尔和平奖，她是非洲第一位获得这份殊荣的女性。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -16.4
+    peak_db: 0.67
+    speech_ratio: 0.713
+    edge_start_db: -109.35
+    edge_end_db: -109.35
+    align_cer: 0.0
+    aligned_frac: 1.0
+  page: 12
+- id: clip:zh-gs-0110-p13s0
+  span:
+  - 282.17
+  - 294.87
+  file:
+    key: media/6200db00cd2cc9c9.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 49553
+    sha256: 6200db00cd2cc9c9f13a69a6935156dfbca3dd2a825a9133fbdb099deee8d6e0
+    durationSec: 12.7
+    gainDb: -3.39
+  lines:
+  - t:
+    - 0.0
+    - 12.7
+    zh: 旺加里在2011年去世，但是每次我们看到大树时，都会想起这位杰出的女性。
+    speaker: speaker:zh-gs-zhuo-sun
+  validation:
+    cer: 0.091
+    per: 0.0
+    lufs: -16.61
+    peak_db: 0.52
+    speech_ratio: 0.746
+    edge_start_db: -109.06
+    edge_end_db: -109.06
+    align_cer: 0.152
+    aligned_frac: 1.0
+  page: 13

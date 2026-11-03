@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-大
+  title: 大
+  context: word-audio
+  durationSec: 0.9
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-大.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-大.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-大
+  span:
+  - 0.16
+  - 0.76
+  file:
+    key: media/be9984f580a26c07.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2738
+    sha256: be9984f580a26c07efa9ec97be336b08498fef6f6f044fc63e18b80e94b37394
+    durationSec: 0.6
+    gainDb: -3.18
+  lines:
+  - t:
+    - 0.0
+    - 0.6
+    zh: 大
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -16.82
+    peak_db: -1.48
+    speech_ratio: 0.644
+    edge_start_db: -44.01
+    edge_end_db: -42.74
+    forced_logp: -0.47

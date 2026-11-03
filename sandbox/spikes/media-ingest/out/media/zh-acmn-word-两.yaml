@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-两
+  title: 两
+  context: word-audio
+  durationSec: 1.15
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-两.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-两.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-两
+  span:
+  - 0.16
+  - 0.98
+  file:
+    key: media/42249bc166011287.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3519
+    sha256: 42249bc1660112875e74def03e09c67143d76a6379cc0cb511b98288b3881451
+    durationSec: 0.82
+    gainDb: -5.32
+  lines:
+  - t:
+    - 0.0
+    - 0.82
+    zh: 两
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 1.0
+    per: 1.0
+    lufs: -14.68
+    peak_db: -1.57
+    speech_ratio: 0.728
+    edge_start_db: -42.46
+    edge_end_db: -43.32
+    forced_logp: -1.41

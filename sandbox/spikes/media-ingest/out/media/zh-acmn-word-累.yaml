@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-累
+  title: 累
+  context: word-audio
+  durationSec: 0.9
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-累.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-累.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-累
+  span:
+  - 0.11
+  - 0.77
+  file:
+    key: media/8d6cf0a4417940f7.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2901
+    sha256: 8d6cf0a4417940f7c9569ae8f42106bfb3a44513d8cfc967562db88b3354c522
+    durationSec: 0.66
+    gainDb: -4.26
+  lines:
+  - t:
+    - 0.0
+    - 0.66
+    zh: 累
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 1.0
+    per: 0.0
+    lufs: -15.74
+    peak_db: -1.89
+    speech_ratio: 0.662
+    edge_start_db: -42.31
+    edge_end_db: -42.25
+    forced_logp: -1.68

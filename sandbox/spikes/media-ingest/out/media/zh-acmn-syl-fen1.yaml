@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-fen1
+  title: fen1
+  context: word-audio
+  durationSec: 0.888
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-fen1.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-fen1.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-fen1
+  span:
+  - 0.16
+  - 0.65
+  file:
+    key: media/5268335f6dccea0d.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2051
+    sha256: 5268335f6dccea0d16ead83dcd3f1c61bc6a11c8d8588f1ca0de651b84cce553
+    durationSec: 0.49
+    gainDb: -6.76
+  lines:
+  - t:
+    - 0.0
+    - 0.49
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: fen1
+  validation:
+    lufs: -13.24
+    peak_db: -0.96
+    speech_ratio: 0.562
+    edge_start_db: -34.35
+    edge_end_db: -38.84
+    forced_logp: -0.65

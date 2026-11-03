@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-呢
+  title: 呢
+  context: word-audio
+  durationSec: 0.8
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-呢.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-呢.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-呢
+  span:
+  - 0.13
+  - 0.64
+  file:
+    key: media/85e4642d55330f79.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2209
+    sha256: 85e4642d55330f79330c213e0881f6dba0be3b027c88840861160635ac4c26fa
+    durationSec: 0.51
+    gainDb: -5.67
+  lines:
+  - t:
+    - 0.0
+    - 0.51
+    zh: 呢
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 1.0
+    per: 1.0
+    lufs: -14.33
+    peak_db: -1.41
+    speech_ratio: 0.58
+    edge_start_db: -44.44
+    edge_end_db: -43.64
+    forced_logp: -2.43

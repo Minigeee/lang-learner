@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-票
+  title: 票
+  context: word-audio
+  durationSec: 0.85
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-票.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-票.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-票
+  span:
+  - 0.08
+  - 0.68
+  file:
+    key: media/9bd1c10e0f2acf7f.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2563
+    sha256: 9bd1c10e0f2acf7f34c91a63e3fb4d83123d378f1d58399cc5c74e8ca6eebd16
+    durationSec: 0.6
+    gainDb: -4.98
+  lines:
+  - t:
+    - 0.0
+    - 0.6
+    zh: 票
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -15.02
+    peak_db: -1.19
+    speech_ratio: 0.644
+    edge_start_db: -46.47
+    edge_end_db: -44.98
+    forced_logp: -0.21

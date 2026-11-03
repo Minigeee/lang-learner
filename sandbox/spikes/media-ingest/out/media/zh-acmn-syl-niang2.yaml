@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-niang2
+  title: niang2
+  context: word-audio
+  durationSec: 1.296
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-niang2.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-niang2.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-niang2
+  span:
+  - 0.24
+  - 1.02
+  file:
+    key: media/d50acb4565ea55d0.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3249
+    sha256: d50acb4565ea55d0f4873463ea0e4b2c92155b7a8edf54ab5a9b176ce85f41a4
+    durationSec: 0.78
+    gainDb: -7.57
+  lines:
+  - t:
+    - 0.0
+    - 0.78
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: niang2
+  validation:
+    lufs: -12.43
+    peak_db: -1.64
+    speech_ratio: 0.727
+    edge_start_db: -44.53
+    edge_end_db: -41.34
+    forced_logp: -0.01

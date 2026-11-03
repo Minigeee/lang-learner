@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-can3
+  title: can3
+  context: word-audio
+  durationSec: 1.296
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-can3.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-can3.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-can3
+  span:
+  - 0.22
+  - 1.13
+  file:
+    key: media/fdd43c92a320e272.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3822
+    sha256: fdd43c92a320e272ac34280bddbcc39f7efddf39fe0e4fdda2ba000fc14a8c6c
+    durationSec: 0.91
+    gainDb: -5.33
+  lines:
+  - t:
+    - 0.0
+    - 0.91
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: can3
+  validation:
+    lufs: -14.67
+    peak_db: -1.12
+    speech_ratio: 0.767
+    edge_start_db: -36.0
+    edge_end_db: -40.66
+    forced_logp: -1.84

@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-再见
+  title: 再见
+  context: word-audio
+  durationSec: 1.25
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-再见.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-再见.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-再见
+  span:
+  - 0.16
+  - 1.07
+  file:
+    key: media/c4ead531ac0426d1.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3960
+    sha256: c4ead531ac0426d108f91173f4b00084943e0e8220006b74ea361649e300d738
+    durationSec: 0.91
+    gainDb: -3.82
+  lines:
+  - t:
+    - 0.0
+    - 0.91
+    zh: 再见
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -16.18
+    peak_db: -0.73
+    speech_ratio: 0.756
+    edge_start_db: -41.59
+    edge_end_db: -41.73
+    forced_logp: -0.04

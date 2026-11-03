@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-事情
+  title: 事情
+  context: word-audio
+  durationSec: 1.25
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-事情.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-事情.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-事情
+  span:
+  - 0.17
+  - 1.12
+  file:
+    key: media/145689e7316f2647.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 4038
+    sha256: 145689e7316f264784b1c699f24cf1deec65da2d4ce79b789c8c463b024c3af6
+    durationSec: 0.95
+    gainDb: -1.79
+  lines:
+  - t:
+    - 0.0
+    - 0.95
+    zh: 事情
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -18.21
+    peak_db: -6.1
+    speech_ratio: 0.777
+    edge_start_db: -40.57
+    edge_end_db: -39.75
+    forced_logp: -0.26

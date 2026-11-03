@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-学生
+  title: 学生
+  context: word-audio
+  durationSec: 1.15
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-学生.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-学生.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-学生
+  span:
+  - 0.15
+  - 0.97
+  file:
+    key: media/124aa4077618b2c5.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3576
+    sha256: 124aa4077618b2c59eb6e2b61d4f6db5c8a13ced78d64d5d564bb79d04a9f592
+    durationSec: 0.82
+    gainDb: -4.15
+  lines:
+  - t:
+    - 0.0
+    - 0.82
+    zh: 学生
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -15.85
+    peak_db: -5.23
+    speech_ratio: 0.741
+    edge_start_db: -40.32
+    edge_end_db: -40.45
+    forced_logp: -0.02

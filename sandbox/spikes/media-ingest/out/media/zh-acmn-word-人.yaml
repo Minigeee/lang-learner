@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-人
+  title: 人
+  context: word-audio
+  durationSec: 1.05
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-人.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-人.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-人
+  span:
+  - 0.15
+  - 0.93
+  file:
+    key: media/ab88b13cd66c47ee.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3316
+    sha256: ab88b13cd66c47ee62e8f6bdde98a0635caf8d0ad8668fc989409ce2cde23507
+    durationSec: 0.78
+    gainDb: -3.92
+  lines:
+  - t:
+    - 0.0
+    - 0.78
+    zh: 人
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -16.08
+    peak_db: -1.68
+    speech_ratio: 0.714
+    edge_start_db: -33.09
+    edge_end_db: -35.19
+    forced_logp: -0.48

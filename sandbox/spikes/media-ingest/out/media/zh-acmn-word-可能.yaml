@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-可能
+  title: 可能
+  context: word-audio
+  durationSec: 1.3
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-可能.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-可能.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-可能
+  span:
+  - 0.2
+  - 1.15
+  file:
+    key: media/54897b679244b15f.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3998
+    sha256: 54897b679244b15fea62685ae17c8d8cc3c59330a59be12f308f0f71f2920f46
+    durationSec: 0.95
+    gainDb: -5.83
+  lines:
+  - t:
+    - 0.0
+    - 0.95
+    zh: 可能
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -14.17
+    peak_db: -1.74
+    speech_ratio: 0.766
+    edge_start_db: -37.78
+    edge_end_db: -39.31
+    forced_logp: -0.05

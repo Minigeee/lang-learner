@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-一
+  title: 一
+  context: word-audio
+  durationSec: 0.9
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-一.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-一.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-一
+  span:
+  - 0.15
+  - 0.9
+  file:
+    key: media/b95a01224c68f396.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3141
+    sha256: b95a01224c68f39687077887bef97cd047df7680e421e4b3a27fd31ceb6c4e2f
+    durationSec: 0.75
+    gainDb: -8.55
+  lines:
+  - t:
+    - 0.0
+    - 0.75
+    zh: 一
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -11.45
+    peak_db: -1.33
+    speech_ratio: 0.716
+    edge_start_db: -38.66
+    edge_end_db: -16.98
+    forced_logp: -1.11

@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-为什么
+  title: 为什么
+  context: word-audio
+  durationSec: 1.2
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-为什么.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-为什么.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-为什么
+  span:
+  - 0.16
+  - 1.05
+  file:
+    key: media/0a4c77b115b9d60d.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3790
+    sha256: 0a4c77b115b9d60d5e7b03bfc173af08688effc442107735cdfaf1821a5e2d57
+    durationSec: 0.89
+    gainDb: -4.25
+  lines:
+  - t:
+    - 0.0
+    - 0.89
+    zh: 为什么
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -15.75
+    peak_db: -1.69
+    speech_ratio: 0.761
+    edge_start_db: -39.61
+    edge_end_db: -42.29
+    forced_logp: -0.05

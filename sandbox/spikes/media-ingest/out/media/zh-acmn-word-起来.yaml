@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-起来
+  title: 起来
+  context: word-audio
+  durationSec: 1.35
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-起来.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-起来.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-起来
+  span:
+  - 0.17
+  - 1.28
+  file:
+    key: media/984ec0850a9c9203.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 4755
+    sha256: 984ec0850a9c9203525628ce105b74a32c0436cc592751f9e1adc2c6b572bc30
+    durationSec: 1.11
+    gainDb: -0.02
+  lines:
+  - t:
+    - 0.0
+    - 1.11
+    zh: 起来
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -19.98
+    peak_db: -7.08
+    speech_ratio: 0.764
+    edge_start_db: -36.77
+    edge_end_db: -37.37
+    forced_logp: -0.09

@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-gong3
+  title: gong3
+  context: word-audio
+  durationSec: 1.224
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-gong3.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-gong3.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-gong3
+  span:
+  - 0.23
+  - 1.02
+  file:
+    key: media/bbccc35998073246.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3336
+    sha256: bbccc35998073246ec600aabf6c28e5ffba8a7b5bf313ea7c04b7146f149d08b
+    durationSec: 0.79
+    gainDb: 0.26
+  lines:
+  - t:
+    - 0.0
+    - 0.79
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: gong3
+  validation:
+    lufs: -20.26
+    peak_db: -1.49
+    speech_ratio: 0.731
+    edge_start_db: -49.61
+    edge_end_db: -47.03
+    forced_logp: -3.68

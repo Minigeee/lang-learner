@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-杯子
+  title: 杯子
+  context: word-audio
+  durationSec: 1.15
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-杯子.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-杯子.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-杯子
+  span:
+  - 0.17
+  - 1.0
+  file:
+    key: media/f58945220b8e6546.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3558
+    sha256: f58945220b8e65466332be5c2c891287cacb00f4b1edaacc661ae630a4d2e801
+    durationSec: 0.83
+    gainDb: -5.45
+  lines:
+  - t:
+    - 0.0
+    - 0.83
+    zh: 杯子
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.5
+    per: 0.0
+    lufs: -14.55
+    peak_db: -1.7
+    speech_ratio: 0.744
+    edge_start_db: -35.69
+    edge_end_db: -36.82
+    forced_logp: -2.41

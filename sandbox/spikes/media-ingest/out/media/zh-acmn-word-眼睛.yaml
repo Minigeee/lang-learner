@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-眼睛
+  title: 眼睛
+  context: word-audio
+  durationSec: 1.2
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-眼睛.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-眼睛.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-眼睛
+  span:
+  - 0.14
+  - 1.04
+  file:
+    key: media/bfb18a1ebd957b9e.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3941
+    sha256: bfb18a1ebd957b9e2bd777192a47bd173734ea11a504dfb07efce4e384ae6992
+    durationSec: 0.9
+    gainDb: -4.24
+  lines:
+  - t:
+    - 0.0
+    - 0.9
+    zh: 眼睛
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -15.76
+    peak_db: -1.37
+    speech_ratio: 0.764
+    edge_start_db: -38.99
+    edge_end_db: -38.59
+    forced_logp: -0.01

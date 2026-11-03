@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-药
+  title: 药
+  context: word-audio
+  durationSec: 0.9
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-药.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-药.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-药
+  span:
+  - 0.14
+  - 0.73
+  file:
+    key: media/6999c96475575613.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2539
+    sha256: 6999c96475575613da42a55a595fb85aa641508205f229a23653bc4ecd999c6b
+    durationSec: 0.59
+    gainDb: -5.9
+  lines:
+  - t:
+    - 0.0
+    - 0.59
+    zh: 药
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 4.0
+    per: 4.0
+    lufs: -14.1
+    peak_db: -1.72
+    speech_ratio: 0.638
+    edge_start_db: -49.24
+    edge_end_db: -44.58
+    forced_logp: -2.04

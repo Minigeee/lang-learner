@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-一点儿
+  title: 一点儿
+  context: word-audio
+  durationSec: 1.2
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-一点儿.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-一点儿.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-一点儿
+  span:
+  - 0.14
+  - 1.05
+  file:
+    key: media/db7f4401883d2be1.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3845
+    sha256: db7f4401883d2be1e8425031585ad81e6a8d625c2bc69b028d89bab0bec95835
+    durationSec: 0.91
+    gainDb: -4.76
+  lines:
+  - t:
+    - 0.0
+    - 0.91
+    zh: 一点儿
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.667
+    per: 0.333
+    lufs: -15.24
+    peak_db: -1.45
+    speech_ratio: 0.767
+    edge_start_db: -37.58
+    edge_end_db: -39.32
+    forced_logp: -0.71

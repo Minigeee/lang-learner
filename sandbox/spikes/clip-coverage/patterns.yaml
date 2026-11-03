@@ -1,0 +1,343 @@
+# Search patterns for the S1 and S2 lesson ideas in docs/research/03 §1.8.
+#
+# One entry per lesson idea (the semicolon-separated items in each unit's
+# "Lesson ideas" cell). Checkpoint units (1.15, 2.30, 2.15) are left out: they
+# reuse unseen material from the other units rather than teaching a form.
+#
+# Keys per lesson:
+#   idea      short label, copied from doc 03
+#   re        Python regex, matched against the sentence after conversion to
+#             simplified characters (OpenCC t2s) with spaces removed
+#   union     instead of `re`: a contrast lesson, matched by any of the named
+#             lesson ids (both members of the pair count)
+#   words     vocabulary target words; a sentence matches if it contains any
+#             of them, and coverage.py also reports audio-cmn word coverage
+#   clip      true when the idea is "heard in a story/scene/clip", so isolated
+#             sentences are only a proxy; the lesson really needs a continuous
+#             clip (a GS story or a permitted YouTube span)
+#   no_text   true when no sentence corpus can supply it (spontaneous speech)
+#
+# Patterns aim for precision over recall: a false positive costs a bad example
+# in a lesson, a false negative only an undercount. They are heuristics, not a
+# parser; spot-check samples in out/samples.txt.
+#
+# Most Common Voice sentences have no final punctuation, so sentence-final
+# question patterns accept either a question mark or the end of the string.
+
+settings:
+  # Learner-fit filter (see coverage.py): sentence length in hanzi, and how many
+  # hanzi may fall outside the allowed HSK 2025 character inventory.
+  S1: {max_hanzi: 20, allowed_levels: [1, 2], max_unknown_chars: 1}
+  S2: {max_hanzi: 25, allowed_levels: [1, 2, 3], max_unknown_chars: 1}
+  # Transliterated names that Tatoeba uses everywhere; treated as known.
+  known_names: [汤姆, 玛丽, 约翰, 杰克, 小明, 小王, 小李, 小张]
+
+units:
+  # ---------------------------------------------------------------- S1
+  - unit: "1.1"
+    title: Greetings and names
+    lessons:
+      - {id: 1.1-a, idea: "是 links two nouns", re: '(我|你|他|她|它|这|那)(们)?(不)?是(?!不是)'}
+      - {id: 1.1-b, idea: "names with 叫", re: '(我|你|他|她)叫|叫什么名字|名字(是|叫)'}
+  - unit: "1.2"
+    title: Asking questions
+    lessons:
+      - {id: 1.2-a, idea: "吗 yes/no question", re: '吗([？?]|$)'}
+      - {id: 1.2-b, idea: "你呢? asks back", re: '(你|他|她|你们|他们)呢([？?]|$)'}
+      - {id: 1.2-c, idea: "question word in place (什么/谁)", re: '((?<!为)什么|谁).*[？?]'}
+  - unit: "1.3"
+    title: Describing
+    lessons:
+      - {id: 1.3-a, idea: "noun + 很 + adj", re: '很[一-鿿]{1,2}[。！!]'}
+      - {id: 1.3-b, idea: "不 negates verb/adj", re: '不(是|高|好|大|小|忙|累|热|冷|多|少|贵|对|喜欢|想|去|来|吃|喝|知道|会|能|要|认识|一样|错)'}
+      - {id: 1.3-c, idea: "非常 / 真 / 有点儿", re: '非常|真(?!的|正|相|是)[一-鿿]|有(一)?点儿?(?![一-鿿]?[东事])'}
+  - unit: "1.4"
+    title: Numbers and age
+    lessons:
+      - {id: 1.4-a, idea: "number structure 十一…九十九", re: '[二三四五六七八九]十[一二三四五六七八九]?|十[一二三四五六七八九]'}
+      - {id: 1.4-b, idea: "个 between number and noun; 几个", re: '[一二三四五六七八九十两几]个'}
+      - {id: 1.4-c, idea: "两 not 二 before a measure word", re: '两(个|本|张|杯|口|只|件|位|天|年|点|次|块|岁|辆|条|双)'}
+      - {id: 1.4-d, idea: "age with 岁 / 多大", re: '岁|多大'}
+  - unit: "1.4a"
+    title: This, that, which
+    lessons:
+      - {id: 1.4a-a, idea: "这/那/哪 + MW + noun", re: '[这那哪](一)?(个|本|张|杯|只|件|位|条|辆|家|种)'}
+      - {id: 1.4a-b, idea: "这些 / 那些", re: '[这那哪]些'}
+      - {id: 1.4a-c, idea: "everyday MWs with their nouns", re: '[一二三四五六七八九十两几这那哪每](本|杯|口|件|只)',
+         words: [本, 杯, 口, 件, 只, 书, 茶, 人, 衣服, 猫]}
+  - unit: "1.5"
+    title: Family
+    lessons:
+      - {id: 1.5-a, idea: "possession with 的", re: '(我|你|他|她|我们|你们|他们)的[一-鿿]'}
+      - {id: 1.5-b, idea: "我妈妈 vs 我的妈妈", re: '(我|你|他|她)(的)?(妈妈|爸爸|哥哥|姐姐|弟弟|妹妹|家|朋友|儿子|女儿|爷爷|奶奶)',
+         words: [妈妈, 爸爸, 哥哥, 姐姐, 弟弟, 妹妹, 儿子, 女儿, 爷爷, 奶奶, 家人]}
+      - {id: 1.5-c, idea: "有 / 没有 (never 不有)", re: '(?<![没还只所])有(?![点些的意名])|没有[一-鿿]', clip: true}
+  - unit: "1.6"
+    title: Asking how
+    lessons:
+      - {id: 1.6-a, idea: "怎么 + verb", re: '怎么(?!样|了|办|回事)[一-鿿]'}
+      - {id: 1.6-b, idea: "怎么样", re: '怎么样'}
+  - unit: "1.7"
+    title: Where things are
+    lessons:
+      - {id: 1.7-a, idea: "thing + 在 + place; 在哪儿?", re: '在(哪儿|哪里|这儿|那儿|这里|那里)|在[一-鿿]{1,5}(上|里|下|前边|后边|外边|旁边|上面|里面|下面)[。？?！!]'}
+      - {id: 1.7-b, idea: "place words after a noun", re: '[一-鿿](上|里)[，。？！有]|(前边|后边|外边|里边|上边|下边|旁边|前面|后面|外面|里面|上面|下面)'}
+      - {id: 1.7-c, idea: "place + 有 + thing vs thing + 在 + place", re: '(上|里|边|面|儿)有[一-鿿]', clip: true}
+  - unit: "1.8"
+    title: Dates and times
+    lessons:
+      - {id: 1.8-a, idea: "dates 年 → 月 → 号", re: '[0-9〇零一二三四五六七八九十]+(月|号)|[0-9〇零一二三四五六七八九]{4}年'}
+      - {id: 1.8-b, idea: "days of the week", re: '星期[一二三四五六日天]|周[一二三四五六日末]|礼拜',
+         words: [星期一, 星期二, 星期三, 星期四, 星期五, 星期六, 星期天, 星期日]}
+      - {id: 1.8-c, idea: "clock time 点/分/半", re: '([0-9两三四五六七八九十]|十[一二])点|几点|[0-9一二三四五六七八九十]+分(?!之)|点半'}
+  - unit: "1.9"
+    title: Daily verbs, word order
+    lessons:
+      - {id: 1.9-a, idea: "S + V + O in daily life", re: '^(我|你|他|她|我们|他们)(吃|喝|看|听|说|读|写|买|做|学习|学)[一-鿿]', clip: true}
+      - {id: 1.9-b, idea: "去 + place (+ verb for purpose)", re: '去(学校|商店|北京|中国|医院|公园|超市|饭馆|饭店|图书馆|上海|哪儿|哪里|公司|银行|机场|车站|朋友家|他家|我家)'}
+      - {id: 1.9-c, idea: "time words before the verb", re: '(明天|今天|昨天|晚上|早上|上午|下午|每天|后天|前天)(我|你|他|她|我们|他们)?(要|去|来|吃|看|学|做|买|想|会|不|没|在|有|上|回)|(我|你|他|她|我们|他们)(明天|今天|昨天|晚上|早上|上午|下午|每天)'}
+      - {id: 1.9-d, idea: "在 + place before the verb", re: '在(家|学校|公司|这儿|那儿|这里|那里|饭馆|图书馆|中国|北京|[一-鿿]{1,3}(里|上))(吃|喝|看|学|工作|住|做|玩|睡|买|等|休息|上课)'}
+  - unit: "1.10"
+    title: Wanting
+    lessons:
+      - {id: 1.10-a, idea: "想 + verb", re: '想(去|吃|喝|看|买|学|做|要|知道|睡|回|听|说|玩|休息|见)'}
+      - {id: 1.10-b, idea: "要 + noun/verb (want; going to)", re: '(?<![不想需重只主还])要(?!是|求)'}
+  - unit: "1.10a"
+    title: Can
+    lessons:
+      - {id: 1.10a-a, idea: "会: learned skill", re: '会(说|写|做|游泳|开车|唱|跳|弹|画|读|用|骑|打|做饭)'}
+      - {id: 1.10a-b, idea: "能: able / possible", re: '(?<![可功才])能(?!力|源|量)'}
+      - {id: 1.10a-c, idea: "可以; 行 / 不行", re: '可以|(?<![银自旅进流])(不)?行[。！？!?吗]'}
+      - {id: 1.10a-d, idea: "会 vs 能 vs 可以", union: [1.10a-a, 1.10a-b, 1.10a-c]}
+  - unit: "1.11"
+    title: Food and shopping
+    lessons:
+      - {id: 1.11-a, idea: "prices 多少钱, 块; 多少 vs 几", re: '多少钱|[0-9一二三四五六七八九十两几百]+块|多少'}
+      - {id: 1.11-b, idea: "太…了", re: '太[一-鿿]{1,3}了'}
+      - {id: 1.11-c, idea: "A 还是 B? (no 吗)", re: '还是[^吗]*[？?]'}
+      - {id: 1.11-d, idea: "ordering scene at a market", re: '(服务员|菜单|点菜|买单|来一|一碗|一杯|一份|结账|多少钱)', clip: true,
+         words: [服务员, 菜单, 点菜, 碗, 杯, 钱, 块, 便宜, 贵, 买, 卖, 水果, 米饭, 面条]}
+  - unit: "1.12"
+    title: Also, all, and
+    lessons:
+      - {id: 1.12-a, idea: "也 before the verb", re: '也'}
+      - {id: 1.12-b, idea: "都 sums up; 也都", re: '都'}
+      - {id: 1.12-c, idea: "还 adds one more thing", re: '[，,]还|还(有|要|想|会|喜欢|买|去)'}
+      - {id: 1.12-d, idea: "和 joins nouns", re: '[一-鿿]和[一-鿿]'}
+  - unit: "1.13"
+    title: Didn't, don't, let's
+    lessons:
+      - {id: 1.13-a, idea: "没(有) + verb", re: '没(有)?(去|来|吃|看|做|买|说|听|想|学|写|找|见|到|告诉|睡)'}
+      - {id: 1.13-b, idea: "不 vs 没 (first pass)", union: [1.3-b, 1.13-a]}
+      - {id: 1.13-c, idea: "吧 softens a suggestion", re: '吧[。！!]?$'}
+      - {id: 1.13-d, idea: "不要 + verb: don't!", re: '不要(?=[一-鿿])'}
+  - unit: "1.14"
+    title: Asking whether
+    lessons:
+      - {id: 1.14-a, idea: "A-not-A questions", re: '([是有好对去来要会能想喜可行在])[不没]\1|有没有|可不可以|喜不喜欢|知不知道|认不认识'}
+      - {id: 1.14-b, idea: "tag questions", re: '(好吗|对不对|对吗|是不是|行吗|可以吗|好不好)([？?]|$)|吧[？?]'}
+  - unit: "1.14a"
+    title: Now and changed (first pass)
+    lessons:
+      - {id: 1.14a-a, idea: "sentence-final 了: new situation", re: '了[。！!]?$'}
+      - {id: 1.14a-b, idea: "verb + 了: done", re: '(吃|喝|买|看|做|写|去|来|说|学|找|拿|到|完)了[一二三四五六七八九十两几0-9这那个一-鿿]', clip: true}
+      - {id: 1.14a-c, idea: "在 / 正在 + verb (…呢)", re: '正在|在[一-鿿]{1,4}呢|(?<![现存实正])在(吃|喝|看|做|写|说|学|学习|工作|睡觉|打|玩|听|等|准备|上课)'}
+
+  # ---------------------------------------------------------------- S2
+  - unit: "2.1"
+    title: What happened (了 second pass)
+    lessons:
+      - {id: 2.1-a, idea: "verb + 了 + amount", re: '[一-鿿]了[一二三四五六七八九十两几0-9]+[一-鿿]'}
+      - {id: 2.1-b, idea: "没 + verb (了 dropped); 了吗? → 没有", re: '了吗[？?]|没(有)?(去|来|吃|看|做|买|说|听|想|学|写|找|见|到|告诉|睡)'}
+  - unit: "2.16"
+    title: Things changed
+    lessons:
+      - {id: 2.16-a, idea: "sentence-final 了: now it's…", re: '(岁|点|黑|雨|雪|冷|热|饿|累|晚|胖|瘦|病)了[。！!]?$'}
+      - {id: 2.16-b, idea: "不…了: not any more", re: '不[一-鿿]{1,3}了[。！!]?$'}
+      - {id: 2.16-c, idea: "快/要/就要…了: about to", re: '(快|快要|就要)[一-鿿]{1,5}了'}
+      - {id: 2.16-d, idea: "verb-了 vs sentence-了", union: [1.14a-a, 1.14a-b], clip: true}
+  - unit: "2.2"
+    title: Experiences
+    lessons:
+      - {id: 2.2-a, idea: "verb + 过", re: '(去|来|吃|看|见|听|学|做|说|用|住|喝|玩|坐|到|试|想|买|写|读|遇到|见到|听说)过(?![来去])'}
+      - {id: 2.2-b, idea: "没 + verb + 过", re: '没(有)?[一-鿿]{1,2}过(?![来去])'}
+      - {id: 2.2-c, idea: "了 vs 过", union: [2.2-a, 2.1-a]}
+      - {id: 2.2-d, idea: "travel story with 过", re: '(去过|到过|玩过)|(旅游|旅行)', clip: true}
+  - unit: "2.3"
+    title: At once and ongoing
+    lessons:
+      - {id: 2.3-a, idea: "一边…一边", re: '一边.*一边|边[一-鿿]{1,4}边'}
+      - {id: 2.3-b, idea: "verb + 着: holding state", re: '(穿|开|坐|站|躺|戴|拿|关|放|挂|写|带|住|睡|等)着'}
+      - {id: 2.3-c, idea: "verb + 着 + verb", re: '(笑|走|坐|站|躺|看|听|哭|跑|拿|带|开|唱|跳)着(说|走|去|看|听|吃|做|唱|跑|回|玩|哭|笑|上|写)'}
+      - {id: 2.3-d, idea: "着 vs 在", union: [2.3-b, 1.14a-c]}
+  - unit: "2.8"
+    title: Results
+    lessons:
+      - {id: 2.8-a, idea: "verb + 完", re: '(做|吃|喝|看|写|说|用|卖|学|读|听|干)完'}
+      - {id: 2.8-b, idea: "verb + 到 / 见", re: '(找|看|听|买|见|想|遇|收|拿|学|做|得)到|(看|听|遇|碰|梦)见'}
+      - {id: 2.8-c, idea: "没 + verb + result", re: '没(有)?(听懂|看懂|找到|看见|听见|做完|吃完|买到|看到|听到|学会|写完|想到|收到|拿到)'}
+      - {id: 2.8-d, idea: "result complements in a story", re: '(听|看|学|做|写|吃|说|洗|打|准备)(懂|会|完|到|见|好|对|错|清楚|干净|饱)', clip: true}
+  - unit: "2.7"
+    title: Should, must, want, will
+    lessons:
+      - {id: 2.7-a, idea: "要 vs 想", union: [1.10-a, 1.10-b]}
+      - {id: 2.7-b, idea: "应该", re: '应该'}
+      - {id: 2.7-c, idea: "得 děi: have to", re: '(我|你|他|她|我们|你们|他们|就|还|也|都|总)得(去|走|做|买|学|回|工作|写|吃|看|上|早|准备|考虑|等|花|用|找|说|告诉|马上)'}
+      - {id: 2.7-d, idea: "会 will vs 会 can", re: '会(下雨|下雪|来|迟到|生气|同意|喜欢|成功|回来|好的|有|是)|不会[一-鿿]{0,4}的|可能会|一定会'}
+  - unit: "2.11"
+    title: Asking and telling
+    lessons:
+      - {id: 2.11-a, idea: "verb + 一下 / doubled verbs", re: '一下|看看|听听|试试|想想|说说|等等|走走|尝尝|问问|看一看|试一试|想一想|等一等'}
+      - {id: 2.11-b, idea: "请 + verb", re: '请(?!客|假|问题)[一-鿿]'}
+      - {id: 2.11-c, idea: "别 + verb; 别…了", re: '别(?!人|的)[一-鿿]'}
+      - {id: 2.11-d, idea: "请/叫/让 + person + verb", re: '(请|叫|让)(我|你|他|她|我们|你们|他们|妈妈|爸爸|老师|大家)(?!的)[一-鿿]'}
+  - unit: "2.27"
+    title: To, for, with someone
+    lessons:
+      - {id: 2.27-a, idea: "跟 + person (+ 一起) + verb", re: '跟[一-鿿]{1,4}一起|跟(我|你|他|她|我们|你们|他们)[一-鿿]'}
+      - {id: 2.27-b, idea: "给 + person + thing (two objects)", re: '(送|给|教|告诉|问|还|借)(我|你|他|她|我们|你们|他们)[一两几这那][一-鿿]'}
+      - {id: 2.27-c, idea: "给 + person + verb", re: '给(我|你|他|她|我们|你们|他们|妈妈|爸爸|老师)(打电话|写信|发|买|做|看|介绍|讲|带|拿|准备)'}
+      - {id: 2.27-d, idea: "对 + person: towards", re: '对(我|你|他|她|我们|你们|他们|大家|人|孩子|学生)(很|非常|特别|不|好|说|来说)'}
+  - unit: "2.9"
+    title: Counting things
+    lessons:
+      - {id: 2.9-a, idea: "MWs by shape 张 条 双 位", re: '[一二三四五六七八九十两几这那哪每](张|条|双|位)',
+         words: [张, 条, 双, 位, 纸, 鞋, 裤子, 河, 路]}
+      - {id: 2.9-b, idea: "一些 vs 有的 / 有些", re: '一些|有的|有些'}
+      - {id: 2.9-c, idea: "每 + MW + 都", re: '每(个|天|年|次|本|张|人|位|周|星期)[一-鿿，]{0,8}都'}
+  - unit: "2.13"
+    title: Describing with 的
+    lessons:
+      - {id: 2.13-a, idea: "adj + 的 + noun", re: '(漂亮|好看|好吃|聪明|可爱|重要|有名|新|旧|红|白|黑|贵|便宜|很好|很大|很小|很多)的[一-鿿]'}
+      - {id: 2.13-b, idea: "phrase + 的 + noun (我买的书)", re: '(我|你|他|她)(昨天|今天|刚|刚才)?(买|做|写|说|看|送|给|借|拍|画)的[一-鿿]'}
+      - {id: 2.13-c, idea: "的 with the noun dropped", re: '(红|白|黑|蓝|绿|黄|新|旧|大|小|贵|便宜|买|卖菜|开车)的[。！？，,!?]'}
+      - {id: 2.13-d, idea: "long 的 descriptions in narration", re: '的[一-鿿]{1,6}的[一-鿿]', clip: true}
+  - unit: "2.6"
+    title: Time order
+    lessons:
+      - {id: 2.6-a, idea: "以前 / 以后", re: '[一-鿿]以(前|后)|之(前|后)'}
+      - {id: 2.6-b, idea: "clause + 的时候", re: '的时候'}
+      - {id: 2.6-c, idea: "已经…了", re: '已经[一-鿿，]*了'}
+      - {id: 2.6-d, idea: "刚 + verb", re: '刚(?!才|好)'}
+  - unit: "2.19"
+    title: Early, late
+    lessons:
+      - {id: 2.19-a, idea: "一…就", re: '一[一-鿿]{1,4}就'}
+      - {id: 2.19-b, idea: "才: later/harder than expected", re: '才(?!能|华|子)'}
+      - {id: 2.19-c, idea: "就 vs 才", re: '[0-9一二三四五六七八九十两几]+(点|岁|天|年|分钟|个小时|个月)[一-鿿]{0,3}(就|才)'}
+  - unit: "2.5"
+    title: Where and which way
+    lessons:
+      - {id: 2.5-a, idea: "place + verb + 着 + thing", re: '(上|里|边|面|前|后|口)(挂|放|站|坐|躺|写|贴|停|住|摆)着'}
+      - {id: 2.5-b, idea: "来 vs 去 by speaker", re: '[来去](这儿|那儿|这里|那里|我家|你家|他家|中国|北京|学校|上海|美国)'}
+      - {id: 2.5-c, idea: "在 after a verb (住在, 放在)", re: '(住|放|坐|站|躺|写|停|挂|生|出生|留|走|掉|睡)在'}
+      - {id: 2.5-d, idea: "place + 来了/走了 + someone", re: '(来|走|跑|搬|出|死)了(一|两|几|很多)(个|位|只)?[一-鿿]'}
+  - unit: "2.17"
+    title: Getting around
+    lessons:
+      - {id: 2.17-a, idea: "从 A 到 B", re: '从[一-鿿]{1,6}到'}
+      - {id: 2.17-b, idea: "A 离 B + 远/近", re: '离[一-鿿]{1,6}(很|太|不|非常|比较|有点儿?)?(远|近)'}
+      - {id: 2.17-c, idea: "坐/骑/开 + vehicle", re: '(坐|骑|开)(车|公共汽车|公交车|出租车|地铁|飞机|火车|船|自行车|摩托车|高铁)',
+         words: [公共汽车, 出租车, 地铁, 飞机, 火车, 船, 自行车, 车, 坐, 骑, 开车]}
+  - unit: "2.4"
+    title: Comparing
+    lessons:
+      - {id: 2.4-a, idea: "A 比 B + adj (更/还, never 很)", re: '比(?!较|赛|如|例)[一-鿿]'}
+      - {id: 2.4-b, idea: "A 没有 B (那么) + adj", re: '没有[一-鿿]{1,6}(那么|这么)|没有(我|你|他|她)[一-鿿]{0,3}(高|大|好|快|多|贵|长|漂亮|聪明|忙)'}
+      - {id: 2.4-c, idea: "比 + by how much", re: '比[一-鿿]{1,6}(一点儿?|一些|多了|得多|[一二三四五六七八九十两几]+(岁|块|分钟|个|公斤))'}
+      - {id: 2.4-d, idea: "A 跟 B 一样", re: '(跟|和|像)[一-鿿]{1,6}一样'}
+  - unit: "2.18"
+    title: More and more, a bit too
+    lessons:
+      - {id: 2.18-a, idea: "有点儿 + adj vs adj + 一点儿", re: '有(一)?点儿?(?![东事])[一-鿿]|(快|慢|大|小|多|少|便宜|早|晚|高|低|好|长|短)(一)?点儿?'}
+      - {id: 2.18-b, idea: "又…又", re: '又[一-鿿]{1,3}又'}
+      - {id: 2.18-c, idea: "越来越", re: '越来越'}
+      - {id: 2.18-d, idea: "越…越", re: '越(?!来越)[一-鿿]{1,4}越'}
+  - unit: "2.14"
+    title: Big and rough numbers
+    lessons:
+      - {id: 2.14-a, idea: "counting in 万", re: '[0-9一二三四五六七八九十两几百千]+万'}
+      - {id: 2.14-b, idea: "roughly: 几, 十多, 两三, 左右", re: '几(十|百|千|万)|十多|十几|[两三四五六七八][三四五六七八九](个|天|年|次|本|块)|左右'}
+      - {id: 2.14-c, idea: "半 before vs after the MW", re: '半(个|天|年)|[一二三四五六七八九十两]个半|点半'}
+  - unit: "2.10"
+    title: Linking clauses
+    lessons:
+      - {id: 2.10-a, idea: "因为…所以", re: '因为|所以'}
+      - {id: 2.10-b, idea: "虽然…但是/可是", re: '虽然|但是|可是'}
+      - {id: 2.10-c, idea: "不但…而且", re: '不但|不仅|而且'}
+      - {id: 2.10-d, idea: "或者 vs 还是", re: '或者'}
+  - unit: "2.12"
+    title: How long
+    lessons:
+      - {id: 2.12-a, idea: "duration after the verb; 多久", re: '(学|住|等|睡|工作|看|玩|走|跑|坐|休息|学习|教|写|做|待|呆|练)(了)?[一二三四五六七八九十两几半0-9]+(个)?(多)?(小时|天|年|月|星期|分钟|周)|多久|多长时间'}
+      - {id: 2.12-b, idea: "double 了: still going", re: '了[一二三四五六七八九十两几半0-9]+(个)?(多)?(小时|天|年|月|星期|分钟|周)[一-鿿]{0,3}了'}
+      - {id: 2.12-c, idea: "split verbs (见过面, 睡了…觉)", re: '(见|睡|跳|唱|洗|游|散|帮|生|照|结|聊|请)(了|过)[一二三四五六七八九十两几个次小时的]*(面|觉|舞|歌|澡|泳|步|忙|气|病|相|婚|天|假)'}
+  - unit: "2.31"
+    title: How often, again
+    lessons:
+      - {id: 2.31-a, idea: "verb + 次 / 遍", re: '[一二三四五六七八九十两几0-9]+(次|遍)'}
+      - {id: 2.31-b, idea: "再 + verb: again (future)", re: '再(?!见)'}
+      - {id: 2.31-c, idea: "又: again (past)", re: '又(?![一-鿿]{1,3}又)'}
+      - {id: 2.31-d, idea: "又 vs 再", union: [2.31-b, 2.31-c]}
+  - unit: "2.21"
+    title: Direction after the verb
+    lessons:
+      - {id: 2.21-a, idea: "verb + 来/去", re: '(拿|带|回|进|出|上|下|过|送|跑|走|搬|寄|买)(来|去)'}
+      - {id: 2.21-b, idea: "verb + 上/下/进/出/回/过/起", re: '(走|跑|拿|坐|站|放|关|穿|写|搬|跳|爬|飞|开)(上|下|进|出|回|过|起)'}
+      - {id: 2.21-c, idea: "compounds 进来, 出去, 站起来", re: '[一-鿿](进来|进去|出来|出去|回来|回去|上来|上去|下来|下去|过来|过去|起来)'}
+      - {id: 2.21-d, idea: "non-spatial 看起来, 想起来, 说下去", re: '(看|听|想|说|笑|哭|好|冷|热|忙|胖)起来|(说|做|学|干|活|住|读|写)下去'}
+  - unit: "2.22"
+    title: How well with 得
+    lessons:
+      - {id: 2.22-a, idea: "verb + 得 + adj", re: '(跑|说|写|做|唱|来|走|学|吃|睡|起|长|开|讲|玩|打|画|跳)得(很|非常|太|真|特别|不|好|快|慢|早|晚|多|少|清楚|漂亮|不错|怎么样)'}
+      - {id: 2.22-b, idea: "verb repeats / object first", re: '(说|写|唱|做|开|打|跳|画|讲|学)[一-鿿]{1,4}\1得|(中文|汉语|英文|英语|字|歌|饭|菜|车|球)(说|写|唱|做|开|打)得'}
+      - {id: 2.22-c, idea: "comparing how well", re: '[一-鿿]得(比|没有)'}
+  - unit: "2.32"
+    title: 地 and doubled adjectives
+    lessons:
+      - {id: 2.32-a, idea: "doubled adjectives", re: '(?!(?:妈|爸|哥|姐|弟|妹|奶|爷|宝|星|谢|姥|叔|伯|舅|娃|天|人|常|刚|仅|个|看|试|想|说|听|等|走|谈|问|宝|家|年))([一-鿿])\1(的|地)|(?!(?:人|天|家|年|时|事|子|世|生))([一-鿿])\3([一-鿿])\4'}
+      - {id: 2.32-b, idea: "adj + 地 + verb", re: '[一-鿿]地(走|说|看|笑|跑|吃|学习|工作|写|回答|告诉|问|点头|哭|唱|跳|开|等|做|离开|站|坐|想|听|准备)'}
+      - {id: 2.32-c, idea: "的 vs 地 vs 得", union: [2.13-a, 2.32-b, 2.22-a]}
+  - unit: "2.20"
+    title: Can or can't
+    lessons:
+      - {id: 2.20-a, idea: "verb + 不 + result/direction", re: '(听|看|找|买|吃|做|写|学|拿|进|出|回|上|下|起|走|跑|睡|记|想|说|用|搬|关|打)不(懂|见|到|完|动|开|起|下|上|进|出|回|过|清楚|好|会|着)'}
+      - {id: 2.20-b, idea: "verb + 得 + result: can", re: '(听|看|找|买|吃|做|写|学|拿|进|出|回|上|下|起|走|记|想|说|用|搬|关|打)得(懂|见|到|完|动|开|起|下|上|进|出|回|过|清楚|会|着)'}
+  - unit: "2.23"
+    title: When, where, how it happened
+    lessons:
+      - {id: 2.23-a, idea: "是…的 (when/where/how)", re: '是[一-鿿，]{1,10}(来|去|到|买|做|走|开始|出生|生|认识|学|写|见|结婚|毕业|回来|看|坐)的'}
+      - {id: 2.23-b, idea: "是…的 vs 了", union: [2.23-a, 2.1-a]}
+  - unit: "2.28"
+    title: If and only if
+    lessons:
+      - {id: 2.28-a, idea: "如果…就; …的话", re: '如果|的话|假如'}
+      - {id: 2.28-b, idea: "只要…就", re: '只要'}
+      - {id: 2.28-c, idea: "只有…才", re: '只有[一-鿿，]{1,12}才'}
+      - {id: 2.28-d, idea: "只要 vs 只有", union: [2.28-b, 2.28-c]}
+  - unit: "2.29"
+    title: Everything and nothing
+    lessons:
+      - {id: 2.29-a, idea: "QW + 都/也 (+ 不)", re: '(什么|谁|哪儿|哪里|哪个|多少)(人|东西|地方|时候)?(都|也)'}
+      - {id: 2.29-b, idea: "一 + MW + 也/都 + 不/没", re: '一(个|点儿?|本|句|口|分钟|次|天|件|张|下)[一-鿿]{0,4}(也|都)(不|没)'}
+      - {id: 2.29-c, idea: "question words meaning some-", re: '(点儿?|些)什么[。！!]|(?<!为)什么(?!都|也)[^？?吗呢]*[。！!]$'}
+      - {id: 2.29-d, idea: "除了…以外", re: '除了'}
+  - unit: "2.24"
+    title: Doing it to something with 把
+    lessons:
+      - {id: 2.24-a, idea: "把 + thing + verb + 在/到 + place", re: '把[一-鿿]{1,8}(放|挂|写|停|送|搬|带|寄|扔|留|拿)(在|到)'}
+      - {id: 2.24-b, idea: "把 + thing + verb + result/direction", re: '把[一-鿿]{1,8}(关|吃|做|写|喝|洗|打|拿|收|放|穿)(上|完|好|干净|开|出|起|下|掉|进|回)'}
+      - {id: 2.24-c, idea: "把 in instructions (cooking/tidying)", re: '(^|请|你|先|然后|再|别|不要)把', clip: true}
+      - {id: 2.24-d, idea: "thing first without 把", re: '(作业|饭|衣服|书|门|窗|车|工作|东西|房间|信)[一-鿿]{0,2}(写|吃|洗|看|关|开|做|修|打扫|收拾)(完|好|干净|上)了'}
+  - unit: "2.25"
+    title: Happening to you with 被
+    lessons:
+      - {id: 2.25-a, idea: "被 (+ doer) + verb + result", re: '被(?!子)'}
+      - {id: 2.25-b, idea: "把 vs 被", re: '把|被(?!子)'}
+  - unit: "2.26"
+    title: Real-speed speech
+    lessons:
+      - {id: 2.26-a, idea: "fillers 那个, 就是, 然后", re: '那个[，,]|就是说|然后呢|^嗯|呃', no_text: true}
+      - {id: 2.26-b, idea: "final 啊 / 呢 / 吧 tone", re: '[啊呀呢吧哇哪][。！？!?～~]?$'}
+      - {id: 2.26-c, idea: "不是…吗? reminder question", re: '不是[一-鿿，]{1,12}吗'}
+      - {id: 2.26-d, idea: "first real-speed interview clip", re: null, no_text: true}

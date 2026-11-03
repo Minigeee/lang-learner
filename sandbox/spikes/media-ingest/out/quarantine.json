@@ -1,0 +1,1689 @@
+[
+ {
+  "clip": "clip:zh-acmn-syl-_hm2",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected hm2, heard '嗯', forced None)"
+  ],
+  "text": "hm2",
+  "span": [
+   0.17,
+   0.6
+  ],
+  "hyp": "嗯"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-_hng3",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected hng3, heard '嗯', forced None)"
+  ],
+  "text": "hng3",
+  "span": [
+   0.19,
+   0.91
+  ],
+  "hyp": "嗯"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-_m2",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected m2, heard '嗯?', forced -9.13875426449858)"
+  ],
+  "text": "m2",
+  "span": [
+   0.17,
+   0.63
+  ],
+  "hyp": "嗯?"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-_m3",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected m3, heard '嗯', forced None)"
+  ],
+  "text": "m3",
+  "span": [
+   0.17,
+   1.08
+  ],
+  "hyp": "嗯"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-ang1",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected ang1, heard '哦', forced -6.399751922097465)"
+  ],
+  "text": "ang1",
+  "span": [
+   0.16,
+   0.72
+  ],
+  "hyp": "哦"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-bi1",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected bi1, heard 'b', forced -9.24540272926659)"
+  ],
+  "text": "bi1",
+  "span": [
+   0.18,
+   0.7
+  ],
+  "hyp": "b"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-bi4",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected bi4, heard 'B', forced -10.107561591521794)"
+  ],
+  "text": "bi4",
+  "span": [
+   0.16,
+   0.63
+  ],
+  "hyp": "B"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-bin2",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected bin2, heard '冰', forced None)"
+  ],
+  "text": "bin2",
+  "span": [
+   0.21,
+   0.72
+  ],
+  "hyp": "冰"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-bo2",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected bo2, heard '不', forced -6.937085534553077)"
+  ],
+  "text": "bo2",
+  "span": [
+   0.21,
+   0.7
+  ],
+  "hyp": "不"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-ca1",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected ca1, heard '茶', forced -3.7605637074173046)"
+  ],
+  "text": "ca1",
+  "span": [
+   0.17,
+   0.81
+  ],
+  "hyp": "茶"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-cai1",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected cai1, heard '', forced -8.146449110372625)"
+  ],
+  "text": "cai1",
+  "span": [
+   0.17,
+   0.7
+  ],
+  "hyp": ""
+ },
+ {
+  "clip": "clip:zh-acmn-syl-cang3",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected cang3, heard '肠', forced None)"
+  ],
+  "text": "cang3",
+  "span": [
+   0.17,
+   1.11
+  ],
+  "hyp": "肠"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-cang4",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected cang4, heard '唱', forced -8.078802552336807)"
+  ],
+  "text": "cang4",
+  "span": [
+   0.18,
+   0.8
+  ],
+  "hyp": "唱"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-cen3",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected cen3, heard '陈', forced None)"
+  ],
+  "text": "cen3",
+  "span": [
+   0.2,
+   1.0
+  ],
+  "hyp": "陈"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-chan1",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected chan1, heard '餐', forced -8.620719163953442)"
+  ],
+  "text": "chan1",
+  "span": [
+   0.15,
+   0.99
+  ],
+  "hyp": "餐"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-chao4",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected chao4, heard '恰', forced -7.2400755637121375)"
+  ],
+  "text": "chao4",
+  "span": [
+   0.19,
+   0.76
+  ],
+  "hyp": "恰"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-chen1",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected chen1, heard 'Chin', forced -4.215381132868868)"
+  ],
+  "text": "chen1",
+  "span": [
+   0.19,
+   0.82
+  ],
+  "hyp": "Chin"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-chua3",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected chua3, heard '卓', forced None)"
+  ],
+  "text": "chua3",
+  "span": [
+   0.25,
+   1.13
+  ],
+  "hyp": "卓"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-cu3",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected cu3, heard '煮', forced None)"
+  ],
+  "text": "cu3",
+  "span": [
+   0.16,
+   1.01
+  ],
+  "hyp": "煮"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-cuan4",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected cuan4, heard '串', forced -11.191010773982716)"
+  ],
+  "text": "cuan4",
+  "span": [
+   0.18,
+   0.83
+  ],
+  "hyp": "串"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-dia4",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected dia4, heard 'Yeah', forced None)"
+  ],
+  "text": "dia4",
+  "span": [
+   0.19,
+   0.66
+  ],
+  "hyp": "Yeah"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-diao1",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected diao1, heard '貼歐', forced -3.9077949507951635)"
+  ],
+  "text": "diao1",
+  "span": [
+   0.26,
+   0.77
+  ],
+  "hyp": "貼歐"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-du4",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected du4, heard '兔', forced -3.321528908803395)"
+  ],
+  "text": "du4",
+  "span": [
+   0.18,
+   0.68
+  ],
+  "hyp": "兔"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-ga3",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected ga3, heard '假', forced -6.585722869609835)"
+  ],
+  "text": "ga3",
+  "span": [
+   0.19,
+   1.02
+  ],
+  "hyp": "假"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-gai1",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected gai1, heard 'OK', forced -10.364543901580388)"
+  ],
+  "text": "gai1",
+  "span": [
+   0.18,
+   0.79
+  ],
+  "hyp": "OK"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-ge1",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected ge1, heard 'ㄎ', forced -3.000872414598372)"
+  ],
+  "text": "ge1",
+  "span": [
+   0.16,
+   0.76
+  ],
+  "hyp": "ㄎ"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-gou1",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected gou1, heard 'Go!', forced -5.651550680438582)"
+  ],
+  "text": "gou1",
+  "span": [
+   0.18,
+   0.76
+  ],
+  "hyp": "Go!"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-gu2",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected gu2, heard '母', forced -6.128384646136024)"
+  ],
+  "text": "gu2",
+  "span": [
+   0.21,
+   0.71
+  ],
+  "hyp": "母"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-gui3",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected gui3, heard '故意', forced -8.525524365537562)"
+  ],
+  "text": "gui3",
+  "span": [
+   0.21,
+   1.07
+  ],
+  "hyp": "故意"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-jiao2",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected jiao2, heard '吃药', forced None)"
+  ],
+  "text": "jiao2",
+  "span": [
+   0.15,
+   0.71
+  ],
+  "hyp": "吃药"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-jing1",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected jing1, heard '金', forced -5.466337382771786)"
+  ],
+  "text": "jing1",
+  "span": [
+   0.21,
+   0.89
+  ],
+  "hyp": "金"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-jv4",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected jv4, heard '去', forced None)"
+  ],
+  "text": "jv4",
+  "span": [
+   0.23,
+   0.77
+  ],
+  "hyp": "去"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-kai2",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected kai2, heard '嗨', forced None)"
+  ],
+  "text": "kai2",
+  "span": [
+   0.0,
+   0.984
+  ],
+  "hyp": "嗨"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-kai4",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected kai4, heard '看', forced -8.253022528473238)"
+  ],
+  "text": "kai4",
+  "span": [
+   0.17,
+   0.74
+  ],
+  "hyp": "看"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-kei1",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected kei1, heard 'K', forced None)"
+  ],
+  "text": "kei1",
+  "span": [
+   0.19,
+   0.84
+  ],
+  "hyp": "K"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-kei2",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected kei2, heard 'K', forced None)"
+  ],
+  "text": "kei2",
+  "span": [
+   0.2,
+   0.83
+  ],
+  "hyp": "K"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-kuai2",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected kuai2, heard '乖', forced None)"
+  ],
+  "text": "kuai2",
+  "span": [
+   0.16,
+   0.73
+  ],
+  "hyp": "乖"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-kuan2",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected kuan2, heard '困', forced None)"
+  ],
+  "text": "kuan2",
+  "span": [
+   0.22,
+   0.85
+  ],
+  "hyp": "困"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-lang1",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected lang1, heard '冷', forced -3.3236448780779595)"
+  ],
+  "text": "lang1",
+  "span": [
+   0.19,
+   0.78
+  ],
+  "hyp": "冷"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-leng1",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected leng1, heard '龙', forced None)"
+  ],
+  "text": "leng1",
+  "span": [
+   0.22,
+   0.84
+  ],
+  "hyp": "龙"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-lian4",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected lian4, heard '变', forced -9.352622146149947)"
+  ],
+  "text": "lian4",
+  "span": [
+   0.18,
+   0.64
+  ],
+  "hyp": "变"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-long2",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected long2, heard '咚', forced -4.630417373451548)"
+  ],
+  "text": "long2",
+  "span": [
+   0.18,
+   0.72
+  ],
+  "hyp": "咚"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-luo4",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected luo4, heard '多', forced -9.67512879765168)"
+  ],
+  "text": "luo4",
+  "span": [
+   0.19,
+   0.71
+  ],
+  "hyp": "多"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-me3",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected me3, heard '摁', forced None)"
+  ],
+  "text": "me3",
+  "span": [
+   0.21,
+   0.91
+  ],
+  "hyp": "摁"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-mie1",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected mie1, heard '蜜', forced -4.678203741177526)"
+  ],
+  "text": "mie1",
+  "span": [
+   0.16,
+   0.8
+  ],
+  "hyp": "蜜"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-mou4",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected mou4, heard '母', forced None)"
+  ],
+  "text": "mou4",
+  "span": [
+   0.19,
+   0.79
+  ],
+  "hyp": "母"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-nang1",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected nang1, heard '弄', forced -3.6033828847059226)"
+  ],
+  "text": "nang1",
+  "span": [
+   0.16,
+   0.89
+  ],
+  "hyp": "弄"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-nei1",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected nei1, heard '餵', forced None)"
+  ],
+  "text": "nei1",
+  "span": [
+   0.22,
+   0.84
+  ],
+  "hyp": "餵"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-nen2",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected nen2, heard '门', forced None)"
+  ],
+  "text": "nen2",
+  "span": [
+   0.17,
+   0.82
+  ],
+  "hyp": "门"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-niang1",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected niang1, heard '明镜需要您的支持 欢迎订阅明镜', forced None)"
+  ],
+  "text": "niang1",
+  "span": [
+   0.24,
+   0.77
+  ],
+  "hyp": "明镜需要您的支持 欢迎订阅明镜"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-ning2",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected ning2, heard '你?', forced -8.461614832397974)"
+  ],
+  "text": "ning2",
+  "span": [
+   0.24,
+   0.86
+  ],
+  "hyp": "你?"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-ning4",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected ning4, heard '您', forced -3.1826663414189147)"
+  ],
+  "text": "ning4",
+  "span": [
+   0.18,
+   0.81
+  ],
+  "hyp": "您"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-nou2",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected nou2, heard 'No', forced -10.917423737495906)"
+  ],
+  "text": "nou2",
+  "span": [
+   0.18,
+   0.84
+  ],
+  "hyp": "No"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-ou2",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected ou2, heard '哦', forced -10.737375668189195)"
+  ],
+  "text": "ou2",
+  "span": [
+   0.19,
+   0.72
+  ],
+  "hyp": "哦"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-pei3",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected pei3, heard 'Pay', forced -7.28393659943786)"
+  ],
+  "text": "pei3",
+  "span": [
+   0.2,
+   1.21
+  ],
+  "hyp": "Pay"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-piao1",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected piao1, heard '屌', forced -7.346011163588064)"
+  ],
+  "text": "piao1",
+  "span": [
+   0.17,
+   0.67
+  ],
+  "hyp": "屌"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-po1",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected po1, heard '铺', forced -3.723386584748054)"
+  ],
+  "text": "po1",
+  "span": [
+   0.13,
+   0.72
+  ],
+  "hyp": "铺"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-qiong1",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected qiong1, heard '咻', forced -7.2774137473741245)"
+  ],
+  "text": "qiong1",
+  "span": [
+   0.21,
+   0.92
+  ],
+  "hyp": "咻"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-ran1",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected ran1, heard '人', forced None)"
+  ],
+  "text": "ran1",
+  "span": [
+   0.19,
+   0.91
+  ],
+  "hyp": "人"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-ran4",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected ran4, heard '认', forced None)"
+  ],
+  "text": "ran4",
+  "span": [
+   0.19,
+   0.79
+  ],
+  "hyp": "认"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-rang3",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected rang3, heard '上', forced -4.764610404388842)"
+  ],
+  "text": "rang3",
+  "span": [
+   0.18,
+   1.0
+  ],
+  "hyp": "上"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-rang4",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected rang4, heard '中文字幕 李宗盛', forced -3.237138500803053)"
+  ],
+  "text": "rang4",
+  "span": [
+   0.17,
+   0.85
+  ],
+  "hyp": "中文字幕 李宗盛"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-re2",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected re2, heard '这', forced None)"
+  ],
+  "text": "re2",
+  "span": [
+   0.22,
+   0.87
+  ],
+  "hyp": "这"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-reng3",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected reng3, heard '', forced None)"
+  ],
+  "text": "reng3",
+  "span": [
+   0.17,
+   1.14
+  ],
+  "hyp": ""
+ },
+ {
+  "clip": "clip:zh-acmn-syl-rou3",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected rou3, heard '周', forced -8.507767324907167)"
+  ],
+  "text": "rou3",
+  "span": [
+   0.19,
+   1.06
+  ],
+  "hyp": "周"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-rua3",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected rua3, heard '爪', forced None)"
+  ],
+  "text": "rua3",
+  "span": [
+   0.16,
+   1.17
+  ],
+  "hyp": "爪"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-run2",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected run2, heard '准', forced -9.570736781303395)"
+  ],
+  "text": "run2",
+  "span": [
+   0.16,
+   0.83
+  ],
+  "hyp": "准"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-run4",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected run4, heard 'June', forced -9.43603277828306)"
+  ],
+  "text": "run4",
+  "span": [
+   0.18,
+   0.95
+  ],
+  "hyp": "June"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-sao2",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected sao2, heard '燒', forced None)"
+  ],
+  "text": "sao2",
+  "span": [
+   0.13,
+   0.94
+  ],
+  "hyp": "燒"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-sao4",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected sao4, heard '所以', forced -7.728499120482557)"
+  ],
+  "text": "sao4",
+  "span": [
+   0.18,
+   0.73
+  ],
+  "hyp": "所以"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-se3",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected se3, heard 'sir', forced None)"
+  ],
+  "text": "se3",
+  "span": [
+   0.22,
+   1.03
+  ],
+  "hyp": "sir"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-shang2",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected shang2, heard '小明星大跟班下次再見', forced None)"
+  ],
+  "text": "shang2",
+  "span": [
+   0.2,
+   0.77
+  ],
+  "hyp": "小明星大跟班下次再見"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-she4",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected she4, heard '是', forced -11.001380892449241)"
+  ],
+  "text": "she4",
+  "span": [
+   0.21,
+   0.96
+  ],
+  "hyp": "是"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-shu4",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected shu4, heard '咻', forced -10.341964450699056)"
+  ],
+  "text": "shu4",
+  "span": [
+   0.16,
+   0.77
+  ],
+  "hyp": "咻"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-sui2",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected sui2, heard '水', forced -7.900619642176605)"
+  ],
+  "text": "sui2",
+  "span": [
+   0.14,
+   0.88
+  ],
+  "hyp": "水"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-tei1",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected tei1, heard '爹', forced None)"
+  ],
+  "text": "tei1",
+  "span": [
+   0.19,
+   0.76
+  ],
+  "hyp": "爹"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-tei4",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected tei4, heard 'by bwd6', forced None)"
+  ],
+  "text": "tei4",
+  "span": [
+   0.23,
+   0.72
+  ],
+  "hyp": "by bwd6"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-tiao4",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected tiao4, heard '既然', forced -3.8000620065125283)"
+  ],
+  "text": "tiao4",
+  "span": [
+   0.25,
+   0.79
+  ],
+  "hyp": "既然"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-tie2",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected tie2, heard '多謝您收睇時局新聞,再會!', forced None)"
+  ],
+  "text": "tie2",
+  "span": [
+   0.16,
+   0.67
+  ],
+  "hyp": "多謝您收睇時局新聞,再會!"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-tun4",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected tun4, heard '明镜需要您的支持 欢迎订阅明镜', forced None)"
+  ],
+  "text": "tun4",
+  "span": [
+   0.2,
+   0.78
+  ],
+  "hyp": "明镜需要您的支持 欢迎订阅明镜"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-wai2",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected wai2, heard '拜拜', forced None)"
+  ],
+  "text": "wai2",
+  "span": [
+   0.11,
+   0.8
+  ],
+  "hyp": "拜拜"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-xing3",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected xing3, heard '心', forced -4.63572804243012)"
+  ],
+  "text": "xing3",
+  "span": [
+   0.14,
+   1.36
+  ],
+  "hyp": "心"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-xiu3",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected xiu3, heard '中文字幕志愿者 李宗盛', forced -3.337148543798432)"
+  ],
+  "text": "xiu3",
+  "span": [
+   0.22,
+   1.11
+  ],
+  "hyp": "中文字幕志愿者 李宗盛"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-xue4",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected xue4, heard '噓', forced -10.015570250366952)"
+  ],
+  "text": "xue4",
+  "span": [
+   0.24,
+   0.81
+  ],
+  "hyp": "噓"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-yin3",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected yin3, heard '赢', forced -7.197066008338433)"
+  ],
+  "text": "yin3",
+  "span": [
+   0.18,
+   1.15
+  ],
+  "hyp": "赢"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-yu1",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected yu1, heard '咦', forced -5.930866008056924)"
+  ],
+  "text": "yu1",
+  "span": [
+   0.17,
+   0.68
+  ],
+  "hyp": "咦"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-yu4",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected yu4, heard '咦?', forced -8.398371726468412)"
+  ],
+  "text": "yu4",
+  "span": [
+   0.18,
+   0.8
+  ],
+  "hyp": "咦?"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-zang3",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected zang3, heard '早安', forced -6.190004497819089)"
+  ],
+  "text": "zang3",
+  "span": [
+   0.08,
+   1.21
+  ],
+  "hyp": "早安"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-zei1",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected zei1, heard 'See?', forced None)"
+  ],
+  "text": "zei1",
+  "span": [
+   0.18,
+   0.83
+  ],
+  "hyp": "See?"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-zeng4",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected zeng4, heard '纵', forced -8.29502357810469)"
+  ],
+  "text": "zeng4",
+  "span": [
+   0.17,
+   0.72
+  ],
+  "hyp": "纵"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-zhan4",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected zhan4, heard '赞', forced -3.3903002304234082)"
+  ],
+  "text": "zhan4",
+  "span": [
+   0.28,
+   0.92
+  ],
+  "hyp": "赞"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-zhei4",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected zhei4, heard 'J', forced None)"
+  ],
+  "text": "zhei4",
+  "span": [
+   0.19,
+   0.84
+  ],
+  "hyp": "J"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-zhou1",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected zhou1, heard '中文字幕志愿者 李宗盛', forced -9.790978343157706)"
+  ],
+  "text": "zhou1",
+  "span": [
+   0.15,
+   0.71
+  ],
+  "hyp": "中文字幕志愿者 李宗盛"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-zhua2",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected zhua2, heard '主啊', forced None)"
+  ],
+  "text": "zhua2",
+  "span": [
+   0.23,
+   0.82
+  ],
+  "hyp": "主啊"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-zhua4",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected zhua4, heard '做啊!', forced None)"
+  ],
+  "text": "zhua4",
+  "span": [
+   0.2,
+   0.77
+  ],
+  "hyp": "做啊!"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-zhuai2",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected zhuai2, heard '拌匀', forced None)"
+  ],
+  "text": "zhuai2",
+  "span": [
+   0.26,
+   0.95
+  ],
+  "hyp": "拌匀"
+ },
+ {
+  "clip": "clip:zh-acmn-syl-zhuai4",
+  "source": "audio-cmn-syl",
+  "reasons": [
+   "asr syllable mismatch (expected zhuai4, heard 'Joy!', forced None)"
+  ],
+  "text": "zhuai4",
+  "span": [
+   0.17,
+   0.79
+  ],
+  "hyp": "Joy!"
+ },
+ {
+  "clip": "clip:zh-acmn-word-丈夫",
+  "source": "audio-cmn-word",
+  "reasons": [
+   "asr word mismatch (per 0.5, heard '重复', forced -7.447028656071679)"
+  ],
+  "text": "丈夫",
+  "span": [
+   0.19,
+   1.02
+  ],
+  "hyp": "重复"
+ },
+ {
+  "clip": "clip:zh-acmn-word-二",
+  "source": "audio-cmn-word",
+  "reasons": [
+   "asr word mismatch (per 1.0, heard 'R', forced -4.505563496573409)"
+  ],
+  "text": "二",
+  "span": [
+   0.18,
+   0.7
+  ],
+  "hyp": "R"
+ },
+ {
+  "clip": "clip:zh-acmn-word-些",
+  "source": "audio-cmn-word",
+  "reasons": [
+   "asr word mismatch (per 1.0, heard 'C', forced -5.251167777296721)"
+  ],
+  "text": "些",
+  "span": [
+   0.15,
+   0.89
+  ],
+  "hyp": "C"
+ },
+ {
+  "clip": "clip:zh-acmn-word-住",
+  "source": "audio-cmn-word",
+  "reasons": [
+   "asr word mismatch (per 1.0, heard '出', forced -4.634370470961664)"
+  ],
+  "text": "住",
+  "span": [
+   0.18,
+   0.73
+  ],
+  "hyp": "出"
+ },
+ {
+  "clip": "clip:zh-acmn-word-六",
+  "source": "audio-cmn-word",
+  "reasons": [
+   "asr word mismatch (per 3.0, heard 'Leo', forced -5.17213330361886)"
+  ],
+  "text": "六",
+  "span": [
+   0.17,
+   0.78
+  ],
+  "hyp": "Leo"
+ },
+ {
+  "clip": "clip:zh-acmn-word-再",
+  "source": "audio-cmn-word",
+  "reasons": [
+   "asr word mismatch (per 1.0, heard '菜', forced -3.3850924140928)"
+  ],
+  "text": "再",
+  "span": [
+   0.19,
+   0.77
+  ],
+  "hyp": "菜"
+ },
+ {
+  "clip": "clip:zh-acmn-word-别",
+  "source": "audio-cmn-word",
+  "reasons": [
+   "asr word mismatch (per 1.0, heard 'B', forced -3.6673836379097042)"
+  ],
+  "text": "别",
+  "span": [
+   0.11,
+   0.85
+  ],
+  "hyp": "B"
+ },
+ {
+  "clip": "clip:zh-acmn-word-卖",
+  "source": "audio-cmn-word",
+  "reasons": [
+   "asr word mismatch (per 4.0, heard 'Mine!', forced -3.4341739341347206)"
+  ],
+  "text": "卖",
+  "span": [
+   0.11,
+   0.74
+  ],
+  "hyp": "Mine!"
+ },
+ {
+  "clip": "clip:zh-acmn-word-在",
+  "source": "audio-cmn-word",
+  "reasons": [
+   "asr word mismatch (per 1.0, heard '菜', forced -5.20425085750897)"
+  ],
+  "text": "在",
+  "span": [
+   0.16,
+   0.82
+  ],
+  "hyp": "菜"
+ },
+ {
+  "clip": "clip:zh-acmn-word-坐",
+  "source": "audio-cmn-word",
+  "reasons": [
+   "asr word mismatch (per 1.0, heard '錯!', forced -4.818421723917663)"
+  ],
+  "text": "坐",
+  "span": [
+   0.19,
+   0.85
+  ],
+  "hyp": "錯!"
+ },
+ {
+  "clip": "clip:zh-acmn-word-外",
+  "source": "audio-cmn-word",
+  "reasons": [
+   "asr word mismatch (per 3.0, heard 'Why?', forced -6.137172169610954)"
+  ],
+  "text": "外",
+  "span": [
+   0.18,
+   0.74
+  ],
+  "hyp": "Why?"
+ },
+ {
+  "clip": "clip:zh-acmn-word-女",
+  "source": "audio-cmn-word",
+  "reasons": [
+   "asr word mismatch (per 1.0, heard '你', forced -3.4124913882809143)"
+  ],
+  "text": "女",
+  "span": [
+   0.15,
+   0.88
+  ],
+  "hyp": "你"
+ },
+ {
+  "clip": "clip:zh-acmn-word-它",
+  "source": "audio-cmn-word",
+  "reasons": [
+   "asr word mismatch (per 1.0, heard '湯', forced -2.8252192590217398)"
+  ],
+  "text": "它",
+  "span": [
+   0.13,
+   0.66
+  ],
+  "hyp": "湯"
+ },
+ {
+  "clip": "clip:zh-acmn-word-家",
+  "source": "audio-cmn-word",
+  "reasons": [
+   "asr word mismatch (per 1.0, heard '下', forced -2.755163305525922)"
+  ],
+  "text": "家",
+  "span": [
+   0.19,
+   0.79
+  ],
+  "hyp": "下"
+ },
+ {
+  "clip": "clip:zh-acmn-word-少",
+  "source": "audio-cmn-word",
+  "reasons": [
+   "asr word mismatch (per 4.0, heard 'CIAO', forced -4.342768362129809)"
+  ],
+  "text": "少",
+  "span": [
+   0.16,
+   1.09
+  ],
+  "hyp": "CIAO"
+ },
+ {
+  "clip": "clip:zh-acmn-word-岁",
+  "source": "audio-cmn-word",
+  "reasons": [
+   "asr word mismatch (per 1.0, heard '水', forced -2.8115477393634567)"
+  ],
+  "text": "岁",
+  "span": [
+   0.17,
+   0.9
+  ],
+  "hyp": "水"
+ },
+ {
+  "clip": "clip:zh-acmn-word-得",
+  "source": "audio-cmn-word",
+  "reasons": [
+   "asr word mismatch (per 2.0, heard '帶A', forced -5.455565285789875)"
+  ],
+  "text": "得",
+  "span": [
+   0.19,
+   0.93
+  ],
+  "hyp": "帶A"
+ },
+ {
+  "clip": "clip:zh-acmn-word-找",
+  "source": "audio-cmn-word",
+  "reasons": [
+   "asr word mismatch (per 4.0, heard 'CIAO', forced -5.814794509533704)"
+  ],
+  "text": "找",
+  "span": [
+   0.18,
+   0.96
+  ],
+  "hyp": "CIAO"
+ },
+ {
+  "clip": "clip:zh-acmn-word-日",
+  "source": "audio-cmn-word",
+  "reasons": [
+   "asr word mismatch (per 1.0, heard '嗯', forced -10.7006381378191)"
+  ],
+  "text": "日",
+  "span": [
+   0.12,
+   0.71
+  ],
+  "hyp": "嗯"
+ },
+ {
+  "clip": "clip:zh-acmn-word-更",
+  "source": "audio-cmn-word",
+  "reasons": [
+   "asr word mismatch (per 4.0, heard 'GONG', forced -4.271430823683604)"
+  ],
+  "text": "更",
+  "span": [
+   0.2,
+   0.74
+  ],
+  "hyp": "GONG"
+ },
+ {
+  "clip": "clip:zh-acmn-word-比",
+  "source": "audio-cmn-word",
+  "reasons": [
+   "asr word mismatch (per 1.0, heard 'B', forced -3.2767633360066917)"
+  ],
+  "text": "比",
+  "span": [
+   0.21,
+   1.1
+  ],
+  "hyp": "B"
+ },
+ {
+  "clip": "clip:zh-acmn-word-洗",
+  "source": "audio-cmn-word",
+  "reasons": [
+   "asr word mismatch (per 1.0, heard 'C', forced -5.49193292996075)"
+  ],
+  "text": "洗",
+  "span": [
+   0.15,
+   1.1
+  ],
+  "hyp": "C"
+ },
+ {
+  "clip": "clip:zh-acmn-word-爱",
+  "source": "audio-cmn-word",
+  "reasons": [
+   "asr word mismatch (per 1.0, heard 'I', forced -3.432127362797773)"
+  ],
+  "text": "爱",
+  "span": [
+   0.19,
+   0.81
+  ],
+  "hyp": "I"
+ },
+ {
+  "clip": "clip:zh-acmn-word-白",
+  "source": "audio-cmn-word",
+  "reasons": [
+   "asr word mismatch (per 1.0, heard '拜拜', forced -7.1265699489723895)"
+  ],
+  "text": "白",
+  "span": [
+   0.0,
+   0.83
+  ],
+  "hyp": "拜拜"
+ },
+ {
+  "clip": "clip:zh-acmn-word-能",
+  "source": "audio-cmn-word",
+  "reasons": [
+   "asr word mismatch (per 1.0, heard '囊', forced -4.96130467889858)"
+  ],
+  "text": "能",
+  "span": [
+   0.13,
+   0.84
+  ],
+  "hyp": "囊"
+ },
+ {
+  "clip": "clip:zh-acmn-word-读",
+  "source": "audio-cmn-word",
+  "reasons": [
+   "asr word mismatch (per 1.0, heard '2', forced -3.333216308787543)"
+  ],
+  "text": "读",
+  "span": [
+   0.17,
+   0.86
+  ],
+  "hyp": "2"
+ },
+ {
+  "clip": "clip:zh-acmn-word-门",
+  "source": "audio-cmn-word",
+  "reasons": [
+   "asr word mismatch (per 1.0, heard '滿', forced -3.511814363302)"
+  ],
+  "text": "门",
+  "span": [
+   0.13,
+   0.83
+  ],
+  "hyp": "滿"
+ },
+ {
+  "clip": "clip:zh-acmn-word-阴",
+  "source": "audio-cmn-word",
+  "reasons": [
+   "asr word mismatch (per 2.0, heard 'in', forced -3.645819054076363)"
+  ],
+  "text": "阴",
+  "span": [
+   0.19,
+   0.85
+  ],
+  "hyp": "in"
+ },
+ {
+  "clip": "clip:zh-acmn-word-题",
+  "source": "audio-cmn-word",
+  "reasons": [
+   "asr word mismatch (per 1.0, heard 'T', forced -7.626084903841894)"
+  ],
+  "text": "题",
+  "span": [
+   0.16,
+   0.86
+  ],
+  "hyp": "T"
+ },
+ {
+  "clip": "clip:zh-acmn-word-高",
+  "source": "audio-cmn-word",
+  "reasons": [
+   "asr word mismatch (per 2.0, heard 'GO!', forced -2.795305748524014)"
+  ],
+  "text": "高",
+  "span": [
+   0.2,
+   0.75
+  ],
+  "hyp": "GO!"
+ },
+ {
+  "clip": "clip:zh-acmn-word-黑",
+  "source": "audio-cmn-word",
+  "reasons": [
+   "asr word mismatch (per 1.0, heard '嗨', forced -7.66142075232537)"
+  ],
+  "text": "黑",
+  "span": [
+   0.09,
+   0.76
+  ],
+  "hyp": "嗨"
+ },
+ {
+  "clip": "clip:zh-gs-0087-p01s0",
+  "source": "storybooks",
+  "reasons": [
+   "unaligned"
+  ],
+  "text": "我喜欢看书",
+  "span": null,
+  "hyp": null
+ },
+ {
+  "clip": "clip:zh-gs-0087-p03s0",
+  "source": "storybooks",
+  "reasons": [
+   "round-trip mismatch (cer 0.625, per 0.625)"
+  ],
+  "text": "我可以念给谁听呢？",
+  "span": [
+   3.95,
+   10.11
+  ],
+  "hyp": "我喜欢看书,我可以念给谁听呢?"
+ }
+]

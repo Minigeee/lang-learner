@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-慢
+  title: 慢
+  context: word-audio
+  durationSec: 0.9
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-慢.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-慢.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-慢
+  span:
+  - 0.1
+  - 0.76
+  file:
+    key: media/3f5cfc37ce3f0c5d.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2854
+    sha256: 3f5cfc37ce3f0c5d9381b0a8a5e181a2dfb54460e37f04703ad7f7e354bcd848
+    durationSec: 0.66
+    gainDb: -1.32
+  lines:
+  - t:
+    - 0.0
+    - 0.66
+    zh: 慢
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -18.68
+    peak_db: -1.26
+    speech_ratio: 0.677
+    edge_start_db: -40.39
+    edge_end_db: -39.11
+    forced_logp: -0.29

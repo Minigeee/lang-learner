@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-怎么样
+  title: 怎么样
+  context: word-audio
+  durationSec: 1.3
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-怎么样.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-怎么样.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-怎么样
+  span:
+  - 0.19
+  - 1.19
+  file:
+    key: media/3f51374e6a71f071.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 4365
+    sha256: 3f51374e6a71f071e3036fee6d2bcf95ad635c4698da9b9790239b0d35e56d9f
+    durationSec: 1.0
+    gainDb: -2.56
+  lines:
+  - t:
+    - 0.0
+    - 1.0
+    zh: 怎么样
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -17.44
+    peak_db: -1.18
+    speech_ratio: 0.788
+    edge_start_db: -39.97
+    edge_end_db: -41.91
+    forced_logp: -0.09

@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-上
+  title: 上
+  context: word-audio
+  durationSec: 1.0
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-上.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-上.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-上
+  span:
+  - 0.16
+  - 0.87
+  file:
+    key: media/8bf46ad910c124aa.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3045
+    sha256: 8bf46ad910c124aae02897e36d0e6e88266f343aa328f3eb8ea98ef82a67b8c8
+    durationSec: 0.71
+    gainDb: -4.53
+  lines:
+  - t:
+    - 0.0
+    - 0.71
+    zh: 上
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -15.47
+    peak_db: -3.12
+    speech_ratio: 0.7
+    edge_start_db: -43.35
+    edge_end_db: -41.88
+    forced_logp: -0.61

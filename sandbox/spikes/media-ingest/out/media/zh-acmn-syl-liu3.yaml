@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-liu3
+  title: liu3
+  context: word-audio
+  durationSec: 1.44
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-liu3.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-liu3.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-liu3
+  span:
+  - 0.25
+  - 1.24
+  file:
+    key: media/e663a9c3c5bb72dd.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 4161
+    sha256: e663a9c3c5bb72ddfe3d4892adf718c86b29376dc1c52848b05ce843d0fa3972
+    durationSec: 0.99
+    gainDb: -2.75
+  lines:
+  - t:
+    - 0.0
+    - 0.99
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: liu3
+  validation:
+    lufs: -17.25
+    peak_db: -1.38
+    speech_ratio: 0.786
+    edge_start_db: -46.39
+    edge_end_db: -44.67
+    forced_logp: -12.06

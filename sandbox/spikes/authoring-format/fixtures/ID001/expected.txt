@@ -1,0 +1,3 @@
+fixtures/ID001/lessons/fixture-id001.md:9 ID001 :k: id "g:bu-negation" is missing its language prefix (e.g. "zh:g:bu-negation")
+fixtures/ID001/lessons/fixture-id001.md:9 ID001 :k: "Bu_Negation" in "zh:g:Bu_Negation" must be a lowercase slug
+fixtures/ID001/lessons/fixture-id001.md:9 ID001 :w[不]: id "zh:w:不:bu4" is not NFC-normalized (U+F967 → U+4E0D; it looks identical but won't match). Retype it

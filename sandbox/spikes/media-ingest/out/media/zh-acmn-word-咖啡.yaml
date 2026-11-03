@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-咖啡
+  title: 咖啡
+  context: word-audio
+  durationSec: 1.2
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-咖啡.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-咖啡.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-咖啡
+  span:
+  - 0.19
+  - 1.03
+  file:
+    key: media/1bfb2d0a32b638ec.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3581
+    sha256: 1bfb2d0a32b638ec951166811329d4af9fbb3f0d0e47b61c78c206372d6ea8da
+    durationSec: 0.84
+    gainDb: -5.64
+  lines:
+  - t:
+    - 0.0
+    - 0.84
+    zh: 咖啡
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 3.0
+    per: 3.0
+    lufs: -14.36
+    peak_db: -1.7
+    speech_ratio: 0.747
+    edge_start_db: -42.85
+    edge_end_db: -40.43
+    forced_logp: -0.06

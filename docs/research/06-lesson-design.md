@@ -49,7 +49,7 @@ It also has six challenge formats: Build to spec, Fix it, Extend, Refactor, Pred
 
 ### What changes for Mandarin
 
-1. **Input first, short explanation.** Refold (doc 01) and the CI research say a learner acquires from comprehensible input, not from explanation. The vue explanation budget of ~600–1,000 words drops to roughly **100–300 words**. The native clip is the "demo", and it comes first.
+1. **Input first, short explanation.** Refold (doc 01) and the CI research say a learner acquires from comprehensible input, not from explanation. The vue explanation budget of ~600–1,000 words drops to **60 words or fewer** (revised 2026-11-02; see [lesson-writing-style.md](../design/lesson-writing-style.md)). The native clip is the "demo", and it comes first.
 2. **Guided practice returns.** A Vue reader can understand `ref()` once and apply it. A beginner can't hear 2nd vs 3rd tone after one explanation, so perception needs dozens of guided, feedback-rich reps. The new shape is: I do (a native speaker models it) → we do (guided discrimination with instant feedback; shadowing is optional and perception-gated per doc 07) → you do (an unscaffolded check on new material).
 3. **No TTS means every example needs a native recording.** In the vue course an example was free to write. Here each example sentence needs a native clip: timestamps in an embeddable YouTube video, Common Voice (CC0), audio-cmn (CC BY-SA) or Global Storybooks (CC BY) (doc 03). Most Tatoeba Mandarin audio is unlicensed, so it is excluded by default. This is the main content-production cost, and it shapes which examples a lesson can use.
 4. **Examples are chosen by what is audible, not by "domain".** The vue "rotate domains" rule becomes "rotate speakers and contexts". Hearing the same word from several voices (male/female, fast/slow, a kids' show vs a vlog) is the language version of seeing an idea in several kinds of software.
@@ -107,7 +107,7 @@ The vue rules carry over: neighboring lessons never share an archetype or a form
 - **MUST** use the fixed lesson skeleton:
   1. Idea.
   2. Hear it (a native clip).
-  3. Explanation (≤ 300 words).
+  3. Explanation (60 words or fewer; [lesson-writing-style.md](../design/lesson-writing-style.md)).
   4. We do (guided reps).
   5. You do (a short check on new material).
   6. Recap.

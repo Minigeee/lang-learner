@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-送
+  title: 送
+  context: word-audio
+  durationSec: 1.0
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-送.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-送.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-送
+  span:
+  - 0.17
+  - 0.86
+  file:
+    key: media/72164300158a7e49.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2966
+    sha256: 72164300158a7e49a7d7d6a768dbe0aa4e3d6d4abe7705bf41f7e246958f6b20
+    durationSec: 0.69
+    gainDb: -4.5
+  lines:
+  - t:
+    - 0.0
+    - 0.69
+    zh: 送
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -15.5
+    peak_db: -1.24
+    speech_ratio: 0.691
+    edge_start_db: -39.05
+    edge_end_db: -40.89
+    forced_logp: -1.25

@@ -1,0 +1,6 @@
+fixtures/STR002/lessons/fixture-str002.md:19 STR002 @meaning-pick items.0.answer: "didn't" is not an option key (wont, didnt)
+fixtures/STR002/lessons/fixture-str002.md:23 STR002 @confusable-sorter set: Too small: expected array to have >=2 items
+fixtures/STR002/lessons/fixture-str002.md:25 STR002 @confusable-sorter count: Too small: expected number to be >=4
+fixtures/STR002/lessons/fixture-str002.md:26 STR002 @confusable-sorter colour: Unrecognized key: "colour"
+fixtures/STR002/lessons/fixture-str002.md:29 STR002 @gist-question can't sit in "we-do"; it allows you-do
+fixtures/STR002/lessons/fixture-str002.md:29 STR002 template "pattern" doesn't allow @gist-question in "we-do" (allowed: meaning-pick, confusable-sorter, tap-when-you-hear, shadow)

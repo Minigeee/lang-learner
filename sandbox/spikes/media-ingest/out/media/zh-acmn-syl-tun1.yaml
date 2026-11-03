@@ -1,0 +1,48 @@
+media:
+  id: media:zh-acmn-syl-tun1
+  title: tun1
+  context: word-audio
+  durationSec: 1.128
+  speakers:
+  - speaker:zh-acmn-chen-wang
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-tun1.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Chen Wang (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/syllabs/cmn-tun1.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-syl-tun1
+  span:
+  - 0.22
+  - 0.91
+  file:
+    key: media/d229981dbef5c080.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 2871
+    sha256: d229981dbef5c08063775951216d6687cb427bccc3eee07e3482d043072d6932
+    durationSec: 0.69
+    gainDb: -9.05
+  lines:
+  - t:
+    - 0.0
+    - 0.69
+    zh: ''
+    speaker: speaker:zh-acmn-chen-wang
+    py: tun1
+  validation:
+    lufs: -10.95
+    peak_db: -0.85
+    speech_ratio: 0.691
+    edge_start_db: -37.02
+    edge_end_db: -38.8
+    forced_logp: -0.62

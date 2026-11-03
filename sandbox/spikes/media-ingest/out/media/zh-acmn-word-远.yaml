@@ -1,0 +1,49 @@
+media:
+  id: media:zh-acmn-word-远
+  title: 远
+  context: word-audio
+  durationSec: 1.15
+  speakers:
+  - speaker:zh-acmn-yue-tan
+  status: active
+  source:
+    provider: rehost
+    originalUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-远.mp3
+  rights:
+    kind: open
+    license: cc-by-sa
+    author: Yue Tan (speaker); Hugo Lopez (audio-cmn curation)
+    sourceUrl: https://github.com/hugolpz/audio-cmn/blob/master/64k/hsk/cmn-远.mp3
+    modified: true
+    changes: trimmed/cut, loudness-normalized, re-encoded to Opus 32 kbps mono
+  ingest:
+    pipeline: media-ingest-spike
+    asr: faster-whisper large-v3 float16
+    date: '2026-11-02'
+clips:
+- id: clip:zh-acmn-word-远
+  span:
+  - 0.18
+  - 0.98
+  file:
+    key: media/08cdb80bb49f3116.opus
+    mime: audio/ogg; codecs=opus
+    bytes: 3439
+    sha256: 08cdb80bb49f31162ff37d4ff9fd11c9df690179e2b06234121501d52003febd
+    durationSec: 0.8
+    gainDb: -5.31
+  lines:
+  - t:
+    - 0.0
+    - 0.8
+    zh: 远
+    speaker: speaker:zh-acmn-yue-tan
+  validation:
+    cer: 0.0
+    per: 0.0
+    lufs: -14.69
+    peak_db: -1.62
+    speech_ratio: 0.734
+    edge_start_db: -37.85
+    edge_end_db: -40.53
+    forced_logp: -0.36
