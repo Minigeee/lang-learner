@@ -1,0 +1,389 @@
+word	stage	tier	place	needed_by	rank	hsk2025_level	note
+多久	S2	lesson	2.21a	2.21			outside the core set; 2.21a asks how long with 多久
+哦	S2	lesson	2.32a	2.32		5	backchannel 'oh/I see'; fillers and reactions
+死	S1	queue	queue:S1		15.01	4	also an intensifier: 累死了, 饿死了
+看到	S2	lesson	2.6b	2.6			2.6b target: 看 vs 看到; 没看到 in 2.6c
+而	S2	queue	queue:S2		214.001	4	written register
+嗯	S2	lesson	2.32a	2.32		4	2.32a lists 嗯 as a filler
+呀	S2	lesson	2.32b	2.32		5	2.32b: 啊 changes shape to 呀
+当	S2	unit	2.12	2.12		4	当…的时候 (2.12b full)
+看看	S2	lesson	2.8a	2.8			2.8a summary: 看看 as 'just a quick look'
+将	S2	queue	queue:S2		214.002	4	written register
+啦	S2	lesson	2.32b	2.32		6	了 + 啊 fusion; tone particle
+所有	S1	lesson	1.15b	1.15		4	所有…都 is a natural 都 example
+找到	S2	lesson	2.6b	2.6			2.6b target: 找 vs 找到; 没找到 in 2.6c
+杀	S2	queue	queue:S2		150.01	6	genre: frequent in translated action and crime films
+一切	S2	unit	2.29	2.29		4	everything
+也许	S1	queue	queue:S1		16.01	4	
+真是	S1	queue	queue:S1		18.01	7	
+与	S2	queue	queue:S2		214.003	4	written register
+么	S2	queue	queue:S2		214.901		subtitle noise: residue of 什么/怎么 segmentation; colloquial variant of 嘛
+并	S2	queue	queue:S2		214.004	4	written register
+感觉	S1	queue	queue:S1		20.01	4	
+任何	S2	lesson	2.29c	2.29		4	任何…都不 is the same total negation
+是不是	S1	lesson	1.17a	1.17			1.17a examples list 是不是; 1.17b's tag reuses it
+之前	S2	lesson	2.12a	2.12		4	之前 behaves like 以前 after the event; more common in speech
+妈	S1	unit	1.7	1.7			short form of 妈妈, very common in dramas
+肯定	S1	queue	queue:S1		21.01	4	
+等等	S1	queue	queue:S1		23.01		
+父亲	S2	queue	queue:S2		88.01	4	formal 爸爸; dramas use it
+嘛	S2	lesson	2.32b	2.32		6	'obviously' tone particle
+继续	S1	queue	queue:S1		25.01	4	
+如何	S2	queue	queue:S2		214.005	5	written register
+到底	S1	queue	queue:S1		27.01	4	
+小姐	S1	lesson	1.2b	1.2		5	1.2b opener plays Mandarin Click 王小姐 (Miss Wang)
+话	S1	queue	queue:S1		28.01		'words, what someone said' (你的话)
+警察	S1	queue	queue:S1		40.01	4	crime-genre word, but common in Chinese dramas too
+听到	S2	lesson	2.6b	2.6			2.6b target: 听 vs 听到
+回家	S2	lesson	2.13a	2.13			2.13a summary: 他一回家就睡觉
+却	S2	unit	2.20	2.20		4	contrast, next to 虽然…但是
+女孩	S2	queue	queue:S2		54.01		same word as 女孩儿 (S2 queue rank 54); merge cards at authoring
+所	S2	queue	queue:S2		214.006	5	written register
+永远	S1	queue	queue:S1		30.01	4	
+完全	S1	queue	queue:S1		32.01	4	
+情况	S1	queue	queue:S1		40.02	4	
+成为	S2	queue	queue:S2		214.007	4	written register
+以	S2	queue	queue:S2		214.008	5	written register
+之后	S2	unit	2.12	2.12		4	之后 like 以后 (2.12a full)
+确定	S1	queue	queue:S1		34.01	5	
+无法	S2	queue	queue:S2		214.009	4	written register
+见到	S1	queue	queue:S1		40.03		
+好好	S2	unit	2.7	2.7		4	2.7b video line 你应该好好复习 (lesson full)
+如此	S2	queue	queue:S2		214.010	5	written register
+于	S2	queue	queue:S2		214.011	6	written register
+兄弟	S1	unit	1.7	1.7		4	family
+计划	S2	unit	2.7	2.7		4	plans, next to 要/打算
+已	S2	queue	queue:S2		214.012	4	written register
+根本	S1	queue	queue:S1		35.01	5	
+不管	S2	lesson	2.29a	2.29		4	不管 + question word + 都 extends QW + 都
+搞	S1	queue	queue:S1		40.04	5	
+唯一	S1	queue	queue:S1		41.01	5	
+枪	S2	queue	queue:S2		150.02	6	genre: frequent in translated action and crime films
+母亲	S2	queue	queue:S2		89.01	4	formal 妈妈; dramas use it
+改变	S1	queue	queue:S1		41.02	4	
+真正	S1	queue	queue:S1		41.03	4	
+甚至	S2	unit	2.20	2.20		4	further point, next to 不但…而且
+弄	S2	lesson	2.30b	2.30		4	把…弄坏/弄好: the everyday 把 + result verb
+之	S2	queue	queue:S2		214.013	4	written register
+当时	S2	unit	2.12	2.12		4	time order
+救	S1	queue	queue:S1		42.01	5	
+保护	S1	queue	queue:S1		42.02	4	
+由	S2	queue	queue:S2		214.014	4	written register
+另	S2	queue	queue:S2		214.015	4	written register
+出现	S1	queue	queue:S1		42.03	4	
+接受	S1	queue	queue:S1		43.01	4	
+或许	S2	queue	queue:S2		90.01	5	literary 也许 (S1 queue)
+失去	S1	queue	queue:S1		43.02	4	
+整个	S1	queue	queue:S1		43.03	4	
+回到	S1	queue	queue:S1		44.01		
+保证	S1	queue	queue:S1		44.02	4	
+难道	S2	lesson	2.32c	2.32		4	难道…吗 is the other reminding/objecting question
+从来	S2	unit	2.3	2.3		4	从来没…过 'never'; mined, not a 2.3b target
+是否	S2	queue	queue:S2		214.016	4	written register
+生命	S1	queue	queue:S1		44.03	4	
+抓	S2	unit	2.31	2.31		5	被抓了: common 被 sentence
+样子	S1	queue	queue:S1		45.01	4	
+原因	S1	queue	queue:S1		45.02	4	
+危险	S1	queue	queue:S1		45.03	4	
+进行	S2	queue	queue:S2		214.017	4	written register
+至少	S2	unit	2.19	2.19		4	rough numbers
+连	S1	queue	queue:S1		46.01	4	连…都/也 frame; no v1 lesson teaches it
+成功	S1	queue	queue:S1		46.02	4	
+身上	S1	queue	queue:S1		46.03		
+处理	S1	queue	queue:S1		47.01	5	
+通过	S2	queue	queue:S2		214.018	4	written register
+绝对	S1	queue	queue:S1		47.02	5	
+行动	S1	queue	queue:S1		47.03	5	
+够	S1	queue	queue:S1		37.01	4	
+著	S2	queue	queue:S2		214.902		subtitle noise: Taiwan-style 着 in converted subtitles; real word only in 著名
+倒	S1	queue	queue:S1		48.01	4	
+作为	S2	queue	queue:S2		214.019	4	written register
+结果	S2	unit	2.6	2.6		4	'as it turned out': the turn word 2.6d's stories need
+而已	S1	queue	queue:S1		48.02	7	
+方式	S2	queue	queue:S2		214.020	4	written register
+做到	S2	unit	2.6	2.6			verb + 到 result
+第一次	S2	unit	2.22	2.22			counting times
+啥	S2	unit	2.32	2.32			colloquial 什么 in real-speed speech
+人类	S2	queue	queue:S2		151.01	5	genre: frequent in translated action and crime films
+各位	S2	queue	queue:S2		92.01	4	
+待	S2	unit	2.21	2.21		4	dāi 'stay' + duration (2.21a full)
+掉	S2	unit	2.6	2.6		4	result complement (吃掉, 扔掉)
+确实	S1	queue	queue:S1		48.03	4	
+使	S2	queue	queue:S2		214.021	4	written register
+曾经	S2	unit	2.3	2.3		5	experience marker; pairs with 过
+求	S2	unit	2.8	2.8		6	求你了: begging, with 请/让
+谈	S1	queue	queue:S1		49.01	4	
+进入	S1	queue	queue:S1		49.02	4	
+伤害	S1	queue	queue:S1		49.03	5	
+拉	S1	queue	queue:S1		50.01	4	
+拍	S1	queue	queue:S1		50.02	4	
+曾	S2	queue	queue:S2		214.022	5	written register
+内	S2	queue	queue:S2		214.023	4	written register
+有趣	S1	queue	queue:S1		50.03	4	
+就算	S2	unit	2.28	2.28		6	concessive condition
+赢	S1	queue	queue:S1		51.01	4	
+能够	S2	queue	queue:S2		214.024	4	written register
+留下	S1	queue	queue:S1		51.02	4	
+死亡	S2	queue	queue:S2		152.01	6	genre: frequent in translated action and crime films
+战争	S2	queue	queue:S2		153.01	6	genre: frequent in translated action and crime films
+总统	S2	queue	queue:S2		154.01	5	genre: frequent in translated action and crime films
+消息	S1	queue	queue:S1		51.03	4	
+理解	S1	queue	queue:S1		52.01	4	
+之间	S2	queue	queue:S2		214.025	4	written register
+保持	S1	queue	queue:S1		52.02	5	
+成	S1	queue	queue:S1		52.03	6	verb result 'into' (变成 is S2 queue)
+存在	S2	queue	queue:S2		214.026	5	written register
+解释	S1	queue	queue:S1		52.04	4	
+全部	S2	unit	2.29	2.29		4	everything
+靠	S1	queue	queue:S1		53.01	5	
+调查	S2	queue	queue:S2		155.01	4	genre: frequent in translated action and crime films
+老婆	S1	queue	queue:S1		53.02	5	informal 'wife'; kept out of unit 1.7, which already has 8 words
+证明	S1	queue	queue:S1		53.03	4	
+父母	S1	unit	1.7	1.7		4	family
+任务	S1	queue	queue:S1		54.01	4	
+所有人	S1	lesson	1.15b	1.15			所有人都… with 都 summing up
+带来	S2	lesson	2.23a	2.23			2.23a examples: bringing (带来/带去)
+感谢	S1	queue	queue:S1		54.02	4	
+为何	S2	queue	queue:S2		214.027	6	written register
+派	S1	queue	queue:S1		54.03	5	
+自由	S1	queue	queue:S1		55.01	5	
+想法	S1	queue	queue:S1		55.02	4	
+律师	S2	queue	queue:S2		156.01	4	genre: frequent in translated action and crime films
+放弃	S1	queue	queue:S1		55.03	4	
+秘密	S1	unit	1.16	1.16		5	1.16 supplemental Peppa episode 秘密 Secrets
+考虑	S1	queue	queue:S1		56.01	4	
+其中	S2	queue	queue:S2		214.028	4	written register
+变得	S1	queue	queue:S1		56.02		
+目标	S1	queue	queue:S1		56.03	4	
+控制	S1	queue	queue:S1		57.01	5	
+家里	S2	lesson	2.14b	2.14			2.14b ✗/✓ line: 家里来了一个客人
+小孩	S1	queue	queue:S1		57.02		
+停止	S1	queue	queue:S1		57.03	4	
+因此	S2	queue	queue:S2		214.029	4	written register
+武器	S2	queue	queue:S2		157.01	6	genre: frequent in translated action and crime films
+来到	S2	unit	2.14	2.14			arriving at a place
+未来	S1	queue	queue:S1		58.01	5	
+报告	S2	queue	queue:S2		158.01	5	
+直接	S1	queue	queue:S1		58.02	4	
+负责	S1	queue	queue:S1		58.03	4	
+即使	S2	queue	queue:S2		93.01	4	
+本来	S2	unit	2.2	2.2		4	本来…现在 frames a change
+疯狂	S1	queue	queue:S1		59.01	5	
+使用	S2	queue	queue:S2		159.01	4	
+老板	S1	unit	1.14	1.14		5	how you address a stall holder
+否则	S2	unit	2.28	2.28		4	'otherwise'
+证据	S2	queue	queue:S2		160.01	5	genre: frequent in translated action and crime films
+可怕	S1	unit	1.3	1.3		5	describing
+拥有	S2	queue	queue:S2		161.01	5	
+个人	S2	queue	queue:S2		94.01	5	
+并且	S2	queue	queue:S2		214.030	4	written register
+等待	S2	queue	queue:S2		162.01	5	
+事实	S2	queue	queue:S2		96.01	5	
+联系	S1	queue	queue:S1		59.02	4	
+地球	S2	queue	queue:S2		163.01	4	genre: frequent in translated action and crime films
+命令	S2	queue	queue:S2		164.01	6	genre: frequent in translated action and crime films
+阻止	S2	queue	queue:S2		165.01	5	
+消失	S2	queue	queue:S2		166.01	5	
+对于	S2	queue	queue:S2		214.031	4	written register
+心	S1	queue	queue:S1		59.03	4	
+似乎	S2	queue	queue:S2		214.032	5	written register
+家庭	S1	queue	queue:S1		60.01	4	
+痛苦	S1	queue	queue:S1		60.02	5	
+力量	S1	queue	queue:S1		60.03	5	
+博士	S2	queue	queue:S2		167.01	4	genre: frequent in translated action and crime films
+紧张	S1	unit	1.3	1.3		4	describing
+完美	S1	queue	queue:S1		61.01	5	
+原来	S1	queue	queue:S1		61.02	4	
+监狱	S2	queue	queue:S2		168.01	7	genre: frequent in translated action and crime films
+伟大	S1	queue	queue:S1		61.03	5	
+正常	S1	queue	queue:S1		62.01	4	
+以及	S2	queue	queue:S2		214.033	5	written register
+重新	S2	lesson	2.22c	2.22		4	2.22c video: 再 vs 又 vs 重新 (Everyday Chinese)
+研究	S1	queue	queue:S1		62.02	4	
+正确	S1	queue	queue:S1		62.03	4	
+者	S2	queue	queue:S2		214.034	4	written register
+加入	S1	queue	queue:S1		63.01	4	
+不够	S1	queue	queue:S1		39.01	4	不 + 够; follows 够
+美丽	S2	queue	queue:S2		169.01	4	
+政府	S2	queue	queue:S2		170.01	5	
+仍然	S2	queue	queue:S2		214.035	4	written register
+代表	S2	queue	queue:S2		171.01	5	
+若	S2	queue	queue:S2		214.036	7	written register
+国王	S2	queue	queue:S2		172.01	6	genre: frequent in translated action and crime films
+位置	S1	queue	queue:S1		63.02	5	
+安排	S1	queue	queue:S1		63.03	4	
+支持	S1	queue	queue:S1		64.01	4	
+必要	S1	queue	queue:S1		64.02	5	
+错误	S1	queue	queue:S1		64.03	4	
+人生	S1	queue	queue:S1		64.04	4	
+攻击	S2	queue	queue:S2		173.01	6	genre: frequent in translated action and crime films
+食物	S1	queue	queue:S1		65.01	4	
+建议	S1	queue	queue:S1		65.02	4	
+骗	S2	unit	2.31	2.31		5	被骗了: common 被 sentence
+梦	S1	queue	queue:S1		65.03	4	
+斯	S2	queue	queue:S2		214.903		subtitle noise: name transliteration (Western films)
+约	S2	queue	queue:S2		214.037	4	written register
+严重	S1	queue	queue:S1		66.01	4	
+首先	S1	queue	queue:S1		66.02	4	
+另外	S1	queue	queue:S1		66.03	4	
+提供	S2	queue	queue:S2		174.01	4	
+组织	S2	queue	queue:S2		175.01	5	
+日子	S1	queue	queue:S1		67.01	4	
+敌人	S2	queue	queue:S2		176.01	5	genre: frequent in translated action and crime films
+操	S2	queue	queue:S2		214.904		subtitle noise: vulgar exclamation; recognize only
+逼	S2	queue	queue:S2		177.01	6	
+系统	S2	queue	queue:S2		178.01	5	
+受伤	S1	queue	queue:S1		67.02	4	
+信息	S2	queue	queue:S2		179.01	4	
+的确	S1	queue	queue:S1		67.03	5	
+表现	S1	queue	queue:S1		68.01	4	
+寻找	S2	queue	queue:S2		180.01	5	
+第一	S1	unit	1.5	1.5			ordinal 第 + number; Peppa titles say 第一季
+理由	S1	queue	queue:S1		68.02	5	
+事实上	S2	queue	queue:S2		181.01		
+阿	S2	queue	queue:S2		214.905		subtitle noise: name prefix and transliteration; real use is in 阿姨 (S2 queue)
+拒绝	S1	queue	queue:S1		68.03	4	
+怀疑	S1	queue	queue:S1		69.01	4	
+记录	S2	queue	queue:S2		182.01	5	
+此	S2	queue	queue:S2		214.038	4	written register
+战斗	S2	queue	queue:S2		182.02	6	genre: frequent in translated action and crime films
+许多	S1	queue	queue:S1		69.02	4	
+神	S2	queue	queue:S2		183.01	6	genre: frequent in translated action and crime films
+之一	S2	queue	queue:S2		214.039		written register
+幸福	S1	queue	queue:S1		69.03	4	
+同样	S1	queue	queue:S1		70.01	4	
+便	S2	queue	queue:S2		214.040	5	written register
+算	S1	queue	queue:S1		70.02	4	算了 'forget it'
+正是	S2	queue	queue:S2		214.041		written register
+而是	S2	unit	2.20	2.20			不是 A 而是 B
+按	S1	queue	queue:S1		70.03	4	
+承认	S1	queue	queue:S1		71.01	5	
+足够	S1	queue	queue:S1		71.02	5	
+达	S2	queue	queue:S2		214.906		subtitle noise: name transliteration; 到达 is written register
+系	S2	queue	queue:S2		214.907	5	subtitle noise: segmentation piece (关系, 系统)
+无论	S1	queue	queue:S1		71.03	4	
+多么	S1	queue	queue:S1		72.01	4	
+行为	S2	queue	queue:S2		184.01	5	
+适合	S1	queue	queue:S1		72.02	4	
+值得	S1	queue	queue:S1		72.03	4	
+同时	S2	unit	2.5	2.5		4	two things at once
+通知	S1	queue	queue:S1		73.01	4	
+无	S2	queue	queue:S2		214.042	4	written register
+利用	S2	queue	queue:S2		185.01	5	
+精神	S2	queue	queue:S2		186.01	5	
+既然	S2	unit	2.20	2.20		4	既然…就 gives a reason
+不知	S2	queue	queue:S2		214.043		written register; literary 不知道
+经历	S1	queue	queue:S1		73.02	4	
+属于	S2	queue	queue:S2		187.01	5	
+威胁	S2	queue	queue:S2		188.01	5	
+真实	S1	queue	queue:S1		73.03	5	
+法律	S2	queue	queue:S2		189.01	4	
+实在	S1	queue	queue:S1		74.01	4	
+能力	S1	queue	queue:S1		74.02	4	
+其	S2	queue	queue:S2		214.044	5	written register
+允许	S1	queue	queue:S1		74.03	4	
+德	S2	queue	queue:S2		214.908		subtitle noise: name transliteration
+交易	S2	queue	queue:S2		190.01	5	genre: frequent in translated action and crime films
+梦想	S1	queue	queue:S1		75.01	4	
+管	S1	queue	queue:S1		75.02	4	别管我 'leave me alone'; 不管 is in 2.29a
+意义	S1	queue	queue:S1		75.03	5	
+或是	S2	queue	queue:S2		214.045	5	written register
+美	S1	queue	queue:S1		76.01	4	
+教授	S2	queue	queue:S2		191.01	4	
+军队	S2	queue	queue:S2		192.01	6	genre: frequent in translated action and crime films
+享受	S1	queue	queue:S1		76.02	5	
+合作	S2	queue	queue:S2		97.01	5	
+指	S2	queue	queue:S2		214.046	4	written register
+英雄	S2	queue	queue:S2		193.01	6	genre: frequent in translated action and crime films
+自杀	S2	queue	queue:S2		194.01	6	genre: frequent in translated action and crime films
+失败	S1	queue	queue:S1		76.03	4	
+获得	S2	queue	queue:S2		214.047	4	written register
+称	S2	queue	queue:S2		214.048	5	written register
+意识	S2	queue	queue:S2		99.01	5	
+试图	S2	queue	queue:S2		214.049	6	written register
+权利	S2	queue	queue:S2		195.01	5	
+生	S2	queue	queue:S2		196.01	4	'give birth / raw'; mostly inside compounds in subtitles
+队	S2	queue	queue:S2		197.01	4	
+接近	S2	queue	queue:S2		100.01	5	
+一旦	S2	unit	2.28	2.28		5	'once' condition
+实际上	S2	queue	queue:S2		101.01	4	
+感受	S2	queue	queue:S2		103.01	4	
+处	S2	queue	queue:S2		214.050	5	written register
+身份	S2	queue	queue:S2		104.01	5	
+意外	S2	queue	queue:S2		105.01	5	
+显然	S2	queue	queue:S2		107.01	5	
+训练	S2	queue	queue:S2		198.01	5	
+目前	S2	queue	queue:S2		108.01	4	
+尝试	S2	queue	queue:S2		110.01	5	
+讨论	S2	queue	queue:S2		111.01	4	
+如	S2	queue	queue:S2		214.051	5	written register
+道	S2	queue	queue:S2		214.909	4	subtitle noise: segmentation piece (知道, 说道); measure word 道 is rare in speech
+究竟	S2	queue	queue:S2		112.01	4	
+特	S2	queue	queue:S2		214.910	6	subtitle noise: segmentation piece (特别) and transliteration
+文件	S2	queue	queue:S2		114.01	4	
+敢	S1	unit	1.13	1.13		4	modal 'dare', sits with 会/能/可以
+黑	S2	unit	2.2	2.2		5	2.2a bridge line 天黑了
+确认	S2	queue	queue:S2		115.01	5	
+答案	S2	queue	queue:S2		116.01	4	
+挂	S2	unit	2.14	2.14		4	2.14a video 挂在, 2.14b opener 墙上挂着 (2.14b full)
+做出	S2	queue	queue:S2		118.01		
+最终	S2	queue	queue:S2		214.052	4	written register
+追	S2	queue	queue:S2		119.01	5	
+仍	S2	queue	queue:S2		214.053	4	written register
+部分	S2	unit	2.10	2.10		4	一部分/大部分 next to 有的 and 一些
+活	S2	queue	queue:S2		121.01	4	活着 'alive'
+对方	S2	queue	queue:S2		122.01	4	
+邀请	S2	queue	queue:S2		123.01	4	
+竟然	S2	queue	queue:S2		125.01	4	
+破坏	S2	queue	queue:S2		199.01	5	
+面对	S2	queue	queue:S2		126.01	4	
+中心	S2	queue	queue:S2		200.01	5	
+现场	S2	queue	queue:S2		201.01	5	
+尽管	S2	queue	queue:S2		214.054	4	written register; concessive like 虽然
+令人	S2	queue	queue:S2		214.055		written register
+超过	S2	queue	queue:S2		127.01	4	
+爆炸	S2	queue	queue:S2		202.01	6	genre: frequent in translated action and crime films
+反对	S2	queue	queue:S2		129.01	4	
+因	S2	queue	queue:S2		214.056	6	written register
+爱情	S2	queue	queue:S2		130.01	4	
+令	S2	queue	queue:S2		214.057	5	written register
+治疗	S2	queue	queue:S2		203.01	5	
+包括	S2	queue	queue:S2		214.058	5	written register
+金	S2	queue	queue:S2		214.911		subtitle noise: name (Kim, gold)
+目的	S2	queue	queue:S2		132.01	4	
+其它	S2	queue	queue:S2		214.059		written register; variant of 其他
+反应	S2	queue	queue:S2		133.01	5	
+机器	S2	queue	queue:S2		204.01	5	
+警方	S2	queue	queue:S2		214.060		written register; news style
+假	S2	queue	queue:S2		134.01	4	
+相当	S2	queue	queue:S2		136.01	5	
+造成	S2	queue	queue:S2		205.01	5	
+罗	S2	queue	queue:S2		214.912		subtitle noise: name transliteration
+充满	S2	queue	queue:S2		206.01	5	
+用来	S2	queue	queue:S2		137.01	4	
+测试	S2	queue	queue:S2		207.01	5	
+社会	S2	queue	queue:S2		208.01	4	
+方面	S2	queue	queue:S2		138.01	4	
+资料	S2	queue	queue:S2		209.01	4	
+活动	S2	queue	queue:S2		140.01	4	
+越来越	S2	lesson	2.18c	2.18			2.18c's target (越来越 and 越…越)
+巨大	S2	queue	queue:S2		210.01	5	
+感情	S2	queue	queue:S2		141.01	4	
+自然	S2	queue	queue:S2		143.01	4	
+责任	S2	queue	queue:S2		144.01	4	
+时刻	S2	queue	queue:S2		211.01	5	
+赚	S2	queue	queue:S2		145.01	4	
+全	S2	queue	queue:S2		212.01	4	
+明显	S2	queue	queue:S2		147.01	5	
+意见	S2	queue	queue:S2		148.01	4	
+家族	S2	queue	queue:S2		213.01	7	
+杯	S1	lesson	1.6c	1.6 1.12 1.14			measure word, 1.6c target; not an HSK L1–3 entry (S1 #10)
+北京	S1	lesson	1.11b	1.11 1.12			proper noun, very frequent; used in 1.11b, 1.11c, 1.12a (S1 #15)
+红	S2	lesson	2.4b	2.4 2.5 2.11			bare form before a noun or 的: 红衣服, 红的; not an HSK 2025 L1–3 entry (only 红色 is)
+还没	S2	lesson	2.12c	2.12			not yet; partner of 已经
+就要	S2	lesson	2.2c	2.2			就要…了 'about to'; can take a time word
+看起来	S2	lesson	2.23d	2.23			2.23d's skill target (S2b #12a)
+慢慢	S2	lesson	2.25b	2.25			2.25b's core example 慢慢地走 (S2b #12b)
+偷	S2	lesson	2.31a	2.31		6	2.31a's theft context, 钱包被偷了 (S2b #12c)
+左右	S2	lesson	2.19b	2.19			2.19b's fourth rough-number marker (S2b #13); not in HSK 2025 L1–3; subtitle rank 2111
+就是	S2	lesson	2.32a	2.32			filler sense (S2b #13); kept despite 'glued' (gaps-top1200 rank 52)

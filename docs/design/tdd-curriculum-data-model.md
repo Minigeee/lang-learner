@@ -763,7 +763,7 @@ The XP, category and subtitle-mode weightings stay unsettled (README resolution 
 1. **Content model and compiler, with no UI.** Purpose: prove the format.
    - Ids, types, schemas, compiler, check rules, `ids.lock`, redirects.
    - Importers for hsk30, Make Me a Hanzi and CC-CEDICT, with license records and the credits output.
-   - Three reference lessons (Sound 0.9 sandhi, Pattern `les:le-completion`, Clip 1.13) plus their media files.
+   - Three reference lessons (Sound 0.9 sandhi, Pattern `les:le-completion`, Clip 1.14) plus their media files.
    - *Done when* `content:build` emits a bundle, and each check rule has one failing fixture.
 2. **User state and derive v1.** Purpose: facts and their meaning.
    - The SQL migration with RLS and append-only policies; `src/facts` (outbox, writers, queries).

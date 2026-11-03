@@ -1,0 +1,306 @@
+word	level	tier	place	needed_by	rank	note
+是	1	lesson	1.1a	1.1 1.3 1.17		
+我	1	lesson	1.1a	pervasive		
+他	1	lesson	1.1a	pervasive		
+学生	1	lesson	1.1a	1.1 1.15		
+老师	1	lesson	1.1a	1.1 1.2 1.17		
+你	1	lesson	1.1b	pervasive		
+叫	1	lesson	1.1b	1.1		
+名字	1	lesson	1.1b	1.1		
+认识	1	lesson	1.1c	1.1		
+谢谢	1	lesson	1.1c	1.1		
+高兴	1	lesson	1.1c	1.1 1.3		
+你好	1	lesson	1.1c	1.1		
+再见	1	lesson	1.1c	1.1		
+您	1	unit	1.1	1.1		
+对不起	1	unit	1.1	1.1		
+请问	1	unit	1.1	1.1		
+没关系	1	unit	1.1	1.1		
+不客气	1	unit	1.1	1.1		
+三	1	lesson	1.4a	1.4 1.5 1.10 1.14		digit; Counting 0–10 (S1 #2)
+四	1	lesson	1.4a	1.4 1.5 1.10 1.14		digit; Counting 0–10 (S1 #2)
+五	1	lesson	1.4a	1.4 1.5 1.10 1.14		digit; Counting 0–10 (S1 #2)
+一	1	lesson	1.4a	1.4 1.5 1.10 1.14		digit; Counting 0–10 (S1 #2)
+她	1	lesson	1.2a	pervasive		
+吗	1	lesson	1.2a	1.2 1.13 1.14 1.16 1.17		
+同学	1	lesson	1.2a	1.2		
+这	1	lesson	1.2b	1.2 1.6		这是… lines; 1.6a adds 这 + measure word
+什么	1	lesson	1.2b	1.2 1.8 1.18		heard in 1.1b's 你叫什么名字 chunk
+谁	1	lesson	1.2b	1.2 1.8		
+朋友	1	lesson	1.2b	1.2		
+好	1	lesson	1.2c	1.2 1.3 1.17		我很好 in 1.2c exchanges
+呢	1	lesson	1.2c	1.2 1.18		你呢 sense; ongoing 呢 in 1.18c
+八	1	lesson	1.4b	1.4 1.5 1.10 1.14		digit; Counting 0–10 (S1 #2)
+九	1	lesson	1.4b	1.4 1.5 1.10 1.14		digit; Counting 0–10 (S1 #2)
+六	1	lesson	1.4b	1.4 1.5 1.10 1.14		digit; Counting 0–10 (S1 #2)
+七	1	lesson	1.4b	1.4 1.5 1.10 1.14		digit; Counting 0–10 (S1 #2)
+很	1	lesson	1.3a	1.3 1.14		
+天	1	lesson	1.3a	1.3 1.10 1.11		天很冷 (sky/weather); day sense in 1.10
+冷	1	lesson	1.3a	1.3		
+热	1	lesson	1.3a	1.3		
+高	2	lesson	1.3a	1.3		borrowed; 她很高 (1.3a)
+不	1	lesson	1.3b	1.3 1.7 1.16 1.17		
+忙	1	lesson	1.3b	1.3		
+医生	1	lesson	1.3b	1.3		
+生病	1	lesson	1.3b	1.3		
+真	1	lesson	1.3c	1.3		
+非常	1	lesson	1.3c	1.3		
+漂亮	1	lesson	1.3c	1.3		
+贵	1	lesson	1.3c	1.3 1.14		
+有点儿	1	lesson	1.3c	1.3		
+天气	1	unit	1.3	1.3		
+二	1	lesson	1.4a	1.4 1.5 1.10 1.14		digit and number-internal two; 两 is 1.5c
+零	1	lesson	1.4b	1.4 1.5 1.10 1.14		phone numbers
+十	1	lesson	1.4b	1.4 1.5 1.10 1.14		
+个	1	lesson	1.5b	1.5 1.6		
+人	1	lesson	1.5b	1.5		
+几	1	lesson	1.5b	1.5 1.5 1.10 1.14		
+苹果	1	lesson	1.5b	1.5 1.6 1.14 1.15		
+两	1	lesson	1.5c	1.5 1.10 1.14		
+书	1	prep	prep:1.5	1.6 1.9		fed during 1.5, due by 1.6 (1.6c 三本书; also 1.9b) (S1 #9)
+第	1	lesson	1.5c	1.5		第二 in 1.5c's 二 vs 两
+大	1	lesson	1.5d	1.5		多大 (age)
+小	1	lesson	1.5d	1.5		
+岁	1	lesson	1.5d	1.5		
+多	1	lesson	1.5d	1.5		多大 (age)
+生日	2	lesson	1.5d	1.5		borrowed; birthday context of 1.5d
+这个	1	lesson	1.6a	1.6		
+那	1	lesson	1.6a	1.6		
+那个	1	lesson	1.6a	1.6		
+哪	1	lesson	1.6a	1.6		
+这些	1	lesson	1.6b	1.6		
+那些	1	lesson	1.6b	1.6		
+些	1	lesson	1.6b	1.6		
+哪些	1	lesson	1.6b	1.6		
+本	1	lesson	1.6c	1.6		
+只	1	lesson	1.6c	1.6		measure word (zhī); 'only' (zhǐ) is the L3 row
+件	1	lesson	1.6c	1.6		
+口	1	lesson	1.6c	1.6		
+茶	1	prep	prep:1.5	1.6 1.12 1.14 1.15		fed during 1.5, due by 1.6 (1.6c 一杯茶) (S1 #10)
+哪个	1	unit	1.6	1.6		
+衣服	1	unit	1.6	1.6		
+杯子	1	unit	1.6	1.6		
+的	1	lesson	1.7a	pervasive		
+我们	1	lesson	1.7a	1.7 1.15 1.16		
+学校	1	lesson	1.7a	1.7		
+们	1	lesson	1.7a	1.7		
+妈妈	1	lesson	1.7a	1.7		
+有	1	lesson	1.7b	1.7 1.9 1.17		
+没有	1	lesson	1.7b	1.7 1.16 1.17		
+时间	1	lesson	1.7b	1.7		
+狗	1	lesson	1.7b	1.7 1.9 1.15		
+哥哥	1	lesson	1.7b	1.7		
+家	1	lesson	1.7c	1.7 1.9 1.11		home and family
+爸爸	1	lesson	1.7c	1.7		
+姐姐	1	lesson	1.7c	1.7		
+妹妹	1	lesson	1.7c	1.7		
+弟弟	1	lesson	1.7c	1.7		
+孩子	1	unit	1.7	1.7		
+儿子	1	unit	1.7	1.7		
+先生	1	unit	1.7	1.7		
+女儿	1	unit	1.7	1.7		
+家人	1	unit	1.7	1.7		
+晚饭	1	prep	prep:1.8	1.11		fed during 1.8, due by 1.11
+午饭	1	prep	prep:1.8	1.11		fed during 1.8, due by 1.11
+早饭	1	prep	prep:1.8	1.11		fed during 1.8, due by 1.11
+说	1	lesson	1.8a	1.8 1.13		
+怎么	1	lesson	1.8a	1.8		
+写	1	lesson	1.8a	1.8		
+字	1	lesson	1.8a	1.8		
+做	1	lesson	1.8b	1.8 1.11 1.18		
+菜	1	lesson	1.8b	1.8		
+怎么样	1	lesson	1.8b	1.8		
+好吃	1	lesson	1.8b	1.8		
+在	1	lesson	1.9a	1.9 1.11 1.18		
+猫	1	prep	prep:1.5	1.6 1.9 1.15		fed during 1.5, due by 1.6 (1.6c 一只猫) (S1 #10)
+哪儿	1	lesson	1.9a	1.9		
+这儿	1	lesson	1.9a	1.9 1.13		
+那儿	1	lesson	1.9a	1.9		
+上	1	lesson	1.9b	1.9 1.9		
+下	1	lesson	1.9b	1.9		place word 'under'
+里	1	lesson	1.9b	1.9		
+桌子	1	lesson	1.9b	1.9		
+外边	1	lesson	1.9b	1.9		
+电脑	1	lesson	1.9c	1.9		
+手机	1	lesson	1.9c	1.9		
+后	1	unit	1.9	1.9		
+前	1	unit	1.9	1.9		
+边	1	unit	1.9	1.9		前边/后边/下边 are built from 前/后/下 + 边 (not separate HSK rows)
+房间	1	unit	1.9	1.9		
+椅子	1	unit	1.9	1.9		
+旁边	2	unit	1.9	1.9		borrowed; beside (1.9b scene)
+门	2	unit	1.9	1.9		borrowed; 门外边 (1.9b)
+年	1	lesson	1.10a	1.10		
+日	1	lesson	1.10a	1.10		
+月	1	lesson	1.10a	1.10		
+号	1	lesson	1.10a	1.10		
+星期	1	lesson	1.10b	1.10		
+星期天	1	lesson	1.10b	1.10		
+星期日	1	lesson	1.10b	1.10		
+现在	1	lesson	1.10c	1.10 1.18		
+分	1	lesson	1.10c	1.10		minute sense; 1.14 prices use 块 not 分
+半	1	lesson	1.10c	1.10		
+点	1	lesson	1.10c	1.10 1.11		o'clock sense
+今年	1	unit	1.10	1.10		
+去年	1	unit	1.10	1.10		
+小时	1	unit	1.10	1.10		
+分钟	1	unit	1.10	1.10		
+明年	1	unit	1.10	1.10		
+吃	1	lesson	1.11a	1.11 1.16 1.18		
+饭	1	lesson	1.11a	1.11		吃饭
+上班	1	lesson	1.11a	1.11		
+起床	1	lesson	1.11a	1.11		
+下班	1	lesson	1.11a	1.11		
+去	1	lesson	1.3b	1.3 1.8 1.11 1.12 1.16 1.17		used in 1.3b (不去) and 1.8a (怎么去?) (S1 #4)
+中国	1	lesson	1.11b	1.11		
+买	1	lesson	1.11b	1.11		
+东西	1	lesson	1.11b	1.11		
+商店	1	lesson	1.11b	1.11		
+今天	1	lesson	1.10b	1.10 1.11 1.13		1.10b opener 今天星期几? (S1 #13)
+昨天	1	lesson	1.11c	1.11		
+明天	1	lesson	1.11c	1.11 1.18		
+晚上	1	lesson	1.11c	1.11		
+早上	1	lesson	1.11c	1.11		
+工作	1	lesson	1.11d	1.11		
+公司	1	lesson	1.11d	1.11		
+做饭	1	lesson	1.11d	1.11		
+看	1	unit	1.11	1.11		
+回	1	unit	1.11	1.11		
+下午	1	unit	1.11	1.11		
+上午	1	unit	1.11	1.11		
+睡觉	1	unit	1.11	1.11		
+休息	1	unit	1.11	1.11		
+中午	1	unit	1.11	1.11		
+牛奶	1	prep	prep:1.12	1.14		fed during 1.12, due by 1.14
+鸡蛋	1	prep	prep:1.12	1.14		fed during 1.12, due by 1.14
+面包	1	prep	prep:1.12	1.14		fed during 1.12, due by 1.14
+米饭	1	prep	prep:1.12	1.14		fed during 1.12, due by 1.14
+想	1	lesson	1.12a	1.12 1.13 1.16		
+水	1	lesson	1.12a	1.12		
+喝	1	lesson	1.12a	1.12		
+要	1	lesson	1.12b	1.12 1.14 1.16		want / going to; 不要 is its own row
+咖啡	2	lesson	1.12b	1.12 1.14 1.15		borrowed; 一杯咖啡 (1.12b), 茶还是咖啡 (1.14c)
+会	1	lesson	1.13a	1.13 1.15		skill sense; 会 'will' is S2 (2.7)
+学	1	lesson	1.13a	1.13		
+中文	1	lesson	1.13a	1.13		
+游泳	2	lesson	1.13a	1.13		borrowed; 会游泳 (1.13a)
+来	1	lesson	1.13b	1.13		
+能	1	lesson	1.13b	1.13		
+帮	2	lesson	1.13b	1.13		borrowed; 你能帮我吗 (1.13b)
+可以	1	lesson	1.13c	1.13		
+坐	1	lesson	1.13c	1.13		
+行	3	lesson	1.13c	1.13		borrowed; 1.13c answer word; grammar target
+不行	3	lesson	1.13c	1.13		borrowed; 1.13c answer word
+车	1	lesson	1.13d	1.13		
+开车	1	lesson	1.13d	1.13		
+钱	1	lesson	1.14a	1.14		
+块	1	lesson	1.14a	1.14		
+多少	1	lesson	1.14a	1.14		
+了	1	lesson	1.14b	1.14 1.18		first met in 太…了; targets in 1.18a/b
+太	1	lesson	1.14b	1.14		
+远	2	lesson	1.14b	1.14		borrowed; 太远了 (1.14b opener)
+还是	2	lesson	1.14c	1.14 1.19		borrowed; grammar target (A 还是 B?)
+给	1	lesson	1.14d	1.14		
+卖	1	lesson	1.14d	1.14		
+便宜	1	lesson	1.14d	1.14		
+水果	1	lesson	1.14d	1.14		
+店	1	unit	1.14	1.14		
+饭店	1	unit	1.14	1.14		
+饺子	1	unit	1.14	1.14		
+包子	1	unit	1.14	1.14		
+超市	1	unit	1.14	1.14		
+面条儿	1	unit	1.14	1.14		
+也	1	lesson	1.15a	1.15		
+喜欢	1	lesson	1.15a	1.15		
+都	1	lesson	1.15b	1.15		
+他们	1	lesson	1.15b	1.15 1.15		
+你们	1	lesson	1.15b	1.15		
+还	1	lesson	1.15c	1.15		'also, in addition' sense; 'still' is S2
+和	1	lesson	1.15d	1.15		
+没	1	lesson	1.16a	1.16		not in hsk30
+看见	1	lesson	1.16a	1.16		Peppa Secrets opener; 没看见
+知道	1	lesson	1.16b	1.16		
+吧	1	lesson	1.16c	1.16		
+走	2	lesson	1.16c	1.16 1.17		borrowed; 我们走吧 (1.16c)
+不要	1	lesson	1.16d	1.16		
+跑	2	lesson	1.16d	1.16		borrowed; 不要跑 (1.16d)
+对	1	lesson	1.17b	1.17		对不对 tag; also 'right'
+下雨	1	lesson	1.18a	1.18		
+饿	3	lesson	1.18a	1.18		borrowed; 我饿了 (1.18a)
+玩	1	lesson	1.18b	1.18		
+电影	1	lesson	1.18b	1.18		
+正在	1	lesson	1.18c	1.18		
+电话	1	lesson	1.18c	1.18		
+电视	1	lesson	1.18c	1.18		
+打电话	1	lesson	1.18c	1.18		
+喂	1	lesson	1.18c	1.18		phone calls (1.18c)
+雨	1	unit	1.18	1.18		
+到	1	queue	queue:S1		1	arrive/until; no lesson targets it
+元	1	queue	queue:S1		2	written form of 块 (1.14a)
+见	1	queue	queue:S1		4	helps 再见 (1.1c)
+新	1	queue	queue:S1		5	
+问题	1	queue	queue:S1		6	
+爱	1	queue	queue:S1		7	
+大家	1	queue	queue:S1		10	
+事	1	queue	queue:S1		11	
+外	1	queue	queue:S1		12	
+找	1	queue	queue:S1		13	
+开	1	queue	queue:S1		14	
+觉得	1	queue	queue:S1		15	opinion verb; 1.8b answers could use it
+问	1	queue	queue:S1		16	
+听	1	queue	queue:S1		17	
+男	1	queue	queue:S1		18	helps 1.7
+女	1	queue	queue:S1		19	helps 1.7
+住	1	queue	queue:S1		21	
+它	1	queue	queue:S1		22	helps 1.9 animal scenes
+学习	1	queue	queue:S1		23	
+这里	1	queue	queue:S1		24	1.9a Go deeper (no-erhua variant)
+有些	1	queue	queue:S1		25	
+那里	1	queue	queue:S1		26	1.9a Go deeper (no-erhua variant)
+少	1	queue	queue:S1		27	
+哪里	1	queue	queue:S1		28	1.9a Go deeper (no-erhua variant)
+国	1	queue	queue:S1		29	
+睡	1	queue	queue:S1		30	
+穿	1	queue	queue:S1		31	
+上课	1	queue	queue:S1		32	helps 1.11 routine
+早	1	queue	queue:S1		33	
+下课	1	queue	queue:S1		34	helps 1.11 routine
+医院	1	queue	queue:S1		35	
+上学	1	queue	queue:S1		36	helps 1.11 routine
+晚	1	queue	queue:S1		37	
+病	1	queue	queue:S1		39	
+歌	1	queue	queue:S1		41	
+大学	1	queue	queue:S1		42	
+唱	1	queue	queue:S1		43	
+它们	1	queue	queue:S1		44	
+她们	1	queue	queue:S1		45	
+读	1	queue	queue:S1		46	
+说话	1	queue	queue:S1		47	
+雪	1	queue	queue:S1		48	weather; 1.18a pool
+课	1	queue	queue:S1		50	
+好看	1	queue	queue:S1		51	
+一半	1	queue	queue:S1		52	
+大学生	1	queue	queue:S1		53	
+小学	1	queue	queue:S1		54	
+读书	1	queue	queue:S1		55	
+中学	1	queue	queue:S1		56	
+没事	1	queue	queue:S1		57	
+白天	1	queue	queue:S1		59	
+女士	1	queue	queue:S1		61	
+好听	1	queue	queue:S1		62	
+那边	1	queue	queue:S1		63	
+小朋友	1	queue	queue:S1		64	Peppa openers
+这边	1	queue	queue:S1		65	
+女朋友	1	queue	queue:S1		66	
+听见	1	queue	queue:S1		67	
+男朋友	1	queue	queue:S1		68	Lazy Chinese L01 (1.1c opener) mentions a boyfriend; gist only
+汉语	1	queue	queue:S1		69	near-synonym of 中文 (1.13a)
+看病	1	queue	queue:S1		70	
+小学生	1	queue	queue:S1		71	
+书店	1	queue	queue:S1		72	
+中学生	1	queue	queue:S1		73	
+电影院	1	queue	queue:S1		74	
+汉字	1	queue	queue:S1		75	
+好玩儿	1	queue	queue:S1		76	
+爷爷	2	unit	1.7	1.7 2.16 2.33		family set (1.7); Peppa's grandparents (2.16a, 2.33a)
+奶奶	2	unit	1.7	1.7 2.16 2.33		family set (1.7); Peppa's grandparents (2.16a, 2.33a)
