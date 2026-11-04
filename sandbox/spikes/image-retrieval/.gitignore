@@ -1,0 +1,5 @@
+.venv/
+models/
+cache/
+out/images/
+*.log

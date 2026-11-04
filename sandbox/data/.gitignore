@@ -1,3 +1,5 @@
 common-voice-zh-CN/
 *.log
 openslr/
+coco/
+openimages/
