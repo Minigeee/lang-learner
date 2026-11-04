@@ -1,0 +1,9 @@
+{
+  "name": "@lang-learner/lang-zh",
+  "private": true,
+  "type": "module",
+  "exports": { ".": "./index.ts" },
+  "scripts": { "typecheck": "tsc -p ." },
+  "dependencies": { "@lang-learner/core": "workspace:*" },
+  "devDependencies": { "typescript": "6.0.3" }
+}

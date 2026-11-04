@@ -48,31 +48,31 @@ The architecture's contracts stand, except for the changes below.
 
 ### 4.1 Contract changes
 
-These come from the spikes and aren't in the architecture yet. Phase 0 writes them into it.
+These come from the spikes. Architecture revision 2.2 has the events and push contracts; the vocab card and check rules aren't in it yet.
 
-**Events** (`packages/core/events.ts`; spike D §3):
+**Events** (`packages/core/events.ts`; spike D §3). TypeScript uses camelCase (`deviceSeq`) and the database uses snake_case (`device_seq`):
 
 ```ts
 interface EventEnvelope {
-  device_seq: number                 // added: per-device counter, so gaps are detectable
-  // id, kind, v, lang, occurred_at, device_id, build, payload as before
+  deviceSeq: number                  // added: per-device counter, so gaps are detectable
+  // id, kind, v, lang, occurredAt, deviceId, build, payload as before
 }
-type Event =
-  | { kind: 'review'; v: 1; cardId: CardId; rating: Rating; durationMs: number
+type EventDraft =
+  | { kind: 'review'; v: 1; payload: { cardId: CardId; rating: Rating; durationMs: number
       dueAt: number                  // added: the device's load-balanced due date
-      prevReviewId: string | null }  // added: guards dueAt during replay
-  | { kind: 'device'; v: 1; reason: 'hello' | 'day' }   // added: proves a device has flushed
-  | { kind: 'day_closed'; v: 1; date: string; xp: number; credit: Credit
+      prevReviewId: string | null } }  // added: guards dueAt during replay
+  | { kind: 'device'; v: 1; payload: { reason: 'hello' | 'day' } }   // added: proves a device has flushed
+  | { kind: 'day_closed'; v: 1; payload: { date: string; xp: number; credit: Credit
       rules: Record<string, string>
       minutes: number                // added: 2 dp, never a raw float
-      basis: 'settled' | 'grace' }   // added
+      basis: 'settled' | 'grace' } } // added
   // the other kinds are unchanged; synced settings gain studyTz and dayStartHour
 ```
 
-**Push** (`supabase/migrations/`). Client inserts go through one serialized function, so `seq` can't commit out of order and skip a pull cursor (spike D, C1):
+**Push** (`supabase/migrations/`). Client inserts go through one serialized function, so `seq` can't commit out of order and skip a pull cursor (spike D, C1). It returns rejections, one row per event it refused:
 
 ```sql
-create function push_events(batch jsonb) returns void  -- idempotent; takes an advisory lock
+create function public.push_events(batch jsonb) returns table (id text, error text)  -- idempotent; takes an advisory lock
 ```
 
 **Vocab card** (`languages/zh/logic/cards.ts`, compiled by `content:build`). It follows the README Vocab card format. One `voice` field makes a two-voice card impossible to express, and `image` makes "no image" a normal state:
@@ -102,7 +102,7 @@ interface VocabCard {
 
 | Spike | Production home | What carries over |
 |---|---|---|
-| sync-replay | `packages/core` (events, srs, derive) | Fixes C1–C7, the settled day-close rule, the per-card cache, fast-check properties, queue defaults |
+| sync-replay | `packages/core` (events, sync, srs, derive) | Fixes C1–C7, the settled day-close rule, the per-card cache, fast-check properties, queue defaults |
 | authoring-format | `packages/content-tools`, `languages/zh` | The format with its six syntax changes, rule ids, build-time `analyze()`, hash-named build |
 | activity-pilot | `apps/web` | Lesson arc steps, trial runner, widgets and their feel knobs, i18n tables |
 | media-ingest, tts-grader, elevenlabs-check | `tools/media-ingest` | Whisper validation, the tone gate, TTS synthesis, loudness normalization |
@@ -120,12 +120,14 @@ interface VocabCard {
 | Sign-in email | Captured by Mailpit (`supabase status` shows its URL); the code is read there | Real email codes |
 | App | Vite dev server | Cloudflare Pages |
 | Content and media | `content:build` uploads to the local bucket | CI uploads to the private bucket |
-| Phone | HTTPS on the Wi-Fi network | The public URL |
+| Phone | Plain HTTP on the Wi-Fi network | The public URL |
 | Pipelines | Laptop | Laptop |
 
-**Phone access.** Service workers need a secure origin, so plain `http://<laptop-ip>` isn't enough. Vite serves HTTPS with a `mkcert` certificate the phone trusts, and proxies `/supabase` to the local gateway, so the app sees one origin. Phase 0 proves this, including whether YouTube embeds accept that origin.
+**Phone access.** The phone uses plain HTTP on the Wi-Fi network until the hosted launch (owner decision, 2026-11-04). Vite binds to the LAN and proxies `/supabase` to the local gateway, so the app sees one origin. Plain HTTP isn't a secure context, so service workers, PWA install and `crypto.subtle` aren't available on the phone before Phase 6. Those are tested on `localhost` on the laptop until then.
 
-**Not installed yet:** Docker Desktop (WSL2 backend), the Supabase CLI (`scoop install supabase`, or per project through npm) and pnpm. Installing Docker Desktop and accepting its terms is the owner's step. Leave Supabase analytics off, since on Windows it needs extra daemon setup ([Supabase CLI docs](https://supabase.com/docs/guides/local-development/cli/getting-started)).
+YouTube may reject a plain-HTTP LAN origin. Phase 0 tries the embed on the phone. If it plays on `localhost` but not on the phone, that's a limit of this origin, so record it and settle the question on the real origin in Phase 6.
+
+**Not installed yet:** the Supabase CLI and pnpm. Docker Desktop is installed. Leave Supabase analytics off, since on Windows it needs extra daemon setup ([Supabase CLI docs](https://supabase.com/docs/guides/local-development/cli/getting-started)).
 
 ## 6. The two checkpoints
 
@@ -180,9 +182,9 @@ Each phase ends with something that runs, and with its tests passing.
 Purpose: everything talks to everything, locally.
 - Update the architecture with §4.1 and the other corrections in spike D §7 and spike E §6.
 - Set up the pnpm workspace, TypeScript, dependency-cruiser rules, the CJK lint and CI.
-- `packages/core`: ids and events. `languages/zh` and `languages/_toy` stubs.
+- `packages/core`: ids, events and sync. `languages/zh` and `languages/_toy` stubs.
 - `supabase/`: `config.toml`, the events table, RLS, `push_events`, the private bucket, the owner account.
-- `apps/web`: sign-in, event store, outbox, pull.
+- `apps/web`: sign-in, and the local store and remote adapters.
 - Phone access (§5).
 
 **Done when** a phone signs in, records an event that the laptop pulls, plays a clip from the local bucket and plays a YouTube embed.
@@ -217,7 +219,7 @@ Purpose: lessons feed cards, and the day runs itself.
 - New-card feed: lesson and unit words at the end card, prep with deadlines, the queue in frequency order, and the first-look step for queue words.
 - Session builder, settled day close, per-card cache.
 
-**Done when** the 15-minute bedtime flow works offline on the phone, and spike D's two-device properties pass on the real code.
+**Done when** the 15-minute bedtime flow works offline on the laptop (`localhost`), and spike D's two-device properties pass on the real code. The phone's offline check moves to Phase 6.
 
 ### Phase 4: Product surfaces
 
@@ -225,7 +227,7 @@ Purpose: every system has its screen.
 - Today, Path, Unit view and the graph map. Progress meters and Weekly review.
 - Item detail, the Watch log, test-out and self-report.
 - First-run setup, Settings, Credits, and the support-language toggle.
-- Service worker and offline cache.
+- Service worker and offline cache, tested on `localhost`.
 
 **Done when** each screen in [app-ui-flow](app-ui-flow.md) works with the pilot's data, and a new account can self-report S0 and reach unit 1.1.
 
@@ -244,6 +246,7 @@ Purpose: get the content right while it's cheap to change.
 Purpose: real conditions, on the real stack.
 - Create the Supabase project and Pages site, and apply migrations.
 - CI: check, build, upload, deploy.
+- Install the app on the phone, and check offline use and YouTube embeds on the real origin.
 - The weekly ping and backup, plus one restore drill from a dump.
 - Confirm the AISHELL-1 terms, or use AISHELL-3 only.
 - Use the app daily for 7 days on phone and laptop, then work through the style gate.

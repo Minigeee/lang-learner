@@ -1,0 +1,32 @@
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html, body { margin: 0; height: 100%; }
+body {
+  background: var(--page); color: var(--text-primary);
+  font: 400 15px/1.5 Lexend, system-ui, sans-serif;
+  font-variant-numeric: tabular-nums; -webkit-font-smoothing: antialiased;
+}
+#app { min-height: 100%; }
+button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+
+.t-title { font-size: 20px; font-weight: 600; letter-spacing: -.01em; line-height: 1.25; }
+.t-meta { font-size: 12px; color: var(--text-secondary); }
+
+.screen { max-width: 440px; margin: 0 auto; padding: 24px 16px; display: flex; flex-direction: column; gap: 16px; }
+
+.btn {
+  display: block; width: 100%; border-radius: 14px; padding: 15px 0; text-align: center;
+  font-weight: 500; font-size: 15px; transition: transform .12s ease, opacity .2s ease;
+}
+.btn:active { transform: scale(.97); }
+.btn.pri { background: var(--act); color: var(--on-act); }
+.btn.sec { border: 1px solid var(--border-strong); font-weight: 400; font-size: 14px; padding: 12px 0; }
+.btn[disabled] { opacity: .4; pointer-events: none; }
+
+.field { display: flex; flex-direction: column; gap: 6px; font-size: 12px; color: var(--text-secondary); }
+.field input {
+  font: inherit; font-size: 16px; color: var(--text-primary); background: var(--surface-2);
+  border: 1px solid var(--border-strong); border-radius: 12px; padding: 12px 14px; width: 100%;
+}
+.field input:focus { outline: 2px solid var(--act-border); outline-offset: 1px; }
+
+.error { color: var(--act-text); font-size: 13px; margin: 0; }

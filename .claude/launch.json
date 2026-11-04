@@ -2,9 +2,22 @@
   "version": "0.0.1",
   "configurations": [
     {
+      "name": "web",
+      "runtimeExecutable": "pnpm",
+      "runtimeArgs": [
+        "dev"
+      ],
+      "port": 5173
+    },
+    {
       "name": "activity-pilot",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["--prefix", "sandbox/spikes/activity-pilot", "run", "dev"],
+      "runtimeArgs": [
+        "--prefix",
+        "sandbox/spikes/activity-pilot",
+        "run",
+        "dev"
+      ],
       "port": 5173
     }
   ]

@@ -6,3 +6,9 @@ __pycache__/
 *.pyc
 sandbox/spikes/dependency-check/deps-report/
 sandbox/data/frequency/zh_cn_50k.txt
+
+# Workspace
+node_modules/
+dist/
+supabase/.temp/
+supabase/.branches/

@@ -119,7 +119,7 @@ svg .life{stroke:var(--border-stronger);stroke-dasharray:4 4}
 <main>
 <h1>Architecture</h1>
 <p class="lede">A C4 walk through the language-learning app, from its place in the world down to the contracts that keep it extensible. Adding a unit is a content change only. Adding a language is a language pack, content and one registration line, with no change to the core.</p>
-<p class="meta"><span class="pill act">Proposal, revision 2.1</span><span class="pill">2026-11-02</span> Revision 2 applies the <a href="architecture-review.md">adversarial review</a> (dispositions at its end) and the owner's answers: a private repo, a phone and a laptop used daily, simplified Mandarin only, no second language soon, at most about $10 a month, as few services as possible, and content pipelines run on the owner's laptop (RTX 2070). Revision 2.1 keeps the content bundle private in Supabase Storage. It builds on the <a href="../research/README.md">research synthesis</a>, the <a href="app-ui-flow.md">UI flow</a> and the unreviewed <a href="tdd-curriculum-data-model.md">data-model TDD</a>, which this doc overrides where they differ (§13).</p>
+<p class="meta"><span class="pill act">Proposal, revision 2.2</span><span class="pill">2026-11-04</span> Revision 2 applies the <a href="architecture-review.md">adversarial review</a> (dispositions at its end) and the owner's answers: a private repo, a phone and a laptop used daily, simplified Mandarin only, no second language soon, at most about $10 a month, as few services as possible, and content pipelines run on the owner's laptop (RTX 2070). Revision 2.1 keeps the content bundle private in Supabase Storage. Revision 2.2 applies the sync-replay and authoring-format spikes and the Phase 0 plan: clients write only through a serialized <code>push_events</code> function, sync moves into core behind ports, days close by the settled rule, and the widget and language pack contracts state more of what they promise. It builds on the <a href="../research/README.md">research synthesis</a>, the <a href="app-ui-flow.md">UI flow</a> and the unreviewed <a href="tdd-curriculum-data-model.md">data-model TDD</a>, which this doc overrides where they differ (§13).</p>
 
 <h2 id="drivers">1. Drivers</h2>
 <table>
@@ -147,7 +147,7 @@ svg .life{stroke:var(--border-stronger);stroke-dasharray:4 4}
 <table>
 <tr><th>Container</th><th>Technology</th><th>Owns</th><th>Never does</th></tr>
 <tr><td>Web app</td><td>Vue 3, TypeScript, Vite, PWA. Static on Cloudflare Pages; each build pins one content manifest</td><td>Screens, the session builder, the lesson player, reviews, derive, the local event store and sync</td><td>Write anything but events; hold secrets</td></tr>
-<tr><td>Events DB</td><td>Supabase Postgres, one table, RLS, insert-only</td><td>Every user fact, in arrival order (<code>seq</code>)</td><td>Store derived values (except frozen <code>day_closed</code> snapshots); hold content</td></tr>
+<tr><td>Events DB</td><td>Supabase Postgres, one append-only table, RLS, written only through <code>push_events</code></td><td>Every user fact, in commit order (<code>seq</code>)</td><td>Store derived values (except frozen <code>day_closed</code> snapshots); hold content</td></tr>
 <tr><td>Private bucket</td><td>Supabase Storage, private</td><td><code>content/builds/&lt;build&gt;.json</code> manifests, <code>content/files/&lt;hash&gt;.json</code> bundle files, <code>media/</code> short native clips (60 s or less)</td><td>Serve anything without a signed-in owner; hold anything long enough to need seeking</td></tr>
 <tr><td>Content toolchain</td><td>Node CLI (pnpm), on the laptop and in CI</td><td>Import, check, compile; upload hash-named files and the build manifest to the private bucket</td><td>Run in production</td></tr>
 <tr><td>Media ingester</td><td>Python, on the laptop GPU (faster-whisper)</td><td>Fetching openly licensed audio, transcripts, alignment, validation, upload</td><td>Touch YouTube media; accept a clip without an automatic transcript</td></tr>
@@ -172,8 +172,8 @@ svg .life{stroke:var(--border-stronger);stroke-dasharray:4 4}
 <tr><td>Trial runner</td><td>Runs activity items, scores them, applies the feedback policy, requeues a miss in a new voice, emits events</td><td>Feedback timing, retries, card-on-second-miss</td></tr>
 <tr><td>Widget registry</td><td>Name → definition (in core) and name → view (in the app or the pack's views)</td><td>Widget implementations</td></tr>
 <tr><td>SRS</td><td>Rebuilds card state by replaying review events through pinned <code>ts-fsrs</code>; the queue policy from doc 02</td><td>FSRS version, parameters, fuzz seeding</td></tr>
-<tr><td>Derive</td><td>Pure, versioned rules: category, XP, mastery, lesson status, consistency; closes finished days</td><td>Every mapping we've said we'll tune</td></tr>
-<tr><td>Event store</td><td>IndexedDB log, outbox, push and pull by <code>seq</code>, flush triggers</td><td>Supabase, offline handling</td></tr>
+<tr><td>Derive</td><td>Pure, versioned rules: category, XP, mastery, lesson status, consistency; closes settled days</td><td>Every mapping we've said we'll tune</td></tr>
+<tr><td>Event store</td><td><code>packages/core</code> owns the event log, stamping, the outbox, and push and pull by <code>seq</code>, behind the <code>LocalStore</code> and <code>Remote</code> ports (§6). <code>apps/web</code> holds thin IndexedDB and Supabase adapters and fires the flush triggers</td><td>Supabase, IndexedDB, offline handling</td></tr>
 <tr><td>Content loader</td><td>Downloads this build's manifest and any missing hash-named files from the private bucket with the session token, caches them, applies redirects, lazy-loads dictionary shards</td><td>Bundle format, storage paths</td></tr>
 <tr><td>Media</td><td>YouTube IFrame adapter; downloads clips from Storage with the session token, then caches the blobs; exposure events; clip fallback</td><td>Providers, the "unseen" rules</td></tr>
 </table>
@@ -183,7 +183,7 @@ svg .life{stroke:var(--border-stronger);stroke-dasharray:4 4}
 <p class="figcap">Bundle files are named by their content hash and uploaded once. Each build adds one manifest listing its files. The app build only embeds its build id, so a deployed app always asks for exactly the content it was built against. The ingester runs on the laptop GPU and uploads only clips that pass automated validation. Failures go to a quarantine report, never to hand fixes.</p>
 <table>
 <tr><th>Check rule family</th><th>Examples</th><th>Owner</th></tr>
-<tr><td>Identity</td><td>Ids well-formed and NFC-normalized; nothing removed without a redirect; redirects permanent and chain-free</td><td>core</td></tr>
+<tr><td>Identity</td><td>Ids well-formed and already NFC; nothing removed without a redirect; redirects permanent and chain-free</td><td>core</td></tr>
 <tr><td>Structure</td><td>Lesson order respects item prerequisites; every unit has a check; skeleton slots filled; templates resolve (language overrides shared by name)</td><td>core</td></tr>
 <tr><td>Media</td><td>Every example is marked up and has a lesson-eligible clip; license present; voice variety per contrast</td><td>core</td></tr>
 <tr><td>Pedagogy</td><td>Output level allowed by the stage's template (not by the learner's phase)</td><td>core</td></tr>
@@ -195,7 +195,7 @@ svg .life{stroke:var(--border-stronger);stroke-dasharray:4 4}
 <table>
 <tr><th>Piece</th><th>Configuration</th></tr>
 <tr><td>Auth</td><td>Email one-time code (works inside an installed iOS PWA). Signups disabled once the owner account exists. Long refresh sessions, so sign-in is rare.</td></tr>
-<tr><td>Events table</td><td>One table (§5). RLS: <code>user_id = auth.uid()</code>. Policies for <code>select</code> and <code>insert</code> only; no update or delete.</td></tr>
+<tr><td>Events table</td><td>One table (§5). RLS: <code>user_id = auth.uid()</code>. Clients have <code>select</code>, plus <code>execute</code> on <code>push_events</code> (security definer). They have no insert, update or delete grants, so nothing can bypass its lock.</td></tr>
 <tr><td>Private bucket</td><td>Read policy: the owner only. Writes:<ul><li>CI uploads content with a Storage-scoped S3 access key kept in GitHub secrets.</li><li>The laptop uploads media with the same kind of key.</li></ul>Neither key ever ships to the browser. Retention: keep the manifests of the last 10 builds, and delete files that no kept manifest references.</td></tr>
 <tr><td>Keep-alive and backups</td><td>A weekly GitHub Action (a few minutes of compute) pings the database and runs <code>pg_dump</code> through the session pooler, since runners can't reach the direct connection. The dump is stored as an encrypted workflow artifact.</td></tr>
 </table>
@@ -205,28 +205,33 @@ svg .life{stroke:var(--border-stronger);stroke-dasharray:4 4}
 <pre><code><span class="cm">-- supabase/migrations/0001_events.sql</span>
 create table events (
   id          uuid primary key,                 <span class="cm">-- client-generated uuid v7 (or deterministic, see below)</span>
-  seq         bigint generated always as identity unique,   <span class="cm">-- arrival order; the pull cursor</span>
+  seq         bigint generated always as identity unique,   <span class="cm">-- commit order, because push_events is serialized; the pull cursor</span>
   user_id     uuid not null default auth.uid(),
   kind        text not null,                    <span class="cm">-- see the Event union in §6</span>
   v           smallint not null,                <span class="cm">-- payload schema version for this kind</span>
   lang        text,                             <span class="cm">-- language of the item involved; null for global events</span>
-  occurred_at timestamptz not null,             <span class="cm">-- device clock; ordering for derive</span>
+  occurred_at timestamptz not null,             <span class="cm">-- device stamp (§6); ordering for derive</span>
   device_id   text not null,
+  device_seq  int not null,                     <span class="cm">-- per-device counter, so a gap is detectable</span>
   build       text not null,                    <span class="cm">-- app+content build id that wrote it</span>
   payload     jsonb not null
 );
-alter table events enable row level security;   <span class="cm">-- select + insert policies only</span></code></pre>
+alter table events enable row level security;   <span class="cm">-- clients: select, plus execute on push_events; no insert, update or delete grants</span>
+
+<span class="cm">-- security definer. Takes a per-user advisory lock, so seq order equals commit order.
+-- Returns rejections: a malformed event comes back with its error and doesn't abort the batch.</span>
+create function public.push_events(batch jsonb) returns table (id text, error text);</code></pre>
 <div class="grid2">
-<div class="card"><h4>Write and push</h4><ul><li>Events go to IndexedDB first, then to the outbox.</li><li>Push is <code>insert … on conflict (id) do nothing</code>, so retries are harmless.</li><li>The outbox flushes on launch, on <code>visibilitychange</code> and on <code>online</code>, since iOS has no Background Sync.</li><li>A permanently rejected event (a schema error) is moved to a dead-letter list shown in Settings, so it can never wedge the queue.</li></ul></div>
-<div class="card"><h4>Pull</h4><ul><li><code>select … where seq &gt; :cursor order by seq</code>. <code>seq</code> is assigned on arrival, so events that sync late from an offline device are still pulled.</li><li>Derive orders by <code>occurred_at</code> (tie-break by <code>id</code>), never by <code>seq</code>.</li></ul></div>
-<div class="card"><h4>Cards</h4><ul><li>A card's id is deterministic: <code>hash(itemId, cardTemplate)</code>, so two devices adding the same card produce one card.</li><li>Its schedule is rebuilt by replaying its <code>review</code> events in time order through FSRS. Fuzz is seeded from <code>(cardId, reviewedAt)</code>, so replay is deterministic.</li><li>Concurrent offline reviews on two devices both count, in time order. Nothing is overwritten.</li></ul></div>
-<div class="card"><h4>Frozen history</h4><ul><li>When a day ends, the first device to open the app afterwards appends <code>day_closed</code> with that day's XP, consistency credit and rule versions. The id is <code>hash(userId, date)</code>, so the second device's copy is a no-op.</li><li>Streaks and XP for closed days are read from these events, never recomputed. Rule or content changes apply from today on.</li><li>Mistakes are corrected with <code>void</code> events, never by deletion.</li></ul></div>
+<div class="card"><h4>Write and push</h4><ul><li>An event and its outbox entry are written locally in one atomic step, and the outbox drains first in, first out.</li><li>Push calls <code>push_events</code>, the only client write path. It takes the user's advisory lock, then runs <code>insert … on conflict (id) do nothing</code>, so pushes are serialized and retries are harmless.</li><li>The outbox flushes on launch, on <code>visibilitychange</code> and on <code>online</code>, since iOS has no Background Sync.</li><li>A permanently rejected event (a schema error) is moved to a dead-letter list shown in Settings, so it can never wedge the queue.</li></ul></div>
+<div class="card"><h4>Pull</h4><ul><li><code>select … where seq &gt; :cursor order by seq</code>. <code>seq</code> is assigned on arrival, so events that sync late from an offline device are still pulled. Serialized pushes keep <code>seq</code> order equal to commit order, so a row can't commit behind the cursor and be skipped.</li><li>A pull overwrites the local copy by id: the server row is authoritative for an id. Deterministic-id events depend on this, because two devices can write different payloads under one id.</li><li>Derive orders by <code>occurredAt</code> (tie-break by <code>id</code>), never by <code>seq</code>.</li></ul></div>
+<div class="card"><h4>Cards</h4><ul><li>A card's id is deterministic: <code>hash(itemId, cardTemplate)</code>, so two devices adding the same card produce one card.</li><li>Its schedule is rebuilt by replaying its <code>review</code> events in time order through FSRS. <code>ts-fsrs</code> seeds its fuzz from <code>cardId + reps</code>, which needs fuzz turned on and a <code>cardId</code> passed to <code>newCard()</code> every time.</li><li>The load balancer reads the device's current due counts, so it can't be replayed. Each review records the chosen date as <code>review.dueAt</code>, guarded by <code>prevReviewId</code>: replay uses <code>dueAt</code> only if <code>prevReviewId</code> matches the replayed previous review, and otherwise falls back to seeded fuzz. Both branches are deterministic.</li><li>Concurrent offline reviews on two devices both count, in time order. Nothing is overwritten.</li></ul></div>
+<div class="card"><h4>Frozen history</h4><ul><li>A study day runs in the synced <code>studyTz</code> from <code>dayStartHour</code>; derive never reads the device's time zone. The day stays open, with provisional XP and credit, until it settles. The streak UI treats an open day as pending, not broken.</li><li>Each device pushes a <code>device</code> hello at sign-in, before any study, so the others know it exists.</li><li>Right after a successful pull, never offline, any device may append <code>day_closed</code> with that day's XP, consistency credit and rule versions. It may do so once either of these holds:<ul><li>every other device that recorded anything in the 14 days before the day's end has an event stamped at or after that end (basis <code>settled</code>);</li><li>72 hours have passed since the day's end (basis <code>grace</code>).</li></ul>Both windows are owner-tunable.</li><li>The id is <code>hash(userId, date)</code>, so two closes share one id. The server keeps the first, and the other device converges on pull.</li><li>Events that arrive after a close still count for cards, mastery and input hours, but never change that day's XP or credit. The app shows a small note instead of dropping them silently.</li><li>Streaks and XP for closed days are read from these events, never recomputed. Rule or content changes apply from today on.</li><li>Mistakes are corrected with <code>void</code> events, never by deletion. A <code>void</code> can't target a <code>day_closed</code>; a correction there is a later rule version.</li></ul></div>
 </div>
-<p>At this scale (a year is roughly 150k events), derive simply recomputes from the local log when the log or the build changes, and caches the result. There's no incremental machinery and no server-side fallback until a measurement says otherwise (review m1).</p>
+<p>A full recompute over a year of events (roughly 150k) takes about 5 s on a mid-range phone, a figure scaled from a laptop measurement by an assumed 4×. That's too slow to run on every log change, so a per-card cache is needed. Each card's derived state is stored with its rules and FSRS versions and its last applied review: a later review applies directly, and an older event replays just that card. Mastery uses a similar per-item fold, and XP only needs the open days. A full recompute runs only when the rules or the FSRS version change, in a Web Worker. There's no server-side fallback until a measurement says otherwise (review m1).</p>
 
 <h2 id="code">6. Level 4: Key contracts</h2>
 <h3>Ids</h3>
-<pre><code><span class="cm">// packages/core/ids.ts: one grammar, enforced at every boundary. Keys are NFC-normalized before use.</span>
+<pre><code><span class="cm">// packages/core/ids.ts: one grammar, enforced at every boundary. A non-NFC id is rejected there, never normalized.</span>
 type Lang = string                               <span class="cm">// a language, not a script: 'zh'. Script and region are display settings of a pack</span>
 type ItemId   = `${Lang}:${string}:${string}`    <span class="cm">// lang : kind : key. zh:w:行:hang2 · zh:g:le-completion · zh:c:好</span>
 type LessonId = `${Lang}:les:${string}`          <span class="cm">// also unit and stage</span>
@@ -239,8 +244,8 @@ type MediaId  = `media:${string}`                <span class="cm">// media, clip
 interface LanguagePack {                          <span class="cm">// languages/&lt;lang&gt;/logic: no Vue, shipped to the browser, lazy-loaded</span>
   code: Lang; name: string
   normalize(s: string): string                    <span class="cm">// after NFC: zh none; ja width folding; es none</span>
-  analyze(sentence: string, lex: Lexicon): Analysis   <span class="cm">// tokens with surface, lemma, in-context reading, ruby segments, features</span>
-  itemKey(entry: LexEntry): string                <span class="cm">// a stable natural key per dictionary entry: zh 行:hang2, ja 食べる:たべる, es comer:v</span>
+  analyze(sentence: string, lex: Lexicon): Analysis   <span class="cm">// tokens with surface, lemma, the reading chosen in context, ruby segments, features</span>
+  itemKey(entry: LexEntry): string                <span class="cm">// a stable natural key, many-to-one over dictionary entries: zh 行:hang2, ja 食べる:たべる, es comer:v</span>
   itemKinds: ItemKindDef[]                        <span class="cm">// extra kinds, with zod schemas used at build time only</span>
   soundAxes: string[]                             <span class="cm">// zh ['tone','initial','final']; es ['vowel','r-rr']; ja ['mora','pitch']</span>
   cardTemplates: CardTemplate[]                   <span class="cm">// which card faces each kind gets (zh: hanzi→meaning, audio→meaning)</span>
@@ -258,11 +263,19 @@ interface LanguagePackViews {                     <span class="cm">// languages/
   Ruby: Component                                 <span class="cm">// renders an analyzed sentence with readings</span>
 }</code></pre>
 <p class="meta">Target-language text is never detected by heuristics. Lessons mark it explicitly (<code>:ex[…]</code> for examples, <code>:w[…]</code> for words), so the core checks work for Spanish as well as Chinese (review M2).</p>
+<p>What every pack's analysis promises:</p>
+<ul>
+<li><b style="font-weight:500">Readings are citation forms.</b> Stored readings never carry sandhi. Display applies it at render time, keyed by <code>sr:</code> ids.</li>
+<li><b style="font-weight:500"><code>itemKey</code> is many-to-one.</b> One word item bundles every dictionary entry that shares its key.</li>
+<li><b style="font-weight:500">The analyzer never mints an id that isn't a lexicon key.</b> A lemma missing from the lexicon gets no item id.</li>
+<li><b style="font-weight:500"><code>analyze()</code> runs at build time for catalog lines,</b> and their tokens ship in the media files. The browser runs it only for mined sentences. That needs a dictionary and the reading data in the bundle, a cost still to be measured.</li>
+</ul>
 <h3>Widgets</h3>
 <pre><code><span class="cm">// packages/core/widgets.ts: a discriminated union, so a figure can't declare scoring (review M4). Full detail is in TDD §7.</span>
 type WidgetDefinition&lt;C&gt; = ActivityDefinition&lt;C&gt; | FigureDefinition&lt;C&gt;
 interface ActivityDefinition&lt;C&gt; {
-  role: 'activity'; widget: string; version: number; config: ZodType&lt;C&gt;   <span class="cm">// zod is build-time only</span>
+  role: 'activity'; widget: string; version: number
+  config: ZodType&lt;C&gt;                               <span class="cm">// zod is build-time only. Instance fields (key, optional, reason) stay out: the parser splits them off first</span>
   slots: readonly SlotName[]
   activityType(c: C): ActivityType               <span class="cm">// derive needs it for category and strand</span>
   outputLevel: 0 | 1
@@ -270,18 +283,48 @@ interface ActivityDefinition&lt;C&gt; {
   expand?(c: C, cat: Catalog): ItemSpec[]          <span class="cm">// 'items' only: lets the check count items, voices and clips</span>
   evidenceTargets(c: C): ItemId[]
   refs(c: C): ContentRefs                          <span class="cm">// every id it mentions, so the check needs no widget knowledge</span>
+  lines(c: C): ContentText[]                       <span class="cm">// target-language lines that need a native clip</span>
+  copy(c: C): ContentText[]                        <span class="cm">// user-facing strings</span>
   estimateSec(c: C): number                        <span class="cm">// the session builder needs it</span>
 }
-interface FigureDefinition&lt;C&gt; { role: 'figure'; widget: string; version: number; config: ZodType&lt;C&gt;; refs(c: C): ContentRefs }</code></pre>
+interface FigureDefinition&lt;C&gt; {
+  role: 'figure'; widget: string; version: number; config: ZodType&lt;C&gt;
+  refs(c: C): ContentRefs; lines(c: C): ContentText[]; copy(c: C): ContentText[]
+}</code></pre>
 <h3>Events and derive</h3>
-<pre><code><span class="cm">// packages/core/events.ts: the only write path. One writer, one union.</span>
-type Event =
-  | { kind: 'review'; v: 1; cardId: CardId; rating: 1|2|3|4; durationMs: number }
-  | { kind: 'trial'; v: 1; itemId: ItemId; lessonHash: string; widget: `${string}@${number}`; correct: boolean; recycled: boolean }
-  | { kind: 'span' | 'exposure' | 'claim' | 'watch' | 'card_added' | 'lesson_cursor' | 'setting' | 'flag'; v: 1; /* … */ }
-  | { kind: 'void'; v: 1; target: string; reason: string }
-  | { kind: 'day_closed'; v: 1; date: string; xp: number; credit: 'none'|'floor'|'standard'|'stretch'; rules: Record&lt;string, string&gt; }
-record(e: Event): void          <span class="cm">// stamps id, occurred_at, device_id, build; writes locally; queues the push</span>
+<pre><code><span class="cm">// packages/core/events.ts: the only write path. One writer, one union.
+// TypeScript is camelCase and the database snake_case; only the Remote adapter maps between them.</span>
+interface EventEnvelope&lt;K extends string = string, P = unknown&gt; {
+  id: string; kind: K; v: number; lang: Lang | null
+  occurredAt: number                <span class="cm">// integer ms, clamped at record time: monotonic per device, and a review is never before the card's last known review</span>
+  deviceId: string
+  deviceSeq: number                 <span class="cm">// per-device counter, so a gap is detectable</span>
+  build: string; payload: P
+  seq?: number                      <span class="cm">// server-assigned; absent until pulled</span>
+}
+type EventDraft =                   <span class="cm">// what callers record; the envelope adds the rest</span>
+  | { kind: 'review'; v: 1; payload: { cardId: CardId; rating: 1|2|3|4; durationMs: number
+      dueAt: number                 <span class="cm">// integer ms: the device's load-balanced due date</span>
+      prevReviewId: string | null } }   <span class="cm">// the review the device treated as this card's previous one</span>
+  | { kind: 'trial'; v: 1; payload: { itemId: ItemId; lessonHash: string; widget: `${string}@${number}`; correct: boolean; recycled: boolean } }
+  | { kind: 'device'; v: 1; payload: { reason: 'hello' | 'day' } }   <span class="cm">// hello: registers at sign-in. day: proves the device has flushed the previous study day</span>
+  | { kind: 'setting'; v: 1; payload: { key: string; value: unknown } }   <span class="cm">// synced keys include studyTz (IANA name) and dayStartHour; the latest by (occurredAt, id) wins</span>
+  | { kind: 'flag'; v: 1; payload: { note: string; target?: string } }
+  | { kind: 'span' | 'exposure' | 'claim' | 'watch' | 'card_added' | 'lesson_cursor'; v: 1; payload: { /* … */ } }
+  | { kind: 'void'; v: 1; payload: { target: string; reason: string } }   <span class="cm">// target can't be a day_closed</span>
+  | { kind: 'day_closed'; v: 1; payload: { date: string; xp: number; credit: 'none'|'floor'|'standard'|'stretch'; rules: Record&lt;string, string&gt;
+      minutes: number               <span class="cm">// 2 dp</span>
+      basis: 'settled' | 'grace' } }
+
+<span class="cm">// packages/core/sync.ts: the event log, stamping and sync, behind two ports. apps/web holds the thin adapters.</span>
+interface LocalStore { <span class="cm">/* atomic append, FIFO outbox, settle, applyPulled (overwrites by id, advances the cursor atomically), cursor */</span> }
+interface Remote {
+  push(batch: EventEnvelope[]): Promise&lt;Rejection[]&gt;
+  pull(afterSeq: number, limit: number): Promise&lt;EventEnvelope[]&gt;
+}
+createEventLog(deps: { store: LocalStore; remote: Remote; clock: () =&gt; number; build: string }): EventLog
+record(draft: EventDraft): Promise&lt;EventEnvelope&gt;   <span class="cm">// stamps the envelope and queues the push; resolves once the event is durable</span>
+flush(): Promise&lt;void&gt;                              <span class="cm">// single-flight: push, then page through pull</span>
 
 <span class="cm">// packages/core/derive: pure functions of (events, bundle, rule versions).</span>
 export const RULES = { category: { v1 }, xp: { v1 }, mastery: { v1 }, lessonStatus: { v1 }, consistency: { v1 } } as const</code></pre>
@@ -341,12 +384,12 @@ export const RULES = { category: { v1 }, xp: { v1 }, mastery: { v1 }, lessonStat
 
 <h2 id="cross">10. Cross-cutting concerns</h2>
 <div class="grid2">
-<div class="card"><h4>Security and privacy</h4><ul><li>Email-code sign-in, signups off, long refresh sessions.</li><li>RLS on the events table and on the bucket.</li><li>Storage write keys live in GitHub secrets and on the laptop, never in the app.</li><li>The content bundle is private, like the media. Only the app code on Pages is public.</li></ul></div>
+<div class="card"><h4>Security and privacy</h4><ul><li>Email-code sign-in, signups off, long refresh sessions.</li><li>RLS on the events table and on the bucket.</li><li>Clients have <code>select</code> on events and <code>execute</code> on <code>push_events</code> (security definer), with no insert, update or delete grants.</li><li>Storage write keys live in GitHub secrets and on the laptop, never in the app.</li><li>The content bundle is private, like the media. Only the app code on Pages is public.</li></ul></div>
 <div class="card"><h4>Offline and caching</h4><ul><li>The service worker caches the shell and the CJK fonts (self-hosted subsets, review n4).</li><li>The content loader caches bundle files and dictionary shards, keyed by hash.</li><li>Clips are fetched with the session token and cached as blobs, so reviews work offline.</li><li><code>navigator.storage.persist()</code> is requested once. YouTube lessons need the network.</li></ul></div>
-<div class="card"><h4>Versioning</h4><ul><li>One build id names the app plus content pair, and every event records it.</li><li>Trials and spans also record <code>lessonHash</code> and <code>widget@version</code>.</li><li>Event payloads carry a <code>v</code> per kind. Derive rules are versioned, and FSRS is pinned.</li></ul></div>
+<div class="card"><h4>Versioning</h4><ul><li>One build id names the app plus content pair, and every event records it.</li><li>Trials and spans also record <code>lessonHash</code> and <code>widget@version</code>.</li><li>Event payloads carry a <code>v</code> per kind. Derive rules are versioned, and FSRS is pinned.</li><li>Nothing frozen or compared across devices may depend on an unrounded float, since V8 and JavaScriptCore can differ in the last digit.</li></ul></div>
 <div class="card"><h4>Licensing</h4><ul><li>A license record on every dataset and clip; the build fails without one.</li><li>A credits page is generated from those records.</li><li>Share-alike data (CC-CEDICT) stays in a separate overlay.</li></ul></div>
 <div class="card"><h4>Testing</h4><ul><li>Golden fixtures for derive and for SRS replay, including two-device interleavings.</li><li>A failing fixture for each check rule.</li><li>Core tests run against the toy pack.</li><li>A phone-sized end-to-end smoke test of one lesson.</li></ul></div>
-<div class="card"><h4>Performance budget</h4><ul><li>Shell under 200 KB gzip, with zod stripped from runtime and Cytoscape lazy-loaded (review n3).</li><li>A lesson is playable within 1.5 s on a warm cache.</li><li>A full derive over a year of events is measured in phase 2.</li></ul></div>
+<div class="card"><h4>Performance budget</h4><ul><li>Shell under 200 KB gzip, with zod stripped from runtime and Cytoscape lazy-loaded (review n3).</li><li>A lesson is playable within 1.5 s on a warm cache.</li><li>A full derive over a year of events is measured on the real phone, since the §5 figure is an estimate.</li></ul></div>
 </div>
 
 <h2 id="l10n">11. Localization (support language)</h2>
@@ -383,17 +426,17 @@ Switching the support language is a setting, recorded as an event. Adding one is
 <p class="meta">Bundle format: each locale compiles to its own hash-named <code>strings.&lt;locale&gt;.json</code>. Lesson files reference strings by <code>hash(en, context)</code>, so switching locale downloads one small file, and adding a locale changes no lesson file. The activity pilot (<code>sandbox/spikes/activity-pilot</code>) runs this end to end with an English/中文 toggle.</p>
 
 <h2 id="repo">12. Repository layout</h2>
-<pre><code>apps/web/               <span class="cm">Vue 3 PWA: screens, flows, widget views, adapters (event store, media, content loader, auth)</span>
+<pre><code>apps/web/               <span class="cm">Vue 3 PWA: screens, flows, widget views, adapters (LocalStore, Remote, media, content loader, auth)</span>
   src/languages.ts      <span class="cm">the one place packs are registered</span>
   src/i18n/ui.tsv       <span class="cm">app chrome strings, one column per support locale</span>
-packages/core/          <span class="cm">no Vue: ids, types, language interfaces, widgets, session, srs, derive, events</span>
+packages/core/          <span class="cm">no Vue: ids, types, language interfaces, widgets, session, srs, derive, events, sync</span>
 packages/content-tools/ <span class="cm">CLI: parse, resolve, check, compile, scaffold, suggest</span>
 languages/zh/           <span class="cm">logic/ · build/ · views/</span>
 languages/_toy/         <span class="cm">test-only pack</span>
 content/zh/             <span class="cm">curriculum.ts · lessons/ · items/ · media/ · templates/ · l10n/lessons.tsv · redirects.yaml · generated/</span>
 content/shared/         <span class="cm">licenses, speakers, base templates (a language's template overrides a shared one by name), l10n/terms.tsv</span>
 tools/media-ingest/     <span class="cm">Python: source adapters, faster-whisper alignment, validation, quarantine report, upload</span>
-supabase/migrations/    <span class="cm">events table, RLS, bucket policies</span>
+supabase/migrations/    <span class="cm">events table, push_events, RLS, bucket policies</span>
 docs/  sandbox/</code></pre>
 <p class="meta">Two packages and one app, down from eight packages and two apps (review M5). The internal folders of <code>packages/core</code> are kept apart by the same dependency-cruiser config.</p>
 
@@ -410,7 +453,7 @@ docs/  sandbox/</code></pre>
 <tr><td>8</td><td>Permanent redirects; no rewriting of old ids in the database</td><td>An append-only log can't be rewritten (review m3)</td></tr>
 <tr><td>9</td><td>Simplified Mandarin only, with <code>zh</code> as a language code (not a script)</td><td>Owner's choice; a Traditional display later doesn't change ids (review n1)</td></tr>
 <tr><td>11</td><td>Support language is a setting; every support string lives in a per-locale column keyed by its English text, with English fallback</td><td>Switching to Chinese instructions later is filling in a column, with no code change</td></tr>
-<tr><td>10</td><td>Defer: language switcher, a per-language settings table, widget config migrations, incremental derive</td><td>Not needed for one language and one author</td></tr>
+<tr><td>10</td><td>Defer: language switcher, a per-language settings table, widget config migrations, any incremental derive beyond the per-key caches in §5</td><td>Not needed for one language and one author. The caches themselves are needed, because a full recompute is too slow to run on every log change (§5)</td></tr>
 </table>
 
 <h2 id="tdd">14. Departures from the TDD</h2>
@@ -422,18 +465,18 @@ docs/  sandbox/</code></pre>
 <tr><td>Hanzi detection as a core check</td><td>Explicit markup in the core; hanzi detection is an optional zh lint</td></tr>
 <tr><td>A cleanup that rewrites old ids in user tables</td><td>Permanent redirects; history is never rewritten</td></tr>
 <tr><td>Widget <code>migrate</code> steps</td><td>Deferred; versions only</td></tr>
-<tr><td>Derive on client, incremental, with a Worker fallback</td><td>Full recompute with a cache; measure first</td></tr>
+<tr><td>Derive on client, incremental, with a Worker fallback</td><td>Derive on the client with a per-card cache, since a full recompute costs about 5 s on a mid-range phone at one year. No server-side fallback</td></tr>
 <tr><td>Output level keyed on phase</td><td>Keyed on stage or template (review m2)</td></tr>
 </table>
 
 <h2 id="risks">15. Risks and open questions</h2>
 <table>
 <tr><th>Risk</th><th>Mitigation</th></tr>
-<tr><td>Too few lesson-eligible clips</td><td>An ingester spike in phase 0 on one source, end to end. Lean on Common Voice transcript search, audio-cmn and Global Storybooks</td></tr>
+<tr><td>Too few lesson-eligible clips</td><td>AISHELL-3 and AISHELL-1 supply native sentences, and ElevenLabs v4 covers the gaps and generated sentences (<a href="../research/README.md">README</a> Native audio and TTS row)</td></tr>
 <tr><td>Supabase free project pauses (travel, illness)</td><td>The weekly Action ping; a paused project can be restored from the dashboard. Weekly dumps guard against loss</td></tr>
 <tr><td>1 GB storage limit (media plus content)</td><td>Opus at 32 kbps; short clips only. If it's outgrown, move media to R2 with signed URLs (pennies, inside the $10 ceiling)</td></tr>
 <tr><td>Chinese assumptions leak into the core</td><td>The toy pack from phase 0, and a lint rule against CJK literals in core</td></tr>
-<tr><td>Device clock skew misorders events</td><td>Derive tolerates small skew. Reviews use the later of <code>occurred_at</code> and the previous review time for the same card</td></tr>
+<tr><td>Device clock skew misorders events</td><td>The clamp happens at record time, not in derive: stamps are monotonic per device, and a review is stamped no earlier than the card's last known review. Otherwise a negative elapsed time makes <code>ts-fsrs</code> throw during a live review</td></tr>
 <tr><td>YouTube embeds disappear or fail (error 153 with a stripped Referer)</td><td>Ranked clip fallbacks; a <code>strict-origin-when-cross-origin</code> referrer policy; an availability check in CI that opens flags</td></tr>
 </table>
 <p><b style="font-weight:500">Open questions</b></p>
@@ -480,7 +523,7 @@ draw('d-context',{nodes:[
  {k:'ext',x:20,y:384,w:170,h:90,t:'Supabase',ty:'[External]',d:'Auth, events, private content and media'},
  {k:'ext',x:210,y:384,w:170,h:90,t:'Cloudflare Pages',ty:'[External]',d:'Static host for the app shell'},
  {k:'ext',x:400,y:384,w:170,h:90,t:'YouTube',ty:'[External]',d:'Embedded video, foreground only'},
- {k:'ext',x:590,y:384,w:170,h:90,t:'Open data, CC media',ty:'[External]',d:'CC-CEDICT, hsk30, Common Voice, …'},
+ {k:'ext',x:590,y:384,w:170,h:90,t:'Open data, CC media',ty:'[External]',d:'CC-CEDICT, hsk30, AISHELL, …'},
  {k:'ext',x:780,y:384,w:170,h:90,t:'GitHub',ty:'[External]',d:'Private repo, Actions CI'}],
  edges:[
  {p:[[480,114],[480,186]],l:'Uses daily (PWA)',lx:480,ly:152},
@@ -524,8 +567,8 @@ draw('d-containers',{bounds:[{x:20,y:110,w:700,h:470,l:'Lang-learner  [system bo
 (function(){const bands=[
  ['Screens','Vue',[['Today','Time picker, up next'],['Path','Unit graph'],['Progress','Four answers'],['Watch','Log, suggestions']],'sys'],
  ['Flows','Vue',[['Session runner','Queue of blocks'],['Lesson player','Skeleton slots'],['Review','Capped batch'],['Watch log','Sheet → events']],'sys'],
- ['Domain','packages/core, no Vue',[['Session builder','Minutes → blocks'],['Trial runner','Feedback, retries'],['SRS','Replay, queue policy'],['Derive','Rules, day close']],'ext'],
- ['Adapters','apps/web, no Vue',[['Event store','IndexedDB, sync'],['Content loader','Private bundle, cache'],['Media','YouTube, clip cache'],['Auth','Email code']],'ext']];
+ ['Domain','packages/core, no Vue',[['Session builder','Minutes → blocks'],['Trial runner','Feedback, retries'],['SRS and derive','Replay, day close'],['Event store','Stamping, outbox, sync']],'ext'],
+ ['Adapters','apps/web, no Vue',[['Event adapters','IndexedDB, Supabase'],['Content loader','Private bundle, cache'],['Media','YouTube, clip cache'],['Auth','Email code']],'ext']];
  const nodes=[],edges=[];bands.forEach((b,i)=>{const y=14+i*108;nodes.push({k:'band',x:12,y,w:780,h:94,t:b[0],ty:b[1]});b[2].forEach((c,j)=>nodes.push({k:b[3],x:170+j*154,y:y+16,w:142,h:62,t:c[0],d:c[1]}));if(i<bands.length-1)edges.push({p:[[90,y+70],[90,y+120]]})});
  nodes.push({k:'pack',x:812,y:14,w:136,h:202,t:'Pack views',ty:'[languages/zh/views]',d:'Item-kind views, Ruby, zh widgets (Vue)'});
  nodes.push({k:'pack',x:812,y:230,w:136,h:202,t:'Pack logic',ty:'[languages/zh/logic]',d:'Analyzer, item keys, kinds, card templates'});
@@ -551,7 +594,7 @@ draw('d-tool',{nodes:[
  {p:[[565,300],[565,242]],l:'rules',lx:565,ly:272},
  {p:[[345,388],[345,414],[882,414],[882,392]],l:'upload clips',lx:620,ly:414}]});
 draw('d-ext',{nodes:[
- {k:'ext',x:340,y:30,w:280,h:240,t:'packages/core',ty:'[Language-agnostic]',d:'Ids, items, lessons, skeleton, widgets, session, SRS, derive, events, LanguagePack interfaces'},
+ {k:'ext',x:340,y:30,w:280,h:240,t:'packages/core',ty:'[Language-agnostic]',d:'Ids, items, lessons, skeleton, widgets, session, SRS, derive, events, sync, LanguagePack interfaces'},
  {k:'pack',x:40,y:30,w:220,h:70,t:'languages/zh',ty:'[Pack: built]',d:'logic · build · views'},
  {k:'pack',x:40,y:115,w:220,h:70,t:'languages/ja',ty:'[Pack: future]',d:'Same three halves',dash:true},
  {k:'pack',x:40,y:200,w:220,h:70,t:'languages/_toy',ty:'[Pack: tests only]',d:'Keeps the core honest'},
@@ -562,7 +605,7 @@ draw('d-ext',{nodes:[
  {p:[[260,65],[336,100]],l:'implements',lx:298,ly:72},{p:[[260,150],[336,150]],dash:true},{p:[[260,235],[336,200]]},
  {p:[[620,100],[696,65]],l:'compiles',lx:658,ly:72},{p:[[620,150],[696,150]],dash:true},{p:[[620,200],[696,235]]}]});
 (function(){const L=[['Learner',90],['Web app',270],['Local store',450],['Supabase Auth',630],['Events DB',820]];const nodes=L.map(([t,x])=>({k:t==='Learner'?'person':t==='Web app'?'cont':t==='Events DB'?'store':'ext',x:x-75,y:14,w:150,h:44,t}));
- const E=[],T=[];const msgs=[[0,1,'1. Opens the app'],[1,2,'2. Shell, cached bundle files, events'],[1,1,'3. Close yesterday, derive, plan 15 min'],[0,1,'4. Reviews, then a lesson'],[1,2,'5. Events into the log and outbox'],[1,3,'6. Refresh token (background)'],[1,4,'7. Push outbox (ignore dupes)'],[1,4,'8. Pull events where seq > cursor'],[4,1,'9. New events from the laptop',1],[1,1,'10. Re-derive if anything changed']];
+ const E=[],T=[];const msgs=[[0,1,'1. Opens the app'],[1,2,'2. Shell, cached bundle files, events'],[1,1,'3. Derive, plan 15 min'],[0,1,'4. Reviews, then a lesson'],[1,2,'5. Events into the log and outbox'],[1,3,'6. Refresh token (background)'],[1,4,'7. push_events (ignores dupes)'],[1,4,'8. Pull events where seq > cursor'],[4,1,'9. New events from the laptop',1],[1,1,'10. Close settled days, re-derive']];
  msgs.forEach((m,i)=>{const y=100+i*42;const x1=L[m[0]][1],x2=L[m[1]][1];if(x1===x2){E.push({p:[[x1,y-8],[x1+46,y-8],[x1+46,y+8],[x1+4,y+8]]});T.push({x:x1+56,y:y+4,t:m[2]})}else{const dir=x2>x1?1:-1;E.push({p:[[x1+dir*2,y],[x2-dir*4,y]],dash:m[3]});T.push({x:(x1+x2)/2,y:y-7,t:m[2],a:'middle'})}});
  const svg=document.getElementById('d-seq');L.forEach(([,x])=>el('line',{x1:x,y1:58,x2:x,y2:530,class:'life'},svg));
  draw('d-seq',{nodes,edges:E,texts:T})})();
@@ -572,7 +615,7 @@ draw('d-deploy',{bounds:[{x:20,y:20,w:230,h:200,l:'Phone or laptop browser'},{x:
  {k:'store',x:40,y:124,w:190,h:80,t:'Local storage',d:'IndexedDB events, cached clips, bundle'},
  {k:'cont',x:300,y:50,w:200,h:150,t:'Static build',ty:'[app shell]',d:'App code and fonts, with its content build id embedded'},
  {k:'cont',x:570,y:50,w:180,h:64,t:'Auth',d:'Email code'},
- {k:'store',x:570,y:124,w:180,h:90,t:'Postgres',d:'events table, RLS, insert-only'},
+ {k:'store',x:570,y:124,w:180,h:90,t:'Postgres',d:'events table, RLS, writes via push_events'},
  {k:'store',x:570,y:224,w:180,h:110,t:'Storage',d:'Private: content builds and files, media'},
  {k:'store',x:815,y:50,w:120,h:64,t:'Repo',d:'Code + content'},
  {k:'cont',x:815,y:124,w:120,h:100,t:'CI',d:'check → upload content → deploy'},

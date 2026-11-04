@@ -1,0 +1,23 @@
+{
+  "name": "@lang-learner/core",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./index.ts",
+    "./testing": "./testing.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc -p .",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@noble/hashes": "2.4.0"
+  },
+  "devDependencies": {
+    "@lang-learner/lang-_toy": "workspace:*",
+    "@types/node": "26.6.6",
+    "fast-check": "4.10.2",
+    "typescript": "6.0.3",
+    "vitest": "4.1.0"
+  }
+}
