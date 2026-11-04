@@ -24,6 +24,7 @@ Design docs (`docs/design/`), built on the research:
 | [TDD: curriculum data model](../design/tdd-curriculum-data-model.md) | Entity model, authoring format, interactable registry, check/compile pipeline, derive functions, phases. Unreviewed first pass; the architecture doc overrides it where they differ (its §12). |
 | [App UI and flow](../design/app-ui-flow.md) | Navigation, screens, flows, visual style and UI copy rules; mockups board in `sandbox/ui-mockups/`. |
 | [Architecture](../design/architecture.html) | C4 architecture (context, containers, components, key contracts), language packs for adding languages, deployment, decisions, departures from the TDD, build phases. Open in a browser. Proposed. |
+| [Build phases](../design/build-phases.md) | The build order: a local vertical slice on a six-lesson pilot that settles the content style, a hosted trial, a style gate, then a 30-lesson first batch and a scale check before the remaining lessons. Proposed. |
 | [Lesson plans](../design/lesson-plans/README.md) | Executive-summary plans for all 194 lessons (S0, S1, S2a, S2b): how each is taught, mapped onto the lesson arc, with its opener, practice format, variety choices and checked YouTube videos. Drafted and adversarially reviewed 2026-11-03. Owns the lesson-level split; doc 03 §1.8 keeps units and prereqs. |
 
 Synthesis: see [Cross-topic synthesis](#cross-topic-synthesis) below (written after 01–06).

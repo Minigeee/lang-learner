@@ -443,15 +443,7 @@ docs/  sandbox/</code></pre>
 </ol>
 
 <h2 id="phases">16. Build phases</h2>
-<table>
-<tr><th>Phase</th><th>Delivers</th><th>Done when</th></tr>
-<tr><td>0. Skeleton and spikes</td><td>Monorepo; <code>packages/core</code> ids and events; the zh logic pack and the toy pack; content-tools parse, check and build into the app; Supabase auth, events table, bucket; Pages deploy. <b style="font-weight:500">Spike:</b> ingest one source end to end on the laptop</td><td>A signed-in phone loads a build, writes an event that the laptop pulls, and plays one ingested clip</td></tr>
-<tr><td>1. Lesson player</td><td>Widget registry plus 3 widgets, media adapter, trial runner, event store with outbox, derive v1; 3 reference lessons</td><td>A lesson plays on the phone, resumes after the app is killed, and its events sync to the laptop</td></tr>
-<tr><td>2. Daily loop</td><td>SRS replay, queue policy, session builder, day close, Today, review, summary; derive timing measured</td><td>The 15-minute bedtime flow works, and a two-device interleaving test passes</td></tr>
-<tr><td>3. Progress surfaces</td><td>The Path graph, Progress, Watch and log, item detail, test-out</td><td>All mockup screens work with real data</td></tr>
-<tr><td>4. Content throughput</td><td>The full ingester, <code>content:new</code> and <code>content:suggest</code>, the Claude drafting loop; author S0 and S1</td><td>A new unit goes from idea to deployed in one sitting</td></tr>
-<tr><td>5. Hardening</td><td>Restore drill from a dump, availability checks, superseded rule versions removed, TDD revised to match</td><td>The cleanup checklist is empty</td></tr>
-</table>
+<p>The build order lives in <a href="build-phases.md">build-phases.md</a>: a vertical slice on a six-lesson pilot that settles the content style, then a first batch and a scale check before the rest of the content.</p>
 </main>
 </div>
 
