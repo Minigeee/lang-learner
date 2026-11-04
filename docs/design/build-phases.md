@@ -203,7 +203,7 @@ Purpose: the pilot goes from source to compiled bundle with no manual step.
 ### Phase 2: Lesson player
 
 Purpose: a lesson plays the way the plans describe.
-- Lesson arc, widget registry, trial runner, media adapter (AISHELL and TTS clips, YouTube with full-play tracking).
+- Lesson arc, widget registry, trial runner, media adapter (AISHELL and TTS clips, YouTube, where a video counts once it starts, per the README Tracking row).
 - C0 and C1 widgets, and the pilot's figures.
 - Format intros on first appearance on the path. The checkpoint runner for 0.14b.
 - Evidence events, and derive v1 for lesson status and mastery.
