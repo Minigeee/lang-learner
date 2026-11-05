@@ -1,0 +1,2 @@
+test/fixtures/DEP002/zh/lessons/shi-links-nouns.md:1 DEP002 (warn) 老师 is placed at 1.1a but isn't in cards
+test/fixtures/DEP002/zh/lessons/shi-links-nouns.md:3 DEP002 你好 isn't in the tier of 1.1a; it's placed in lesson tier at 1.1b

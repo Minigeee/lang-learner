@@ -7,11 +7,11 @@ export type LessonId = `${Lang}:les:${string}`
 export type CardId = `card:${string}`
 export type MediaId = `media:${string}`
 
-export const CORE_ITEM_KINDS = ['w', 'g', 'sc', 'sr'] as const
+export const CORE_ITEM_KINDS = ['w', 'g', 'sc', 'sr', 'v', 'l'] as const
 const STRUCTURE_KINDS = ['les', 'unit', 'stage'] as const
 const GLOBAL_KINDS: readonly string[] = ['media', 'clip', 'spk', 'lic', 'card']
 /** Kinds whose keys are slugs. Lexical keys (`w` and pack kinds) belong to the language pack. */
-const SLUG_KINDS: readonly string[] = ['g', 'sc', 'sr', ...STRUCTURE_KINDS]
+const SLUG_KINDS: readonly string[] = ['g', 'sc', 'sr', 'v', 'l', ...STRUCTURE_KINDS]
 
 const LANG = /^[a-z]{2,3}$/
 const SLUG = /^[a-z0-9][a-z0-9-]*$/

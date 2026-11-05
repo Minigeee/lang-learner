@@ -29,6 +29,20 @@ module.exports = {
       to: { path: '^languages/' },
     },
     {
+      name: 'browser-code-stays-off-build-tools',
+      comment: 'The toolchain and build packs are Node only: the app, core and logic never import them.',
+      severity: 'error',
+      from: { path: '^(apps|packages/core|languages/[^/]+/logic)/' },
+      to: { path: '^(packages/content-tools|languages/[^/]+/build)/' },
+    },
+    {
+      name: 'content-tools-goes-through-the-pack',
+      comment: 'The toolchain reaches a language only through BuildPack, which it loads by path.',
+      severity: 'error',
+      from: { path: '^packages/content-tools/' },
+      to: { path: '^languages/' },
+    },
+    {
       name: 'nothing-depends-on-sandbox',
       severity: 'error',
       from: { path: '^(apps|packages|languages|scripts)/' },

@@ -1,0 +1,4 @@
+test/fixtures/ORD001/zh/curriculum.ts:14 ORD001 unit 1.1 has an unknown prereq 9.9
+test/fixtures/ORD001/zh/curriculum.ts:14 ORD001 unit 1.1 is in a prereq cycle
+test/fixtures/ORD001/zh/curriculum.ts:14 ORD001 unit 1.1 needs 1.2, which comes later in table order
+test/fixtures/ORD001/zh/curriculum.ts:18 ORD001 unit 1.2 is in a prereq cycle

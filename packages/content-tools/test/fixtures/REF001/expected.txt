@@ -1,0 +1,6 @@
+test/fixtures/REF001/zh/lessons/not-in-curriculum.md:1 REF001 no curriculum entry for "zh:les:not-in-curriculum" (the file name is the lesson's slug)
+test/fixtures/REF001/zh/lessons/shi-links-nouns.md:3 DEP002 你 isn't in the tier of 1.1a; it's placed nowhere
+test/fixtures/REF001/zh/lessons/shi-links-nouns.md:3 REF001 cards: zh:w:你:ni3 has no entry in items/overrides/words.yaml
+test/fixtures/REF001/zh/lessons/shi-links-nouns.md:14 REF001 :k: "zh:g:shi-link-nouns" doesn't exist; did you mean zh:g:shi-links-nouns?
+test/fixtures/REF001/zh/lessons/shi-links-nouns.md:14 REF001 :w[学生]: "zh:w:学生:xue2sheng1" doesn't exist; did you mean zh:w:学生:xue2sheng5?
+test/fixtures/REF001/zh/lessons/shi-links-nouns.md:14 REF001 :w[行] is ambiguous (zh:w:行:hang2, zh:w:行:heng2, zh:w:行:xing2); pin one with {#…}

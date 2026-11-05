@@ -2,7 +2,7 @@
 
 Temporary and experimental work: mockups, spikes, throwaway prototypes. Nothing in the app imports from here, and anything in it can be deleted once it has served its purpose. Decisions it leads to are recorded in `docs/`.
 
-Code from `spikes/sync-replay` (events, sync) and `spikes/authoring-format` (id grammar) now lives in `packages/core`, and the design tokens from `spikes/activity-pilot` are in `apps/web`. [Build phases §4.2](../docs/design/build-phases.md) lists where each spike goes next.
+Code from `spikes/sync-replay` (events, sync) and `spikes/authoring-format` (id grammar) now lives in `packages/core`, and the design tokens from `spikes/activity-pilot` are in `apps/web`. `spikes/authoring-format` also went into `packages/content-tools`, the audio spikes into `tools/media-ingest`, and `dependency-check`'s vocabulary and path checks became `content:check` rules. [Build phases §4.2](../docs/design/build-phases.md) lists where each spike goes next.
 
 | Path | What it is |
 |---|---|

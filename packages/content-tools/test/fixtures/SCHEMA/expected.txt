@@ -1,0 +1,2 @@
+test/fixtures/SCHEMA/zh/lessons/shi-links-nouns.md:2 SCHEMA idea: Invalid input: expected string, received undefined
+test/fixtures/SCHEMA/zh/lessons/shi-links-nouns.md:2 SCHEMA lesson: Unrecognized key: "lesson" (if this is part of a value, quote the value)

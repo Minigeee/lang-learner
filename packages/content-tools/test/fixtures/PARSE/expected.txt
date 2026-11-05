@@ -1,0 +1,4 @@
+test/fixtures/PARSE/zh/lessons/shi-links-nouns.md:9 PARSE content outside a slot; wrap it in one of :::opener :::lesson :::examples :::practice
+test/fixtures/PARSE/zh/lessons/shi-links-nouns.md:11 PARSE unknown slot ":::hear"; slots are opener, lesson, examples, practice
+test/fixtures/PARSE/zh/lessons/shi-links-nouns.md:20 PARSE ":This" was read as a directive. If it's part of an id, put the id in an attribute (:k{#zh:g:…}); in prose, escape the colon as "\:"
+test/fixtures/PARSE/zh/lessons/shi-links-nouns.md:22 PARSE a slot holds paragraphs and one yaml fence, not a heading

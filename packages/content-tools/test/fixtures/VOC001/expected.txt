@@ -1,0 +1,7 @@
+test/fixtures/VOC001/zh/items/overrides/words.yaml:1 VOC001 zh:w:学生:xue2sheng5: sense "pupil of the eye" isn't in the dictionary (student / schoolchild)
+test/fixtures/VOC001/zh/vocab/vocab-S1.tsv:5 VOC001 lesson 1.1a has 6 words; the cap is 5
+test/fixtures/VOC001/zh/vocab/vocab-S1.tsv:14 VOC001 弟 is placed at checkpoint 1.2a
+test/fixtures/VOC001/zh/vocab/vocab-S1.tsv:15 VOC001 妹 is fed during 2.1, not on the path of 1.1
+test/fixtures/VOC001/zh/vocab/vocab-S1.tsv:16 VOC001 猫: place "1.9a" isn't a lesson or unit
+test/fixtures/VOC001/zh/vocab/vocab-extra.tsv:2 VOC001 吃 is in an HSK file and in a gap file
+test/fixtures/VOC001/zh/vocab/words-l1-3.tsv:10 VOC001 HSK entry 饭 L1: 1 source row(s), 0 placed

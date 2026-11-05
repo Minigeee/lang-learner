@@ -1,0 +1,16 @@
+word	level	tier	place	needed_by	rank	note
+我	1	unit	1.1	1.1		
+是	1	unit	1.1	1.1		
+他	1	unit	1.1	1.1		
+学生	1	lesson	1.1a	1.1		
+老师	1	lesson	1.1a	1.1		
+你好	1	lesson	1.1b	1.1		
+再见	1	lesson	1.1b	1.1		
+吃	1	queue	queue:S1		1	
+妈	1	lesson	1.1a	1.1		
+爸	1	lesson	1.1a	1.1		
+哥	1	lesson	1.1a	1.1		
+姐	1	lesson	1.1a	1.1		
+弟	1	lesson	1.2a	1.2		
+妹	1	prep	prep:2.1	1.1		
+猫	1	lesson	1.9a	1.9		

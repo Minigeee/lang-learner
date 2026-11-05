@@ -1,0 +1,220 @@
+- id: clip:a3-wo-xuesheng-1
+  source: aishell3
+  zh: 我是学生。
+  speaker: spk:aishell3-ssb0001
+  media: media:5a9c0d0f4bbef3bb
+  file: { key: media/5a9c0d0f4bbef3bb.opus, sha256: 5a9c0d0f4bbef3bb3364a224df6f7fc4c56c6c02f40ff27cd63ce758fb0780d1, bytes: 4096, durationSec: 1.5 }
+  lufs: -20.0
+  gainDb: -3.1
+  validation: { asr: pass }
+  warnings: []
+  rights: { license: lic:apache-2-0, source: fixture, changes: normalized to -20 LUFS, encoded as Opus }
+- id: clip:a3-wo-xuesheng-2
+  source: aishell3
+  zh: 我是学生
+  speaker: spk:aishell3-ssb0002
+  media: media:3c0076c5be736165
+  file: { key: media/3c0076c5be736165.opus, sha256: 3c0076c5be736165b51dc3ff61567b365aa2f302550d6c50f5d7f68894d5558c, bytes: 4096, durationSec: 1.5 }
+  lufs: -20.0
+  gainDb: -3.1
+  validation: { asr: pass }
+  warnings: []
+  rights: { license: lic:apache-2-0, source: fixture, changes: normalized to -20 LUFS, encoded as Opus }
+- id: clip:a3-ta-laoshi-1
+  source: aishell3
+  zh: 他是老师。
+  speaker: spk:aishell3-ssb0003
+  media: media:f54de2910b07d83b
+  file: { key: media/f54de2910b07d83b.opus, sha256: f54de2910b07d83b3449e124d3e5f9e70af7da3f2ec9e89c0e5bc3100040120c, bytes: 4096, durationSec: 1.5 }
+  lufs: -20.0
+  gainDb: -3.1
+  validation: { asr: pass }
+  warnings: []
+  rights: { license: lic:apache-2-0, source: fixture, changes: normalized to -20 LUFS, encoded as Opus }
+- id: clip:a3-wo-laoshi-1
+  source: aishell3
+  zh: 我是老师。
+  speaker: spk:aishell3-ssb0004
+  media: media:2513be050460b20e
+  file: { key: media/2513be050460b20e.opus, sha256: 2513be050460b20efa188ac6dba67cfe1bd4e38beb2c3e3907be68b27c9cae00, bytes: 4096, durationSec: 1.5 }
+  lufs: -20.0
+  gainDb: -3.1
+  validation: { asr: pass }
+  warnings: []
+  rights: { license: lic:apache-2-0, source: fixture, changes: normalized to -20 LUFS, encoded as Opus }
+- id: clip:a3-ta-xuesheng-1
+  source: aishell3
+  zh: 他是学生。
+  speaker: spk:aishell3-ssb0005
+  media: media:453922379fcfc7f2
+  file: { key: media/453922379fcfc7f2.opus, sha256: 453922379fcfc7f2b1707948fc88fac9bfe8b65c8da6b9a1aaea71ad4a518f22, bytes: 4096, durationSec: 1.5 }
+  lufs: -20.0
+  gainDb: -3.1
+  validation: { asr: pass }
+  warnings: []
+  rights: { license: lic:apache-2-0, source: fixture, changes: normalized to -20 LUFS, encoded as Opus }
+- id: clip:a1-ta-chifan-1
+  source: aishell1
+  zh: 他吃饭。
+  speaker: spk:aishell1-s0002
+  media: media:4e28409c10fdc7b6
+  file: { key: media/4e28409c10fdc7b6.opus, sha256: 4e28409c10fdc7b660a2f16ae41d81f495a8924e2d2534afc3c25f6c77f1176b, bytes: 4096, durationSec: 1.5 }
+  lufs: -20.0
+  gainDb: -3.1
+  validation: { asr: pass }
+  warnings: []
+  rights: { license: lic:apache-2-0, source: fixture, changes: normalized to -20 LUFS, encoded as Opus }
+- id: clip:cmn-ma-word
+  source: audio-cmn
+  zh: 妈
+  speaker: spk:audio-cmn
+  media: media:f37f2cf3b32e5c3e
+  file: { key: media/f37f2cf3b32e5c3e.opus, sha256: f37f2cf3b32e5c3edd428c382432f5363b182494c5e90dd87a21d720131b7c35, bytes: 4096, durationSec: 1.5 }
+  lufs: -20.0
+  gainDb: -3.1
+  validation: { asr: pass }
+  warnings: []
+  rights: { license: lic:cc-by-sa, source: fixture, changes: normalized to -20 LUFS, encoded as Opus }
+- id: clip:cmn-ma1
+  source: audio-cmn
+  syllable: ma1
+  speaker: spk:audio-cmn
+  media: media:cd0589f467aebe3b
+  file: { key: media/cd0589f467aebe3b.opus, sha256: cd0589f467aebe3b529618aaeb4d97ae754256ae8ca687135733485b82363a6d, bytes: 4096, durationSec: 1.5 }
+  lufs: -20.0
+  gainDb: -3.1
+  validation: { asr: pass }
+  warnings: []
+  rights: { license: lic:cc-by-sa, source: fixture, changes: normalized to -20 LUFS, encoded as Opus }
+- id: clip:cmn-ma4
+  source: audio-cmn
+  syllable: ma4
+  speaker: spk:audio-cmn
+  media: media:47fdd39442c8898e
+  file: { key: media/47fdd39442c8898e.opus, sha256: 47fdd39442c8898e1b8f3f66cbbb00cbbfe556b4339a8b55aa205a6730dae045, bytes: 4096, durationSec: 1.5 }
+  lufs: -20.0
+  gainDb: -3.1
+  validation: { asr: pass }
+  warnings: []
+  rights: { license: lic:cc-by-sa, source: fixture, changes: normalized to -20 LUFS, encoded as Opus }
+- id: clip:yoyo-ma1
+  source: yoyo
+  syllable: ma1
+  speaker: spk:yoyo
+  media: media:9e3ec19c7f848918
+  file: { key: media/9e3ec19c7f848918.opus, sha256: 9e3ec19c7f848918c0bbb904d45f6c9ce3455f07b4047f2c863c5285de806781, bytes: 4096, durationSec: 1.5 }
+  lufs: -20.0
+  gainDb: -3.1
+  validation: { asr: pass }
+  warnings: []
+  rights: { license: lic:personal-use, source: fixture, changes: normalized to -20 LUFS, encoded as Opus, restriction: personal-use-private-bucket }
+- id: clip:tts-xuesheng
+  source: elevenlabs
+  zh: 学生
+  speaker: spk:elevenlabs-abc123
+  media: media:3730af61996f419a
+  file: { key: media/3730af61996f419a.opus, sha256: 3730af61996f419a2a5e43d33622aec8110fc569e67c5da704a82bbb36136fbc, bytes: 4096, durationSec: 1.5 }
+  lufs: -20.0
+  gainDb: -3.1
+  validation: { asr: pass }
+  warnings: []
+  rights: { license: lic:elevenlabs-tts, source: fixture, changes: normalized to -20 LUFS, encoded as Opus }
+- id: clip:tts-xuesheng-line
+  source: elevenlabs
+  zh: 我是学生。
+  speaker: spk:elevenlabs-abc123
+  media: media:44f2baadf6527016
+  file: { key: media/44f2baadf6527016.opus, sha256: 44f2baadf65270163d03e9a07ad793a96cb16fcdf41f7ab3ae129db6e27072d6, bytes: 4096, durationSec: 1.5 }
+  lufs: -20.0
+  gainDb: -3.1
+  validation: { asr: pass }
+  warnings: []
+  rights: { license: lic:elevenlabs-tts, source: fixture, changes: normalized to -20 LUFS, encoded as Opus }
+- id: clip:tts-laoshi
+  source: elevenlabs
+  zh: 老师
+  speaker: spk:elevenlabs-abc123
+  media: media:2382dfe4e31a9c52
+  file: { key: media/2382dfe4e31a9c52.opus, sha256: 2382dfe4e31a9c52ba90dc2e7388e90bd949404c93e3b509c375285e62f58d10, bytes: 4096, durationSec: 1.5 }
+  lufs: -20.0
+  gainDb: -3.1
+  validation: { asr: pass }
+  warnings: []
+  rights: { license: lic:elevenlabs-tts, source: fixture, changes: normalized to -20 LUFS, encoded as Opus }
+- id: clip:tts-laoshi-line
+  source: elevenlabs
+  zh: 他是老师。
+  speaker: spk:elevenlabs-abc123
+  media: media:81e8535a9086f396
+  file: { key: media/81e8535a9086f396.opus, sha256: 81e8535a9086f3966a368a0aeb074ae51421050b376740cb76afde5d62ef658e, bytes: 4096, durationSec: 1.5 }
+  lufs: -20.0
+  gainDb: -3.1
+  validation: { asr: pass }
+  warnings: []
+  rights: { license: lic:elevenlabs-tts, source: fixture, changes: normalized to -20 LUFS, encoded as Opus }
+- id: clip:tts-nihao
+  source: elevenlabs
+  zh: 你好
+  speaker: spk:elevenlabs-abc123
+  media: media:a6907def04e89e40
+  file: { key: media/a6907def04e89e40.opus, sha256: a6907def04e89e40f58b18dc8841185617494dc44523b170f7055362691ccccf, bytes: 4096, durationSec: 1.5 }
+  lufs: -20.0
+  gainDb: -3.1
+  validation: { asr: pass }
+  warnings: []
+  rights: { license: lic:elevenlabs-tts, source: fixture, changes: normalized to -20 LUFS, encoded as Opus }
+- id: clip:tts-nihao-line
+  source: elevenlabs
+  zh: 你好！
+  speaker: spk:elevenlabs-abc123
+  media: media:fd13417ce9a7c4b5
+  file: { key: media/fd13417ce9a7c4b5.opus, sha256: fd13417ce9a7c4b5aea1c4bce9e1364686f47c08c7f818a28492562c20d9a6c7, bytes: 4096, durationSec: 1.5 }
+  lufs: -20.0
+  gainDb: -3.1
+  validation: { asr: pass }
+  warnings: []
+  rights: { license: lic:elevenlabs-tts, source: fixture, changes: normalized to -20 LUFS, encoded as Opus }
+- id: clip:tts-zaijian
+  source: elevenlabs
+  zh: 再见
+  speaker: spk:elevenlabs-abc123
+  media: media:20deb5a7583b731c
+  file: { key: media/20deb5a7583b731c.opus, sha256: 20deb5a7583b731cf7e41f1be2b32c5c5a6ec4613743cad0294ccfdfe7fcabba, bytes: 4096, durationSec: 1.5 }
+  lufs: -20.0
+  gainDb: -3.1
+  validation: { asr: pass }
+  warnings: []
+  rights: { license: lic:elevenlabs-tts, source: fixture, changes: normalized to -20 LUFS, encoded as Opus }
+- id: clip:no-record
+  source: elevenlabs
+  zh: 再见！
+  speaker: spk:elevenlabs-abc123
+  media: media:727045e235998a35
+  file: { key: media/727045e235998a35.opus, sha256: 727045e235998a35c6ec8c0860641a6e260172151522553bc8c2ecd6d63d9537, bytes: 4096, durationSec: 1.5 }
+  lufs: -20.0
+  gainDb: -3.1
+  validation: { asr: pass }
+  warnings: []
+  rights: { license: lic:unknown, source: fixture, changes: normalized to -20 LUFS, encoded as Opus }
+- id: clip:wrong-source
+  source: yoyo
+  syllable: ma4
+  speaker: spk:yoyo
+  media: media:81061b3651730402
+  file: { key: media/81061b3651730402.opus, sha256: 81061b3651730402281d08c89f04206bff9a11ff24754ea653e2674828a34d4f, bytes: 4096, durationSec: 1.5 }
+  lufs: -20.0
+  gainDb: -3.1
+  validation: { asr: pass }
+  warnings: []
+  rights: { license: lic:apache-2-0, source: fixture, changes: normalized to -20 LUFS, encoded as Opus }
+- id: clip:unrestricted
+  source: yoyo
+  syllable: ma3
+  speaker: spk:yoyo
+  media: media:8407ca904abbeff7
+  file: { key: media/8407ca904abbeff7.opus, sha256: 8407ca904abbeff7f04c6cf25931a69b6014713b59f00ef95eae6afe6474dbe6, bytes: 4096, durationSec: 1.5 }
+  lufs: -20.0
+  gainDb: -3.1
+  validation: { asr: pass }
+  warnings: []
+  rights: { license: lic:personal-use, source: fixture, changes: normalized to -20 LUFS, encoded as Opus }

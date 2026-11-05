@@ -1,0 +1,3 @@
+test/fixtures/COPY001/zh/lessons/shi-links-nouns.md:14 COPY001 body: internal term "Pattern lesson" in user-facing text; use Lesson / Video lesson / Sound practice
+test/fixtures/COPY001/zh/lessons/shi-links-nouns.md:14 COPY001 body: internal term "checkpoint" in user-facing text; use plain words ("step", "card", "Check")
+test/fixtures/COPY001/zh/lessons/shi-links-nouns.md:23 COPY001 prompt: internal term "SRS" in user-facing text; use plain words ("step", "card", "Check")

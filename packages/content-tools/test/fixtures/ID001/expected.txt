@@ -1,0 +1,4 @@
+test/fixtures/ID001/zh/lessons/shi-links-nouns.md:3 ID001 cards: word key "学生" must be <lemma>:<pinyin with a tone digit 1–5 after each syllable, ü as v>
+test/fixtures/ID001/zh/lessons/shi-links-nouns.md:3 REF001 cards: zh:w:学生 has no entry in items/overrides/words.yaml
+test/fixtures/ID001/zh/lessons/shi-links-nouns.md:28 ID001 item target: "Shi" in "zh:g:Shi" must be a lowercase slug
+test/fixtures/ID001/zh/lessons/shi-links-nouns.md:29 ID001 item target: id "zh:w:不:bu4" is not NFC (U+F967); retype it

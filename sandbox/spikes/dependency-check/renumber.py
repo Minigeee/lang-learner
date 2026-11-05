@@ -21,10 +21,10 @@ FILES = [
     "docs/design/lesson-plans/S1.md",
     "docs/design/lesson-plans/S2a.md",
     "docs/design/lesson-plans/S2b.md",
-    "docs/design/lesson-plans/vocab-S1.tsv",
-    "docs/design/lesson-plans/vocab-S2.tsv",
-    "docs/design/lesson-plans/vocab-extra.tsv",
-    "docs/design/lesson-plans/vocab-post-S2.tsv",
+    "content/zh/vocab/vocab-S1.tsv",
+    "content/zh/vocab/vocab-S2.tsv",
+    "content/zh/vocab/vocab-extra.tsv",
+    "content/zh/vocab/vocab-post-S2.tsv",
 ]
 # In these files a heading's leading number is the doc's own section number, not a unit id.
 SECTION_NUMBERED = {"docs/research/03-mandarin-curriculum-and-materials.md", "docs/design/activity-brainstorm.md"}

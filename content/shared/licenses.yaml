@@ -1,0 +1,35 @@
+# One record per rights class. `kind` is what the rights are, and `sources` lists the media sources
+# allowed under this record; LIC001 rejects any other pairing. Only sources listed here can be used.
+# A `restriction` must be repeated on every clip's rights, so a limit can't get lost on the way through.
+- id: lic:apache-2-0
+  name: Apache License 2.0
+  kind: open
+  url: https://www.apache.org/licenses/LICENSE-2.0
+  author: Beijing Shell Shell Technology Co., Ltd. (AISHELL-1, AISHELL-3)
+  sources: [aishell1, aishell3]
+- id: lic:cc-by-sa
+  name: CC BY-SA (version unstated by the source)
+  kind: open
+  url: https://github.com/hugolpz/audio-cmn#license
+  author: Chen Wang and Yue Tan (speakers); Hugo Lopez (audio-cmn curation)
+  sources: [audio-cmn]
+- id: lic:cc-by-sa-4-0
+  name: CC BY-SA 4.0
+  kind: open
+  url: https://creativecommons.org/licenses/by-sa/4.0/
+  author: MDBG and the CC-CEDICT contributors
+  sources: []
+  always: true
+- id: lic:elevenlabs-tts
+  name: ElevenLabs generated speech
+  kind: tts
+  url: https://elevenlabs.io/terms-of-use
+  author: Generated with ElevenLabs
+  sources: [elevenlabs]
+- id: lic:personal-use
+  name: Personal use only
+  kind: personal
+  url: https://yoyochinese.com/
+  author: Yoyo Chinese
+  sources: [yoyo]
+  restriction: personal-use-private-bucket

@@ -1,0 +1,182 @@
+# Knowledge items: the skills lessons teach. Word items come from the dictionary, not this file.
+- { id: zh:g:a-not-a, name: "A-not-A" }
+- { id: zh:g:adjective-reduplication, name: "AA的, AABB" }
+- { id: zh:g:age-sui, name: "几岁? / 多大? / N岁" }
+- { id: zh:g:approximate-numbers, name: "rough numbers" }
+- { id: zh:g:ba-placement, name: "把 + thing + verb + 在/到 + place" }
+- { id: zh:g:ba-result, name: "把 + thing + verb + result/direction" }
+- { id: zh:g:ba-suggestion, name: "吧" }
+- { id: zh:g:ba-vs-bei, name: "把 vs 被" }
+- { id: zh:g:ban-position, name: "半 position" }
+- { id: zh:g:bei, name: "被 (+ doer) + verb + result" }
+- { id: zh:g:bi-amount, name: "比 + adj + amount" }
+- { id: zh:g:bi-comparison, name: "A 比 B + adjective" }
+- { id: zh:g:bie, name: "别 + verb = don't; 别…了 = stop it" }
+- { id: zh:g:bu-le, name: "不 + verb + 了 = stopped or changed plan" }
+- { id: zh:g:bu-negates, name: "不 + verb/adjective" }
+- { id: zh:g:budan-erqie, name: "不但…而且" }
+- { id: zh:g:bushi-ma, name: "不是…吗?" }
+- { id: zh:g:buyao-dont, name: "不要 + verb" }
+- { id: zh:g:chule, name: "除了…(以外) + 还/也 vs 都" }
+- { id: zh:g:ci-bian, name: "verb + number + 次/遍" }
+- { id: zh:g:clock-time, name: "现在几点?, 点/分/半" }
+- { id: zh:g:cong-dao, name: "从 A 到 B = from A to B, for places and times" }
+- { id: zh:g:dates, name: "年 → 月 → 号" }
+- { id: zh:g:de-bi, name: "verb 得 比 B + adj" }
+- { id: zh:g:de-de-de, name: "的/地/得 by position" }
+- { id: zh:g:de-degree, name: "verb + 得 + comment, including with objects" }
+- { id: zh:g:de-modifier, name: "modifier (adjective or phrase) + 的 + noun" }
+- { id: zh:g:de-nominal, name: "description + 的 with no noun (红的, 我买的, 卖菜的)" }
+- { id: zh:g:de-possession, name: "possession with 的, dropped for close ties" }
+- { id: zh:g:de-shihou, name: "clause + 的时候 = while or when" }
+- { id: zh:g:degree-adverbs, name: "degree adverbs" }
+- { id: zh:g:di-adverbial, name: "adj + 地 + verb" }
+- { id: zh:g:direction-compound, name: "compound directions" }
+- { id: zh:g:direction-figurative, name: "看起来, 想起来, 说下去" }
+- { id: zh:g:direction-lai-qu, name: "verb + 来/去" }
+- { id: zh:g:direction-path, name: "verb + 上/下/进/出/回/过/起" }
+- { id: zh:g:dou, name: "都; 也都" }
+- { id: zh:g:double-le, name: "verb 了 + duration + 了" }
+- { id: zh:g:dui-gen-gei, name: "对 (toward) vs 跟 (with) vs 给 (for or to)" }
+- { id: zh:g:duration-complement, name: "verb (+了) + duration; 多久" }
+- { id: zh:g:existential-appearance, name: "place + verb 着 + thing; place + 来了/走了 + someone" }
+- { id: zh:g:final-particles, name: "final 啊 / 呢 / 吧" }
+- { id: zh:g:gang, name: "刚 + verb = just now, a short time ago" }
+- { id: zh:g:ge-measure, name: "number + 个 + noun" }
+- { id: zh:g:gei-person, name: "给 + person = the receiver or beneficiary" }
+- { id: zh:g:gen-yiqi, name: "跟 + person (+ 一起) + verb = with someone" }
+- { id: zh:g:gen-yiyang, name: "A 跟 B 一样 (+ adj)" }
+- { id: zh:g:guo-experience, name: "verb + 过 = has ever done; 没 + verb + 过 = never" }
+- { id: zh:g:hai-also, name: "…，还…" }
+- { id: zh:g:haishi-question, name: "A 还是 B?" }
+- { id: zh:g:haishi-vs-huozhe, name: "还是 vs 或者" }
+- { id: zh:g:he-nouns, name: "和 between nouns" }
+- { id: zh:g:hen-adj, name: "noun + 很 + adjective" }
+- { id: zh:g:hui-neng-keyi, name: "会 vs 能 vs 可以" }
+- { id: zh:g:hui-skill, name: "会 + verb" }
+- { id: zh:g:hui-will-vs-can, name: "会 \"will\" (a prediction) vs 会 \"can\" (a learned skill)" }
+- { id: zh:g:jiao-name, name: "叫 + name" }
+- { id: zh:g:jiu-vs-cai, name: "就 (earlier or easier than expected) vs 才 (later or harder)" }
+- { id: zh:g:keyi-permission, name: "可以; 行/不行" }
+- { id: zh:g:kuai-yao-le, name: "快/要/就要 + verb + 了 = about to happen" }
+- { id: zh:g:lai-vs-qu, name: "来 (toward the speaker) vs 去 (away)" }
+- { id: zh:g:le-change-time-age, name: "time, age or stage + 了 = it has been reached now" }
+- { id: zh:g:le-done-vs-plan, name: "了 reports it done; 要 plans it" }
+- { id: zh:g:le-new-situation, name: "sentence-final 了" }
+- { id: zh:g:le-question-answer, name: "了吗? is answered 没有 or verb + 了" }
+- { id: zh:g:le-vs-guo, name: "verb-了 (this occasion) vs 过 (an experience)" }
+- { id: zh:g:le1-vs-le2, name: "tell verb-了 from sentence-了 by position" }
+- { id: zh:g:li-distance, name: "A 离 B + 远/近 = how far A is from B" }
+- { id: zh:g:liang-vs-er, name: "两 vs 二" }
+- { id: zh:g:ma-question, name: "吗 question" }
+- { id: zh:g:mei-dou, name: "每 + MW + noun + 都 = every one" }
+- { id: zh:g:mei-result, name: "没 + verb + result = the attempt failed" }
+- { id: zh:g:mei-verb, name: "没(有) + verb" }
+- { id: zh:g:mei-vs-bu, name: "没 vs 不" }
+- { id: zh:g:meiyou-comparison, name: "A 没有 B (那么) + adj" }
+- { id: zh:g:neng-able, name: "能 + verb" }
+- { id: zh:g:ni-ne, name: "你呢?" }
+- { id: zh:g:notional-passive, name: "thing first, no marker" }
+- { id: zh:g:number-structure, name: "11–99" }
+- { id: zh:g:pivot-qing-jiao-rang, name: "请/叫/让 + person + verb: the person after it does the verb" }
+- { id: zh:g:place-words, name: "noun + 上/里/前边/后边/外边" }
+- { id: zh:g:potential-bu, name: "verb + 不 + result/direction" }
+- { id: zh:g:potential-de, name: "verb + 得 + result" }
+- { id: zh:g:prices, name: "多少钱?, 块, prices" }
+- { id: zh:g:qu-place-purpose, name: "去 + place (+ verb)" }
+- { id: zh:g:qw-dou, name: "QW + 都/也 (+ 不)" }
+- { id: zh:g:qw-indefinite, name: "indefinite question words" }
+- { id: zh:g:qword-in-place, name: "什么/谁 in place" }
+- { id: zh:g:result-dao-jian, name: "verb + 到/见 = reached or perceived, not only tried" }
+- { id: zh:g:result-vs-potential, name: "没 + verb + result vs verb + 不 + result" }
+- { id: zh:g:result-wan, name: "verb + 完 = finished all of it" }
+- { id: zh:g:ruguo-dehua, name: "如果…就; …的话" }
+- { id: zh:g:separable-verbs, name: "split verbs" }
+- { id: zh:g:shi-de, name: "是…的 focus" }
+- { id: zh:g:shi-de-vs-le, name: "是…的 vs 了" }
+- { id: zh:g:shi-links-nouns, name: "是 links a person to what they are" }
+- { id: zh:g:simultaneous, name: "一边A一边B and A着B both say two actions at once" }
+- { id: zh:g:suiran-danshi, name: "虽然…但是/可是" }
+- { id: zh:g:tag-questions, name: "…好吗? …对不对? …吧?" }
+- { id: zh:g:tai-le, name: "太 + adj + 了" }
+- { id: zh:g:time-before-verb, name: "time word before the verb" }
+- { id: zh:g:vehicle-serial, name: "坐/骑/开 + vehicle + 去/来 + place = go there by…" }
+- { id: zh:g:verb-le-done, name: "verb + 了 in a story" }
+- { id: zh:g:verb-yixia-vv, name: "verb + 一下 / doubled verb = briefly, casually" }
+- { id: zh:g:verb-zai-place, name: "verb + 在 + place (住在, 坐在, 放在)" }
+- { id: zh:g:wan-numbers, name: "parsing numbers with 万" }
+- { id: zh:g:xiang-verb, name: "想 + verb" }
+- { id: zh:g:yao-vs-xiang, name: "要 (decided, or going to) vs 想 (would like)" }
+- { id: zh:g:yao-want, name: "要 + noun or verb" }
+- { id: zh:g:ye, name: "也 before the verb" }
+- { id: zh:g:yi-jiu, name: "一 A 就 B = as soon as A, B" }
+- { id: zh:g:yi-ye-bu, name: "一 + MW + 也/都 + 不/没; 一点儿也不" }
+- { id: zh:g:yijing-le, name: "已经 + verb + 了 = already, vs 还没 + verb = not yet" }
+- { id: zh:g:yinggai-vs-dei, name: "应该 (advice) vs 得 *děi* (no choice)" }
+- { id: zh:g:yinwei-suoyi, name: "因为…所以" }
+- { id: zh:g:yiqian-yihou, name: "event + 以前 / 以后 = before / after it" }
+- { id: zh:g:you-again-vs-zai-again, name: "又 vs 再" }
+- { id: zh:g:you-meiyou, name: "有 / 没有, never 不有" }
+- { id: zh:g:you-vs-zai, name: "place + 有 + thing vs thing + 在 + place" }
+- { id: zh:g:you-you, name: "又 A 又 B" }
+- { id: zh:g:youde-vs-yixie, name: "有的 / 有些 (some of a group, vs the rest) vs 一些 (an amount)" }
+- { id: zh:g:youdianr-vs-yidianr, name: "有点儿 + adj vs adj + 一点儿" }
+- { id: zh:g:yue-yue, name: "越 A 越 B and 越来越" }
+- { id: zh:g:zai-again, name: "再 + verb" }
+- { id: zh:g:zai-location, name: "thing + 在 + place; 在哪儿?" }
+- { id: zh:g:zai-ongoing, name: "在/正在 + verb (…呢)" }
+- { id: zh:g:zai-place-verb, name: "在 + place + verb" }
+- { id: zh:g:zai-vs-zhe, name: "在 + verb (action in progress) vs verb + 着 (resulting state)" }
+- { id: zh:g:zenme-verb, name: "怎么 + verb" }
+- { id: zh:g:zenmeyang, name: "怎么样" }
+- { id: zh:g:zhe-na-nei-mw, name: "这/那/哪 + MW + noun" }
+- { id: zh:g:zhe-state, name: "verb + 着 = a state that holds" }
+- { id: zh:g:zhexie-naxie, name: "这些/那些" }
+- { id: zh:g:zhiyao-jiu, name: "只要…就" }
+- { id: zh:g:zhiyou-vs-zhiyao, name: "只有…才 vs 只要…就" }
+- { id: zh:l:de-in-narration, name: "follow narration with long 的 descriptions" }
+- { id: zh:l:fillers, name: "hearing past 那个, 就是, 然后, 嗯" }
+- { id: zh:l:real-speed-narrow, name: "following unscripted speech" }
+- { id: zh:l:results-story, name: "follow a story whose turns are results" }
+- { id: zh:l:travel-story-guo, name: "follow a travel story told with 过 and 了" }
+- { id: zh:sc:aspiration, name: "aspirated vs unaspirated" }
+- { id: zh:sc:compound-finals, name: "confusable compound finals" }
+- { id: zh:sc:er-final, name: "hear and spell the bare *er* final" }
+- { id: zh:sc:hidden-vowels, name: "hear the vowel the spelling drops" }
+- { id: zh:sc:jqx-vs-buzz-i, name: "j q x vs zh ch sh / z c s before i" }
+- { id: zh:sc:n-ng, name: "-n vs -ng" }
+- { id: zh:sc:n-ng-glides, name: "-n/-ng after a glide" }
+- { id: zh:sc:neutral-full, name: "neutral vs full in minimal pairs" }
+- { id: zh:sc:pairs-tone1-x, name: "the 1+x pairs" }
+- { id: zh:sc:pairs-tone2-x, name: "the 2+x pairs" }
+- { id: zh:sc:pairs-tone4-x, name: "the 4+x pairs" }
+- { id: zh:sc:retroflex-flat, name: "curled vs flat" }
+- { id: zh:sc:si-shi-shi, name: "s vs sh plus tone in near-homophones, anchored on 四 / 十 / 是" }
+- { id: zh:sc:sibilant-3way, name: "three-way family identification in speech" }
+- { id: zh:sc:simple-finals, name: "map a o e i u to their sounds" }
+- { id: zh:sc:syllable-break, name: "one syllable vs two" }
+- { id: zh:sc:tone-1234, name: "name the tone of a single syllable" }
+- { id: zh:sc:tone1-tone4, name: "1st vs 4th" }
+- { id: zh:sc:tone2-tone3, name: "2nd vs 3rd" }
+- { id: zh:sc:u-spelled-u-umlaut, name: "written u = ü after j q x y" }
+- { id: zh:sc:u-umlaut-u-i, name: "ü vs u vs i" }
+- { id: zh:sr:bu-sandhi, name: "不 sandhi" }
+- { id: zh:sr:erhua, name: "hear erhua" }
+- { id: zh:sr:half-third, name: "the half-third" }
+- { id: zh:sr:intonation-over-tone, name: "lexical tone under question intonation" }
+- { id: zh:sr:neutral-tone, name: "neutral tone after each tone" }
+- { id: zh:sr:third-tone-chains, name: "sandhi in chains" }
+- { id: zh:sr:third-tone-sandhi, name: "3rd-tone sandhi" }
+- { id: zh:sr:tone-reduction, name: "tones in running speech" }
+- { id: zh:sr:yi-sandhi, name: "一 sandhi" }
+- { id: zh:v:colors-basic, name: "tell 红色, 白色 and 黑色 apart by ear" }
+- { id: zh:v:colors-more, name: "tell six colors apart by ear, with or without 色" }
+- { id: zh:v:daily-verbs, name: "daily verbs in a routine" }
+- { id: zh:v:digits-1-5, name: "digits 1–5" }
+- { id: zh:v:digits-6-10-0, name: "digits 6–10 and 0, in digit strings" }
+- { id: zh:v:everyday-mw, name: "本, 杯, 口, 件, 只 with their nouns" }
+- { id: zh:v:family, name: "family words" }
+- { id: zh:v:greetings, name: "greeting and intro chunks" }
+- { id: zh:v:mw-shape, name: "张 flat, 条 long, 双 pair, plus 位 for a respected person" }
+- { id: zh:v:stall-phrases, name: "stall phrases in a scene" }
+- { id: zh:v:weekdays, name: "星期一 … 星期天" }

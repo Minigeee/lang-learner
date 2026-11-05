@@ -12,3 +12,11 @@ node_modules/
 dist/
 supabase/.temp/
 supabase/.branches/
+
+# Media ingest
+tools/media-ingest/.venv/
+tools/media-ingest/.cache/
+tools/media-ingest/.pytest_cache/
+tools/media-ingest/*.egg-info/
+tools/media-ingest/quarantine.json
+tools/media-ingest/usage.json

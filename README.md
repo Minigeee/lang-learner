@@ -25,3 +25,5 @@ pnpm test:db
 ```
 
 `pnpm test:db` needs the local stack running.
+
+Content lives in `content/`, and `content/AUTHORING.md` has the format. `pnpm content:check` checks it, `pnpm content:build` compiles it into `dist/content/`, and `pnpm content:upload` sends the build and the ingester's cached media to the local bucket, so it needs the stack running. `pnpm content:suggest <lesson-slug>` lists corpus lines a lesson can use.

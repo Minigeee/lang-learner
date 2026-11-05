@@ -316,7 +316,7 @@ The matrix is computed from compiled lessons, never authored [TDD `content:matri
 - Each unit climbs at least two rungs and has at least 4 voices per contrast.
 - The skill card's pool supports at least ~20 unseen reviews.
 - No lesson's estimate runs past 8 minutes, not counting a `main` video, which may run as long as it needs (README Video row).
-- Everything a lesson relies on, including its items' words, the grammar they use and its interleaved confusables, is taught on the lesson's prereq path: its unit's prereq closure (doc 03 §1.8) plus earlier lessons in the unit. A lesson's target words sit in its own lesson tier. Added after the [2026-11-03 dependency review](lesson-plans/review-2026-11-03/README.md); `sandbox/spikes/dependency-check` is the plan-level prototype.
+- Everything a lesson relies on, including its items' words, the grammar they use and its interleaved confusables, is taught on the lesson's prereq path: its unit's prereq closure (doc 03 §1.8) plus earlier lessons in the unit. Opener lines are exempt: they're heard for the hook, not understood word by word. A lesson's target words sit in its own lesson tier. Added after the [2026-11-03 dependency review](lesson-plans/review-2026-11-03/README.md); `sandbox/spikes/dependency-check` is the plan-level prototype.
 
 **Sketch (not final), four lessons from §1.8.** The letters a/b mark a lesson's position inside its unit.
 

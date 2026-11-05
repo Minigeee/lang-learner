@@ -1,0 +1,117 @@
+# Card overlay of CC-CEDICT, share-alike. Each word's senses, its audio and its example sentence. Every
+# word and sentence clip is in one voice, so a card never changes speaker.
+
+# 1.1a
+- id: zh:w:是:shi4
+  senses: [to be]
+  word: clip:tts-a-w-shi
+  sentence: clip:tts-a-woshixuesheng
+  en: I'm a student.
+- id: zh:w:我:wo3
+  senses: [I, me]
+  word: clip:tts-a-w-wo
+  sentence: clip:tts-a-woshilaoshi
+  en: I'm a teacher.
+- id: zh:w:他:ta1
+  senses: [he, him]
+  word: clip:tts-a-w-ta
+  sentence: clip:tts-a-tashilaoshi
+  en: He's a teacher.
+- id: zh:w:学生:xue2sheng5
+  senses: [student]
+  word: clip:tts-a-w-xuesheng
+  sentence: clip:tts-a-lihongshixuesheng
+  en: Li Hong is a student.
+- id: zh:w:老师:lao3shi1
+  senses: [teacher]
+  word: clip:tts-a-w-laoshi
+  sentence: clip:tts-a-wangmingshilaoshi
+  en: Wang Ming is a teacher.
+
+# 1.1b
+- id: zh:w:你:ni3
+  senses: [you]
+  word: clip:tts-a-w-ni
+  sentence: clip:tts-a-nishixuesheng
+  en: You're a student.
+- id: zh:w:叫:jiao4
+  senses: [to be called]
+  word: clip:tts-a-w-jiao
+  sentence: clip:tts-a-wojiaolihong
+  en: My name is Li Hong.
+- id: zh:w:名字:ming2zi5
+  senses: [name]
+  word: clip:tts-a-w-mingzi
+  sentence: clip:tts-a-nijiaoshenmemingzi
+  en: What's your name?
+
+# 1.1c
+- id: zh:w:你好:ni3hao3
+  senses: [hello, hi]
+  word: clip:tts-a-w-nihao
+  sentence: clip:tts-a-nihao-lihong
+  en: Hello, Li Hong!
+- id: zh:w:再见:zai4jian4
+  senses: [goodbye]
+  word: clip:tts-a-w-zaijian
+  sentence: clip:tts-a-zaijian-lihong
+  en: Goodbye, Li Hong!
+- id: zh:w:谢谢:xie4xie5
+  senses: [thank you, thanks]
+  word: clip:tts-a-w-xiexie
+  sentence: clip:tts-a-xiexielaoshi
+  en: Thank you, teacher!
+- id: zh:w:认识:ren4shi5
+  senses: [to know, to get acquainted with sb]
+  word: clip:tts-a-w-renshi
+  sentence: clip:tts-a-worenshita
+  en: I know him.
+- id: zh:w:高兴:gao1xing4
+  senses: [happy, glad]
+  word: clip:tts-a-w-gaoxing
+  sentence: clip:tts-a-renshinihengaoxing
+  en: Nice to meet you.
+
+# 1.1 word set, met and carded in 1.1c
+- id: zh:w:您:nin2
+  senses: [you (courteous)]
+  word: clip:tts-a-w-nin
+  sentence: clip:tts-a-ninhao-laoshi
+  en: Hello, teacher!
+- id: zh:w:对不起:dui4bu5qi3
+  senses: [I'm sorry, excuse me]
+  word: clip:tts-a-w-duibuqi
+  sentence: clip:tts-a-duibuqi-laoshi
+  en: I'm sorry, teacher!
+- id: zh:w:请问:qing3wen4
+  senses: ['Excuse me, may I ask...?']
+  word: clip:tts-a-w-qingwen
+  sentence: clip:tts-a-qingwen-ninjiaoshenmemingzi
+  en: Excuse me, what's your name?
+- id: zh:w:没关系:mei2guan1xi5
+  senses: [it doesn't matter]
+  word: clip:tts-a-w-meiguanxi
+  sentence: clip:tts-a-meiguanxi-laoshi
+  en: It's okay, teacher.
+- id: zh:w:不客气:bu4ke4qi5
+  senses: [you're welcome]
+  word: clip:tts-a-w-bukeqi
+  sentence: clip:tts-a-bukeqi-laoshi
+  en: You're welcome, teacher.
+
+# 1.2a
+- id: zh:w:她:ta1
+  senses: [she]
+  word: clip:tts-a-w-tashe
+  sentence: clip:tts-a-tasheshilaoshima
+  en: Is she a teacher?
+- id: zh:w:吗:ma5
+  senses: ['(question particle for "yes-no" questions)']
+  word: clip:tts-a-w-ma
+  sentence: clip:tts-a-nishixueshengma
+  en: Are you a student?
+- id: zh:w:同学:tong2xue2
+  senses: [classmate]
+  word: clip:tts-a-w-tongxue
+  sentence: clip:tts-a-tashinitongxuema
+  en: Is he your classmate?

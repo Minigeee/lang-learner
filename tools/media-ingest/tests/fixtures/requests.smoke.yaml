@@ -1,0 +1,8 @@
+# End-to-end proof, one clip per path through the tool. The ElevenLabs line spends real credits the
+# first time, so keep it short; afterward it comes from the cache.
+- { id: clip:ai3-smoke, source: aishell3, utt: SSB00050353, zh: 深交所副总经理周明指出。, lessons: [zh:les:smoke] }
+- { id: clip:ai1-smoke, source: aishell1, utt: BAC009S0724W0123, zh: 相比于其他一线城市。, lessons: [zh:les:smoke] }
+- { id: clip:ac-ma1, source: audio-cmn, syllable: ma1, lessons: [zh:les:smoke] }
+- { id: clip:ac-w-laoshi, source: audio-cmn, word: 老师, lessons: [zh:les:smoke] }
+- { id: clip:yo-ma1, source: yoyo, syllable: ma1, lessons: [zh:les:smoke] }
+- { id: clip:tts-smoke, source: elevenlabs, text: 他是老师吗？, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:smoke] }

@@ -1,0 +1,7 @@
+# Who speaks in media.yaml. A plain `id` is one voice. A `family` covers every id under that prefix,
+# such as spk:aishell3-ssb0693, so a corpus's speakers don't each need a row.
+- { family: spk:aishell3, name: AISHELL-3 speaker, native: true }
+- { family: spk:aishell1, name: AISHELL-1 speaker, native: true }
+- { id: spk:audio-cmn, name: audio-cmn speaker, native: true }
+- { id: spk:yoyo, name: Yoyo Chinese speaker, native: true }
+- { family: spk:elevenlabs, name: ElevenLabs voice, native: false }

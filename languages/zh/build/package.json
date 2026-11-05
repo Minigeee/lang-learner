@@ -1,0 +1,20 @@
+{
+  "name": "@lang-learner/lang-zh-build",
+  "private": true,
+  "type": "module",
+  "exports": { ".": "./index.ts" },
+  "scripts": {
+    "typecheck": "tsc -p .",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@lang-learner/content-tools": "workspace:*",
+    "@lang-learner/core": "workspace:*",
+    "pinyin-pro": "3.29.5"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.6",
+    "typescript": "6.0.3",
+    "vitest": "4.1.0"
+  }
+}

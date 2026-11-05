@@ -1,0 +1,4 @@
+test/fixtures/STR001/zh/lessons/shi-links-nouns.md:2 STR001 idea is 20 words; the budget is 15
+test/fixtures/STR001/zh/lessons/shi-links-nouns.md:14 STR001 the lesson body is 64 words; the budget is 60
+test/fixtures/STR001/zh/lessons/shi-links-nouns.md:23 STR001 prompt is 8 words; the budget is 6
+test/fixtures/STR001/zh/lessons/shi-links-nouns.md:26 STR001 option is 5 words; the budget is 3

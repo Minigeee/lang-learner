@@ -1,0 +1,14 @@
+test/fixtures/STR002/zh/lessons/meeting-someone.md:23 STR002 :::practice needs {format=…}, one of C0, C1
+test/fixtures/STR002/zh/lessons/meeting-someone.md:31 STR002 :::examples is out of order; slots run opener, lesson, examples, practice
+test/fixtures/STR002/zh/lessons/meeting-someone.md:37 STR002 :::examples is out of order; slots run opener, lesson, examples, practice
+test/fixtures/STR002/zh/lessons/meeting-someone.md:43 STR002 only one :::practice slot is allowed here
+test/fixtures/STR002/zh/lessons/meeting-someone.md:48 STR002 C1 reveals a meaning, so every item needs en
+test/fixtures/STR002/zh/lessons/review-one.md:3 DEP002 学生 isn't in the tier of 1.2a; it's placed in lesson tier at 1.1a
+test/fixtures/STR002/zh/lessons/review-one.md:3 STR002 new words never go in a checkpoint, so it takes no cards
+test/fixtures/STR002/zh/lessons/review-one.md:6 STR002 a checkpoint lesson can't have a :::lesson slot
+test/fixtures/STR002/zh/lessons/review-one.md:7 COPY001 body: internal term "checkpoint" in user-facing text; use plain words ("step", "card", "Check")
+test/fixtures/STR002/zh/lessons/review-one.md:17 STR002 a checkpoint item needs a target: the skill its evidence goes to
+test/fixtures/STR002/zh/lessons/shi-links-nouns.md:6 STR002 C0 needs options on the step or the item
+test/fixtures/STR002/zh/lessons/shi-links-nouns.md:9 STR002 :::opener needs {type=…}, one of story, showdown, mystery, discover
+test/fixtures/STR002/zh/lessons/shi-links-nouns.md:18 STR002 "我是学生。" needs a translation: add {en="…"}
+test/fixtures/STR002/zh/lessons/shi-links-nouns.md:24 STR002 rungs: Unrecognized key: "rungs" (if this is part of a value, quote the value)

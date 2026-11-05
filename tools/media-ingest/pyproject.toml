@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=65"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "media-ingest"
+version = "0.1.0"
+description = "Turns clip requests into validated, loudness-normalized Opus files and committed metadata."
+requires-python = ">=3.11"
+
+[tool.setuptools.packages.find]
+include = ["media_ingest*"]
+
+[tool.setuptools.package-data]
+media_ingest = ["data/*.tsv"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

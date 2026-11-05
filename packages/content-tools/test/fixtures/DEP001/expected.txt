@@ -1,0 +1,1 @@
+test/fixtures/DEP001/zh/lessons/shi-links-nouns.md:19 DEP001 "他吃饭。" uses 吃饭, not on the path of 1.1a; add to cards, declare under chunks or names, or pick another line

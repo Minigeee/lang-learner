@@ -1,0 +1,1 @@
+test/fixtures/REF002/zh/lessons/shi-links-nouns.md:28 REF002 (warn) item target: "zh:g:old-shi" is retired; write "zh:g:shi-links-nouns"

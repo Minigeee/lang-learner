@@ -1,0 +1,20 @@
+- id: zh:w:学生:xue2sheng5
+  senses: [student]
+  word: clip:tts-xuesheng
+  sentence: clip:tts-xuesheng-line
+  en: I'm a student.
+- id: zh:w:老师:lao3shi1
+  senses: [teacher]
+  word: clip:tts-laoshi
+  sentence: clip:tts-laoshi-line
+  en: He's a teacher.
+- id: zh:w:你好:ni3hao3
+  senses: [hello]
+  word: clip:tts-nihao
+  sentence: clip:tts-nihao-line
+  en: Hello!
+- id: zh:w:再见:zai4jian4
+  senses: [goodbye]
+  word: clip:tts-zaijian
+  sentence: clip:tts-zaijian-line
+  en: Goodbye!

@@ -1,0 +1,3 @@
+test/fixtures/AUD001/zh/items/overrides/words.yaml:1 AUD001 zh:w:学生:xue2sheng5: word audio is spk:elevenlabs-abc123 but sentence audio is spk:aishell3-ssb0001; a card has one voice
+test/fixtures/AUD001/zh/media/media.yaml:199 AUD001 clip:tts-renshi-line is at -14.2 LUFS; expected -20 (+1/−3)
+test/fixtures/AUD001/zh/media/media.yaml:210 AUD001 clip:quiet is at -30.5 LUFS; expected -20 (+1/−3)

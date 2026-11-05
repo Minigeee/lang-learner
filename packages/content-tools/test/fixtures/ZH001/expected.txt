@@ -1,0 +1,1 @@
+test/fixtures/ZH001/zh/lessons/shi-links-nouns.md:14 ZH001 unmarked Chinese "我是学生。他是老师。" reads as an example; mark it :ex[…] (it needs a clip) or :m[…] (a mention, no audio)

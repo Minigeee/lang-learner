@@ -1,9 +1,10 @@
 <script setup lang="ts">
 // Temporary screen for Phase 0's done criteria. Today replaces it in Phase 4.
 import { computed, onMounted, ref, shallowRef } from 'vue'
-import { byTime, type EventEnvelope } from '@lang-learner/core'
+import { byTime, type ClipId, type EventEnvelope, type LessonId } from '@lang-learner/core'
 import { startEventLog, type AppLog } from '../app.ts'
 import { supabase } from '../adapters/auth.ts'
+import { openContent, type ContentBundle } from '../adapters/contentLoader.ts'
 import { t } from '../i18n/index.ts'
 
 const CLIP_PATH = 'media/cmn-ma3.mp3'
@@ -19,6 +20,10 @@ const events = ref<EventEnvelope[]>([])
 const note = ref('')
 const status = ref('')
 const clipError = ref('')
+const content = shallowRef<ContentBundle | null>(null)
+const lessons = ref<{ id: LessonId; title: string }[]>([])
+const contentError = ref('')
+let pilotClip: ClipId | undefined
 
 const videoUrl = computed(() => `https://www.youtube.com/embed/${VIDEO_ID}?playsinline=1&origin=${encodeURIComponent(location.origin)}`)
 const newestFirst = computed(() => [...events.value].sort(byTime).reverse())
@@ -61,10 +66,36 @@ async function playClip() {
 
 const payloadText = (e: EventEnvelope) => JSON.stringify(e.payload)
 
+async function loadContent() {
+  const build = import.meta.env.VITE_CONTENT_BUILD
+  if (!build) return
+  try {
+    const bundle = await openContent(build)
+    const strings = await bundle.strings()
+    const loaded = await Promise.all((Object.keys(bundle.manifest.lessons) as LessonId[]).map((id) => bundle.lesson(id)))
+    content.value = bundle
+    lessons.value = loaded.map((l) => ({ id: l.id, title: strings[l.title] ?? l.title }))
+    pilotClip = loaded.flatMap((l) => l.steps).flatMap((step): ClipId[] => (step.kind === 'examples' ? step.clips : []))[0]
+  } catch (e) {
+    contentError.value = e instanceof Error ? e.message : String(e)
+  }
+}
+
+async function playPilotClip() {
+  clipError.value = ''
+  try {
+    if (!content.value || !pilotClip) return
+    await new Audio(URL.createObjectURL(await content.value.audio(pilotClip))).play()
+  } catch (e) {
+    clipError.value = e instanceof Error ? e.message : String(e)
+  }
+}
+
 onMounted(async () => {
   app.value = await startEventLog(() => void refresh())
   await app.value.log.flush()
   await refresh()
+  await loadContent()
 })
 </script>
 
@@ -88,6 +119,7 @@ onMounted(async () => {
     <p v-if="status" class="t-meta">{{ status }}</p>
 
     <button class="btn sec" @click="playClip">{{ t('Play clip') }}</button>
+    <button v-if="content" class="btn sec" @click="playPilotClip">{{ t('Play pilot clip') }}</button>
     <p v-if="clipError" class="error">{{ clipError }}</p>
 
     <iframe
@@ -98,6 +130,12 @@ onMounted(async () => {
       allow="autoplay; encrypted-media; picture-in-picture"
       allowfullscreen
     />
+
+    <h2 class="t-meta">{{ t('Lessons') }}</h2>
+    <p v-if="contentError" class="error">{{ contentError }}</p>
+    <ul class="t-meta" style="margin: 0; padding-left: 16px">
+      <li v-for="l in lessons" :key="l.id">{{ l.title }}</li>
+    </ul>
 
     <h2 class="t-meta">{{ t('Events') }}</h2>
     <ul class="t-meta" style="margin: 0; padding-left: 16px">

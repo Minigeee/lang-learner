@@ -1,0 +1,348 @@
+# What media the lessons want. tools/media-ingest turns this into media.yaml; its README owns the format.
+# clip:tts-a-… is voice ByhETIclHirOlWnWKhHc, clip:tts-b-… is voice DowyQ68vDpgFYdWVGjc3.
+- { id: clip:ac-ba1, source: audio-cmn, syllable: ba1, lessons: [zh:les:tone-shapes] }
+- { id: clip:ac-ba2, source: audio-cmn, syllable: ba2, lessons: [zh:les:tone-shapes] }
+- { id: clip:ac-ba3, source: audio-cmn, syllable: ba3, lessons: [zh:les:tone-shapes] }
+- { id: clip:ac-ba4, source: audio-cmn, syllable: ba4, lessons: [zh:les:tone-shapes] }
+- { id: clip:ac-bao1, source: audio-cmn, syllable: bao1, lessons: [zh:les:checkpoint-tones] }
+- { id: clip:ac-da1, source: audio-cmn, syllable: da1, lessons: [zh:les:tone-shapes] }
+- { id: clip:ac-da2, source: audio-cmn, syllable: da2, lessons: [zh:les:tone-shapes] }
+- { id: clip:ac-da3, source: audio-cmn, syllable: da3, lessons: [zh:les:tone-shapes] }
+- { id: clip:ac-da4, source: audio-cmn, syllable: da4, lessons: [zh:les:tone-shapes] }
+- { id: clip:ac-di1, source: audio-cmn, syllable: di1, lessons: [zh:les:checkpoint-tones] }
+- { id: clip:ac-fu1, source: audio-cmn, syllable: fu1, lessons: [zh:les:tone-shapes] }
+- { id: clip:ac-fu2, source: audio-cmn, syllable: fu2, lessons: [zh:les:tone-shapes] }
+- { id: clip:ac-fu3, source: audio-cmn, syllable: fu3, lessons: [zh:les:tone-shapes] }
+- { id: clip:ac-fu4, source: audio-cmn, syllable: fu4, lessons: [zh:les:tone-shapes] }
+- { id: clip:ac-ge1, source: audio-cmn, syllable: ge1, lessons: [zh:les:checkpoint-tones] }
+- { id: clip:ac-he2, source: audio-cmn, syllable: he2, lessons: [zh:les:checkpoint-tones] }
+- { id: clip:ac-ji1, source: audio-cmn, syllable: ji1, lessons: [zh:les:tone-shapes] }
+- { id: clip:ac-ji2, source: audio-cmn, syllable: ji2, lessons: [zh:les:tone-shapes] }
+- { id: clip:ac-ji3, source: audio-cmn, syllable: ji3, lessons: [zh:les:tone-shapes] }
+- { id: clip:ac-ji4, source: audio-cmn, syllable: ji4, lessons: [zh:les:tone-shapes] }
+- { id: clip:ac-lao2, source: audio-cmn, syllable: lao2, lessons: [zh:les:checkpoint-tones] }
+- { id: clip:ac-li1, source: audio-cmn, syllable: li1, lessons: [zh:les:tone-shapes] }
+- { id: clip:ac-li2, source: audio-cmn, syllable: li2, lessons: [zh:les:tone-shapes] }
+- { id: clip:ac-li3, source: audio-cmn, syllable: li3, lessons: [zh:les:tone-shapes] }
+- { id: clip:ac-li4, source: audio-cmn, syllable: li4, lessons: [zh:les:tone-shapes] }
+- { id: clip:ac-lu4, source: audio-cmn, syllable: lu4, lessons: [zh:les:checkpoint-tones] }
+- { id: clip:ac-ma1, source: audio-cmn, syllable: ma1, lessons: [zh:les:tone-shapes] }
+- { id: clip:ac-ma2, source: audio-cmn, syllable: ma2, lessons: [zh:les:tone-shapes] }
+- { id: clip:ac-ma3, source: audio-cmn, syllable: ma3, lessons: [zh:les:tone-shapes] }
+- { id: clip:ac-ma4, source: audio-cmn, syllable: ma4, lessons: [zh:les:tone-shapes] }
+- { id: clip:ac-mai3, source: audio-cmn, syllable: mai3, lessons: [zh:les:checkpoint-tones] }
+- { id: clip:ac-mo3, source: audio-cmn, syllable: mo3, lessons: [zh:les:checkpoint-tones] }
+- { id: clip:ac-ni4, source: audio-cmn, syllable: ni4, lessons: [zh:les:checkpoint-tones] }
+- { id: clip:ac-pao2, source: audio-cmn, syllable: pao2, lessons: [zh:les:checkpoint-tones] }
+- { id: clip:ac-qi1, source: audio-cmn, syllable: qi1, lessons: [zh:les:tone-shapes] }
+- { id: clip:ac-qi2, source: audio-cmn, syllable: qi2, lessons: [zh:les:tone-shapes] }
+- { id: clip:ac-qi3, source: audio-cmn, syllable: qi3, lessons: [zh:les:tone-shapes] }
+- { id: clip:ac-qi4, source: audio-cmn, syllable: qi4, lessons: [zh:les:tone-shapes] }
+- { id: clip:ac-shi1, source: audio-cmn, syllable: shi1, lessons: [zh:les:tone-shapes] }
+- { id: clip:ac-shi2, source: audio-cmn, syllable: shi2, lessons: [zh:les:tone-shapes] }
+- { id: clip:ac-shi3, source: audio-cmn, syllable: shi3, lessons: [zh:les:tone-shapes] }
+- { id: clip:ac-shi4, source: audio-cmn, syllable: shi4, lessons: [zh:les:tone-shapes] }
+- { id: clip:ac-shu4, source: audio-cmn, syllable: shu4, lessons: [zh:les:checkpoint-tones] }
+- { id: clip:ac-tan2, source: audio-cmn, syllable: tan2, lessons: [zh:les:checkpoint-tones] }
+- { id: clip:ac-tang1, source: audio-cmn, syllable: tang1, lessons: [zh:les:checkpoint-tones] }
+- { id: clip:ac-ti4, source: audio-cmn, syllable: ti4, lessons: [zh:les:checkpoint-tones] }
+- { id: clip:ac-w-diannao, source: audio-cmn, word: 电脑, lessons: [zh:les:checkpoint-tones] }
+- { id: clip:ac-w-dianshi, source: audio-cmn, word: 电视, lessons: [zh:les:checkpoint-tones] }
+- { id: clip:ac-w-feiji, source: audio-cmn, word: 飞机, lessons: [zh:les:checkpoint-tones] }
+- { id: clip:ac-w-huanying, source: audio-cmn, word: 欢迎, lessons: [zh:les:checkpoint-tones] }
+- { id: clip:ac-w-lianxi, source: audio-cmn, word: 练习, lessons: [zh:les:checkpoint-tones] }
+- { id: clip:ac-w-mingtian, source: audio-cmn, word: 明天, lessons: [zh:les:checkpoint-tones] }
+- { id: clip:ac-w-paobu, source: audio-cmn, word: 跑步, lessons: [zh:les:checkpoint-tones] }
+- { id: clip:ac-w-pingguo, source: audio-cmn, word: 苹果, lessons: [zh:les:checkpoint-tones] }
+- { id: clip:ac-w-qianbi, source: audio-cmn, word: 铅笔, lessons: [zh:les:checkpoint-tones] }
+- { id: clip:ac-w-qiche, source: audio-cmn, word: 汽车, lessons: [zh:les:checkpoint-tones] }
+- { id: clip:ac-w-qichuang, source: audio-cmn, word: 起床, lessons: [zh:les:checkpoint-tones] }
+- { id: clip:ac-w-shengri, source: audio-cmn, word: 生日, lessons: [zh:les:checkpoint-tones] }
+- { id: clip:ac-w-xiaoshuo, source: audio-cmn, word: 小说, lessons: [zh:les:checkpoint-tones] }
+- { id: clip:ac-w-xuexi, source: audio-cmn, word: 学习, lessons: [zh:les:checkpoint-tones] }
+- { id: clip:ac-w-xuexiao, source: audio-cmn, word: 学校, lessons: [zh:les:checkpoint-tones] }
+- { id: clip:ac-wei3, source: audio-cmn, syllable: wei3, lessons: [zh:les:checkpoint-tones] }
+- { id: clip:ac-wu1, source: audio-cmn, syllable: wu1, lessons: [zh:les:tone-shapes] }
+- { id: clip:ac-wu2, source: audio-cmn, syllable: wu2, lessons: [zh:les:tone-shapes] }
+- { id: clip:ac-wu3, source: audio-cmn, syllable: wu3, lessons: [zh:les:tone-shapes] }
+- { id: clip:ac-wu4, source: audio-cmn, syllable: wu4, lessons: [zh:les:tone-shapes] }
+- { id: clip:ac-yi1, source: audio-cmn, syllable: yi1, lessons: [zh:les:tone-shapes] }
+- { id: clip:ac-yi2, source: audio-cmn, syllable: yi2, lessons: [zh:les:tone-shapes] }
+- { id: clip:ac-yi3, source: audio-cmn, syllable: yi3, lessons: [zh:les:tone-shapes] }
+- { id: clip:ac-yi4, source: audio-cmn, syllable: yi4, lessons: [zh:les:tone-shapes] }
+- { id: clip:ac-zhi3, source: audio-cmn, syllable: zhi3, lessons: [zh:les:checkpoint-tones] }
+- { id: clip:yo-ba1, source: yoyo, syllable: ba1, lessons: [zh:les:tone-shapes] }
+- { id: clip:yo-ba2, source: yoyo, syllable: ba2, lessons: [zh:les:tone-shapes] }
+- { id: clip:yo-ba3, source: yoyo, syllable: ba3, lessons: [zh:les:tone-shapes] }
+- { id: clip:yo-ba4, source: yoyo, syllable: ba4, lessons: [zh:les:tone-shapes] }
+- { id: clip:yo-bao1, source: yoyo, syllable: bao1, lessons: [zh:les:checkpoint-tones] }
+- { id: clip:yo-da1, source: yoyo, syllable: da1, lessons: [zh:les:tone-shapes] }
+- { id: clip:yo-da2, source: yoyo, syllable: da2, lessons: [zh:les:tone-shapes] }
+- { id: clip:yo-da3, source: yoyo, syllable: da3, lessons: [zh:les:tone-shapes] }
+- { id: clip:yo-da4, source: yoyo, syllable: da4, lessons: [zh:les:tone-shapes] }
+- { id: clip:yo-di1, source: yoyo, syllable: di1, lessons: [zh:les:checkpoint-tones] }
+- { id: clip:yo-fu1, source: yoyo, syllable: fu1, lessons: [zh:les:tone-shapes] }
+- { id: clip:yo-fu2, source: yoyo, syllable: fu2, lessons: [zh:les:tone-shapes] }
+- { id: clip:yo-fu3, source: yoyo, syllable: fu3, lessons: [zh:les:tone-shapes] }
+- { id: clip:yo-fu4, source: yoyo, syllable: fu4, lessons: [zh:les:tone-shapes] }
+- { id: clip:yo-ge1, source: yoyo, syllable: ge1, lessons: [zh:les:checkpoint-tones] }
+- { id: clip:yo-he2, source: yoyo, syllable: he2, lessons: [zh:les:checkpoint-tones] }
+- { id: clip:yo-ji1, source: yoyo, syllable: ji1, lessons: [zh:les:tone-shapes] }
+- { id: clip:yo-ji2, source: yoyo, syllable: ji2, lessons: [zh:les:tone-shapes] }
+- { id: clip:yo-ji3, source: yoyo, syllable: ji3, lessons: [zh:les:tone-shapes] }
+- { id: clip:yo-ji4, source: yoyo, syllable: ji4, lessons: [zh:les:tone-shapes] }
+- { id: clip:yo-lao2, source: yoyo, syllable: lao2, lessons: [zh:les:checkpoint-tones] }
+- { id: clip:yo-li1, source: yoyo, syllable: li1, lessons: [zh:les:tone-shapes] }
+- { id: clip:yo-li2, source: yoyo, syllable: li2, lessons: [zh:les:tone-shapes] }
+- { id: clip:yo-li3, source: yoyo, syllable: li3, lessons: [zh:les:tone-shapes] }
+- { id: clip:yo-li4, source: yoyo, syllable: li4, lessons: [zh:les:tone-shapes] }
+- { id: clip:yo-lu4, source: yoyo, syllable: lu4, lessons: [zh:les:checkpoint-tones] }
+- { id: clip:yo-ma1, source: yoyo, syllable: ma1, lessons: [zh:les:tone-shapes] }
+- { id: clip:yo-ma2, source: yoyo, syllable: ma2, lessons: [zh:les:tone-shapes] }
+- { id: clip:yo-ma3, source: yoyo, syllable: ma3, lessons: [zh:les:tone-shapes] }
+- { id: clip:yo-ma4, source: yoyo, syllable: ma4, lessons: [zh:les:tone-shapes] }
+- { id: clip:yo-mai3, source: yoyo, syllable: mai3, lessons: [zh:les:checkpoint-tones] }
+- { id: clip:yo-mo3, source: yoyo, syllable: mo3, lessons: [zh:les:checkpoint-tones] }
+- { id: clip:yo-ni4, source: yoyo, syllable: ni4, lessons: [zh:les:checkpoint-tones] }
+- { id: clip:yo-pao2, source: yoyo, syllable: pao2, lessons: [zh:les:checkpoint-tones] }
+- { id: clip:yo-qi1, source: yoyo, syllable: qi1, lessons: [zh:les:tone-shapes] }
+- { id: clip:yo-qi2, source: yoyo, syllable: qi2, lessons: [zh:les:tone-shapes] }
+- { id: clip:yo-qi3, source: yoyo, syllable: qi3, lessons: [zh:les:tone-shapes] }
+- { id: clip:yo-qi4, source: yoyo, syllable: qi4, lessons: [zh:les:tone-shapes] }
+- { id: clip:yo-shi1, source: yoyo, syllable: shi1, lessons: [zh:les:tone-shapes] }
+- { id: clip:yo-shi2, source: yoyo, syllable: shi2, lessons: [zh:les:tone-shapes] }
+- { id: clip:yo-shi3, source: yoyo, syllable: shi3, lessons: [zh:les:tone-shapes] }
+- { id: clip:yo-shi4, source: yoyo, syllable: shi4, lessons: [zh:les:tone-shapes] }
+- { id: clip:yo-shu4, source: yoyo, syllable: shu4, lessons: [zh:les:checkpoint-tones] }
+- { id: clip:yo-tan2, source: yoyo, syllable: tan2, lessons: [zh:les:checkpoint-tones] }
+- { id: clip:yo-tang1, source: yoyo, syllable: tang1, lessons: [zh:les:checkpoint-tones] }
+- { id: clip:yo-ti4, source: yoyo, syllable: ti4, lessons: [zh:les:checkpoint-tones] }
+- { id: clip:yo-wei3, source: yoyo, syllable: wei3, lessons: [zh:les:checkpoint-tones] }
+- { id: clip:yo-wu1, source: yoyo, syllable: wu1, lessons: [zh:les:tone-shapes] }
+- { id: clip:yo-wu2, source: yoyo, syllable: wu2, lessons: [zh:les:tone-shapes] }
+- { id: clip:yo-wu3, source: yoyo, syllable: wu3, lessons: [zh:les:tone-shapes] }
+- { id: clip:yo-wu4, source: yoyo, syllable: wu4, lessons: [zh:les:tone-shapes] }
+- { id: clip:yo-yi1, source: yoyo, syllable: yi1, lessons: [zh:les:tone-shapes] }
+- { id: clip:yo-yi2, source: yoyo, syllable: yi2, lessons: [zh:les:tone-shapes] }
+- { id: clip:yo-yi3, source: yoyo, syllable: yi3, lessons: [zh:les:tone-shapes] }
+- { id: clip:yo-yi4, source: yoyo, syllable: yi4, lessons: [zh:les:tone-shapes] }
+- { id: clip:yo-zhi3, source: yoyo, syllable: zhi3, lessons: [zh:les:checkpoint-tones] }
+- { id: clip:ai3-ssb01930365, source: aishell3, utt: SSB01930365, zh: 他叫拉尔斯。, lessons: [zh:les:jiao-gives-name] }
+- { id: clip:ai3-ssb03070369, source: aishell3, utt: SSB03070369, zh: 每个男孩都得到一个苹果。, lessons: [zh:les:checkpoint-tones] }
+- { id: clip:ai3-ssb03090305, source: aishell3, utt: SSB03090305, zh: 再见！, lessons: [zh:les:meeting-someone] }
+- { id: clip:ai3-ssb03380375, source: aishell3, utt: SSB03380375, zh: 是穆拉德吗？, lessons: [zh:les:ma-yes-no] }
+- { id: clip:ai3-ssb04340132, source: aishell3, utt: SSB04340132, zh: 老师，你好！, lessons: [zh:les:meeting-someone] }
+- { id: clip:ai3-ssb05650319, source: aishell3, utt: SSB05650319, zh: 我是北京人。, lessons: [zh:les:shi-links-nouns] }
+- { id: clip:ai3-ssb05900341, source: aishell3, utt: SSB05900341, zh: 她是我高中老师。, lessons: [zh:les:shi-links-nouns] }
+- { id: clip:ai3-ssb06030268, source: aishell3, utt: SSB06030268, zh: 我是实习教师。, lessons: [zh:les:shi-links-nouns] }
+- { id: clip:ai3-ssb06680170, source: aishell3, utt: SSB06680170, zh: 他是美国人。, lessons: [zh:les:shi-links-nouns] }
+- { id: clip:ai3-ssb07490232, source: aishell3, utt: SSB07490232, zh: 氮气会造成两个问题。, lessons: [zh:les:checkpoint-tones] }
+- { id: clip:ai3-ssb07600139, source: aishell3, utt: SSB07600139, zh: 对不起，对不起！, lessons: [zh:les:meeting-someone] }
+- { id: clip:ai3-ssb07600453, source: aishell3, utt: SSB07600453, zh: 对不起，比尔！, lessons: [zh:les:meeting-someone] }
+- { id: clip:ai3-ssb07840359, source: aishell3, utt: SSB07840359, zh: 我是考特尼。, lessons: [zh:les:ma-yes-no] }
+- { id: clip:ai3-ssb10080058, source: aishell3, utt: SSB10080058, zh: 陈小春现身北京。, lessons: [zh:les:checkpoint-tones] }
+- { id: clip:ai3-ssb10080302, source: aishell3, utt: SSB10080302, zh: 你是英雄。, lessons: [zh:les:shi-links-nouns] }
+- { id: clip:ai3-ssb10500257, source: aishell3, utt: SSB10500257, zh: 希望你考上好学校。, lessons: [zh:les:checkpoint-tones] }
+- { id: clip:ai3-ssb13930296, source: aishell3, utt: SSB13930296, zh: 他是个摄影师。, lessons: [zh:les:shi-links-nouns] }
+- { id: clip:ai3-ssb14020054, source: aishell3, utt: SSB14020054, zh: 这真是爆炸新闻。, lessons: [zh:les:checkpoint-tones] }
+- { id: clip:tts-a-bukeqi, source: elevenlabs, text: 不客气。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-a-bukeqi-laoshi, source: elevenlabs, text: 不客气，老师。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-a-bukeqi-zaijian, source: elevenlabs, text: 不客气，再见！, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-a-chenjingshilaoshi, source: elevenlabs, text: 陈静是老师。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:jiao-gives-name] }
+- { id: clip:tts-a-duibuqi, source: elevenlabs, text: 对不起！, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-a-duibuqi-laoshi, source: elevenlabs, text: 对不起，老师！, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-a-laoshijiaochenjing, source: elevenlabs, text: 老师叫陈静。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:jiao-gives-name] }
+- { id: clip:tts-a-laoshijiaolihong, source: elevenlabs, text: 老师叫李红。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:jiao-gives-name] }
+- { id: clip:tts-a-laoshijiaowangming, source: elevenlabs, text: 老师叫王明。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:jiao-gives-name] }
+- { id: clip:tts-a-laoshijiaozhangwei, source: elevenlabs, text: 老师叫张伟。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:jiao-gives-name] }
+- { id: clip:tts-a-lihongshilaoshi, source: elevenlabs, text: 李红是老师。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:jiao-gives-name, zh:les:shi-links-nouns] }
+- { id: clip:tts-a-lihongshilaoshi-wangmingshixuesheng, source: elevenlabs, text: 李红是老师，王明是学生。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:shi-links-nouns] }
+- { id: clip:tts-a-lihongshilaoshi-woshixuesheng, source: elevenlabs, text: 李红是老师，我是学生。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:shi-links-nouns] }
+- { id: clip:tts-a-lihongshixuesheng, source: elevenlabs, text: 李红是学生。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:jiao-gives-name, zh:les:ma-yes-no, zh:les:shi-links-nouns] }
+- { id: clip:tts-a-lihongshixuesheng-wangmingshilaoshi, source: elevenlabs, text: 李红是学生，王明是老师。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:shi-links-nouns] }
+- { id: clip:tts-a-lihongshixueshengma, source: elevenlabs, text: 李红是学生吗？, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:ma-yes-no] }
+- { id: clip:tts-a-meiguanxi, source: elevenlabs, text: 没关系。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-a-meiguanxi-laoshi, source: elevenlabs, text: 没关系，老师。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-a-meiguanxi-zaijian, source: elevenlabs, text: 没关系，再见！, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-a-nihao, source: elevenlabs, text: 你好！, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-a-nihao-lihong, source: elevenlabs, text: 你好，李红！, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-a-nihao-wangming-wojiaolihong-woshilaoshi, source: elevenlabs, text: 你好，王明！我叫李红，我是老师。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-a-nijiaoshenmemingzi, source: elevenlabs, text: 你叫什么名字？, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:jiao-gives-name] }
+- { id: clip:tts-a-ninhao, source: elevenlabs, text: 您好！, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-a-ninhao-laoshi, source: elevenlabs, text: 您好，老师！, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-a-nishilaoshi, source: elevenlabs, text: 你是老师。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:jiao-gives-name, zh:les:ma-yes-no] }
+- { id: clip:tts-a-nishilaoshima, source: elevenlabs, text: 你是老师吗？, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:ma-yes-no] }
+- { id: clip:tts-a-nishixuesheng, source: elevenlabs, text: 你是学生。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:jiao-gives-name, zh:les:ma-yes-no] }
+- { id: clip:tts-a-nishixueshengma, source: elevenlabs, text: 你是学生吗？, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:ma-yes-no] }
+- { id: clip:tts-a-qingwen-nijiaoshenmemingzi, source: elevenlabs, text: 请问，你叫什么名字？, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-a-qingwen-ninjiaoshenmemingzi, source: elevenlabs, text: 请问，您叫什么名字？, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-a-renshinihengaoxing, source: elevenlabs, text: 认识你很高兴。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-a-renshinihengaoxing-wangming, source: elevenlabs, text: 认识你很高兴，王明。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-a-tajiaowangming, source: elevenlabs, text: 他叫王明。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:jiao-gives-name, zh:les:ma-yes-no] }
+- { id: clip:tts-a-tajiaowangmingma, source: elevenlabs, text: 他叫王明吗？, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:ma-yes-no] }
+- { id: clip:tts-a-tajiaozhangwei, source: elevenlabs, text: 他叫张伟。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:jiao-gives-name, zh:les:ma-yes-no] }
+- { id: clip:tts-a-tajiaozhangweima, source: elevenlabs, text: 他叫张伟吗？, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:ma-yes-no] }
+- { id: clip:tts-a-tashejiaolihong, source: elevenlabs, text: 她叫李红。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:ma-yes-no] }
+- { id: clip:tts-a-tashejiaolihongma, source: elevenlabs, text: 她叫李红吗？, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:ma-yes-no] }
+- { id: clip:tts-a-tasheshilaoshi, source: elevenlabs, text: 她是老师。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:ma-yes-no] }
+- { id: clip:tts-a-tasheshilaoshima, source: elevenlabs, text: 她是老师吗？, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:ma-yes-no] }
+- { id: clip:tts-a-tasheshixuesheng, source: elevenlabs, text: 她是学生。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:ma-yes-no] }
+- { id: clip:tts-a-tasheshixueshengma, source: elevenlabs, text: 她是学生吗？, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:ma-yes-no] }
+- { id: clip:tts-a-tashilaoshi, source: elevenlabs, text: 他是老师。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:jiao-gives-name, zh:les:ma-yes-no, zh:les:shi-links-nouns] }
+- { id: clip:tts-a-tashilaoshi-lihongshixuesheng, source: elevenlabs, text: 他是老师，李红是学生。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:shi-links-nouns] }
+- { id: clip:tts-a-tashilaoshi-wangmingshixuesheng, source: elevenlabs, text: 他是老师，王明是学生。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:shi-links-nouns] }
+- { id: clip:tts-a-tashilaoshi-woshixuesheng, source: elevenlabs, text: 他是老师，我是学生。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:shi-links-nouns] }
+- { id: clip:tts-a-tashilaoshima, source: elevenlabs, text: 他是老师吗？, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:ma-yes-no] }
+- { id: clip:tts-a-tashinitongxue, source: elevenlabs, text: 他是你同学。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:ma-yes-no] }
+- { id: clip:tts-a-tashinitongxuema, source: elevenlabs, text: 他是你同学吗？, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:ma-yes-no] }
+- { id: clip:tts-a-tashixuesheng, source: elevenlabs, text: 他是学生。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:jiao-gives-name, zh:les:ma-yes-no] }
+- { id: clip:tts-a-tashixuesheng-lihongshilaoshi, source: elevenlabs, text: 他是学生，李红是老师。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:shi-links-nouns] }
+- { id: clip:tts-a-tashixuesheng-wangmingshilaoshi, source: elevenlabs, text: 他是学生，王明是老师。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:shi-links-nouns] }
+- { id: clip:tts-a-tashixuesheng-woshilaoshi, source: elevenlabs, text: 他是学生，我是老师。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:shi-links-nouns] }
+- { id: clip:tts-a-tashixueshengma, source: elevenlabs, text: 他是学生吗？, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:ma-yes-no] }
+- { id: clip:tts-a-w-bukeqi, source: elevenlabs, text: 不客气, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-a-w-duibuqi, source: elevenlabs, text: 对不起, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-a-w-gaoxing, source: elevenlabs, text: 高兴, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-a-w-jiao, source: elevenlabs, text: 叫, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:jiao-gives-name] }
+- { id: clip:tts-a-w-laoshi, source: elevenlabs, text: 老师, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:shi-links-nouns] }
+- { id: clip:tts-a-w-ma, source: elevenlabs, text: 吗, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:ma-yes-no] }
+- { id: clip:tts-a-w-meiguanxi, source: elevenlabs, text: 没关系, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-a-w-mingzi, source: elevenlabs, text: 名字, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:jiao-gives-name] }
+- { id: clip:tts-a-w-ni, source: elevenlabs, text: 你, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:jiao-gives-name] }
+- { id: clip:tts-a-w-nihao, source: elevenlabs, text: 你好, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-a-w-nin, source: elevenlabs, text: 您, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-a-w-qingwen, source: elevenlabs, text: 请问, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-a-w-renshi, source: elevenlabs, text: 认识, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-a-w-shi, source: elevenlabs, text: 是, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:shi-links-nouns] }
+- { id: clip:tts-a-w-ta, source: elevenlabs, text: 他, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:shi-links-nouns] }
+- { id: clip:tts-a-w-tashe, source: elevenlabs, text: 她, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:ma-yes-no] }
+- { id: clip:tts-a-w-tongxue, source: elevenlabs, text: 同学, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:ma-yes-no] }
+- { id: clip:tts-a-w-wo, source: elevenlabs, text: 我, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:shi-links-nouns] }
+- { id: clip:tts-a-w-xiexie, source: elevenlabs, text: 谢谢, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-a-w-xuesheng, source: elevenlabs, text: 学生, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:shi-links-nouns] }
+- { id: clip:tts-a-w-zaijian, source: elevenlabs, text: 再见, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-a-wangmingshilaoshi, source: elevenlabs, text: 王明是老师。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:jiao-gives-name, zh:les:ma-yes-no, zh:les:shi-links-nouns] }
+- { id: clip:tts-a-wangmingshilaoshi-lihongshixuesheng, source: elevenlabs, text: 王明是老师，李红是学生。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:shi-links-nouns] }
+- { id: clip:tts-a-wangmingshilaoshi-woshixuesheng, source: elevenlabs, text: 王明是老师，我是学生。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:shi-links-nouns] }
+- { id: clip:tts-a-wangmingshilaoshima, source: elevenlabs, text: 王明是老师吗？, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:ma-yes-no] }
+- { id: clip:tts-a-wangmingshinitongxue, source: elevenlabs, text: 王明是你同学。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:ma-yes-no] }
+- { id: clip:tts-a-wangmingshinitongxuema, source: elevenlabs, text: 王明是你同学吗？, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:ma-yes-no] }
+- { id: clip:tts-a-wangmingshixuesheng, source: elevenlabs, text: 王明是学生。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:jiao-gives-name] }
+- { id: clip:tts-a-wangmingshixuesheng-lihongshilaoshi, source: elevenlabs, text: 王明是学生，李红是老师。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:shi-links-nouns] }
+- { id: clip:tts-a-wangmingshixuesheng-woshilaoshi, source: elevenlabs, text: 王明是学生，我是老师。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:shi-links-nouns] }
+- { id: clip:tts-a-wojiaochenjing, source: elevenlabs, text: 我叫陈静。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:jiao-gives-name] }
+- { id: clip:tts-a-wojiaolihong, source: elevenlabs, text: 我叫李红。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:jiao-gives-name] }
+- { id: clip:tts-a-wojiaowangming, source: elevenlabs, text: 我叫王明。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:jiao-gives-name] }
+- { id: clip:tts-a-wojiaozhangwei, source: elevenlabs, text: 我叫张伟。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:jiao-gives-name] }
+- { id: clip:tts-a-worenshita, source: elevenlabs, text: 我认识他。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-a-woshilaoshi, source: elevenlabs, text: 我是老师。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:jiao-gives-name, zh:les:shi-links-nouns] }
+- { id: clip:tts-a-woshilaoshi-lihongshixuesheng, source: elevenlabs, text: 我是老师，李红是学生。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:shi-links-nouns] }
+- { id: clip:tts-a-woshilaoshi-tashixuesheng, source: elevenlabs, text: 我是老师，他是学生。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:shi-links-nouns] }
+- { id: clip:tts-a-woshilaoshi-wangmingshixuesheng, source: elevenlabs, text: 我是老师，王明是学生。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:shi-links-nouns] }
+- { id: clip:tts-a-woshilihong, source: elevenlabs, text: 我是李红。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:jiao-gives-name] }
+- { id: clip:tts-a-woshixuesheng, source: elevenlabs, text: 我是学生。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:jiao-gives-name, zh:les:shi-links-nouns] }
+- { id: clip:tts-a-woshixuesheng-lihongshilaoshi, source: elevenlabs, text: 我是学生，李红是老师。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:shi-links-nouns] }
+- { id: clip:tts-a-woshixuesheng-tashilaoshi, source: elevenlabs, text: 我是学生，他是老师。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:shi-links-nouns] }
+- { id: clip:tts-a-woshixuesheng-wangmingshilaoshi, source: elevenlabs, text: 我是学生，王明是老师。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:shi-links-nouns] }
+- { id: clip:tts-a-xiexie, source: elevenlabs, text: 谢谢！, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-a-xiexie-renshinihengaoxing, source: elevenlabs, text: 谢谢！认识你很高兴。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-a-xiexielaoshi, source: elevenlabs, text: 谢谢老师！, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-a-xiexieni, source: elevenlabs, text: 谢谢你！, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-a-xueshengjiaolihong, source: elevenlabs, text: 学生叫李红。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:jiao-gives-name] }
+- { id: clip:tts-a-xueshengjiaowangming, source: elevenlabs, text: 学生叫王明。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:jiao-gives-name] }
+- { id: clip:tts-a-xueshengjiaozhangwei, source: elevenlabs, text: 学生叫张伟。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:jiao-gives-name] }
+- { id: clip:tts-a-zaijian, source: elevenlabs, text: 再见！, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-a-zaijian-lihong, source: elevenlabs, text: 再见，李红！, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-a-zhangweishilaoshi, source: elevenlabs, text: 张伟是老师。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:jiao-gives-name, zh:les:ma-yes-no] }
+- { id: clip:tts-a-zhangweishilaoshima, source: elevenlabs, text: 张伟是老师吗？, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:ma-yes-no] }
+- { id: clip:tts-a-zhangweishixuesheng, source: elevenlabs, text: 张伟是学生。, voice: ByhETIclHirOlWnWKhHc, lessons: [zh:les:jiao-gives-name] }
+- { id: clip:tts-b-bukeqi, source: elevenlabs, text: 不客气。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-b-bukeqi-laoshi, source: elevenlabs, text: 不客气，老师。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-b-bukeqi-zaijian, source: elevenlabs, text: 不客气，再见！, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-b-chenjingshilaoshi, source: elevenlabs, text: 陈静是老师。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:jiao-gives-name] }
+- { id: clip:tts-b-duibuqi, source: elevenlabs, text: 对不起！, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-b-duibuqi-laoshi, source: elevenlabs, text: 对不起，老师！, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-b-laoshi-nihao-renshinihengaoxing, source: elevenlabs, text: 老师，你好！认识你很高兴。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-b-laoshi-zaijian, source: elevenlabs, text: 老师，再见！, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-b-laoshijiaochenjing, source: elevenlabs, text: 老师叫陈静。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:jiao-gives-name] }
+- { id: clip:tts-b-laoshijiaolihong, source: elevenlabs, text: 老师叫李红。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:jiao-gives-name] }
+- { id: clip:tts-b-laoshijiaowangming, source: elevenlabs, text: 老师叫王明。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:jiao-gives-name] }
+- { id: clip:tts-b-laoshijiaozhangwei, source: elevenlabs, text: 老师叫张伟。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:jiao-gives-name] }
+- { id: clip:tts-b-lihongshilaoshi, source: elevenlabs, text: 李红是老师。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:jiao-gives-name, zh:les:shi-links-nouns] }
+- { id: clip:tts-b-lihongshilaoshi-wangmingshixuesheng, source: elevenlabs, text: 李红是老师，王明是学生。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:shi-links-nouns] }
+- { id: clip:tts-b-lihongshilaoshi-woshixuesheng, source: elevenlabs, text: 李红是老师，我是学生。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:shi-links-nouns] }
+- { id: clip:tts-b-lihongshixuesheng, source: elevenlabs, text: 李红是学生。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:jiao-gives-name, zh:les:ma-yes-no, zh:les:shi-links-nouns] }
+- { id: clip:tts-b-lihongshixuesheng-wangmingshilaoshi, source: elevenlabs, text: 李红是学生，王明是老师。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:shi-links-nouns] }
+- { id: clip:tts-b-lihongshixueshengma, source: elevenlabs, text: 李红是学生吗？, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:ma-yes-no] }
+- { id: clip:tts-b-meiguanxi, source: elevenlabs, text: 没关系。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-b-meiguanxi-laoshi, source: elevenlabs, text: 没关系，老师。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-b-meiguanxi-zaijian, source: elevenlabs, text: 没关系，再见！, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-b-nihao, source: elevenlabs, text: 你好！, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-b-nihao-lihong, source: elevenlabs, text: 你好，李红！, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-b-nihao-wojiaowangming-woshixuesheng, source: elevenlabs, text: 你好！我叫王明，我是学生。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-b-nijiaoshenmemingzi, source: elevenlabs, text: 你叫什么名字？, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:jiao-gives-name] }
+- { id: clip:tts-b-ninhao, source: elevenlabs, text: 您好！, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-b-ninhao-laoshi, source: elevenlabs, text: 您好，老师！, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-b-nishilaoshi, source: elevenlabs, text: 你是老师。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:jiao-gives-name, zh:les:ma-yes-no] }
+- { id: clip:tts-b-nishilaoshima, source: elevenlabs, text: 你是老师吗？, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:ma-yes-no] }
+- { id: clip:tts-b-nishixuesheng, source: elevenlabs, text: 你是学生。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:jiao-gives-name, zh:les:ma-yes-no] }
+- { id: clip:tts-b-nishixueshengma, source: elevenlabs, text: 你是学生吗？, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:ma-yes-no] }
+- { id: clip:tts-b-qingwen-nijiaoshenmemingzi, source: elevenlabs, text: 请问，你叫什么名字？, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-b-qingwen-ninjiaoshenmemingzi, source: elevenlabs, text: 请问，您叫什么名字？, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-b-renshinihengaoxing, source: elevenlabs, text: 认识你很高兴。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-b-renshinihengaoxing-wangming, source: elevenlabs, text: 认识你很高兴，王明。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-b-tajiaowangming, source: elevenlabs, text: 他叫王明。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:jiao-gives-name, zh:les:ma-yes-no] }
+- { id: clip:tts-b-tajiaowangmingma, source: elevenlabs, text: 他叫王明吗？, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:ma-yes-no] }
+- { id: clip:tts-b-tajiaozhangwei, source: elevenlabs, text: 他叫张伟。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:jiao-gives-name, zh:les:ma-yes-no] }
+- { id: clip:tts-b-tajiaozhangweima, source: elevenlabs, text: 他叫张伟吗？, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:ma-yes-no] }
+- { id: clip:tts-b-tashejiaolihong, source: elevenlabs, text: 她叫李红。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:ma-yes-no] }
+- { id: clip:tts-b-tashejiaolihongma, source: elevenlabs, text: 她叫李红吗？, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:ma-yes-no] }
+- { id: clip:tts-b-tasheshilaoshi, source: elevenlabs, text: 她是老师。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:ma-yes-no] }
+- { id: clip:tts-b-tasheshilaoshima, source: elevenlabs, text: 她是老师吗？, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:ma-yes-no] }
+- { id: clip:tts-b-tasheshixuesheng, source: elevenlabs, text: 她是学生。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:ma-yes-no] }
+- { id: clip:tts-b-tasheshixueshengma, source: elevenlabs, text: 她是学生吗？, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:ma-yes-no] }
+- { id: clip:tts-b-tashilaoshi, source: elevenlabs, text: 他是老师。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:jiao-gives-name, zh:les:ma-yes-no, zh:les:shi-links-nouns] }
+- { id: clip:tts-b-tashilaoshi-lihongshixuesheng, source: elevenlabs, text: 他是老师，李红是学生。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:shi-links-nouns] }
+- { id: clip:tts-b-tashilaoshi-wangmingshixuesheng, source: elevenlabs, text: 他是老师，王明是学生。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:shi-links-nouns] }
+- { id: clip:tts-b-tashilaoshi-woshixuesheng, source: elevenlabs, text: 他是老师，我是学生。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:shi-links-nouns] }
+- { id: clip:tts-b-tashilaoshima, source: elevenlabs, text: 他是老师吗？, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:ma-yes-no] }
+- { id: clip:tts-b-tashinitongxue, source: elevenlabs, text: 他是你同学。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:ma-yes-no] }
+- { id: clip:tts-b-tashinitongxuema, source: elevenlabs, text: 他是你同学吗？, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:ma-yes-no] }
+- { id: clip:tts-b-tashixuesheng, source: elevenlabs, text: 他是学生。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:jiao-gives-name, zh:les:ma-yes-no] }
+- { id: clip:tts-b-tashixuesheng-lihongshilaoshi, source: elevenlabs, text: 他是学生，李红是老师。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:shi-links-nouns] }
+- { id: clip:tts-b-tashixuesheng-wangmingshilaoshi, source: elevenlabs, text: 他是学生，王明是老师。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:shi-links-nouns] }
+- { id: clip:tts-b-tashixuesheng-woshilaoshi, source: elevenlabs, text: 他是学生，我是老师。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:shi-links-nouns] }
+- { id: clip:tts-b-tashixueshengma, source: elevenlabs, text: 他是学生吗？, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:ma-yes-no] }
+- { id: clip:tts-b-wangmingshilaoshi, source: elevenlabs, text: 王明是老师。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:jiao-gives-name, zh:les:ma-yes-no, zh:les:shi-links-nouns] }
+- { id: clip:tts-b-wangmingshilaoshi-lihongshixuesheng, source: elevenlabs, text: 王明是老师，李红是学生。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:shi-links-nouns] }
+- { id: clip:tts-b-wangmingshilaoshi-woshixuesheng, source: elevenlabs, text: 王明是老师，我是学生。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:shi-links-nouns] }
+- { id: clip:tts-b-wangmingshilaoshima, source: elevenlabs, text: 王明是老师吗？, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:ma-yes-no] }
+- { id: clip:tts-b-wangmingshinitongxue, source: elevenlabs, text: 王明是你同学。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:ma-yes-no] }
+- { id: clip:tts-b-wangmingshinitongxuema, source: elevenlabs, text: 王明是你同学吗？, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:ma-yes-no] }
+- { id: clip:tts-b-wangmingshixuesheng, source: elevenlabs, text: 王明是学生。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:jiao-gives-name] }
+- { id: clip:tts-b-wangmingshixuesheng-lihongshilaoshi, source: elevenlabs, text: 王明是学生，李红是老师。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:shi-links-nouns] }
+- { id: clip:tts-b-wangmingshixuesheng-woshilaoshi, source: elevenlabs, text: 王明是学生，我是老师。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:shi-links-nouns] }
+- { id: clip:tts-b-wojiaochenjing, source: elevenlabs, text: 我叫陈静。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:jiao-gives-name] }
+- { id: clip:tts-b-wojiaolihong, source: elevenlabs, text: 我叫李红。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:jiao-gives-name] }
+- { id: clip:tts-b-wojiaowangming, source: elevenlabs, text: 我叫王明。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:jiao-gives-name] }
+- { id: clip:tts-b-wojiaozhangwei, source: elevenlabs, text: 我叫张伟。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:jiao-gives-name] }
+- { id: clip:tts-b-woshilaoshi, source: elevenlabs, text: 我是老师。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:jiao-gives-name, zh:les:shi-links-nouns] }
+- { id: clip:tts-b-woshilaoshi-lihongshixuesheng, source: elevenlabs, text: 我是老师，李红是学生。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:shi-links-nouns] }
+- { id: clip:tts-b-woshilaoshi-tashixuesheng, source: elevenlabs, text: 我是老师，他是学生。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:shi-links-nouns] }
+- { id: clip:tts-b-woshilaoshi-wangmingshixuesheng, source: elevenlabs, text: 我是老师，王明是学生。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:shi-links-nouns] }
+- { id: clip:tts-b-woshilihong, source: elevenlabs, text: 我是李红。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:jiao-gives-name] }
+- { id: clip:tts-b-woshixuesheng, source: elevenlabs, text: 我是学生。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:jiao-gives-name, zh:les:shi-links-nouns] }
+- { id: clip:tts-b-woshixuesheng-lihongshilaoshi, source: elevenlabs, text: 我是学生，李红是老师。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:shi-links-nouns] }
+- { id: clip:tts-b-woshixuesheng-tashilaoshi, source: elevenlabs, text: 我是学生，他是老师。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:shi-links-nouns] }
+- { id: clip:tts-b-woshixuesheng-wangmingshilaoshi, source: elevenlabs, text: 我是学生，王明是老师。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:shi-links-nouns] }
+- { id: clip:tts-b-xiexie, source: elevenlabs, text: 谢谢！, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-b-xiexielaoshi, source: elevenlabs, text: 谢谢老师！, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-b-xiexieni, source: elevenlabs, text: 谢谢你！, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-b-xueshengjiaolihong, source: elevenlabs, text: 学生叫李红。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:jiao-gives-name] }
+- { id: clip:tts-b-xueshengjiaowangming, source: elevenlabs, text: 学生叫王明。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:jiao-gives-name] }
+- { id: clip:tts-b-xueshengjiaozhangwei, source: elevenlabs, text: 学生叫张伟。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:jiao-gives-name] }
+- { id: clip:tts-b-zaijian, source: elevenlabs, text: 再见！, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-b-zaijian-lihong, source: elevenlabs, text: 再见，李红！, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:meeting-someone] }
+- { id: clip:tts-b-zhangweishilaoshi, source: elevenlabs, text: 张伟是老师。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:jiao-gives-name, zh:les:ma-yes-no] }
+- { id: clip:tts-b-zhangweishilaoshima, source: elevenlabs, text: 张伟是老师吗？, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:ma-yes-no] }
+- { id: clip:tts-b-zhangweishixuesheng, source: elevenlabs, text: 张伟是学生。, voice: DowyQ68vDpgFYdWVGjc3, lessons: [zh:les:jiao-gives-name] }

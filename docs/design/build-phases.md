@@ -28,11 +28,11 @@ Everything runs locally until the systems work together. The pilot then moves to
 | 0.1a Each tone is a pitch shape | Sound | Mystery | C0 | 5 | A sound lesson, syllable audio, a contour figure |
 | 0.14b Checkpoint: tones and pairs | Checkpoint | none | C0 | 7 | Test-out and the checkpoint result |
 | 1.1a 是 links two nouns | Pattern | Discover | C0 | 6 | The core grammar lesson, with native AISHELL examples |
-| 1.1b 叫 gives your name | Pattern | Showdown | C0 | 5 | A second pattern lesson, so style differences show |
+| 1.1b 叫 gives your name | Pattern | Showdown | C0 | 8 | A second pattern lesson, so style differences show |
 | 1.1c Meeting someone | Clip | Story | C1 | 7 | A clip lesson and ElevenLabs dialogue |
 | 1.2a 吗 makes a yes-no question | Pattern | Showdown | C0 | 16 | A lesson built around a full `main` video (13:22) |
 
-**Totals:** 46 minutes, 21 words and 5 skill cards, with all four shapes and all four openers. Unit 1.1 is whole, so 1.2a's prereq holds. The rest of S0 is covered by self-report, the way the owner will really use it. 1.1b's `main` video is still `to find`; an agent finds it in Phase 1 under the README Video row's rules.
+**Totals:** 49 minutes, 21 words and 5 skill cards, with all four shapes and all four openers. Unit 1.1 is whole, so 1.2a's prereq holds. The rest of S0 is covered by self-report, the way the owner will really use it.
 
 **Not in the pilot:** formats C2–C8, parts-library scenes and the diagram renderer. They're built in Phase 7, after the style is set. A format's content rules come from the pilot; only its interaction is new.
 
@@ -48,7 +48,7 @@ The architecture's contracts stand, except for the changes below.
 
 ### 4.1 Contract changes
 
-These come from the spikes. Architecture revision 2.2 has the events and push contracts; the vocab card and check rules aren't in it yet.
+These come from the spikes and the Phase 1 plan. Architecture revision 2.3 has the events and push contracts and the toolchain changes; the vocab card and check rules live here.
 
 **Events** (`packages/core/events.ts`; spike D §3). TypeScript uses camelCase (`deviceSeq`) and the database uses snake_case (`device_seq`):
 
@@ -75,28 +75,28 @@ type EventDraft =
 create function public.push_events(batch jsonb) returns table (id text, error text)  -- idempotent; takes an advisory lock
 ```
 
-**Vocab card** (`languages/zh/logic/cards.ts`, compiled by `content:build`). It follows the README Vocab card format. One `voice` field makes a two-voice card impossible to express, and `image` makes "no image" a normal state:
+**Vocab card** (`packages/core/content.ts`, compiled by `content:build`). It follows the README Vocab card format. One `voice` field makes a two-voice card impossible to express, and `image` makes "no image" a normal state. `pending` means the image step hasn't run, because `no_candidate` would be false before Phase 5:
 
 ```ts
 interface VocabCard {
   itemId: ItemId
-  word: RubyToken[]                     // pinyin above each character
+  word: Token[]                         // pinyin above each character
   senses: string[]                      // 1–3, only those that apply where the word is learned
-  sentence: { tokens: RubyToken[]; target: [start: number, end: number]; translation: StringKey }
-  audio: { voice: SpeakerId; word: MediaId; sentence: MediaId }
-  image: { media: MediaId } | { none: 'no_candidate' | 'gate_failed' | 'hazard' }
+  sentence: { tokens: Token[]; target: [start: number, end: number]; translation: StrRef }
+  audio: { voice: string; word: MediaId; sentence: MediaId }
+  image: { media: MediaId } | { none: 'pending' | 'no_candidate' | 'gate_failed' | 'hazard' }
 }
 ```
 
-**Check rules** (`packages/content-tools`). These join the rule ids from spike E:
+**Check rules** (`packages/content-tools`). These join the rule ids from spike E. `AUD001` isn't named `MED002` because the TDD already uses that id, and `LIC001` absorbs the TDD's `MED003`:
 
 | Rule | Fails when |
 |---|---|
-| `DEP001` | An item's words, grammar or interleaved confusables aren't on its lesson's prereq path (brainstorm §4.5) |
+| `DEP001` | A word in an authored line isn't on its lesson's prereq path (brainstorm §4.5): the unit closure, earlier lessons in the unit, and the lesson's own words. S0's perception stimuli are exempt, and declared chunks and names are allowed |
 | `DEP002` | A lesson's target word isn't in that lesson's tier |
 | `VOC001` | A placement rule breaks (`check_vocab.py`'s list) |
-| `MED002` | A card's word and sentence audio have different voices, or a clip isn't at −20 LUFS |
-| `LIC001` | An image or clip has no source, author or license record |
+| `AUD001` | A card's word and sentence audio have different voices, or a clip isn't at −20 LUFS within tolerance (peak capping can land a clip under it) |
+| `LIC001` | An image or clip has no source, author or license record, or its source isn't allowed under that license |
 
 ### 4.2 Where each spike goes
 
@@ -119,7 +119,7 @@ interface VocabCard {
 | Database, auth, storage | Supabase CLI stack in Docker | Supabase Free |
 | Sign-in email | Captured by Mailpit (`supabase status` shows its URL); the code is read there | Real email codes |
 | App | Vite dev server | Cloudflare Pages |
-| Content and media | `content:build` uploads to the local bucket | CI uploads to the private bucket |
+| Content and media | `content:upload` (Node) sends the bundle and the ingester's cached media to the local bucket, with the secret key from `supabase status`. Python never touches the bucket | `content:upload` with the hosted key: CI for the bundle, the laptop for media |
 | Phone | Plain HTTP on the Wi-Fi network | The public URL |
 | Pipelines | Laptop | Laptop |
 
@@ -290,7 +290,7 @@ The pilot uses these defaults unless the owner says otherwise. Each is cheap to 
 
 | Needed by | Decision | Pilot default |
 |---|---|---|
-| Phase 1 | Definitions: CC-CEDICT, Wiktionary, LLM-written explanations checked automatically? | Yes |
+| Phase 1 | Definitions | The drafter chooses each word's 1–3 CC-CEDICT senses into an overlay (`content/zh/items/overrides/words.yaml`), and `VOC001` traces each to a real sense. Wiktionary is deferred: it has no license analysis yet |
 | Phase 5 | Card voice (README open decision 14) | One ElevenLabs v4 voice for word and sentence |
 | Phase 3 | Card grading (open decision 7) | 2 buttons, Again and Good |
 | Phase 3 | Do lesson trials touch FSRS? (TDD open question 2) | No: mastery evidence only |

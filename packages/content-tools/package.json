@@ -1,0 +1,26 @@
+{
+  "name": "@lang-learner/content-tools",
+  "private": true,
+  "type": "module",
+  "exports": { ".": "./index.ts" },
+  "scripts": {
+    "typecheck": "tsc -p .",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@lang-learner/core": "workspace:*",
+    "@supabase/supabase-js": "2.118.0",
+    "remark-directive": "3.0.1",
+    "remark-frontmatter": "5.0.0",
+    "remark-parse": "11.0.0",
+    "unified": "11.0.5",
+    "yaml": "2.9.1",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@types/mdast": "4.0.4",
+    "@types/node": "26.6.6",
+    "typescript": "6.0.3",
+    "vitest": "4.1.0"
+  }
+}

@@ -5,7 +5,7 @@ Usage (needs hsk30, wordfreq[cjk] and opencc-python-reimplemented):  python -I -
 Rank comes from OpenSubtitles 2018 zh_cn (hermitdave/FrequencyWords, CC BY-SA 4.0): film and TV subtitles,
 the closest open match to drama input, though mostly translated Western films. Traditional forms are converted
 to simplified and their counts merged. Tokens that aren't CC-CEDICT entries are dropped as segmenter or
-subtitle-file artifacts. Writes gaps-top<N>.tsv with only the words not already in ../hsk2025/words-l1-3.tsv;
+subtitle-file artifacts. Writes gaps-top<N>.tsv with only the words not already in content/zh/vocab/words-l1-3.tsv;
 rows with an empty `flags` column are the ones to place.
 """
 import collections
@@ -30,7 +30,7 @@ GLUE_FIRST = set("不没我你他她它这那很要会能想一两几每有别�
 GLUE_LAST = set("个了的们吗吧呢着过次种件位只条张本天年")
 
 hsk = set()
-with open(REPO / "sandbox/data/hsk2025/words-l1-3.tsv", encoding="utf-8") as f:
+with open(REPO / "content/zh/vocab/words-l1-3.tsv", encoding="utf-8") as f:
     for r in csv.DictReader(f, delimiter="\t"):
         hsk.add(r["word"])
 glosses = collections.defaultdict(list)  # simplified headword -> one gloss string per CC-CEDICT entry

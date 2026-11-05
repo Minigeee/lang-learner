@@ -6,7 +6,7 @@
   "engines": { "node": ">=24" },
   "scripts": {
     "dev": "pnpm --filter @lang-learner/web dev",
-    "check": "pnpm typecheck && pnpm lint && pnpm test",
+    "check": "pnpm typecheck && pnpm lint && pnpm test && pnpm content:check",
     "typecheck": "pnpm -r typecheck",
     "lint": "depcruise apps packages languages scripts && node scripts/check-core-cjk.mjs",
     "test": "pnpm -r test",
@@ -15,7 +15,11 @@
     "db:stop": "supabase stop",
     "db:reset": "supabase db reset && supabase seed buckets --local",
     "db:owner": "node scripts/create-owner.mjs",
-    "dev:env": "node scripts/write-web-env.mjs"
+    "dev:env": "node scripts/write-web-env.mjs",
+    "content:check": "node packages/content-tools/cli.ts check",
+    "content:build": "node packages/content-tools/cli.ts build",
+    "content:upload": "node packages/content-tools/cli.ts upload",
+    "content:suggest": "node packages/content-tools/cli.ts suggest"
   },
   "devDependencies": {
     "dependency-cruiser": "18.7.2",

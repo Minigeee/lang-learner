@@ -1,0 +1,3 @@
+test/fixtures/MED001/zh/lessons/shi-links-nouns.md:14 DEP001 "我是老师吗？" uses 吗, not on the path of 1.1a; add to cards, declare under chunks or names, or pick another line
+test/fixtures/MED001/zh/lessons/shi-links-nouns.md:14 MED001 no clip says "我是老师吗？"; nearest: 我是老师。 | 他是老师。
+test/fixtures/MED001/zh/lessons/shi-links-nouns.md:18 MED001 clip:a3-ta-laoshi-1 says "他是老师。", not "我是学生。"

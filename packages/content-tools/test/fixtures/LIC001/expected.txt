@@ -1,0 +1,4 @@
+test/fixtures/LIC001/zh/media/media.yaml:188 LIC001 clip:no-record: no license record "lic:unknown" in licenses.yaml
+test/fixtures/LIC001/zh/media/media.yaml:199 LIC001 clip:wrong-source: source yoyo isn't allowed under lic:apache-2-0, which covers aishell1, aishell3
+test/fixtures/LIC001/zh/media/media.yaml:210 LIC001 clip:unrestricted: rights.restriction is ""; lic:personal-use needs "personal-use-private-bucket"
+test/fixtures/_base/zh/items/overrides/words.yaml:16 REF001 zh:w:再见:zai4jian4 sentence: "clip:tts-zaijian-line" doesn't exist

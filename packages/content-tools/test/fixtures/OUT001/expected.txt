@@ -1,0 +1,2 @@
+test/fixtures/OUT001/zh/lessons/tone-shapes.md:1 STR002 (warn) no skill.pool, so zh:sc:tone-1234 gets no skill card yet
+test/fixtures/OUT001/zh/lessons/tone-shapes.md:25 OUT001 C1 asks for output level 1; "Sounds" allows 0

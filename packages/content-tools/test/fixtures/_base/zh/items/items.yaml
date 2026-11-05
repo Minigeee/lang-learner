@@ -1,0 +1,4 @@
+- { id: zh:sc:tone-1234, name: "name the tone of a single syllable" }
+- { id: zh:g:shi-links-nouns, name: "是 links two nouns" }
+- { id: zh:v:greetings, name: "greeting and intro chunks" }
+- { id: zh:g:eats, name: "吃 + food" }
