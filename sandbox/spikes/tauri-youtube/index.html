@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <title>YouTube in Tauri</title>
+    <style>
+      body { font: 14px system-ui, sans-serif; margin: 12px; background: #121110; color: #f0ece4; }
+      .player { width: 100%; max-width: 480px; aspect-ratio: 16 / 9; margin-bottom: 8px; }
+      pre { white-space: pre-wrap; font-size: 12px; }
+    </style>
+  </head>
+  <body>
+    <p id="origin"></p>
+    <h3>A: IFrame API, youtube.com</h3>
+    <div id="a" class="player"></div>
+    <h3>B: IFrame API, youtube-nocookie.com</h3>
+    <div id="b" class="player"></div>
+    <h3>C: plain iframe</h3>
+    <iframe id="c" class="player" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <pre id="log"></pre>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

@@ -8,14 +8,14 @@ Build one thin but complete version of every core system on a six-lesson pilot, 
 
 **The pilot's job is to settle the style.** Every later lesson copies what the pilot locks in: how an opener hooks, how long the I do runs, how examples and practice feel, what a card looks like, which voices and images work. Changing that across six lessons is cheap. Changing it across 194 isn't.
 
-Everything runs locally until the systems work together. The pilot then moves to the hosted free tiers for a short trial, and the [style gate](#61-style-gate) locks the style. A first batch of 30 lessons then builds the remaining formats and tests whether authoring scales, and the [scale check](#62-scale-check) decides on the last 158.
+Everything runs locally until the systems work together. The pilot then moves to daily use on the laptop and phone, syncing through Supabase Free, and the [style gate](#61-style-gate) locks the style. A first batch of 30 lessons then builds the remaining formats and tests whether authoring scales, and the [scale check](#62-scale-check) decides on the last 158.
 
 ## 2. Requirements
 
 - **Real code, not a demo.** The slice is built in the architecture's layout (`apps/web`, `packages/core`, `packages/content-tools`, `languages/zh`, `content/`, `tools/media-ingest`, `supabase/`). What passes the gate stays.
 - **Nothing depends on `sandbox/`.** Spike code is copied and rewritten into its production home (§4.2). Data that production needs is imported into `content/`.
 - **No manual curation.** Every content step is scripted or done by an agent and gated by automatic checks. The owner only spot-checks and judges feel.
-- **Same contracts locally and hosted.** The two environments differ only in environment variables, so nothing built locally has to be rebuilt for hosting.
+- **Same contracts in development and daily use.** The local and hosted databases differ only in the sync address and key in Settings, so nothing built for one has to be rebuilt for the other.
 - **Additive graph.** A gap the pilot exposes becomes a new unit or edge, not a reshuffle ([dependency review](lesson-plans/review-2026-11-03/README.md)).
 - **Cost:** $0 hosting with the ~$10 a month ceiling, plus the ElevenLabs Starter plan already in use.
 
@@ -69,10 +69,11 @@ type EventDraft =
   // the other kinds are unchanged; synced settings gain studyTz and dayStartHour
 ```
 
-**Push** (`supabase/migrations/`). Client inserts go through one serialized function, so `seq` can't commit out of order and skip a pull cursor (spike D, C1). It returns rejections, one row per event it refused:
+**Push and pull** (`supabase/migrations/`). Clients have no table access and no sign-in: both functions take the sync key, and the database stores only its hash. Inserts go through one serialized function, so `seq` can't commit out of order and skip a pull cursor (spike D, C1). Push returns rejections, one row per event it refused:
 
 ```sql
-create function public.push_events(batch jsonb) returns table (id text, error text)  -- idempotent; takes an advisory lock
+create function public.push_events(sync_key text, batch jsonb) returns table (id text, error text)  -- idempotent; takes an advisory lock
+create function public.pull_events(sync_key text, after_seq bigint, max_rows int) returns setof events
 ```
 
 **Vocab card** (`packages/core/content.ts`, compiled by `content:build`). It follows the README Vocab card format. One `voice` field makes a two-voice card impossible to express, and `image` makes "no image" a normal state. `pending` means the image step hasn't run, because `no_candidate` would be false before Phase 5:
@@ -112,22 +113,22 @@ interface VocabCard {
 | dependency-check | `packages/content-tools` (`DEP001`, `DEP002`, `VOC001`) | Rewritten against authored items, so it stops being noisy |
 | review-load | Stays in `sandbox/` | Rerun at the scale check with measured seconds per card |
 
-## 5. Local and hosted
+## 5. Development and daily use
 
-| Piece | Phases 0–5 (local) | Phase 6 on (hosted) |
+| Piece | Phases 2–4 (development) | Phase 5 on (daily use) |
 |---|---|---|
-| Database, auth, storage | Supabase CLI stack in Docker | Supabase Free |
-| Sign-in email | Captured by Mailpit (`supabase status` shows its URL); the code is read there | Real email codes |
-| App | Vite dev server | Cloudflare Pages |
-| Content and media | `content:upload` (Node) sends the bundle and the ingester's cached media to the local bucket, with the secret key from `supabase status`. Python never touches the bucket | `content:upload` with the hosted key: CI for the bundle, the laptop for media |
-| Phone | Plain HTTP on the Wi-Fi network | The public URL |
+| Sync database | Supabase CLI stack in Docker | Supabase Free, events only |
+| Access | The sync key, set in the app's settings | The same |
+| App | Tauri on Windows (`tauri dev`), and Vite in a browser for quick checks | Tauri builds for Windows and Android, installed directly |
+| Content and media | Bundled into the app by `content:build` | The same |
+| Phone | Not used | An Android build, installed over USB |
 | Pipelines | Laptop | Laptop |
 
-**Phone access.** The phone uses plain HTTP on the Wi-Fi network until the hosted launch (owner decision, 2026-11-04). Vite binds to the LAN and proxies `/supabase` to the local gateway, so the app sees one origin. Plain HTTP isn't a secure context, so service workers, PWA install and `crypto.subtle` aren't available on the phone before Phase 6. Those are tested on `localhost` on the laptop until then.
+**Why this shape** (README Stack row): a bundled Tauri app needs no hosting, sign-in or storage, and works offline from install. Only the events need a server, and a sync key is enough for one owner.
 
-YouTube may reject a plain-HTTP LAN origin. Phase 0 tries the embed on the phone. If it plays on `localhost` but not on the phone, that's a limit of this origin, so record it and settle the question on the real origin in Phase 6.
+**The phone waits for Phase 5.** The Android SDK is a heavy install, so it arrives once the app's main functions are ready to test on a phone. YouTube embeds play in the Windows build from its bundled origin; the Android check comes first in Phase 5.
 
-**Not installed yet:** the Supabase CLI and pnpm. Docker Desktop is installed. Leave Supabase analytics off, since on Windows it needs extra daemon setup ([Supabase CLI docs](https://supabase.com/docs/guides/local-development/cli/getting-started)).
+**Tooling:** Rust and the Visual Studio C++ tools are installed. The Android SDK, a JDK and the NDK are installed in Phase 5. Leave Supabase analytics off, since on Windows it needs extra daemon setup ([Supabase CLI docs](https://supabase.com/docs/guides/local-development/cli/getting-started)).
 
 ## 6. The two checkpoints
 
@@ -168,7 +169,7 @@ After Phase 7, with 36 lessons in use. The question is whether the locked style 
 | Do images work? | Cards with a passing image; wrong images among those shown, from a blind sample | ≥60%; ≤5% |
 | Is the review load sustainable? | Real seconds per card, retention and SRS minutes at ~17 new cards a day | ≤30 min a day; retention 0.85–0.95 |
 | Is the pace real? | `review-load` rerun with measured numbers | S1–S2 fits about 3 months (1,552 cards ÷ 90 days ≈ 17 a day) |
-| Does it fit the budget? | Storage and ElevenLabs use for 36 lessons × 5.4 | Under 1 GB, or R2 costed; inside the ceiling |
+| Does it fit the budget? | Storage and ElevenLabs use for 36 lessons × 5.4 | An app of about 150 MB or less; inside the ceiling |
 | Is it fast enough? | Derive on the phone | No visible stall |
 
 A miss means fixing that system and repeating that measurement before Phase 8.
@@ -187,7 +188,7 @@ Purpose: everything talks to everything, locally.
 - `apps/web`: sign-in, and the local store and remote adapters.
 - Phone access (§5).
 
-**Done when** a phone signs in, records an event that the laptop pulls, plays a clip from the local bucket and plays a YouTube embed.
+**Done when** a phone signs in, records an event that the laptop pulls, plays a clip from the local bucket and plays a YouTube embed. (Met on the laptop; the phone checks moved to Phase 5.)
 
 ### Phase 1: Content spine
 
@@ -202,14 +203,15 @@ Purpose: the pilot goes from source to compiled bundle with no manual step.
 
 ### Phase 2: Lesson player
 
-Purpose: a lesson plays the way the plans describe.
+Purpose: a lesson plays the way the plans describe, in the app shell it will ship in.
+- **Move to the decided stack first** (README Stack row): the Tauri shell around `apps/web`; `content:build` bundles content and media into the app, replacing `content:upload` and the bucket; the sync-key functions replace sign-in and table grants; Settings holds the sync address and key, with automatic and manual sync. Remove the sign-in screen, auth adapter, bucket policy and upload code.
 - Lesson arc, widget registry, trial runner, media adapter (AISHELL and TTS clips, YouTube, where a video counts once it starts, per the README Tracking row).
 - C0 and C1 widgets, and the pilot's figures.
 - Format intros on first appearance on the path. The checkpoint runner for 0.14b.
 - Evidence events, and derive v1 for lesson status and mastery.
 - A note button on every lesson step and card, stored as a `flag` event, so style reactions are captured in the moment.
 
-**Done when** all six lessons play on the phone, resume after the app is killed, and sync to the laptop.
+**Done when** all six lessons play in the Windows app, resume after the app is killed, and sync through the local database.
 
 ### Phase 3: Daily loop
 
@@ -219,7 +221,7 @@ Purpose: lessons feed cards, and the day runs itself.
 - New-card feed: lesson and unit words at the end card, prep with deadlines, the queue in frequency order, and the first-look step for queue words.
 - Session builder, settled day close, per-card cache.
 
-**Done when** the 15-minute bedtime flow works offline on the laptop (`localhost`), and spike D's two-device properties pass on the real code. The phone's offline check moves to Phase 6.
+**Done when** the 15-minute bedtime flow works offline in the Windows app, and spike D's two-device properties pass on the real code.
 
 ### Phase 4: Product surfaces
 
@@ -227,13 +229,13 @@ Purpose: every system has its screen.
 - Today, Path, Unit view and the graph map. Progress meters and Weekly review.
 - Item detail, the Watch log, test-out and self-report.
 - First-run setup, Settings, Credits, and the support-language toggle.
-- Service worker and offline cache, tested on `localhost`.
 
 **Done when** each screen in [app-ui-flow](app-ui-flow.md) works with the pilot's data, and a new account can self-report S0 and reach unit 1.1.
 
 ### Phase 5: Style pass
 
 Purpose: get the content right while it's cheap to change.
+- **Phone first:** install the Android SDK, JDK and NDK; build the Android app and install it over USB. Check that YouTube embeds play; if they don't, the fallback is opening the video in the YouTube app. Create the Supabase Free project and point both devices at it. This also closes Phase 0's phone checks.
 - Card images: finish the stopped spike on the pilot's real sentences, set the gate thresholds, and generate images for all 21 words.
 - Add about 20 S1 queue words, so the first-look step can be judged.
 - Use the pilot on the phone and work through the notes: rewrite lessons, cards, copy, pacing and voices, then rebuild.
@@ -241,13 +243,12 @@ Purpose: get the content right while it's cheap to change.
 
 **Done when** the owner has no open style notes, and is ready to try it as a daily routine.
 
-### Phase 6: Hosted trial
+### Phase 6: Daily trial
 
 Purpose: real conditions, on the real stack.
-- Create the Supabase project and Pages site, and apply migrations.
-- CI: check, build, upload, deploy.
-- Install the app on the phone, and check offline use and YouTube embeds on the real origin.
-- The weekly ping and backup, plus one restore drill from a dump.
+- CI: check, and build the Windows and Android apps.
+- Check offline use on the phone.
+- The weekly backup job, plus one restore drill: refill a fresh database from a device, and from a dump.
 - Confirm the AISHELL-1 terms, or use AISHELL-3 only.
 - Use the app daily for 7 days on phone and laptop, then work through the style gate.
 
