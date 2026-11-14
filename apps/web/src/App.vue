@@ -1,18 +1,25 @@
 <script setup lang="ts">
-import { onMounted, ref } from 'vue'
-import { currentSession, supabase } from './adapters/auth.ts'
-import Login from './screens/Login.vue'
-import Foundation from './screens/Foundation.vue'
+// Starts the app, then hands it to the shell.
+import { onMounted, ref, shallowRef } from 'vue'
+import { startApp, type App } from './app.ts'
+import { t } from './i18n/index.ts'
+import Shell from './Shell.vue'
 
-const signedIn = ref<boolean | null>(null)
+const app = shallowRef<App | null>(null)
+const failed = ref('')
 
 onMounted(async () => {
-  signedIn.value = (await currentSession()) !== null
-  supabase.auth.onAuthStateChange((_event, session) => { signedIn.value = session !== null })
+  try {
+    app.value = await startApp()
+  } catch (e) {
+    failed.value = e instanceof Error ? e.message : String(e)
+  }
 })
 </script>
 
 <template>
-  <Foundation v-if="signedIn" />
-  <Login v-else-if="signedIn === false" />
+  <Shell v-if="app" :app="app" />
+  <main v-else class="screen">
+    <p v-if="failed" class="error">{{ t("The app couldn't start: {x}", { x: failed }) }}</p>
+  </main>
 </template>

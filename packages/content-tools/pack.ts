@@ -18,6 +18,8 @@ export interface Placement {
   place: string
   /** Unit ids, optionally with a lesson letter, plus free words such as "pervasive". */
   neededBy: string[]
+  /** A queue word's place in its stage's frequency order, lowest first. */
+  rank?: number
   at: Loc
 }
 

@@ -1,6 +1,6 @@
 // Two-device scenario runner for the sync properties, ported from the sync-replay spike. The server
 // is simulated, because the property is about ordering under overlapping commits, which a real
-// database can't be driven through step by step. test/db/ checks the real one.
+// database can't be driven through step by step. apps/server's tests check the real one.
 import fc from 'fast-check'
 import { createEventLog, type EventEnvelope, type EventLog, type Rejection, type Remote } from '../index.ts'
 import { MemoryStore } from '../testing.ts'
@@ -17,7 +17,11 @@ export class MemoryServer {
   private nextSeq = 1
   private open: Txn[] = []
 
-  constructor(private mode: ServerMode) {}
+  private mode: ServerMode
+
+  constructor(mode: ServerMode) {
+    this.mode = mode
+  }
 
   /** A push stays open until `commit` runs. */
   begin(batch: EventEnvelope[], ack: () => void, lose: () => void) {
@@ -41,6 +45,12 @@ export class MemoryServer {
     else txn.ack()
   }
 
+  /** A device re-sends rows the server already acknowledged, as after a lost ack. */
+  repush(rows: EventEnvelope[]) {
+    this.begin(rows, () => undefined, () => undefined)
+    this.commit(this.open.length - 1)
+  }
+
   pull(cursor: number, limit: number) {
     return this.rows.filter((e) => e.seq! > cursor).slice(0, limit).map((e) => ({ ...e }))
   }
@@ -53,15 +63,18 @@ export interface Mutations {
 }
 
 /** Lets every in-memory promise chain run until it finishes or waits on an open push. */
-const tick = () => new Promise((resolve) => setImmediate(resolve))
+export const tick = () => new Promise((resolve) => setImmediate(resolve))
 
-class Device {
+export class Device {
   store: MemoryStore
   log: EventLog
   online = true
   skewMs = 0
+  /** This device's clock: the true time plus its skew. */
+  readonly now: () => number
 
   constructor(id: string, server: MemoryServer, clock: () => number, m: Mutations) {
+    this.now = () => clock() + this.skewMs
     this.store = new MemoryStore(id, m)
     const remote: Remote = {
       push: (batch) => {
@@ -75,7 +88,7 @@ class Device {
         return server.pull(cursor, limit)
       },
     }
-    this.log = createEventLog({ store: this.store, remote, clock: () => clock() + this.skewMs, build: 'test', pushBatch: 4, pullPage: 3 })
+    this.log = createEventLog({ store: this.store, remote, clock: this.now, build: 'test', pushBatch: 4, pullPage: 3 })
   }
 }
 

@@ -12,3 +12,8 @@ declare module '*.vue' {
   const component: DefineComponent
   export default component
 }
+
+interface ImportMetaEnv {
+  /** The content build this app reads, written by `pnpm content:build`. */
+  readonly VITE_CONTENT_BUILD?: string
+}

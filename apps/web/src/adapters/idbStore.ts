@@ -1,10 +1,10 @@
 import { newEventId, type DeviceMeta, type EventEnvelope, type LocalStore, type Rejection } from '@lang-learner/core'
 
-const VERSION = 1
+const VERSION = 2
 const META_KEY = 'device'
 const CURSOR_KEY = 'cursor'
 
-type Stores = 'events' | 'outbox' | 'meta' | 'dead'
+type Stores = 'events' | 'outbox' | 'meta' | 'dead' | 'derived'
 
 function request<T>(r: IDBRequest<T>): Promise<T> {
   return new Promise((resolve, reject) => {
@@ -22,13 +22,17 @@ function committed(tx: IDBTransaction): Promise<void> {
 
 function open(name: string): Promise<IDBDatabase> {
   const r = indexedDB.open(name, VERSION)
-  r.onupgradeneeded = () => {
+  r.onupgradeneeded = (e) => {
     const db = r.result
-    db.createObjectStore('events', { keyPath: 'id' })
-    // Auto-increment keys keep the outbox FIFO.
-    db.createObjectStore('outbox', { autoIncrement: true }).createIndex('id', 'id', { unique: true })
-    db.createObjectStore('meta')
-    db.createObjectStore('dead', { keyPath: 'id' })
+    if (e.oldVersion < 1) {
+      db.createObjectStore('events', { keyPath: 'id' })
+      // Auto-increment keys keep the outbox FIFO.
+      db.createObjectStore('outbox', { autoIncrement: true }).createIndex('id', 'id', { unique: true })
+      db.createObjectStore('meta')
+      db.createObjectStore('dead', { keyPath: 'id' })
+    }
+    // v2: derived caches, which are always safe to lose.
+    if (e.oldVersion < 2) db.createObjectStore('derived')
   }
   return request(r)
 }
@@ -102,5 +106,23 @@ export async function openIdbStore(name = 'lang-learner'): Promise<LocalStore> {
 
     events: () => request<EventEnvelope[]>(tx(['events']).objectStore('events').getAll()),
     deadLetters: () => request<Rejection[]>(tx(['dead']).objectStore('dead').getAll()),
+  }
+}
+
+/** A device cache of derived values, beside the log. Losing it costs a recompute, never data. */
+export interface DerivedCache {
+  load(key: string): Promise<unknown>
+  save(key: string, value: unknown): Promise<void>
+}
+
+export async function openIdbCache(name = 'lang-learner'): Promise<DerivedCache> {
+  const db = await open(name)
+  return {
+    load: (key) => request(db.transaction(['derived']).objectStore('derived').get(key)).catch(() => undefined),
+    async save(key, value) {
+      const t = db.transaction(['derived'], 'readwrite')
+      t.objectStore('derived').put(value, key)
+      await committed(t)
+    },
   }
 }

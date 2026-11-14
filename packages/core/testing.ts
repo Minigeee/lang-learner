@@ -8,9 +8,11 @@ export class MemoryStore implements LocalStore {
   private dead: Rejection[] = []
   private seqCursor = 0
   private device: DeviceMeta
+  private mutations: { keepLocalOnPull?: boolean; forgetStamps?: boolean }
 
-  constructor(deviceId: string, private mutations: { keepLocalOnPull?: boolean; forgetStamps?: boolean } = {}) {
+  constructor(deviceId: string, mutations: { keepLocalOnPull?: boolean; forgetStamps?: boolean } = {}) {
     this.device = { deviceId, deviceSeq: 0, lastStamp: -Infinity }
+    this.mutations = mutations
   }
 
   async meta() { return { ...this.device } }

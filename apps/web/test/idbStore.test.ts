@@ -1,7 +1,7 @@
 import 'fake-indexeddb/auto'
 import { describe, expect, it } from 'vitest'
 import { createEventLog, type EventEnvelope, type Remote } from '@lang-learner/core'
-import { openIdbStore } from '../src/adapters/idbStore.ts'
+import { openIdbCache, openIdbStore } from '../src/adapters/idbStore.ts'
 
 const remote: Remote = { push: async () => [], pull: async () => [] }
 let n = 0
@@ -60,5 +60,26 @@ describe('idbStore', () => {
     expect((await store.events())[0]).toEqual(server)
     await store.applyPulled([{ ...server, id: 'x', seq: 3 }])
     expect(await store.cursor()).toBe(7)
+  })
+
+  it('keeps a derived cache beside the log, and upgrades a v1 database without losing events', async () => {
+    const name = freshName()
+    await new Promise<void>((resolve) => {
+      const r = indexedDB.open(name, 1)
+      r.onupgradeneeded = () => {
+        const db = r.result
+        db.createObjectStore('events', { keyPath: 'id' }).put({ id: 'old', kind: 'flag' })
+        db.createObjectStore('outbox', { autoIncrement: true }).createIndex('id', 'id', { unique: true })
+        db.createObjectStore('meta')
+        db.createObjectStore('dead', { keyPath: 'id' })
+      }
+      r.onsuccess = () => { r.result.close(); resolve() }
+    })
+    const store = await openIdbStore(name)
+    expect((await store.events()).map((e) => e.id)).toEqual(['old'])
+    const cache = await openIdbCache(name)
+    expect(await cache.load('cards')).toBeUndefined()
+    await cache.save('cards', { version: 'v', cards: [1] })
+    expect(await (await openIdbCache(name)).load('cards')).toEqual({ version: 'v', cards: [1] })
   })
 })

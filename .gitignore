@@ -10,8 +10,7 @@ sandbox/data/frequency/zh_cn_50k.txt
 # Workspace
 node_modules/
 dist/
-supabase/.temp/
-supabase/.branches/
+.data/
 
 # Media ingest
 tools/media-ingest/.venv/

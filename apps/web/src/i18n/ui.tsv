@@ -1,21 +1,269 @@
 en	zh-Hans
-Sign in
-Email
-Send code
-Enter the code we sent to {email}.
-Code
-Use a different email
-Foundation check
-Device
-Outbox
-Cursor
-Dead letters
-Record note
-Sync now
-Synced
-Offline: will sync later
-Play clip
-Sign out
-Events
-Play pilot clip	
-Lessons	
+A big day	
+A few minutes most days adds up. When will you usually study?	
+A full day	
+A little	
+A new day starts at	
+About {n} min	
+Add a note	
+Add to my reviews	
+After dinner	
+After I get into bed	
+After I get into bed, I’ll do a 15-minute session	
+Again	
+Again, in a new voice	
+Already know {x}?	
+Also today	
+Audio and data	
+Back	
+Backup	
+Build {x}	
+Builds on	
+Builds on everything before this stage.	
+Builds on {x}	
+Cards	卡片
+Cards added	
+Change	
+Character	
+Characters	
+Check	
+Close	
+Close lesson	
+Comes back later in a new voice	
+Compare	
+Consistency	
+Continue	继续
+Continue: {x}	
+Couldn't reach the server. Try again when you're online.	
+Counted	
+Credits	
+Credits and licenses	
+Current	
+Days in the last {d}	
+Days studied this week	
+Different voices, same idea. Tap a line to hear it again and see what it means.	
+Do you already know the sounds?	
+Done	
+Dual	
+Earlier	
+EN	
+English	
+Episode (optional)	
+Examples	
+Export your history	
+Familiar	
+Familiar or better	
+Fewer	
+First	
+first tries right	
+Fold	
+Fonts and software	
+Go deeper	
+Go straight to practice.	
+Good	
+Grammar	
+Grammar point	
+Half	
+Hear it again	
+Hear it and think of the meaning. Then show it and say whether you knew it.	
+Hear it in action	
+Hear it, then tap the answer.	
+Hear these again	
+Heard in	
+Hide text	
+History	
+How did you watch?	
+How it works	
+How long do you have?	
+How much did you follow?	
+I already know this	
+I knew it	
+I know them: mark {x} as known	
+I know this	
+In progress	
+In your reviews	
+Items	
+Later	
+Leads to	
+Leads to {x}	
+Learning	
+Lesson	
+Lesson {i} of {n}	
+Lessons	课程
+lessons	
+Lessons finished	
+Lessons you mark count as known on your path. Every lesson stays open.	
+Level {i} of {n}	
+Line {i} of {n} · tap a word for its meaning	
+Listen	
+Listen for it. Nothing here is scored.	
+Listening	
+Listening, all time	
+Log something you watched	
+Log watching	
+Logged {n} min	
+Map	
+Mark as done	
+Mark as known	
+Mark removed	
+Mark watched	
+Marked as done	
+Marked as known	
+Mastered	
+Meaning	
+Minutes	
+More	
+More words for this	
+More words from the word list arrive with a later update.	
+Most	
+New	
+New way to practice	
+New word	
+New words	
+Next	
+Next line	
+Next mark: {n} h	
+Next review in {n} days	
+Next review tomorrow	
+Next: {x}	
+No reviews are due, and no lesson fits {n} minutes.	
+No subs	
+No unit {u}.	
+None	
+Not accepted: {x}	
+Not met yet	
+Not quite. That was {answer}.	
+Not yet	
+Not yet available	
+Note on this step	
+Note saved	
+Nothing is due right now. Pick a longer time for a lesson.	
+Nothing planned for now	
+Offline. Your progress is saved here and syncs later.	
+On my commute	
+One recording	
+Open	
+Open lesson	
+Open {x}	
+Optional · {n} min	
+Or just mark it as known	
+Path	路线
+Pausing	
+Pick one	
+Picked	
+Play	
+Play again	
+Play all	
+Playing {i} of {n}	
+Practice	
+Previous line	
+Progress	进度
+Puzzle	
+Read along	
+Ready	
+Recall	
+Recent	
+Remove the mark	
+Replay line	
+Restore from a file	
+Restoring…	
+Resume	
+Resume {x}	
+Review time per day	
+reviews	
+Reviews past this wait for another day.	
+right on the first try	
+Save	
+Save note	
+Second	
+See its lessons	
+Sends a backup to the server. Anything it already has is skipped.	
+Sent {n} events to the server	
+Sent {n} events; {r} were refused	
+Sentence	
+Settings	设置
+Show	
+Show text	
+Show the meaning	
+Shows you log appear here, so logging one again is a tap.	
+Skip	
+Solid	
+Some	
+Sound	
+Sound practice	
+Sounds	
+Spot the pattern	
+Start	
+Start from the beginning	
+Start {n} min	
+Start {x}	
+Step {i} of {n}	
+Straight	
+Study	
+Subtitles	
+Support language	
+Sync	
+Sync now	
+Synced	
+Syncing…	
+Take the check	
+Take the check instead	
+Taught in	
+That’s the session	
+The app couldn't start: {x}	
+The big number counts what you know at Familiar or better.	
+The first stage, {x}, covers tones and pinyin. If you know them, mark it known and start with the first words. You can open any of its lessons later.	
+The idea you practiced	
+The idea you practiced, as a quick review	
+The map couldn't load here.	
+These count as known, so the lessons that teach them are marked as known.	
+This video needs a connection. You can come back to it.	
+This week	
+Time split	
+Time zone	
+Today	今天
+Tone {n}	
+Tonight counts	
+Undo	
+Unit {u}	
+Units	
+Untranslated text stays in English.	
+Up for review	
+Up next · unit {u}	
+Use {x}	
+Video lesson	
+Watch	观看
+Watch a video	
+Watching	
+Week of {d}	
+Weekly review	
+Welcome	
+What did you watch?	
+What do you notice?	
+What you know	
+When	
+With my morning coffee	
+Word	
+Words	
+Worth another look	
+Yesterday	
+Your check	
+Your notes	
+Your plan	
+Your week	
+{d} of {n} lessons	
+{i} of {n}	
+{n} audio files	
+{n} events, as one file	
+{n} h	
+{n} learning	
+{n} min	
+{n} min reviews	
+{n} min today	
+{n} min video	
+{n} of the last {d} days	
+{n} recordings	
+{n} to sync	
+{right} of {n}	
+{x} this week	
+{x} · done or known	

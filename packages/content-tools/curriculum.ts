@@ -1,11 +1,8 @@
 // The shape of content/<lang>/curriculum.ts, and the graph questions asked of it.
-import type { CurriculumLesson, CurriculumUnit, ItemId, LessonId } from '@lang-learner/core'
+import type { CurriculumLesson, CurriculumUnit, LessonId } from '@lang-learner/core'
 
 /** `authored` isn't stored: it's derived from the lesson's file existing. */
-export interface SourceLesson extends Omit<CurriculumLesson, 'authored'> {
-  /** The skill the lesson teaches, or null when it teaches none of its own. */
-  skill: ItemId | null
-}
+export type SourceLesson = Omit<CurriculumLesson, 'authored'>
 
 export interface SourceUnit extends Omit<CurriculumUnit, 'lessons'> {
   lessons: SourceLesson[]

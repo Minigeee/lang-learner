@@ -30,6 +30,7 @@ export function loadVocab(dir: string): Placement[] {
     tier: r.fields.tier as Placement['tier'],
     place: r.fields.place ?? '',
     neededBy: (r.fields.needed_by ?? '').split(' ').filter(Boolean),
+    ...(r.fields.rank ? { rank: Number(r.fields.rank) } : {}),
     at: { file: r.file, line: r.line },
   }))
 }

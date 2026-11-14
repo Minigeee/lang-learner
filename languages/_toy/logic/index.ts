@@ -5,4 +5,6 @@ export const toy = {
   name: 'Toy',
   normalize: (s: string) => s.toLowerCase(),
   itemKinds: ['glyph'],
+  displayReading: (reading: string) => reading.toUpperCase(),
+  rubySegments: (token: { s: string; r?: string }) => [{ s: token.s, r: token.r?.toUpperCase() ?? '' }],
 }

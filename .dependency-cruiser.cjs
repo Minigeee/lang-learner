@@ -16,6 +16,27 @@ module.exports = {
       to: { path: '^apps/|(^|/)@?vue(/|$)' },
     },
     {
+      name: 'views-import-only-core-and-vue',
+      comment: 'A language views package imports only packages/core and Vue, never the app.',
+      severity: 'error',
+      from: { path: '^languages/[^/]+/views/' },
+      to: { path: '^apps/' },
+    },
+    {
+      name: 'server-imports-only-core',
+      comment: 'apps/server imports only packages/core, and never Vue, a pack or the web app.',
+      severity: 'error',
+      from: { path: '^apps/server/' },
+      to: { path: '^(apps/web|languages)/|(^|/)@?vue(/|$)' },
+    },
+    {
+      name: 'app-never-imports-server',
+      comment: 'The web app reaches the server only over HTTP. Its tests may start one.',
+      severity: 'error',
+      from: { path: '^apps/web/src/' },
+      to: { path: '^apps/server/' },
+    },
+    {
       name: 'packs-stay-apart',
       severity: 'error',
       from: { path: '^languages/([^/]+)/' },

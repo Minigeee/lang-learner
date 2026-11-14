@@ -3,20 +3,23 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite --host",
+    "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "typecheck": "vue-tsc --noEmit",
-    "test": "vitest run --exclude \"test/db/**\"",
-    "test:db": "vitest run test/db"
+    "test": "vitest run"
   },
   "dependencies": {
     "@fontsource/lexend": "5.3.0",
+    "@fontsource/noto-serif-sc": "5.3.1",
     "@lang-learner/core": "workspace:*",
     "@lang-learner/lang-zh": "workspace:*",
-    "@supabase/supabase-js": "2.118.0",
+    "@lang-learner/lang-zh-views": "workspace:*",
+    "@tabler/icons-vue": "3.50.0",
+    "cytoscape": "3.34.4",
     "vue": "3.5.44"
   },
   "devDependencies": {
+    "@lang-learner/server": "workspace:*",
     "@types/node": "26.6.6",
     "@vitejs/plugin-vue": "6.0.10",
     "fake-indexeddb": "6.2.7",

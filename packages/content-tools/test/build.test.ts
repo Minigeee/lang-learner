@@ -1,13 +1,12 @@
-import { mkdirSync, mkdtempSync, readFileSync, writeFileSync } from 'node:fs'
+import { existsSync, mkdirSync, mkdtempSync, readFileSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import type { CompiledLesson, CurriculumStage, MediaBundle, VocabCard } from '@lang-learner/core'
+import type { CompiledLesson, CurriculumStage, FeedEntry, MediaBundle, VocabCard } from '@lang-learner/core'
 import { describe, expect, it } from 'vitest'
 import { addStrings, compile, writeBundle, type Bundle } from '../compile.ts'
 import { loadProject } from '../project.ts'
 import { countWords } from '../rules/structure.ts'
 import { suggest } from '../suggest.ts'
-import { uploadBuild, type Bucket } from '../upload.ts'
 
 const options = { root: 'test/fixtures/_base', overlay: 'test/fixtures/pass' }
 const scratch = () => mkdtempSync(join(tmpdir(), 'content-tools-'))
@@ -80,12 +79,28 @@ describe('compile', () => {
     expect(card.sentence.tokens.slice(start, end).map((t) => t.s).join('')).toBe('学生')
   })
 
-  it('marks authored lessons and expands stage assumptions in the curriculum', async () => {
+  it('lists the feed in rank order, with a card only for words the overlay gives one', async () => {
+    const project = await loadProject(options)
+    expect(read<FeedEntry[]>(compile(project), 'feed')).toEqual([
+      { tier: 'queue', word: '吃', stage: 'S1', rank: 1 },
+      { tier: 'queue', word: '饭', stage: 'S1', rank: 2 },
+    ])
+    // A queue word that gains a card in words.yaml becomes feedable, and its card ships.
+    const xuesheng = project.words.get('zh:w:学生:xue2sheng5')!
+    project.words.set('zh:w:吃:chi1', { ...xuesheng, id: 'zh:w:吃:chi1', target: '学生' })
+    const bundle = compile(project)
+    expect(read<FeedEntry[]>(bundle, 'feed')[0]).toEqual({ tier: 'queue', word: '吃', card: 'zh:w:吃:chi1', stage: 'S1', rank: 1 })
+    expect(read<VocabCard[]>(bundle, 'cards').map((c) => c.itemId)).toContain('zh:w:吃:chi1')
+  })
+
+  it('marks authored lessons, keeps direct prerequisites, and names the stages a stage assumes', async () => {
     const bundle = compile(await loadProject(options))
     const stages = read<CurriculumStage[]>(bundle, 'curriculum')
     const unit = stages[2]!.units[0]!
-    expect(unit.prereqs).toEqual(['1.1', '1.2'])
-    expect(unit.lessons[0]).toMatchObject({ id: 'zh:les:eats', authored: true })
+    expect(unit.prereqs).toEqual([])
+    expect(stages[2]!.assumes).toEqual(['S1'])
+    expect(stages[1]!.units.map((u) => u.id)).toEqual(['1.1', '1.2'])
+    expect(unit.lessons[0]).toMatchObject({ id: 'zh:les:eats', authored: true, skill: expect.any(String) })
   })
 
   it('reports no authored lessons cleanly', async () => {
@@ -112,39 +127,27 @@ describe('word budgets', () => {
   })
 })
 
-describe('upload', () => {
-  const fakeBucket = (present: Record<string, string[]> = {}) => {
-    const puts: string[] = []
-    const bucket: Bucket = {
-      list: async (folder) => new Set(present[folder] ?? []),
-      put: async (path) => void puts.push(path),
-    }
-    return { bucket, puts }
-  }
+describe('writeBundle', () => {
+  const mediaKeys = (bundle: Bundle) => Object.values(read<MediaBundle>(bundle, 'media').files).map((f) => f.key)
 
-  it('sends the manifest last and skips what is already there', async () => {
+  it('writes the manifest, the files and every referenced audio file', async () => {
     const bundle = compile(await loadProject(options))
-    const distDir = join(scratch(), 'dist')
-    writeBundle(bundle, distDir)
     const mediaDir = scratch()
-    writeFileSync(join(mediaDir, 'aaaa.opus'), 'a')
-    writeFileSync(join(mediaDir, 'bbbb.opus'), 'b')
-    const [firstFile] = [...bundle.files.keys()].sort()
-    const { bucket, puts } = fakeBucket({ 'content/files': [firstFile!], media: ['aaaa.opus'] })
-    const result = await uploadBuild(bucket, { distDir, mediaDir, mediaKeys: ['media/aaaa.opus', 'media/bbbb.opus'] })
-    expect(puts.at(-1)).toBe(`content/builds/${bundle.manifest.build}.json`)
-    expect(puts).toContain('media/bbbb.opus')
-    expect(puts).not.toContain('media/aaaa.opus')
-    expect(puts).not.toContain(`content/files/${firstFile}`)
-    expect(result).toMatchObject({ build: bundle.manifest.build, skipped: 2 })
+    for (const key of mediaKeys(bundle)) writeFileSync(join(mediaDir, key.replace(/^media\//, '')), key)
+    const outDir = join(scratch(), 'content')
+    writeBundle(bundle, outDir, mediaDir)
+    expect(existsSync(join(outDir, 'builds', `${bundle.manifest.build}.json`))).toBe(true)
+    for (const name of bundle.files.keys()) expect(existsSync(join(outDir, 'files', name))).toBe(true)
+    for (const key of mediaKeys(bundle)) expect(readFileSync(join(outDir, key), 'utf8')).toBe(key)
   })
 
-  it('refuses to publish a build whose media is missing', async () => {
-    const distDir = join(scratch(), 'dist')
-    writeBundle(compile(await loadProject(options)), distDir)
-    const { bucket, puts } = fakeBucket()
-    await expect(uploadBuild(bucket, { distDir, mediaDir: scratch(), mediaKeys: ['media/gone.opus'] })).rejects.toThrow('gone.opus')
-    expect(puts.some((p) => p.startsWith('content/builds/'))).toBe(false)
+  it('writes nothing when a referenced audio file is missing', async () => {
+    const bundle = compile(await loadProject(options))
+    const outDir = join(scratch(), 'content')
+    mkdirSync(outDir)
+    writeFileSync(join(outDir, 'keep.txt'), 'old build')
+    expect(() => writeBundle(bundle, outDir, scratch())).toThrow(mediaKeys(bundle)[0]!)
+    expect(readFileSync(join(outDir, 'keep.txt'), 'utf8')).toBe('old build')
   })
 })
 

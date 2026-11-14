@@ -1,0 +1,19 @@
+{
+  "name": "@lang-learner/server",
+  "private": true,
+  "type": "module",
+  "exports": { ".": "./http.ts" },
+  "scripts": {
+    "start": "node main.ts",
+    "typecheck": "tsc -p .",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@lang-learner/core": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.6",
+    "typescript": "6.0.3",
+    "vitest": "4.1.0"
+  }
+}

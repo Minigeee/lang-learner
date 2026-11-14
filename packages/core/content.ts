@@ -33,7 +33,7 @@ export interface Clip {
 /** The `media` bundle file. */
 export interface MediaBundle {
   clips: Clip[]
-  /** Where each audio file sits in the private bucket. */
+  /** Each audio file's path under the build's content root, such as `media/<hash>.opus`. */
   files: Record<MediaId, { key: string; bytes: number }>
 }
 
@@ -116,13 +116,28 @@ export interface VocabCard {
   image: { media: MediaId } | { none: 'pending' | 'no_candidate' | 'gate_failed' | 'hazard' }
 }
 
+/**
+ * An entry in the `feed` bundle file: a word no lesson cards, fed into the reviews by the new-card
+ * budget (README Vocabulary placement). `card` names the word's item when the build has its card;
+ * until then the word can't be fed. `word` is target text, for display only.
+ */
+export type FeedEntry =
+  /** A prep word: fed once a lesson of unit `during` has started, and needed by unit `dueBy`. */
+  | { tier: 'prep'; word: string; card?: ItemId; during: string; dueBy: string }
+  /** A frequency-queue word: fed in `rank` order once a lesson of its stage has started. */
+  | { tier: 'queue'; word: string; card?: ItemId; stage: string; rank: number }
+
 /** An entry in the `items` bundle file: every item the bundle's lessons and lines refer to. */
 export interface CompiledItem {
   id: ItemId
   /** A skill's display name. */
   name?: StrRef
+  /** A word's written form: target text, never translated. */
+  text?: string
   /** A word's glosses: its chosen senses when it has a card, else the dictionary's. */
   senses?: string[]
+  /** A word's citation reading, in the pack's stored form. */
+  reading?: string
 }
 
 /** An entry in the `credits` bundle file. */
@@ -142,6 +157,8 @@ export interface CurriculumLesson {
   title: string
   shape: Shape
   minutes: number
+  /** The skill the lesson teaches, or null when it teaches none of its own (a checkpoint). */
+  skill: ItemId | null
   /** False until the lesson has a file. An unauthored lesson still resolves in the graph. */
   authored: boolean
 }
@@ -158,6 +175,8 @@ export interface CurriculumUnit {
 export interface CurriculumStage {
   id: string
   title: string
+  /** Earlier stages every unit here relies on in full, beyond its units' direct prerequisites. */
+  assumes: string[]
   units: CurriculumUnit[]
 }
 

@@ -1,4 +1,4 @@
-// Sets one line of apps/web/.env.local and keeps the others, since more than one tool writes there.
+// Sets one line of apps/web/.env.local and keeps the others, so a hand-set line survives a content build.
 import { existsSync, readFileSync, writeFileSync } from 'node:fs'
 
 const FILE = 'apps/web/.env.local'

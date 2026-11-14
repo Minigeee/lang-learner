@@ -1,5 +1,5 @@
 import { deterministicUuid, newEventId } from './ids.ts'
-import { stamp, type DeviceMeta, type EventDraft, type EventEnvelope, type StampOptions } from './events.ts'
+import { stamp, stampTime, type DeviceMeta, type EventDraft, type EventEnvelope, type StampOptions } from './events.ts'
 
 /** The server refused this event for good, so it must never block the queue. */
 export interface Rejection {
@@ -30,15 +30,18 @@ export interface LocalStore {
 export interface Remote {
   /** Idempotent: an id the server already has is skipped. Resolves to the events it refused. */
   push(batch: EventEnvelope[]): Promise<Rejection[]>
-  /** Events with `seq > afterSeq`, in seq order, at most `limit`. */
+  /** Events with `seq > afterSeq`, in seq order, at most `limit` and possibly fewer. Empty means caught up. */
   pull(afterSeq: number, limit: number): Promise<EventEnvelope[]>
 }
 
 export type FlushResult = { ok: true; pushed: number; pulled: number } | { ok: false; error: unknown }
 
 export interface EventLog {
-  /** Resolves once the event is durable on this device. */
-  record(draft: EventDraft, o?: Pick<StampOptions, 'lang' | 'notBefore'> & { id?: string }): Promise<EventEnvelope>
+  /**
+   * Resolves once the event is durable on this device. A draft may be a function of the event's final
+   * `occurredAt`, for payloads that depend on when they're stamped, such as a review.
+   */
+  record(draft: EventDraft | ((occurredAt: number) => EventDraft), o?: Pick<StampOptions, 'lang' | 'notBefore'> & { id?: string }): Promise<EventEnvelope>
   /** Records this device's `hello`, once per device, so other devices know to wait for it. */
   hello(): Promise<EventEnvelope>
   /** Pushes the outbox, then pulls until caught up. Concurrent calls share one run. Never rejects. */
@@ -62,15 +65,14 @@ export function createEventLog(deps: {
   const record: EventLog['record'] = (draft, o = {}) => {
     const now = clock()
     const id = o.id ?? newEventId(now)
-    return store.append(id, (meta) =>
-      stamp(meta, draft, {
-        id,
-        now,
-        build,
-        ...(o.lang !== undefined && { lang: o.lang }),
-        ...(o.notBefore !== undefined && { notBefore: o.notBefore }),
-      }),
-    )
+    const options: StampOptions = {
+      id,
+      now,
+      build,
+      ...(o.lang !== undefined && { lang: o.lang }),
+      ...(o.notBefore !== undefined && { notBefore: o.notBefore }),
+    }
+    return store.append(id, (meta) => stamp(meta, typeof draft === 'function' ? draft(stampTime(meta, options)) : draft, options))
   }
 
   async function run(): Promise<FlushResult> {
@@ -85,10 +87,11 @@ export function createEventLog(deps: {
       }
       let pulled = 0
       for (;;) {
+        // A short page isn't the end: only an empty one says the device has caught up.
         const rows = await remote.pull(await store.cursor(), pullPage)
-        if (rows.length > 0) await store.applyPulled(rows)
+        if (rows.length === 0) break
+        await store.applyPulled(rows)
         pulled += rows.length
-        if (rows.length < pullPage) break
       }
       return { ok: true, pushed, pulled }
     } catch (error) {

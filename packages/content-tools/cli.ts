@@ -1,20 +1,16 @@
-// The content toolchain: pnpm content:check | content:build | content:upload | content:suggest <slug>
+// The content toolchain: pnpm content:check | content:build | content:suggest <slug>
 // Run from the repo root. `--root` and `--overlay` point it at another content tree, as the fixtures do.
-import { createClient } from '@supabase/supabase-js'
 import type { LessonId } from '@lang-learner/core'
-import { supabaseStatus } from '../../scripts/supabase-env.mjs'
 import { setWebEnv } from '../../scripts/web-env.mjs'
 import { runRules } from './check.ts'
 import { addStrings, compile, writeBundle } from './compile.ts'
 import { format } from './diag.ts'
 import { loadProject, type Project } from './project.ts'
 import { suggest } from './suggest.ts'
-import { uploadBuild, type Bucket } from './upload.ts'
 
 const DIST = 'dist/content'
 const MEDIA_CACHE = 'tools/media-ingest/.cache/out'
 const TRANSCRIPTS = 'tools/media-ingest/.cache/transcripts'
-const BUCKET = 'private'
 
 const [command, ...args] = process.argv.slice(2)
 const flag = (name: string) => {
@@ -34,28 +30,6 @@ async function checked(): Promise<Project> {
   return project
 }
 
-function storageBucket(): Bucket {
-  const { API_URL, SECRET_KEY } = supabaseStatus()
-  if (!API_URL || !SECRET_KEY) throw new Error('No secret key. Is the stack running? Try `pnpm db:start`.')
-  const storage = createClient(API_URL, SECRET_KEY).storage.from(BUCKET)
-  const pageSize = 1000
-  return {
-    async list(folder) {
-      const names = new Set<string>()
-      for (let offset = 0; ; offset += pageSize) {
-        const { data, error } = await storage.list(folder, { limit: pageSize, offset })
-        if (error) throw new Error(`Can't list ${folder}: ${error.message}`)
-        for (const f of data) names.add(f.name)
-        if (data.length < pageSize) return names
-      }
-    },
-    async put(path, body, contentType) {
-      const { error } = await storage.upload(path, body, { contentType })
-      if (error) throw new Error(`Can't upload ${path}: ${error.message}`)
-    },
-  }
-}
-
 async function main() {
   switch (command) {
     case 'check':
@@ -64,17 +38,10 @@ async function main() {
     case 'build': {
       const project = await checked()
       const bundle = compile(project)
-      writeBundle(bundle, DIST)
+      writeBundle(bundle, DIST, MEDIA_CACHE)
       const added = addStrings(project.paths.strings, bundle.strings)
       setWebEnv('VITE_CONTENT_BUILD', bundle.manifest.build)
       console.log(`build ${bundle.manifest.build}: ${Object.keys(bundle.manifest.lessons).length} lesson(s), ${bundle.files.size} file(s), ${added} new string(s)`)
-      return
-    }
-    case 'upload': {
-      const project = await checked()
-      const mediaKeys = [...project.clips.values()].map((c) => c.file.key)
-      const result = await uploadBuild(storageBucket(), { distDir: DIST, mediaDir: MEDIA_CACHE, mediaKeys })
-      console.log(`build ${result.build}: ${result.uploaded} uploaded, ${result.skipped} already there`)
       return
     }
     case 'suggest': {
@@ -92,7 +59,7 @@ async function main() {
       return
     }
     default:
-      throw new Error('Usage: cli.ts check | build | upload | suggest <lesson-slug>')
+      throw new Error('Usage: cli.ts check | build | suggest <lesson-slug>')
   }
 }
 

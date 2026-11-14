@@ -14,8 +14,17 @@ const table = new Map(rows.map((row) => {
 
 export const locale = ref<Locale>('en')
 
+const lookup = (en: string) => table.get(en)?.[locale.value] || en
+
 /** Translates an English support string and fills {placeholders}. */
 export function t(en: string, vars: Record<string, string | number> = {}): string {
-  const text = table.get(en)?.[locale.value] || en
-  return text.replace(/\{(\w+)\}/g, (m, k: string) => (k in vars ? String(vars[k]) : m))
+  return lookup(en).replace(/\{(\w+)\}/g, (m, k: string) => (k in vars ? String(vars[k]) : m))
+}
+
+/** Like t(), but in parts, so a placeholder holding target text can get its own styling. */
+export function tp(en: string, vars: Record<string, string>): { text: string; isVar: boolean }[] {
+  return lookup(en).split(/(\{\w+\})/).filter(Boolean).map((part) => {
+    const k = /^\{(\w+)\}$/.exec(part)?.[1]
+    return k !== undefined && k in vars ? { text: vars[k]!, isVar: true } : { text: part, isVar: false }
+  })
 }

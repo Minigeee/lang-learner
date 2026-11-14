@@ -3,27 +3,22 @@
   "private": true,
   "type": "module",
   "packageManager": "pnpm@12.16.1",
-  "engines": { "node": ">=24" },
+  "engines": {
+    "node": ">=24"
+  },
   "scripts": {
-    "dev": "pnpm --filter @lang-learner/web dev",
+    "dev": "node scripts/dev.mjs",
     "check": "pnpm typecheck && pnpm lint && pnpm test && pnpm content:check",
     "typecheck": "pnpm -r typecheck",
     "lint": "depcruise apps packages languages scripts && node scripts/check-core-cjk.mjs",
     "test": "pnpm -r test",
-    "test:db": "pnpm --filter @lang-learner/web test:db",
-    "db:start": "supabase start",
-    "db:stop": "supabase stop",
-    "db:reset": "supabase db reset && supabase seed buckets --local",
-    "db:owner": "node scripts/create-owner.mjs",
-    "dev:env": "node scripts/write-web-env.mjs",
     "content:check": "node packages/content-tools/cli.ts check",
     "content:build": "node packages/content-tools/cli.ts build",
-    "content:upload": "node packages/content-tools/cli.ts upload",
-    "content:suggest": "node packages/content-tools/cli.ts suggest"
+    "content:suggest": "node packages/content-tools/cli.ts suggest",
+    "start": "node apps/server/main.ts --web apps/web/dist"
   },
   "devDependencies": {
     "dependency-cruiser": "18.7.2",
-    "supabase": "3.0.0",
     "typescript": "6.0.3"
   }
 }

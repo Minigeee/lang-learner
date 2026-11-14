@@ -1,6 +1,6 @@
 # media-ingest
 
-Turns clip requests into validated, loudness-normalized Opus files and the metadata the Node toolchain checks. It shares files with Node and never imports it. It never touches the bucket: Node uploads from the cache.
+Turns clip requests into validated, loudness-normalized Opus files and the metadata the Node toolchain checks. It shares files with Node and never imports it. It never touches a build: `content:build` copies the files a build uses from the cache.
 
 ## Setup
 
@@ -89,7 +89,7 @@ A list with one record per passing clip, sorted by `id` in code-point order. It 
 
 | Path | Contents |
 |---|---|
-| `.cache/out/<sha16>.opus` | Finished files. Ogg Opus, 32 kbps mono, 48 kHz. The bucket key is `media/<sha16>.opus`. |
+| `.cache/out/<sha16>.opus` | Finished files. Ogg Opus, 32 kbps mono, 48 kHz. A build serves it at `media/<sha16>.opus` under its content root. |
 | `.cache/raw/` | Source audio, per source |
 | `.cache/metrics/` | Measurements per source file, keyed by content |
 | `.cache/transcripts/` | AISHELL transcripts and AISHELL-3's `aishell3-spk-info.txt` |
@@ -97,7 +97,7 @@ A list with one record per passing clip, sorted by `id` in code-point order. It 
 | `quarantine.json` | Rejected clips with their reasons |
 | `usage.json` | ElevenLabs characters for the current requests: each lesson's total, and `totalCharacters` counting each audio file once. Reruns don't change it. |
 
-Yoyo audio is personal use only. It lives in the cache and the private bucket, and is never committed.
+Yoyo audio is personal use only. It lives in the cache and the owner's private builds, and is never committed.
 
 ## Tests
 

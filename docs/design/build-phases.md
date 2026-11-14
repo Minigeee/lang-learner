@@ -209,7 +209,14 @@ Purpose: a lesson plays the way the plans describe, in the app shell it will shi
 - Evidence events, and derive v1 for lesson status and mastery.
 - A note button on every lesson step and card, stored as a `flag` event, so style reactions are captured in the moment.
 
-**Done when** all six lessons play in the browser, resume after the tab is closed, and sync through the local server.
+**Done when** all six lessons play in the browser, resume after the tab is closed, and sync through the local server. (Met 2026-11-13, with two origins on the laptop as two devices.)
+
+Built as follows, for the phases after it:
+- **Server:** `apps/server` over `node:sqlite`; `pnpm dev` runs it with Vite. `content:build` copies the media a build uses into `dist/content/media/`, which replaces `content:upload`.
+- **Events:** `lesson_cursor` marks each step of a run, so resume and lesson status are folds over the log; `trial` carries its run, step, item key, attempt and `mode`; `exposure` covers clips and videos. Architecture §6 has the payloads.
+- **Derive v1** (`packages/core/derive.ts`) recomputes per change. Mastery tops out at Familiar until the SRS supplies stability, and the per-card cache still belongs to Phase 3.
+- **Not built yet:** `card_added` (the end card lists the skill and words; Phase 3 makes them cards), the `claim` event for mark complete and self-report (Phase 4), the offline prefetch of a whole build (Phase 4's service worker), display-time sandhi, and pointing a second lesson back at a shared `main` video, which no pilot lesson needs.
+- **Slot bands** draw the ✓ line word by word with each word's gloss. Role labels such as *who · 是 · what* need figure data in the lesson format, which belongs to Phase 7's figure work.
 
 ### Phase 3: Daily loop
 
@@ -219,7 +226,16 @@ Purpose: lessons feed cards, and the day runs itself.
 - New-card feed: lesson and unit words at the end card, prep with deadlines, the queue in frequency order, and the first-look step for queue words.
 - Session builder, settled day close, per-card cache.
 
-**Done when** the 15-minute bedtime flow works offline in the browser, and spike D's two-device properties pass on the real code.
+**Done when** the 15-minute bedtime flow works offline in the browser, and spike D's two-device properties pass on the real code. (Met 2026-11-13: a 15-minute session ran with the server stopped from its second card on, synced once the server was back, and a second origin derived identical card states.)
+
+Built as follows, for the phases after it:
+- **SRS** (`packages/core/srs.ts`): `ts-fsrs` 6.0.0 exactly, FSRS-7 at 0.9 with fuzz. A review records its load-balanced `dueAt` and `prevReviewId`, and is stamped no earlier than the card's last review, computed at its final stamp (`EventLog.record` takes a draft function for this). The queue is a 10-minute daily budget of cards, sized by the median logged seconds per card; first reviews and (re)learning cards come first, then reviews by retrievability; `newCostInReviews` 8; no low-R tail. `DayQueue` has no carried-over count, so no screen can show one.
+- **Cards** (`cards.ts`): ids from `(item, template)`; the per-card cache folds each card alone and lives in IndexedDB beside the log, tagged with the SRS version. A full recompute runs on the main thread when the version changes; the Web Worker waits for a measurement that needs it.
+- **Events:** `card_added` (at a lesson's end card, or after a first look), `review`, `setting` (`studyTz`, `dayStartHour`; the first device records its own zone after its first sync), `device` `day` marks and `day_closed`. Architecture §6 has the payloads.
+- **Days** (`days.ts`): study days in the synced zone, minutes from estimates (a lesson step's share of the lesson, a review's template estimate, a first look, a video outside a lesson), Floor 8 / Standard 15 / Stretch 30. `syncAndClose` marks the day, syncs, then closes settled days; only days with study are closed.
+- **Feed** (`feed.ts`, the `feed` bundle file): prep words fed once their unit starts, overdue prep past the gate, then the stage's queue by rank. The pilot build has 17 prep and 594 queue placements and no feed cards, so nothing is fed yet; the session summary says more words come with an update. The first-look step is built and unit-tested but can't be reached until Phase 5 adds queue words.
+- **Session** (`session.ts`, `screens/Session.vue` at `#/session/<min>`): 5 minutes is reviews; longer sessions give reviews at most half, then lessons in path order while they fit. The session caches its audio when it starts, which is what makes it work offline before Phase 4's service worker.
+- **Not built yet:** sibling burying (each item has one card so far), the "20 more" opt-in after the cap, a review budget setting, mastery from FSRS stability (Solid and Mastered), and the Today screen around the session runner.
 
 ### Phase 4: Product surfaces
 
@@ -229,7 +245,17 @@ Purpose: every system has its screen.
 - First-run setup, Settings, Credits, and the support-language toggle.
 - Service worker and offline cache.
 
-**Done when** each screen in [app-ui-flow](app-ui-flow.md) works with the pilot's data, and a new account can self-report S0 and reach unit 1.1.
+**Done when** each screen in [app-ui-flow](app-ui-flow.md) works with the pilot's data, and a new account can self-report S0 and reach unit 1.1. (Met 2026-11-14: a fresh device marked Sounds as known in first-run setup and Today offered 1.1a; the built app, served by `apps/server`, reloaded with the server stopped and ran a 15-minute session, which synced once the server was back.)
+
+Built as follows, for the phases after it:
+- **Screens:** Today (time picker, the plan for the picked length, a continue row, rings), Path (a unit graph per stage by dependency depth, at most 3 lanes, a finished stage folded into one node, a docked unit panel, and an Items map), the Unit view, a Cytoscape map loaded only on its route, Progress, the Weekly review, Watch with the log sheet, Item detail, Settings, Credits and first-run setup. `router.ts` owns the hash routes.
+- **Claims** (`claim` event): mark done on a lesson, "I know this" on a lesson, unit or stage (the stage's written check is offered when it covers the target), and `none` to withdraw. The latest claim covering a lesson wins; a known claim raises the curriculum skills it covers to Familiar. Claims credit no minutes and add no cards. Everything is one tap with an Undo toast.
+- **Watch logs** (`watch` event) count in full on the study day they name, any day; input hours (`meters.ts`) count English subtitles at half and every video started.
+- **Settings** are synced `setting` events (`settings.ts` owns the defaults): review time per day feeds the queue's budget, day start, time zone, support language, the first-run plan and `setupDone`. Export writes the whole log as one JSON file; restore pushes a file to the server, which refills a fresh one.
+- **Compiled curriculum:** lessons carry their `skill`, units their direct prerequisites, and stages the stages they `assume`, so claims and the path reach unauthored lessons. Items carry a word's written form.
+- **Offline:** the web build writes `sw.js` (precached shell, cache-first assets, the shell for every navigation); the content loader caches every media file a few seconds after start. `?mute=1` works in built apps too, for silent testing.
+- **Not built, on purpose:** a daily goal (a target the Motivation row rules out), the "since a miss" tile (it resets), HSK denominators in What you know, watch suggestions and the subtitle-switch nudge (no data source yet), unit free-watch videos (no field in the curriculum), and a desired-retention setting (it would change replay; it needs a versioned SRS config).
+- **Provisional:** listening marks are doc 04's 50 / 150 / 300 / 600 / 1,000 / 1,500 h until the owner rescales them; the support-language column has only a few Chinese labels.
 
 ### Phase 5: Style pass
 

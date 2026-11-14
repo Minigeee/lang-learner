@@ -1,10 +1,10 @@
 // content:build's core: checked content in, a Bundle out. Pure and deterministic: every file is
-// stable JSON named by its hash, so an unchanged file keeps its name and is uploaded once.
+// stable JSON named by its hash, so an unchanged file keeps its name and a device fetches it once.
 import { createHash } from 'node:crypto'
-import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
-import { dirname, join } from 'node:path'
+import { copyFileSync, existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
+import { basename, dirname, join } from 'node:path'
 import type {
-  Clip, ClipId, CompiledItem, CompiledLesson, Credit, CurriculumStage, Format, GoDeeper, ItemId, LessonId, Manifest,
+  Clip, ClipId, CompiledItem, CompiledLesson, Credit, CurriculumStage, FeedEntry, Format, GoDeeper, ItemId, LessonId, Manifest,
   MediaBundle, MediaId, PracticeItem, PracticeOption, SkillCardSpec, Step, StrRef, Token, VocabCard,
 } from '@lang-learner/core'
 import type { LessonNode } from './curriculum.ts'
@@ -58,7 +58,10 @@ class Compiler {
     if (this.items.has(id)) return id
     const authored = this.project.items.get(id)
     if (authored) this.items.set(id, { id, name: this.str(authored.name) })
-    else this.items.set(id, { id, senses: this.project.words.get(id)?.senses ?? this.project.pack.dictionarySenses(id) })
+    else {
+      const { s, r } = this.project.pack.wordToken(id)
+      this.items.set(id, { id, text: s, senses: this.project.words.get(id)?.senses ?? this.project.pack.dictionarySenses(id), ...(r ? { reading: r } : {}) })
+    }
     return id
   }
 
@@ -194,6 +197,31 @@ class Compiler {
   }
 }
 
+/**
+ * The new-card feed: every prep and frequency-queue placement in a curriculum stage, in table order,
+ * with the word's item when `words.yaml` gives it a card. Queue words outside the curriculum's
+ * stages (the post-S2 queue) wait for the stretch that feeds them.
+ */
+function feedOf(project: Project): FeedEntry[] {
+  const carded = new Map([...project.words.keys()].map((id) => [project.pack.wordToken(id as ItemId).s, id as ItemId]))
+  const stages = new Set(project.curriculum.stages.map((s) => s.id))
+  const unit = (label: string) => /^\d+\.\d+/.exec(label)?.[0]
+  return project.vocab.flatMap((p): FeedEntry[] => {
+    const card = carded.get(p.word)
+    const withCard = card ? { card } : {}
+    if (p.tier === 'prep') {
+      const dueBy = p.neededBy.map(unit).find(Boolean)
+      const during = p.place.replace(/^prep:/, '')
+      return dueBy ? [{ tier: 'prep', word: p.word, ...withCard, during, dueBy }] : []
+    }
+    if (p.tier === 'queue') {
+      const stage = p.place.replace(/^queue:/, '')
+      return stages.has(stage) ? [{ tier: 'queue', word: p.word, ...withCard, stage, rank: p.rank ?? Number.MAX_SAFE_INTEGER }] : []
+    }
+    return []
+  })
+}
+
 /** The half-open token range covering the first occurrence of `target` in the line. */
 function tokenSpan(tokens: Token[], target: string): [number, number] {
   const offset = tokens.map((t) => t.s).join('').indexOf(target)
@@ -233,15 +261,17 @@ export function compile(project: Project): Bundle {
     files: Object.fromEntries(records.map((r): [MediaId, MediaBundle['files'][MediaId]] => [r.media, { key: r.file.key, bytes: r.file.bytes }])),
   }
 
-  const cardIds = [...new Set(authored.flatMap(({ doc }) => doc.fm!.cards.map((w) => c.canon(w as ItemId))))].sort(byCodePoint)
-  const cards = cardIds.map((id) => c.card(id, media))
+  const feed = feedOf(project)
+  const lessonCards = authored.flatMap(({ doc }) => doc.fm!.cards.map((w) => c.canon(w as ItemId)))
+  const cardIds = [...new Set([...lessonCards, ...feed.flatMap((f) => (f.card ? [f.card] : []))])].sort(byCodePoint)
+  const cards = cardIds.map((id) => c.card(c.item(id), media))
 
   const authoredIds = new Set<LessonId>(authored.map(({ node }) => node.id))
   const curriculum: CurriculumStage[] = project.curriculum.stages.map((s) => ({
-    id: s.id, title: s.title,
+    id: s.id, title: s.title, assumes: s.assumes ?? [],
     units: s.units.map((u) => ({
-      id: u.id, title: u.title, prereqs: project.curriculum.prereqsOf(u.id),
-      lessons: u.lessons.map((l) => ({ id: l.id, label: l.label, title: l.title, shape: l.shape, minutes: l.minutes, authored: authoredIds.has(l.id) })),
+      id: u.id, title: u.title, prereqs: u.prereqs,
+      lessons: u.lessons.map((l) => ({ id: l.id, label: l.label, title: l.title, shape: l.shape, minutes: l.minutes, skill: l.skill, authored: authoredIds.has(l.id) })),
     })),
   }))
 
@@ -257,6 +287,7 @@ export function compile(project: Project): Bundle {
     media: emit(media).file,
     items: emit(items).file,
     cards: emit(cards).file,
+    feed: emit(feed).file,
     credits: emit(credits).file,
   }
   const body = { lang: project.lang, files: fileNames, lessons }
@@ -264,12 +295,24 @@ export function compile(project: Project): Bundle {
   return { manifest, files, strings: [...c.strings.values()] }
 }
 
-/** Replaces `outDir` with this bundle: `files/<hash>.json` and `builds/<build>.json`. */
-export function writeBundle(bundle: Bundle, outDir: string): void {
+/**
+ * Replaces `outDir` with this bundle: `builds/<build>.json`, `files/<hash>.json`, and every audio file
+ * its media refers to, copied from `mediaDir` to the path its `files` entry names. Throws before
+ * touching `outDir` when a referenced file isn't in `mediaDir`, so a build never ships without its media.
+ */
+export function writeBundle(bundle: Bundle, outDir: string, mediaDir: string): void {
+  const media = JSON.parse(bundle.files.get(bundle.manifest.files.media!)!) as MediaBundle
+  const keys = Object.values(media.files).map((f) => f.key)
+  const missing = keys.filter((key) => !existsSync(join(mediaDir, basename(key))))
+  if (missing.length) throw new Error(`Not in the media cache (${mediaDir}), so nothing was written: ${missing.join(', ')}`)
   rmSync(outDir, { recursive: true, force: true })
   mkdirSync(join(outDir, 'files'), { recursive: true })
   mkdirSync(join(outDir, 'builds'), { recursive: true })
   for (const [name, body] of bundle.files) writeFileSync(join(outDir, 'files', name), body)
+  for (const key of keys) {
+    mkdirSync(dirname(join(outDir, key)), { recursive: true })
+    copyFileSync(join(mediaDir, basename(key)), join(outDir, key))
+  }
   writeFileSync(join(outDir, 'builds', `${bundle.manifest.build}.json`), stable(bundle.manifest))
 }
 

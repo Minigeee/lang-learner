@@ -10,6 +10,34 @@
       "port": 5173
     },
     {
+      "name": "web-fresh",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "scripts/dev.mjs",
+        "--server-port",
+        "8788",
+        "--web-port",
+        "5175",
+        "--db",
+        ".data/fresh.sqlite"
+      ],
+      "port": 5175
+    },
+    {
+      "name": "app-built",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "apps/server/main.ts",
+        "--port",
+        "8790",
+        "--db",
+        ".data/built.sqlite",
+        "--web",
+        "apps/web/dist"
+      ],
+      "port": 8790
+    },
+    {
       "name": "activity-pilot",
       "runtimeExecutable": "npm",
       "runtimeArgs": [
