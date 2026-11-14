@@ -8,16 +8,16 @@ Build one thin but complete version of every core system on a six-lesson pilot, 
 
 **The pilot's job is to settle the style.** Every later lesson copies what the pilot locks in: how an opener hooks, how long the I do runs, how examples and practice feel, what a card looks like, which voices and images work. Changing that across six lessons is cheap. Changing it across 194 isn't.
 
-Everything runs locally until the systems work together. The pilot then moves to daily use on the laptop and phone, syncing through Supabase Free, and the [style gate](#61-style-gate) locks the style. A first batch of 30 lessons then builds the remaining formats and tests whether authoring scales, and the [scale check](#62-scale-check) decides on the last 158.
+Everything runs locally until the systems work together. The pilot then moves to daily use on the laptop and phone, syncing through our own server on a VPS over Tailscale, and the [style gate](#61-style-gate) locks the style. A first batch of 30 lessons then builds the remaining formats and tests whether authoring scales, and the [scale check](#62-scale-check) decides on the last 158.
 
 ## 2. Requirements
 
-- **Real code, not a demo.** The slice is built in the architecture's layout (`apps/web`, `packages/core`, `packages/content-tools`, `languages/zh`, `content/`, `tools/media-ingest`, `supabase/`). What passes the gate stays.
+- **Real code, not a demo.** The slice is built in the architecture's layout (`apps/web`, `packages/core`, `packages/content-tools`, `languages/zh`, `content/`, `tools/media-ingest`, `apps/server`). What passes the gate stays.
 - **Nothing depends on `sandbox/`.** Spike code is copied and rewritten into its production home (§4.2). Data that production needs is imported into `content/`.
 - **No manual curation.** Every content step is scripted or done by an agent and gated by automatic checks. The owner only spot-checks and judges feel.
-- **Same contracts in development and daily use.** The local and hosted databases differ only in the sync address and key in Settings, so nothing built for one has to be rebuilt for the other.
+- **Same contracts in development and daily use.** The server is the same on the laptop and the VPS; only its address differs, so nothing built for one has to be rebuilt for the other.
 - **Additive graph.** A gap the pilot exposes becomes a new unit or edge, not a reshuffle ([dependency review](lesson-plans/review-2026-11-03/README.md)).
-- **Cost:** $0 hosting with the ~$10 a month ceiling, plus the ElevenLabs Starter plan already in use.
+- **Cost:** a small rented VPS, within the ~$10 a month ceiling, plus the ElevenLabs Starter plan already in use. Tailscale's personal plan is free.
 
 ## 3. Lesson sets
 
@@ -69,11 +69,11 @@ type EventDraft =
   // the other kinds are unchanged; synced settings gain studyTz and dayStartHour
 ```
 
-**Push and pull** (`supabase/migrations/`). Clients have no table access and no sign-in: both functions take the sync key, and the database stores only its hash. Inserts go through one serialized function, so `seq` can't commit out of order and skip a pull cursor (spike D, C1). Push returns rejections, one row per event it refused:
+**Push and pull** (`apps/server`). The tailnet is the only access control, so the endpoints take no key. Pushes are serialized in one SQLite transaction, so `seq` can't commit out of order and skip a pull cursor (spike D, C1). Push returns rejections, one per event it refused:
 
 ```sql
-create function public.push_events(sync_key text, batch jsonb) returns table (id text, error text)  -- idempotent; takes an advisory lock
-create function public.pull_events(sync_key text, after_seq bigint, max_rows int) returns setof events
+POST /sync/push   { events: EventEnvelope[] }  ->  { rejected: { id, error }[] }   -- idempotent: a known id is skipped
+GET  /sync/pull?after=<seq>&limit=<n>       ->  { events: EventEnvelope[] }       -- seq order
 ```
 
 **Vocab card** (`packages/core/content.ts`, compiled by `content:build`). It follows the README Vocab card format. One `voice` field makes a two-voice card impossible to express, and `image` makes "no image" a normal state. `pending` means the image step hasn't run, because `no_candidate` would be false before Phase 5:
@@ -117,18 +117,16 @@ interface VocabCard {
 
 | Piece | Phases 2–4 (development) | Phase 5 on (daily use) |
 |---|---|---|
-| Sync database | Supabase CLI stack in Docker | Supabase Free, events only |
-| Access | The sync key, set in the app's settings | The same |
-| App | Tauri on Windows (`tauri dev`), and Vite in a browser for quick checks | Tauri builds for Windows and Android, installed directly |
-| Content and media | Bundled into the app by `content:build` | The same |
-| Phone | Not used | An Android build, installed over USB |
+| Server | `apps/server` on the laptop, with a local SQLite file | The same server on a rented VPS |
+| Access | `localhost` | `tailscale serve`: HTTPS on the tailnet only |
+| App | The web app in a browser on the laptop | The same app on the laptop and phone, installed as a PWA |
+| Content and media | Built by `content:build`, served by the server, cached on the device | The same |
+| Phone | Not used | Tailscale and the browser |
 | Pipelines | Laptop | Laptop |
 
-**Why this shape** (README Stack row): a bundled Tauri app needs no hosting, sign-in or storage, and works offline from install. Only the events need a server, and a sync key is enough for one owner.
+**Why this shape** (README Stack row): the fewest third parties. Tailscale is the network and the sign-in, the VPS is the always-on host, and everything else is our own small server. The ts.net address is a real HTTPS origin, so the phone gets a service worker and offline use with no certificate work.
 
-**The phone waits for Phase 5.** The Android SDK is a heavy install, so it arrives once the app's main functions are ready to test on a phone. YouTube embeds play in the Windows build from its bundled origin; the Android check comes first in Phase 5.
-
-**Tooling:** Rust and the Visual Studio C++ tools are installed. The Android SDK, a JDK and the NDK are installed in Phase 5. Leave Supabase analytics off, since on Windows it needs extra daemon setup ([Supabase CLI docs](https://supabase.com/docs/guides/local-development/cli/getting-started)).
+**The phone waits for Phase 5,** when the app's main functions are ready to test on it. YouTube embeds played in the Tauri spike from a local origin; the browser on a real HTTPS origin is the ordinary case, and Phase 5 confirms it on the phone.
 
 ## 6. The two checkpoints
 
@@ -204,14 +202,14 @@ Purpose: the pilot goes from source to compiled bundle with no manual step.
 ### Phase 2: Lesson player
 
 Purpose: a lesson plays the way the plans describe, in the app shell it will ship in.
-- **Move to the decided stack first** (README Stack row): the Tauri shell around `apps/web`; `content:build` bundles content and media into the app, replacing `content:upload` and the bucket; the sync-key functions replace sign-in and table grants; Settings holds the sync address and key, with automatic and manual sync. Remove the sign-in screen, auth adapter, bucket policy and upload code.
+- **Move to the decided stack first** (README Stack row): `apps/server` serves the app, the built content and audio, and the sync endpoints over SQLite; the `Remote` adapter calls it instead of Supabase; the content loader fetches from it and caches on the device. Remove the sign-in screen, the auth adapter, `supabase/`, `content:upload`, and the Supabase-only scripts and dependencies.
 - Lesson arc, widget registry, trial runner, media adapter (AISHELL and TTS clips, YouTube, where a video counts once it starts, per the README Tracking row).
 - C0 and C1 widgets, and the pilot's figures.
 - Format intros on first appearance on the path. The checkpoint runner for 0.14b.
 - Evidence events, and derive v1 for lesson status and mastery.
 - A note button on every lesson step and card, stored as a `flag` event, so style reactions are captured in the moment.
 
-**Done when** all six lessons play in the Windows app, resume after the app is killed, and sync through the local database.
+**Done when** all six lessons play in the browser, resume after the tab is closed, and sync through the local server.
 
 ### Phase 3: Daily loop
 
@@ -221,7 +219,7 @@ Purpose: lessons feed cards, and the day runs itself.
 - New-card feed: lesson and unit words at the end card, prep with deadlines, the queue in frequency order, and the first-look step for queue words.
 - Session builder, settled day close, per-card cache.
 
-**Done when** the 15-minute bedtime flow works offline in the Windows app, and spike D's two-device properties pass on the real code.
+**Done when** the 15-minute bedtime flow works offline in the browser, and spike D's two-device properties pass on the real code.
 
 ### Phase 4: Product surfaces
 
@@ -229,13 +227,14 @@ Purpose: every system has its screen.
 - Today, Path, Unit view and the graph map. Progress meters and Weekly review.
 - Item detail, the Watch log, test-out and self-report.
 - First-run setup, Settings, Credits, and the support-language toggle.
+- Service worker and offline cache.
 
 **Done when** each screen in [app-ui-flow](app-ui-flow.md) works with the pilot's data, and a new account can self-report S0 and reach unit 1.1.
 
 ### Phase 5: Style pass
 
 Purpose: get the content right while it's cheap to change.
-- **Phone first:** install the Android SDK, JDK and NDK; build the Android app and install it over USB. Check that YouTube embeds play; if they don't, the fallback is opening the video in the YouTube app. Create the Supabase Free project and point both devices at it. This also closes Phase 0's phone checks.
+- **Phone first:** rent the VPS, install Tailscale on it, the laptop and the phone, and run the server there behind `tailscale serve`. Install the app on the phone from its ts.net address, and check offline use and YouTube embeds. This also closes Phase 0's phone checks.
 - Card images: finish the stopped spike on the pilot's real sentences, set the gate thresholds, and generate images for all 21 words.
 - Add about 20 S1 queue words, so the first-look step can be judged.
 - Use the pilot on the phone and work through the notes: rewrite lessons, cards, copy, pacing and voices, then rebuild.
@@ -246,9 +245,8 @@ Purpose: get the content right while it's cheap to change.
 ### Phase 6: Daily trial
 
 Purpose: real conditions, on the real stack.
-- CI: check, and build the Windows and Android apps.
-- Check offline use on the phone.
-- The weekly backup job, plus one restore drill: refill a fresh database from a device, and from a dump.
+- CI: check and build; deploying to the VPS is one command from the laptop.
+- The nightly off-site backup, plus one restore drill: refill a fresh server from a device, and from a backup file.
 - Confirm the AISHELL-1 terms, or use AISHELL-3 only.
 - Use the app daily for 7 days on phone and laptop, then work through the style gate.
 
